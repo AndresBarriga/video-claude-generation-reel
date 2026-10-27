@@ -12,11 +12,11 @@ E. «Tu colega lleva media hora con los crash pads a la espalda. Tú: uno más.�
 
 ## Guion (~38 s) — qué se ve / qué se dice (rótulo = la excusa, literal)
 1. Noche, linterna del móvil, yema con esparadrapo y magnesio en la regleta; detrás, colegas con los crash pads a la espalda. «PEGUE 23» · rótulo «Ahora hay más fricción». / «Tus colegas ya llevan los crash pads a la espalda. Y tú: es que ahora hay más fricción.»
-2. Rebobinado rápido: el sol sube, los crash pads vuelven al suelo. / «Así has llegado al veintitrés.»
+2. Rebobinado rápido: el sol sube, los crash pads vuelven al suelo, el contador baja de 23 a 9. / «Lo vas a encadenar. Y aun así va a salir mal.»
 3. Pegue 9 · «El último». Sopla los dedos, cepilla la regleta, sit start… cae al crash pad en el mismo paso. / «Pegue nueve: el último. Soplas, cepillas la regleta… y al mismo paso.»
 4. Pegue 12 · «Solo para mirar los pies». Macro: esparadrapo tirando con los dientes. / «Doce: solo para mirar los pies. Ya con esparadrapo.»
 5. Pegue 15 · «Desde el paso, que no cuenta». Empieza colgada del paso clave, llega al top; colegas gritan. / «Quince: desde el paso, que no cuenta. Y sale. Ahora sí te lo crees.» (2.º gancho)
-6. Pegue 19 · desde abajo. Macro: el flapper se abre en el primer movimiento; cara de dolor. / «Diecinueve, desde abajo: se te abre el flapper.»
+6. Pegue 19 · «Ya estoy caliente». Desde abajo. Macro: el flapper se abre en el primer movimiento; cara de dolor. / «Diecinueve: ya estoy caliente. Se te abre el flapper.»
 7. Pegue 22. Lija en la yema, crema de manos; un colega graba con el móvil «por si acaso». Cae arriba. / «Veintidós: lija, crema, y tu colega grabando por si acaso.»
 8. Vuelve el plano del inicio. Pegue 23. / «Y en el veintitrés…» (pausa)
 9. Top out, brazos arriba, silencio 1 s. / «…lo encadenas.»
@@ -31,4 +31,4 @@ Test del mensaje: «jajaja eres tú en Albarracín» / «el 22, como tú».
 - Color-hilo: crash pad naranja (en bloque no hay cuerda) + esparadrapo blanco.
 - Idea visual: la misma yema vuelve en macro en cada excusa y se va destrozando (rosa → esparadrapo → flapper abierto → lija), con el contador de pegues y la luz cayendo hasta quedar solo la del móvil. Sin gráficos ni metáforas literales.
 
-## Viralidad 13/14 (falta: bucle abierto adivinable, «¿saldrá el 23?»). Crítico: ver abajo.
+## Viralidad 13/14 (falta: el cierre empuja a enviar más que preguntar por tu vida). Crítico: 7/10 de envío; aplicado su cambio del plano 2 y el rótulo del 19.
