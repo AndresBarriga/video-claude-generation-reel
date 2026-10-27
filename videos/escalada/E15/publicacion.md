@@ -6,9 +6,10 @@ Lo contó Joe en el libro «Tocando el vacío» (luego película). Le dijeron qu
 
 Mándaselo a tu compañero de cordada y pregúntale si te cortaría 👀
 
-#escalada #montaña #alpinismo #historiasreales #tocandoelvacio
+#escalada #alpinismo #montaña #tocandoelvacio #joesimpson
 
-**Comentario fijado:** Etiqueta a quien SÍ te cortaría la cuerda 😅
+**Comentario fijado (pedido por Andrés):** Etiqueta a quien SÍ te cortaría la cuerda 😅
+**Alternativa sin riesgo de «engagement bait» (ver docs/viralidad.md):** ¿Cuál es la decisión más difícil que has tomado en la montaña?
 
 **Portada:** fotograma del gancho (mano con la navaja sobre la cuerda + «¿Cortas?»).
 
