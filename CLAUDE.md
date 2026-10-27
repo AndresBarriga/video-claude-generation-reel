@@ -3,7 +3,7 @@
 Cuenta anónima de reels animados en español de España (Instagram + TikTok), probando escalada y mascotas. Este repo es la memoria compartida de todos los chats del proyecto: lo que no está aquí no existe.
 
 ## Al empezar un chat
-1. Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote) y `docs/estrategia.md`.
+1. Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote), `docs/estrategia.md` y **`docs/viralidad.md` (obligatorio para cualquier guion)**.
 2. Si vas a producir: lee `docs/guia-visual.md` (estándar obligatorio) y la lista de ideas de tu nicho en `docs/ideas/`.
 3. `npm install` si no hay `node_modules`. Chromium para renderizar: si existe `/opt/pw-browsers`, exporta `BROWSER_EXE=$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome | head -1)`.
 
@@ -17,8 +17,9 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - Al terminar algo: commit + push. Si cambia una decisión, añádela al registro en `docs/estrategia.md`.
 
 ## Cada guion
-- Gancho que pone al espectador DENTRO de la situación ("Tu amigo cuelga de tu cuerda…") o que le etiqueta ("Eres de los que…"). ≤14 palabras, se entiende en 3 s.
-- Segundo gancho a mitad (giro, "y no", contador). Final en bucle con el inicio + pregunta que provoque comentarios. El envío ("mándaselo a…") va en la descripción.
+- **Aplica `docs/viralidad.md` siempre, sin que Andrés lo pida**: clímax en el segundo 1, espectador dentro, bucle abierto antes de 5 s, segundo gancho, causa visible, final que vuelve a su vida, envío/comentario/bucle con mecanismo.
+- Antes de enseñar un guion, puntúalo con la tabla de `docs/viralidad.md` y reescríbelo hasta ≥12/14. Muestra la puntuación en una línea.
+- Si Andrés ya ha aprobado un guion pero ves que puntúa bajo, dilo y propón la versión mejorada; no lo produzcas tal cual.
 - 35–55 s según historia (identidad ~35 s, historia ~50 s). Escribir como se habla (cifras en palabras).
 - Rigor: ver `docs/proceso.md` (suficiente, no paralizante; estricto en salud/seguridad).
 
