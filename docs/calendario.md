@@ -1,4 +1,4 @@
-# Calendario de publicación (orientativo; Andrés puede adelantar)
+# Calendario de publicación (en pausa: primero stock de vídeos, luego se ordena)
 
 | Fecha | Nicho | Vídeo | Estado |
 |---|---|---|---|

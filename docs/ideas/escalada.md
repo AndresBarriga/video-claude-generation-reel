@@ -6,13 +6,16 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 - **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Falta: voz. [borrador v3]
 - **E11** Por qué te tiembla la pierna cuando miras abajo 🌍 — gancho candidato: «No estás perdiendo fuerza. Tu cuerpo intenta protegerte.» [idea]
 
+## Siguiente (elegida por Andrés)
+- **E6 «El último pegue»** (sustituye a «solo una vía más»; vale para vías y bloque) — final del día o del viaje, llevas todo el día proyectando, cada vez más cansado pero sabiéndotela mejor: «un último pegue». Dos finales posibles: lo encadenas en el último intento (épico) o cada pegue sale peor. Formato humor/identidad, pensado para mandárselo al compañero de pegues. Idea de estructura: enseñar los dos finales y preguntar cuál te pasa siempre a ti. [idea]
+
 ## Identidad (para etiquetar a alguien)
 1. ¿Qué tipo de compañero de cordada eres?
 2. Los 7 escaladores que hay en todo rocódromo
 3. Lo que dices tú vs. lo que significa ("solo es un bloque de calentamiento")
 4. Por qué siempre dices "la última y nos vamos"
 5. El que te da beta sin que se la pidas, explicado por la psicología
-6. Tu pareja cuando le dices "solo una vía más" 🌍
+6. ~~Tu pareja cuando le dices "solo una vía más"~~ → ver E6 «El último pegue»
 
 ## Tu cuerpo por dentro
 7. ¿Y si no te da miedo caer, sino soltar? 🌍

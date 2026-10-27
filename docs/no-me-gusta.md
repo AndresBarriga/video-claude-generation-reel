@@ -15,3 +15,5 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
 - 2026-10-27 · La lista de 28 ideas de escalada (identidad, cuerpo, historias épicas, España, dinero).
 - 2026-10-27 · Historias con dilema moral y giro (Tocando el vacío).
+- 2026-10-27 · Ideas de explicación general (cuerpo, «por qué te pasa…»): le parecen bien.
+- 2026-10-27 · Situaciones reales de escalador con matices propios (el último pegue del viaje, vías y bloque), mejor que el chiste genérico.
