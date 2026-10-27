@@ -8,6 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { carpetaVideo } from "./rutas.mjs";
 import { spawnSync } from "node:child_process";
+import { alinear } from "./alinear.mjs";
 
 const args = process.argv.slice(2);
 const id = args.find((a) => !a.startsWith("--"));
@@ -52,7 +53,7 @@ if (simulado) {
   const destino = path.join(raiz, `public/voz/${id}.mp3`);
   const r = sh("ffmpeg", ["-y", "-loglevel", "error", "-i", audioIn, "-vn", "-ar", "44100", "-b:a", "128k", destino]);
   if (r.status !== 0) { console.error("ffmpeg no pudo leer el audio (¿está instalado ffmpeg?):", r.stderr); process.exit(1); }
-  const dur = duracionAudio(destino);
+  let dur = duracionAudio(destino);
   // Intento 1: Whisper local (preciso). Se instala una vez con `npm run whisper`.
   let whisperWords = null;
   const wDir = path.join(raiz, "whisper");
@@ -80,14 +81,33 @@ if (simulado) {
     });
     metodo = `audio ${dur.toFixed(1)} s, tiempos con Whisper`;
   } else {
-    // Intento 2: reparto proporcional a la longitud de cada palabra (impreciso; sirve para probar)
-    const lead = 0.15, cola = 0.3, total = Math.max(1, dur - lead - cola);
-    const pausas = new Map(guion.escenas.map((e, i) => [rangoEscena[i][1], e.pausa ?? 0]));
-    const pesos = palabrasGuion.map((p, i) => p.length + 2 + (/[.,;:!?]$/.test(p) ? 4 : 0) + (pausas.get(i) ?? 0) * 15);
-    const suma = pesos.reduce((a, b) => a + b, 0);
-    let t = lead;
-    tiempos = pesos.map((p) => { const d = (p / suma) * total; const s = t; t += d; return { start: s, end: t - 0.03 }; });
-    metodo = `audio ${dur.toFixed(1)} s, tiempos ESTIMADOS (instala Whisper con npm run whisper para precisión)`;
+    // Intento 2: alinear las pausas del audio con la puntuación del guion (sin Whisper)
+    const { tiempos: t2, pareja } = alinear(destino, palabrasGuion, dur);
+    tiempos = t2;
+    metodo = `audio ${dur.toFixed(1)} s, tiempos por pausas (${pareja.size} frases ancladas; Whisper daría precisión por palabra)`;
+  }
+  // "pausa" del guion: si el locutor no la ha respetado (p. ej. ignora <break>), se inserta silencio en el audio
+  const huecos = [];
+  guion.escenas.forEach((e, i) => {
+    const li = rangoEscena[i][1];
+    if (!e.pausa || li >= N - 1) return;
+    const hueco = tiempos[li + 1].start - tiempos[li].end;
+    if (hueco < e.pausa - 0.1) huecos.push({ en: tiempos[li].end + Math.min(0.12, hueco / 2), extra: +(e.pausa - hueco).toFixed(2) });
+  });
+  if (huecos.length) {
+    const partes = [], filtros = []; let previo = 0;
+    huecos.forEach((h, k) => {
+      filtros.push(`[0]atrim=${previo}:${h.en},asetpts=N/SR/TB[a${k}]`, `anullsrc=r=44100:cl=mono,atrim=0:${h.extra}[s${k}]`);
+      partes.push(`[a${k}]`, `[s${k}]`); previo = h.en;
+    });
+    filtros.push(`[0]atrim=${previo},asetpts=N/SR/TB[fin]`); partes.push("[fin]");
+    const tmp = destino.replace(/\.mp3$/, ".tmp.mp3");
+    const r = sh("ffmpeg", ["-y", "-loglevel", "error", "-i", destino, "-filter_complex", `${filtros.join(";")};${partes.join("")}concat=n=${partes.length}:v=0:a=1[o]`, "-map", "[o]", "-ac", "1", "-ar", "44100", "-b:a", "128k", tmp]);
+    if (r.status !== 0) { console.error("No pude insertar la pausa:", r.stderr); process.exit(1); }
+    fs.renameSync(tmp, destino);
+    for (const h of [...huecos].reverse()) tiempos = tiempos.map((x) => (x.start >= h.en ? { start: x.start + h.extra, end: x.end + h.extra } : x));
+    dur = duracionAudio(destino);
+    metodo += ` · pausa insertada: ${huecos.map((h) => `${h.extra}s en ${h.en.toFixed(1)}s`).join(", ")}`;
   }
   fs.writeFileSync(path.join(raiz, `public/datos/.dur-${id}`), String(dur));
 } else {
