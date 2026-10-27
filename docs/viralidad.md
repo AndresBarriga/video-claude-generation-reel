@@ -34,6 +34,9 @@ Sale del análisis de las cuentas de referencia (numerosdepareja, dasdingo, resu
 ## Sonido
 Ambiente desde el frame 0 (viento, sala, calle), efectos en los momentos clave (crujido, chasquido, golpe) y **un silencio** justo después del clímax. El sonido retiene tanto como la imagen en los primeros segundos.
 
+## Aperturas
+Para cada vídeo escribe **5 aperturas** distintas (situación, cifra, pregunta, imagen imposible, afirmación que choca). Elige la mejor para el vídeo y renderiza **2** variantes del inicio para probarlas con reels de prueba.
+
 ## Puntuación (0–2 por palanca; mínimo 12/14 para enseñar)
 | Palanca | 0 | 1 | 2 |
 |---|---|---|---|

@@ -4,7 +4,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 
 ## Al empezar un chat
 1. Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote), `docs/estrategia.md` y **`docs/viralidad.md` (obligatorio para cualquier guion)**.
-2. Si vas a producir: lee `docs/guia-visual.md` (estándar obligatorio) y la lista de ideas de tu nicho en `docs/ideas/`.
+2. Si vas a producir: lee `docs/guia-visual.md` (estándar obligatorio), `docs/no-me-gusta.md` y la lista de ideas de tu nicho en `docs/ideas/`.
 3. `npm install` si no hay `node_modules`. Chromium para renderizar: si existe `/opt/pw-browsers`, exporta `BROWSER_EXE=$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome | head -1)`.
 
 ## Cómo trabajar con Andrés
@@ -15,6 +15,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - Prioridad: **gancho → retención → visuales → envíos/comentarios**.
 - Puede ser un vídeo suelto o un lote; lo que pida Andrés.
 - Al terminar algo: commit + push. Si cambia una decisión, añádela al registro en `docs/estrategia.md`.
+- Si Andrés rechaza o elogia algo concreto, añádelo a `docs/no-me-gusta.md` en ese momento.
 
 ## Cada guion
 - **Aplica `docs/viralidad.md` siempre, sin que Andrés lo pida**: clímax en el segundo 1, espectador dentro, bucle abierto antes de 5 s, segundo gancho, causa visible, final que vuelve a su vida, envío/comentario/bucle con mecanismo.
@@ -28,6 +29,13 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - `src/historias/<Plantilla>.tsx`: escenas a medida por vídeo (ej. `Vacio.tsx` para E15). `src/piezas/`: personajes y elementos reutilizables (`Escalador.tsx`: Joe/Simon con poses por ángulos y caras; `Grano.tsx`: grano + viñeta). Hoja de poses: plantilla `Poses` con `public/datos/_poses.json`.
 - `src/Reel.tsx`: plantilla genérica antigua de tarjetas de texto. **No usar para vídeos publicables**; solo pruebas.
 - Herramientas: `npm run texto -- <id>` (texto para ElevenLabs) · `npm run voz -- <id> --audio ruta` (sincroniza audio subido; `--simulado` sin audio) · `npm run qa -- <id>` · `npm run render -- <id>` · `npm run fotograma -- <id> <segundo>` (imagen fija para storyboard) · `npm run hoja -- <id>` (un fotograma por escena + hoja de contacto en `out/<id>-hoja.png`; `MOMENTOS=24.5,25` añade instantes) · `npm run sonido -- <id>` (efectos de `sonido.json`, ver `docs/sonido.md`) · `npm run whisper` (una vez, mejora la sincronía).
+
+## Ahorro de tokens
+- Un chat por vídeo; ciérralo cuando el vídeo esté publicado. El estado vive en el repo, no en el chat.
+- No leas archivos grandes enteros: busca con grep y lee solo el trozo (offset/limit). Plantillas nuevas: **una escena por archivo** en `src/historias/<Plantilla>/` (< 150 líneas cada uno).
+- Revisa con **una** hoja de contacto (`npm run hoja`), no fotograma a fotograma; mira fotogramas sueltos solo de lo que falla. Máximo 2 rondas de corrección antes de enseñar.
+- Silencia la salida de render y npm (`| tail -3`).
+- Docs: añade, no dupliques. Si un doc pasa de ~8 KB, condénsalo.
 
 ## Técnico
 - Remotion 4.0.539 fijado. 1080×1920, 30 fps. Fuentes locales en `public/fuentes` (no depender de Google Fonts).

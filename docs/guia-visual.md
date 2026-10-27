@@ -13,6 +13,16 @@ Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumpl
 - **Cierre en bucle.** La última escena repite el plano y el rótulo de la primera para que el vídeo empalme consigo mismo, y cierra con una pregunta al espectador que invite a mandárselo a alguien.
 - **Sonido.** Cada vídeo lleva capa de efectos (`sonido.json`, ver `docs/sonido.md`): ambiente constante, un sonido-firma en el momento clave y un silencio justo después.
 
+## Movimiento (reglas de motion designer)
+- **Sincronía con la palabra:** cuando la voz nombra algo, aparece o actúa en ese instante (± 2 frames). Usa `framePalabra()` de `src/piezas/sincro.ts`; nunca tiempos fijos «a ojo» si hay palabra que lo ancle.
+- **Nada lineal.** Entradas con *ease-out*, salidas con *ease-in*, objetos con peso con un pequeño rebote al asentarse (*overshoot* 5–10 %).
+- **Anticipación y continuidad:** antes de una acción fuerte, un gesto contrario breve (agacharse antes de saltar); después, el movimiento sigue un poco (pelo, mochila, cuerda) y se detiene.
+- **Escalonar:** elementos de un grupo entran con 2–4 frames de diferencia, nunca todos a la vez.
+- **Una acción principal a la vez.** Si dos cosas importantes pasan juntas, una espera.
+- **Tiempo de lectura:** un rótulo se mantiene al menos 0,3 s por palabra (mínimo 1 s) antes de cambiar.
+- **Cámara motivada:** se mueve porque algo pasa (cae → la cámara cae; tensión → empuje lento), no por decorar. Sacudida solo en impactos y < 10 frames.
+- **Transiciones con sentido:** corte en la palabra clave, *match cut* (misma forma/posición entre escenas) o barrido en la dirección del movimiento. Nada de fundidos genéricos.
+
 ## Principios
 1. **Cada vídeo tiene una idea visual propia** que lo recorre (en E15: la cuerda naranja). Se decide en el storyboard, no al programar.
 2. **Un foco por escena.** El ojo sabe dónde mirar en <0,5 s. Lo demás, en segundo plano y más apagado.
