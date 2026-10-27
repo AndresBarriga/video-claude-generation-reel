@@ -2,7 +2,7 @@
 // La geometría replica la de Escalador.tsx para colocar presas y reglete justo bajo manos y pie.
 import React from "react";
 import { Escalador, type Angulos, type Cara } from "../../piezas/Escalador";
-import { P11, Reglete, TU } from "./comun";
+import { P11, Reglete, TU, borde } from "./comun";
 
 const rad = (g: number) => (g * Math.PI) / 180;
 const ext = (x: number, y: number, a: number, l: number): [number, number] => [x + Math.sin(rad(a)) * l, y + Math.cos(rad(a)) * l];
@@ -18,15 +18,16 @@ export const puntos = (a: Angulos, s: number) => {
 };
 
 /** `tr` = temblor actual (−1…1 × intensidad); `amp` = rastro de movimiento (fantasmas). Coloca a la escaladora con la punta del pie (sin temblor) en (px, py). Devuelve también dónde está la pared. */
-export const Tu: React.FC<{ px: number; py: number; s: number; cara?: Cara; tr?: number; amp?: number; cabeza?: number; talon?: number }> = ({ px, py, s, cara = "miedo", tr = 0, amp = 0, cabeza, talon = 0 }) => {
-  const base = { ...POSE_PARED, ...(cabeza !== undefined ? { cabeza } : {}) };
+export const Tu: React.FC<{ px: number; py: number; s: number; cara?: Cara; tr?: number; amp?: number; cabeza?: number; talon?: number; x0?: number; extra?: Partial<Angulos>; aliento?: number }> = ({ px, py, s, cara = "miedo", tr = 0, amp = 0, cabeza, talon = 0, x0, extra, aliento = 0 }) => {
+  const base = { ...POSE_PARED, ...(cabeza !== undefined ? { cabeza } : {}), ...extra };
   const p0 = puntos(base, s);
   const hx = px - p0.punta[0], hy = py - p0.punta[1];
   // temblor: el talón sube y baja alrededor de la punta; `talon` (0–1) lo baja y lo deja quieto
   const pierna = (t: number): Partial<Angulos> => ({ piernaA: [64 - 8 * t - 6 * talon, -6 - 20 * t + 14 * talon] });
   const muro = px + 2;
+  const enMuro = (y: number) => (x0 !== undefined ? borde(y, x0) + 4 : muro);
   const presa = (m: [number, number], k: string) => (
-    <path key={k} d={`M${muro} ${hy + m[1] - 18 * s} L${hx + m[0] - 6 * s} ${hy + m[1] - 4 * s} Q${hx + m[0] - 10 * s} ${hy + m[1] + 14 * s} ${muro} ${hy + m[1] + 16 * s} Z`} fill={P11.rocaL} stroke="#000" strokeOpacity={0.25} strokeWidth={3} />
+    <path key={k} d={`M${enMuro(hy + m[1])} ${hy + m[1] - 18 * s} L${hx + m[0] - 6 * s} ${hy + m[1] - 4 * s} Q${hx + m[0] - 10 * s} ${hy + m[1] + 14 * s} ${enMuro(hy + m[1])} ${hy + m[1] + 16 * s} Z`} fill={P11.rocaL} stroke="#000" strokeOpacity={0.25} strokeWidth={3} />
   );
   return (
     <g>
@@ -37,6 +38,7 @@ export const Tu: React.FC<{ px: number; py: number; s: number; cara?: Cara; tr?:
       ))}
       <defs><clipPath id="piernaClip"><rect x={hx - 20 * s} y={hy + 20 * s} width={200 * s} height={160 * s} /></clipPath></defs>
       <Escalador x={hx} y={hy} quien="joe" look={TU} s={s} angulos={{ ...base, ...pierna(tr) }} cara={cara} />
+      {aliento > 0 && (() => { const c = caderaDe(px, py, s, base.cabeza); const hxx = c.x + 20 * s + aliento * 40 * s, hyy = c.y - 122 * s + aliento * 8 * s; return <g opacity={Math.sin(Math.PI * Math.min(1, aliento)) * 0.7}>{[0, 1, 2].map((i) => <ellipse key={i} cx={hxx + i * 16 * s * aliento} cy={hyy + i * 3 * s} rx={(7 + i * 5) * s * (0.6 + aliento)} ry={(5 + i * 3) * s * (0.6 + aliento)} fill="#F4F7FA" />)}</g>; })()}
     </g>
   );
 };

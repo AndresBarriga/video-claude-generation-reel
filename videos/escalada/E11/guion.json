@@ -1,6 +1,6 @@
 {
   "id": "E11",
-  "titulo": "Por qué te tiembla la pierna cuando miras abajo",
+  "titulo": "Por qué te tiembla la pierna cuando miras abajo (pierna de Elvis)",
   "nicho": "escalada",
   "plantilla": "Pierna",
   "verificado": true,
@@ -8,36 +8,36 @@
     "Horslen BC, Inglis JT, Blouin JS, Carpenter MG (2018). Increased human stretch reflex dynamic sensitivity with height-induced postural threat. J Physiol. Plataforma a 3,5 m al borde vs 1,1 m lejos del borde: reflejos de estiramiento del sóleo más grandes con la amenaza (evidencia indirecta de husos musculares más sensibles).",
     "Horslen (tesis UBC): plataforma a 3,2 m, reflejos tendinosos mayores con la altura y más activación (arousal)."
   ],
-  "nota_rigor": "El estudio mide reflejos más fuertes con miedo a la altura. Que eso, sumado a estar de puntillas con el gemelo cargado, produzca la 'máquina de coser' es la explicación habitual (bucle de reflejo de estiramiento); se cuenta como explicación, no como dato. Sin cifras de frecuencia. Bajar el talón: consejo común de escalada, contado como lo que se hace, no como instrucción de seguridad.",
+  "nota_rigor": "El estudio mide reflejos de estiramiento del sóleo más fuertes de media con miedo a la altura (efecto de grupo; 'también los suyos' es licencia de humor sobre un efecto general). Que eso, sumado a estar de puntillas con el gemelo cargado, produzca la pierna de Elvis/máquina de coser es la explicación habitual (bucle del reflejo de estiramiento): se cuenta como explicación, no como dato. Sin cifras de frecuencia. Consejos (talón abajo, peso a la pierna estirada, soltar aire): técnica común de escalada, contada como lo que hacen los escaladores; no son instrucciones de seguridad.",
   "ganchos_alternativos": [
-    "A · Tu pierna, a dos metros de la chapa. Tranquilo, no eres un cagado: tu gemelo lo hace a propósito. (elegida)",
+    "A · Rótulo «¿Pierna de Elvis?» + «Tu pierna, a dos metros de la chapa. Y abajo: ¡confía en los pies!» (elegida; voz común a las dos variantes)",
+    "A2 · Mismo inicio con rótulo «¿Máquina de coser?» (variante para reel de prueba: E11-M, misma voz)",
     "B · A tres metros y medio del suelo tus reflejos ya se disparan. Ahora imagínate a veinte.",
     "C · ¿Por qué tiembla justo la pierna que te está sujetando?",
-    "D · El pie aguanta. La pierna no para. Y apretar lo empeora.",
-    "E · Esa pierna haciendo de máquina de coser no es debilidad. Es un reflejo que el miedo ha puesto a tope."
+    "D · El pie aguanta. La pierna no para. Y apretar lo empeora."
   ],
   "escenas": [
     {
       "tipo": "gancho",
       "visual": "vertigo",
-      "titulo": "¿Máquina de coser?",
-      "texto": "Tu pierna, a dos metros de la chapa."
-    },
-    {
-      "tipo": "texto",
-      "visual": "cara",
-      "texto": "Tranquilo, no eres un cagado. Tu gemelo lo hace a propósito."
+      "titulo": "¿Pierna de Elvis?",
+      "texto": "Tu pierna, a dos metros de la chapa. Y abajo: ¡confía en los pies!"
     },
     {
       "tipo": "texto",
       "visual": "asegurador",
-      "titulo": "«¡Confía en los pies!»",
-      "texto": "Abajo te gritan: ¡confía en los pies! Y tú, a punto de gritar ¡pilla!"
+      "texto": "Esto va por él: tu pierna no tiembla por cagada. Lo hace a propósito."
+    },
+    {
+      "tipo": "texto",
+      "visual": "elvis",
+      "titulo": "¿Pongo a Elvis?",
+      "texto": "¿Te pongo a Elvis o ya bailas tú sola?"
     },
     {
       "tipo": "texto",
       "visual": "gemelo",
-      "texto": "En un reglete, de puntillas, todo tu peso cuelga del gemelo."
+      "texto": "En tu defensa: de puntillas en un reglete, el gemelo carga con todo."
     },
     {
       "tipo": "texto",
@@ -46,8 +46,14 @@
     },
     {
       "tipo": "texto",
+      "visual": "chapa",
+      "titulo": "¿Atornillando la chapa?",
+      "texto": "Que la chapa ya está puesta: no la atornilles con la pierna."
+    },
+    {
+      "tipo": "texto",
       "visual": "volumen",
-      "texto": "Y aquí está la trampa: el miedo sube la sensibilidad de ese sensor.",
+      "texto": "Y la trampa: el miedo sube la sensibilidad de ese sensor.",
       "pausa": 0.3
     },
     {
@@ -55,19 +61,21 @@
       "visual": "laboratorio",
       "titulo": "3,5 m",
       "fuente": "Horslen y col., J. Physiol 2018",
-      "texto": "Lo midieron: a tres metros y medio, al borde, los reflejos saltaban más que en el suelo."
+      "texto": "Lo midieron: a tres metros y medio, al borde, los reflejos saltan más. También los suyos.",
+      "cifra": "3,5 m",
+      "etiqueta": "de altura"
     },
     {
       "tipo": "texto",
-      "visual": "talon",
-      "texto": "Por eso el truco no es apretar: es bajar el talón y soltar aire.",
-      "pausa": 0.6
+      "visual": "consejos",
+      "texto": "Por eso: baja el talón, pasa el peso a la pierna estirada y suelta el aire.",
+      "pausa": 0.7
     },
     {
       "tipo": "cierre",
-      "visual": "vertigo",
-      "titulo": "¿Máquina de coser?",
-      "texto": "No eras un cagado: era tu gemelo cuidándote de más. Mándaselo al que cose en todas las vías."
+      "visual": "cierre",
+      "titulo": "¿Pierna de Elvis?",
+      "texto": "Abajo, por fin, silencio. Mándaselo a tu asegurador. Para la próxima vez."
     }
   ]
 }

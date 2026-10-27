@@ -1,32 +1,25 @@
-# E11 «Por qué te tiembla la pierna cuando miras abajo» — en vía (propuesta, tras crítico)
+# E11 «Pierna de Elvis» — en vía (propuesta v2, aprobada por Andrés 27-oct)
 
-## Opinión
-Buena idea: le pasa a todo el que ha ido de primero y casi nadie sabe por qué. Riesgo principal: que la mitad sea clase de fisiología. Lo arreglo con la pierna temblando en todos los planos, la cara siempre reaccionando, el alivio («no eres un cagado») por delante y un experimento real que se ve (martillo de reflejos a 3,5 m). Vía, no bloque: la máquina de coser es de vía y así la cuerda naranja sigue siendo el hilo.
+## Cambios de v1 a v2 (pedidos por Andrés)
+- Deja de ser una explicación: **tú contra tu asegurador**. Él se ríe desde abajo con tres pullas; el vídeo te defiende y cada pulla se contesta con un dato del cuerpo que se ve.
+- Envío concreto: «Mándaselo a tu asegurador. Para la próxima vez». Comentario: «¿Qué es lo más gracioso que te han gritado desde abajo?».
+- «Pierna de Elvis» como nombre principal; «¿Máquina de coser?» como inicio alternativo para reel de prueba (E11-M, misma voz).
+- Montaña, no torre: canto irregular con estratos, matojos y grietas; cordillera nevada detrás; valle con pueblo, río y pájaros por debajo.
+- Anatomía clara: lupa que sale de la pantorrilla, corte de perfil (tibia, gemelo de dos cabezas, sensor, tendón de Aquiles, talón, pie de gato en el reglete), etiquetas «gemelo» y «sensor», reflejo a cámara lenta.
+- Tres consejos al final (talón abajo, peso a la pierna estirada, soltar aire): la pierna se para, la cinta se calla y es el único silencio del vídeo.
 
-## 5 aperturas
-A. Pierna temblando en el reglete, chapa abajo, «¿Máquina de coser?»: «Tu pierna, a dos metros de la chapa. Tranquilo, no eres un cagado: tu gemelo lo hace a propósito.» (elegida)
-B. «A tres metros y medio del suelo tus reflejos ya se disparan. Ahora imagínate a veinte.»
-C. «¿Por qué tiembla justo la pierna que te está sujetando?»
-D. «El pie aguanta. La pierna no para. Y apretar lo empeora.»
-E. «Esa pierna haciendo de máquina de coser no es debilidad. Es un reflejo que el miedo ha puesto a tope.»
+## Guion (≈47 s simulados)
+1. Pierna temblando, «¿Pierna de Elvis?»; bocadillo desde abajo «¡Confía en los pies!». / «Tu pierna, a dos metros de la chapa. Y abajo: ¡confía en los pies!»
+2. El asegurador riéndose al pie de la vía → corte a tu cara. / «Esto va por él: tu pierna no tiembla por cagada. Lo hace a propósito.»
+3. Pulla 1: móvil en alto, se menea, «¿Pongo a Elvis?». / «¿Te pongo a Elvis o ya bailas tú sola?»
+4. Lupa a la pantorrilla, corte por dentro, «gemelo». / «En tu defensa: de puntillas en un reglete, el gemelo carga con todo.»
+5. Cámara lenta del reflejo, «sensor». / «Se estira un poco, un sensor lo contrae de golpe, se pasa… y otra vez.»
+6. Pulla 2: la cinta repiqueteando, «¿Atornillando la chapa?». / «Que la chapa ya está puesta: no la atornilles con la pierna.»
+7. 2.º gancho: miras abajo, el valle se aleja, la pierna tiembla más. / «Y la trampa: el miedo sube la sensibilidad de ese sensor.»
+8. Laboratorio: el asegurador es el voluntario a 3,5 m; martillo de reflejos. / «Lo midieron: a tres metros y medio, al borde, los reflejos saltan más. También los suyos.»
+9. Consejos 1-2-3; la pierna se para; silencio. / «Por eso: baja el talón, pasa el peso a la pierna estirada y suelta el aire.»
+10. El asegurador callado → bucle al gancho. / «Abajo, por fin, silencio. Mándaselo a tu asegurador. Para la próxima vez.»
 
-## Guion (~42 s) — qué se ve / qué se dice
-1. Primer plano: punta del pie en un reglete, la pierna cosiendo, la cinta exprés tintineando; la chapa abajo y el valle al fondo. Rótulo «¿Máquina de coser?». / «Tu pierna, a dos metros de la chapa.»
-2. Su cara: ojos muy abiertos, mira abajo, la pierna sigue en el borde del plano. / «Tranquilo, no eres un cagado. Tu gemelo lo hace a propósito.»
-3. Contrapicado desde abajo: el asegurador (barba gris, gorro, gafas) sentado, gritando con la mano en bocina. Rótulo «¡Confía en los pies!». Corte a ella, boca abierta, a punto de… / «Abajo te gritan: ¡confía en los pies! Y tú, a punto de gritar ¡pilla!»
-4. Plano medio, todo se oscurece menos la pierna: el gemelo se ve por dentro. / «En un reglete, de puntillas, todo tu peso cuelga del gemelo.»
-5. Cámara lenta del talón: baja (el músculo se estira), se enciende y sube de golpe, se pasa, baja otra vez; vuelve a velocidad real = el temblor. / «Se estira un poco, un sensor lo contrae de golpe, se pasa… y otra vez.»
-6. 2.º gancho: ella mira abajo y el vacío se alarga (empuje de cámara), el temblor aumenta, la cuerda vibra. / «Y aquí está la trampa: el miedo sube la sensibilidad de ese sensor.»
-7. Laboratorio: plataforma elevadora a 3,5 m, un voluntario de puntillas en el borde, cara de miedo; la investigadora le da con el martillo de reflejos en el talón y la pierna salta. Rótulo «3,5 m» + fuente. / «Lo midieron: a tres metros y medio, al borde, los reflejos saltaban más que en el suelo.»
-8. Una cosa más: vuelve a ella; baja el talón, suelta aire (cara de alivio), la pierna se para y la cinta deja de sonar → único silencio del vídeo. / «Por eso el truco no es apretar: es bajar el talón y soltar aire.»
-9. Bucle: mismo plano del inicio, la pierna empieza a coser otra vez, «¿Máquina de coser?». / «No eras un cagado: era tu gemelo cuidándote de más. Mándaselo al que cose en todas las vías.»
+Test del mensaje: «para la próxima vez que te rías de mi pierna 🙄».
 
-Comentario fijado: «¿En qué vía te ha cosido más la pierna?»
-Test del mensaje: «tío, que no eras cagao, era tu gemelo 😂».
-
-## Reparto e idea visual
-- Tú: escaladora, piel morena oscura, trenzas, casco verde salvia, camiseta granate. Asegurador: hombre mayor, barba gris, gafas, gorro azul marino, chaqueta mostaza. Laboratorio: voluntario rapado con camiseta gris; investigadora con coleta, gafas y bata.
-- Idea visual: el temblor no para nunca (pierna, cinta exprés, cuerda naranja vibrando) y solo se para una vez, en la escena 8. Sonido-firma: el tintineo metálico de la cinta; el silencio es el talón bajando.
-- Paleta: caliza fría y cielo de media mañana; el músculo, coral apagado (el naranja intenso sigue siendo solo de la cuerda).
-
-## Viralidad 13/14 (falta: el final vuelve a ti con alivio, pero no a tu relación). Crítico: 6,5 → 7/10 de envío tras aplicar sus cambios.
+## Viralidad 14/14 (autopuntuación). Crítico (pasada con su prompt): 7/10 de envío. Ver PR.

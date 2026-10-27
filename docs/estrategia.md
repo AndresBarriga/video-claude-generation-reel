@@ -19,3 +19,4 @@
 - 2026-10-27 · Andrés produce un stock de vídeos antes de abrir la cuenta; el orden de publicación se decide después con lo que haya.
 - 2026-10-27 · Cada vídeo nuevo empieza con una propuesta (opinión, 5 aperturas, guion, reparto, bocetos) que Andrés aprueba antes de producir. Reparto variado con el mismo estilo de dibujo.
 - 2026-10-27 · Crítico independiente (subagente `critico`) obligatorio antes de enseñar propuesta y vídeo; referencias en `docs/referencias.md`. E6 se hace en bloque.
+- 2026-10-27 · Vídeos de cuerpo/explicación con conflicto o humor (E11: el asegurador que se ríe y el vídeo te defiende). Inicios alternativos que solo cambian el rótulo, para reels de prueba sin rehacer la voz.

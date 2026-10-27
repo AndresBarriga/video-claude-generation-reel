@@ -7,10 +7,20 @@ import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { C, type P } from "./comun";
 import { Vertigo } from "./Vertigo";
+import { Asegurador } from "./Asegurador";
+import { Elvis } from "./Elvis";
 import { Gemelo } from "./Gemelo";
+import { Reflejo } from "./Reflejo";
+import { Chapa } from "./Chapa";
+import { Volumen } from "./Volumen";
 import { Laboratorio } from "./Laboratorio";
+import { Consejos } from "./Consejos";
+import { Cierre } from "./Cierre";
 
-const ESCENAS: Record<string, React.FC<P>> = { vertigo: Vertigo, gemelo: Gemelo, laboratorio: Laboratorio };
+const ESCENAS: Record<string, React.FC<P>> = {
+  vertigo: Vertigo, asegurador: Asegurador, elvis: Elvis, gemelo: Gemelo, reflejo: Reflejo, chapa: Chapa,
+  volumen: Volumen, laboratorio: Laboratorio, consejos: Consejos, cierre: Cierre,
+};
 
 export const Pierna: React.FC<{ datos: Datos }> = ({ datos }) => {
   const { fps } = useVideoConfig();

@@ -1,42 +1,42 @@
-// Explicación con el cuerpo: plano medio, todo apagado salvo la pierna; el gemelo se ve por dentro y se enciende en cada sacudida.
+// «En tu defensa»: plano medio y una lupa sale de tu pantorrilla con el corte por dentro; «gemelo» se señala al decirlo.
 import React from "react";
-import { interpolate, useCurrentFrame } from "remotion";
-import { Camara, Cielo, P11, Pared, Svg, Valle, temblor, type P } from "./comun";
-import { Tu, caderaDe, POSE_PARED } from "./Tu";
+import { spring, useCurrentFrame } from "remotion";
+import { Camara, Marca, Svg, temblor, type P } from "./comun";
+import { PlanoPared, PX, PY } from "./Plano";
+import { caderaDe } from "./Tu";
+import { Pantorrilla } from "./Pantorrilla";
 
-const rad = (g: number) => (g * Math.PI) / 180;
-export const PlanoGemelo: React.FC<{ d: number; lento?: number; k?: number }> = ({ d, lento = 1, k = 1 }) => {
-  const f = useCurrentFrame();
-  const tr = temblor(f / lento, k);
-  const s = 3, px = 780, py = 1240;
-  const h = caderaDe(px, py, s);
-  // rodilla y tobillo con el temblor aplicado (mismo cálculo que en Tu)
-  const aR = 64 - 7 * tr, aT = -6 - 16 * tr;
-  const rod: [number, number] = [h.x + Math.sin(rad(aR)) * 66 * s, h.y + Math.cos(rad(aR)) * 66 * s];
-  const tob: [number, number] = [rod[0] + Math.sin(rad(aT)) * 64 * s, rod[1] + Math.cos(rad(aT)) * 64 * s];
-  const ang = (Math.atan2(tob[1] - rod[1], tob[0] - rod[0]) * 180) / Math.PI;
-  const contrae = Math.max(0, -tr); // se enciende cuando el talón sube
-  const mx = (rod[0] * 0.6 + tob[0] * 0.4), my = (rod[1] * 0.6 + tob[1] * 0.4);
+export const Lupa: React.FC<{ k: number; de: [number, number]; cx: number; cy: number; r: number; children: React.ReactNode }> = ({ k, de, cx, cy, r, children }) => {
+  const rr = r * k, ang = Math.atan2(cy - de[1], cx - de[0]), perp = ang + Math.PI / 2;
   return (
-    <Camara d={d} empuje={0.08} foco={`${(mx / 1080) * 100}% ${(my / 1920) * 100}%`}>
+    <g>
+      <defs><clipPath id="lupa"><circle cx={cx} cy={cy} r={rr} /></clipPath></defs>
+      <path d={`M${de[0] + Math.cos(perp) * 40} ${de[1] + Math.sin(perp) * 40} L${cx + Math.cos(perp) * rr} ${cy + Math.sin(perp) * rr} L${cx - Math.cos(perp) * rr} ${cy - Math.sin(perp) * rr} L${de[0] - Math.cos(perp) * 40} ${de[1] - Math.sin(perp) * 40} Z`} fill="#fff" opacity={0.18 * k} />
+      <circle cx={de[0]} cy={de[1]} r={44} fill="none" stroke="#fff" strokeWidth={6} opacity={k} />
+      <circle cx={cx} cy={cy} r={rr} fill="#0E1A2A" />
+      <g clipPath="url(#lupa)">{children}</g>
+      <circle cx={cx} cy={cy} r={rr} fill="none" stroke="#fff" strokeWidth={10} />
+    </g>
+  );
+};
+
+export const Gemelo: React.FC<P> = ({ d, pal }) => {
+  const f = useCurrentFrame();
+  const tr = temblor(f, 1);
+  const k = spring({ frame: f - 4, fps: 30, config: { damping: 14, stiffness: 160 } });
+  const h = caderaDe(PX, PY, 3);
+  const pant: [number, number] = [h.x + (h.p.rodilla[0] + h.p.tobillo[0]) / 2 - 10, h.y + (h.p.rodilla[1] + h.p.tobillo[1]) / 2];
+  const g = pal("gemelo") ?? Math.round(d * 0.8);
+  return (
+    <Camara d={d} empuje={0.04} foco="50% 45%">
+      <PlanoPared f={f} tr={tr} amp={0.8} cara="esfuerzo" />
       <Svg>
-        <Cielo id="gcielo" />
-        <Valle y={1700} />
-        <Pared x0={px + 2} semilla="g" />
-        <Tu px={px} py={py} s={s} tr={tr} cara="esfuerzo" cabeza={POSE_PARED.cabeza} />
-        <rect x={-100} y={-100} width={1300} height={2200} fill="#06101C" opacity={0.5} />
-        <defs><clipPath id="gclip"><circle cx={mx} cy={my} r={170} /></clipPath></defs>
-        <g clipPath="url(#gclip)"><Pared x0={px + 2} semilla="g" /><Tu px={px} py={py} s={s} tr={tr} cara="esfuerzo" /></g>
-        <circle cx={mx} cy={my} r={170} fill="none" stroke="#fff" strokeOpacity={0.5} strokeWidth={4} />
-        {/* gemelo por dentro: detrás de la tibia, hacia el talón */}
-        <g transform={`translate(${mx} ${my}) rotate(${ang})`}>
-          <ellipse cx={0} cy={11 * s} rx={46 * s} ry={14 * s * (1 + 0.25 * contrae)} fill={P11.musculo} opacity={0.75 + 0.25 * contrae} />
-          <path d={`M${36 * s} ${16 * s} L${74 * s} ${14 * s}`} stroke="#F4D9C8" strokeWidth={5 * s} strokeLinecap="round" />
-          <ellipse cx={0} cy={11 * s} rx={46 * s + 18} ry={14 * s + 18} fill="none" stroke={P11.musculo} strokeWidth={6} opacity={0.5 * contrae} />
-        </g>
+        <rect width={1080} height={1920} fill="#06101C" opacity={0.35 * k} />
+        <Lupa k={k} de={pant} cx={470} cy={640} r={330}>
+          <g transform="translate(600 925) scale(0.98)"><Pantorrilla th={tr * 5} c={Math.max(0, tr)} e={Math.max(0, -tr)} /></g>
+        </Lupa>
+        <Marca texto="gemelo" x={385} y={600} tx={560} ty={360} o={Math.min(1, Math.max(0, (f - g) / 5))} />
       </Svg>
     </Camara>
   );
 };
-
-export const Gemelo: React.FC<P> = ({ d }) => <PlanoGemelo d={d} lento={interpolate(0, [0, 1], [1, 1])} />;

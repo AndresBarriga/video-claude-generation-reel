@@ -200,6 +200,16 @@ const RECETAS = {
     mezclar(out, env(biquad(ruido(Math.round(0.01 * SR), 122), "hp", 3000), (s) => Math.exp(-s * 500)), 0.07, 0.7);
     return normalizar(out, 0.9);
   },
+  /** Tintineo de cinta exprés contra la roca: golpecitos metálicos irregulares ~6 por segundo (bucle 4 s). Para la pierna que tiembla. */
+  tintineo() {
+    const seg = 5, out = buf(seg), r = prng(141);
+    for (let t = 0.02; t < seg - 0.1; t += 0.13 + Math.abs(r()) * 0.07) {
+      const g = 0.4 + Math.abs(r()) * 0.6, f = 2600 + r() * 400;
+      mezclar(out, env(biquad(ruido(Math.round(0.006 * SR), 150 + Math.round(t * 100)), "hp", 3500), (s) => Math.exp(-s * 600)), t, g);
+      for (const [k, a] of [[1, 0.45], [1.52, 0.3], [2.31, 0.15]]) mezclar(out, env(seno(0.12, f * k), (s) => Math.exp(-s * 45)), t + 0.001, a * g);
+    }
+    return nivelar(bucle(out, 0.6), 0.1, 0.7);
+  },
 };
 
 /* ---------- WAV ---------- */
