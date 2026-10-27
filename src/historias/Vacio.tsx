@@ -1,5 +1,6 @@
-// Plantilla a medida para T15 "Tocando el vacío". Todo dibujado en SVG.
-// Idea visual: la cuerda naranja es el hilo conductor de toda la historia.
+// E15 "Tocando el vacío" v2. Todo dibujado en SVG.
+// Idea visual: la cuerda naranja es el hilo conductor (une, se corta, cae deshilachada y vuelve a anudarse al final).
+// Personajes: Joe (rojo, casco amarillo) y Simon (azul petróleo, casco blanco), de src/piezas/Escalador.
 import React from "react";
 import {
   AbsoluteFill, Audio, Easing, Sequence, interpolate, random, spring, staticFile,
@@ -8,66 +9,95 @@ import {
 import { fuenteTexto, fuenteTitulo } from "../tema";
 import type { Datos, Escena } from "../tipos";
 import { Subtitulos } from "../Subtitulos";
-import config from "../../config.json";
+import { Escalador } from "../piezas/Escalador";
+import { Grano } from "../piezas/Grano";
 
 const C = {
-  noche1: "#0B1624", noche2: "#1C2E45", dia1: "#AFC3D6", dia2: "#EEF2F6",
-  nieve: "#EEF3F8", nieveSombra: "#C5D2DE", roca: "#24303F", roca2: "#34445A",
-  hielo1: "#0F2B40", hielo2: "#3E7EA6", cuerda: "#FF6A1F", blanco: "#FFFFFF", rojo: "#FF4B4B",
-  tinta: "#0B1624",
+  noche1: "#08111D", noche2: "#1A2C44", lejos: "#22364F", lejos2: "#2D4664",
+  dia1: "#A9C0D6", dia2: "#EEF2F6", lejosDia: "#B9CADB", lejosDia2: "#8FA7BF",
+  nieve: "#EEF3F8", nieveSombra: "#B9C8D6", nieveNoche: "#9FB2C6", nieveNocheS: "#6F86A0",
+  roca: "#1E2937", roca2: "#2C3A4D", hielo1: "#0E2A40", hielo2: "#3C7FA8", hielo3: "#7FB7D6",
+  cuerda: "#FF6A1F", cuerdaS: "#B8460E", blanco: "#FFFFFF", tinta: "#0B1624", luz: "#FFE7A8",
 };
 const W = 1080, H = 1920;
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 /* ---------- piezas comunes ---------- */
-const Fondo: React.FC<{ a: string; b: string; id: string }> = ({ a, b, id }) => (
+const Cielo: React.FC<{ a: string; b: string; id: string }> = ({ a, b, id }) => (
   <>
-    <defs>
-      <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stopColor={a} />
-        <stop offset="1" stopColor={b} />
-      </linearGradient>
-    </defs>
+    <defs><linearGradient id={id} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={a} /><stop offset="1" stopColor={b} /></linearGradient></defs>
     <rect width={W} height={H} fill={`url(#${id})`} />
   </>
 );
 
-const Nieve: React.FC<{ n?: number; vel?: number; viento?: number; seed?: string; op?: number }> = ({ n = 70, vel = 3, viento = 1, seed = "s", op = 0.8 }) => {
+/** Cordillera lejana (plano de fondo, poco contraste). */
+const Cordillera: React.FC<{ y: number; color: string; seed: string; amp?: number; nieve?: string; dx?: number }> = ({ y, color, seed, amp = 260, nieve, dx = 0 }) => {
+  const n = 9, pts: [number, number][] = [];
+  for (let i = 0; i <= n; i++) pts.push([-100 + (i * (W + 200)) / n + dx, y - (i % 2 ? amp * (0.5 + random(`${seed}${i}`) * 0.6) : amp * 0.15 * random(`${seed}b${i}`))]);
+  const d = `M-200 ${H} L${pts.map((p) => p.join(" ")).join(" L")} L${W + 200} ${H} Z`;
+  return (
+    <g>
+      <path d={d} fill={color} />
+      {nieve && pts.map((p, i) => i % 2 ? <path key={i} d={`M${p[0]} ${p[1]} l-46 ${60} l22 -6 l24 22 l20 -24 l22 6 Z`} fill={nieve} opacity={0.7} /> : null)}
+    </g>
+  );
+};
+
+const Copos: React.FC<{ n?: number; vel?: number; viento?: number; seed?: string; op?: number; grandes?: boolean }> = ({ n = 70, vel = 3, viento = 1, seed = "s", op = 0.8, grandes }) => {
   const f = useCurrentFrame();
   return (
     <g>
       {Array.from({ length: n }).map((_, i) => {
         const x0 = random(`${seed}x${i}`) * W, y0 = random(`${seed}y${i}`) * H;
-        const v = (0.5 + random(`${seed}v${i}`)) * vel, r = 2 + random(`${seed}r${i}`) * 5;
-        const y = (y0 + f * v) % H, x = (x0 + f * v * 0.4 * viento + Math.sin((f + i * 13) / 18) * 8) % W;
-        return <circle key={i} cx={x} cy={y} r={r} fill={C.blanco} opacity={op * (0.4 + random(`${seed}o${i}`) * 0.6)} />;
+        const v = (0.5 + random(`${seed}v${i}`)) * vel, r = (grandes ? 9 : 2) + random(`${seed}r${i}`) * (grandes ? 14 : 5);
+        const y = (y0 + f * v) % H, x = (((x0 + f * v * 0.4 * viento + Math.sin((f + i * 13) / 18) * 8) % W) + W) % W;
+        return <circle key={i} cx={x} cy={y} r={r} fill={C.blanco} opacity={op * (0.4 + random(`${seed}o${i}`) * 0.6)} filter={grandes ? "url(#desenfoque)" : undefined} />;
       })}
     </g>
   );
 };
 
-type Pose = "pie" | "sentado" | "colgado" | "cayendo" | "tumbado" | "arrastre";
-const Persona: React.FC<{ x: number; y: number; pose: Pose; color?: string; s?: number; rot?: number; pierna?: boolean }> = ({ x, y, pose, color = C.blanco, s = 1.6, rot = 0, pierna }) => {
-  const st = { stroke: color, strokeWidth: 14, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, fill: "none" };
-  const P: Record<Pose, React.ReactElement> = {
-    pie: (<g><circle cx={0} cy={-112} r={24} fill={color} /><path d="M0 -84 L0 -14 M0 -70 L-30 -34 M0 -70 L30 -34 M0 -14 L-22 44 M0 -14 L22 44" {...st} /></g>),
-    sentado: (<g><circle cx={-18} cy={-96} r={24} fill={color} /><path d="M-12 -70 L10 -10 M-6 -56 L36 -40 M10 -10 L64 -18 M64 -18 L74 26 M10 -10 L58 4" {...st} /></g>),
-    colgado: (<g><circle cx={0} cy={-88} r={24} fill={color} /><path d="M0 -62 L0 0 M0 -50 L-26 -6 M0 -50 L24 -8 M0 0 L-16 60 M0 0 L14 58" {...st} /></g>),
-    cayendo: (<g><circle cx={0} cy={-88} r={24} fill={color} /><path d="M0 -62 L0 0 M0 -50 L-44 -86 M0 -50 L42 -90 M0 0 L-34 46 M0 0 L30 56" {...st} /></g>),
-    tumbado: (<g><circle cx={-96} cy={-22} r={24} fill={color} /><path d="M-68 -16 L0 -10 M-50 -14 L-56 18 M0 -10 L58 -2 M0 -10 L56 20" {...st} /></g>),
-    arrastre: (<g><circle cx={-92} cy={-40} r={24} fill={color} /><path d="M-66 -28 L0 -14 M-52 -24 L-74 14 M-40 -20 L-22 14 M0 -14 L60 -6 M0 -14 L52 12" {...st} /></g>),
-  };
+/** Ráfagas de viento horizontales ("no le oye"). */
+const Viento: React.FC<{ n?: number; seed?: string; op?: number }> = ({ n = 18, seed = "w", op = 0.25 }) => {
+  const f = useCurrentFrame();
   return (
-    <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${s})`}>
-      {P[pose]}
-      {pierna && <circle cx={pose === "tumbado" || pose === "arrastre" ? 40 : 18} cy={pose === "tumbado" || pose === "arrastre" ? 6 : 26} r={16} fill={C.rojo} />}
+    <g>
+      {Array.from({ length: n }).map((_, i) => {
+        const y = 300 + random(`${seed}y${i}`) * 1100, L = 120 + random(`${seed}l${i}`) * 260, v = 24 + random(`${seed}v${i}`) * 30;
+        const x = ((random(`${seed}x${i}`) * 2000 + f * v) % 2000) - 500;
+        return <line key={i} x1={x} y1={y} x2={x + L} y2={y - 6} stroke={C.blanco} strokeWidth={3} strokeLinecap="round" opacity={op} />;
+      })}
     </g>
   );
 };
 
-const Cuerda: React.FC<{ d: string; w?: number; dash?: number; largo?: number }> = ({ d, w = 12, dash, largo = 3000 }) => (
-  <path d={d} stroke={C.cuerda} strokeWidth={w} fill="none" strokeLinecap="round"
-    strokeDasharray={dash !== undefined ? largo : undefined} strokeDashoffset={dash !== undefined ? largo * (1 - dash) : undefined} />
+const Defs: React.FC = () => (
+  <defs>
+    <filter id="desenfoque" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" /></filter>
+    <filter id="desenfoque2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="14" /></filter>
+    <radialGradient id="halo"><stop offset="0" stopColor={C.luz} stopOpacity="0.9" /><stop offset="1" stopColor={C.luz} stopOpacity="0" /></radialGradient>
+  </defs>
+);
+
+/** Cuerda con sombra y trenzado. */
+const Cuerda: React.FC<{ d: string; w?: number; dash?: number; largo?: number; op?: number }> = ({ d, w = 11, dash, largo = 3000, op = 1 }) => {
+  const da = dash !== undefined ? largo : undefined, off = dash !== undefined ? largo * (1 - dash) : undefined;
+  return (
+    <g opacity={op}>
+      <path d={d} stroke={C.cuerdaS} strokeWidth={w + 4} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray={da} strokeDashoffset={off} />
+      <path d={d} stroke={C.cuerda} strokeWidth={w} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray={da} strokeDashoffset={off} />
+      {dash === undefined && <path d={d} stroke="#FFB27F" strokeWidth={Math.max(2, w * 0.22)} fill="none" strokeDasharray={`${w * 0.9} ${w * 1.1}`} opacity={0.7} />}
+    </g>
+  );
+};
+
+/** Extremo cortado y deshilachado de la cuerda en (x, y) apuntando con ángulo `a` (grados). */
+const Deshilachado: React.FC<{ x: number; y: number; a?: number; w?: number }> = ({ x, y, a = 0, w = 11 }) => (
+  <g transform={`translate(${x} ${y}) rotate(${a})`}>
+    {[-0.4, -0.15, 0.1, 0.35].map((k, i) => (
+      <path key={i} d={`M0 ${k * w * 1.6} q${w * 0.9} ${k * w * 1.4 + (i % 2 ? 3 : -3)} ${w * 1.6} ${k * w * 2.6}`} stroke={i % 2 ? C.cuerda : "#FFB27F"} strokeWidth={Math.max(2, w * 0.28)} fill="none" strokeLinecap="round" />
+    ))}
+  </g>
 );
 
 const Etiqueta: React.FC<{ texto?: string; oscuro?: boolean }> = ({ texto, oscuro = true }) => {
@@ -75,79 +105,105 @@ const Etiqueta: React.FC<{ texto?: string; oscuro?: boolean }> = ({ texto, oscur
   if (!texto) return null;
   const s = spring({ frame: f - 2, fps, config: { damping: 16, stiffness: 180 } });
   return (
-    <div style={{ position: "absolute", top: 210, left: 70, right: 70, display: "flex", justifyContent: "center" }}>
+    <div style={{ position: "absolute", top: 220, left: 70, right: 70, display: "flex", justifyContent: "center" }}>
       <div style={{
-        fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 64, lineHeight: 1.05, textAlign: "center",
+        fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 66, lineHeight: 1.05, textAlign: "center",
         color: oscuro ? C.blanco : C.tinta, transform: `translateY(${(1 - s) * -30}px)`, opacity: s,
-        textShadow: oscuro ? "0 4px 24px rgba(0,0,0,.45)" : "none",
+        textShadow: oscuro ? "0 4px 24px rgba(0,0,0,.55)" : "0 2px 16px rgba(255,255,255,.6)",
       }}>{texto}</div>
     </div>
   );
 };
 
-/** Cámara: pequeño zoom de entrada + empuje lento; sacudida opcional */
-const Camara: React.FC<{ d: number; children: React.ReactNode; empuje?: number; sacudida?: number }> = ({ d, children, empuje = 0.05, sacudida = 0 }) => {
+/** Contador grande (dato animado). */
+const Contador: React.FC<{ texto: string; sub?: string; top?: number; color?: string }> = ({ texto, sub, top = 300, color = C.blanco }) => (
+  <div style={{ position: "absolute", top, left: 0, right: 0, textAlign: "center", fontFamily: fuenteTitulo, fontWeight: 800, color, textShadow: "0 6px 30px rgba(0,0,0,.45)" }}>
+    <div style={{ fontSize: 132, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{texto}</div>
+    {sub && <div style={{ fontFamily: fuenteTexto, fontWeight: 700, fontSize: 46, marginTop: 10, fontVariantNumeric: "tabular-nums" }}>{sub}</div>}
+  </div>
+);
+
+/** Cámara: zoom de entrada + empuje lento hacia un punto; sacudida opcional. */
+const Camara: React.FC<{ d: number; children: React.ReactNode; empuje?: number; sacudida?: number; foco?: string }> = ({ d, children, empuje = 0.05, sacudida = 0, foco = "50% 50%" }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const entrada = spring({ frame: f, fps, config: { damping: 20, stiffness: 160 } });
-  const sc = 1 + 0.07 * (1 - entrada) + empuje * (f / Math.max(1, d));
+  const sc = 1 + 0.06 * (1 - entrada) + empuje * (f / Math.max(1, d));
   const sx = sacudida ? Math.sin(f * 2.3) * sacudida : 0, sy = sacudida ? Math.cos(f * 1.7) * sacudida : 0;
-  return <AbsoluteFill style={{ transform: `translate(${sx}px, ${sy}px) scale(${sc})` }}>{children}</AbsoluteFill>;
+  return <AbsoluteFill style={{ transform: `translate(${sx}px, ${sy}px) scale(${sc})`, transformOrigin: foco }}>{children}</AbsoluteFill>;
 };
 
-const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ position: "absolute", inset: 0 }}>{children}</svg>
+/** Acerca el plano medio (personajes ≥25 % de altura) sin tocar el cielo. */
+const Zoom: React.FC<{ s: number; cx: number; cy: number; dy?: number; children: React.ReactNode }> = ({ s, cx, cy, dy = 0, children }) => (
+  <g transform={`translate(${cx} ${cy + dy}) scale(${s}) translate(${-cx} ${-cy})`}>{children}</g>
 );
+
+const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ position: "absolute", inset: 0 }}><Defs />{children}</svg>
+);
+const fmt = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 /* ---------- escenas ---------- */
 type P = { e: Escena; d: number };
 
-// Gancho y cierre comparten imagen (bucle)
-const ImagenColgando: React.FC<{ noche?: boolean }> = ({ noche = true }) => {
+// Gancho y cierre comparten imagen (bucle): Simon aguanta en la nieve, Joe cuelga bajo el saliente.
+const ImagenColgando: React.FC = () => {
   const f = useCurrentFrame();
-  const jx = 720 + Math.sin(f / 16) * 14, jy = 1230;
+  const vaiven = Math.sin(f / 18);
+  const jx = 790 + vaiven * 16, jy = 1030;
+  const sx = 390, sy = 560;
   return (
     <Svg>
-      <Fondo a={noche ? C.noche1 : C.dia1} b={noche ? C.noche2 : C.dia2} id="fcol" />
-      <Nieve seed="col" vel={4} viento={1.5} />
-      {/* meseta de nieve y pared */}
-      <path d={`M0 760 Q300 700 640 742 L660 760 L700 1920 L0 1920 Z`} fill={C.roca} />
-      <path d={`M0 700 Q330 650 650 700 L640 760 Q300 720 0 770 Z`} fill={C.nieve} />
-      <path d={`M640 742 L700 1920`} stroke={C.roca2} strokeWidth={6} />
-      <Persona x={330} y={700} pose="sentado" />
-      <Cuerda d={`M372 664 Q520 700 650 724 L${jx} ${jy}`} />
-      <Persona x={jx} y={jy + 6} pose="colgado" pierna />
+      <Cielo a={C.noche1} b={C.noche2} id="fcol" />
+      <Cordillera y={1000} color={C.lejos} seed="c1" nieve="#3B5577" />
+      <Copos seed="col" vel={4} viento={1.5} op={0.7} />
+      <Zoom s={1.4} cx={600} cy={760} dy={60}>
+      {/* pared con desplome: la base se mete hacia dentro, Joe cuelga en el vacío */}
+      <path d="M0 600 Q320 560 640 590 L700 612 Q660 650 600 668 Q560 900 540 1920 L0 1920 Z" fill={C.roca} />
+      <path d="M600 668 Q560 900 540 1920 L500 1920 Q520 900 570 680 Z" fill={C.roca2} />
+      <path d="M0 586 Q320 540 650 576 L706 606 L696 620 Q600 600 320 608 Q160 612 0 622 Z" fill={C.nieveNoche} />
+      <path d="M0 586 Q320 540 650 576 L706 606" stroke={C.nieve} strokeWidth={6} fill="none" opacity={0.7} />
+      {/* asiento excavado */}
+      <ellipse cx={sx - 10} cy={sy + 26} rx={110} ry={26} fill={C.nieveNocheS} />
+      <Escalador x={sx} y={sy} quien="simon" pose="tirando" cara="esfuerzo" s={0.95} />
+      <Cuerda d={`M${sx + 22} ${sy - 18} Q${(sx + 700) / 2} ${sy + 20} 696 606 L${jx + 6} ${jy - 46}`} />
+      <Escalador x={jx} y={jy} quien="joe" pose="colgadoRota" cara="miedo" s={1.05} rot={-vaiven * 4} />
+      </Zoom>
+      {/* primer plano: ventisca desenfocada */}
+      <Copos seed="colG" n={10} vel={10} viento={2} op={0.5} grandes />
     </Svg>
   );
 };
 
 const Colgando: React.FC<P> = ({ e, d }) => (
   <>
-    <Camara d={d} empuje={0.08}><AbsoluteFill style={{ transform: "scale(1.25)", transformOrigin: "62% 52%" }}><ImagenColgando /></AbsoluteFill></Camara>
+    <Camara d={d} empuje={0.1} foco="60% 55%"><ImagenColgando /></Camara>
     <Etiqueta texto={e.titulo} />
   </>
 );
 
 const Mapa: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
-  const pin = spring({ frame: f - 6, fps, config: { damping: 11 } });
-  const alt = Math.round(interpolate(f, [6, d * 0.7], [0, 6344], { ...clamp, easing: Easing.out(Easing.cubic) }));
-  const ano = Math.round(interpolate(f, [0, d * 0.6], [2026, 1985], { ...clamp, easing: Easing.out(Easing.cubic) }));
+  const pin = spring({ frame: f - 8, fps, config: { damping: 11 } });
+  const ano = Math.round(interpolate(f, [0, d * 0.55], [2026, 1985], { ...clamp, easing: Easing.out(Easing.cubic) }));
   return (
-    <Camara d={d} empuje={0.04}>
+    <Camara d={d} empuje={0.06} foco="50% 60%">
       <Svg>
-        <Fondo a="#D7E2EC" b="#F4F7FA" id="fmap" />
-        <path d="M0 1380 L120 1200 L230 1300 L360 1080 L470 1210 L560 900 L660 1150 L780 1040 L900 1240 L1080 1120 L1080 1920 L0 1920 Z" fill="#9FB3C7" />
-        <path d="M0 1500 L160 1330 L300 1440 L440 1260 L560 1380 L700 1290 L860 1420 L1080 1300 L1080 1920 L0 1920 Z" fill="#6F879F" />
-        <path d="M560 900 L520 960 L548 950 L566 990 L590 950 L612 972 Z" fill={C.nieve} />
-        <path d="M0 1640 L200 1540 L420 1620 L640 1520 L860 1610 L1080 1540 L1080 1920 L0 1920 Z" fill={C.roca2} />
-        <g transform={`translate(560 ${880 - (1 - pin) * 300}) scale(${pin})`}>
+        <Cielo a="#C9D8E6" b="#F4F7FA" id="fmap" />
+        <Cordillera y={1240} color={C.lejosDia} seed="m1" amp={220} />
+        {/* Siula Grande: cara oeste */}
+        <path d="M120 1500 L380 1120 L470 1180 L560 860 L650 1060 L720 1010 L960 1500 Z" fill="#7F97B0" />
+        <path d="M560 860 L470 1180 L520 1140 L548 1260 L590 1100 L650 1060 Z" fill="#617A94" />
+        <path d="M560 860 L506 960 L536 948 L560 1000 L586 950 L620 980 Z" fill={C.nieve} />
+        <path d="M380 1120 L340 1180 L372 1170 L392 1200 L410 1160 Z" fill={C.nieve} opacity={0.9} />
+        <Cordillera y={1560} color={C.roca2} seed="m2" amp={180} />
+        <g transform={`translate(560 ${840 - (1 - pin) * 260}) scale(${pin})`}>
           <path d="M0 0 C-40 -40 -40 -100 0 -100 C40 -100 40 -40 0 0 Z" fill={C.cuerda} />
           <circle cx={0} cy={-64} r={16} fill={C.blanco} />
         </g>
       </Svg>
-      <div style={{ position: "absolute", top: 560, left: 0, right: 0, textAlign: "center", fontFamily: fuenteTitulo, fontWeight: 800, color: C.tinta }}>
-        <div style={{ fontSize: 150, lineHeight: 1 }}>{ano}</div>
-        <div style={{ fontFamily: fuenteTexto, fontWeight: 700, fontSize: 44, marginTop: 8, color: "#3C4E63" }}>PERÚ · {alt.toLocaleString("es-ES")} m</div>
+      <div style={{ position: "absolute", top: 400, left: 0, right: 0, textAlign: "center", fontFamily: fuenteTitulo, fontWeight: 800, color: C.tinta }}>
+        <div style={{ fontSize: 170, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{ano}</div>
+        <div style={{ fontFamily: fuenteTexto, fontWeight: 700, fontSize: 48, marginTop: 8, color: "#3C4E63", letterSpacing: 4 }}>PERÚ</div>
       </div>
       <Etiqueta texto={e.titulo} oscuro={false} />
     </Camara>
@@ -156,25 +212,29 @@ const Mapa: React.FC<P> = ({ e, d }) => {
 
 const Pierna: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const t = d * 0.45;
-  const caida = interpolate(f, [t - 6, t], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
-  const flash = interpolate(f, [t, t + 3, t + 12], [0, 1, 0], clamp);
+  const t0 = d * 0.3, t = d * 0.48;
+  const caida = interpolate(f, [t0, t], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
+  const flash = interpolate(f, [t, t + 2, t + 9], [0, 1, 0], clamp);
+  const suelo = f >= t;
+  const jx = interpolate(caida, [0, 1], [430, 560]), jy = interpolate(caida, [0, 1], [780, 1170]);
+  const puff = Math.max(0, f - t);
   return (
-    <Camara d={d} empuje={0.08} sacudida={f > t && f < t + 10 ? 10 : 0}>
+    <Camara d={d} empuje={0.08} foco="55% 62%" sacudida={f > t && f < t + 10 ? 12 : 0}>
       <Svg>
-        <Fondo a="#C4D3E1" b="#EEF2F6" id="fpie" />
-        <path d="M0 1100 L1080 1500 L1080 1920 L0 1920 Z" fill={C.nieve} />
-        <path d="M0 1100 L1080 1500" stroke={C.nieveSombra} strokeWidth={8} />
-        <Persona x={interpolate(caida, [0, 1], [500, 560])} y={interpolate(caida, [0, 1], [1210, 1300])}
-          pose={caida < 1 ? "pie" : "tumbado"} color={C.tinta} rot={caida < 1 ? caida * 70 : 22} pierna={f > t} />
-        {f > t && (
-          <g transform="translate(600 1290)" opacity={interpolate(f, [t, t + 30], [1, 0.6], clamp)}>
-            {[0, 45, 90, 135, 180, 225, 270, 315].map((a) => (
-              <line key={a} x1={0} y1={0} x2={Math.cos((a * Math.PI) / 180) * 90} y2={Math.sin((a * Math.PI) / 180) * 90} stroke={C.rojo} strokeWidth={10} strokeLinecap="round" />
-            ))}
-          </g>
-        )}
-        <rect width={W} height={H} fill={C.blanco} opacity={flash * 0.8} />
+        <Cielo a="#B4C7DA" b="#EEF2F6" id="fpie" />
+        <Cordillera y={980} color={C.lejosDia} seed="p1" amp={240} nieve="#E4ECF3" />
+        {/* escalón de hielo */}
+        <path d="M0 830 L470 830 L500 870 L520 1120 L1080 1260 L1080 1920 L0 1920 Z" fill={C.nieve} />
+        <path d="M470 830 L500 870 L520 1120 L470 1110 Z" fill={C.hielo3} />
+        <path d="M520 1120 L1080 1260" stroke={C.nieveSombra} strokeWidth={8} />
+        {suelo && <ellipse cx={560} cy={1200} rx={130} ry={18} fill="#000" opacity={0.15} />}
+        <Escalador x={jx} y={suelo ? 1176 : jy} quien="joe" pose={suelo ? "tumbadoRota" : "pie"} poseB={suelo ? undefined : "cayendo"} t={caida}
+          cara={suelo ? "dolor" : caida > 0 ? "miedo" : "normal"} rot={suelo ? 14 : caida * 50} s={1.1} sombra={suelo ? undefined : 836} />
+        {puff > 0 && Array.from({ length: 26 }).map((_, i) => {
+          const a = random(`pa${i}`) * Math.PI, v = 6 + random(`pv${i}`) * 12;
+          return <circle key={i} cx={560 + Math.cos(a) * v * puff * 1.4} cy={1190 - Math.sin(a) * v * puff + puff * puff * 0.25} r={6 + random(`pr${i}`) * 12} fill={C.blanco} opacity={interpolate(puff, [0, 24], [1, 0], clamp)} />;
+        })}
+        <rect width={W} height={H} fill={C.blanco} opacity={flash * 0.7} />
       </Svg>
       <Etiqueta texto={e.titulo} oscuro={false} />
     </Camara>
@@ -183,28 +243,34 @@ const Pierna: React.FC<P> = ({ e, d }) => {
 
 const Descenso: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  // 3 tramos de bajada
   const tramos = 3, p = f / d;
   const k = Math.min(tramos - 0.001, p * tramos), base = Math.floor(k), dentro = k - base;
-  const avance = (base + Easing.inOut(Easing.cubic)(Math.min(1, dentro * 1.4))) / tramos;
-  const x0 = 260, y0 = 520, x1 = 900, y1 = 1600;
-  const jx = x0 + (x1 - x0) * (0.2 + 0.75 * avance), jy = y0 + (y1 - y0) * (0.2 + 0.75 * avance);
+  const tramo = Easing.inOut(Easing.cubic)(Math.min(1, dentro * 1.3));
+  // la ladera se desplaza: cada tramo, Joe baja 90 m y la escena "sube" para seguirle
+  const ang = 32, sx = 250, sy = 620;
+  const dist = 140 + 520 * tramo;
+  const jx = sx + Math.cos((ang * Math.PI) / 180) * dist, jy = sy + Math.sin((ang * Math.PI) / 180) * dist;
+  const metros = Math.round(90 * tramo);
   return (
     <Camara d={d} empuje={0.03}>
       <Svg>
-        <Fondo a="#9DB2C7" b="#E3EAF1" id="fdes" />
-        <path d={`M0 380 L1080 1500 L1080 1920 L0 1920 Z`} fill={C.nieve} />
-        <path d={`M0 380 L1080 1500`} stroke={C.nieveSombra} strokeWidth={8} />
-        <Persona x={x0} y={y0} pose="sentado" color={C.tinta} rot={46} />
-        <Cuerda d={`M${x0 + 30} ${y0 - 20} L${jx} ${jy - 40}`} />
-        <Persona x={jx} y={jy} pose="tumbado" color={C.tinta} rot={46} pierna />
-        {/* regla de 90 m */}
-        {[0, 1, 2, 3].map((i) => {
-          const q = i / 3, rx = x0 + 120 + (x1 - x0 - 120) * q * 0.95, ry = y0 - 120 + (y1 - y0) * q * 0.95;
-          return <g key={i}><line x1={rx} y1={ry} x2={rx + 40} y2={ry - 40} stroke={C.tinta} strokeWidth={6} />
-            <text x={rx + 54} y={ry - 44} fontFamily={fuenteTexto} fontWeight={700} fontSize={40} fill={C.tinta}>{i * 90} m</text></g>;
-        })}
+        <Cielo a="#93A9C0" b="#DCE5EE" id="fdes" />
+        <Cordillera y={900} color={C.lejosDia2} seed={`d${base}`} amp={200} nieve="#E4ECF3" />
+        <path d={`M0 ${sy + 40 - Math.tan((ang * Math.PI) / 180) * sx} L${W} ${sy + 40 + Math.tan((ang * Math.PI) / 180) * (W - sx)} L${W} ${H} L0 ${H} Z`} fill={C.nieve} />
+        <path d={`M0 ${sy + 40 - Math.tan((ang * Math.PI) / 180) * sx} L${W} ${sy + 40 + Math.tan((ang * Math.PI) / 180) * (W - sx)}`} stroke={C.nieveSombra} strokeWidth={8} />
+        {/* surco que deja Joe al deslizarse */}
+        <line x1={sx + 60} y1={sy + 70} x2={jx - 20} y2={jy + 40} stroke={C.nieveSombra} strokeWidth={22} strokeLinecap="round" opacity={0.6} />
+        <ellipse cx={sx - 10} cy={sy + 34} rx={100} ry={24} fill={C.nieveSombra} transform={`rotate(${ang} ${sx} ${sy + 34})`} />
+        <Escalador x={sx} y={sy} quien="simon" pose="sentado" cara="esfuerzo" rot={ang * 0.5} s={0.95} />
+        <Cuerda d={`M${sx + 40} ${sy - 4} L${jx - 70} ${jy - 8}`} />
+        <Escalador x={jx} y={jy} quien="joe" pose="tumbadoRota" cara="dolor" rot={ang} s={0.95} />
       </Svg>
+      {/* indicador de cuerda */}
+      <div style={{ position: "absolute", right: 90, top: 330, width: 26, height: 360, borderRadius: 13, background: "rgba(11,22,36,.18)" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: `${(metros / 90) * 100}%`, borderRadius: 13, background: C.cuerda }} />
+      </div>
+      <div style={{ position: "absolute", right: 60, top: 710, width: 200, textAlign: "center", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 62, color: C.tinta, fontVariantNumeric: "tabular-nums" }}>{metros} m</div>
+      <div style={{ position: "absolute", right: 60, top: 780, width: 200, textAlign: "center", fontFamily: fuenteTexto, fontWeight: 700, fontSize: 34, color: "#3C4E63" }}>tramo {base + 1}</div>
       <Etiqueta texto={e.titulo} oscuro={false} />
     </Camara>
   );
@@ -212,93 +278,115 @@ const Descenso: React.FC<P> = ({ e, d }) => {
 
 const Noche: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const jx = 760 + Math.sin(f / 14) * 18;
-  const x = interpolate(f, [d * 0.4, d * 0.55], [0, 1], clamp);
+  const vaiven = Math.sin(f / 14);
+  const jx = 820 + vaiven * 18, jy = 1120;
+  const sx = 360, sy = 620;
   return (
-    <Camara d={d} empuje={0.05}>
+    <Camara d={d} empuje={0.05} foco="60% 50%">
       <Svg>
-        <Fondo a="#050B14" b="#13233A" id="fnoc" />
-        <Nieve seed="noc" n={140} vel={9} viento={3} op={0.6} />
-        <path d="M0 860 L620 860 L640 900 L660 1920 L0 1920 Z" fill={C.roca} />
-        <path d="M0 820 L630 820 L640 870 L0 880 Z" fill={C.nieveSombra} opacity={0.8} />
-        <Persona x={260} y={830} pose="sentado" />
-        <Cuerda d={`M300 794 L630 846 L${jx} 1420`} />
-        <Persona x={jx} y={1426} pose="colgado" pierna />
-        <line x1={290} y1={760} x2={jx} y2={1340} stroke={C.blanco} strokeWidth={5} strokeDasharray="14 16" opacity={0.6} />
-        <g transform={`translate(560 1010) scale(${x})`}>
-          <line x1={-50} y1={-50} x2={50} y2={50} stroke={C.rojo} strokeWidth={18} strokeLinecap="round" />
-          <line x1={50} y1={-50} x2={-50} y2={50} stroke={C.rojo} strokeWidth={18} strokeLinecap="round" />
-        </g>
+        <Cielo a="#03070D" b="#0E1C2E" id="fnoc" />
+        <Cordillera y={1000} color="#13233A" seed="n1" />
+        <Zoom s={1.3} cx={620} cy={800}>
+        <path d="M0 660 Q320 620 640 650 L720 672 Q680 700 620 716 Q580 960 560 1920 L0 1920 Z" fill={C.roca} />
+        <path d="M0 646 Q320 600 660 636 L724 668 L712 682 Q600 662 320 668 Q160 672 0 682 Z" fill={C.nieveNocheS} />
+        {/* frontal de Simon: la luz llega al borde y no pasa del saliente */}
+        <path d={`M${sx + 56} ${sy - 150} L726 600 L716 700 Z`} fill={C.luz} opacity={0.22} />
+        <ellipse cx={706} cy={662} rx={40} ry={16} fill={C.luz} opacity={0.35} />
+        <Escalador x={sx} y={sy} quien="simon" pose="tirando" cara="miedo" s={0.95} />
+        <Cuerda d={`M${sx + 22} ${sy - 18} Q450 ${sy + 30} 714 666 L${jx + 6} ${jy - 46}`} />
+        {/* Joe, en la oscuridad bajo el desplome; solo su frontal */}
+        <circle cx={jx + 18} cy={jy - 140} r={120} fill="url(#halo)" opacity={0.35} />
+        <g opacity={0.9}><Escalador x={jx} y={jy} quien="joe" pose="colgadoRota" cara="miedo" s={0.95} rot={-vaiven * 5} /></g>
+        </Zoom>
+        <rect x={0} y={0} width={W} height={H} fill="#03070D" opacity={0.25} />
+        <Viento seed="noc" n={22} op={0.22} />
+        <Copos seed="noc" n={140} vel={9} viento={3} op={0.55} />
       </Svg>
       <Etiqueta texto={e.titulo} />
     </Camara>
   );
 };
 
-const Reloj: React.FC<P> = ({ e, d }) => {
+/** Hora y media aguantando: el asiento de nieve cede y Simon resbala hacia el borde. */
+const Resbala: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const t = interpolate(f, [0, d * 0.85], [0, 90], { ...clamp, easing: Easing.inOut(Easing.quad) });
-  const h = Math.floor(t / 60), m = Math.floor(t % 60);
-  const ang = (t / 60) * 360;
-  const ceder = interpolate(f, [d * 0.5, d], [0, 1], clamp);
+  const tiempo = interpolate(f, [0, d * 0.75], [0, 90], { ...clamp, easing: Easing.inOut(Easing.quad) });
+  const h = Math.floor(tiempo / 60), m = Math.floor(tiempo % 60);
+  const ceder = interpolate(f, [d * 0.35, d], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
+  const sx = 280 + ceder * 200, sy = 990, borde = 860;
+  const talon = sx + 200;
   return (
-    <Camara d={d} empuje={0.07} sacudida={ceder * 4}>
+    <Camara d={d} empuje={0.08} foco="60% 55%" sacudida={ceder * 3}>
       <Svg>
-        <Fondo a="#081220" b="#182A40" id="frel" />
-        <Nieve seed="rel" n={90} vel={6} viento={2} op={0.5} />
-        <circle cx={540} cy={760} r={250} fill="none" stroke={C.blanco} strokeWidth={14} opacity={0.9} />
-        <path d={`M540 760 L540 510 A250 250 0 ${ang % 360 > 180 ? 1 : 0} 1 ${540 + 250 * Math.sin((ang * Math.PI) / 180)} ${760 - 250 * Math.cos((ang * Math.PI) / 180)} Z`} fill={C.cuerda} opacity={0.35} />
-        <line x1={540} y1={760} x2={540 + 210 * Math.sin((ang * Math.PI) / 180)} y2={760 - 210 * Math.cos((ang * Math.PI) / 180)} stroke={C.cuerda} strokeWidth={16} strokeLinecap="round" />
-        <circle cx={540} cy={760} r={18} fill={C.blanco} />
-        {/* asiento de nieve que cede */}
-        <g transform={`translate(0 ${ceder * 40})`}>
-          <path d="M120 1260 Q420 1200 700 1250 L720 1320 L100 1330 Z" fill={C.nieve} />
-          <Persona x={340 + ceder * 40} y={1250} pose="sentado" />
-          <Cuerda d={`M380 1214 Q600 1240 720 1300 L760 1920`} />
-          {Array.from({ length: 22 }).map((_, i) => (
-            <circle key={i} cx={220 + random(`c${i}`) * 480} cy={1330 + ((f * (3 + random(`v${i}`) * 5) + random(`y${i}`) * 300) % 400) * ceder}
-              r={4 + random(`r${i}`) * 8} fill={C.nieve} opacity={ceder} />
-          ))}
-          {ceder > 0.2 && <path d={`M300 1230 L330 1262 L310 1290 M520 1226 L500 1260 L530 1300`} stroke={C.tinta} strokeWidth={6} fill="none" opacity={ceder} />}
-        </g>
+        <Cielo a="#050B14" b="#16283E" id="fres" />
+        <Cordillera y={1060} color="#152740" seed="r1" />
+        <path d={`M0 1040 L${borde} 1040 L${borde + 30} 1066 Q${borde + 10} 1090 ${borde - 20} 1110 L${borde - 60} 1920 L0 1920 Z`} fill={C.roca} />
+        <path d={`M0 1022 L${borde} 1022 L${borde + 34} 1060 L${borde + 20} 1080 Q600 1062 0 1080 Z`} fill={C.nieveNoche} />
+        {/* surcos que dejan los talones */}
+        <path d={`M${280 + 200} 1046 L${talon} 1046`} stroke={C.nieveNocheS} strokeWidth={18} strokeLinecap="round" opacity={ceder > 0 ? 1 : 0} />
+        {/* grietas en la cornisa */}
+        <path d={`M${borde - 40} 1030 l-30 30 l20 20 l-24 26 M${borde - 120} 1032 l14 28 l-18 26`} stroke={C.tinta} strokeWidth={5} fill="none" opacity={interpolate(ceder, [0.4, 0.7], [0, 0.8], clamp)} />
+        <Escalador x={sx} y={sy} quien="simon" pose="tirando" cara="esfuerzo" s={1.65} />
+        <Cuerda d={`M${sx + 40} ${sy - 30} L${borde + 10} 1050 L${borde + 30} ${H}`} w={14} />
+        {/* nieve que salta de los talones y cae por el borde */}
+        {Array.from({ length: 24 }).map((_, i) => {
+          const fase = ((f * (2 + random(`n${i}`) * 3) + random(`m${i}`) * 60) % 60) / 60;
+          return <circle key={i} cx={talon + fase * (borde - talon + 60) + random(`x${i}`) * 30} cy={1030 - Math.sin(fase * Math.PI) * 40 + Math.max(0, fase - 0.7) * 600} r={4 + random(`r${i}`) * 7} fill={C.nieve} opacity={ceder} />;
+        })}
+        <Copos seed="res" n={80} vel={7} viento={2} op={0.45} />
       </Svg>
-      <div style={{ position: "absolute", top: 700, left: 0, right: 0, textAlign: "center", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 120, color: C.blanco, fontVariantNumeric: "tabular-nums" }}>
-        {h}:{String(m).padStart(2, "0")}
-      </div>
+      <Contador texto={`${h}:${String(m).padStart(2, "0")} h`} top={330} />
       <Etiqueta texto={e.titulo} />
     </Camara>
   );
 };
 
+/** Primer plano: la mano de Simon corta la cuerda en el borde. */
 const Corte: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const t = Math.round(d * 0.55);
-  const navaja = interpolate(f, [0, t], [1300, 600], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const t = Math.round(d * 0.58);
+  const entra = interpolate(f, [0, t * 0.7], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const sierra = f < t && f > t * 0.7 ? Math.sin(f * 1.6) * 14 : 0;
   const cae = Math.max(0, f - t);
   const flash = interpolate(f, [t, t + 2, t + 8], [0, 1, 0], clamp);
+  const cx = 560, cy = 960; // punto de corte
   return (
-    <Camara d={d} empuje={0.12} sacudida={cae > 0 && cae < 12 ? 16 : 0}>
+    <Camara d={d} empuje={0.14} foco={`${(cx / W) * 100}% ${(cy / H) * 100}%`} sacudida={cae > 0 && cae < 12 ? 14 : 0}>
       <Svg>
-        <Fondo a="#03070D" b="#0E1B2C" id="fcor" />
-        <Nieve seed="cor" n={50} vel={5} op={0.4} />
-        {/* cuerda vertical gruesa, primer plano */}
+        <Cielo a="#02050A" b="#0C1828" id="fcor" />
+        {/* nieve del borde (primer plano) y vacío a la derecha */}
+        <path d="M0 1000 Q500 980 780 1010 L820 1060 Q700 1090 0 1120 Z" fill={C.nieveNocheS} />
+        <path d="M0 1080 Q500 1060 800 1080 L760 1920 L0 1920 Z" fill={C.roca} />
+        <path d="M0 990 Q500 966 790 1000 L822 1050" stroke={C.nieve} strokeWidth={6} fill="none" opacity={0.6} />
         {cae === 0 ? (
-          <path d={`M540 0 L540 1920`} stroke={C.cuerda} strokeWidth={46} />
+          <Cuerda d={`M-40 900 L${cx} ${cy} L800 1004 L840 ${H}`} w={40} />
         ) : (
           <>
-            <path d={`M540 0 L540 ${960 - Math.min(cae * 30, 300)}`} stroke={C.cuerda} strokeWidth={46} strokeLinecap="round" />
-            <g transform={`translate(${cae * 2} ${cae * cae * 2.2}) rotate(${cae * 1.2} 540 960)`}>
-              <path d={`M540 990 L540 1920`} stroke={C.cuerda} strokeWidth={46} strokeLinecap="round" />
+            {/* lado de Simon: retrocede */}
+            <g transform={`translate(${-Math.min(cae * 14, 160)} ${-Math.min(cae * 4, 40)})`}>
+              <Cuerda d={`M-40 900 L${cx - 16} ${cy - 2}`} w={40} />
+              <Deshilachado x={cx - 16} y={cy - 2} a={6} w={40} />
+            </g>
+            {/* lado de Joe: se va por el borde */}
+            <g transform={`translate(${cae * 6} ${cae * cae * 3})`} opacity={interpolate(cae, [8, 20], [1, 0], clamp)}>
+              <Cuerda d={`M${cx + 16} ${cy + 2} L800 1004 L840 ${H}`} w={40} />
+              <Deshilachado x={cx + 16} y={cy + 2} a={186} w={40} />
             </g>
           </>
         )}
-        {/* trenzado */}
-        {cae === 0 && Array.from({ length: 30 }).map((_, i) => <line key={i} x1={518} y1={i * 64} x2={562} y2={i * 64 + 30} stroke="#C84A0E" strokeWidth={6} />)}
-        {/* navaja */}
-        <g transform={`translate(${navaja} 975) rotate(-8)`} opacity={cae > 20 ? interpolate(cae, [20, 30], [1, 0], clamp) : 1}>
-          <path d="M0 0 L260 -30 L280 0 L260 22 Z" fill="#D8DEE6" />
-          <path d="M0 0 L260 -30 L280 0 Z" fill="#F4F7FA" />
-          <rect x={270} y={-26} width={260} height={52} rx={18} fill="#2A3442" />
+        {/* brazo de Simon con la navaja */}
+        <g transform={`translate(${interpolate(entra, [0, 1], [-200, 0]) + sierra} ${interpolate(entra, [0, 1], [500, 0]) + (cae > 0 ? Math.min(cae * 10, 120) : 0)})`}>
+          <path d={`M60 1920 L${cx - 120} ${cy + 140}`} stroke="#1F6E7E" strokeWidth={130} strokeLinecap="round" />
+          <path d={`M60 1920 L${cx - 120} ${cy + 140}`} stroke="#144B57" strokeWidth={40} strokeLinecap="round" opacity={0.4} transform="translate(-30 10)" />
+          <path d={`M${cx - 150} ${cy + 190} L${cx - 128} ${cy + 160}`} stroke="#F2C230" strokeWidth={130} strokeLinecap="butt" opacity={0} />
+          <path d={`M${cx - 168} ${cy + 214} L${cx - 140} ${cy + 176}`} stroke="#144B57" strokeWidth={138} strokeLinecap="butt" />
+          <circle cx={cx - 100} cy={cy + 110} r={72} fill="#1B2230" />
+          <path d={`M${cx - 60} ${cy + 60} q40 -10 50 20 M${cx - 48} ${cy + 96} q44 -6 50 24`} stroke="#2E3848" strokeWidth={22} strokeLinecap="round" fill="none" />
+          <g transform={`translate(${cx - 70} ${cy + 70}) rotate(-52)`}>
+            <rect x={-20} y={-24} width={110} height={48} rx={18} fill="#2A3442" />
+            <path d="M84 -18 L250 -6 L262 8 L84 20 Z" fill="#E8EDF2" />
+            <path d="M84 -18 L250 -6 L262 8 Z" fill="#FFFFFF" />
+          </g>
         </g>
         <rect width={W} height={H} fill={C.blanco} opacity={flash} />
       </Svg>
@@ -308,62 +396,94 @@ const Corte: React.FC<P> = ({ e, d }) => {
 
 const No: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
-  const t = d * 0.62;
+  const t = d * 0.6;
   const s = spring({ frame: f - t, fps, config: { damping: 9, stiffness: 220 } });
+  const balanceo = Math.sin(f / 12) * 6;
   return (
-    <AbsoluteFill style={{ background: "#03070D", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 420, color: C.cuerda, transform: `scale(${s})`, opacity: f > t ? 1 : 0, marginTop: -200 }}>NO.</div>
+    <AbsoluteFill style={{ background: "#03070D" }}>
+      <Svg>
+        <g transform={`rotate(${balanceo} 540 0)`} opacity={interpolate(f, [t - 4, t + 6], [1, 0.25], clamp)}>
+          <Cuerda d="M540 -20 L540 820" w={26} />
+          <Deshilachado x={540} y={820} a={90} w={26} />
+        </g>
+      </Svg>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+        <div style={{ fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 420, color: C.cuerda, transform: `scale(${s})`, opacity: f > t ? 1 : 0, marginTop: -260 }}>NO.</div>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
 
 const Grieta: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, d * 0.7], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
-  const aterriza = f > d * 0.7;
-  const scroll = p * 2400;
+  const ta = d * 0.68;
+  const p = interpolate(f, [0, ta], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
+  const aterriza = f >= ta;
+  const scroll = p * 2600;
   const prof = Math.round(p * 60);
-  const pared = (lado: number) => {
+  const pared = (lado: number, tono: string, seed: string) => {
     const pts: string[] = [];
-    for (let i = -2; i < 30; i++) {
-      const y = i * 160 - (scroll % 160) - 160 * Math.floor(scroll / 160) + scroll - scroll; // estable
-      const yy = i * 160 - (scroll % 320);
-      const x = lado < 0 ? 260 + random(`g${lado}${i + Math.floor(scroll / 320) * 2}`) * 90 : 820 - random(`g${lado}${i + Math.floor(scroll / 320) * 2}`) * 90;
-      pts.push(`${x},${yy}`);
-      void y;
+    const paso = 150, desf = scroll % paso, fila = Math.floor(scroll / paso);
+    for (let i = -2; i < 16; i++) {
+      const r = random(`${seed}${i + fila}`);
+      const x = lado < 0 ? 200 + r * 120 : 880 - r * 120;
+      pts.push(`${x},${i * paso - desf}`);
     }
-    return lado < 0 ? `0,-400 ${pts.join(" ")} 0,2400` : `1080,-400 ${pts.join(" ")} 1080,2400`;
+    const borde = lado < 0 ? 0 : W;
+    return <polygon points={`${borde},-400 ${pts.join(" ")} ${borde},2400`} fill={tono} />;
   };
+  // el puente de nieve aparece desde abajo al final de la caída
+  const puenteY = interpolate(p, [0.75, 1], [2100, 1220], clamp);
   return (
-    <Camara d={d} empuje={0.02} sacudida={aterriza && f < d * 0.7 + 8 ? 12 : 0}>
+    <Camara d={d} empuje={0.02} sacudida={aterriza && f < ta + 9 ? 14 : 0}>
       <Svg>
-        <Fondo a="#0A1F30" b="#020910" id="fgri" />
-        <polygon points={pared(-1)} fill={C.hielo2} />
-        <polygon points={pared(1)} fill="#2F6A91" />
-        {aterriza && <path d="M380 1280 L700 1270 L680 1320 L400 1330 Z" fill="#BFE0F2" />}
-        <Persona x={540} y={aterriza ? 1262 : 900} pose={aterriza ? "tumbado" : "cayendo"} rot={aterriza ? 0 : f * 4} pierna />
-        <Cuerda d={aterriza ? "M600 1250 Q700 1180 640 1100" : `M540 860 Q${540 + Math.sin(f / 3) * 60} 600 ${520 + Math.cos(f / 4) * 40} 420`} />
+        <Cielo a="#0B2236" b="#01060B" id="fgri" />
+        <g opacity={0.5}>{pared(-1, "#123650", "gl")}{pared(1, "#0F2E45", "gr")}</g>
+        {pared(-1, C.hielo2, "al")}{pared(1, "#2F6A91", "ar")}
+        <path d={`M150 ${puenteY} Q540 ${puenteY - 30} 930 ${puenteY} L900 ${puenteY + 70} Q540 ${puenteY + 40} 180 ${puenteY + 70} Z`} fill="#CFE6F3" />
+        {aterriza ? (
+          <>
+            <Cuerda d="M610 1190 Q700 1150 760 1196 Q800 1220 840 1200" w={10} />
+            <Escalador x={500} y={1190} quien="joe" pose="tumbadoRota" cara="dolor" s={1.05} />
+          </>
+        ) : (
+          <>
+            <Cuerda d={`M540 780 Q${540 + Math.sin(f / 3) * 60} 560 ${520 + Math.cos(f / 4) * 40} 360`} w={10} />
+            <Deshilachado x={520 + Math.cos(f / 4) * 40} y={360} a={-90} w={10} />
+            <Escalador x={540} y={880} quien="joe" pose="cayendo" cara="miedo" rot={Math.sin(f / 5) * 25} s={1.1} />
+          </>
+        )}
       </Svg>
-      <div style={{ position: "absolute", right: 80, top: 560, fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 96, color: C.blanco, fontVariantNumeric: "tabular-nums" }}>−{prof} m</div>
+      <Contador texto={`−${prof} m`} top={330} />
       <Etiqueta texto={e.titulo} />
     </Camara>
   );
 };
 
+/** Arriba es imposible: baja más hondo y encuentra luz. */
 const Salida: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const baja = interpolate(f, [0, d * 0.45], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
-  const luz = interpolate(f, [d * 0.4, d * 0.8], [0, 1], clamp);
+  const baja = interpolate(f, [d * 0.25, d * 0.62], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const luz = interpolate(f, [d * 0.5, d * 0.85], [0, 1], clamp);
+  const gira = interpolate(f, [d * 0.68, d * 0.95], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const jy = 740 + baja * 400;
   return (
-    <Camara d={d} empuje={0.06}>
+    <Camara d={d} empuje={0.06} foco="55% 55%">
       <Svg>
-        <Fondo a="#06131F" b="#010508" id="fsal" />
-        <path d="M0 0 L300 0 L240 1920 L0 1920 Z" fill="#1E4A68" />
-        <path d="M1080 0 L780 0 L860 1920 L1080 1920 Z" fill="#163C56" />
-        <path d={`M1080 900 L640 1080 L640 1240 L1080 1400 Z`} fill="#FFF6DA" opacity={luz * 0.55} />
-        <circle cx={1040} cy={1150} r={200} fill="#FFF6DA" opacity={luz * 0.7} />
-        <Cuerda d={`M520 300 L520 ${600 + baja * 420}`} w={10} />
-        <Persona x={520 + luz * 160} y={700 + baja * 420} pose={luz > 0.3 ? "arrastre" : "colgado"} pierna />
+        <Cielo a="#06131F" b="#010508" id="fsal" />
+        {/* rendija lejana arriba: inalcanzable */}
+        <path d="M480 0 L600 0 L560 380 L520 380 Z" fill="#9CC4DD" opacity={0.25} />
+        <path d="M0 0 L470 0 Q380 600 300 1920 L0 1920 Z" fill="#1E4A68" />
+        <path d="M1080 0 L610 0 Q720 700 820 1920 L1080 1920 Z" fill="#163C56" />
+        <path d="M330 612 L540 604 L524 636 Q430 664 330 690 Z" fill="#CFE6F3" />
+        <path d="M540 604 L524 636 Q430 664 330 690 L330 700 Q440 676 520 648 Z" fill="#6FA3C4" />
+        {/* luz de la salida */}
+        <path d={`M1080 980 L700 1160 L700 1300 L1080 1420 Z`} fill={C.luz} opacity={luz * 0.35} />
+        <ellipse cx={1060} cy={1200} rx={220} ry={260} fill="url(#halo)" opacity={luz} />
+        <path d="M0 1290 Q540 1260 1080 1290 L1080 1920 L0 1920 Z" fill="#7FB0CF" />
+        <path d="M0 1290 Q540 1260 1080 1290" stroke="#CFE6F3" strokeWidth={10} fill="none" />
+        <Cuerda d={`M470 630 L470 ${jy - 120}`} w={10} />
+        <Escalador x={470 + gira * 160} y={gira > 0 ? 1246 : jy} quien="joe" pose={gira > 0 ? "arrastre" : "colgadoRota"} cara={luz > 0.4 ? "esfuerzo" : "dolor"} s={1.05} />
       </Svg>
       <Etiqueta texto={e.titulo} />
     </Camara>
@@ -372,45 +492,59 @@ const Salida: React.FC<P> = ({ e, d }) => {
 
 const Arrastre: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [4, d * 0.92], [0, 1], { ...clamp, easing: Easing.inOut(Easing.sin) });
+  const p = interpolate(f, [4, d * 0.95], [0, 1], clamp);
   const dia = Math.min(3, 1 + Math.floor(p * 3));
   const km = (p * 8).toFixed(1).replace(".", ",");
-  const camino = "M200 520 C420 640 260 900 480 1000 C700 1100 560 1300 760 1380 C900 1440 860 1560 900 1600";
-  const L = 1900;
+  const ciclo = (p * 3) % 1; // 0 día · 0.5 noche
+  const noche = Math.sin(ciclo * Math.PI);
+  const mezcla = (a: string, b: string, t: number) => {
+    const h = (s: string) => [1, 3, 5].map((i) => parseInt(s.slice(i, i + 2), 16));
+    const [x, y] = [h(a), h(b)];
+    return `rgb(${x.map((v, i) => Math.round(v + (y[i] - v) * t)).join(",")})`;
+  };
+  const avance = f * 6;
+  const brazo = Math.sin(f / 6);
   return (
     <Camara d={d} empuje={0.03}>
       <Svg>
-        <Fondo a="#E9E4DA" b="#D9D1C2" id="farr" />
-        {Array.from({ length: 70 }).map((_, i) => (
-          <circle key={i} cx={random(`p${i}`) * W} cy={300 + random(`q${i}`) * 1500} r={6 + random(`r${i}`) * 18} fill="#B9AE9B" opacity={0.6} />
-        ))}
-        <path d={camino} stroke="#8F836F" strokeWidth={10} fill="none" strokeDasharray="4 22" strokeLinecap="round" />
-        <path d={camino} stroke={C.cuerda} strokeWidth={14} fill="none" strokeLinecap="round" strokeDasharray={L} strokeDashoffset={L * (1 - p)} />
-        <path d="M150 500 L250 490 L240 540 L160 545 Z" fill={C.hielo2} />
-        <path d="M860 1600 L940 1600 L900 1530 Z" fill="#3A6B4F" />
+        <Cielo a={mezcla("#9FB9D1", "#050B14", noche)} b={mezcla("#EADFCB", "#1A2C44", noche)} id="farr" />
+        <g transform={`translate(${-avance * 0.15} 0)`}><Cordillera y={1000} color={mezcla("#A9B9C9", "#1B2D45", noche)} seed="a1" nieve={mezcla("#EEF2F6", "#3B5577", noche)} /></g>
+        <path d={`M0 1240 L${W} 1240 L${W} ${H} L0 ${H} Z`} fill={mezcla("#B7AA95", "#2E3442", noche)} />
+        {/* piedras de la morrena en dos planos */}
+        {Array.from({ length: 30 }).map((_, i) => {
+          const x = ((random(`pa${i}`) * 2400 - avance * 0.6) % 2400 + 2400) % 2400 - 300, y = 1250 + random(`pb${i}`) * 60, r = 14 + random(`pc${i}`) * 26;
+          return <ellipse key={i} cx={x} cy={y} rx={r * 1.3} ry={r} fill={mezcla("#8F826D", "#232836", noche)} />;
+        })}
+        <Escalador x={500} y={1204} quien="joe" pose="arrastre" angulos={{ brazoA: [70 + brazo * 25, 120 + brazo * 15], brazoB: [30 - brazo * 25, 80 - brazo * 10] }} cara="dolor" s={1.45} sombra={1270} />
+        {Array.from({ length: 16 }).map((_, i) => {
+          const x = ((random(`fa${i}`) * 2600 - avance * 1.6) % 2600 + 2600) % 2600 - 300, r = 40 + random(`fc${i}`) * 50;
+          return <ellipse key={i} cx={x} cy={1390 + random(`fb${i}`) * 80} rx={r * 1.4} ry={r} fill={mezcla("#7A6E5C", "#1A1F2B", noche)} />;
+        })}
+        {/* estrellas de noche */}
+        {Array.from({ length: 40 }).map((_, i) => <circle key={i} cx={random(`e${i}`) * W} cy={random(`ey${i}`) * 900} r={2 + random(`er${i}`) * 2} fill="#fff" opacity={noche * 0.8} />)}
       </Svg>
-      <div style={{ position: "absolute", top: 230, left: 0, right: 0, textAlign: "center", color: C.tinta, fontFamily: fuenteTitulo, fontWeight: 800 }}>
-        <div style={{ fontSize: 120, lineHeight: 1 }}>DÍA {dia}</div>
-        <div style={{ fontFamily: fuenteTexto, fontWeight: 700, fontSize: 52, marginTop: 10, fontVariantNumeric: "tabular-nums" }}>{km} / 8 km · sin comida</div>
-      </div>
+      <Contador texto={`DÍA ${dia}`} sub={`${km} / 8 km`} top={300} />
     </Camara>
   );
 };
 
 const Campamento: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const llega = interpolate(f, [0, d * 0.9], [80, 380], clamp);
+  const llega = interpolate(f, [0, d * 0.85], [80, 400], clamp);
+  const gira = f > d * 0.55;
+  const brazo = Math.sin(f / 6);
   return (
-    <Camara d={d} empuje={0.05}>
+    <Camara d={d} empuje={0.05} foco="50% 60%">
       <Svg>
-        <Fondo a="#2B2140" b="#E58E5A" id="fcam" />
-        <path d="M0 1240 L1080 1200 L1080 1920 L0 1920 Z" fill="#5D4A3E" />
-        <circle cx={780} cy={1110} r={180} fill="#FFC27A" opacity={0.25 + 0.1 * Math.sin(f / 5)} />
-        <path d="M640 1220 L780 1010 L920 1220 Z" fill="#FF9A3C" />
-        <path d="M780 1010 L760 1220 L800 1220 Z" fill="#B8541A" />
-        <Persona x={980} y={1176} pose="pie" />
-        <rect x={900} y={1130} width={50} height={70} rx={12} fill="#2A3442" />
-        <Persona x={llega} y={1236} pose="arrastre" pierna />
+        <Cielo a="#0D1424" b="#4A3550" id="fcam" />
+        <Cordillera y={1060} color="#25243A" seed="k1" />
+        <path d="M0 1240 L1080 1210 L1080 1920 L0 1920 Z" fill="#3E3A44" />
+        <circle cx={690} cy={1120} r={220} fill="url(#halo)" opacity={0.35 + 0.08 * Math.sin(f / 5)} />
+        <path d="M560 1236 L690 1040 L820 1236 Z" fill="#FF9A3C" />
+        <path d="M690 1040 L670 1236 L710 1236 Z" fill="#B8541A" />
+        {gira && <path d={`M890 ${880} L${llega + 60} 1140 L${llega + 60} 1260 Z`} fill={C.luz} opacity={0.18} />}
+        <Escalador x={930} y={1056} quien="simon" pose="pie" mira={gira ? -1 : 1} cara={gira ? "miedo" : "normal"} mochila s={1.4} sombra={1236} />
+        <Escalador x={llega} y={1206} quien="joe" pose="arrastre" angulos={{ brazoA: [70 + brazo * 25, 120], brazoB: [30 - brazo * 25, 80] }} cara="dolor" s={1.35} />
       </Svg>
       <Etiqueta texto={e.titulo} />
     </Camara>
@@ -419,41 +553,47 @@ const Campamento: React.FC<P> = ({ e, d }) => {
 
 const Abrazo: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
-  const une = interpolate(f, [d * 0.15, d * 0.6], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const une = interpolate(f, [d * 0.1, d * 0.55], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const nudo = interpolate(f, [d * 0.55, d * 0.7], [0, 1], clamp);
+  const ax = interpolate(une, [0, 1], [120, 510]), bx = interpolate(une, [0, 1], [960, 570]);
   return (
-    <Camara d={d} empuje={0.04}>
+    <Camara d={d} empuje={0.04} foco="50% 55%">
       <Svg>
-        <Fondo a="#F3E3C9" b="#EBD2A8" id="fabr" />
-        <path d="M0 1300 L1080 1300 L1080 1920 L0 1920 Z" fill="#D6BB8E" />
-        <Persona x={400} y={1250} pose="pie" color={C.tinta} />
-        <Persona x={680} y={1250} pose="pie" color={C.tinta} />
-        <Cuerda d="M400 1220 Q540 1330 680 1220" dash={une} largo={400} />
+        <Cielo a="#F6D9B0" b="#F3E7D3" id="fabr" />
+        <Cordillera y={1060} color="#E2C6A0" seed="b1" nieve="#FFF4E2" />
+        <path d="M0 1200 L1080 1200 L1080 1920 L0 1920 Z" fill="#D6BB8E" />
+        <Escalador x={470} y={1100} quien="simon" pose="abrazo" cara="cerrados" s={1.15} sombra={1196} />
+        <Escalador x={610} y={1100} quien="joe" pose="abrazo" mira={-1} cara="alivio" s={1.15} sombra={1196} />
+        {/* los dos extremos cortados vuelven a juntarse */}
+        <Cuerda d={`M-40 1290 L${ax} 1290`} w={14} />
+        <Cuerda d={`M${W + 40} 1290 L${bx} 1290`} w={14} />
+        {une < 1 && <><Deshilachado x={ax} y={1290} a={0} w={14} /><Deshilachado x={bx} y={1290} a={180} w={14} /></>}
+        {nudo > 0 && <g transform={`translate(540 1290) scale(${nudo})`}><circle r={26} fill={C.cuerda} stroke={C.cuerdaS} strokeWidth={6} /><path d="M-18 -8 Q0 14 18 -8" stroke="#FFB27F" strokeWidth={5} fill="none" /></g>}
       </Svg>
       <Etiqueta texto={e.titulo} oscuro={false} />
     </Camara>
   );
 };
 
-const Pregunta: React.FC<P> = ({ e, d }) => {
+const Pregunta: React.FC<P> = ({ e }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const s = spring({ frame: f - 4, fps, config: { damping: 12 } });
   return (
     <AbsoluteFill>
-      <ImagenColgando />
-      <AbsoluteFill style={{ background: "rgba(3,7,13,.45)" }} />
+      <Camara d={60} empuje={0}><ImagenColgando /></Camara>
+      <AbsoluteFill style={{ background: "rgba(3,7,13,.35)" }} />
       <Etiqueta texto={e.titulo} />
-      <div style={{ position: "absolute", top: 420, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 40, transform: `scale(${s})` }}>
+      <div style={{ position: "absolute", top: 360, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 40, transform: `scale(${s})` }}>
         {["SÍ", "NO"].map((x) => (
-          <div key={x} style={{ fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 80, color: C.blanco, background: x === "SÍ" ? C.cuerda : "#2F6A91", padding: "16px 64px", borderRadius: 999 }}>{x}</div>
+          <div key={x} style={{ fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 80, color: C.blanco, background: x === "SÍ" ? C.cuerda : "#1F6E7E", padding: "14px 70px", borderRadius: 999, boxShadow: "0 10px 30px rgba(0,0,0,.35)" }}>{x}</div>
         ))}
       </div>
-      <div style={{ position: "absolute", top: 560, left: 0, right: 0, textAlign: "center", fontFamily: fuenteTexto, fontWeight: 700, fontSize: 40, color: C.blanco, opacity: s }}>Responde en comentarios · {config.cuenta}</div>
     </AbsoluteFill>
   );
 };
 
 const ESCENAS: Record<string, React.FC<P>> = {
-  colgando: Colgando, mapa: Mapa, pierna: Pierna, descenso: Descenso, noche: Noche, reloj: Reloj,
+  colgando: Colgando, mapa: Mapa, pierna: Pierna, descenso: Descenso, noche: Noche, resbala: Resbala, reloj: Resbala,
   corte: Corte, no: No, grieta: Grieta, salida: Salida, arrastre: Arrastre, campamento: Campamento,
   abrazo: Abrazo, pregunta: Pregunta,
 };
@@ -468,9 +608,10 @@ export const Vacio: React.FC<{ datos: Datos }> = ({ datos }) => {
         const ini = Math.round((e.inicio ?? 0) * fps);
         const finS = i === n - 1 ? datos.duracion : datos.escenas[i + 1].inicio ?? datos.duracion;
         const d = Math.max(1, Math.round(finS * fps) - ini);
-        const Comp = ESCENAS[(e as any).visual] ?? Colgando;
+        const Comp = ESCENAS[e.visual ?? ""] ?? Colgando;
         return <Sequence key={i} from={ini} durationInFrames={d}><Comp e={e} d={d} /></Sequence>;
       })}
+      <Grano />
       <Subtitulos palabras={datos.palabras} acento={C.cuerda} estilo="contorno" />
     </AbsoluteFill>
   );

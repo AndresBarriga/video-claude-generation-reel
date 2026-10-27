@@ -24,9 +24,9 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 
 ## Estructura
 - `videos/<nicho>/<id>/guion.json` (escenas con `texto` hablado, `visual` = escena a medida, `titulo` = rótulo de dato) · `publicacion.md` · `final.mp4` (no se sube a git).
-- `src/historias/<Plantilla>.tsx`: escenas a medida por vídeo (ej. `Vacio.tsx` para E15). `src/piezas/`: personajes y elementos reutilizables (crear y ampliar aquí).
+- `src/historias/<Plantilla>.tsx`: escenas a medida por vídeo (ej. `Vacio.tsx` para E15). `src/piezas/`: personajes y elementos reutilizables (`Escalador.tsx`: Joe/Simon con poses por ángulos y caras; `Grano.tsx`: grano + viñeta). Hoja de poses: plantilla `Poses` con `public/datos/_poses.json`.
 - `src/Reel.tsx`: plantilla genérica antigua de tarjetas de texto. **No usar para vídeos publicables**; solo pruebas.
-- Herramientas: `npm run texto -- <id>` (texto para ElevenLabs) · `npm run voz -- <id> --audio ruta` (sincroniza audio subido; `--simulado` sin audio) · `npm run qa -- <id>` · `npm run render -- <id>` · `npm run fotograma -- <id> <segundo>` (imagen fija para storyboard) · `npm run whisper` (una vez, mejora la sincronía).
+- Herramientas: `npm run texto -- <id>` (texto para ElevenLabs) · `npm run voz -- <id> --audio ruta` (sincroniza audio subido; `--simulado` sin audio) · `npm run qa -- <id>` · `npm run render -- <id>` · `npm run fotograma -- <id> <segundo>` (imagen fija para storyboard) · `npm run hoja -- <id>` (un fotograma por escena + hoja de contacto en `out/<id>-hoja.png`; `MOMENTOS=24.5,25` añade instantes) · `npm run whisper` (una vez, mejora la sincronía).
 
 ## Técnico
 - Remotion 4.0.539 fijado. 1080×1920, 30 fps. Fuentes locales en `public/fuentes` (no depender de Google Fonts).

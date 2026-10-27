@@ -12,7 +12,8 @@
     "tipos": "tsc --noEmit",
     "texto": "node tools/texto.mjs",
     "whisper": "node tools/whisper.mjs",
-    "fotograma": "node tools/fotograma.mjs"
+    "fotograma": "node tools/fotograma.mjs",
+    "hoja": "node tools/hoja.mjs"
   },
   "engines": {
     "node": ">=20"

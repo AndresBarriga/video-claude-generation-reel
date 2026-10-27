@@ -3,20 +3,20 @@
   "titulo": "Tocando el vacío: cortó la cuerda de su amigo",
   "nicho": "escalada",
   "plantilla": "Vacio",
-  "verificado": false,
+  "verificado": true,
   "fuentes": [
     "https://en.wikipedia.org/wiki/Touching_the_Void_(book)",
     "https://en.wikipedia.org/wiki/Simon_Yates_(mountaineer)"
   ],
   "ganchos_alternativos": [
     "Cortó la cuerda de su mejor amigo. Y su amigo volvió.",
-    "Esta navaja salvó dos vidas, aunque parecía que mataba a una."
+    "Esta navaja salvó dos vidas, aunque parecía que mataba una."
   ],
   "escenas": [
     {
       "tipo": "gancho",
       "visual": "colgando",
-      "texto": "Tu amigo cuelga de tu cuerda sobre el vacío. Si no la cortas, caéis los dos.",
+      "texto": "Tu amigo cuelga de tu cuerda. Si no la cortas, caéis los dos.",
       "titulo": "¿La cortarías?"
     },
     {
@@ -29,25 +29,25 @@
       "tipo": "texto",
       "visual": "pierna",
       "texto": "Bajando de la cumbre, Joe Simpson se rompe la pierna.",
-      "titulo": "Pierna rota a 6.000 m"
+      "titulo": ""
     },
     {
       "tipo": "texto",
       "visual": "descenso",
       "texto": "Simon lo baja él solo, noventa metros de cuerda cada vez.",
-      "titulo": "90 m por tramo"
+      "titulo": ""
     },
     {
       "tipo": "texto",
       "visual": "noche",
       "texto": "De noche, Joe queda colgando sobre un precipicio. Simon no le ve ni le oye.",
-      "titulo": "No le ve. No le oye."
+      "titulo": ""
     },
     {
       "tipo": "texto",
-      "visual": "reloj",
+      "visual": "resbala",
       "texto": "Hora y media aguantando. La nieve bajo Simon empieza a ceder.",
-      "titulo": "1 h 30 min"
+      "titulo": ""
     },
     {
       "tipo": "texto",
@@ -65,13 +65,13 @@
       "tipo": "texto",
       "visual": "grieta",
       "texto": "Cae más de sesenta metros a una grieta.",
-      "titulo": "+60 m de caída"
+      "titulo": ""
     },
     {
       "tipo": "texto",
       "visual": "salida",
       "texto": "En vez de esperar, baja más hondo. Y encuentra una salida.",
-      "titulo": "Más abajo, una salida"
+      "titulo": ""
     },
     {
       "tipo": "texto",
@@ -83,13 +83,13 @@
       "tipo": "texto",
       "visual": "campamento",
       "texto": "Llega al campamento horas antes de que Simon se vaya.",
-      "titulo": "Horas antes de irse"
+      "titulo": ""
     },
     {
       "tipo": "texto",
       "visual": "abrazo",
       "texto": "A Simon le criticaron. Joe siempre le defendió: él habría hecho lo mismo.",
-      "titulo": "«Yo habría hecho lo mismo»"
+      "titulo": ""
     },
     {
       "tipo": "cierre",
