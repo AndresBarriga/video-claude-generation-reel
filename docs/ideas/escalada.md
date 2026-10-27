@@ -7,7 +7,7 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 - **E11** Por qué te tiembla la pierna cuando miras abajo 🌍 — gancho candidato: «No estás perdiendo fuerza. Tu cuerpo intenta protegerte.» [idea]
 
 ## Siguiente (elegida por Andrés)
-- **E6 «El último pegue»** (sustituye a «solo una vía más»; vale para vías y bloque) — final del día o del viaje, llevas todo el día proyectando, cada vez más cansado pero sabiéndotela mejor: «un último pegue». Dos finales posibles: lo encadenas en el último intento (épico) o cada pegue sale peor. Formato humor/identidad, pensado para mandárselo al compañero de pegues. Idea de estructura: enseñar los dos finales y preguntar cuál te pasa siempre a ti. [v1 producida con tiempos simulados, 27-oct: sol que cae = fuerza, marcas de magnesio = memoria; giro final del compañero «uno y nos vamos»; inicio alternativo D en E6-D. Falta voz]
+- **E6 «El último pegue»** (sustituye a «solo una vía más»; **en bloque**: sesión de proyecto, intentos cortos, piel destrozada, colegas en el crash pad) — final del día o del viaje, llevas todo el día proyectando, cada vez más cansado pero sabiéndotela mejor: «un último pegue». Dos finales posibles: lo encadenas en el último intento (épico) o cada pegue sale peor. Formato humor/identidad, pensado para mandárselo al compañero de pegues. Idea de estructura: enseñar los dos finales y preguntar cuál te pasa siempre a ti. [v1 producida con tiempos simulados, 27-oct: sol que cae = fuerza, marcas de magnesio = memoria; giro final del compañero «uno y nos vamos»; inicio alternativo D en E6-D. Falta voz]
 
 ## Identidad (para etiquetar a alguien)
 1. ¿Qué tipo de compañero de cordada eres?

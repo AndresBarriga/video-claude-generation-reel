@@ -2,6 +2,11 @@
 
 Sale del análisis de las cuentas de referencia (numerosdepareja, dasdingo, resultaaquee, beaniesurvives, porquetuperro…) y de lo aprendido con E15. **Ningún guion se enseña a Andrés sin pasar la puntuación del final.** Si no llega, reescríbelo tú antes; no le hagas detectar lo que este documento ya dice.
 
+## Antes de nada
+- **Especificidad > concepto.** Lo que se comparte son los detalles que solo reconoce alguien de ese mundo (ver `docs/referencias.md`).
+- **Test del mensaje:** escribe la frase exacta que pondría alguien al mandarlo. Si no sale, el vídeo no se enviará.
+- **En identidad/humor, la gracia va primero; la explicación, como mucho de segundo gancho.**
+
 ## Las 7 palancas
 
 1. **Segundo 1 = clímax, no contexto.** El primer plano es el momento de máxima tensión (la navaja sobre la cuerda, el pie que resbala, el perro a punto de…). Rótulo de 1–3 palabras («¿Cortas?»). Nunca abrir con un plano general tranquilo, un mapa o una fecha.

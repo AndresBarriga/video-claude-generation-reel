@@ -13,6 +13,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
   2. 5 aperturas y la que eliges.
   3. Guion puntuado (`docs/viralidad.md`), escena por escena: qué se ve / qué se dice.
   4. Reparto y la idea visual que recorre el vídeo, y como mucho 2–3 bocetos (fotogramas fijos rápidos) si ayudan.
+  **Antes de enseñarla, pásala por el subagente `critico`** (Agent con `subagent_type: critico`): aplica lo que tenga razón y añade a la propuesta su veredicto y su nota de envío en una línea. Haz lo mismo con el vídeo terminado (hoja de escenas + guion).
   Espera su OK o sus cambios. Después produce sin interrumpir.
 - **Todo lo demás (correcciones, cambios concretos, tareas claras): haz, no pidas permiso.** No termines con "¿arranco?" ni ofrezcas opciones que no ha pedido.
 - **Andrés decide ritmo, orden y fechas.** Calendario y test son orientativos: no frenes la producción por ellos ni le sermonees sobre "romper el test". Si ves un riesgo real, dilo en una línea y sigue trabajando.
@@ -25,7 +26,8 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 
 ## Cada guion
 - **Aplica `docs/viralidad.md` siempre, sin que Andrés lo pida**: clímax en el segundo 1, espectador dentro, bucle abierto antes de 5 s, segundo gancho, causa visible, final que vuelve a su vida, envío/comentario/bucle con mecanismo.
-- Antes de enseñar un guion, puntúalo con la tabla de `docs/viralidad.md` y reescríbelo hasta ≥12/14. Muestra la puntuación en una línea.
+- Antes de enseñar un guion, puntúalo con la tabla de `docs/viralidad.md` (≥12/14) **y pásalo por el `critico`**. La tabla sola no basta: te puntúas a ti mismo. Lo que manda es la nota de envío del crítico (≥7/10) y el test del mensaje de `docs/referencias.md`.
+- **Un formato y un público por vídeo** (vía *o* bloque; historia *o* consejo).
 - Si Andrés ya ha aprobado un guion pero ves que puntúa bajo, dilo y propón la versión mejorada; no lo produzcas tal cual.
 - 35–55 s según historia (identidad ~35 s, historia ~50 s). Escribir como se habla (cifras en palabras).
 - Rigor: ver `docs/proceso.md` (suficiente, no paralizante; estricto en salud/seguridad).
