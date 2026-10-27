@@ -12,8 +12,8 @@
 - Un chat nuevo cuando uno se alarga (>~2 lotes). Al cerrar, todo debe estar en commits.
 
 ## Ciclo de un vídeo (o de un lote; ≈2 interacciones de Andrés por vídeo)
-Es una guía, no un trámite: si Andrés pide producir ya, se produce ya.
-1. **Storyboard (Claude), opcional si el vídeo está claro:** para cada vídeo, 3 ganchos, secuencia de escenas (qué se ve / qué se dice) y 4–6 fotogramas clave renderizados como imagen fija (`npm run fotograma`). Todo en una página de revisión publicada.
+La propuesta (paso 1) no se salta salvo que Andrés diga explícitamente «produce directamente».
+1. **Propuesta (Claude), siempre antes de producir:** opinión breve, 5 aperturas, guion puntuado con qué se ve / qué se dice, reparto e idea visual, y 2–3 bocetos fijos si ayudan. Es barato: corregir aquí cuesta mucho menos que tras el render.
 2. **Revisión (Andrés, 1 mensaje):** elige gancho y pide cambios.
 3. **Producción (Claude, sin interrumpir):** construye, renderiza con tiempos simulados, revisa fotogramas con la lista de `docs/guia-visual.md`, corrige.
 4. **Voz (Andrés):** `npm run texto -- <id>` → pega el texto en ElevenLabs → sube el audio al chat.

@@ -17,3 +17,4 @@
 - 2026-10-27 · Manual de viralidad (`docs/viralidad.md`) obligatorio: todo guion se puntúa (≥12/14) antes de enseñarse. E15 v3 con estructura in medias res + cierre de envío.
 - 2026-10-27 · Identidad visual fija (caras/expresiones, cuerda naranja, paleta, tipografía, apertura en tensión, cierre en bucle) en `docs/guia-visual.md`. Cada vídeo lleva capa de sonido (`docs/sonido.md`).
 - 2026-10-27 · Andrés produce un stock de vídeos antes de abrir la cuenta; el orden de publicación se decide después con lo que haya.
+- 2026-10-27 · Cada vídeo nuevo empieza con una propuesta (opinión, 5 aperturas, guion, reparto, bocetos) que Andrés aprueba antes de producir. Reparto variado con el mismo estilo de dibujo.

@@ -4,8 +4,8 @@ Objetivo: que cada fotograma aguante comparación con las cuentas de referencia 
 
 ## Identidad de la cuenta (norma fija, no se cambia por vídeo)
 Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumple; si alguna vez hay que romperlo, se decide en el chat de Estrategia y se anota en `docs/estrategia.md`.
-- **Personajes con cara y expresión.** Las caras son la firma de la cuenta. Estilo de `src/piezas/Escalador.tsx`: cabeza redonda de piel cálida, casco de color, dos ojos + boca, cuerpo de bloques redondeados con extremidades gruesas, guantes y botas oscuros, sombra en el suelo. Las emociones se cuentan con la cara (miedo, dolor, esfuerzo, alivio, ojos cerrados) y la postura, nunca con iconos ni símbolos. Siempre hay al menos una cara reaccionando en cada escena con personajes.
-- **Protagonistas con colores fijos.** Rojo cálido (`#C8402E`, casco amarillo) y azul petróleo (`#1F6E7E`, casco blanco). En historias reales se les presenta con el nombre en una etiqueta de su color la primera vez que salen.
+- **Personajes con cara y expresión.** Las caras son la firma de la cuenta. Lo fijo es el **estilo**, no los personajes: cada vídeo tiene su reparto. Estilo de `src/piezas/Escalador.tsx`: cabeza redonda de piel cálida, casco de color, dos ojos + boca, cuerpo de bloques redondeados con extremidades gruesas, guantes y botas oscuros, sombra en el suelo. Las emociones se cuentan con la cara (miedo, dolor, esfuerzo, alivio, ojos cerrados) y la postura, nunca con iconos ni símbolos. Siempre hay al menos una cara reaccionando en cada escena con personajes.
+- **Reparto variado, mismo estilo.** Cambia en cada vídeo: género, edad, pelo, tono de piel, ropa, casco o gorro, complexión, gafas, barba… Mismo dibujo (proporciones, trazo, caras), personas distintas. Joe (rojo, casco amarillo) y Simon (azul petróleo, casco blanco) son de E15, no protagonistas de la cuenta. En historias reales se presenta a cada personaje con su nombre en una etiqueta de su color la primera vez que sale. En vídeos de identidad, que el espectador pueda verse en alguno (variedad de perfiles).
 - **La cuerda naranja (`#FF6A1F`) es el hilo conductor.** Es el único naranja intenso de la paleta: une a los personajes, marca la tensión y, cuando se rompe, se ve deshilachada. La palabra activa del subtítulo va en el mismo naranja. En mascotas el equivalente es la correa verde.
 - **Paleta.** Fríos de montaña (azules noche, gris nieve, hielo) + naranja de acento; los cálidos (arena, atardecer, fuego) solo para alivio o final. Nada de violetas brillantes, neón ni degradados de interfaz.
 - **Tipografía.** Bricolage Grotesque 800 para rótulos, contadores y subtítulos; Figtree 700 para textos secundarios. Subtítulos con contorno oscuro grueso.
@@ -32,7 +32,7 @@ Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumpl
 
 ## Personajes
 - Nada de palitos ni puntos de color para heridas. Personajes con **silueta reconocible**: cabeza con casco o pelo, torso con chaqueta de color, extremidades con grosor, manos/pies con forma.
-- Escalada: dos protagonistas recurrentes con colores fijos (rojo cálido y azul petróleo) y paleta de cara/piel neutra. Mascotas: perro y gato con 3 rasgos fijos cada uno.
+- Escalada: personajes nuevos por vídeo con el mismo estilo; `src/piezas/Escalador.tsx` debe aceptar variantes (pelo, piel, ropa, casco, edad, género) en vez de dos personajes cerrados. Mascotas: misma idea con perros y gatos de razas y colores distintos.
 - Mínimo 8 poses por personaje en `src/piezas/` (de pie, sentado asegurando, colgado, cayendo, arrastrándose, escalando, señalando, celebrando). Las emociones se cuentan con postura y cara (2 ojos + boca bastan), no con iconos.
 - Tamaño: el protagonista ocupa ≥25 % de la altura en planos medios.
 

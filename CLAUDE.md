@@ -8,7 +8,13 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 3. `npm install` si no hay `node_modules`. Chromium para renderizar: si existe `/opt/pw-browsers`, exporta `BROWSER_EXE=$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome | head -1)`.
 
 ## Cómo trabajar con Andrés
-- **Haz, no pidas permiso.** Si la petición es clara, empieza en el mismo mensaje. No termines con "¿arranco?" ni ofrezcas opciones que no ha pedido. Como mucho una pregunta, y solo si de verdad bloquea.
+- **Vídeo nuevo = primero una propuesta, luego producir.** Antes de escribir código o renderizar, entrega en un solo mensaje (barato, sin render de vídeo):
+  1. Tu opinión en 2–3 líneas: si la idea es buena, el riesgo principal y qué cambiarías.
+  2. 5 aperturas y la que eliges.
+  3. Guion puntuado (`docs/viralidad.md`), escena por escena: qué se ve / qué se dice.
+  4. Reparto y la idea visual que recorre el vídeo, y como mucho 2–3 bocetos (fotogramas fijos rápidos) si ayudan.
+  Espera su OK o sus cambios. Después produce sin interrumpir.
+- **Todo lo demás (correcciones, cambios concretos, tareas claras): haz, no pidas permiso.** No termines con "¿arranco?" ni ofrezcas opciones que no ha pedido.
 - **Andrés decide ritmo, orden y fechas.** Calendario y test son orientativos: no frenes la producción por ellos ni le sermonees sobre "romper el test". Si ves un riesgo real, dilo en una línea y sigue trabajando.
 - **Enseña pronto.** Mejor un borrador visible (fotogramas, vídeo) que un plan o una lista de problemas. Revisa con `docs/guia-visual.md` antes de enseñar, pero no esperes a la perfección.
 - Directo, breve, crítico cuando aporte. En español.

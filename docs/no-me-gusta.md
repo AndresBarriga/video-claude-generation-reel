@@ -11,6 +11,9 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · Que el chat pida permiso, ofrezca opciones no pedidas o le sermonee sobre el calendario.
 - 2026-10-27 · Tener que volver a otro chat para que le recuerden lo de viralidad: debe aplicarse solo.
 
+- 2026-10-27 · Que un chat se ponga a producir nada más pedir un vídeo, sin opinión ni borrador previo.
+- 2026-10-27 · Repetir siempre los mismos personajes: mismo estilo sí, mismas personas no.
+
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
 - 2026-10-27 · La lista de 28 ideas de escalada (identidad, cuerpo, historias épicas, España, dinero).
