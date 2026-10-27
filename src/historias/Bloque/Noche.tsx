@@ -70,7 +70,7 @@ export const Noche23: React.FC<P> = ({ e, d }) => {
       <Svg>
         <Zoom s={1.5} cx={400} cy={1050} tx={480} ty={980}>
           <Fondo h={1} id="n23" pads={1} />
-          <Barba x={170} y={dePie()} pose="grabando" objeto="movilLuz" pad cara="normal" />
+          <Barba x={250} y={dePie()} pose="pie" objeto="movilLuz" pad cara="normal" angulos={{ brazoA: [70, 115], cabeza: -24 }} />
           <Tu x={c.x + tiembla} y={c.y} pose="escalando" cara="esfuerzo" angulos={{ cabeza: -30, piernaA: [70 + tiembla, -20] }} />
         </Zoom>
       </Svg>

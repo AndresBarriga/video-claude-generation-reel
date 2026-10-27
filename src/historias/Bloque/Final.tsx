@@ -9,7 +9,7 @@ export const TopOut: React.FC<P> = ({ e, d }) => {
     <Camara d={d} empuje={0.04} foco="55% 40%">
       <Svg><Zoom s={1.5} cx={520} cy={900} tx={540} ty={1060}>
         <Fondo h={1} id="top" pads={1} />
-        <Barba x={170} y={dePie()} pose="grabando" objeto="movilLuz" pad cara="alivio" />
+        <Barba x={300} y={dePie()} pose="pie" objeto="movilLuz" pad cara="alivio" angulos={{ brazoA: [70, 115], cabeza: -30 }} />
         <Tu x={640} y={TOP - 4 - 136 * 1.2 + (1 - k) * 60} pose="pie" poseB="celebrando" t={k} cara="alivio" sombra={TOP - 2} />
       </Zoom></Svg>
       <Pegues n={(e as any).pegue} />

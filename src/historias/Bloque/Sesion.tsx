@@ -2,7 +2,7 @@
 import React from "react";
 import { Easing, Sequence, interpolate, useCurrentFrame } from "remotion";
 import { Mano, Polvo, Regleta } from "../../piezas/Mano";
-import { AG, Alta, Barba, Camara, Etiqueta, Fondo, Pegues, Svg, TOP, TU, Tu, Zoom, clamp, colgado, dePie, golpe, sentado, type P } from "./comun";
+import { AG, Alta, Barba, Camara, Etiqueta, Fondo, Pegues, Svg, TU, Tu, Zoom, clamp, colgado, dePie, golpe, sentado, type P } from "./comun";
 
 const peg = (e: P["e"]) => (e as any).pegue as number;
 const Rotulos: React.FC<{ e: P["e"] }> = ({ e }) => <><Pegues n={peg(e)} /><Etiqueta texto={e.titulo} top={300} tam={80} /></>;
@@ -75,15 +75,14 @@ export const Cinta: React.FC<P> = ({ e, d }) => {
 export const DesdePaso: React.FC<P> = ({ e, d, pal }) => {
   const f = useCurrentFrame(), tS = pal("sale.") ?? Math.round(d * 0.5);
   const k = interpolate(f, [tS - 14, tS], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
-  const a = colgado(AG.crux), b = colgado(AG.labio), arriba = f > tS + 4;
+  const a = colgado(AG.crux), b = colgado(AG.labio), arriba = f > tS + 4; // se corta al llegar al labio: el top out se guarda para el 23
   return (
     <Camara d={d} empuje={0.05} foco="50% 55%">
       <Svg><Zoom s={0.95} cx={540} cy={1100} tx={540} ty={1250}>
         <Fondo h={0.45} id="dpa" />
         <Barba x={760} y={sentado()} pose={arriba ? "celebrando" : "sentadoSuelo"} mira={-1} cara={arriba ? "alivio" : "normal"} />
         <Alta x={140} y={dePie(1.3)} pose={arriba ? "celebrando" : "pie"} cara={arriba ? "alivio" : "normal"} />
-        {arriba ? <Tu x={640} y={TOP - 4 - 136 * 1.2} pose="celebrando" cara="alivio" sombra={TOP - 2} />
-          : <Tu x={a.x + (b.x - a.x) * k} y={a.y + (b.y - a.y) * k} pose="escalando" cara="esfuerzo" />}
+        <Tu x={a.x + (b.x - a.x) * k} y={a.y + (b.y - a.y) * k} pose="escalando" cara={arriba ? "alivio" : "esfuerzo"} />
       </Zoom></Svg>
       <Rotulos e={e} />
     </Camara>

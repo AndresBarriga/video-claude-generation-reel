@@ -41,7 +41,7 @@ export const ObjetoMano: React.FC<{ o: Objeto }> = ({ o }) => {
   switch (o) {
     case "movil": case "movilLuz":
       return (<g>
-        {o === "movilLuz" && <path d="M10 -20 L520 -200 L520 160 Z" fill="#FFF3C4" opacity={0.2} />}
+        {o === "movilLuz" && <path d="M10 -20 L520 -200 L520 160 Z" fill="#FFF3C4" opacity={0.09} />}
         <rect x={-12} y={-30} width={24} height={44} rx={5} fill="#141B26" />
         <rect x={-9} y={-26} width={18} height={34} rx={3} fill={o === "movilLuz" ? "#2A3442" : "#7FB7D6"} />
         {o === "movilLuz" && <circle cx={6} cy={-24} r={5} fill="#FFF7D6" />}
