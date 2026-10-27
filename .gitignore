@@ -1,0 +1,10 @@
+node_modules/
+.env
+out/
+*.log
+.DS_Store
+videos/**/final.mp4
+public/voz/*.mp3
+public/datos/*.json
+whisper/
+.remotion/

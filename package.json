@@ -1,0 +1,32 @@
+{
+  "name": "video-claude-generation-reel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Sistema de reels animados: guion, voz, animación y control de calidad",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "voz": "node tools/voz.mjs",
+    "qa": "node tools/qa.mjs",
+    "render": "node tools/render.mjs",
+    "tipos": "tsc --noEmit",
+    "texto": "node tools/texto.mjs",
+    "whisper": "node tools/whisper.mjs",
+    "fotograma": "node tools/fotograma.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "@remotion/fonts": "^4.0.539",
+    "@remotion/install-whisper-cpp": "^4.0.539",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}

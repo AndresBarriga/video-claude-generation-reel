@@ -1,0 +1,101 @@
+{
+  "id": "E15",
+  "titulo": "Tocando el vacío: cortó la cuerda de su amigo",
+  "nicho": "escalada",
+  "plantilla": "Vacio",
+  "verificado": false,
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Touching_the_Void_(book)",
+    "https://en.wikipedia.org/wiki/Simon_Yates_(mountaineer)"
+  ],
+  "ganchos_alternativos": [
+    "Cortó la cuerda de su mejor amigo. Y su amigo volvió.",
+    "Esta navaja salvó dos vidas, aunque parecía que mataba a una."
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "colgando",
+      "texto": "Tu amigo cuelga de tu cuerda sobre el vacío. Si no la cortas, caéis los dos.",
+      "titulo": "¿La cortarías?"
+    },
+    {
+      "tipo": "texto",
+      "visual": "mapa",
+      "texto": "A Simon Yates le pasó de verdad. Perú, 1985.",
+      "titulo": "Siula Grande · 6.344 m"
+    },
+    {
+      "tipo": "texto",
+      "visual": "pierna",
+      "texto": "Bajando de la cumbre, Joe Simpson se rompe la pierna.",
+      "titulo": "Pierna rota a 6.000 m"
+    },
+    {
+      "tipo": "texto",
+      "visual": "descenso",
+      "texto": "Simon lo baja él solo, noventa metros de cuerda cada vez.",
+      "titulo": "90 m por tramo"
+    },
+    {
+      "tipo": "texto",
+      "visual": "noche",
+      "texto": "De noche, Joe queda colgando sobre un precipicio. Simon no le ve ni le oye.",
+      "titulo": "No le ve. No le oye."
+    },
+    {
+      "tipo": "texto",
+      "visual": "reloj",
+      "texto": "Hora y media aguantando. La nieve bajo Simon empieza a ceder.",
+      "titulo": "1 h 30 min"
+    },
+    {
+      "tipo": "texto",
+      "visual": "corte",
+      "texto": "Saca la navaja. Y corta.",
+      "titulo": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "no",
+      "texto": "Cualquiera pensaría que Joe murió ahí. No.",
+      "titulo": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "grieta",
+      "texto": "Cae más de sesenta metros a una grieta.",
+      "titulo": "+60 m de caída"
+    },
+    {
+      "tipo": "texto",
+      "visual": "salida",
+      "texto": "En vez de esperar, baja más hondo. Y encuentra una salida.",
+      "titulo": "Más abajo, una salida"
+    },
+    {
+      "tipo": "texto",
+      "visual": "arrastre",
+      "texto": "Tres días arrastrándose. Pierna rota, sin comida, ocho kilómetros.",
+      "titulo": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "campamento",
+      "texto": "Llega al campamento horas antes de que Simon se vaya.",
+      "titulo": "Horas antes de irse"
+    },
+    {
+      "tipo": "texto",
+      "visual": "abrazo",
+      "texto": "A Simon le criticaron. Joe siempre le defendió: él habría hecho lo mismo.",
+      "titulo": "«Yo habría hecho lo mismo»"
+    },
+    {
+      "tipo": "cierre",
+      "visual": "pregunta",
+      "texto": "¿Y tú? ¿La habrías cortado?",
+      "titulo": "¿Tú la habrías cortado?"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "cuenta": "@tu_cuenta",
+  "idioma": "es-ES",
+  "voz": {
+    "voice_id": "PON_AQUI_EL_ID_DE_LA_VOZ",
+    "model_id": "eleven_multilingual_v2",
+    "stability": 0.45,
+    "similarity_boost": 0.8,
+    "style": 0.25
+  },
+  "fps": 30
+}

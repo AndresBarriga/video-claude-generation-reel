@@ -1,0 +1,40 @@
+# Guía visual (estándar de calidad)
+
+Objetivo: que cada fotograma aguante comparación con las cuentas de referencia (numerosdepareja, dasdingo, resultaaquee). Si un fotograma no la aguanta, no se enseña.
+
+## Principios
+1. **Cada vídeo tiene una idea visual propia** que lo recorre (en E15: la cuerda naranja). Se decide en el storyboard, no al programar.
+2. **Un foco por escena.** El ojo sabe dónde mirar en <0,5 s. Lo demás, en segundo plano y más apagado.
+3. **Causa visible.** Si la voz dice "porque…", la imagen muestra el porqué (ej.: Simon resbalando hacia el borde antes de cortar). Si no se entiende sin audio, la escena falla.
+4. **Movimiento con intención:** cada escena tiene cámara (empuje, paneo o caída), una acción principal y una reacción. Nada estático >1,5 s.
+5. **Ritmo:** cambio visual cada 2–4 s; los cortes caen en las palabras clave de la voz.
+
+## Personajes
+- Nada de palitos ni puntos de color para heridas. Personajes con **silueta reconocible**: cabeza con casco o pelo, torso con chaqueta de color, extremidades con grosor, manos/pies con forma.
+- Escalada: dos protagonistas recurrentes con colores fijos (rojo cálido y azul petróleo) y paleta de cara/piel neutra. Mascotas: perro y gato con 3 rasgos fijos cada uno.
+- Mínimo 8 poses por personaje en `src/piezas/` (de pie, sentado asegurando, colgado, cayendo, arrastrándose, escalando, señalando, celebrando). Las emociones se cuentan con postura y cara (2 ojos + boca bastan), no con iconos.
+- Tamaño: el protagonista ocupa ≥25 % de la altura en planos medios.
+
+## Composición y profundidad
+- Tres planos: fondo (cielo/montaña, poco contraste), medio (escena), primer plano (nieve, roca, cuerda) que enmarca.
+- Luz: un degradado de cielo + sombra proyectada simple bajo personajes y objetos.
+- Textura sutil (grano o ruido al 3–5 %) para evitar el "vector plano de plantilla".
+- Zona segura 1080×1920: nada importante en 200 px superiores ni 290 px inferiores. Subtítulos entre y≈1450 y 1600; la acción principal entre y≈350 y 1350.
+
+## Color
+- Paleta por vídeo de 5–6 colores + el color-hilo (cuerda, correa…). Prohibido: degradados violeta/azul con brillo, neón sobre negro, glassmorphism, etiquetas "// 01", interfaces de dashboard.
+- Escalada: fríos de montaña + acento naranja. Mascotas: cálidos de casa + acento verde.
+
+## Texto en pantalla
+- Subtítulos palabra a palabra, contorno oscuro, palabra activa en color-hilo. Máx. 4 palabras por bloque.
+- Rótulo superior solo para **datos** (cifra, lugar, tiempo). Nunca repite lo que dice la voz.
+- Cifras animadas (contadores) cuando una cifra es el clímax.
+
+## Lista de revisión (cada fotograma clave, antes de enseñarlo)
+- [ ] ¿Se entiende qué pasa sin audio?
+- [ ] ¿Hay un solo foco claro?
+- [ ] ¿Personajes con silueta y cara, sin puntos/iconos sustitutos?
+- [ ] ¿Tres planos y algo de luz/sombra?
+- [ ] ¿Nada tapado por subtítulos ni fuera de zona segura?
+- [ ] ¿Parece hecho a propósito para esta historia, no una plantilla?
+- [ ] ¿Aguanta al lado de un fotograma de la cuenta de referencia?

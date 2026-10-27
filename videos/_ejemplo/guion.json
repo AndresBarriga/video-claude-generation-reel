@@ -1,0 +1,14 @@
+{
+  "id": "_ejemplo",
+  "titulo": "Ejemplo de estructura (no publicar)",
+  "nicho": "escalada",
+  "verificado": false,
+  "fuentes": [],
+  "escenas": [
+    { "tipo": "gancho", "texto": "Si escalas, tu piel no se está regenerando como crees.", "titulo": "Tu piel no se regenera como crees", "icono": "🧗" },
+    { "tipo": "cifra", "texto": "Los dedos necesitan más descanso que los músculos, y casi nadie lo respeta.", "cifra": "48 h", "etiqueta": "mínimo entre sesiones duras de dedos", "fuente": "EJEMPLO – sustituir" },
+    { "tipo": "lista", "texto": "Mira tu semana: sesión de bloque, sesión de vías y un día de fingerboard seguidos. Eso suma.", "titulo": "Lo que se acumula", "items": ["Bloque", "Vías", "Fingerboard"] },
+    { "tipo": "texto", "texto": "La regla simple es no cargar los mismos dedos dos días seguidos.", "titulo": "No cargues los mismos dedos dos días seguidos", "icono": "🖐️" },
+    { "tipo": "cierre", "texto": "Mándaselo a quien escala contigo y nunca descansa.", "titulo": "Mándaselo a quien nunca descansa" }
+  ]
+}

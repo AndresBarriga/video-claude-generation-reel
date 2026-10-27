@@ -1,0 +1,55 @@
+{
+  "id": "M1",
+  "verificado": false,
+  "titulo": "Tu perro no tira de la correa por terco",
+  "nicho": "mascotas",
+  "fuentes": [
+    "https://atlantahumane.org/blog/preventing-leash-pulling/"
+  ],
+  "nota": "FUENTE DÉBIL (protectora). Apoyar con una fuente veterinaria/etología (AVSAB, ASPCA) antes de publicar.",
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "Tu perro no tira de la correa por terco: tira porque tú avanzas.",
+      "titulo": "No tira por terco: tira porque tú avanzas",
+      "icono": "🐕"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Míralo desde su cabeza: si tira, el paseo sigue. Para él, tirar funciona.",
+      "titulo": "Para él, tirar funciona"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Cada vez que tira y tú sigues andando, le estás diciendo que está bien.",
+      "titulo": "Si sigues andando, le dices «sí»"
+    },
+    {
+      "tipo": "lista",
+      "texto": "Lo que suele funcionar: para cuando tire, avanza cuando la correa se afloje y practica antes en casa.",
+      "titulo": "Lo que suele funcionar",
+      "items": [
+        "Para cuando tire",
+        "Avanza cuando afloje",
+        "Practica primero en casa"
+      ],
+      "fuente": "Atlanta Humane Society"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Con constancia, aprende que la correa floja es la que mueve el paseo.",
+      "titulo": "Correa floja = paseo",
+      "icono": "🦮"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Si tira mucho, pide ayuda a un educador canino.",
+      "titulo": "Si tira mucho: educador canino"
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Mándaselo al dueño que sale arrastrado.",
+      "titulo": "Mándaselo al dueño que sale arrastrado"
+    }
+  ]
+}

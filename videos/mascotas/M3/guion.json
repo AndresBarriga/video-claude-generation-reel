@@ -1,0 +1,65 @@
+{
+  "id": "M3",
+  "verificado": false,
+  "titulo": "Tu perro no se siente culpable: lee tu cara",
+  "nicho": "mascotas",
+  "fuentes": [
+    "https://barnard.edu/sites/default/files/inline-files/Disambiguating the guilty look.pdf"
+  ],
+  "nota": "Datos leídos del PDF original de Horowitz (2009, Behavioural Processes 81:447-452). Muestra pequeña: 14 perros.",
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "Tu perro no se siente culpable: lee tu cara.",
+      "titulo": "Tu perro no se siente culpable: lee tu cara",
+      "icono": "🐶"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Llegas a casa, hay un desastre y tu perro pone cara de culpa.",
+      "titulo": "La «cara de culpa»"
+    },
+    {
+      "tipo": "cifra",
+      "texto": "En 2009, la investigadora Alexandra Horowitz lo puso a prueba con solo catorce perros.",
+      "cifra": "14 perros",
+      "etiqueta": "estudio de Horowitz, 2009",
+      "fuente": "Behavioural Processes, 2009"
+    },
+    {
+      "tipo": "texto",
+      "texto": "A veces el perro se había comido una chuche prohibida y a veces no.",
+      "titulo": "¿Se la comió o no?"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Y a veces el dueño recibía información falsa.",
+      "titulo": "Y al dueño le mentían a veces"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Resultado: la cara de culpa no dependía de lo que el perro había hecho.",
+      "titulo": "No dependía de lo que hizo"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Dependía de si el dueño le regañaba.",
+      "titulo": "Dependía de que le regañaran"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Y salía más aún cuando no se había comido nada y le regañaban igualmente.",
+      "titulo": "Aún más si no había hecho nada"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Así que esa cara parece una respuesta a tu reacción, no una prueba de que sepa que lo hizo mal.",
+      "titulo": "Responde a ti, no a su culpa"
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Mándaselo a quien le riñe al perro por algo del pasado.",
+      "titulo": "Mándaselo a quien riñe al perro"
+    }
+  ]
+}

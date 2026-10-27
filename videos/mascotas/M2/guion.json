@@ -1,0 +1,56 @@
+{
+  "id": "M2",
+  "verificado": false,
+  "titulo": "Tu gato no te ignora: quizá te habla con los ojos",
+  "nicho": "mascotas",
+  "fuentes": [
+    "https://www.sciencefocus.com/news/want-to-make-friends-with-a-cat-blink-slowly-say-scientists",
+    "https://researchportal.port.ac.uk/en/publications/the-role-of-cat-eye-narrowing-movements-in-cat-human-communicatio/"
+  ],
+  "nota": "Tamaño de muestra NO confirmado. Leer el artículo original (Humphrey et al., Scientific Reports, 2020) antes de publicar.",
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "Tu gato no te ignora: puede que te hable con los ojos.",
+      "titulo": "Tu gato no te ignora: te habla con los ojos",
+      "icono": "🐈"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Se llama parpadeo lento: cerrar los ojos despacio, casi entornándolos.",
+      "titulo": "El parpadeo lento",
+      "icono": "😌"
+    },
+    {
+      "tipo": "texto",
+      "texto": "En 2020, investigadores británicos lo probaron en dos experimentos, publicados en Scientific Reports.",
+      "titulo": "Dos experimentos, 2020",
+      "fuente": "Scientific Reports, 2020"
+    },
+    {
+      "tipo": "texto",
+      "texto": "En el primero, los gatos devolvían más parpadeos lentos a sus dueños cuando estos se los hacían antes.",
+      "titulo": "1. Te devuelven el parpadeo"
+    },
+    {
+      "tipo": "texto",
+      "texto": "En el segundo, se acercaban más a la mano de una persona que les había parpadeado despacio.",
+      "titulo": "2. Se acercan más a tu mano"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Los autores creen que puede ser una señal positiva. Es un estudio inicial, no una garantía.",
+      "titulo": "Señal positiva… no garantía"
+    },
+    {
+      "tipo": "texto",
+      "texto": "Pruébalo: míralo, parpadea despacio y mira qué hace.",
+      "titulo": "Pruébalo hoy"
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Mándaselo a quien dice que su gato pasa de él.",
+      "titulo": "Mándaselo a quien dice que su gato pasa de él"
+    }
+  ]
+}
