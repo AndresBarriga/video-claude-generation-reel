@@ -3,7 +3,7 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — **ángulo elegido: su cerebro.** Le hicieron un escáner (resonancia funcional) y su amígdala, la zona del miedo, apenas se activaba ante imágenes que a otros les disparan el miedo. Gancho candidato: «No es que no tenga miedo. Es que su cerebro no lo enciende.» Giro posible: no nació así del todo, años de exposición y ensayo de cada movimiento. Comprobar el estudio (Jane Joseph, Medical University of South Carolina, ~2016; reportaje en Nautilus) antes del guion. Evita la versión «Free Solo» de siempre. [idea]
-- **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Falta: voz. [borrador v3]
+- **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Voz Danny (ElevenLabs) sincronizada. [final, falta aprobar]
 - **E11** Por qué te tiembla la pierna cuando miras abajo 🌍 — gancho candidato: «No estás perdiendo fuerza. Tu cuerpo intenta protegerte.» [idea]
 
 ## Siguiente (elegida por Andrés)
