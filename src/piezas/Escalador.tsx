@@ -92,10 +92,11 @@ const Ojos: React.FC<{ cara: Cara }> = ({ cara }) => {
 export type PropsEscalador = {
   x: number; y: number; quien: Quien; pose?: NombrePose; poseB?: NombrePose; t?: number; angulos?: Partial<Angulos>;
   cara?: Cara; s?: number; rot?: number; mira?: 1 | -1; sombra?: number; mochila?: boolean; navaja?: boolean;
+  /** Frontal encendido en el casco (luz hacia donde mira) */ frontal?: boolean;
 };
 
 /** Escalador. (x, y) = cadera. `sombra` = y del suelo donde proyectar sombra. */
-export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja }) => {
+export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal }) => {
   const c = PERSONAJES[quien];
   let a: Angulos = POSES[pose] as Angulos;
   if (poseB) a = mezcla(a, POSES[poseB] as Angulos, t);
@@ -137,6 +138,11 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
           <path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />
           <path d={`M${-L.cabeza + 2} -12 Q0 -36 ${L.cabeza - 4} -12`} stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" />
           <g transform="translate(-8 6)"><Ojos cara={cara} /></g>
+          {frontal && (<g>
+            <path d="M30 -18 L420 -120 L420 90 Z" fill="#FFF3C4" opacity={0.16} />
+            <rect x={20} y={-26} width={14} height={14} rx={4} fill="#2A3442" />
+            <circle cx={32} cy={-19} r={6} fill="#FFF7D6" />
+          </g>)}
         </g>
         <path d={lin([hombro, bA.e, bA.m])} {...st(24, c.chaqueta)} />
         <circle cx={bA.m[0]} cy={bA.m[1]} r={13} fill={GUANTE} />

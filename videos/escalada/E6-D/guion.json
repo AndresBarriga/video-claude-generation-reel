@@ -1,0 +1,81 @@
+{
+  "id": "E6-D",
+  "titulo": "El último pegue (inicio D)",
+  "nicho": "escalada",
+  "plantilla": "Pegue",
+  "verificado": true,
+  "fuentes": [],
+  "nota_rigor": "Humor/identidad, sin cifras ni estudios. 'Apretar de más' (sobreagarre por tensión) es noción común de entrenamiento; no se presenta como dato.",
+  "ganchos_alternativos": [
+    "A · Tu último pegue del día solo puede acabar de dos maneras. (elegida)",
+    "B · El pegue en que lo encadenas casi nunca es el primero: es el que llamas «el último».",
+    "C · ¿Por qué siempre lo encadenas cuando ya os ibais?",
+    "D · Catorce pegues. Mismo paso. Y este, el último, solo acaba de dos maneras. (variante renderizada: E6-D)",
+    "E · Has dicho «el último» cuatro veces y aún no te has ido."
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "contador",
+      "titulo": "¿El último?",
+      "texto": "Catorce pegues. Mismo paso. Y este, el último, solo acaba de dos maneras."
+    },
+    {
+      "tipo": "texto",
+      "visual": "dos",
+      "texto": "O lo encadenas, o sale peor que todos. Y no es suerte."
+    },
+    {
+      "tipo": "texto",
+      "visual": "manana",
+      "titulo": "10:00",
+      "texto": "Por la mañana tienes fuerza, pero no te sabes la vía."
+    },
+    {
+      "tipo": "texto",
+      "visual": "tarde",
+      "titulo": "18:30",
+      "texto": "Por la tarde te la sabes de memoria, pero ya no te quedan dedos."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cruce",
+      "texto": "El último pegue cae justo donde se cruzan.",
+      "pausa": 0.4
+    },
+    {
+      "tipo": "texto",
+      "visual": "toalla",
+      "texto": "Y lo que más ayuda no es la fuerza. Es haber tirado la toalla: dejas de apretar de más."
+    },
+    {
+      "tipo": "texto",
+      "visual": "lanza",
+      "texto": "Y a veces...",
+      "pausa": 0.5
+    },
+    {
+      "tipo": "texto",
+      "visual": "cadena",
+      "texto": "sale.",
+      "pausa": 0.9
+    },
+    {
+      "tipo": "texto",
+      "visual": "peor",
+      "texto": "Pero si sigues buscándolo, cada pegue sale peor que el anterior."
+    },
+    {
+      "tipo": "texto",
+      "visual": "calza",
+      "texto": "Y cuando por fin recogéis, tu compañero se calza: uno y nos vamos."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cruxNoche",
+      "titulo": "¿El último?",
+      "texto": "Mándaselo a tu compañero de pegues y pregúntale cuál le toca."
+    }
+  ],
+  "nota": "Variante de inicio para reel de prueba: solo cambia la escena 1. Fuente de verdad del resto: E6/guion.json."
+}

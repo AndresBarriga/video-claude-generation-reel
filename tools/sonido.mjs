@@ -141,6 +141,65 @@ const RECETAS = {
     }
     return nivelar(bucle(out, 0.4), 0.1, 0.6);
   },
+  /** Pájaros de mañana en el sector: trinos sueltos sobre aire suave (bucle 8 s). */
+  pajaros() {
+    const seg = 9, out = buf(seg), r = prng(81);
+    mezclar(out, env(biquad(ruido(out.length, 82), "bp", 700, 0.6), () => 0.05), 0);
+    let t = 0.1;
+    while (t < seg - 0.6) {
+      const notas = 2 + Math.floor(Math.abs(r()) * 5), f0 = 2600 + Math.abs(r()) * 2200, g = 0.3 + Math.abs(r()) * 0.7;
+      for (let k = 0; k < notas; k++) {
+        const d = 0.05 + Math.abs(r()) * 0.07, sube = r() * 1400;
+        mezclar(out, env(seno(d, (u) => f0 + sube * (u / d) + 300 * Math.sin(u * 160)), (s) => Math.sin(Math.PI * Math.min(1, s / d)) ** 2), t + k * (d + 0.03), g);
+      }
+      t += 0.5 + Math.abs(r()) * 1.3;
+    }
+    return normalizar(bucle(out, 0.6), 0.5);
+  },
+  /** Grillos de atardecer (bucle 6 s). */
+  grillos() {
+    const seg = 7, out = buf(seg);
+    for (const [f, per, fase, g] of [[4300, 0.62, 0, 1], [4700, 0.71, 0.3, 0.7], [3900, 0.83, 0.5, 0.5]]) {
+      const b = seno(seg, f);
+      env(b, (t) => { const u = ((t + fase) % per) / per; return u < 0.35 ? (Math.sin(t * 2 * Math.PI * 30) > 0 ? 1 : 0.2) * Math.sin((Math.PI * u) / 0.35) * g : 0; });
+      mezclar(out, b, 0, 1);
+    }
+    return normalizar(bucle(out, 0.5), 0.35);
+  },
+  /** Caída en vía: silbido de aire + tirón de cuerda + golpe sordo contra la pared. */
+  caida() {
+    const out = buf(1.3);
+    const aire = biquad(ruido(Math.round(0.5 * SR), 91), "bp", (t) => 600 + 1600 * t, 1.2);
+    env(aire, (s) => Math.sin(Math.PI * Math.min(1, s / 0.5)));
+    mezclar(out, aire, 0, 0.5);
+    mezclar(out, env(seno(0.6, (t) => 110 * Math.exp(-t * 6) + 55), (s) => Math.exp(-s * 9)), 0.45, 0.9);
+    mezclar(out, env(biquad(ruido(Math.round(0.15 * SR), 92), "lp", 900), (s) => Math.exp(-s * 35)), 0.47, 0.7);
+    return normalizar(out, 0.85);
+  },
+  /** Dedos que resbalan de la presa + polvo de magnesio. */
+  roce() {
+    const out = buf(0.8);
+    const r = biquad(ruido(Math.round(0.35 * SR), 101), "bp", (t) => 2600 - 2400 * t, 2);
+    env(r, (s) => Math.sin(Math.PI * Math.min(1, s / 0.35)) ** 0.5);
+    mezclar(out, r, 0, 1);
+    mezclar(out, env(biquad(ruido(Math.round(0.4 * SR), 102), "hp", 3000), (s) => Math.exp(-s * 12)), 0.3, 0.3);
+    return normalizar(out, 0.7);
+  },
+  /** Zas: movimiento rápido (lanzamiento, toalla). */
+  zas() {
+    const d = 0.45, out = buf(0.7);
+    const b = biquad(ruido(Math.round(d * SR), 111), "bp", (t) => 400 + 3000 * (t / d) ** 2, 1.5);
+    env(b, (s) => Math.sin(Math.PI * Math.min(1, s / d)) ** 2);
+    return normalizar(mezclar(out, b, 0), 0.7);
+  },
+  /** Clic metálico del mosquetón al chapar. */
+  clic() {
+    const out = buf(0.6);
+    mezclar(out, env(biquad(ruido(Math.round(0.01 * SR), 121), "hp", 4000), (s) => Math.exp(-s * 400)), 0, 1);
+    for (const [f, g] of [[3150, 0.5], [4870, 0.35], [6900, 0.2]]) mezclar(out, env(seno(0.4, f), (s) => Math.exp(-s * 22)), 0.002, g);
+    mezclar(out, env(biquad(ruido(Math.round(0.01 * SR), 122), "hp", 3000), (s) => Math.exp(-s * 500)), 0.07, 0.7);
+    return normalizar(out, 0.9);
+  },
 };
 
 /* ---------- WAV ---------- */
