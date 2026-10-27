@@ -4,8 +4,9 @@ import { Reel } from "./Reel";
 import { Vacio } from "./historias/Vacio";
 import { Poses } from "./historias/Poses";
 import { Pegue } from "./historias/Pegue";
+import { Bloque } from "./historias/Bloque";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Poses: Poses as any };
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Poses: Poses as any };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;

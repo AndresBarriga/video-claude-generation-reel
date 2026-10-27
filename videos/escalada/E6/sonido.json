@@ -1,24 +1,18 @@
 {
   "bajoVoz": 0.45,
   "efectos": [
-    { "nombre": "viento", "inicio": { "escena": 0 }, "volumen": 0.16, "bucle": true, "fundido": [0.2, 0.6] },
-    { "nombre": "latido", "inicio": { "escena": 0 }, "fin": { "escena": 0, "final": true }, "volumen": 0.7, "bucle": true, "bajoVoz": 0.15, "fundido": [0.05, 0.3] },
-    { "nombre": "crujido", "inicio": { "escena": 0 }, "fin": { "escena": 0, "final": true }, "volumen": 0.35, "bucle": true, "fundido": [0.05, 0.3] },
-    { "nombre": "caida", "inicio": { "escena": "dos", "fraccion": 0.45 }, "duracion": 1.2, "volumen": 0.8 },
-    { "nombre": "pajaros", "inicio": { "escena": "manana" }, "fin": { "escena": "manana", "final": true }, "volumen": 0.4, "bucle": true, "fundido": [0.3, 0.3] },
-    { "nombre": "caida", "inicio": { "escena": "manana", "fraccion": 0.68 }, "duracion": 1.2, "volumen": 0.8 },
-    { "nombre": "roce", "inicio": { "escena": "tarde", "fraccion": 0.42 }, "duracion": 0.8, "volumen": 0.9 },
-    { "nombre": "caida", "inicio": { "escena": "tarde", "fraccion": 0.62 }, "duracion": 1.2, "volumen": 0.8 },
-    { "nombre": "grillos", "inicio": { "escena": "cruce" }, "volumen": 0.28, "bucle": true, "fundido": [0.8, 0.6] },
-    { "nombre": "zas", "inicio": { "escena": "toalla", "fraccion": 0.18 }, "duracion": 0.7, "volumen": 0.7 },
-    { "nombre": "latido", "inicio": { "escena": "lanza" }, "fin": { "escena": "cadena", "mas": 0.1 }, "volumen": 0.8, "bucle": true, "bajoVoz": 0.1, "fundido": [0.2, 0.05] },
-    { "nombre": "zas", "inicio": { "escena": "cadena", "mas": -0.1 }, "duracion": 0.7, "volumen": 0.8 },
-    { "nombre": "clic", "inicio": { "escena": "cadena", "mas": 0.2 }, "duracion": 0.6, "volumen": 1, "ignoraSilencio": true },
-    { "silencio": true, "inicio": { "escena": "cadena", "mas": 0.32 }, "duracion": 0.9 },
-    { "nombre": "caida", "inicio": { "escena": "peor", "fraccion": 0.16 }, "duracion": 1, "volumen": 0.7 },
-    { "nombre": "caida", "inicio": { "escena": "peor", "fraccion": 0.42 }, "duracion": 1, "volumen": 0.6 },
-    { "nombre": "caida", "inicio": { "escena": "peor", "fraccion": 0.68 }, "duracion": 1, "volumen": 0.5 },
-    { "nombre": "latido", "inicio": { "escena": "cruxNoche" }, "volumen": 0.6, "bucle": true, "bajoVoz": 0.15, "fundido": [0.4, 0.2] },
-    { "nombre": "crujido", "inicio": { "escena": "cruxNoche" }, "volumen": 0.3, "bucle": true, "fundido": [0.4, 0.2] }
+    { "nombre": "grillos", "inicio": { "escena": 0 }, "fin": { "escena": "rebobina", "mas": 0.3 }, "volumen": 0.35, "bucle": true, "fundido": [0.1, 0.1] },
+    { "nombre": "zas", "inicio": { "escena": "rebobina" }, "duracion": 0.7, "volumen": 0.8 },
+    { "nombre": "pajaros", "inicio": { "escena": "rebobina", "mas": 0.8 }, "fin": { "escena": "desdepaso", "final": true }, "volumen": 0.3, "bucle": true, "fundido": [0.3, 0.6] },
+    { "nombre": "roce", "inicio": { "escena": "cepillo", "palabra": "cepillas" }, "duracion": 0.8, "volumen": 0.8 },
+    { "nombre": "caida", "inicio": { "escena": "cepillo", "palabra": "mismo", "mas": 0.1 }, "duracion": 1.2, "volumen": 0.9 },
+    { "nombre": "roce", "inicio": { "escena": "cinta", "fraccion": 0.15 }, "duracion": 0.8, "volumen": 0.6 },
+    { "nombre": "zas", "inicio": { "escena": "desdepaso", "palabra": "sale.", "mas": -0.4 }, "duracion": 0.7, "volumen": 0.7 },
+    { "nombre": "roce", "inicio": { "escena": "flapper", "palabra": "abre", "mas": -0.1 }, "duracion": 0.8, "volumen": 1 },
+    { "nombre": "roce", "inicio": { "escena": "lija", "fraccion": 0.05 }, "duracion": 0.8, "volumen": 0.4 },
+    { "nombre": "grillos", "inicio": { "escena": "lija" }, "volumen": 0.3, "bucle": true, "fundido": [1, 0.6] },
+    { "nombre": "latido", "inicio": { "escena": "noche23" }, "fin": { "escena": "topout", "mas": 0.1 }, "volumen": 0.8, "bucle": true, "bajoVoz": 0.1, "fundido": [0.2, 0.05] },
+    { "silencio": true, "inicio": { "escena": "topout", "mas": 0.5 }, "duracion": 1.0 },
+    { "nombre": "zas", "inicio": { "escena": "topout" }, "duracion": 0.7, "volumen": 0.7, "ignoraSilencio": true }
   ]
 }

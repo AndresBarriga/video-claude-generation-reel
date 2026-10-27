@@ -3,6 +3,7 @@
 // Ángulo de extremidad: 0 = hacia abajo, 90 = hacia delante (+x), -90 = hacia atrás, 180 = hacia arriba.
 // Torso: 0 = vertical, positivo = inclinado hacia delante.
 import React from "react";
+import { Gafas, ObjetoMano, Tocado, type Aspecto, type Objeto } from "./Rasgos";
 
 export type Quien = "joe" | "simon";
 export type Cara = "normal" | "miedo" | "dolor" | "esfuerzo" | "alivio" | "cerrados";
@@ -35,6 +36,12 @@ export const POSES = {
   abrazo: { torso: 6, cabeza: 10, brazoA: [70, 160], brazoB: [100, 150], piernaA: [8, 0], piernaB: [-6, 0] },
   sentadoSuelo: { torso: -6, cabeza: 14, brazoA: [28, 52], brazoB: [38, 64], piernaA: [90, 90], piernaB: [84, 20] }, // en el suelo, agarrándose la rodilla
   aterriza: { torso: 4, cabeza: 10, brazoA: [125, 150], brazoB: [-125, -150], piernaA: [4, 0], piernaB: [-4, 0] }, // brazos abiertos, piernas rectas
+  // bloque / sesión
+  sitStart: { torso: -12, cabeza: -24, brazoA: [140, 165], brazoB: [128, 156], piernaA: [82, 40], piernaB: [74, 28] }, // sentado en el crash pad, manos en las presas de salida
+  soplando: { torso: 4, cabeza: 8, brazoA: [100, 190], brazoB: [96, 196], piernaA: [6, 0], piernaB: [-6, 0] }, // se sopla los dedos
+  lijando: { torso: 14, cabeza: 34, brazoA: [70, 118], brazoB: [58, 128], piernaA: [92, 30], piernaB: [86, 14] }, // sentado, mira las yemas
+  cargando: { torso: 6, cabeza: 0, brazoA: [34, 172], brazoB: [-24, 170], piernaA: [6, 0], piernaB: [-6, 0] }, // crash pad a la espalda, manos en las asas
+  grabando: { torso: 0, cabeza: -4, brazoA: [118, 168], brazoB: [-8, -2], piernaA: [6, 0], piernaB: [-6, 0] }, // móvil delante de la cara
   agachado: { torso: 50, cabeza: 0, brazoA: [80, 100], brazoB: [60, 80], piernaA: [100, -30], piernaB: [80, -20] }, // de rodillas, mira abajo
 } satisfies Record<string, Angulos>;
 export type NombrePose = keyof typeof POSES;
@@ -93,11 +100,14 @@ export type PropsEscalador = {
   x: number; y: number; quien: Quien; pose?: NombrePose; poseB?: NombrePose; t?: number; angulos?: Partial<Angulos>;
   cara?: Cara; s?: number; rot?: number; mira?: 1 | -1; sombra?: number; mochila?: boolean; navaja?: boolean;
   /** Frontal encendido en el casco (luz hacia donde mira) */ frontal?: boolean;
+  /** Reparto variado: colores, pelo, gorro, gafas, barba, sin casco/arnés (ver Rasgos.tsx) */ aspecto?: Aspecto;
+  /** Objeto en la mano delantera */ objeto?: Objeto;
 };
 
 /** Escalador. (x, y) = cadera. `sombra` = y del suelo donde proyectar sombra. */
-export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal }) => {
-  const c = PERSONAJES[quien];
+export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto }) => {
+  const c = { ...PERSONAJES[quien], ...aspecto } as typeof PERSONAJES.joe & Aspecto;
+  const piel = aspecto.piel ?? PIEL, pielS = aspecto.pielSombra ?? PIEL_SOMBRA, mano = aspecto.manos === "piel" ? piel : GUANTE;
   let a: Angulos = POSES[pose] as Angulos;
   if (poseB) a = mezcla(a, POSES[poseB] as Angulos, t);
   if (angulos) a = { ...a, ...angulos };
@@ -118,26 +128,27 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
         <path d={lin([[0, 0], pB.r, pB.p])} {...st(30, "#1D2532")} />
         {bota(pB, "#0F141C")}
         <path d={lin([hombro, bB.e, bB.m])} {...st(24, c.chaquetaSombra)} />
-        <circle cx={bB.m[0]} cy={bB.m[1]} r={12} fill="#0F141C" />
+        <circle cx={bB.m[0]} cy={bB.m[1]} r={12} fill={aspecto.manos === "piel" ? pielS : "#0F141C"} />
         {mochila && <rect x={-50} y={-100} width={36} height={74} rx={12} fill="#3A4656" transform={`rotate(${a.torso})`} />}
         {/* torso: chaqueta, pantalón y arnés en un mismo bloque girado */}
         <g transform={`rotate(${a.torso})`}>
           <rect x={-26} y={-L.torso - 6} width={52} height={L.torso + 16} rx={24} fill={c.chaqueta} />
           <rect x={6} y={-L.torso + 4} width={10} height={L.torso - 34} rx={5} fill="#fff" opacity={0.14} />
           <rect x={-25} y={-30} width={50} height={42} rx={18} fill={c.pantalon} />
-          <rect x={-27} y={-36} width={54} height={10} rx={4} fill={ARNES} />
-          <circle cx={20} cy={-22} r={7} fill="none" stroke="#9AA6B2" strokeWidth={4} />
+          {aspecto.arnes !== false && <><rect x={-27} y={-36} width={54} height={10} rx={4} fill={ARNES} />
+          <circle cx={20} cy={-22} r={7} fill="none" stroke="#9AA6B2" strokeWidth={4} /></>}
         </g>
         {/* delante */}
         <path d={lin([[0, 0], pA.r, pA.p])} {...st(30, c.pantalon)} />
         {bota(pA, BOTA)}
         {/* cabeza */}
         <g transform={`translate(${cab[0]} ${cab[1]}) rotate(${a.torso * 0.6 + a.cabeza})`}>
-          <circle r={L.cabeza} fill={PIEL} />
-          <path d={`M${-L.cabeza} 2 A${L.cabeza} ${L.cabeza} 0 0 0 ${-L.cabeza * 0.2} ${L.cabeza}`} fill={PIEL_SOMBRA} opacity={0.6} />
-          <path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />
-          <path d={`M${-L.cabeza + 2} -12 Q0 -36 ${L.cabeza - 4} -12`} stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" />
+          <circle r={L.cabeza} fill={piel} />
+          <path d={`M${-L.cabeza} 2 A${L.cabeza} ${L.cabeza} 0 0 0 ${-L.cabeza * 0.2} ${L.cabeza}`} fill={pielS} opacity={0.6} />
+          {c.casco === null ? <Tocado a={aspecto} /> : <><path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />
+          <path d={`M${-L.cabeza + 2} -12 Q0 -36 ${L.cabeza - 4} -12`} stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" /></>}
           <g transform="translate(-8 6)"><Ojos cara={cara} /></g>
+          {aspecto.gafas && <g transform="translate(-8 6)"><Gafas /></g>}
           {frontal && (<g>
             <path d="M30 -18 L420 -120 L420 90 Z" fill="#FFF3C4" opacity={0.16} />
             <rect x={20} y={-26} width={14} height={14} rx={4} fill="#2A3442" />
@@ -145,7 +156,8 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
           </g>)}
         </g>
         <path d={lin([hombro, bA.e, bA.m])} {...st(24, c.chaqueta)} />
-        <circle cx={bA.m[0]} cy={bA.m[1]} r={13} fill={GUANTE} />
+        <circle cx={bA.m[0]} cy={bA.m[1]} r={13} fill={mano} />
+        {objeto && <g transform={`translate(${bA.m[0]} ${bA.m[1]}) rotate(0)`}><ObjetoMano o={objeto} /></g>}
         {navaja && (
           <g transform={`translate(${bA.m[0]} ${bA.m[1]}) rotate(${a.brazoA[1] - 90})`}>
             <rect x={-6} y={-8} width={34} height={16} rx={6} fill="#2A3442" />

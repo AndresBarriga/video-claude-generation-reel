@@ -1,80 +1,28 @@
 {
   "id": "E6",
-  "titulo": "El último pegue",
+  "titulo": "El último pegue (bloque)",
   "nicho": "escalada",
-  "plantilla": "Pegue",
+  "plantilla": "Bloque",
   "verificado": true,
   "fuentes": [],
-  "nota_rigor": "Humor/identidad, sin cifras ni estudios. 'Apretar de más' (sobreagarre por tensión) es noción común de entrenamiento; no se presenta como dato.",
+  "nota": "v2 en bloque aprobada por Andrés el 27-oct (propuesta-v2.md + sus 4 cambios). La v1 en vía está en el historial de git (plantilla Pegue).",
   "ganchos_alternativos": [
-    "A · Tu último pegue del día solo puede acabar de dos maneras. (elegida)",
-    "B · El pegue en que lo encadenas casi nunca es el primero: es el que llamas «el último».",
-    "C · ¿Por qué siempre lo encadenas cuando ya os ibais?",
-    "D · Catorce pegues. Mismo paso. Y este, el último, solo acaba de dos maneras. (variante renderizada: E6-D)",
-    "E · Has dicho «el último» cuatro veces y aún no te has ido."
+    "Macro del flapper: «Si has dicho 'el último' con la yema en carne viva, esto eres tú.»",
+    "Cámara rápida 1→23: «Veintitrés pegues. Y este sí es el último.»",
+    "«Hay cuatro formas de decir 'el último' en un bloque. Las has dicho todas.»",
+    "«Tu colega lleva media hora con los crash pads a la espalda. Tú: uno más.»"
   ],
   "escenas": [
-    {
-      "tipo": "gancho",
-      "visual": "crux",
-      "titulo": "¿El último?",
-      "texto": "Tu último pegue del día solo puede acabar de dos maneras."
-    },
-    {
-      "tipo": "texto",
-      "visual": "dos",
-      "texto": "O lo encadenas, o sale peor que todos. Y no es suerte."
-    },
-    {
-      "tipo": "texto",
-      "visual": "manana",
-      "titulo": "10:00",
-      "texto": "Por la mañana tienes fuerza, pero no te sabes la vía."
-    },
-    {
-      "tipo": "texto",
-      "visual": "tarde",
-      "titulo": "18:30",
-      "texto": "Por la tarde te la sabes de memoria, pero ya no te quedan dedos."
-    },
-    {
-      "tipo": "texto",
-      "visual": "cruce",
-      "texto": "El último pegue cae justo donde se cruzan.",
-      "pausa": 0.4
-    },
-    {
-      "tipo": "texto",
-      "visual": "toalla",
-      "texto": "Y lo que más ayuda no es la fuerza. Es haber tirado la toalla: dejas de apretar de más."
-    },
-    {
-      "tipo": "texto",
-      "visual": "lanza",
-      "texto": "Y a veces...",
-      "pausa": 0.5
-    },
-    {
-      "tipo": "texto",
-      "visual": "cadena",
-      "texto": "sale.",
-      "pausa": 0.9
-    },
-    {
-      "tipo": "texto",
-      "visual": "peor",
-      "texto": "Pero si sigues buscándolo, cada pegue sale peor que el anterior."
-    },
-    {
-      "tipo": "texto",
-      "visual": "calza",
-      "texto": "Y cuando por fin recogéis, tu compañero se calza: uno y nos vamos."
-    },
-    {
-      "tipo": "cierre",
-      "visual": "cruxNoche",
-      "titulo": "¿El último?",
-      "texto": "Mándaselo a tu compañero de pegues y pregúntale cuál le toca."
-    }
+    { "tipo": "gancho", "visual": "noche", "pegue": 23, "titulo": "«Que ya sale»", "texto": "Tus colegas ya lo han encadenado y se van con los crash pads. Y tú: venga, un último pegue, que ya sale." },
+    { "tipo": "texto", "visual": "rebobina", "pegue": 9, "texto": "Lo vas a encadenar. Y aun así va a salir mal." },
+    { "tipo": "texto", "visual": "cepillo", "pegue": 9, "titulo": "«El último»", "texto": "Pegue nueve: el último. Soplas, cepillas la regleta... y al mismo paso." },
+    { "tipo": "texto", "visual": "cinta", "pegue": 12, "titulo": "«Solo para mirar los pies»", "texto": "Doce: solo para mirar los pies. Ya con esparadrapo." },
+    { "tipo": "texto", "visual": "desdepaso", "pegue": 15, "titulo": "«Desde el paso, que no cuenta»", "texto": "Quince: desde el paso, que no cuenta. Y sale. Ahora sí te lo crees." },
+    { "tipo": "texto", "visual": "flapper", "pegue": 19, "titulo": "«Ya estoy caliente»", "texto": "Diecinueve: ya estoy caliente. Se te abre el flapper." },
+    { "tipo": "texto", "visual": "lija", "pegue": 22, "texto": "Veintidós: lija, crema, y tu colega grabando por si acaso." },
+    { "tipo": "texto", "visual": "noche23", "pegue": 23, "texto": "Y en el veintitrés...", "pausa": 0.5 },
+    { "tipo": "texto", "visual": "topout", "pegue": 23, "texto": "lo encadenas.", "pausa": 1.0 },
+    { "tipo": "texto", "visual": "movil", "titulo": "«Lo tengo… el 22»", "texto": "Tu colega baja el móvil: lo tengo... el veintidós." },
+    { "tipo": "cierre", "visual": "cierre", "pegue": 24, "titulo": "¿El último?", "texto": "Mándaselo a quien te sujetaba el móvil." }
   ]
 }
