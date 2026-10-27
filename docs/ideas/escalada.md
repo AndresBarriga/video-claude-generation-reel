@@ -9,6 +9,8 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 ## Siguiente (elegida por Andrés)
 - **E6 «El último pegue»** (sustituye a «solo una vía más»; **en bloque**: sesión de proyecto, intentos cortos, piel destrozada, colegas en el crash pad) — final del día o del viaje, llevas todo el día proyectando, cada vez más cansado pero sabiéndotela mejor: «un último pegue». Dos finales posibles: lo encadenas en el último intento (épico) o cada pegue sale peor. Formato humor/identidad, pensado para mandárselo al compañero de pegues. Idea de estructura: enseñar los dos finales y preguntar cuál te pasa siempre a ti. [v1 producida con tiempos simulados, 27-oct: sol que cae = fuerza, marcas de magnesio = memoria; giro final del compañero «uno y nos vamos»; inicio alternativo D en E6-D. Falta voz]
 
+- **E29 «El que asegura»** (vía) — el asegurador aburrido mientras su compañero dice «el último»: bostezos, mira el móvil, se sienta, se hace de noche, pide pizza. Formato humor/identidad desde el punto de vista del que asegura; se le manda al que siempre pide «uno más». [idea]
+
 ## Identidad (para etiquetar a alguien)
 1. ¿Qué tipo de compañero de cordada eres?
 2. Los 7 escaladores que hay en todo rocódromo
