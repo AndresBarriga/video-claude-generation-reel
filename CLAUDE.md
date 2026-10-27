@@ -30,6 +30,9 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - `src/Reel.tsx`: plantilla genérica antigua de tarjetas de texto. **No usar para vídeos publicables**; solo pruebas.
 - Herramientas: `npm run texto -- <id>` (texto para ElevenLabs) · `npm run voz -- <id> --audio ruta` (sincroniza audio subido; `--simulado` sin audio) · `npm run qa -- <id>` · `npm run render -- <id>` · `npm run fotograma -- <id> <segundo>` (imagen fija para storyboard) · `npm run hoja -- <id>` (un fotograma por escena + hoja de contacto en `out/<id>-hoja.png`; `MOMENTOS=24.5,25` añade instantes) · `npm run sonido -- <id>` (efectos de `sonido.json`, ver `docs/sonido.md`) · `npm run whisper` (una vez, mejora la sincronía).
 
+## Si no eres Andrés
+Lee `docs/colaborar.md`: rama por vídeo, pull request, sin tocar los gustos de Andrés, voz la genera él.
+
 ## Ahorro de tokens
 - Un chat por vídeo; ciérralo cuando el vídeo esté publicado. El estado vive en el repo, no en el chat.
 - No leas archivos grandes enteros: busca con grep y lee solo el trozo (offset/limit). Plantillas nuevas: **una escena por archivo** en `src/historias/<Plantilla>/` (< 150 líneas cada uno).
