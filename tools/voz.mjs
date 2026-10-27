@@ -42,7 +42,9 @@ const duracionAudio = (f) => parseFloat(sh("ffprobe", ["-v", "error", "-show_ent
 if (simulado) {
   const pps = 15, w = palabrasGuion.map((p) => p.length + 1);
   let t = 0.2;
-  tiempos = w.map((l) => { const s = t; t += l / pps; return { start: s, end: t - 0.04 }; });
+  // pausa (s) tras la última palabra de una escena con "pausa"
+  const pausas = new Map(guion.escenas.map((e, i) => [rangoEscena[i][1], e.pausa ?? 0]));
+  tiempos = w.map((l, i) => { const s = t; t += l / pps; const r = { start: s, end: t - 0.04 }; t += pausas.get(i) ?? 0; return r; });
   metodo = "SIMULADO, sin audio";
 } else if (audioIn) {
   if (!fs.existsSync(audioIn)) { console.error("No encuentro el archivo:", audioIn); process.exit(1); }
@@ -80,7 +82,8 @@ if (simulado) {
   } else {
     // Intento 2: reparto proporcional a la longitud de cada palabra (impreciso; sirve para probar)
     const lead = 0.15, cola = 0.3, total = Math.max(1, dur - lead - cola);
-    const pesos = palabrasGuion.map((p) => p.length + 2 + (/[.,;:!?]$/.test(p) ? 4 : 0));
+    const pausas = new Map(guion.escenas.map((e, i) => [rangoEscena[i][1], e.pausa ?? 0]));
+    const pesos = palabrasGuion.map((p, i) => p.length + 2 + (/[.,;:!?]$/.test(p) ? 4 : 0) + (pausas.get(i) ?? 0) * 15);
     const suma = pesos.reduce((a, b) => a + b, 0);
     let t = lead;
     tiempos = pesos.map((p) => { const d = (p / suma) * total; const s = t; t += d; return { start: s, end: t - 0.03 }; });
@@ -133,6 +136,9 @@ if (audioB64) {
   fs.writeFileSync(path.join(raiz, `public/voz/${id}.mp3`), Buffer.from(audioB64, "base64"));
 }
 if (audioB64 || audioIn) vozRuta = `voz/${id}.mp3`;
-const datos = { id, titulo: guion.titulo, nicho: guion.nicho ?? "otro", plantilla: guion.plantilla, fps, voz: vozRuta, duracion, palabras, escenas };
+// Capa de sonido (opcional): videos/<nicho>/<id>/sonido.json → se resuelve en src/Sonidos.tsx
+const sonPath = path.join(carpetaVideo(id), "sonido.json");
+const sonido = fs.existsSync(sonPath) ? JSON.parse(fs.readFileSync(sonPath, "utf8")) : undefined;
+const datos = { id, titulo: guion.titulo, nicho: guion.nicho ?? "otro", plantilla: guion.plantilla, fps, voz: vozRuta, duracion, palabras, escenas, sonido };
 fs.writeFileSync(path.join(raiz, `public/datos/${id}.json`), JSON.stringify(datos, null, 2));
 console.log(`OK ${id}: ${N} palabras, ${duracion}s (${metodo})`);

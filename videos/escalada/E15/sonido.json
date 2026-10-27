@@ -1,0 +1,20 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "viento", "inicio": { "escena": 0 }, "fin": { "escena": "corte", "mas": 0.3 }, "volumen": 0.35, "bucle": true, "fundido": [0.3, 0.05] },
+    { "nombre": "crujido", "inicio": { "escena": 0 }, "fin": { "escena": 0, "final": true }, "volumen": 0.55, "bucle": true, "fundido": [0.1, 0.4] },
+    { "nombre": "golpe", "inicio": { "escena": "caida", "fraccion": 0.36 }, "duracion": 1.5, "volumen": 0.55 },
+    { "nombre": "nieve", "inicio": { "escena": "hoyo", "fraccion": 0.55 }, "fin": { "escena": "hoyo", "final": true }, "volumen": 0.3, "bucle": true, "fundido": [0.4, 0.3] },
+    { "nombre": "nieve", "inicio": { "escena": "colgando" }, "fin": { "escena": "corte", "mas": 0.3 }, "volumen": 0.45, "bucle": true, "fundido": [0.3, 0.05] },
+    { "nombre": "crujido", "inicio": { "escena": "colgando" }, "fin": { "escena": "corte", "mas": 0.3 }, "volumen": 0.6, "bucle": true, "fundido": [0.3, 0.05] },
+    { "nombre": "latido", "inicio": { "escena": "colgando" }, "fin": { "escena": "corte", "mas": 0.3 }, "volumen": 0.75, "bucle": true, "bajoVoz": 0.15, "fundido": [0.5, 0.05] },
+    { "nombre": "chasquido", "inicio": { "escena": "corte", "mas": 0.32 }, "duracion": 1.5, "volumen": 1, "ignoraSilencio": true },
+    { "silencio": true, "inicio": { "escena": "corte", "mas": 0.45 }, "duracion": 1.1 },
+    { "nombre": "viento", "inicio": { "escena": "grieta" }, "fin": { "escena": "arrastre", "final": true }, "volumen": 0.22, "bucle": true, "fundido": [0.6, 0.6] },
+    { "nombre": "golpe", "inicio": { "escena": "grieta", "fraccion": 0.38 }, "duracion": 2, "volumen": 0.9 },
+    { "nombre": "latido", "inicio": { "escena": "grieta", "fraccion": 0.45 }, "fin": { "escena": "grieta", "final": true }, "volumen": 0.55, "bucle": true, "bajoVoz": 0.1, "fundido": [0.4, 0.4] },
+    { "nombre": "campamento", "inicio": { "escena": "campamento" }, "fin": { "escena": "abrazo", "final": true }, "volumen": 0.45, "bucle": true, "fundido": [0.6, 0.8] },
+    { "nombre": "viento", "inicio": { "escena": "navaja#2" }, "volumen": 0.3, "bucle": true, "fundido": [0.6, 0.3] },
+    { "nombre": "crujido", "inicio": { "escena": "navaja#2" }, "volumen": 0.5, "bucle": true, "fundido": [0.4, 0.3] }
+  ]
+}

@@ -4,7 +4,7 @@
 |---|---|---|---|
 | 9 nov | escalada | E14 Honnold (propuesta) | idea |
 | 11 nov | mascotas | M? por definir | idea |
-| 14 nov | escalada | E15 Tocando el vacío | borrador v2 (falta voz) |
+| 14 nov | escalada | E15 Tocando el vacío | borrador v3 con sonido (falta voz) |
 | 16 nov | mascotas | M? | idea |
 | 21 nov | escalada | E11 Por qué te tiembla la pierna | idea |
 | 23 nov | mascotas | M? | idea |

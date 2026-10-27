@@ -33,6 +33,8 @@ export const POSES = {
   senalando: { torso: 0, cabeza: 0, brazoA: [90, 92], brazoB: [-8, -2], piernaA: [6, 0], piernaB: [-6, 0] },
   celebrando: { torso: 0, cabeza: -12, brazoA: [160, 175], brazoB: [-160, -175], piernaA: [10, 0], piernaB: [-10, 0] },
   abrazo: { torso: 6, cabeza: 10, brazoA: [70, 160], brazoB: [100, 150], piernaA: [8, 0], piernaB: [-6, 0] },
+  sentadoSuelo: { torso: -6, cabeza: 14, brazoA: [28, 52], brazoB: [38, 64], piernaA: [90, 90], piernaB: [84, 20] }, // en el suelo, agarrándose la rodilla
+  aterriza: { torso: 4, cabeza: 10, brazoA: [125, 150], brazoB: [-125, -150], piernaA: [4, 0], piernaB: [-4, 0] }, // brazos abiertos, piernas rectas
   agachado: { torso: 50, cabeza: 0, brazoA: [80, 100], brazoB: [60, 80], piernaA: [100, -30], piernaB: [80, -20] }, // de rodillas, mira abajo
 } satisfies Record<string, Angulos>;
 export type NombrePose = keyof typeof POSES;

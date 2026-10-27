@@ -17,6 +17,8 @@ export type Escena = {
   icono?: string;
   /** Escena visual a medida (plantillas de historia) */
   visual?: string;
+  /** Silencio (s) después de la escena */
+  pausa?: number;
   /** Rellenado por tools/voz.mjs */
   inicio?: number;
   fin?: number;
@@ -32,4 +34,5 @@ export type Datos = {
   duracion: number; // segundos
   palabras: Palabra[];
   escenas: Escena[];
+  sonido?: import("./Sonidos").ConfigSonido;
 };

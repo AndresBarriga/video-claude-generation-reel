@@ -2,6 +2,17 @@
 
 Objetivo: que cada fotograma aguante comparación con las cuentas de referencia (numerosdepareja, dasdingo, resultaaquee). Si un fotograma no la aguanta, no se enseña.
 
+## Identidad de la cuenta (norma fija, no se cambia por vídeo)
+Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumple; si alguna vez hay que romperlo, se decide en el chat de Estrategia y se anota en `docs/estrategia.md`.
+- **Personajes con cara y expresión.** Las caras son la firma de la cuenta. Estilo de `src/piezas/Escalador.tsx`: cabeza redonda de piel cálida, casco de color, dos ojos + boca, cuerpo de bloques redondeados con extremidades gruesas, guantes y botas oscuros, sombra en el suelo. Las emociones se cuentan con la cara (miedo, dolor, esfuerzo, alivio, ojos cerrados) y la postura, nunca con iconos ni símbolos. Siempre hay al menos una cara reaccionando en cada escena con personajes.
+- **Protagonistas con colores fijos.** Rojo cálido (`#C8402E`, casco amarillo) y azul petróleo (`#1F6E7E`, casco blanco). En historias reales se les presenta con el nombre en una etiqueta de su color la primera vez que salen.
+- **La cuerda naranja (`#FF6A1F`) es el hilo conductor.** Es el único naranja intenso de la paleta: une a los personajes, marca la tensión y, cuando se rompe, se ve deshilachada. La palabra activa del subtítulo va en el mismo naranja. En mascotas el equivalente es la correa verde.
+- **Paleta.** Fríos de montaña (azules noche, gris nieve, hielo) + naranja de acento; los cálidos (arena, atardecer, fuego) solo para alivio o final. Nada de violetas brillantes, neón ni degradados de interfaz.
+- **Tipografía.** Bricolage Grotesque 800 para rótulos, contadores y subtítulos; Figtree 700 para textos secundarios. Subtítulos con contorno oscuro grueso.
+- **Apertura en tensión.** El primer fotograma ya es el momento de máxima tensión (una mano, una cuerda, una cara), con un rótulo de 1–3 palabras que plantea la pregunta («¿Cortas?»). Nada de presentaciones, logos ni contexto antes del gancho.
+- **Cierre en bucle.** La última escena repite el plano y el rótulo de la primera para que el vídeo empalme consigo mismo, y cierra con una pregunta al espectador que invite a mandárselo a alguien.
+- **Sonido.** Cada vídeo lleva capa de efectos (`sonido.json`, ver `docs/sonido.md`): ambiente constante, un sonido-firma en el momento clave y un silencio justo después.
+
 ## Principios
 1. **Cada vídeo tiene una idea visual propia** que lo recorre (en E15: la cuerda naranja). Se decide en el storyboard, no al programar.
 2. **Un foco por escena.** El ojo sabe dónde mirar en <0,5 s. Lo demás, en segundo plano y más apagado.

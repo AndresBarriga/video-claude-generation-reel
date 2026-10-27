@@ -13,7 +13,8 @@
     "texto": "node tools/texto.mjs",
     "whisper": "node tools/whisper.mjs",
     "fotograma": "node tools/fotograma.mjs",
-    "hoja": "node tools/hoja.mjs"
+    "hoja": "node tools/hoja.mjs",
+    "sonido": "node tools/sonido.mjs"
   },
   "engines": {
     "node": ">=20"

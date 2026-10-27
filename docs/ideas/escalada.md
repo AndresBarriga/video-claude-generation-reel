@@ -3,7 +3,7 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — propuesto para abrir la cuenta. Gancho candidato: «Si resbala una sola vez, muere. Y aun así…» [idea]
-- **E15** Tocando el vacío 🌍 — v2 (27-oct): personajes Joe/Simon, escena de causa (Simon resbala hacia el borde), corte en primer plano, cuerda deshilachada como hilo, grano. Datos verificados. Falta: revisión de Andrés y voz. Pendientes menores: Joe pequeño en escenas 3-4. [borrador v2]
+- **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Falta: voz. [borrador v3]
 - **E11** Por qué te tiembla la pierna cuando miras abajo 🌍 — gancho candidato: «No estás perdiendo fuerza. Tu cuerpo intenta protegerte.» [idea]
 
 ## Identidad (para etiquetar a alguien)

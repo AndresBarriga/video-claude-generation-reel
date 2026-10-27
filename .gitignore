@@ -8,3 +8,4 @@ public/voz/*.mp3
 public/datos/*.json
 whisper/
 .remotion/
+public/sonido/

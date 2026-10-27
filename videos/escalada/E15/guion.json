@@ -1,6 +1,6 @@
 {
   "id": "E15",
-  "titulo": "Tocando el vacío: cortó la cuerda de su amigo",
+  "titulo": "Tocando el vacío: ¿cortarías la cuerda?",
   "nicho": "escalada",
   "plantilla": "Vacio",
   "verificado": true,
@@ -15,87 +15,84 @@
   "escenas": [
     {
       "tipo": "gancho",
+      "visual": "navaja",
+      "titulo": "¿Cortas?",
+      "texto": "Tu mejor amigo cuelga de tu cuerda. Si no la cortas, caéis los dos."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cumbre",
+      "titulo": "",
+      "texto": "A Simon Yates le pasó en mil novecientos ochenta y cinco. Cortó. Y lo que pasó después parece imposible."
+    },
+    {
+      "tipo": "texto",
+      "visual": "caida",
+      "titulo": "",
+      "texto": "Joe se había destrozado la rodilla."
+    },
+    {
+      "tipo": "texto",
+      "visual": "hoyo",
+      "titulo": "",
+      "texto": "Simon le bajaba él solo, sin dónde anclarse: el único freno era él, sentado en un hoyo en la nieve."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cortado",
+      "titulo": "",
+      "texto": "De noche, la ladera acabó en un cortado que no vieron."
+    },
+    {
+      "tipo": "texto",
       "visual": "colgando",
-      "texto": "Tu amigo cuelga de tu cuerda. Si no la cortas, caéis los dos.",
-      "titulo": "¿La cortarías?"
-    },
-    {
-      "tipo": "texto",
-      "visual": "mapa",
-      "texto": "A Simon Yates le pasó de verdad. Perú, 1985.",
-      "titulo": "Siula Grande · 6.344 m"
-    },
-    {
-      "tipo": "texto",
-      "visual": "pierna",
-      "texto": "Bajando de la cumbre, Joe Simpson se rompe la pierna.",
-      "titulo": ""
-    },
-    {
-      "tipo": "texto",
-      "visual": "descenso",
-      "texto": "Simon lo baja él solo, noventa metros de cuerda cada vez.",
-      "titulo": ""
-    },
-    {
-      "tipo": "texto",
-      "visual": "noche",
-      "texto": "De noche, Joe queda colgando sobre un precipicio. Simon no le ve ni le oye.",
-      "titulo": ""
-    },
-    {
-      "tipo": "texto",
-      "visual": "resbala",
-      "texto": "Hora y media aguantando. La nieve bajo Simon empieza a ceder.",
-      "titulo": ""
+      "titulo": "",
+      "texto": "Joe, colgando. Hora y media. El hoyo cedía."
     },
     {
       "tipo": "texto",
       "visual": "corte",
-      "texto": "Saca la navaja. Y corta.",
-      "titulo": ""
-    },
-    {
-      "tipo": "texto",
-      "visual": "no",
-      "texto": "Cualquiera pensaría que Joe murió ahí. No.",
-      "titulo": ""
+      "titulo": "",
+      "texto": "Cortó.",
+      "pausa": 1.4
     },
     {
       "tipo": "texto",
       "visual": "grieta",
-      "texto": "Cae más de sesenta metros a una grieta.",
-      "titulo": ""
-    },
-    {
-      "tipo": "texto",
-      "visual": "salida",
-      "texto": "En vez de esperar, baja más hondo. Y encuentra una salida.",
-      "titulo": ""
+      "titulo": "",
+      "texto": "Joe cayó a una grieta. Tenía que estar muerto."
     },
     {
       "tipo": "texto",
       "visual": "arrastre",
-      "texto": "Tres días arrastrándose. Pierna rota, sin comida, ocho kilómetros.",
-      "titulo": ""
+      "titulo": "",
+      "texto": "Encontró una salida y se arrastró tres días con la pierna rota."
     },
     {
       "tipo": "texto",
       "visual": "campamento",
-      "texto": "Llega al campamento horas antes de que Simon se vaya.",
-      "titulo": ""
+      "titulo": "",
+      "texto": "Llegó al campamento horas antes de que Simon se fuera."
     },
     {
       "tipo": "texto",
       "visual": "abrazo",
-      "texto": "A Simon le criticaron. Joe siempre le defendió: él habría hecho lo mismo.",
-      "titulo": ""
+      "titulo": "",
+      "texto": "Y lo increíble: ese corte no mató a Joe. Les salvó la vida a los dos. Joe siempre le defendió."
     },
     {
       "tipo": "cierre",
-      "visual": "pregunta",
-      "texto": "¿Y tú? ¿La habrías cortado?",
-      "titulo": "¿Tú la habrías cortado?"
+      "visual": "navaja",
+      "titulo": "¿Cortas?",
+      "texto": "Ahora piensa en tu compañero de cordada. ¿Te cortaría? Mándaselo y pregúntale."
     }
+  ],
+  "version": 3,
+  "notas_hechos": [
+    "Caída de Joe por un cortado de hielo; tibia hundida en la rodilla (altura no documentada).",
+    "Descenso de ~900 m bajándole con 2 cuerdas de 46 m; sin anclajes: Simon sentado en un asiento cavado en la nieve.",
+    "De noche y con tormenta, la ladera termina en un cortado; Joe queda colgando libre. Manos congeladas, no puede subir. Simon no le ve ni oye.",
+    "Más de hora y media; el asiento cede; Simon corta. Joe cae >60 m a una grieta, baja más hondo y sale; 3 días arrastrándose (~8 km); llega horas antes de que se vayan.",
+    "'Les salvó la vida a los dos': interpretación sostenida por los hechos (ninguno podía subir ni bajar más; el asiento cedía; el corte dejó a cada uno cuerda suficiente para salir). Joe defendió a Simon: él habría hecho lo mismo."
   ]
 }
