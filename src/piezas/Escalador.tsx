@@ -11,6 +11,11 @@ export const PERSONAJES: Record<Quien, { chaqueta: string; chaquetaSombra: strin
   joe: { chaqueta: "#C8402E", chaquetaSombra: "#8E2A1F", pantalon: "#2B3442", casco: "#F2C230", pelo: "#3B2A20" },
   simon: { chaqueta: "#1F6E7E", chaquetaSombra: "#144B57", pantalon: "#2B3442", casco: "#EDEFF2", pelo: "#6B4A2E" },
 };
+/** Variante de personaje (reparto por vídeo, mismo estilo). Todo opcional: lo que falte sale de `quien`. */
+export type Look = {
+  chaqueta: string; chaquetaSombra: string; pantalon: string; casco: string | null; pelo: string;
+  piel: string; pielSombra: string; peinado: "corto" | "coleta" | "trenzas" | "rapado"; barba: string | null; gafas: boolean; gorro: string | null;
+};
 const PIEL = "#E9B990", PIEL_SOMBRA = "#C9926A", GUANTE = "#1B2230", BOTA = "#1B2230", ARNES = "#F2C230", TINTA = "#141B26";
 
 export type Angulos = {
@@ -93,11 +98,12 @@ export type PropsEscalador = {
   x: number; y: number; quien: Quien; pose?: NombrePose; poseB?: NombrePose; t?: number; angulos?: Partial<Angulos>;
   cara?: Cara; s?: number; rot?: number; mira?: 1 | -1; sombra?: number; mochila?: boolean; navaja?: boolean;
   /** Frontal encendido en el casco (luz hacia donde mira) */ frontal?: boolean;
+  /** Reparto nuevo: sobreescribe colores, piel, pelo, barba, gafas… */ look?: Partial<Look>;
 };
 
 /** Escalador. (x, y) = cadera. `sombra` = y del suelo donde proyectar sombra. */
-export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal }) => {
-  const c = PERSONAJES[quien];
+export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, look }) => {
+  const c: Look = { piel: PIEL, pielSombra: PIEL_SOMBRA, peinado: "corto", barba: null, gafas: false, gorro: null, ...PERSONAJES[quien], ...look };
   let a: Angulos = POSES[pose] as Angulos;
   if (poseB) a = mezcla(a, POSES[poseB] as Angulos, t);
   if (angulos) a = { ...a, ...angulos };
@@ -133,11 +139,17 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
         {bota(pA, BOTA)}
         {/* cabeza */}
         <g transform={`translate(${cab[0]} ${cab[1]}) rotate(${a.torso * 0.6 + a.cabeza})`}>
-          <circle r={L.cabeza} fill={PIEL} />
-          <path d={`M${-L.cabeza} 2 A${L.cabeza} ${L.cabeza} 0 0 0 ${-L.cabeza * 0.2} ${L.cabeza}`} fill={PIEL_SOMBRA} opacity={0.6} />
-          <path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />
-          <path d={`M${-L.cabeza + 2} -12 Q0 -36 ${L.cabeza - 4} -12`} stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" />
+          {c.peinado === "coleta" && <path d={`M${-L.cabeza + 4} -6 q-30 10 -26 52 q14 -8 18 -40 Z`} fill={c.pelo} />}
+          {c.peinado === "trenzas" && <g fill={c.pelo}>{[0, 1, 2, 3].map((i) => <circle key={i} cx={-L.cabeza + 2 - i * 2} cy={8 + i * 15} r={9 - i} />)}</g>}
+          <circle r={L.cabeza} fill={c.piel} />
+          <path d={`M${-L.cabeza} 2 A${L.cabeza} ${L.cabeza} 0 0 0 ${-L.cabeza * 0.2} ${L.cabeza}`} fill={c.pielSombra} opacity={0.6} />
+          {c.barba && <path d={`M${-L.cabeza + 6} 6 Q${-L.cabeza + 4} ${L.cabeza + 6} 6 ${L.cabeza + 4} Q${L.cabeza + 2} ${L.cabeza} ${L.cabeza - 2} 10 Q6 22 ${-L.cabeza + 6} 6 Z`} fill={c.barba} />}
+          {!c.casco && !c.gorro && c.peinado !== "rapado" && <path d={`M${-L.cabeza - 2} 0 A${L.cabeza + 2} ${L.cabeza + 2} 0 0 1 ${L.cabeza + 2} -4 Q4 -14 ${-L.cabeza - 2} 0 Z`} fill={c.pelo} />}
+          {c.casco && <path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />}
+          {!c.casco && c.gorro && <g><path d={`M${-L.cabeza - 3} -4 A${L.cabeza + 3} ${L.cabeza + 6} 0 0 1 ${L.cabeza + 3} -4 Z`} fill={c.gorro} /><rect x={-L.cabeza - 5} y={-10} width={2 * L.cabeza + 10} height={12} rx={6} fill={c.gorro} stroke="#000" strokeOpacity={0.15} strokeWidth={3} /></g>}
+          {c.casco && <path d={`M${-L.cabeza + 2} -12 Q0 -36 ${L.cabeza - 4} -12`} stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" />}
           <g transform="translate(-8 6)"><Ojos cara={cara} /></g>
+          {c.gafas && <g fill="none" stroke={TINTA} strokeWidth={3.5}><circle cx={-1} cy={3} r={10} /><circle cx={16} cy={3} r={10} /><path d="M9 3 L6 3 M-11 2 L-26 -2" /></g>}
           {frontal && (<g>
             <path d="M30 -18 L420 -120 L420 90 Z" fill="#FFF3C4" opacity={0.16} />
             <rect x={20} y={-26} width={14} height={14} rx={4} fill="#2A3442" />
