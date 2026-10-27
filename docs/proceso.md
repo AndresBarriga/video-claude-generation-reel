@@ -11,8 +11,9 @@
 - Cambios en código compartido (`src/piezas`, `src/Subtitulos.tsx`, `tools/`): `git pull --rebase` antes y commit pequeño después. Cada chat solo toca su carpeta de vídeos.
 - Un chat nuevo cuando uno se alarga (>~2 lotes). Al cerrar, todo debe estar en commits.
 
-## Ciclo por lote de 3 vídeos (≈2 interacciones de Andrés por vídeo)
-1. **Storyboard (Claude):** para cada vídeo, 3 ganchos, secuencia de escenas (qué se ve / qué se dice) y 4–6 fotogramas clave renderizados como imagen fija (`npm run fotograma`). Todo en una página de revisión publicada.
+## Ciclo de un vídeo (o de un lote; ≈2 interacciones de Andrés por vídeo)
+Es una guía, no un trámite: si Andrés pide producir ya, se produce ya.
+1. **Storyboard (Claude), opcional si el vídeo está claro:** para cada vídeo, 3 ganchos, secuencia de escenas (qué se ve / qué se dice) y 4–6 fotogramas clave renderizados como imagen fija (`npm run fotograma`). Todo en una página de revisión publicada.
 2. **Revisión (Andrés, 1 mensaje):** elige gancho y pide cambios.
 3. **Producción (Claude, sin interrumpir):** construye, renderiza con tiempos simulados, revisa fotogramas con la lista de `docs/guia-visual.md`, corrige.
 4. **Voz (Andrés):** `npm run texto -- <id>` → pega el texto en ElevenLabs → sube el audio al chat.

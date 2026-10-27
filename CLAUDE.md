@@ -1,6 +1,6 @@
 # Reels animados — repo de producción
 
-Cuenta anónima de reels animados en español de España (Instagram + TikTok). Test escalada vs mascotas hasta el **30-nov-2026**. Este repo es la memoria compartida de todos los chats del proyecto: lo que no está aquí no existe.
+Cuenta anónima de reels animados en español de España (Instagram + TikTok), probando escalada y mascotas. Este repo es la memoria compartida de todos los chats del proyecto: lo que no está aquí no existe.
 
 ## Al empezar un chat
 1. Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote) y `docs/estrategia.md`.
@@ -8,9 +8,12 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok). T
 3. `npm install` si no hay `node_modules`. Chromium para renderizar: si existe `/opt/pw-browsers`, exporta `BROWSER_EXE=$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome | head -1)`.
 
 ## Cómo trabajar con Andrés
-- Directo, breve, crítico. En español. Decide lo decidible y di qué decidiste; pregunta solo lo que cambia el resultado.
-- Lo que más importa, en este orden: **gancho → retención → visuales → envíos/comentarios**. Un vídeo correcto pero sin gancho no sirve.
-- Pocas interacciones: trabaja por lotes de 3 vídeos con una página de storyboard (ver `docs/proceso.md`). No le enseñes nada que no pase la lista de revisión de `docs/guia-visual.md`.
+- **Haz, no pidas permiso.** Si la petición es clara, empieza en el mismo mensaje. No termines con "¿arranco?" ni ofrezcas opciones que no ha pedido. Como mucho una pregunta, y solo si de verdad bloquea.
+- **Andrés decide ritmo, orden y fechas.** Calendario y test son orientativos: no frenes la producción por ellos ni le sermonees sobre "romper el test". Si ves un riesgo real, dilo en una línea y sigue trabajando.
+- **Enseña pronto.** Mejor un borrador visible (fotogramas, vídeo) que un plan o una lista de problemas. Revisa con `docs/guia-visual.md` antes de enseñar, pero no esperes a la perfección.
+- Directo, breve, crítico cuando aporte. En español.
+- Prioridad: **gancho → retención → visuales → envíos/comentarios**.
+- Puede ser un vídeo suelto o un lote; lo que pida Andrés.
 - Al terminar algo: commit + push. Si cambia una decisión, añádela al registro en `docs/estrategia.md`.
 
 ## Cada guion
