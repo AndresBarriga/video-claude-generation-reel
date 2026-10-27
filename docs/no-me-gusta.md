@@ -13,6 +13,9 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 
 - 2026-10-27 · Que un chat se ponga a producir nada más pedir un vídeo, sin opinión ni borrador previo.
 - 2026-10-27 · Repetir siempre los mismos personajes: mismo estilo sí, mismas personas no.
+- 2026-10-27 · (E6 v1, opinión de Claude asumida) En vídeos de identidad/humor, convertir la situación en lección o gráfico abstracto (líneas «Fuerza/Memoria»): la gracia está en lo reconocible, la teoría como mucho de segundo gancho.
+- 2026-10-27 · Muchas escenas seguidas con el mismo plano (mismo personaje en la misma pared): variar encuadre cada escena.
+- 2026-10-27 · Metáforas literales que confunden (dibujar la toalla de «tirar la toalla»).
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
