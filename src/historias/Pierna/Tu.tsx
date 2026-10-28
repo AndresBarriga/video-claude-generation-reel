@@ -18,7 +18,7 @@ export const puntos = (a: Angulos, s: number) => {
 };
 
 /** `tr` = temblor actual (−1…1 × intensidad); `amp` = rastro de movimiento (fantasmas). Coloca a la escaladora con la punta del pie (sin temblor) en (px, py). Devuelve también dónde está la pared. */
-export const Tu: React.FC<{ px: number; py: number; s: number; cara?: Cara; tr?: number; amp?: number; cabeza?: number; talon?: number; x0?: number; extra?: Partial<Angulos>; aliento?: number }> = ({ px, py, s, cara = "miedo", tr = 0, amp = 0, cabeza, talon = 0, x0, extra, aliento = 0 }) => {
+export const Tu: React.FC<{ px: number; py: number; s: number; cara?: Cara; tr?: number; amp?: number; cabeza?: number; talon?: number; x0?: number; extra?: Partial<Angulos>; aliento?: number; soloRoca?: boolean }> = ({ px, py, s, cara = "miedo", tr = 0, amp = 0, cabeza, talon = 0, x0, extra, aliento = 0, soloRoca }) => {
   const base = { ...POSE_PARED, ...(cabeza !== undefined ? { cabeza } : {}), ...extra };
   const p0 = puntos(base, s);
   const hx = px - p0.punta[0], hy = py - p0.punta[1];
@@ -33,12 +33,14 @@ export const Tu: React.FC<{ px: number; py: number; s: number; cara?: Cara; tr?:
     <g>
       {presa(p0.manoA, "a")}{presa(p0.manoB, "b")}
       <Reglete x={muro} y={py + 2} ancho={20 * s} />
+      {!soloRoca && <>
       {amp > 0.05 && [-1, 1].map((sg) => (
         <g key={sg} opacity={0.38} clipPath="url(#piernaClip)"><Escalador x={hx} y={hy} quien="joe" look={TU} s={s} angulos={{ ...base, ...pierna(sg * amp) }} cara={cara} /></g>
       ))}
       <defs><clipPath id="piernaClip"><rect x={hx - 20 * s} y={hy + 20 * s} width={200 * s} height={160 * s} /></clipPath></defs>
       <Escalador x={hx} y={hy} quien="joe" look={TU} s={s} angulos={{ ...base, ...pierna(tr) }} cara={cara} />
-      {aliento > 0 && (() => { const c = caderaDe(px, py, s, base.cabeza); const hxx = c.x + 20 * s + aliento * 40 * s, hyy = c.y - 122 * s + aliento * 8 * s; return <g opacity={Math.sin(Math.PI * Math.min(1, aliento)) * 0.7}>{[0, 1, 2].map((i) => <ellipse key={i} cx={hxx + i * 16 * s * aliento} cy={hyy + i * 3 * s} rx={(7 + i * 5) * s * (0.6 + aliento)} ry={(5 + i * 3) * s * (0.6 + aliento)} fill="#F4F7FA" />)}</g>; })()}
+      </>}
+      {!soloRoca && aliento > 0 && (() => { const c = caderaDe(px, py, s, base.cabeza); const hxx = c.x + 20 * s + aliento * 40 * s, hyy = c.y - 122 * s + aliento * 8 * s; return <g opacity={Math.sin(Math.PI * Math.min(1, aliento)) * 0.7}>{[0, 1, 2].map((i) => <ellipse key={i} cx={hxx + i * 16 * s * aliento} cy={hyy + i * 3 * s} rx={(7 + i * 5) * s * (0.6 + aliento)} ry={(5 + i * 3) * s * (0.6 + aliento)} fill="#F4F7FA" />)}</g>; })()}
     </g>
   );
 };

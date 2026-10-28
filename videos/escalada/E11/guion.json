@@ -1,81 +1,90 @@
 {
   "id": "E11",
-  "titulo": "Por qué te tiembla la pierna cuando miras abajo (pierna de Elvis)",
+  "titulo": "Las 5 fases de la pierna de Elvis",
   "nicho": "escalada",
   "plantilla": "Pierna",
   "verificado": true,
   "fuentes": [
-    "Horslen BC, Inglis JT, Blouin JS, Carpenter MG (2018). Increased human stretch reflex dynamic sensitivity with height-induced postural threat. J Physiol. Plataforma a 3,5 m al borde vs 1,1 m lejos del borde: reflejos de estiramiento del sóleo más grandes con la amenaza (evidencia indirecta de husos musculares más sensibles).",
-    "Horslen (tesis UBC): plataforma a 3,2 m, reflejos tendinosos mayores con la altura y más activación (arousal)."
+    "Stefanucci JK, Proffitt DR (2009). The roles of altitude and fear in the perception of height. J Exp Psychol Hum Percept Perform 35(2):424-438. Las alturas se sobreestiman mucho mirando desde arriba; la sobreestimación correla con el miedo a las alturas.",
+    "Horslen BC, Inglis JT, Blouin JS, Carpenter MG (2018). Increased human stretch reflex dynamic sensitivity with height-induced postural threat. J Physiol. Reflejos de estiramiento del sóleo mayores con amenaza de altura (3,5 m al borde)."
   ],
-  "nota_rigor": "El estudio mide reflejos de estiramiento del sóleo más fuertes de media con miedo a la altura (efecto de grupo; 'también los suyos' es licencia de humor sobre un efecto general). Que eso, sumado a estar de puntillas con el gemelo cargado, produzca la pierna de Elvis/máquina de coser es la explicación habitual (bucle del reflejo de estiramiento): se cuenta como explicación, no como dato. Sin cifras de frecuencia. Consejos (talón abajo, peso a la pierna estirada, soltar aire): técnica común de escalada, contada como lo que hacen los escaladores; no son instrucciones de seguridad.",
+  "nota_rigor": "'Las distancias parecen más grandes desde arriba' y 'el miedo pone a tope un reflejo del gemelo' están respaldadas (fuentes). Que el reflejo, de puntillas en un reglete, produzca la pierna de Elvis es la explicación habitual, contada como explicación. 'Caída de veinte centímetros' es el chiste del vídeo (situación inventada), no un dato. Truco (talón abajo, soltar aire): técnica común de escalada, no instrucción de seguridad.",
   "ganchos_alternativos": [
-    "A · Rótulo «¿Pierna de Elvis?» + «Tu pierna, a dos metros de la chapa. Y abajo: ¡confía en los pies!» (elegida; voz común a las dos variantes)",
-    "A2 · Mismo inicio con rótulo «¿Máquina de coser?» (variante para reel de prueba: E11-M, misma voz)",
-    "B · A tres metros y medio del suelo tus reflejos ya se disparan. Ahora imagínate a veinte.",
-    "C · ¿Por qué tiembla justo la pierna que te está sujetando?",
-    "D · El pie aguanta. La pierna no para. Y apretar lo empeora."
+    "A · «Las cinco fases de la pierna de Elvis» + fase 1 (elegida, voz grabada)",
+    "B · Empezar por la fase 5 («¡pilla!» y caída de 20 cm) y volver a la 1",
+    "C · «Tu pierna, a dos metros de la chapa»"
   ],
   "escenas": [
     {
       "tipo": "gancho",
-      "visual": "vertigo",
-      "titulo": "¿Pierna de Elvis?",
-      "texto": "Tu pierna, a dos metros de la chapa. Y abajo: ¡confía en los pies!"
+      "visual": "intro",
+      "titulo": "Las 5 fases de la pierna de Elvis",
+      "texto": "Las cinco fases de la pierna de Elvis."
     },
     {
       "tipo": "texto",
-      "visual": "asegurador",
-      "texto": "Esto va por él: tu pierna no tiembla por cagada. Lo hace a propósito."
+      "visual": "fase1",
+      "titulo": "Bah, es un temblorcito",
+      "texto": "Fase uno: bah, es un temblorcito.",
+      "pausa": 0.3
     },
     {
       "tipo": "texto",
-      "visual": "elvis",
-      "titulo": "¿Pongo a Elvis?",
-      "texto": "¿Te pongo a Elvis o ya bailas tú sola?"
+      "visual": "fase2",
+      "titulo": "La cinta hace música",
+      "texto": "Fase dos: la cinta exprés empieza a hacer música.",
+      "pausa": 0.3
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase3",
+      "titulo": "«¡Confía en los pies!»",
+      "texto": "Fase tres: desde abajo, ¡confía en los pies!",
+      "pausa": 0.3
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase4",
+      "titulo": "Prometes dejar la escalada",
+      "texto": "Fase cuatro: le prometes a la roca que dejas la escalada.",
+      "pausa": 0.3
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase5",
+      "titulo": "¡PILLA!",
+      "texto": "Fase cinco: ¡pilla!",
+      "pausa": 0.6
+    },
+    {
+      "tipo": "texto",
+      "visual": "caida",
+      "titulo": "20 cm",
+      "texto": "Caída total: veinte centímetros.",
+      "pausa": 0.6
+    },
+    {
+      "tipo": "texto",
+      "visual": "engano",
+      "fuente": "Stefanucci y Proffitt, 2009",
+      "texto": "Y es que el miedo te engaña dos veces: desde arriba, las distancias parecen mucho más grandes."
     },
     {
       "tipo": "texto",
       "visual": "gemelo",
-      "texto": "En tu defensa: de puntillas en un reglete, el gemelo carga con todo."
+      "texto": "Y pone a tope un reflejo de tu gemelo que, en un reglete, se vuelve loco."
     },
     {
       "tipo": "texto",
-      "visual": "reflejo",
-      "texto": "Se estira un poco, un sensor lo contrae de golpe, se pasa… y otra vez."
-    },
-    {
-      "tipo": "texto",
-      "visual": "chapa",
-      "titulo": "¿Atornillando la chapa?",
-      "texto": "Que la chapa ya está puesta: no la atornilles con la pierna."
-    },
-    {
-      "tipo": "texto",
-      "visual": "volumen",
-      "texto": "Y la trampa: el miedo sube la sensibilidad de ese sensor.",
-      "pausa": 0.3
-    },
-    {
-      "tipo": "cifra",
-      "visual": "laboratorio",
-      "titulo": "3,5 m",
-      "fuente": "Horslen y col., J. Physiol 2018",
-      "texto": "Lo midieron: a tres metros y medio, al borde, los reflejos saltan más. También los suyos.",
-      "cifra": "3,5 m",
-      "etiqueta": "de altura"
-    },
-    {
-      "tipo": "texto",
-      "visual": "consejos",
-      "texto": "Por eso: baja el talón, pasa el peso a la pierna estirada y suelta el aire.",
-      "pausa": 0.7
+      "visual": "truco",
+      "texto": "El truco: baja el talón y suelta el aire.",
+      "pausa": 0.6
     },
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "titulo": "¿Pierna de Elvis?",
-      "texto": "Abajo, por fin, silencio. Mándaselo a tu asegurador. Para la próxima vez."
+      "titulo": "¿En qué fase te quedas tú?",
+      "texto": "El miedo no se va. Pero la pierna deja de bailar. ¿En qué fase te quedas tú?"
     }
   ]
 }

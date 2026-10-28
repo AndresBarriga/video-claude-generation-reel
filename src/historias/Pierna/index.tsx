@@ -6,20 +6,18 @@ import { Subtitulos } from "../../Subtitulos";
 import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { C, type P } from "./comun";
-import { Vertigo } from "./Vertigo";
-import { Asegurador } from "./Asegurador";
-import { Elvis } from "./Elvis";
+import { Intro } from "./Intro";
+import { Fase1, Fase2, Fase4 } from "./Fase";
+import { Fase3 } from "./Fase3";
+import { Caida, Fase5 } from "./Caida";
+import { Engano } from "./Engano";
 import { Gemelo } from "./Gemelo";
-import { Reflejo } from "./Reflejo";
-import { Chapa } from "./Chapa";
-import { Volumen } from "./Volumen";
-import { Laboratorio } from "./Laboratorio";
-import { Consejos } from "./Consejos";
+import { Truco } from "./Truco";
 import { Cierre } from "./Cierre";
 
 const ESCENAS: Record<string, React.FC<P>> = {
-  vertigo: Vertigo, asegurador: Asegurador, elvis: Elvis, gemelo: Gemelo, reflejo: Reflejo, chapa: Chapa,
-  volumen: Volumen, laboratorio: Laboratorio, consejos: Consejos, cierre: Cierre,
+  intro: Intro, fase1: Fase1, fase2: Fase2, fase3: Fase3, fase4: Fase4, fase5: Fase5,
+  caida: Caida, engano: Engano, gemelo: Gemelo, truco: Truco, cierre: Cierre,
 };
 
 export const Pierna: React.FC<{ datos: Datos }> = ({ datos }) => {
@@ -38,7 +36,7 @@ export const Pierna: React.FC<{ datos: Datos }> = ({ datos }) => {
           const p = datos.palabras.find((x) => x.start >= iniS - 0.01 && x.start < finS && norm(x.w) === norm(w));
           return p ? Math.round((p.start - iniS) * fps) : undefined;
         };
-        const Comp = ESCENAS[e.visual ?? ""] ?? Vertigo;
+        const Comp = ESCENAS[e.visual ?? ""] ?? Intro;
         return <Sequence key={i} from={ini} durationInFrames={d}><Comp e={e} d={d} pal={pal} /></Sequence>;
       })}
       <Grano />

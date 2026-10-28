@@ -22,7 +22,7 @@ export const Lupa: React.FC<{ k: number; de: [number, number]; cx: number; cy: n
 
 export const Gemelo: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const tr = temblor(f, 1);
+  const tr = temblor(f, 1.5);
   const k = spring({ frame: f - 4, fps: 30, config: { damping: 14, stiffness: 160 } });
   const h = caderaDe(PX, PY, 3);
   const pant: [number, number] = [h.x + (h.p.rodilla[0] + h.p.tobillo[0]) / 2 - 10, h.y + (h.p.rodilla[1] + h.p.tobillo[1]) / 2];
@@ -32,11 +32,12 @@ export const Gemelo: React.FC<P> = ({ d, pal }) => {
       <PlanoPared f={f} tr={tr} amp={0.8} cara="esfuerzo" />
       <Svg>
         <rect width={1080} height={1920} fill="#06101C" opacity={0.35 * k} />
-        <Lupa k={k} de={pant} cx={470} cy={640} r={330}>
-          <g transform="translate(600 925) scale(0.98)"><Pantorrilla th={tr * 5} c={Math.max(0, tr)} e={Math.max(0, -tr)} /></g>
+        <Lupa k={k} de={pant} cx={500} cy={720} r={330}>
+          <g transform="translate(630 1005) scale(0.98)"><Pantorrilla th={tr * 6} c={Math.max(0, tr)} e={Math.max(0, -tr)} sensor={Math.max(0.35, -tr)} /></g>
         </Lupa>
         <Marca texto="gemelo" x={385} y={600} tx={560} ty={360} o={Math.min(1, Math.max(0, (f - g) / 5))} />
       </Svg>
+      <div style={{ position: "absolute", top: 220, left: 0, right: 0, textAlign: "center", fontFamily: "Figtree", fontWeight: 800, fontSize: 46, letterSpacing: 4, color: "#fff", textShadow: "0 3px 8px #000a" }}>ENGAÑO 2 · EL REFLEJO</div>
     </Camara>
   );
 };

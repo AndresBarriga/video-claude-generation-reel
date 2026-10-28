@@ -1,15 +1,15 @@
-# E11 · Pierna de Elvis — publicación
+# E11 · Las 5 fases de la pierna de Elvis — publicación
 
 **Descripción (Instagram y TikTok):**
-Tu pierna temblando a dos metros de la chapa no es cobardía: es un reflejo de tu gemelo que el miedo pone a tope. Lo midieron en una plataforma a 3,5 m (Horslen y col., J. Physiol 2018).
-Para la próxima vez que tu asegurador se ría desde abajo 🙄
+Fase 5 y caes veinte centímetros 🙃
+No es cobardía: desde arriba el miedo agranda las distancias (Stefanucci y Proffitt, 2009) y pone a tope un reflejo del gemelo. El truco: talón abajo y suelta el aire.
 
-Mándaselo a tu asegurador.
+Etiqueta a quien siempre llega a la fase 5.
 
-#escalada #escaladadeportiva #climbing #pierna #miedoalasalturas
+#escalada #escaladadeportiva #climbing #miedo #humorescalada
 
-**Comentario fijado:** ¿Qué es lo más gracioso que te han gritado desde abajo?
+**Comentario fijado:** Yo me quedo en la fase 4. ¿Y tú?
 
-**Portada:** primer fotograma (pierna temblando en el reglete + «¿Pierna de Elvis?»).
+**Portada:** primer fotograma («Las 5 fases de la pierna de Elvis»).
 
-**Reel de prueba:** inicio con rótulo «¿Máquina de coser?», `videos/escalada/E11-M/`. Misma voz y mismo vídeo; solo cambia el rótulo del gancho y del cierre. Se publica el que retenga más.
+Nota CTA: la voz termina con «¿En qué fase te quedas tú?». El envío lo empujan la descripción («Etiqueta a quien siempre llega a la fase 5») y el comentario fijado.
