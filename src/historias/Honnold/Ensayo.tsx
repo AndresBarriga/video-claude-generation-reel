@@ -16,7 +16,7 @@ export const Ensayo: React.FC<P> = ({ d }) => {
         <Cielo />
         <Granito x0={700} sem="e" />
         {ensayo && <Cuerda d="M555 820 Q560 400 600 -100" />}
-        <Escalador x={560} y={900} quien="joe" s={2.3} aspecto={ASPECTO_H} {...CUERPO_H} Cabeza={CabezaHonnold} cara="esfuerzo"
+        <Escalador x={560} y={900} quien="joe" s={2.3} aspecto={ASPECTO_H} {...CUERPO_H} Cabeza={CabezaHonnold} cara="normal"
           angulos={{ torso: 6, cabeza: -6, brazoA: [110 + 12 * paso, 135 + 10 * paso], brazoB: [158 - 8 * paso, 172], piernaA: [64, -2], piernaB: [26, 8] }} mira={1} />
       </Svg>
       <div style={{ position: "absolute", top: 220, left: 0, right: 0, textAlign: "center", fontFamily: fuenteTexto, fontWeight: 800, fontSize: 50, letterSpacing: 3, color: "#fff", textShadow: "0 3px 8px #000a" }}>

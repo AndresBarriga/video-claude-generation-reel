@@ -6,7 +6,7 @@ import { Subtitulos } from "../../Subtitulos";
 import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { C, type P } from "./comun";
-import { Gancho, PlanoGancho } from "./Gancho";
+import { PlanoGancho } from "./Gancho";
 import { Prado } from "./Prado";
 import { Retrato, PlanoRetrato } from "./Retrato";
 import { Escaner } from "./Escaner";
@@ -16,7 +16,7 @@ import { Cumbre } from "./Cumbre";
 import { PlanoEscalera } from "./Escalera";
 import { Pared } from "./Pared";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, prado: Prado, retrato: Retrato, escaner: Escaner, cerebros: Cerebros, ensayo: Ensayo, cumbre: Cumbre, pared: Pared,
+const ESCENAS: Record<string, React.FC<P>> = { prado: Prado, retrato: Retrato, escaner: Escaner, cerebros: Cerebros, ensayo: Ensayo, cumbre: Cumbre, pared: Pared,
   escalera: ({ d }) => <PlanoEscalera d={d} />,
   cara: ({ d }) => <PlanoRetrato d={d} />,
   tuEscalera: ({ d, e }) => <PlanoEscalera d={d} m={2} nota={e.titulo} />,
@@ -37,7 +37,7 @@ export const Honnold: React.FC<{ datos: Datos }> = ({ datos }) => {
         const finS = i === n - 1 ? datos.duracion : datos.escenas[i + 1].inicio ?? datos.duracion;
         const d = Math.max(1, Math.round(finS * fps) - ini);
         const pal = (w: string) => { const p = datos.palabras.find((x) => x.start >= iniS - 0.01 && x.start < finS && norm(x.w) === norm(w)); return p ? Math.round((p.start - iniS) * fps) : undefined; };
-        const Comp = ESCENAS[e.visual ?? ""] ?? Gancho;
+        const Comp = ESCENAS[e.visual ?? ""] ?? (({ d }) => <PlanoGancho d={d} />);
         return <Sequence key={i} from={ini} durationInFrames={d}><Comp e={e} d={d} pal={pal} /></Sequence>;
       })}
       <Grano />

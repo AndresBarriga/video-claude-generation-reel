@@ -16,7 +16,7 @@ export const Cumbre: React.FC<P> = ({ d }) => {
         <Cielo />
         <path d="M-100 780 L700 760 Q820 760 860 940 L-100 940 Z" fill={PH.granito} />
         {Array.from({ length: 6 }).map((_, i) => <Pino key={i} x={60 + i * 90} y={772} s={0.9} />)}
-        <Escalador x={470} y={700} quien="joe" s={1.6} aspecto={ASPECTO_H} {...CUERPO_H} Cabeza={CabezaHonnold} cara="alivio" mira={-1}
+        <Escalador x={470} y={700} quien="joe" s={1.6} aspecto={ASPECTO_H} {...CUERPO_H} Cabeza={CabezaHonnold} cara="normal" mira={-1}
           angulos={{ torso: -4, cabeza: -8, brazoA: [20, 10], brazoB: [-20, -10] }} />
         <rect x={-300} y={940} width={1700} height={1200} fill={PH.prado} />
         <rect x={0} y={936} width={1080} height={8} fill="#fff" />

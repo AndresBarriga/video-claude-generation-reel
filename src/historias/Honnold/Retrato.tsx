@@ -13,8 +13,10 @@ export const PlanoRetrato: React.FC<{ d: number; cara?: Cara; m?: [number, numbe
       <Svg>
         <Cielo />
         <Granito x0={720} sem="r" />
-        <g transform={`translate(420 ${720 + Math.sin(f / 20) * 4}) scale(7.5)`}><CabezaHonnold cara={cara} /></g>
-        <rect x={210} y={1180} width={440} height={500} rx={200} fill={ASPECTO_H.chaqueta} />
+        <g transform={`translate(420 ${850 + Math.sin(f / 20) * 4}) scale(7.5)`}><CabezaHonnold cara={cara} /></g>
+        <path d="M150 1700 Q170 1230 300 1200 L540 1200 Q670 1230 690 1700 Z" fill={ASPECTO_H.chaqueta} />
+        <path d="M330 1200 Q420 1260 510 1200" stroke={ASPECTO_H.chaquetaSombra} strokeWidth={14} fill="none" />
+        <path d="M260 1420 Q300 1380 330 1460" stroke={ASPECTO_H.chaquetaSombra} strokeWidth={10} fill="none" />
       </Svg>
       {m && <Contador m={interpolate(f, [0, d], m)} />}
     </Camara>

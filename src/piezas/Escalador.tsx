@@ -140,7 +140,9 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
         {mochila && <rect x={-50} y={-100} width={36} height={74} rx={12} fill="#3A4656" transform={`rotate(${a.torso})`} />}
         {/* torso: chaqueta, pantalón y arnés en un mismo bloque girado */}
         <g transform={`rotate(${a.torso})`}>
-          <rect x={-TW / 2} y={-L.torso - 6} width={TW} height={L.torso + 16} rx={TW / 2 - 2} fill={c.chaqueta} />
+          {cuerpo.torso ? <><path d={`M${-TW / 2 - 9} ${-L.torso + 4} Q${-TW / 2 - 6} ${-L.torso - 8} 0 ${-L.torso - 8} Q${TW / 2 + 6} ${-L.torso - 8} ${TW / 2 + 9} ${-L.torso + 4} L${TW / 2 - 2} -40 L${TW / 2} 10 L${-TW / 2} 10 L${-TW / 2 + 2} -40 Z`} fill={c.chaqueta} />
+          <path d={`M${-TW / 4} ${-L.torso + 30} Q0 ${-L.torso + 44} ${TW / 4} ${-L.torso + 34} M${-TW / 4 + 4} -52 Q4 -44 ${TW / 4} -56`} stroke={c.chaquetaSombra} strokeWidth={4} fill="none" strokeLinecap="round" /></>
+          : <rect x={-TW / 2} y={-L.torso - 6} width={TW} height={L.torso + 16} rx={TW / 2 - 2} fill={c.chaqueta} />}
           <rect x={6} y={-L.torso + 4} width={10} height={L.torso - 34} rx={5} fill="#fff" opacity={0.14} />
           <rect x={-TW / 2 + 1} y={-30} width={TW - 2} height={42} rx={18} fill={c.pantalon} />
           {bolsa && <g><rect x={-TW / 2 - 18} y={-40} width={26} height={30} rx={9} fill={bolsa} /><path d={`M${-TW / 2 - 18} -38 Q${-TW / 2 - 5} -46 ${-TW / 2 + 8} -38`} stroke="#fff" strokeWidth={5} fill="none" opacity={0.8} /><circle cx={-TW / 2 - 8} cy={-30} r={3} fill="#fff" opacity={0.6} /></g>}
