@@ -22,38 +22,32 @@
     {
       "tipo": "texto",
       "visual": "veterano",
-      "texto": "Talón dentro.",
-      "pausa": 0.7
+      "texto": "Talón dentro."
     },
     {
       "tipo": "texto",
       "visual": "nuevo",
-      "texto": "Talón fuera.",
-      "pausa": 0.7
+      "texto": "Talón fuera."
     },
     {
       "tipo": "texto",
       "visual": "animador",
-      "texto": "¡No pienses en los pies!",
-      "pausa": 0.6
+      "texto": "¡No pienses en los pies!"
     },
     {
       "tipo": "texto",
       "visual": "monton",
-      "texto": "Todo a la vez.",
-      "pausa": 0.6
+      "texto": "Todo a la vez."
     },
     {
       "tipo": "texto",
       "visual": "caida",
-      "texto": "Y te caes.",
-      "pausa": 0.7
+      "texto": "Y te caes."
     },
     {
       "tipo": "texto",
       "visual": "yatelodije",
-      "texto": "Ya te lo dije. Ya te lo dije. Ya te lo dije.",
-      "pausa": 0.3
+      "texto": "Ya te lo dije. Ya te lo dije. Ya te lo dije."
     },
     {
       "tipo": "texto",
@@ -63,14 +57,12 @@
     {
       "tipo": "texto",
       "visual": "encadena",
-      "texto": "Y encadenas.",
-      "pausa": 0.6
+      "texto": "Y encadenas."
     },
     {
       "tipo": "texto",
       "visual": "mibeta",
-      "texto": "Los tres a la vez: ¿ves? Mi beta.",
-      "pausa": 0.4
+      "texto": "Los tres a la vez: ¿ves? Mi beta."
     },
     {
       "tipo": "texto",

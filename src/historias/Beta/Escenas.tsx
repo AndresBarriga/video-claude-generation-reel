@@ -47,7 +47,7 @@ export const ESCENAS: Record<string, React.FC<P>> = {
   },
   yatelodije: ({ d, pal }) => {
     const z: Z = { s: 1.7, cx: 320, cy: 1150, tx: 540, ty: 1110 };
-    const ts = [0, pal("Ya") ?? 0, 0]; const ya = [2, Math.round(d * 0.33), Math.round(d * 0.66)];
+    const ts = [0, pal("Ya") ?? 0, 0]; const ya = [0, Math.round(d * 0.265), Math.round(d * 0.55)];
     const txt = ["Ya te lo dije: talón dentro", "Ya te lo dije: talón fuera", "Ya te lo dije: ¡los pies!"];
     return (
       <Camara d={d} empuje={0.04}>

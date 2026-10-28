@@ -11,6 +11,8 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 
 - **E29 «El que asegura»** (vía) — el asegurador aburrido mientras su compañero dice «el último»: bostezos, mira el móvil, se sienta, se hace de noche, pide pizza. Formato humor/identidad desde el punto de vista del que asegura; se le manda al que siempre pide «uno más». [idea]
 
+- **E30** El que da beta siempre tiene razón (vía, caliza naranja) — tres colegas con betas contradictorias (veterano, recién llegado con móvil, el de «tú puedes»), te caes, «ya te lo dije» ×3, encadenas ignorándolos, «¿ves? mi beta» ×3, remate de tu pareja (asegura callada todo el vídeo): «yo no he dicho nada». Voz Danny, tiempos por frases. [producido; rama `video/E30-beta`]
+
 ## Identidad (para etiquetar a alguien)
 1. ¿Qué tipo de compañero de cordada eres?
 2. Los 7 escaladores que hay en todo rocódromo
