@@ -22,6 +22,7 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E11 v2) Experimento en laboratorio con plataforma elevadora: no se entendía.
 - 2026-10-28 · (E3 v1) El bloque exterior como escenario de todo: «muy visto». Variar escenarios en cada vídeo (rocódromo, desplome, exterior).
 - 2026-10-28 · (E3 v1) Conformarse con un 6/10 del crítico: hay que subirlo antes de enseñar.
+- 2026-10-28 · (E3 v2) Macro de la mano cerrando regleta (pieza ManoRegleta): «quedan feas». No usar manos de perfil así.
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
