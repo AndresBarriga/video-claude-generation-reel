@@ -47,3 +47,9 @@ Viralidad 12/14: palanca 1 y 3 a 1 (en humor el «clímax» es el chiste, y el f
 - Cara reaccionando en cada «significa». 4b explica (pantalla partida ayer pegue 30 / hoy «regalado», rótulo «Maldición del conocimiento»).
 - Cierre: primer plano del porteador riéndose con el móvil y Lucía a punto de caer detrás → la pantalla crece hasta el primer fotograma.
 - Crítico v2: 7/10 («si se arreglan 2 y 3, llega a 8»); aplicados los tres arreglos (desplome desde el principio, pantalla partida con contador, porteador riéndose). 36 s con tiempos simulados.
+
+## v3 (28-oct)
+- Fuera las manos de regleta (rechazadas) y «para calentar». Abre en el desplome: Nico colgado del techo, pies sueltos, rótulo «Es un quinto»; remate en su cara de pánico.
+- «Está blando. Como mucho, un seis B» (downgrade) → pantalla partida ayer pegue 30 / hoy + rótulo «Maldición del conocimiento». Hace pareja con el upgrade de los grados.
+- Bucle: el móvil del porteador crece hasta el desplome. Texto enviado a ElevenLabs.
+- Crítico v3: 6,5/10 («el texto sostiene, falla el montaje»). Aplicado: gancho con Nico colgado + zoom, encuadres cerrados en pegue y grados. No aplicado: quitar el macro de la lenteja (es la mano de palma, no la de regleta rechazada; sin ella el chiste no se ve).

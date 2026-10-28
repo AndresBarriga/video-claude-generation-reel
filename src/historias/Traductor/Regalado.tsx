@@ -43,16 +43,16 @@ const Yemas: React.FC<{ d: number }> = ({ d }) => (
 );
 
 /** 4b · Pantalla partida: arriba AYER (pegue 30, cae, sufre, desaturado) · abajo HOY («regalado», sonriendo). */
-export const Olvido: React.FC<P> = ({ d }) => {
+export const Olvido: React.FC<{ d: number; hoy?: string }> = ({ d, hoy = "HOY: «REGALADO»" }) => {
   const f = useCurrentFrame();
   const peg = Math.round(interpolate(f, [0, d * 0.5], [1, 30], { ...clamp, easing: Easing.out(Easing.quad) }));
   return (<Camara d={d} empuje={0.04}>
     <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 960, overflow: "hidden", filter: "grayscale(.85) sepia(.35)" }}><Ayer f={f} /></div>
     <div style={{ position: "absolute", left: 0, right: 0, top: 960, height: 960, overflow: "hidden" }}><Hoy f={f} /></div>
     <div style={{ position: "absolute", left: 0, right: 0, top: 954, height: 12, background: "#0B1624" }} />
-    <Dato texto={`AYER · PEGUE ${peg}`} top={230} />
-    <Dato texto="HOY: «REGALADO»" top={990} />
-    {f > d * 0.55 && <Dato texto="Maldición del conocimiento" top={1180} />}
+    <Dato texto={`AYER · PEGUE ${peg}`} top={310} />
+    <Dato texto={hoy} top={990} />
+    {f > d * 0.55 && <Dato texto="Maldición del conocimiento" top={1080} />}
   </Camara>);
 };
 const Ayer: React.FC<{ f: number }> = ({ f }) => {
@@ -69,3 +69,6 @@ const Hoy: React.FC<{ f: number }> = ({ f }) => (
     <Paco x={700} y={dePieR(1.25) - Math.abs(Math.sin(f / 5)) * 3} pose="senalando" mira={-1} cara="alivio" angulos={{ brazoA: [140, 150], cabeza: -10 }} />
   </Zoom></Svg>
 );
+
+/** v3 · «Está blando. Como mucho, un seis B.» (Paco, chulo, en el roco) → lo sacó en el pegue treinta (pantalla partida) + maldición del conocimiento. */
+export const Blando: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Dice d={d} />} significa={(d) => <Olvido d={d} hoy="HOY: «ESTÁ BLANDO»" />} />;

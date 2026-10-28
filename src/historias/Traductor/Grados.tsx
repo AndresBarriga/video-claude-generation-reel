@@ -10,15 +10,15 @@ export const Grados: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Dice d={d
 
 const CaraPaco: React.FC<{ d: number }> = ({ d }) => (
   <Camara d={d} empuje={0.1} entrada={false}><Svg><Cerca cx={656} cy={dePieR(1.25) - 175} s={3.4}>
-    <Rocodromo grado="6C" />
+    <Rocodromo />
     <Paco x={660} y={dePieR(1.25)} pose="grabando" objeto="movil" mira={-1} cara="alivio" angulos={{ cabeza: 14 }} />
   </Cerca></Svg></Camara>
 );
 
 const Dice: React.FC<{ d: number }> = ({ d }) => (
   <Camara d={d} empuje={0.05}>
-    <Svg><Zoom s={1.7} cx={600} cy={1110} tx={540} ty={1030}>
-      <Rocodromo grado="6C" />
+    <Svg><Zoom s={3.2} cx={656} cy={dePieR(1.25) - 175} tx={540} ty={860}>
+      <Rocodromo />
       <Paco x={660} y={dePieR(1.25)} pose="pie" mira={-1} cara="cerrados" angulos={{ brazoA: [60, 110], brazoB: [50, 120], cabeza: -6 }} />
     </Zoom></Svg>
   </Camara>

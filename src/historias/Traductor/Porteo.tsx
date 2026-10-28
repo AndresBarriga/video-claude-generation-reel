@@ -4,7 +4,8 @@ import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { PantallaMovil } from "../../piezas/Movil";
 import { AG, Camara, Cerca, Etiqueta, Fondo, LuciaColgada, Nico, Partida, Planos, Svg, Zoom, clamp, colgado, dePie, type P } from "./comun";
-import { PlanoCalentar } from "./Calentar";
+import { PlanoDesplome } from "./Roco";
+import { Idioma } from "./comun";
 
 const H = colgado(AG.labio);
 
@@ -20,13 +21,13 @@ const CaraLucia: React.FC<{ d: number }> = ({ d }) => {
     <LuciaColgada hx={H.x} hy={H.y} cara="miedo" cabeza={34} tiembla={Math.sin(f * 2.8) * 4} />
   </Cerca></Svg></Camara>);
 };
-/** Lo que mira el porteador: este vídeo (el primer plano, la mano en la regleta). */
+/** Lo que mira el porteador: este vídeo (el primer plano, el desplome). */
 const SuMovil: React.FC<{ d: number }> = ({ d }) => {
   const f = useCurrentFrame();
   return (<Camara d={d} empuje={0.08} entrada={false}><Svg>
     <rect width={1080} height={1920} fill="#0B1624" />
     <PantallaMovil id="sum" x={540} y={960} s={1.25} pct={23} rec={false}>
-      <g transform={`scale(${560 / 1080})`}><PlanoCalentar f={f} /></g>
+      <g transform={`scale(${560 / 1080})`}><PlanoDesplome /></g>
     </PantallaMovil>
   </Svg></Camara>);
 };
@@ -58,10 +59,11 @@ export const Cierre: React.FC<P> = ({ d, e }) => {
       <Svg>
         <rect width={1080} height={1920} fill="#0B1624" />
         <PantallaMovil id="cie" x={540} y={960 + k * (520 * 1080 / 560 - 960)} s={s} pct={12} rec={false} hud={k === 0}>
-          <g transform={`scale(${560 / 1080})`}><PlanoCalentar f={0} /></g>
+          <g transform={`scale(${560 / 1080})`}><PlanoDesplome /></g>
         </PantallaMovil>
       </Svg>
       {k === 0 && <Etiqueta texto={e.titulo} top={300} tam={78} />}
+      {k > 0.97 && <Idioma real={false} />}
     </Camara>
   );
 };

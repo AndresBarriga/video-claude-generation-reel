@@ -14,7 +14,7 @@ const Dice: React.FC<{ d: number }> = ({ d }) => {
   const f = useCurrentFrame(), resp = Math.sin(f / 3) * 4;
   return (
     <Camara d={d} empuje={0.05}>
-      <Svg><Zoom s={2} cx={X} cy={1150} tx={540} ty={1050}>
+      <Svg><Zoom s={3.2} cx={X + 6} cy={sentadoR() - 120} tx={540} ty={900}>
         <Rocodromo />
         <Nico x={X} y={sentadoR() + resp} pose="sentadoSuelo" cara="alivio" angulos={{ brazoA: [150, 165], cabeza: -10 }} />
       </Zoom></Svg>

@@ -1,11 +1,11 @@
 {
   "id": "E3",
-  "titulo": "Escalador → Español (bloque)",
+  "titulo": "Escalador → Español (v3)",
   "nicho": "escalada",
   "plantilla": "Traductor",
   "verificado": true,
   "fuentes": [],
-  "nota": "v2 (28-oct): gancho = macro de la mano cerrando regleta (arqueo, antebrazo, cara). Escenarios variados: rocódromo (1, 4, 4b, 5, 6), bloque exterior (2, 7) y el desplome (3). Cara reaccionando en cada «significa». 4b explica la maldición del conocimiento (2.º gancho). Bucle: el móvil del porteador muestra este vídeo y crece hasta el primer fotograma.",
+  "nota": "v3 (28-oct): abre en el desplome con «es un quinto» (sin manos: rechazadas). Downgrade «está blando, un seis B» → pantalla partida ayer pegue 30 / hoy + maldición del conocimiento; hace pareja con el upgrade de los grados. Bucle: el móvil del porteador crece hasta el desplome. v2 en el historial.",
   "ganchos_alternativos": [
     "D · «Lo tengo a un pegue.» → sit start que se despega cinco centímetros y cae al pad (variante para reel de prueba).",
     "B · Macro de yemas en un canto de un centímetro: «Es un cazo.»",
@@ -15,9 +15,9 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "visual": "calentar",
-      "corte": "Traducción:",
-      "texto": "«Esto es para calentar.» Traducción: tu máximo del año."
+      "visual": "roco",
+      "corte": "Aquí,",
+      "texto": "«En mi roco esto es un quinto.» Aquí, otro deporte."
     },
     {
       "tipo": "texto",
@@ -27,20 +27,9 @@
     },
     {
       "tipo": "texto",
-      "visual": "roco",
-      "corte": "Aquí,",
-      "texto": "«En mi roco esto es un seis A.» Aquí, otro deporte."
-    },
-    {
-      "tipo": "texto",
-      "visual": "regalado",
-      "corte": "Llevas",
-      "texto": "«Está regalado.» Llevas cuarenta minutos en la colchoneta."
-    },
-    {
-      "tipo": "texto",
-      "visual": "olvido",
-      "texto": "Él lo encadenó ayer, en el pegue treinta. Pero cuando ya te lo sabes, no recuerdas lo que costaba."
+      "visual": "blando",
+      "corte": "Lo",
+      "texto": "«Está blando. Como mucho, un seis B.» Lo sacó en el pegue treinta. Cuando ya te lo sabes, no recuerdas lo que costaba."
     },
     {
       "tipo": "texto",
