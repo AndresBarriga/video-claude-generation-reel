@@ -6,11 +6,19 @@ import { Subtitulos } from "../../Subtitulos";
 import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { C, type P } from "./comun";
-import { Gancho } from "./Gancho";
+import { Gancho, PlanoGancho } from "./Gancho";
 import { Prado } from "./Prado";
-import { Retrato } from "./Retrato";
+import { Retrato, PlanoRetrato } from "./Retrato";
+import { Escaner } from "./Escaner";
+import { Cerebros } from "./Cerebros";
+import { Ensayo } from "./Ensayo";
+import { Cumbre } from "./Cumbre";
+import { Cierre } from "./Cierre";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, prado: Prado, retrato: Retrato };
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, prado: Prado, retrato: Retrato, escaner: Escaner, cerebros: Cerebros, ensayo: Ensayo, cumbre: Cumbre, cierre: Cierre,
+  mirada: ({ d }) => <PlanoRetrato d={d} m={[9, 14]} />,
+  subida: ({ d }) => <PlanoGancho d={d} desde={100} hasta={170} />,
+};
 
 export const Honnold: React.FC<{ datos: Datos }> = ({ datos }) => {
   const { fps } = useVideoConfig();

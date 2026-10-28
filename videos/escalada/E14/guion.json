@@ -1,6 +1,6 @@
 {
   "id": "E14",
-  "titulo": "¿En qué metro te habrías bajado tú? (Honnold, El Capitán sin cuerda)",
+  "titulo": "Para el vídeo en el metro en que te habrías bajado tú (Honnold, El Capitán sin cuerda)",
   "nicho": "escalada",
   "plantilla": "Honnold",
   "verificado": true,
@@ -13,19 +13,69 @@
   "ganchos_alternativos": [
     "1 · Situación: «Son las 5:32 de la mañana y este tío va a subir 884 metros sin cuerda.»",
     "2 · Cifra: «884 metros. Casi tres Torres Eiffel. Sin cuerda.»",
-    "3 · Pregunta (elegida): «¿En qué metro te habrías bajado tú?» — con el contador ya subiendo",
+    "3 · Pregunta (elegida, en formato reto): «Para el vídeo en el metro en que te habrías bajado tú.» — con el contador ya subiendo",
     "4 · Imagen imposible: una Torre Eiffel apoyada en la pared… y él la adelanta.",
     "5 · Afirmación que choca: «No es valiente. Su cerebro no enciende el miedo.»"
   ],
   "escenas": [
-    { "tipo": "gancho", "visual": "gancho", "titulo": "¿En qué metro te bajas tú?", "texto": "¿En qué metro te habrías bajado tú? Él no lleva cuerda." },
-    { "tipo": "texto", "visual": "prado", "titulo": "Un tercer piso", "texto": "Metro diez: un tercer piso. Tú, abajo, ya sudando." },
-    { "tipo": "texto", "visual": "retrato", "texto": "Metro cien. Y él, como quien sube la escalera de casa." },
-    { "tipo": "cifra", "visual": "prado", "titulo": "Una Torre Eiffel", "cifra": "330 m", "fuente": "Torre Eiffel: 330 m", "texto": "Metro trescientos treinta: una Torre Eiffel entera. Y le quedan casi dos más." },
-    { "tipo": "texto", "visual": "escaner", "texto": "Y aquí viene lo raro: le escanearon el cerebro. Su zona del miedo, la amígdala, ni se encendía." },
-    { "tipo": "texto", "visual": "cerebros", "texto": "A otro escalador se le iluminaba como un árbol de Navidad. A él, nada." },
-    { "tipo": "texto", "visual": "ensayo", "texto": "Pero no es magia: ensayó la vía con cuerda hasta saberse cada paso. Hasta una patada de kárate al vacío." },
-    { "tipo": "cifra", "visual": "cumbre", "titulo": "884 m", "cifra": "884 m", "fuente": "Guinness World Records", "texto": "Ochocientos ochenta y cuatro metros. Tres horas y cincuenta y seis minutos." },
-    { "tipo": "cierre", "visual": "cierre", "texto": "Dime en qué metro te habrías bajado tú. Y mándaselo al que dice que no tiene miedo a las alturas." }
+    {
+      "tipo": "gancho",
+      "visual": "gancho",
+      "titulo": "¿En qué metro paras tú?",
+      "texto": "Para el vídeo en el metro en que te habrías bajado tú."
+    },
+    {
+      "tipo": "texto",
+      "visual": "mirada",
+      "texto": "Él no se bajó. Y la culpa la tiene su cerebro."
+    },
+    {
+      "tipo": "texto",
+      "visual": "prado",
+      "titulo": "Un tercer piso",
+      "texto": "Metro diez: un tercer piso."
+    },
+    {
+      "tipo": "texto",
+      "visual": "subida",
+      "texto": "Metro cien. Y él, como quien sube la escalera de casa."
+    },
+    {
+      "tipo": "cifra",
+      "visual": "prado",
+      "titulo": "Una Torre Eiffel",
+      "cifra": "330 m",
+      "fuente": "Torre Eiffel: 330 m",
+      "texto": "Metro trescientos treinta: una Torre Eiffel entera. Le quedan casi dos más."
+    },
+    {
+      "tipo": "texto",
+      "visual": "escaner",
+      "texto": "Le escanearon el cerebro: su zona del miedo, la amígdala, ni se encendía."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cerebros",
+      "texto": "A otro escalador se le iluminaba como un árbol de Navidad. A él, nada."
+    },
+    {
+      "tipo": "texto",
+      "visual": "ensayo",
+      "texto": "Pero no es magia: ensayó cada paso con cuerda. Hasta una patada de kárate al vacío."
+    },
+    {
+      "tipo": "cifra",
+      "visual": "cumbre",
+      "titulo": "884 m",
+      "cifra": "884 m",
+      "fuente": "Guinness World Records",
+      "texto": "Ochocientos ochenta y cuatro metros. Tres horas y cincuenta y seis minutos."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "texto": "¿En qué metro te bajaste tú? Mándaselo al que dice que no tiene miedo a las alturas.",
+      "titulo": "¿En qué metro paras tú?"
+    }
   ]
 }

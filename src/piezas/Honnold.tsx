@@ -1,53 +1,50 @@
 // Caricatura de Alex Honnold para Escalador (prop `Cabeza`). Mismo sistema que la cabeza genérica: mira a +x.
-// Rasgos exagerados para el parecido: cara larga y estrecha con pómulos marcados y mejillas hundidas, mandíbula larga,
-// ojos grandes y muy abiertos (blanco alrededor de la pupila, sin contorno: no deben parecer gafas), cejas rectas y gruesas,
-// orejas grandes y separadas, pelo castaño corto con flequillo hacia un lado, sonrisa ancha de muchos dientes, cuello largo.
+// Pocos rasgos, muy marcados (notas de Andrés, 28-oct):
+// cabeza ALARGADA y estrecha, mandíbula larga y cuadrada, pómulos marcados; ojos GRANDES y redondos con mucho blanco y mirada fija;
+// expresión de calma inexpresiva (boca recta o sonrisa mínima y torpe); cejas rectas, oscuras y separadas; nariz larga y recta;
+// pelo oscuro, corto y revuelto, sin raya. Cuerpo fibroso (torso estrecho, brazos largos, manos grandes), camiseta roja,
+// bolsa de magnesio y pies de gato: ver ASPECTO_H y CUERPO_H.
 import React from "react";
 import type { Cara } from "./Escalador";
 
-export const PIEL_H = "#EBBE98", SOMBRA_H = "#C8946D", PELO_H = "#4A2E1A", TINTA_H = "#141B26";
-/** Ropa (no tiene por qué ser la del día): camiseta roja, pantalón caqui, sin arnés ni casco, manos sin guante. */
-export const ASPECTO_H = { chaqueta: "#C0503E", chaquetaSombra: "#8E3A2D", pantalon: "#8C7B5E", casco: null, arnes: false, manos: "piel" as const, piel: PIEL_H, pielSombra: SOMBRA_H };
+export const PIEL_H = "#EBBE98", SOMBRA_H = "#C38D66", PELO_H = "#24170E", TINTA_H = "#141B26";
+export const ASPECTO_H = { chaqueta: "#C43D2F", chaquetaSombra: "#8E2C22", pantalon: "#8C7B5E", casco: null, arnes: false, manos: "piel" as const, piel: PIEL_H, pielSombra: SOMBRA_H };
+/** Props de cuerpo para Escalador: fibroso, brazos largos, manos grandes, pies de gato, bolsa de magnesio. */
+export const CUERPO_H = { cuerpo: { torso: 38, brazos: 1.22, manos: 17, grosor: 0.8 }, pies: "#E0B23A", bolsa: "#3A4A63" };
 
 export const CabezaHonnold: React.FC<{ cara: Cara }> = ({ cara }) => {
   const st = { stroke: TINTA_H, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, fill: "none" };
   const cerrados = cara === "cerrados";
-  const sonrisa = cara === "alivio";
   return (
-    <g transform="translate(2 -18)">
-      <rect x={-11} y={24} width={20} height={40} rx={8} fill={SOMBRA_H} />
-      {/* oreja grande y separada */}
-      <path d="M-14 -8 C-32 -14 -34 18 -16 20 Z" fill={PIEL_H} stroke={SOMBRA_H} strokeWidth={3} />
-      <path d="M-18 -4 C-27 -4 -27 12 -18 13" stroke={SOMBRA_H} strokeWidth={3} fill="none" />
-      {/* cara larga y estrecha, mandíbula larga */}
-      <path d="M-18 -30 C-8 -46 22 -46 29 -28 C33 -16 33 -4 31 8 C30 24 26 38 14 44 C6 47 -4 44 -9 36 C-14 26 -16 14 -17 0 C-19 -12 -20 -22 -18 -30 Z" fill={PIEL_H} />
-      {/* pómulo y mejilla hundida */}
-      <path d="M2 10 C6 16 8 22 6 30" stroke={SOMBRA_H} strokeWidth={4} fill="none" opacity={0.7} />
-      <path d="M-14 8 C-12 22 -8 32 0 38" stroke={SOMBRA_H} strokeWidth={5} fill="none" opacity={0.45} />
-      {/* pelo corto con flequillo hacia delante */}
-      <path d="M-21 -2 C-26 -28 -10 -50 12 -49 C27 -48 36 -38 33 -24 C27 -30 18 -31 10 -27 C4 -30 -2 -27 -6 -22 C-10 -18 -13 -12 -15 -2 Z" fill={PELO_H} />
-      <path d="M8 -48 C18 -50 30 -44 34 -30 C30 -34 22 -36 16 -34 Z" fill={PELO_H} />
-      {/* cejas rectas y gruesas */}
-      {cara === "esfuerzo"
-        ? <path d="M3 -15 L15 -12 M20 -12 L31 -15" {...st} strokeWidth={6.5} />
-        : <path d="M2 -18 L15 -18 M20 -18 L31 -17" {...st} strokeWidth={6.5} />}
-      {/* ojos grandes, muy abiertos, sin contorno */}
-      {cerrados || sonrisa
-        ? <path d="M3 -7 Q9 -12 14 -7 M20 -7 Q26 -12 31 -7" {...st} strokeWidth={3.5} />
+    <g transform="translate(0 -26)">
+      <rect x={-9} y={30} width={18} height={46} rx={7} fill={SOMBRA_H} />
+      {/* oreja */}
+      <path d="M-12 -12 C-28 -16 -29 12 -13 14 Z" fill={PIEL_H} stroke={SOMBRA_H} strokeWidth={3} />
+      {/* cabeza alargada y estrecha: frente, pómulo, mejilla hundida, mandíbula larga y cuadrada */}
+      <path d="M-16 -40 C-10 -56 20 -58 28 -42 C32 -32 33 -20 33 -10 L35 0 C33 6 30 10 29 16 L30 38 L24 48 L0 49 L-12 40 C-16 26 -18 10 -18 -6 C-19 -22 -19 -32 -16 -40 Z" fill={PIEL_H} />
+      <path d="M29 16 C25 20 22 24 22 32" stroke={SOMBRA_H} strokeWidth={4} fill="none" opacity={0.75} />
+      <path d="M-12 40 L0 49 L24 48" stroke={SOMBRA_H} strokeWidth={3} fill="none" opacity={0.6} />
+      {/* pelo oscuro, corto, revuelto, sin raya */}
+      <path d="M-19 -14 C-24 -38 -12 -60 10 -60 C26 -60 36 -48 33 -34 C30 -36 27 -34 25 -37 C22 -33 18 -36 15 -33 C12 -37 8 -33 5 -36 C2 -32 -2 -35 -5 -31 C-8 -33 -11 -28 -12 -22 C-14 -20 -16 -17 -19 -14 Z" fill={PELO_H} />
+      {[[-8, -55], [2, -60], [13, -61], [24, -56], [31, -46]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={4.5} fill={PELO_H} />)}
+      {/* cejas rectas, oscuras, separadas */}
+      <path d={cara === "esfuerzo" ? "M-4 -28 L10 -25 M17 -25 L31 -28" : "M-5 -28 L10 -28 M17 -28 L31 -27"} {...st} strokeWidth={6} />
+      {/* ojos grandes y redondos, mucho blanco, pupila pequeña: mirada fija */}
+      {cerrados
+        ? <path d="M-3 -16 L10 -16 M17 -16 L30 -16" {...st} strokeWidth={3.5} />
         : <g>
-            <ellipse cx={9} cy={-7} rx={6.5} ry={7.5} fill="#fff" />
-            <ellipse cx={26} cy={-7} rx={5.8} ry={7} fill="#fff" />
-            <circle cx={10.5} cy={-6.5} r={2.6} fill={TINTA_H} /><circle cx={27.5} cy={-6.5} r={2.4} fill={TINTA_H} />
-            <path d="M3 -12 Q9 -16 15 -12 M21 -12 Q26 -15 31 -12" {...st} strokeWidth={2.5} />
+            <circle cx={3} cy={-16} r={9.5} fill="#fff" stroke={TINTA_H} strokeOpacity={0.25} strokeWidth={1.5} />
+            <circle cx={24} cy={-16} r={9} fill="#fff" stroke={TINTA_H} strokeOpacity={0.25} strokeWidth={1.5} />
+            <circle cx={4} cy={-16} r={2.6} fill={TINTA_H} /><circle cx={25} cy={-16} r={2.6} fill={TINTA_H} />
           </g>}
-      {/* nariz larga */}
-      <path d="M19 -4 L25 10 Q22 13 17 11" {...st} strokeWidth={2.8} />
-      {/* boca: sonrisa ancha de dientes (su sonrisa) o media sonrisa tranquila */}
-      {sonrisa
-        ? <g><path d="M5 19 Q19 36 33 17 Q19 23 5 19 Z" fill="#fff" stroke={TINTA_H} strokeWidth={2.6} strokeLinejoin="round" /><path d="M12 22 L13 27 M19 23 L19 29 M26 22 L25 27" stroke={TINTA_H} strokeWidth={1.4} /></g>
+      {/* nariz larga y recta */}
+      <path d="M14 -12 L17 12 L12 14" {...st} strokeWidth={3} />
+      {/* boca: recta, o sonrisa mínima y torpe; «alivio» = su sonrisa de dientes en la cumbre */}
+      {cara === "alivio"
+        ? <path d="M3 26 Q15 38 28 24 Q15 29 3 26 Z" fill="#fff" stroke={TINTA_H} strokeWidth={2.6} strokeLinejoin="round" />
         : cara === "esfuerzo"
-          ? <path d="M11 23 L29 21" {...st} strokeWidth={3.5} />
-          : <path d="M8 21 Q20 27 32 18" {...st} strokeWidth={3.5} />}
+          ? <path d="M5 28 L26 28" {...st} strokeWidth={3.5} />
+          : <path d="M5 28 L21 28 Q25 28 27 25" {...st} strokeWidth={3.5} />}
     </g>
   );
 };

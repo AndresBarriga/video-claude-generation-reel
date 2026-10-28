@@ -102,11 +102,15 @@ export type PropsEscalador = {
   /** Frontal encendido en el casco (luz hacia donde mira) */ frontal?: boolean;
   /** Reparto variado: colores, pelo, gorro, gafas, barba, sin casco/arnés (ver Rasgos.tsx) */ aspecto?: Aspecto;
   /** Objeto en la mano delantera */ objeto?: Objeto;
+  /** Complexión: ancho del torso (px), largo de brazos (factor), radio de manos, grosor de brazos/piernas. */ cuerpo?: { torso?: number; brazos?: number; manos?: number; grosor?: number };
+  /** Pies de gato (zapatilla ajustada en punta, color) en vez de bota. */ pies?: string;
+  /** Bolsa de magnesio a la cintura (color). */ bolsa?: string;
   /** Cabeza propia (caricatura de una persona concreta); sustituye a la cabeza genérica. Mismo sistema: radio 30, mira a +x. */ Cabeza?: React.FC<{ cara: Cara }>;
 };
 
 /** Escalador. (x, y) = cadera. `sombra` = y del suelo donde proyectar sombra. */
-export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto, Cabeza }) => {
+export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto, Cabeza, cuerpo = {}, pies, bolsa }) => {
+  const TW = cuerpo.torso ?? 52, KB = cuerpo.brazos ?? 1, RM = cuerpo.manos ?? 13, GR = cuerpo.grosor ?? 1;
   const c = { ...PERSONAJES[quien], ...aspecto } as typeof PERSONAJES.joe & Aspecto;
   const piel = aspecto.piel ?? PIEL, pielS = aspecto.pielSombra ?? PIEL_SOMBRA, mano = aspecto.manos === "piel" ? piel : GUANTE;
   let a: Angulos = POSES[pose] as Angulos;
@@ -115,32 +119,35 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
   const cuello = ext(0, 0, 180 - a.torso, L.torso);
   const hombro = ext(0, 0, 180 - a.torso, L.torso - 16);
   const cab = ext(cuello[0], cuello[1], 180 - a.torso, L.cabeza + 2);
-  const brazo = (ang: [number, number]) => { const e = ext(hombro[0], hombro[1], ang[0], L.brazo1); const m = ext(e[0], e[1], ang[1], L.brazo2); return { e, m }; };
+  const brazo = (ang: [number, number]) => { const e = ext(hombro[0], hombro[1], ang[0], L.brazo1 * KB); const m = ext(e[0], e[1], ang[1], L.brazo2 * KB); return { e, m }; };
   const pierna = (ang: [number, number]) => { const r = ext(0, 0, ang[0], L.pierna1); const p = ext(r[0], r[1], ang[1], L.pierna2); const punta = ext(p[0], p[1], ang[1] + 90, 22); return { r, p, punta }; };
   const bA = brazo(a.brazoA), bB = brazo(a.brazoB), pA = pierna(a.piernaA), pB = pierna(a.piernaB);
   const lin = (pts: [number, number][]) => "M" + pts.map((p) => p.join(" ")).join(" L");
   const st = (w: number, col: string) => ({ stroke: col, strokeWidth: w, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, fill: "none" });
-  const bota = (p: { r: [number, number]; p: [number, number]; punta: [number, number] }, col: string) => <path d={lin([p.p, p.punta])} {...st(22, col)} />;
+  const bota = (p: { r: [number, number]; p: [number, number]; punta: [number, number] }, col: string) => pies
+    ? <g><path d={lin([p.p, p.punta])} {...st(16, pies)} /><path d={lin([[p.p[0], p.p[1] + 7], [p.punta[0] + 4, p.punta[1] + 6]])} {...st(5, "#141B26")} /></g>
+    : <path d={lin([p.p, p.punta])} {...st(22, col)} />;
   return (
     <g>
       {sombra !== undefined && <ellipse cx={x} cy={sombra} rx={90 * s} ry={14 * s} fill="#000" opacity={0.18} />}
       <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${s * mira} ${s})`}>
         {/* detrás */}
-        <path d={lin([[0, 0], pB.r, pB.p])} {...st(30, "#1D2532")} />
+        <path d={lin([[0, 0], pB.r, pB.p])} {...st(30 * GR, "#1D2532")} />
         {bota(pB, "#0F141C")}
-        <path d={lin([hombro, bB.e, bB.m])} {...st(24, c.chaquetaSombra)} />
-        <circle cx={bB.m[0]} cy={bB.m[1]} r={12} fill={aspecto.manos === "piel" ? pielS : "#0F141C"} />
+        <path d={lin([hombro, bB.e, bB.m])} {...st(24 * GR, c.chaquetaSombra)} />
+        <circle cx={bB.m[0]} cy={bB.m[1]} r={RM - 1} fill={aspecto.manos === "piel" ? pielS : "#0F141C"} />
         {mochila && <rect x={-50} y={-100} width={36} height={74} rx={12} fill="#3A4656" transform={`rotate(${a.torso})`} />}
         {/* torso: chaqueta, pantalón y arnés en un mismo bloque girado */}
         <g transform={`rotate(${a.torso})`}>
-          <rect x={-26} y={-L.torso - 6} width={52} height={L.torso + 16} rx={24} fill={c.chaqueta} />
+          <rect x={-TW / 2} y={-L.torso - 6} width={TW} height={L.torso + 16} rx={TW / 2 - 2} fill={c.chaqueta} />
           <rect x={6} y={-L.torso + 4} width={10} height={L.torso - 34} rx={5} fill="#fff" opacity={0.14} />
-          <rect x={-25} y={-30} width={50} height={42} rx={18} fill={c.pantalon} />
+          <rect x={-TW / 2 + 1} y={-30} width={TW - 2} height={42} rx={18} fill={c.pantalon} />
+          {bolsa && <g><rect x={-TW / 2 - 18} y={-40} width={26} height={30} rx={9} fill={bolsa} /><path d={`M${-TW / 2 - 18} -38 Q${-TW / 2 - 5} -46 ${-TW / 2 + 8} -38`} stroke="#fff" strokeWidth={5} fill="none" opacity={0.8} /><circle cx={-TW / 2 - 8} cy={-30} r={3} fill="#fff" opacity={0.6} /></g>}
           {aspecto.arnes !== false && <><rect x={-27} y={-36} width={54} height={10} rx={4} fill={ARNES} />
           <circle cx={20} cy={-22} r={7} fill="none" stroke="#9AA6B2" strokeWidth={4} /></>}
         </g>
         {/* delante */}
-        <path d={lin([[0, 0], pA.r, pA.p])} {...st(30, c.pantalon)} />
+        <path d={lin([[0, 0], pA.r, pA.p])} {...st(30 * GR, c.pantalon)} />
         {bota(pA, BOTA)}
         {/* cabeza */}
         <g transform={`translate(${cab[0]} ${cab[1]}) rotate(${a.torso * 0.6 + a.cabeza})`}>
@@ -158,8 +165,8 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
             <circle cx={32} cy={-19} r={6} fill="#FFF7D6" />
           </g>)}
         </g>
-        <path d={lin([hombro, bA.e, bA.m])} {...st(24, c.chaqueta)} />
-        <circle cx={bA.m[0]} cy={bA.m[1]} r={13} fill={mano} />
+        <path d={lin([hombro, bA.e, bA.m])} {...st(24 * GR, c.chaqueta)} />
+        <circle cx={bA.m[0]} cy={bA.m[1]} r={RM} fill={mano} />
         {objeto && <g transform={`translate(${bA.m[0]} ${bA.m[1]}) rotate(0)`}><ObjetoMano o={objeto} /></g>}
         {navaja && (
           <g transform={`translate(${bA.m[0]} ${bA.m[1]}) rotate(${a.brazoA[1] - 90})`}>
