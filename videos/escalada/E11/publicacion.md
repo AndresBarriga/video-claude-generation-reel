@@ -2,9 +2,9 @@
 
 **Descripción (Instagram y TikTok):**
 Fase 5 y caes veinte centímetros 🙃
-No es cobardía: desde arriba el miedo agranda las distancias (Stefanucci y Proffitt, 2009) y pone a tope un reflejo del gemelo. El truco: talón abajo y suelta el aire.
+No es cobardía: desde arriba el miedo agranda las distancias y pone a tope un reflejo del gemelo. El truco: talón abajo y suelta el aire.
 
-Etiqueta a quien siempre llega a la fase 5.
+Mándaselo al que siempre llega a la fase 5.
 
 #escalada #escaladadeportiva #climbing #miedo #humorescalada
 
