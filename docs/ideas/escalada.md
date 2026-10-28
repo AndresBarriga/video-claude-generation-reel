@@ -51,3 +51,8 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 
 ## Notas de una segunda opinión (ChatGPT, 27-oct)
 Ranking viralidad: 15 > 14 > 16 > 11 > 20. Nicho: 2, 3, 6. Educativo: 8, 9, 12. Diferenciación España: 21, 22. En la 15, no presentar el corte como heroico ni sencillo: la tensión es el dilema.
+
+## Nuevas (28-oct, humor de identidad sin contador)
+- **«Está blando para el grado»**: el que encadena dice blando, el que no, «duro para el grado». Pantalla dividida con veredictos intercambiados. Envío: al que siempre dice «blando».
+- **La beta que no pediste** ★: tres personas gritan beta contradictoria; el escalador las sigue todas y cae; «ya te lo dije». Envío: al que da beta sin que se la pidan.
+- Descartada: «Estancado por meses» (repite el contador de E6).
