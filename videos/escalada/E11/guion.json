@@ -25,43 +25,37 @@
       "tipo": "texto",
       "visual": "fase1",
       "titulo": "Bah, es un temblorcito",
-      "texto": "Fase uno: bah, es un temblorcito.",
-      "pausa": 0.3
+      "texto": "Fase uno: bah, es un temblorcito."
     },
     {
       "tipo": "texto",
       "visual": "fase2",
       "titulo": "La cinta hace música",
-      "texto": "Fase dos: la cinta exprés empieza a hacer música.",
-      "pausa": 0.3
+      "texto": "Fase dos: la cinta exprés empieza a hacer música."
     },
     {
       "tipo": "texto",
       "visual": "fase3",
       "titulo": "«¡Confía en los pies!»",
-      "texto": "Fase tres: desde abajo, ¡confía en los pies!",
-      "pausa": 0.3
+      "texto": "Fase tres: desde abajo, ¡confía en los pies!"
     },
     {
       "tipo": "texto",
       "visual": "fase4",
       "titulo": "Prometes dejar la escalada",
-      "texto": "Fase cuatro: le prometes a la roca que dejas la escalada.",
-      "pausa": 0.3
+      "texto": "Fase cuatro: le prometes a la roca que dejas la escalada."
     },
     {
       "tipo": "texto",
       "visual": "fase5",
       "titulo": "¡PILLA!",
-      "texto": "Fase cinco: ¡pilla!",
-      "pausa": 0.6
+      "texto": "Fase cinco: ¡pilla!"
     },
     {
       "tipo": "texto",
       "visual": "caida",
       "titulo": "20 cm",
-      "texto": "Caída total: veinte centímetros.",
-      "pausa": 0.6
+      "texto": "Caída total: veinte centímetros."
     },
     {
       "tipo": "texto",
@@ -77,8 +71,7 @@
     {
       "tipo": "texto",
       "visual": "truco",
-      "texto": "El truco: baja el talón y suelta el aire.",
-      "pausa": 0.6
+      "texto": "El truco: baja el talón y suelta el aire."
     },
     {
       "tipo": "cierre",
