@@ -28,7 +28,7 @@ export const Bateria: React.FC<{ pct: number; top?: number }> = ({ pct, top = 21
 };
 
 /** Móvil grande en mano. La pantalla (children) se recorta al cristal. `apagado` 0–1 funde a negro. (x, y) = centro. */
-export const PantallaMovil: React.FC<{ x: number; y: number; s?: number; rot?: number; pct: number; rec?: boolean; apagado?: number; children?: React.ReactNode; id: string }> = ({ x, y, s = 1, rot = 0, pct, rec = true, apagado = 0, children, id }) => {
+export const PantallaMovil: React.FC<{ x: number; y: number; s?: number; rot?: number; pct: number; rec?: boolean; hud?: boolean; apagado?: number; children?: React.ReactNode; id: string }> = ({ x, y, s = 1, rot = 0, pct, rec = true, hud = true, apagado = 0, children, id }) => {
   const f = useCurrentFrame();
   const W = 560, H = 1040;
   return (
@@ -37,7 +37,7 @@ export const PantallaMovil: React.FC<{ x: number; y: number; s?: number; rot?: n
       <clipPath id={id}><rect x={-W / 2} y={-H / 2} width={W} height={H} rx={48} /></clipPath>
       <g clipPath={`url(#${id})`}>
         <g transform={`translate(${-W / 2} ${-H / 2})`}>{children}</g>
-        {apagado < 1 && <g opacity={1 - apagado}>
+        {hud && apagado < 1 && <g opacity={1 - apagado}>
           {rec && <g><circle cx={-W / 2 + 50} cy={-H / 2 + 56} r={14} fill={ROJO} opacity={Math.floor(f / 10) % 2 ? 1 : 0.4} />
             <text x={-W / 2 + 76} y={-H / 2 + 68} fill="#fff" fontFamily={fuenteTexto} fontWeight={700} fontSize={34}>REC</text></g>}
           <IconoBateria x={W / 2 - 150} y={-H / 2 + 40} pct={pct} s={1.1} />

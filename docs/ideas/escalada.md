@@ -14,7 +14,7 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 ## Identidad (para etiquetar a alguien)
 1. ¿Qué tipo de compañero de cordada eres?
 2. Los 7 escaladores que hay en todo rocódromo
-3. Lo que dices tú vs. lo que significa ("solo es un bloque de calentamiento")
+3. Lo que dices tú vs. lo que significa → **E3 «Escalador → Español»** (bloque; 7 frases, final del porteador que ve este vídeo; v1 con tiempos simulados 28-oct, plantilla Traductor, reparto Lucía/Paco/Nico; crítico 6/10, ver `videos/escalada/E3/propuesta.md`)
 4. Por qué siempre dices "la última y nos vamos"
 5. El que te da beta sin que se la pidas, explicado por la psicología
 6. ~~Tu pareja cuando le dices "solo una vía más"~~ → ver E6 «El último pegue»
