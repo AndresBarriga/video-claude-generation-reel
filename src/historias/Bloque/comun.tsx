@@ -1,7 +1,9 @@
 // E6 v2 «El último pegue» en bloque: piezas comunes de la plantilla Bloque.
 // Plano general: bloque desplomado a la derecha, crash pads naranjas, tres personajes con el mismo dibujo y distinto aspecto.
 import React from "react";
-import { random } from "remotion";
+import { Sequence, random } from "remotion";
+import { Bateria } from "../../piezas/Movil";
+import { Etiqueta as Rot, Pegues as Peg } from "../Pegue/comun";
 import { Escalador, type PropsEscalador } from "../../piezas/Escalador";
 import { CrashPad, PadEspalda } from "../../piezas/CrashPad";
 import type { Aspecto } from "../../piezas/Rasgos";
@@ -51,4 +53,43 @@ export const Fondo: React.FC<{ h: number; id: string; pads?: number; hundido?: n
       <CrashPad x={240} y={PAD} w={320} hundido={hundido} />
     </g>
   );
+};
+
+/* ---- v3: montaje rápido y HUD ---- */
+
+/** Planos dentro de una escena: `cortes` = fotogramas (relativos) donde cambia el plano. */
+export const Planos: React.FC<{ d: number; cortes: number[]; children: React.ReactNode[] }> = ({ d, cortes, children }) => {
+  const lim = [0, ...cortes, d];
+  return <>{children.map((c, i) => (lim[i + 1] > lim[i] ? <Sequence key={i} from={lim[i]} durationInFrames={lim[i + 1] - lim[i]}>{c}</Sequence> : null))}</>;
+};
+
+/** Pegue + batería (+ rótulo de la excusa). `desde` = fotograma en que entra todo. */
+export const Hud: React.FC<{ pegue?: number; bat?: number; titulo?: string; desde?: number; tam?: number }> = ({ pegue, bat, titulo, desde = 0, tam = 78 }) => (
+  <Sequence from={desde}>
+    {pegue !== undefined && <Peg n={pegue} />}
+    {bat !== undefined && <Bateria pct={bat} />}
+    <Rot texto={titulo} top={300} tam={tam} />
+  </Sequence>
+);
+
+/** Datos de la escena (pegue, batería) que vienen del guion. */
+export const datosE = (e: { [k: string]: unknown }) => ({ pegue: e.pegue as number | undefined, bat: e.bateria as number | undefined, titulo: e.titulo as string | undefined });
+
+/** Los colegas en sus 3 momentos: animan → sentados → recogen. */
+export type Momento = "animan" | "sentados" | "recogen" | "seVan";
+export const Colegas: React.FC<{ m: Momento; f: number; movil?: "movil" | "movilLuz"; xB?: number; xA?: number }> = ({ m, f, movil, xB = 760, xA = 120 }) => {
+  const bote = Math.abs(Math.sin(f / 4)) * 14;
+  if (m === "animan") return <>
+    <Alta x={xA} y={dePie(1.3) - bote} pose="celebrando" cara="alivio" />
+    <Barba x={xB} y={dePie() - bote * 0.6} pose={movil ? "grabando" : "senalando"} objeto={movil} mira={-1} cara="alivio" angulos={movil ? undefined : { brazoA: [150, 160] }} />
+  </>;
+  if (m === "sentados") return <>
+    <Alta x={xA + 40} y={sentado(1.3)} pose="sentadoSuelo" cara="cerrados" />
+    <Barba x={xB} y={sentado()} pose="sentadoSuelo" objeto={movil} mira={-1} cara="normal" />
+  </>;
+  const paso = Math.sin(f / 4) * 14;
+  return <>
+    <Alta x={xA - (m === "seVan" ? f * 3 : 0)} y={dePie(1.3)} pose="cargando" pad mira={-1} cara="cerrados" angulos={{ piernaA: [paso, 0], piernaB: [-paso, 0] }} />
+    <Barba x={xB} y={dePie()} pose={movil ? "grabando" : "cargando"} objeto={movil} pad mira={-1} cara="cerrados" />
+  </>;
 };

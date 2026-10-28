@@ -1,11 +1,11 @@
 {
   "id": "E6",
-  "titulo": "El último pegue (bloque)",
+  "titulo": "El último pegue (bloque, v3)",
   "nicho": "escalada",
   "plantilla": "Bloque",
   "verificado": true,
   "fuentes": [],
-  "nota": "v2 en bloque aprobada por Andrés el 27-oct (propuesta-v2.md + sus 4 cambios). La v1 en vía está en el historial de git (plantilla Pegue).",
+  "nota": "v3 (28-oct): todo baja a la vez (yemas, antebrazo, batería, luz). Último día del viaje en Albarracín; encadenas en el 23 y el móvil muere: no queda grabado. Cambio de plano cada ~1,5-2 s. La v2 está en el historial de git.",
   "ganchos_alternativos": [
     "Macro del flapper: «Si has dicho 'el último' con la yema en carne viva, esto eres tú.»",
     "Cámara rápida 1→23: «Veintitrés pegues. Y este sí es el último.»",
@@ -13,16 +13,108 @@
     "«Tu colega lleva media hora con los crash pads a la espalda. Tú: uno más.»"
   ],
   "escenas": [
-    { "tipo": "gancho", "visual": "noche", "pegue": 23, "titulo": "«Que ya sale»", "texto": "Tus colegas ya lo han encadenado y se van con los crash pads. Y tú: venga, un último pegue, que ya sale." },
-    { "tipo": "texto", "visual": "rebobina", "pegue": 9, "texto": "Lo vas a encadenar. Y aun así va a salir mal." },
-    { "tipo": "texto", "visual": "cepillo", "pegue": 9, "titulo": "«El último»", "texto": "Pegue nueve: el último. Soplas, cepillas la regleta... y al mismo paso." },
-    { "tipo": "texto", "visual": "cinta", "pegue": 12, "titulo": "«Solo para mirar los pies»", "texto": "Doce: solo para mirar los pies. Ya con esparadrapo." },
-    { "tipo": "texto", "visual": "desdepaso", "pegue": 15, "titulo": "«Desde el paso, que no cuenta»", "texto": "Quince: desde el paso, que no cuenta. Y sale. Ahora sí te lo crees." },
-    { "tipo": "texto", "visual": "flapper", "pegue": 19, "titulo": "«Ya estoy caliente»", "texto": "Diecinueve: ya estoy caliente. Se te abre el flapper." },
-    { "tipo": "texto", "visual": "lija", "pegue": 22, "texto": "Veintidós: lija, crema, y tu colega grabando por si acaso." },
-    { "tipo": "texto", "visual": "noche23", "pegue": 23, "texto": "Y en el veintitrés...", "pausa": 0.5 },
-    { "tipo": "texto", "visual": "topout", "pegue": 23, "texto": "lo encadenas.", "pausa": 1.0 },
-    { "tipo": "texto", "visual": "movil", "titulo": "«Lo tengo… el 22»", "texto": "Tu colega baja el móvil: lo tengo... el veintidós." },
-    { "tipo": "cierre", "visual": "cierre", "pegue": 24, "titulo": "¿El último?", "texto": "Mándaselo a quien te sujetaba el móvil." }
-  ]
+    {
+      "tipo": "gancho",
+      "visual": "alcanza",
+      "pegue": 23,
+      "bateria": 1,
+      "texto": "Venga, un último pegue, que ya sale.",
+      "pausa": 0.2
+    },
+    {
+      "tipo": "texto",
+      "visual": "seVan",
+      "pegue": 23,
+      "bateria": 1,
+      "texto": "Tus colegas ya lo han encadenado. El coche sale mañana a las ocho."
+    },
+    {
+      "tipo": "texto",
+      "visual": "rebobina",
+      "pegue": 9,
+      "bateria": 40,
+      "texto": "Lo vas a encadenar. Y aun así, no cuenta."
+    },
+    {
+      "tipo": "texto",
+      "visual": "nueve",
+      "pegue": 9,
+      "bateria": 40,
+      "titulo": "«El último»",
+      "texto": "Pegue nueve: el último. Soplas, cepillas... y fuera en el mismo paso."
+    },
+    {
+      "tipo": "texto",
+      "visual": "doce",
+      "pegue": 12,
+      "bateria": 33,
+      "titulo": "«Solo para mirar los pies»",
+      "texto": "Doce: solo para mirar los pies. Ya me los sé."
+    },
+    {
+      "tipo": "texto",
+      "visual": "platano",
+      "pegue": 14,
+      "bateria": 29,
+      "titulo": "«Esto es energía»",
+      "texto": "Catorce: plátano y nueces, que eso es energía."
+    },
+    {
+      "tipo": "texto",
+      "visual": "quince",
+      "pegue": 15,
+      "bateria": 26,
+      "titulo": "«Desde el paso, que no cuenta»",
+      "texto": "Quince: desde el paso, que no cuenta. Y sale. Ya es mío."
+    },
+    {
+      "tipo": "texto",
+      "visual": "flapper",
+      "pegue": 19,
+      "bateria": 18,
+      "titulo": "«Ya estoy caliente»",
+      "texto": "Diecinueve: ya estoy caliente. Ahora sí."
+    },
+    {
+      "tipo": "texto",
+      "visual": "antebrazo",
+      "pegue": 21,
+      "bateria": 15,
+      "titulo": "«Mejor con la bomba»",
+      "texto": "Veintiuno: mejor con la bomba, así no aprieto de más."
+    },
+    {
+      "tipo": "texto",
+      "visual": "recogen",
+      "pegue": 22,
+      "bateria": 12,
+      "texto": "Veintidós: el de despedida.",
+      "titulo": "«El de despedida»"
+    },
+    {
+      "tipo": "texto",
+      "visual": "alcanza23",
+      "pegue": 23,
+      "bateria": 1,
+      "texto": "Y en el veintitrés...",
+      "pausa": 0.7
+    },
+    {
+      "tipo": "texto",
+      "visual": "pantalla",
+      "pegue": 23,
+      "bateria": 1,
+      "texto": "lo encadenas.",
+      "pausa": 1.5
+    },
+    {
+      "tipo": "cierre",
+      "visual": "otro",
+      "pegue": 23,
+      "bateria": 0,
+      "titulo": "«¿Otro, para el vídeo?»",
+      "texto": "¿Otro, para el vídeo?"
+    }
+  ],
+  "critico": "28-oct, 7/10 (8 con cambios). Aplicado: frases que describían la imagen fuera, excusas nuevas (21 «mejor con la bomba», 22 «el de despedida»), línea 3 «no cuenta». No aplicado: ocultar la batería en el gancho (va contra el brief) y quitar «pegue» del gancho (frase fijada por Andrés)."
 }

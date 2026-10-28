@@ -2,7 +2,7 @@
 // Esqueleto por ángulos: cada pose es un conjunto de ángulos; se pueden mezclar dos poses (animación).
 // Ángulo de extremidad: 0 = hacia abajo, 90 = hacia delante (+x), -90 = hacia atrás, 180 = hacia arriba.
 // Torso: 0 = vertical, positivo = inclinado hacia delante.
-import React from "react";
+import React, { useId } from "react";
 import { Gafas, ObjetoMano, Tocado, type Aspecto, type Objeto } from "./Rasgos";
 
 export type Quien = "joe" | "simon";
@@ -107,6 +107,7 @@ export type PropsEscalador = {
 /** Escalador. (x, y) = cadera. `sombra` = y del suelo donde proyectar sombra. */
 export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto }) => {
   const c = { ...PERSONAJES[quien], ...aspecto } as typeof PERSONAJES.joe & Aspecto;
+  const clip = "cara" + useId().replace(/[^a-zA-Z0-9]/g, "");
   const piel = aspecto.piel ?? PIEL, pielS = aspecto.pielSombra ?? PIEL_SOMBRA, mano = aspecto.manos === "piel" ? piel : GUANTE;
   let a: Angulos = POSES[pose] as Angulos;
   if (poseB) a = mezcla(a, POSES[poseB] as Angulos, t);
@@ -145,10 +146,15 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
         <g transform={`translate(${cab[0]} ${cab[1]}) rotate(${a.torso * 0.6 + a.cabeza})`}>
           <circle r={L.cabeza} fill={piel} />
           <path d={`M${-L.cabeza} 2 A${L.cabeza} ${L.cabeza} 0 0 0 ${-L.cabeza * 0.2} ${L.cabeza}`} fill={pielS} opacity={0.6} />
-          {c.casco === null ? <Tocado a={aspecto} /> : <><path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />
+          {/* capas: barba → ojos y gafas (recortados a la cara) → pelo/gorro/casco encima */}
+          {c.casco === null && <Tocado a={aspecto} capa="debajo" />}
+          <clipPath id={clip}><circle r={L.cabeza - 1.5} /></clipPath>
+          <g clipPath={`url(#${clip})`}>
+            <g transform="translate(-8 6)"><Ojos cara={cara} /></g>
+            {aspecto.gafas && <g transform="translate(-8 6)"><Gafas /></g>}
+          </g>
+          {c.casco === null ? <Tocado a={aspecto} capa="encima" /> : <><path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />
           <path d={`M${-L.cabeza + 2} -12 Q0 -36 ${L.cabeza - 4} -12`} stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" /></>}
-          <g transform="translate(-8 6)"><Ojos cara={cara} /></g>
-          {aspecto.gafas && <g transform="translate(-8 6)"><Gafas /></g>}
           {frontal && (<g>
             <path d="M30 -18 L420 -120 L420 90 Z" fill="#FFF3C4" opacity={0.16} />
             <rect x={20} y={-26} width={14} height={14} rx={4} fill="#2A3442" />

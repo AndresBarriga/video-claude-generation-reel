@@ -1,12 +1,12 @@
-# E6 · El último pegue (bloque) — publicación
+# E6 · El último pegue (bloque, v3) — publicación
 
 **Descripción (Instagram y TikTok):**
-Pegue 9: «el último». Pegue 12: «solo para mirar los pies». Pegue 15: «desde el paso, que no cuenta». Pegue 23: tus colegas ya se van… y tú: «que ya sale».
+Último día en Albarracín. Pegue 9: «el último». Pegue 14: plátano y nueces. Pegue 21: «mejor con la bomba». Pegue 23… y el móvil al 1 %.
 
 Mándaselo a quien te sujetaba el móvil 📱
 
-#escalada #bloque #boulder #proyecto #climbing
+#escalada #bloque #albarracin #boulder #proyecto
 
-**Comentario fijado:** ¿Cuál es la excusa que te has creído de verdad para un último pegue?
+**Comentario fijado:** ¿Qué proyecto te dejaste en un viaje?
 
-**Portada:** gancho de noche (pegue 23, «Que ya sale»).
+**Portada:** primer fotograma (la mano llegando al último canto, de noche).
