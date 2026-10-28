@@ -1,0 +1,17 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "viento", "inicio": { "escena": 0 }, "fin": { "escena": "cazo#1", "final": true }, "volumen": 0.3, "bucle": true, "fundido": [0.05, 0.2] },
+    { "nombre": "crujido", "inicio": { "escena": 0 }, "fin": { "escena": 0, "palabra": "Aquí," }, "volumen": 0.5, "bucle": true, "bajoVoz": 0.2 },
+    { "nombre": "zas", "inicio": { "escena": 0, "palabra": "Aquí,", "mas": -0.1 }, "duracion": 0.7, "volumen": 0.8 },
+    { "nombre": "zas", "inicio": { "escena": "cazo", "palabra": "Y", "mas": -0.1 }, "duracion": 0.7, "volumen": 0.7 },
+    { "nombre": "zas", "inicio": { "escena": "blando", "palabra": "Lo", "mas": -0.1 }, "duracion": 0.7, "volumen": 0.7 },
+    { "nombre": "caida", "inicio": { "escena": "pegue", "palabra": "Repetición.", "mas": 0.7 }, "duracion": 1.2, "volumen": 0.9 },
+    { "nombre": "golpe", "inicio": { "escena": "pegue", "palabra": "Repetición.", "mas": 0.95 }, "duracion": 1, "volumen": 0.8, "ignoraSilencio": true },
+    { "nombre": "clic", "inicio": { "escena": "grados", "palabra": "Ya" }, "duracion": 0.6, "volumen": 0.9 },
+    { "nombre": "tintineo", "inicio": { "escena": "grados", "fraccion": 0.6 }, "duracion": 0.8, "volumen": 0.6 },
+    { "nombre": "viento", "inicio": { "escena": "porteo" }, "volumen": 0.25, "bucle": true, "fundido": [0.3, 0.3] },
+    { "nombre": "zas", "inicio": { "escena": "porteo", "palabra": "Y", "mas": -0.1 }, "duracion": 0.7, "volumen": 0.8 },
+    { "nombre": "zas", "inicio": { "escena": "cierre", "fraccion": 0.7 }, "duracion": 0.7, "volumen": 0.7 }
+  ]
+}
