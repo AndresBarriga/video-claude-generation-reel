@@ -58,3 +58,8 @@ Al enseñar un guion, pon la puntuación en una línea («Viralidad 13/14: falta
 ## Ejemplo: E15 antes y después
 - **Antes (v2, 7/14):** abría en plano general; contaba la historia en orden (adivinable: «¿cortará?»); no se veía por qué no había anclaje; cerraba con «¿la habrías cortado? sí/no» (respuesta obvia).
 - **Después (v3):** abre en la navaja temblando + «¿Cortas?»; «Cortó. Y lo que pasó después parece imposible»; hoyo de nieve que cede; giro «tenía que estar muerto»; cierre «¿Te cortaría tu compañero? Mándaselo»; comentario fijado con pregunta genuina (no «etiqueta a…»); termina en el mismo plano del inicio.
+
+## Añadido 2026-10-28 (caso de 300k vs 16M, mismo día, misma cuenta; muestra pequeña, hipótesis)
+- **Amplitud del tema:** ¿el espectador lo está viviendo/tocando ahora mismo? Un tema que usa todo el mundo supera a uno de nicho. En escalada, tirar de experiencias universales (último intento, excusas, el colega que graba) y no del deporte en sí.
+- **Primer fotograma = acción física, nunca un rótulo/título.** El rótulo entra tras ~0,5 s. (E6 v2 lo incumple: corregir.)
+- **Mostrar, no decir:** un número o cambio visible que se mueva (100→71, 23→9) como causa visible.
