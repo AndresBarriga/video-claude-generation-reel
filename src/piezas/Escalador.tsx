@@ -102,10 +102,11 @@ export type PropsEscalador = {
   /** Frontal encendido en el casco (luz hacia donde mira) */ frontal?: boolean;
   /** Reparto variado: colores, pelo, gorro, gafas, barba, sin casco/arnés (ver Rasgos.tsx) */ aspecto?: Aspecto;
   /** Objeto en la mano delantera */ objeto?: Objeto;
+  /** Cabeza propia (caricatura de una persona concreta); sustituye a la cabeza genérica. Mismo sistema: radio 30, mira a +x. */ Cabeza?: React.FC<{ cara: Cara }>;
 };
 
 /** Escalador. (x, y) = cadera. `sombra` = y del suelo donde proyectar sombra. */
-export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto }) => {
+export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto, Cabeza }) => {
   const c = { ...PERSONAJES[quien], ...aspecto } as typeof PERSONAJES.joe & Aspecto;
   const piel = aspecto.piel ?? PIEL, pielS = aspecto.pielSombra ?? PIEL_SOMBRA, mano = aspecto.manos === "piel" ? piel : GUANTE;
   let a: Angulos = POSES[pose] as Angulos;
@@ -143,12 +144,14 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
         {bota(pA, BOTA)}
         {/* cabeza */}
         <g transform={`translate(${cab[0]} ${cab[1]}) rotate(${a.torso * 0.6 + a.cabeza})`}>
+          {Cabeza ? <Cabeza cara={cara} /> : <>
           <circle r={L.cabeza} fill={piel} />
           <path d={`M${-L.cabeza} 2 A${L.cabeza} ${L.cabeza} 0 0 0 ${-L.cabeza * 0.2} ${L.cabeza}`} fill={pielS} opacity={0.6} />
           {c.casco === null ? <Tocado a={aspecto} /> : <><path d={`M${-L.cabeza - 5} -2 A${L.cabeza + 5} ${L.cabeza + 5} 0 0 1 ${L.cabeza + 5} -2 L${L.cabeza + 12} 2 L${-L.cabeza - 5} 4 Z`} transform="translate(0 -6)" fill={c.casco} />
           <path d={`M${-L.cabeza + 2} -12 Q0 -36 ${L.cabeza - 4} -12`} stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" /></>}
           <g transform="translate(-8 6)"><Ojos cara={cara} /></g>
           {aspecto.gafas && <g transform="translate(-8 6)"><Gafas /></g>}
+          </>}
           {frontal && (<g>
             <path d="M30 -18 L420 -120 L420 90 Z" fill="#FFF3C4" opacity={0.16} />
             <rect x={20} y={-26} width={14} height={14} rx={4} fill="#2A3442" />
