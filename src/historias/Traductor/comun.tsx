@@ -7,6 +7,7 @@ import type { Aspecto } from "../../piezas/Rasgos";
 import { fuenteTexto } from "../../tema";
 import { PresaPie, trepa } from "../Bloque/comun";
 import { C, Zoom, clamp, type P } from "../Pegue/comun";
+export { Cuerda } from "../Pegue/comun";
 export { AG, Fondo, PAD, Planos, SUELO, TOP, colgado, dePie, sentado, trepa } from "../Bloque/comun";
 export { C, Camara, Etiqueta, Svg, Zoom, clamp, golpe, type P } from "../Pegue/comun";
 
@@ -45,7 +46,7 @@ const Destello: React.FC = () => {
 };
 
 /** Escena partida: `dice` hasta el corte, `significa` después (cada una recibe su duración). */
-export const Partida: React.FC<{ p: P; dice: (d: number) => React.ReactNode; significa: (d: number) => React.ReactNode; pildora?: boolean }> = ({ p, dice, significa, pildora = true }) => {
+export const Partida: React.FC<{ p: P; dice: (d: number) => React.ReactNode; significa: (d: number) => React.ReactNode; pildora?: boolean }> = ({ p, dice, significa, pildora = false }) => {
   const c = Math.max(1, Math.min(p.d - 1, fCorte(p))), d2 = p.d - c;
   return (<>
     <Sequence durationInFrames={c}>{dice(c)}{pildora && <Idioma real={false} />}</Sequence>

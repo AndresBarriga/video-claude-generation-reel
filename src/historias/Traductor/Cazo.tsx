@@ -12,7 +12,7 @@ export const Cazo: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Dice d={d} 
 const CaraCazo: React.FC<{ d: number }> = ({ d }) => {
   const f = useCurrentFrame();
   return (<Camara d={d} empuje={0.1} entrada={false}><Svg><Cerca cx={H.x + 10} cy={H.y - 160} s={3.6}>
-    <Fondo h={0.35} id="cazc" />
+    <Fondo sol={false} h={0.35} id="cazc" />
     <LuciaColgada hx={H.x} hy={H.y} cara="miedo" cabeza={-8} tiembla={Math.sin(f * 2.8) * 3} />
   </Cerca></Svg></Camara>);
 };
@@ -20,7 +20,7 @@ const CaraCazo: React.FC<{ d: number }> = ({ d }) => {
 const Dice: React.FC<{ d: number }> = ({ d }) => (
   <Camara d={d} empuje={0.05}>
     <Svg><Zoom s={1.5} cx={420} cy={1100} tx={540} ty={1000}>
-      <Fondo h={0.35} id="caz" />
+      <Fondo sol={false} h={0.35} id="caz" />
       <LuciaColgada hx={H.x} hy={H.y} cara="esfuerzo" cabeza={-40} />
       <Paco x={720} y={dePie(1.25)} pose="senalando" mira={-1} cara="alivio" angulos={{ brazoA: [150, 160], cabeza: -14 }} />
     </Zoom></Svg>

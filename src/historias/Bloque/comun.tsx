@@ -58,11 +58,11 @@ export const Colgado: React.FC<{ hx: number; hy: number; cara?: import("../../pi
 };
 
 /** Fondo completo: cielo (hora h), suelo, bloque, agarres con magnesio y pads. `pads` = cuántos quedan (1–3). */
-export const Fondo: React.FC<{ h: number; id: string; pads?: number; hundido?: number }> = ({ h, id, pads = 3, hundido = 0 }) => {
+export const Fondo: React.FC<{ h: number; id: string; pads?: number; hundido?: number; sol?: boolean }> = ({ h, id, pads = 3, hundido = 0, sol = true }) => {
   const t = tonos(h);
   return (
     <g>
-      <Cielo h={h} id={id} />
+      <Cielo h={h} id={id} sol={sol} />
       {h > 0.9 && Array.from({ length: 45 }).map((_, i) => <circle key={i} cx={random(`bx${i}`) * 1080} cy={random(`by${i}`) * 950} r={1.5 + random(`br${i}`) * 2.5} fill="#fff" opacity={0.3 + 0.5 * random(`bo${i}`)} />)}
       <path d={`M-300 ${SUELO} Q540 ${SUELO - 26} 1400 ${SUELO} L1400 2400 L-300 2400 Z`} fill={t.suelo} />
       {[40, 150, 980].map((x, i) => <path key={i} d={`M${x} ${SUELO + 2} q8 -40 16 0 q6 -30 14 0 q8 -34 16 0`} fill={h > 0.9 ? "#121A1F" : "#5F7253"} />)}

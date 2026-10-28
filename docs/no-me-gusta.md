@@ -23,6 +23,9 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E3 v1) El bloque exterior como escenario de todo: «muy visto». Variar escenarios en cada vídeo (rocódromo, desplome, exterior).
 - 2026-10-28 · (E3 v1) Conformarse con un 6/10 del crítico: hay que subirlo antes de enseñar.
 - 2026-10-28 · (E3 v2) Macro de la mano cerrando regleta (pieza ManoRegleta): «quedan feas». No usar manos de perfil así.
+- 2026-10-28 · (E3 v3) Píldora «ESCALADOR/ESPAÑOL»: no se entiende para qué está. Quitada.
+- 2026-10-28 · (E3 v3) Escalador colgado alto sin cuerda ni arnés: poco real. Si está alto, vía con arnés y cuerda.
+- 2026-10-28 · (E3) Voz y subtítulos que no dicen lo mismo (texto cambiado en ElevenLabs) → se desincroniza. Si se cambia el texto en ElevenLabs, avisar para actualizar `guion.json`.
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.

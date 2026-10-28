@@ -5,7 +5,6 @@ import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { PantallaMovil } from "../../piezas/Movil";
 import { AG, Camara, Cerca, Etiqueta, Fondo, LuciaColgada, Nico, Partida, Planos, Svg, Zoom, clamp, colgado, dePie, type P } from "./comun";
 import { PlanoDesplome } from "./Roco";
-import { Idioma } from "./comun";
 
 const H = colgado(AG.labio);
 
@@ -17,7 +16,7 @@ export const Porteo: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Escena d=
 const CaraLucia: React.FC<{ d: number }> = ({ d }) => {
   const f = useCurrentFrame();
   return (<Camara d={d} empuje={0.12} entrada={false}><Svg><Cerca cx={H.x + 10} cy={H.y - 160} s={3.6}>
-    <Fondo h={0.6} id="porc" />
+    <Fondo sol={false} h={0.6} id="porc" />
     <LuciaColgada hx={H.x} hy={H.y} cara="miedo" cabeza={34} tiembla={Math.sin(f * 2.8) * 4} />
   </Cerca></Svg></Camara>);
 };
@@ -38,7 +37,7 @@ const Escena: React.FC<{ d: number; real?: boolean }> = ({ d, real }) => {
   return (
     <Camara d={d} empuje={0.04} entrada={!real}>
       <Svg><g transform={`translate(540 1000) scale(${z}) translate(-540 -1000)`}><Zoom s={1.35} cx={380} cy={1060} tx={540} ty={1040}>
-        <Fondo h={0.6} id={real ? "por1" : "por0"} />
+        <Fondo sol={false} h={0.6} id={real ? "por1" : "por0"} />
         <LuciaColgada hx={H.x} hy={H.y} cara={real ? "miedo" : "esfuerzo"} cabeza={real ? 30 : -30} tiembla={real ? Math.sin(f * 2.4) * 4 : 0} />
         {real
           ? <Nico x={250} y={dePie()} pose="grabando" objeto="movil" cara="alivio" angulos={{ cabeza: 22, brazoA: [70, 150] }} />
@@ -53,6 +52,7 @@ export const Cierre: React.FC<P> = ({ d, e }) => {
   const f = useCurrentFrame(), c0 = Math.round(d * 0.45), crece = Math.round(d * 0.7);
   if (f < c0) return <SeRie d={c0} />;
   const k = interpolate(f, [crece, d - 2], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  if (k > 0.97) return <Svg><PlanoDesplome /></Svg>;
   const s = 1.1 + k * (1080 / 560 - 1.1); // al final, el cristal ocupa exactamente los 1080 px
   return (
     <Camara d={d} empuje={0} entrada={false}>
@@ -63,7 +63,6 @@ export const Cierre: React.FC<P> = ({ d, e }) => {
         </PantallaMovil>
       </Svg>
       {k === 0 && <Etiqueta texto={e.titulo} top={300} tam={78} />}
-      {k > 0.97 && <Idioma real={false} />}
     </Camara>
   );
 };
@@ -72,7 +71,7 @@ export const Cierre: React.FC<P> = ({ d, e }) => {
 const SeRie: React.FC<{ d: number }> = ({ d }) => {
   const f = useCurrentFrame(), risa = Math.abs(Math.sin(f / 2.2)) * 6;
   return (<Camara d={d} empuje={0.1} entrada={false}><Svg><Cerca cx={262} cy={dePie() - 150} s={2.8}>
-    <Fondo h={0.6} id="serie" />
+    <Fondo sol={false} h={0.6} id="serie" />
     <LuciaColgada hx={H.x} hy={H.y} cara="miedo" cabeza={34} tiembla={Math.sin(f * 2.8) * 5} />
     <Nico x={250} y={dePie() - risa} pose="grabando" objeto="movilLuz" cara="alivio" angulos={{ cabeza: 24, brazoA: [70, 150] }} />
   </Cerca></Svg></Camara>);

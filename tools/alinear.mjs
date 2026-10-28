@@ -12,11 +12,25 @@ export function silencios(audio, umbral = "-38dB", minimo = 0.15) {
 }
 
 /** palabras: array de strings del guion. Devuelve [{start, end}] por palabra y los emparejamientos de pausa. */
-export function alinear(audio, palabras, dur) {
+export function alinear(audio, palabras, dur, frases) {
   const sil = silencios(audio);
   const ini = sil.length && sil[0].a < 0.05 ? sil[0].b : 0.05;
   const ultimo = sil.length && sil[sil.length - 1].b >= dur - 0.05 ? sil[sil.length - 1].a : dur;
   const internos = sil.filter((s) => s.a > ini + 0.05 && s.b < ultimo - 0.05);
+  // Modo manual: `frases` = palabras por tramo de voz (guion.json → "frases"). Si cuadra con los silencios, se usa tal cual.
+  if (frases && frases.length === internos.length + 1 && frases.reduce((a, b) => a + b, 0) === palabras.length) {
+    const peso = (p) => p.replace(/[^\p{L}\p{N}]/gu, "").length + 1;
+    const tramos = [], tiempos = new Array(palabras.length); let t0 = ini;
+    internos.forEach((s) => { tramos.push([t0, s.a]); t0 = s.b; }); tramos.push([t0, ultimo]);
+    let w0 = 0;
+    frases.forEach((n, k) => {
+      const [a, b] = tramos[k], ws = palabras.slice(w0, w0 + n).map(peso), suma = ws.reduce((x, y) => x + y, 0);
+      let t = a; ws.forEach((w, j) => { const d = (w / suma) * (b - a); tiempos[w0 + j] = { start: t, end: t + d - 0.02 }; t += d; });
+      w0 += n;
+    });
+    return { tiempos, pareja: new Map(frases.map((_, k) => [k, true])), sil: internos };
+  }
+  if (frases) console.warn(`"frases" no cuadra (${frases.length} tramos, ${internos.length + 1} detectados): uso el alineado automático`);
   // fronteras: índice de la última palabra de cada cláusula
   const fronteras = [];
   palabras.forEach((p, i) => { if (i < palabras.length - 1 && /[.,;:!?]$/.test(p)) fronteras.push(i); });

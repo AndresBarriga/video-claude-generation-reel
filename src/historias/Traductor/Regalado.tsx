@@ -64,7 +64,7 @@ const Ayer: React.FC<{ f: number }> = ({ f }) => {
   </Zoom></Svg>);
 };
 const Hoy: React.FC<{ f: number }> = ({ f }) => (
-  <Svg><Zoom s={2.6} cx={704} cy={dePieR(1.25) - 175} tx={540} ty={400}>
+  <Svg><Zoom s={2.6} cx={704} cy={dePieR(1.25) - 175} tx={540} ty={300}>
     <Rocodromo />
     <Paco x={700} y={dePieR(1.25) - Math.abs(Math.sin(f / 5)) * 3} pose="senalando" mira={-1} cara="alivio" angulos={{ brazoA: [140, 150], cabeza: -10 }} />
   </Zoom></Svg>
