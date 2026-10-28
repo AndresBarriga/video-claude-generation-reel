@@ -5,7 +5,7 @@ import React from "react";
 export type Aspecto = {
   chaqueta?: string; chaquetaSombra?: string; pantalon?: string; piel?: string; pielSombra?: string;
   /** null = sin casco (bloque) */ casco?: string | null;
-  gorro?: string; pelo?: string; peinado?: "corto" | "rizado" | "coleta";
+  gorro?: string; pelo?: string; peinado?: "corto" | "rizado" | "coleta" | "trenzas" | "rapado";
   barba?: string; gafas?: boolean; arnes?: boolean; manos?: "guante" | "piel";
 };
 export type Objeto = "movil" | "movilLuz" | "cepillo" | "lija" | "crema";
@@ -17,7 +17,8 @@ export const Tocado: React.FC<{ a: Aspecto }> = ({ a }) => {
     <g>
       {a.barba && <path d={`M${-R + 4} 4 Q${-R + 6} ${R + 10} 6 ${R + 6} Q${R} ${R + 4} ${R - 2} 8 Q14 20 4 18 Q-8 20 ${-R + 4} 4 Z`} fill={a.barba} />}
       {!a.gorro && a.peinado === "rizado" && [[-24, -14], [-12, -26], [4, -30], [18, -24], [-28, 2], [26, -12]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={13} fill={pelo} />)}
-      {!a.gorro && a.peinado !== "rizado" && <path d={`M${-R - 2} 2 A${R + 2} ${R + 2} 0 0 1 ${R + 2} -6 Q8 -14 -6 -10 Q-18 -8 ${-R + 8} 6 Z`} fill={pelo} />}
+      {!a.gorro && a.peinado !== "rizado" && a.peinado !== "rapado" && <path d={`M${-R - 2} 2 A${R + 2} ${R + 2} 0 0 1 ${R + 2} -6 Q8 -14 -6 -10 Q-18 -8 ${-R + 8} 6 Z`} fill={pelo} />}
+      {a.peinado === "trenzas" && <g fill={pelo}>{[0, 1, 2, 3].map((i) => <circle key={i} cx={-R + 2 - i * 2} cy={8 + i * 15} r={9 - i} />)}</g>}
       {a.peinado === "coleta" && <path d={`M${-R + 2} -8 q-30 6 -26 40 q10 -14 22 -22 Z`} fill={pelo} />}
       {a.gorro && <g>
         {a.peinado === "rizado" && [[-30, 4], [-26, 16], [28, 4]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={10} fill={pelo} />)}

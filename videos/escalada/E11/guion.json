@@ -1,0 +1,83 @@
+{
+  "id": "E11",
+  "titulo": "Las 5 fases de la pierna de Elvis",
+  "nicho": "escalada",
+  "plantilla": "Pierna",
+  "verificado": true,
+  "fuentes": [
+    "Stefanucci JK, Proffitt DR (2009). The roles of altitude and fear in the perception of height. J Exp Psychol Hum Percept Perform 35(2):424-438. Las alturas se sobreestiman mucho mirando desde arriba; la sobreestimación correla con el miedo a las alturas.",
+    "Horslen BC, Inglis JT, Blouin JS, Carpenter MG (2018). Increased human stretch reflex dynamic sensitivity with height-induced postural threat. J Physiol. Reflejos de estiramiento del sóleo mayores con amenaza de altura (3,5 m al borde)."
+  ],
+  "nota_rigor": "'Las distancias parecen más grandes desde arriba' y 'el miedo pone a tope un reflejo del gemelo' están respaldadas (fuentes). Que el reflejo, de puntillas en un reglete, produzca la pierna de Elvis es la explicación habitual, contada como explicación. 'Caída de veinte centímetros' es el chiste del vídeo (situación inventada), no un dato. Truco (talón abajo, soltar aire): técnica común de escalada, no instrucción de seguridad.",
+  "ganchos_alternativos": [
+    "A · «Las cinco fases de la pierna de Elvis» + fase 1 (elegida, voz grabada)",
+    "B · Empezar por la fase 5 («¡pilla!» y caída de 20 cm) y volver a la 1",
+    "C · «Tu pierna, a dos metros de la chapa»"
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "intro",
+      "titulo": "Las 5 fases de la pierna de Elvis",
+      "texto": "Las cinco fases de la pierna de Elvis."
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase1",
+      "titulo": "Bah, es un temblorcito",
+      "texto": "Fase uno: bah, es un temblorcito."
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase2",
+      "titulo": "La cinta hace música",
+      "texto": "Fase dos: la cinta exprés empieza a hacer música."
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase3",
+      "titulo": "«¡Confía en los pies!»",
+      "texto": "Fase tres: desde abajo, ¡confía en los pies!"
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase4",
+      "titulo": "Prometes dejar la escalada",
+      "texto": "Fase cuatro: le prometes a la roca que dejas la escalada."
+    },
+    {
+      "tipo": "texto",
+      "visual": "fase5",
+      "titulo": "¡PILLA!",
+      "texto": "Fase cinco: ¡pilla!"
+    },
+    {
+      "tipo": "texto",
+      "visual": "caida",
+      "titulo": "20 cm",
+      "texto": "Caída total: veinte centímetros."
+    },
+    {
+      "tipo": "texto",
+      "visual": "engano",
+      "fuente": "Stefanucci y Proffitt, 2009",
+      "texto": "Y es que el miedo te engaña dos veces: desde arriba, las distancias parecen mucho más grandes."
+    },
+    {
+      "tipo": "texto",
+      "visual": "gemelo",
+      "texto": "Y pone a tope un reflejo de tu gemelo que, en un reglete, se vuelve loco."
+    },
+    {
+      "tipo": "texto",
+      "visual": "truco",
+      "texto": "El truco: baja el talón y suelta el aire."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "titulo": "¿En qué fase te quedas tú?",
+      "texto": "El miedo no se va. Pero la pierna deja de bailar. ¿En qué fase te quedas tú?"
+    }
+  ]
+}

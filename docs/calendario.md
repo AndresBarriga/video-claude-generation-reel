@@ -6,7 +6,7 @@
 | 11 nov | mascotas | M? por definir | idea |
 | 14 nov | escalada | E15 Tocando el vacío | final con voz (falta aprobar) |
 | 16 nov | mascotas | M? | idea |
-| 21 nov | escalada | E11 Por qué te tiembla la pierna | idea |
+| 21 nov | escalada | E11 Las 5 fases de la pierna de Elvis | producido con voz, falta revisión de Andrés |
 | 23 nov | mascotas | M? | idea |
 | 30 nov | — | Decisión de nicho | — |
 

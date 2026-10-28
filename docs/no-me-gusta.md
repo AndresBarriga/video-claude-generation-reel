@@ -16,6 +16,10 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · (E6 v1, opinión de Claude asumida) En vídeos de identidad/humor, convertir la situación en lección o gráfico abstracto (líneas «Fuerza/Memoria»): la gracia está en lo reconocible, la teoría como mucho de segundo gancho.
 - 2026-10-27 · Muchas escenas seguidas con el mismo plano (mismo personaje en la misma pared): variar encuadre cada escena.
 - 2026-10-27 · Metáforas literales que confunden (dibujar la toalla de «tirar la toalla»).
+- 2026-10-27 · (E11 v1) Pared con canto recto y liso: parece una torre, no una montaña. Canto irregular, estratos, vegetación y cordillera detrás.
+- 2026-10-27 · (E11 v1) Vídeo de cuerpo que se queda en explicación: necesita conflicto o humor (en E11, el asegurador que se ríe desde abajo).
+- 2026-10-28 · (E11) Pedir al espectador que haga una prueba física: en la cama nadie la hace. Y la experiencia de Andrés: no le funcionó.
+- 2026-10-28 · (E11 v2) Experimento en laboratorio con plataforma elevadora: no se entendía.
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
@@ -23,3 +27,7 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · Historias con dilema moral y giro (Tocando el vacío).
 - 2026-10-27 · Ideas de explicación general (cuerpo, «por qué te pasa…»): le parecen bien.
 - 2026-10-27 · Situaciones reales de escalador con matices propios (el último pegue del viaje, vías y bloque), mejor que el chiste genérico.
+- 2026-10-27 · (E11) Anatomía muy clara: que se entienda qué parte del cuerpo es (lupa, corte, etiqueta).
+- 2026-10-27 · (E11) Consejos breves y prácticos al final de un vídeo de cuerpo («respira», «baja el talón»).
+- 2026-10-28 · (E11) Formato por fases, con muchos cambios de plano: «la gente reacciona mejor a cambios, si no se aburre».
+- 2026-10-28 · (E11, idea de Andrés) El chiste de la caída mínima: en tu cabeza la chapa estaba lejísimos y era todo miedo.
