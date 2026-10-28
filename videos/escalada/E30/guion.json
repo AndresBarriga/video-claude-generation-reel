@@ -1,0 +1,86 @@
+{
+  "id": "E30",
+  "titulo": "El que da beta siempre tiene razón",
+  "nicho": "escalada",
+  "plantilla": "Beta",
+  "verificado": true,
+  "fuentes": [],
+  "nota_rigor": "Humor de identidad, sin cifras ni estudios.",
+  "ganchos_alternativos": [
+    "1 · Situación (elegida): tú en el paso clave rodeado de tres globos que se contradicen; sin rótulo.",
+    "2 · Cifra: «Tres colegas. Tres betas. Ninguna igual.»",
+    "3 · Pregunta: «¿Cuántos expertos caben al pie de una vía?»",
+    "4 · Imagen imposible: los globos llenan la pantalla hasta taparte.",
+    "5 · Afirmación: «El que da beta siempre tiene razón. Aunque te caigas.»"
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "globos",
+      "texto": "Tú, en el paso clave. Y abajo, tres expertos."
+    },
+    {
+      "tipo": "texto",
+      "visual": "veterano",
+      "texto": "Talón dentro.",
+      "pausa": 0.7
+    },
+    {
+      "tipo": "texto",
+      "visual": "nuevo",
+      "texto": "Talón fuera.",
+      "pausa": 0.7
+    },
+    {
+      "tipo": "texto",
+      "visual": "animador",
+      "texto": "¡No pienses en los pies!",
+      "pausa": 0.6
+    },
+    {
+      "tipo": "texto",
+      "visual": "monton",
+      "texto": "Todo a la vez.",
+      "pausa": 0.6
+    },
+    {
+      "tipo": "texto",
+      "visual": "caida",
+      "texto": "Y te caes.",
+      "pausa": 0.7
+    },
+    {
+      "tipo": "texto",
+      "visual": "yatelodije",
+      "texto": "Ya te lo dije. Ya te lo dije. Ya te lo dije.",
+      "pausa": 0.3
+    },
+    {
+      "tipo": "texto",
+      "visual": "segundo",
+      "texto": "Segundo pegue: no escuchas a nadie."
+    },
+    {
+      "tipo": "texto",
+      "visual": "encadena",
+      "texto": "Y encadenas.",
+      "pausa": 0.6
+    },
+    {
+      "tipo": "texto",
+      "visual": "mibeta",
+      "texto": "Los tres a la vez: ¿ves? Mi beta.",
+      "pausa": 0.4
+    },
+    {
+      "tipo": "texto",
+      "visual": "pareja",
+      "texto": "Y tu pareja, que no ha abierto la boca: yo no he dicho nada."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "envio",
+      "texto": "Mándaselo al que siempre tiene razón."
+    }
+  ]
+}

@@ -6,8 +6,9 @@ import { Poses } from "./historias/Poses";
 import { Pegue } from "./historias/Pegue";
 import { Bloque } from "./historias/Bloque";
 import { Pierna } from "./historias/Pierna";
+import { Beta } from "./historias/Beta";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Pierna, Poses: Poses as any };
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Pierna, Beta, Poses: Poses as any };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;
