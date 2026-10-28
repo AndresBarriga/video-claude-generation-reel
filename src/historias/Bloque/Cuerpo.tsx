@@ -2,7 +2,8 @@
 import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { Antebrazo } from "../../piezas/Mano";
-import { AG, Camara, Colegas, Fondo, Hud, Planos, Svg, TU, Tu, Zoom, clamp, colgado, datosE, sentado, type P } from "./comun";
+import { POSES } from "../../piezas/Escalador";
+import { AG, PresaPie, trepa, Camara, Colegas, Fondo, Hud, Planos, Svg, TU, Tu, Zoom, clamp, colgado, datosE, sentado, type P } from "./comun";
 import { HORA } from "./Gancho";
 import { YemaPlano } from "./Excusas";
 
@@ -24,7 +25,13 @@ const SitStart: React.FC<{ d: number; h: number }> = ({ d, h }) => {
     <Camara d={d} empuje={0.08} foco="35% 60%">
       <Svg><Zoom s={2} cx={380} cy={1150} tx={540} ty={1000}>
         <Fondo h={h} id="sit" />
-        <Tu x={364 + (c.x - 364) * k} y={sentado() + (c.y - sentado()) * k} pose="sitStart" poseB="escalando" t={k} cara="esfuerzo" />
+        {(() => {
+          // las piernas pasan de la postura sentada a los pies en la pared (sin quedarse colgando en el aire)
+          const hx = 364 + (c.x - 364) * k, hy = sentado() + (c.y - sentado()) * k, tr = trepa(c.x, c.y).angulos, sp = POSES.sitStart;
+          const L = (a: [number, number], b: [number, number]): [number, number] => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k];
+          return <>{k > 0.6 && trepa(c.x, c.y).pies.map((p, i) => <PresaPie key={i} x={p.x} y={p.y + 8} />)}
+            <Tu x={hx} y={hy} pose="sitStart" poseB="escalando" t={k} cara="esfuerzo" angulos={{ piernaA: L(sp.piernaA as [number, number], tr.piernaA), piernaB: L(sp.piernaB as [number, number], tr.piernaB) }} /></>;
+        })()}
       </Zoom></Svg>
     </Camara>
   );
@@ -47,7 +54,7 @@ const Bomba: React.FC<{ d: number }> = ({ d }) => {
     <Camara d={d} empuje={0.08} entrada={false}>
       <Svg>
         <rect width={1080} height={1920} fill="#5A4A52" />
-        <Antebrazo piel={TU.piel} pielS={TU.pielSombra} manga={TU.chaqueta} x={600} y={980} s={0.82} bomba={b} latido={Math.max(0, Math.sin(f / 3))} />
+        <Antebrazo piel={TU.piel} pielS={TU.pielSombra} manga={TU.chaqueta} x={330} y={960} s={0.8} bomba={b} latido={Math.max(0, Math.sin(f / 3))} />
       </Svg>
     </Camara>
   );

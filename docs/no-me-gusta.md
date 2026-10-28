@@ -31,3 +31,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · (E11) Consejos breves y prácticos al final de un vídeo de cuerpo («respira», «baja el talón»).
 - 2026-10-28 · (E11) Formato por fases, con muchos cambios de plano: «la gente reacciona mejor a cambios, si no se aburre».
 - 2026-10-28 · (E11, idea de Andrés) El chiste de la caída mínima: en tu cabeza la chapa estaba lejísimos y era todo miedo.
+- 2026-10-28 · (E6 v3) «El vídeo es perfecto». Pegas: personajes sentados que parecen flotar y escaladores con los pies en el aire (poco real); mano del antebrazo poco clara.

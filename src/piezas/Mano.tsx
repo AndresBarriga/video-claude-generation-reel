@@ -99,9 +99,18 @@ export const Antebrazo: React.FC<Piel & { x: number; y: number; s?: number; bomb
     <g transform={`translate(${x} ${y}) scale(${s})`}>
       <path d={`M-560 ${-110} Q-150 ${-h - 30} 260 -86 L380 -96 Q470 -100 480 -10 Q470 90 380 90 L260 84 Q-150 ${h + 10} -560 110 Z`} fill={piel} stroke={T} strokeWidth={10} strokeLinejoin="round" />
       <path d={`M-500 ${h * 0.55} Q-150 ${h + 4} 240 70`} stroke={pielS} strokeWidth={16} fill="none" strokeLinecap="round" opacity={0.7} />
-      {/* puño */}
-      <rect x={330} y={-110} width={190} height={210} rx={70} fill={piel} stroke={T} strokeWidth={10} />
-      {[0, 1, 2].map((k) => <path key={k} d={`M${470} ${-60 + k * 55} q30 10 0 30`} stroke={T} strokeWidth={7} fill="none" strokeLinecap="round" />)}
+      {/* mano agarrando un canto: roca → dorso → cuatro dedos cerrados (de lado, uñas al frente) → pulgar encima */}
+      <path d="M600 -70 L940 -90 L960 220 L620 200 Q580 60 600 -70 Z" fill="#6E6670" stroke={T} strokeWidth={10} strokeLinejoin="round" />
+      <path d="M612 -60 Q600 60 626 190" stroke={BLANCO} strokeWidth={22} opacity={0.75} strokeLinecap="round" />
+      <rect x={350} y={-104} width={230} height={206} rx={70} fill={piel} stroke={T} strokeWidth={10} />
+      {[-102, -50, 2, 54].map((yy, i) => (
+        <g key={i}>
+          <rect x={510} y={yy} width={150 - i * 8} height={50} rx={25} fill={piel} stroke={T} strokeWidth={8} />
+          <rect x={622 - i * 8} y={yy + 10} width={26} height={30} rx={10} fill={BLANCO} opacity={0.55} />
+        </g>
+      ))}
+      <rect x={420} y={-136} width={190} height={50} rx={25} fill={piel} stroke={T} strokeWidth={8} />
+      <path d="M540 -90 q20 8 40 0" stroke={pielS} strokeWidth={6} fill="none" strokeLinecap="round" />
       {/* venas: aparecen con la bomba */}
       <g opacity={Math.min(1, b * 1.4)} stroke={vena} strokeLinecap="round" fill="none">
         <path d="M-470 -20 C-330 -70 -200 -10 -60 -60 S140 -40 250 -30" strokeWidth={10 + b * 8} />

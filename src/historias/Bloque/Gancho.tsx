@@ -3,7 +3,7 @@ import React from "react";
 import { Easing, interpolate, random, useCurrentFrame } from "remotion";
 import { Mano, Polvo, Regleta } from "../../piezas/Mano";
 import { PantallaMovil } from "../../piezas/Movil";
-import { Alta, Barba, Camara, Colegas, Fondo, Hud, Planos, Svg, TU, Tu, Zoom, clamp, colgado, AG, datosE, dePie, sentado, type P } from "./comun";
+import { Alta, Barba, Colgado, Camara, Colegas, Fondo, Hud, Planos, Svg, TU, Tu, Zoom, clamp, colgado, AG, datosE, dePie, sentado, type P } from "./comun";
 
 const pielTu = { piel: TU.piel, pielS: TU.pielSombra, manga: TU.chaqueta };
 export const HORA: Record<number, number> = { 9: 0.15, 12: 0.3, 14: 0.42, 15: 0.5, 19: 0.68, 21: 0.76, 22: 0.86, 23: 1 };
@@ -45,7 +45,7 @@ const PrimerPlanoTu: React.FC<{ d: number }> = ({ d }) => {
     <Camara d={d} empuje={0.1} foco="35% 45%">
       <Svg><Zoom s={2.6} cx={c.x + 20} cy={c.y - 150} tx={540} ty={900}>
         <Fondo h={1} id="ppt" pads={1} />
-        <Tu x={c.x + t} y={c.y} pose="escalando" frontal cara="esfuerzo" angulos={{ cabeza: -30 }} />
+        <Colgado hx={c.x} hy={c.y} tiembla={t} frontal cabeza={-30} />
       </Zoom></Svg>
     </Camara>
   );

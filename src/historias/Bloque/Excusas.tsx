@@ -2,9 +2,10 @@
 import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { Polvo, Regleta, Yema } from "../../piezas/Mano";
-import { AG, Alta, Barba, Camara, Colegas, Fondo, Hud, Planos, Svg, TU, Tu, Zoom, clamp, colgado, datosE, dePie, golpe, sentado, type P } from "./comun";
+import { AG, Alta, Barba, Colgado, trepa, Camara, Colegas, Fondo, Hud, Planos, Svg, TU, Tu, Zoom, clamp, colgado, datosE, dePie, golpe, sentado, type P } from "./comun";
 import { HORA } from "./Gancho";
 
+const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 const pielTu = { piel: TU.piel, pielS: TU.pielSombra, manga: TU.chaqueta };
 const corte = (pal: P["pal"], w: string, resp: number) => Math.max(18, (pal(w) ?? resp) - 3);
 
@@ -65,7 +66,7 @@ const Cae: React.FC<{ d: number; h: number }> = ({ d, h }) => {
     <Camara d={d} empuje={0.03}>
       <Svg><Zoom s={1.5} cx={380} cy={1120} tx={520} ty={1020}><g transform={`translate(${golpe(f, 10, 10)} 0)`}>
         <Fondo h={h} id="cae" hundido={k >= 1 ? Math.max(0, 1 - (f - 10) / 10) : 0} />
-        <Tu x={interpolate(k, [0, 1], [c.x, 330])} y={interpolate(k, [0, 1], [c.y, sentado()])} pose={k >= 1 ? "sentadoSuelo" : "escalando"} poseB={k >= 1 ? undefined : "cayendo"} t={k} cara={k > 0.2 ? "dolor" : "esfuerzo"} />
+        {k <= 0 ? <Colgado hx={c.x} hy={c.y} /> : <Tu x={interpolate(k, [0, 1], [c.x, 330])} y={interpolate(k, [0, 1], [c.y, sentado()])} pose={k >= 1 ? "sentadoSuelo" : "escalando"} poseB={k >= 1 ? undefined : "cayendo"} t={k} cara={k > 0.2 ? "dolor" : "esfuerzo"} angulos={k < 1 ? { piernaA: [lerp(trepa(c.x, c.y).angulos.piernaA[0], 40, k), lerp(trepa(c.x, c.y).angulos.piernaA[1], -20, k)] } : undefined} />}
         {k >= 1 && <Polvo x={330} y={1300} k={f - 10} seed="ca" />}
       </g></Zoom></Svg>
     </Camara>
@@ -142,7 +143,7 @@ const Paso: React.FC<{ d: number; h: number; k0: number; k1: number; cerca?: boo
       <Svg><Zoom s={cerca ? 2.3 : 1.6} cx={px + 30} cy={py - 140} tx={540} ty={cerca ? 1000 : 1050}>
         <Fondo h={h} id={cerca ? "pa2" : "pa1"} />
         {!cerca && <Barba x={720} y={sentado()} pose="sentadoSuelo" mira={-1} cara="normal" />}
-        <Tu x={px} y={py} pose="escalando" cara={k > 0.9 ? "alivio" : "esfuerzo"} />
+        <Colgado hx={px} hy={py} cara={k > 0.9 ? "alivio" : "esfuerzo"} />
       </Zoom></Svg>
     </Camara>
   );

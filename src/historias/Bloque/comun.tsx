@@ -26,9 +26,36 @@ export const Alta: React.FC<PP> = ({ pad, ...p }) => <>{pad && <PadEspalda x={p.
 
 /** Cadera de pie en el suelo y sentado en el pad. */
 export const dePie = (s = S0) => SUELO - 136 * s;
-export const sentado = (s = S0) => PAD - 64 * s;
+/** Cadera sentado: el culo (≈12·s bajo la cadera) apoyado en la superficie del pad, sin flotar. */
+export const sentado = (s = S0) => PAD + 8 - 12 * s;
 /** Cadera para colgar de un agarre con la pose «escalando» (mano delantera en el agarre). */
 export const colgado = (ag: readonly [number, number], s = S0) => ({ x: ag[0] - 36 * s, y: ag[1] + 182 * s });
+
+/** x del canto izquierdo del bloque a la altura y (la cara donde se apoyan los pies). */
+export const canto = (y: number) => (y >= 1060 ? 400 + ((y - 1060) * 80) / 280 : y >= 930 ? 372 + ((y - 930) * 28) / 130 : 372 + ((930 - y) * 30) / 140);
+const L1 = 66, L2 = 64, deg = (r: number) => (r * 180) / Math.PI;
+/** Ángulos de pierna (sistema de Escalador) para que el pie llegue a (tx, ty) desde la cadera (hx, hy), rodilla hacia la pared. */
+export const ik = (hx: number, hy: number, tx: number, ty: number, s = S0): [number, number] => {
+  const dx = (tx - hx) / s, dy = (ty - hy) / s, D = Math.min(Math.hypot(dx, dy), L1 + L2 - 0.5);
+  const th = Math.atan2(dx, dy), al = Math.acos(Math.min(1, (L1 * L1 + D * D - L2 * L2) / (2 * L1 * D)));
+  const a1 = th + al, kx = Math.sin(a1) * L1, ky = Math.cos(a1) * L1;
+  return [deg(a1), deg(Math.atan2(dx - kx, dy - ky))];
+};
+/** Pies apoyados en la cara del bloque para alguien colgado con la cadera en (hx, hy): ángulos + dónde dibujar las presas de pie. */
+export const trepa = (hx: number, hy: number, s = S0) => {
+  const yA = hy + 92 * s, yB = hy + 122 * s;
+  const A = { x: canto(yA) + 6, y: yA }, B = { x: canto(yB) + 6, y: yB };
+  return { angulos: { piernaA: ik(hx, hy, A.x, A.y, s), piernaB: ik(hx, hy, B.x, B.y, s) }, pies: [A, B] };
+};
+/** Presa de pie pequeña en la cara del bloque. */
+export const PresaPie: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+  <g><path d={`M${x - 4} ${y + 10} q-18 -2 -22 -14 q8 -8 26 -6 Z`} fill="#6E6670" stroke="#141B26" strokeWidth={3} /><path d={`M${x - 20} ${y - 6} q10 -4 18 -2`} stroke="#F4F7FA" strokeWidth={4} strokeLinecap="round" opacity={0.8} /></g>
+);
+/** Escalador colgado de la presa con los pies en la pared (y sus presas de pie). Extra = props para Tu. */
+export const Colgado: React.FC<{ hx: number; hy: number; cara?: import("../../piezas/Escalador").Cara; frontal?: boolean; tiembla?: number; cabeza?: number }> = ({ hx, hy, cara = "esfuerzo", frontal, tiembla = 0, cabeza = -26 }) => {
+  const t = trepa(hx, hy);
+  return <>{t.pies.map((p, i) => <PresaPie key={i} x={p.x} y={p.y + 8} />)}<Tu x={hx + tiembla} y={hy} pose="escalando" frontal={frontal} cara={cara} angulos={{ ...t.angulos, cabeza }} /></>;
+};
 
 /** Fondo completo: cielo (hora h), suelo, bloque, agarres con magnesio y pads. `pads` = cuántos quedan (1–3). */
 export const Fondo: React.FC<{ h: number; id: string; pads?: number; hundido?: number }> = ({ h, id, pads = 3, hundido = 0 }) => {
