@@ -26,6 +26,7 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E3 v3) Píldora «ESCALADOR/ESPAÑOL»: no se entiende para qué está. Quitada.
 - 2026-10-28 · (E3 v3) Escalador colgado alto sin cuerda ni arnés: poco real. Si está alto, vía con arnés y cuerda.
 - 2026-10-28 · (E3) Voz y subtítulos que no dicen lo mismo (texto cambiado en ElevenLabs) → se desincroniza. Si se cambia el texto en ElevenLabs, avisar para actualizar `guion.json`.
+- 2026-10-28 · (E31) Mano que sujeta el cepillo «al revés» (dorso con nudillos arriba y el mango asomando): «muy malo». Ahora: mano por la palma, dedos cruzando el mango, pulgar encima (`Puno`).
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
@@ -41,3 +42,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E3) El plano del desplome enorme con el escalador diminuto («es un seis A»): le gusta mucho.
 - 2026-10-28 · (E3) Para el gancho, macro de una mano cerrando regleta mejor que un personaje temblando.
 - 2026-10-28 · Recordatorio de Andrés para todo vídeo: algo impactante al principio, que el espectador se reconozca («tú»), que explique algo y cambios de plano constantes.
+- 2026-10-28 · (E31) La presa limpia tiene que brillar mucho, con destellos («cositas shiny»): `Destellos` en `Cepillado.tsx`.

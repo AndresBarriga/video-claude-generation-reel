@@ -62,7 +62,7 @@ Ranking viralidad: 15 > 14 > 16 > 11 > 20. Nicho: 2, 3, 6. Educativo: 8, 9, 12. 
 ## Micro-vídeos (10–20 s, 28-oct) — formato de prueba: A = envío (un chiste), B = guardado (lista legible, ≥2 s por dato)
 - A ★ **«Diez minutos»**: «me quedo solo diez minutos» → las luces del rocódromo se apagan una a una y sigue en la pared.
 - A **«Hoy no tengo fuerza»**: se arrastra al rocódromo y encadena el proyecto a la primera (parecido a E6; segunda opción).
-- A **Cepillar presas** ★ (idea de Andrés): ritual que crece (cepillar, soplar, cepillo de dientes) y se cae igual; también bucle ASMR de 8 s en macro. Para después del lote de lanzamiento.
+- A **Cepillar presas** ★ (idea de Andrés) → producido 28-oct como **E31** «La presa perfecta» (13 s, crítico 7/10; cae por el pie sucio y se cepilla la suela; variante E31B con rótulo) y **E32** «ASMR cepillado» (8 s bucle, crítico 6/10 para repeticiones, 2/10 envío).
 - A Otras: el alivio de quitarse los pies de gato; las manos blancas de magnesio en el pantalón; la cola del bloque a las 19:00; calentar con un V8; el ritual de la magnesia; leer la vía 5 minutos y caer en el primer movimiento.
 - B ★ **Lo que cuesta empezar a escalar** (precios aprox. que suben; verificar solo rangos).
 - B **Mochila de bloque**: checklist (cepillo, esparadrapo, lija, crema, magnesio, plátano).

@@ -8,6 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { carpetaVideo, raiz } from "./rutas.mjs";
+import { recetasCepillado } from "./sonido-cepillado.mjs";
 
 const SR = 44100;
 
@@ -211,6 +212,8 @@ const RECETAS = {
     return nivelar(bucle(out, 0.6), 0.1, 0.7);
   },
 };
+
+Object.assign(RECETAS, recetasCepillado({ SR, buf, ruido, biquad, mezclar, env, normalizar, nivelar, prng, seno }));
 
 /* ---------- WAV ---------- */
 function escribirWav(ruta, b) {

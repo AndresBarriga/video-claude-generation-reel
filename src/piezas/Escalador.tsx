@@ -6,7 +6,7 @@ import React, { useId } from "react";
 import { Gafas, ObjetoMano, Tocado, type Aspecto, type Objeto } from "./Rasgos";
 
 export type Quien = "joe" | "simon";
-export type Cara = "normal" | "miedo" | "dolor" | "esfuerzo" | "alivio" | "cerrados";
+export type Cara = "normal" | "miedo" | "dolor" | "esfuerzo" | "alivio" | "cerrados" | "sopla" | "serio";
 
 export const PERSONAJES: Record<Quien, { chaqueta: string; chaquetaSombra: string; pantalon: string; casco: string; pelo: string }> = {
   joe: { chaqueta: "#C8402E", chaquetaSombra: "#8E2A1F", pantalon: "#2B3442", casco: "#F2C230", pelo: "#3B2A20" },
@@ -86,6 +86,13 @@ const Ojos: React.FC<{ cara: Cara }> = ({ cara }) => {
         <path d="M2 -2 Q7 -8 12 -2 M19 -2 Q24 -8 29 -2" {...st} />
         <path d="M7 10 Q17 19 27 10" {...st} />
       </g>);
+    case "sopla": // mejillas infladas, boca en «o»
+      return (<g><path d="M2 -3 Q7 -7 12 -3 M19 -3 Q24 -7 29 -3" {...st} />
+        <circle cx={4} cy={10} r={8} fill="#E8957F" opacity={0.7} /><circle cx={27} cy={10} r={8} fill="#E8957F" opacity={0.7} />
+        <circle cx={30} cy={13} r={5} fill={TINTA} /></g>);
+    case "serio": // ceño fruncido, boca recta
+      return (<g><path d="M0 -13 L12 -8 M30 -13 L18 -8" {...st} />
+        <circle cx={7} cy={-2} r={3.8} fill={TINTA} /><circle cx={23} cy={-2} r={3.8} fill={TINTA} /><path d="M10 13 L24 12" {...st} /></g>);
     case "cerrados":
       return (<g><path d="M2 -3 L12 -3 M19 -3 L29 -3" {...st} /><path d="M10 12 L24 12" {...st} /></g>);
     default:

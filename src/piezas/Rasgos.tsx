@@ -8,7 +8,7 @@ export type Aspecto = {
   gorro?: string; pelo?: string; peinado?: "corto" | "rizado" | "coleta" | "trenzas" | "rapado";
   barba?: string; gafas?: boolean; arnes?: boolean; manos?: "guante" | "piel";
 };
-export type Objeto = "movil" | "movilLuz" | "cepillo" | "lija" | "crema" | "platano" | "nueces" | "movilNegro";
+export type Objeto = "movil" | "movilLuz" | "cepillo" | "lija" | "crema" | "platano" | "nueces" | "movilNegro" | "cepilloDientes";
 
 const R = 30; // radio de la cabeza en Escalador
 /** Pelo, gorro y barba. capa "debajo" = barba (bajo los ojos); "encima" = pelo y gorro (sobre los ojos, que ya van recortados a la cara).
@@ -64,6 +64,8 @@ export const ObjetoMano: React.FC<{ o: Objeto }> = ({ o }) => {
       </g>);
     case "cepillo":
       return (<g><rect x={-4} y={-6} width={60} height={12} rx={6} fill="#C9A06A" /><rect x={52} y={-12} width={22} height={24} rx={4} fill="#2B3442" /></g>);
+    case "cepilloDientes":
+      return (<g transform="rotate(-70)"><rect x={-6} y={-5} width={74} height={10} rx={5} fill="#4F9FD9" stroke="#141B26" strokeWidth={2.5} /><rect x={50} y={-14} width={18} height={10} rx={3} fill="#7FD1E8" /></g>);
     case "lija":
       return <rect x={-6} y={-14} width={30} height={28} rx={4} fill="#A9926B" stroke="#7A6648" strokeWidth={3} />;
     case "crema":

@@ -28,3 +28,7 @@ Deja un archivo con el **mismo nombre** en `videos/<nicho>/<id>/sonido/` (wav, m
 - Sin `fin` ni `duracion`, el efecto dura hasta el final del vídeo.
 - `fundido`: [entrada, salida] en segundos. `bajoVoz`: cuánto baja mientras hay voz (0 = nada, 1 = se apaga).
 - `silencio: true` apaga los demás efectos durante `duracion` (y vuelven con un fundido de 0,5 s), salvo los que tengan `ignoraSilencio`.
+
+## Vídeos sin voz (micro-vídeos)
+`guion.json` con `"mudo": true` y `"dur"` (s) en cada escena; `npm run voz -- <id> --simulado` saca los tiempos de ahí y el vídeo dura exactamente la suma (sin los 15 fotogramas de cola, para bucles perfectos).
+Recetas de cepillado en `tools/sonido-cepillado.mjs` (cepillo3/5, dientes, suela, soplido, palmada, cremallera, brillo, agarre, chirrido, golpePad, sala, asmr1–3). Un cepillo real grabado con el móvil siempre sonará mejor que lo sintético.
