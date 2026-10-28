@@ -58,3 +58,11 @@ Ranking viralidad: 15 > 14 > 16 > 11 > 20. Nicho: 2, 3, 6. Educativo: 8, 9, 12. 
 - **«Está blando para el grado»**: el que encadena dice blando, el que no, «duro para el grado». Pantalla dividida con veredictos intercambiados. Envío: al que siempre dice «blando».
 - **La beta que no pediste** ★: tres personas gritan beta contradictoria; el escalador las sigue todas y cae; «ya te lo dije». Envío: al que da beta sin que se la pidan.
 - Descartada: «Estancado por meses» (repite el contador de E6).
+
+## Micro-vídeos (10–20 s, 28-oct) — formato de prueba: A = envío (un chiste), B = guardado (lista legible, ≥2 s por dato)
+- A ★ **«Diez minutos»**: «me quedo solo diez minutos» → las luces del rocódromo se apagan una a una y sigue en la pared.
+- A **«Hoy no tengo fuerza»**: se arrastra al rocódromo y encadena el proyecto a la primera (parecido a E6; segunda opción).
+- A **Cepillar presas** ★ (idea de Andrés): ritual que crece (cepillar, soplar, cepillo de dientes) y se cae igual; también bucle ASMR de 8 s en macro. Para después del lote de lanzamiento.
+- A Otras: el alivio de quitarse los pies de gato; las manos blancas de magnesio en el pantalón; la cola del bloque a las 19:00; calentar con un V8; el ritual de la magnesia; leer la vía 5 minutos y caer en el primer movimiento.
+- B ★ **Lo que cuesta empezar a escalar** (precios aprox. que suben; verificar solo rangos).
+- B **Mochila de bloque**: checklist (cepillo, esparadrapo, lija, crema, magnesio, plátano).
