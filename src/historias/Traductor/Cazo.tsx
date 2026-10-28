@@ -2,12 +2,20 @@
 import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Mano } from "../../piezas/Mano";
-import { AG, Camara, Fondo, LuciaColgada, Paco, Partida, Svg, Zoom, clamp, colgado, dePie, type P } from "./comun";
+import { AG, Camara, Cerca, Fondo, LuciaColgada, Paco, Partida, Planos, Svg, Zoom, clamp, colgado, dePie, type P } from "./comun";
 import { LUCIA } from "./comun";
 
 const H = colgado(AG.medio);
 
-export const Cazo: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Dice d={d} />} significa={(d) => <Lenteja d={d} />} />;
+export const Cazo: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Dice d={d} />} significa={(d) => { const c = Math.round(d * 0.62); return <Planos d={d} cortes={[c]}><Lenteja d={c} /><CaraCazo d={d - c} /></Planos>; }} />;
+
+const CaraCazo: React.FC<{ d: number }> = ({ d }) => {
+  const f = useCurrentFrame();
+  return (<Camara d={d} empuje={0.1} entrada={false}><Svg><Cerca cx={H.x + 10} cy={H.y - 160} s={3.6}>
+    <Fondo h={0.35} id="cazc" />
+    <LuciaColgada hx={H.x} hy={H.y} cara="miedo" cabeza={-8} tiembla={Math.sin(f * 2.8) * 3} />
+  </Cerca></Svg></Camara>);
+};
 
 const Dice: React.FC<{ d: number }> = ({ d }) => (
   <Camara d={d} empuje={0.05}>

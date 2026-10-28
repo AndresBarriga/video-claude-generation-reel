@@ -3,15 +3,23 @@ import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { PantallaMovil } from "../../piezas/Movil";
 import { fuenteTexto, fuenteTitulo } from "../../tema";
-import { C, Camara, Fondo, Paco, Partida, Svg, Zoom, clamp, dePie, type P } from "./comun";
+import { C, Camara, Cerca, Paco, Partida, Planos, Svg, Zoom, clamp, type P } from "./comun";
+import { Rocodromo, dePieR } from "../../piezas/Rocodromo";
 
-export const Grados: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Dice d={d} />} significa={(d) => <App d={d} />} />;
+export const Grados: React.FC<P> = (p) => <Partida p={p} dice={(d) => <Dice d={d} />} significa={(d) => { const c = Math.round(d * 0.62); return <Planos d={d} cortes={[c]}><App d={c} /><CaraPaco d={d - c} /></Planos>; }} />;
+
+const CaraPaco: React.FC<{ d: number }> = ({ d }) => (
+  <Camara d={d} empuje={0.1} entrada={false}><Svg><Cerca cx={656} cy={dePieR(1.25) - 175} s={3.4}>
+    <Rocodromo grado="6C" />
+    <Paco x={660} y={dePieR(1.25)} pose="grabando" objeto="movil" mira={-1} cara="alivio" angulos={{ cabeza: 14 }} />
+  </Cerca></Svg></Camara>
+);
 
 const Dice: React.FC<{ d: number }> = ({ d }) => (
   <Camara d={d} empuje={0.05}>
-    <Svg><Zoom s={1.9} cx={660} cy={1100} tx={540} ty={1030}>
-      <Fondo h={0.55} id="gra" />
-      <Paco x={660} y={dePie(1.25)} pose="pie" mira={-1} cara="cerrados" angulos={{ brazoA: [60, 110], brazoB: [50, 120], cabeza: -6 }} />
+    <Svg><Zoom s={1.7} cx={600} cy={1110} tx={540} ty={1030}>
+      <Rocodromo grado="6C" />
+      <Paco x={660} y={dePieR(1.25)} pose="pie" mira={-1} cara="cerrados" angulos={{ brazoA: [60, 110], brazoB: [50, 120], cabeza: -6 }} />
     </Zoom></Svg>
   </Camara>
 );

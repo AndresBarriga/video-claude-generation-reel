@@ -40,3 +40,10 @@ Viralidad 12/14: palanca 1 y 3 a 1 (en humor el «clímax» es el chiste, y el f
 ## Crítico
 - Propuesta v1: 6/10. Aplicado: todo en bloque (la vía fuera), final = «Te porteo yo» → está viendo este vídeo; cortados «confía en los pies» (repetía E11), «me guardo piel» (sin chiste); jerga: «esto es para calentar», «está regalado», «lo tengo a un pegue», «en mi roco es un seis A». Mantengo «los grados me dan igual» (6C→7A en grande, se lee sin audio) contra su criterio.
 - Vídeo v1 (hoja-v1.png, tiempos simulados, 29 s): 6/10. Pendiente (2 rondas agotadas): (1) en el «significa» del 1 Lucía sale pequeña, no se lee el esfuerzo; (2) 4 y 5 dependen de la etiqueta (40 MIN, REPETICIÓN); (3) mismo muro y sol en muchos planos; el 3 deja a Nico sin cara.
+
+## v2 (28-oct, tras feedback de Andrés)
+- Gancho = macro de la mano cerrando regleta (pieza nueva `ManoRegleta`) → antebrazo hinchado → cara de Lucía.
+- Escenarios: rocódromo (pieza nueva `Rocodromo`, con reloj y cintas de grado) en 1, 4, 4b, 5 y 6; bloque exterior en 2 y 7; desplome en 3 (desde el primer plano).
+- Cara reaccionando en cada «significa». 4b explica (pantalla partida ayer pegue 30 / hoy «regalado», rótulo «Maldición del conocimiento»).
+- Cierre: primer plano del porteador riéndose con el móvil y Lucía a punto de caer detrás → la pantalla crece hasta el primer fotograma.
+- Crítico v2: 7/10 («si se arreglan 2 y 3, llega a 8»); aplicados los tres arreglos (desplome desde el principio, pantalla partida con contador, porteador riéndose). 36 s con tiempos simulados.

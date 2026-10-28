@@ -9,12 +9,12 @@ import { C, type P } from "./comun";
 import { Calentar } from "./Calentar";
 import { Cazo } from "./Cazo";
 import { Roco } from "./Roco";
-import { Regalado } from "./Regalado";
+import { Olvido, Regalado } from "./Regalado";
 import { Pegue } from "./Pegue";
 import { Grados } from "./Grados";
 import { Cierre, Porteo } from "./Porteo";
 
-const ESCENAS: Record<string, React.FC<P>> = { calentar: Calentar, cazo: Cazo, roco: Roco, regalado: Regalado, pegue: Pegue, grados: Grados, porteo: Porteo, cierre: Cierre };
+const ESCENAS: Record<string, React.FC<P>> = { calentar: Calentar, cazo: Cazo, roco: Roco, regalado: Regalado, olvido: Olvido, pegue: Pegue, grados: Grados, porteo: Porteo, cierre: Cierre };
 
 export const Traductor: React.FC<{ datos: Datos }> = ({ datos }) => {
   const { fps } = useVideoConfig();

@@ -6,8 +6,8 @@ import { Escalador, type PropsEscalador } from "../../piezas/Escalador";
 import type { Aspecto } from "../../piezas/Rasgos";
 import { fuenteTexto } from "../../tema";
 import { PresaPie, trepa } from "../Bloque/comun";
-import { C, clamp, type P } from "../Pegue/comun";
-export { AG, Fondo, PAD, SUELO, TOP, colgado, dePie, sentado, trepa } from "../Bloque/comun";
+import { C, Zoom, clamp, type P } from "../Pegue/comun";
+export { AG, Fondo, PAD, Planos, SUELO, TOP, colgado, dePie, sentado, trepa } from "../Bloque/comun";
 export { C, Camara, Etiqueta, Svg, Zoom, clamp, golpe, type P } from "../Pegue/comun";
 
 // Reparto nuevo (ni Joe/Simon ni el de E6)
@@ -62,3 +62,10 @@ export const Dato: React.FC<{ texto: string; top?: number; rojo?: boolean }> = (
     </div>
   );
 };
+
+/** Primer plano de una cara: acerca (cx, cy) ×s y lo coloca un poco por encima del centro. */
+export const Cerca: React.FC<{ cx: number; cy: number; s?: number; children: React.ReactNode }> = ({ cx, cy, s = 4, children }) => (
+  <Zoom s={s} cx={cx} cy={cy} tx={540} ty={860}>{children}</Zoom>
+);
+/** Centro de la cabeza para la cadera (x, y) en poses erguidas. */
+export const cabezaDe = (x: number, y: number, s = 1.2) => ({ cx: x + 4 * s, cy: y - 140 * s });
