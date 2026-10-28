@@ -13,11 +13,15 @@ import { Escaner } from "./Escaner";
 import { Cerebros } from "./Cerebros";
 import { Ensayo } from "./Ensayo";
 import { Cumbre } from "./Cumbre";
-import { Cierre } from "./Cierre";
+import { PlanoEscalera } from "./Escalera";
+import { Pared } from "./Pared";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, prado: Prado, retrato: Retrato, escaner: Escaner, cerebros: Cerebros, ensayo: Ensayo, cumbre: Cumbre, cierre: Cierre,
-  mirada: ({ d }) => <PlanoRetrato d={d} m={[9, 14]} />,
-  subida: ({ d }) => <PlanoGancho d={d} desde={100} hasta={170} />,
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, prado: Prado, retrato: Retrato, escaner: Escaner, cerebros: Cerebros, ensayo: Ensayo, cumbre: Cumbre, pared: Pared,
+  escalera: ({ d }) => <PlanoEscalera d={d} />,
+  cara: ({ d }) => <PlanoRetrato d={d} />,
+  tuEscalera: ({ d, e }) => <PlanoEscalera d={d} m={2} nota={e.titulo} />,
+  subida: ({ d, e }) => <PlanoGancho d={d} desde={100} hasta={150} nota={e.titulo} />,
+  cierre: ({ d, e }) => <PlanoEscalera d={d} titulo={e.titulo} />,
 };
 
 export const Honnold: React.FC<{ datos: Datos }> = ({ datos }) => {

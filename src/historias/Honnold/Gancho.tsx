@@ -5,7 +5,7 @@ import { Escalador } from "../../piezas/Escalador";
 import { ASPECTO_H, CUERPO_H, CabezaHonnold } from "../../piezas/Honnold";
 import { Camara, Cielo, Contador, Etiqueta, Granito, Pino, PH, Svg, type P } from "./comun";
 
-export const PlanoGancho: React.FC<{ d: number; titulo?: string; desde?: number; hasta?: number }> = ({ d, titulo, desde, hasta }) => {
+export const PlanoGancho: React.FC<{ d: number; titulo?: string; desde?: number; hasta?: number; nota?: string }> = ({ d, titulo, desde, hasta, nota }) => {
   const f = useCurrentFrame();
   const paso = (Math.sin(f / 9) + 1) / 2; // alterna de brazo
   const m = interpolate(f, [0, d], [desde ?? 3, hasta ?? 9]);
@@ -25,7 +25,7 @@ export const PlanoGancho: React.FC<{ d: number; titulo?: string; desde?: number;
         <Escalador x={540} y={930} quien="joe" s={2.6} aspecto={ASPECTO_H} {...CUERPO_H} Cabeza={CabezaHonnold} cara="normal"
           angulos={{ torso: 12, cabeza: 4, brazoA: [100 + 14 * paso, 130 + 10 * paso], brazoB: [162 - 8 * paso, 176], piernaA: [70, 0], piernaB: [34, 14] }} />
       </Svg>
-      <Contador m={m} />
+      <Contador m={m} nota={nota} />
       <Etiqueta texto={titulo} top={1170} tam={84} desde={15} />
     </Camara>
   );

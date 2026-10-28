@@ -1,11 +1,13 @@
 {
   "bajoVoz": 0.45,
   "efectos": [
-    { "nombre": "viento", "inicio": { "escena": 0 }, "volumen": 0.22, "bucle": true, "fundido": [0.05, 0.6] },
+    { "nombre": "crujido", "inicio": { "escena": 0 }, "duracion": 1.2, "volumen": 0.5 },
+    { "nombre": "viento", "inicio": { "escena": "pared" }, "fin": { "escena": "escaner" }, "volumen": 0.22, "bucle": true, "fundido": [0.2, 0.4] },
     { "nombre": "pajaros", "inicio": { "escena": "prado" }, "fin": { "escena": "escaner" }, "volumen": 0.3, "bucle": true, "fundido": [0.3, 0.3] },
     { "nombre": "latido", "inicio": { "escena": "escaner" }, "fin": { "escena": "ensayo" }, "volumen": 0.5, "bucle": true, "bajoVoz": 0.2, "fundido": [0.3, 0.3] },
-    { "nombre": "zas", "inicio": { "escena": "ensayo", "palabra": "patada", "mas": 0.1 }, "duracion": 0.5, "volumen": 0.8 },
+    { "nombre": "viento", "inicio": { "escena": "ensayo" }, "fin": { "escena": "cierre" }, "volumen": 0.22, "bucle": true, "fundido": [0.3, 0.3] },
     { "nombre": "golpe", "inicio": { "escena": "cumbre" }, "duracion": 0.6, "volumen": 0.5 },
-    { "silencio": true, "inicio": { "escena": "cumbre", "final": true, "mas": -0.6 }, "duracion": 0.7 }
+    { "silencio": true, "inicio": { "escena": "cumbre", "final": true, "mas": -0.45 }, "duracion": 0.6 },
+    { "nombre": "crujido", "inicio": { "escena": "cierre", "palabra": "Mándaselo" }, "duracion": 1.2, "volumen": 0.45 }
   ]
 }
