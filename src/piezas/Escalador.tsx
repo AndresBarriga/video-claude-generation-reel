@@ -105,11 +105,12 @@ export type PropsEscalador = {
   /** Complexión: ancho del torso (px), largo de brazos (factor), radio de manos, grosor de brazos/piernas. */ cuerpo?: { torso?: number; brazos?: number; manos?: number; grosor?: number };
   /** Pies de gato (zapatilla ajustada en punta, color) en vez de bota. */ pies?: string;
   /** Bolsa de magnesio a la cintura (color). */ bolsa?: string;
+  /** Prismáticos: se dibujan entre los ojos y la mano delantera (siguen a la pose). */ prismaticos?: boolean;
   /** Cabeza propia (caricatura de una persona concreta); sustituye a la cabeza genérica. Mismo sistema: radio 30, mira a +x. */ Cabeza?: React.FC<{ cara: Cara }>;
 };
 
 /** Escalador. (x, y) = cadera. `sombra` = y del suelo donde proyectar sombra. */
-export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto, Cabeza, cuerpo = {}, pies, bolsa }) => {
+export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie", poseB, t = 0, angulos, cara = "normal", s = 1, rot = 0, mira = 1, sombra, mochila, navaja, frontal, aspecto = {}, objeto, Cabeza, cuerpo = {}, pies, bolsa, prismaticos }) => {
   const TW = cuerpo.torso ?? 52, KB = cuerpo.brazos ?? 1, RM = cuerpo.manos ?? 13, GR = cuerpo.grosor ?? 1;
   const c = { ...PERSONAJES[quien], ...aspecto } as typeof PERSONAJES.joe & Aspecto;
   const piel = aspecto.piel ?? PIEL, pielS = aspecto.pielSombra ?? PIEL_SOMBRA, mano = aspecto.manos === "piel" ? piel : GUANTE;
@@ -165,6 +166,18 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
             <circle cx={32} cy={-19} r={6} fill="#FFF7D6" />
           </g>)}
         </g>
+        {prismaticos && (() => {
+          const r = ((a.torso * 0.6 + a.cabeza) * Math.PI) / 180, ox = 8, oy = 2; // entre los ojos, en coords. de la cabeza
+          const ojo: [number, number] = [cab[0] + ox * Math.cos(r) - oy * Math.sin(r), cab[1] + ox * Math.sin(r) + oy * Math.cos(r)];
+          const dx = bA.m[0] - ojo[0], dy = bA.m[1] - ojo[1], ang = (Math.atan2(dy, dx) * 180) / Math.PI, lng = Math.max(30, Math.hypot(dx, dy) + 6);
+          return (
+            <g transform={`translate(${ojo[0]} ${ojo[1]}) rotate(${ang})`}>
+              <rect x={2} y={-17} width={lng} height={15} rx={6} fill="#1B2230" /><rect x={2} y={2} width={lng} height={15} rx={6} fill="#1B2230" />
+              <rect x={lng - 4} y={-19} width={10} height={19} rx={4} fill="#2A3442" /><rect x={lng - 4} y={0} width={10} height={19} rx={4} fill="#2A3442" />
+              <circle cx={lng + 5} cy={-9.5} r={5} fill="#7FB3D9" /><circle cx={lng + 5} cy={9.5} r={5} fill="#7FB3D9" />
+            </g>
+          );
+        })()}
         <path d={lin([hombro, bA.e, bA.m])} {...st(24 * GR, c.chaqueta)} />
         <circle cx={bA.m[0]} cy={bA.m[1]} r={RM} fill={mano} />
         {objeto && <g transform={`translate(${bA.m[0]} ${bA.m[1]}) rotate(0)`}><ObjetoMano o={objeto} /></g>}

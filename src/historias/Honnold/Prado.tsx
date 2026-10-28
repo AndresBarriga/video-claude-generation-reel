@@ -32,10 +32,8 @@ export const Prado: React.FC<P> = ({ d, e }) => {
         <rect x={-300} y={940} width={1700} height={1200} fill={PH.prado} />
         <rect x={0} y={936} width={1080} height={8} fill="#fff" />
         {Array.from({ length: 12 }).map((_, i) => <ellipse key={i} cx={(i * 97) % 1080} cy={1500 + (i % 4) * 60} rx={40} ry={8} fill={PH.pradoS} />)}
-        <Escalador x={520} y={1330} quien="joe" s={2.4} aspecto={TU} cara="miedo" sombra={1470}
-          angulos={{ torso: -16, cabeza: -30, brazoA: [125, 205], brazoB: [118, 200] }} />
-        {/* prismáticos delante de los ojos */}
-        <g transform="translate(470 985) rotate(-34)"><rect x={-10} y={-34} width={64} height={30} rx={12} fill="#1B2230" /><rect x={-10} y={4} width={64} height={30} rx={12} fill="#1B2230" /><circle cx={56} cy={-19} r={10} fill="#7FB3D9" /><circle cx={56} cy={19} r={10} fill="#7FB3D9" /></g>
+        <Escalador x={520} y={1330} quien="joe" s={2.4} aspecto={TU} cara="miedo" sombra={1470} prismaticos
+          angulos={{ torso: -16, cabeza: -30, brazoA: [120, 190], brazoB: [112, 186] }} />
         {/* gota de sudor */}
         <path d={`M500 ${980 + sudor * 60} q-10 18 0 26 q10 -8 0 -26 Z`} fill="#BFE3F7" opacity={1 - sudor} />
       </Svg>
