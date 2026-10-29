@@ -43,7 +43,7 @@ HISTORIA: los escaladores sin dinero de Camp 4 (Yosemite, años 70), el avión c
 
 TONO: cute y gracioso, drogas como anécdota (sin mostrar consumo, sin "mola"). Riesgo asumido: Instagram/TikTok pueden limitar alcance; no uses imágenes de consumo ni la palabra "droga" en rótulos grandes.
 
-REGLAS DE FORMATO: la jerga ("Stonemasters", "Camp 4") no dice nada a quien no escala: abre con lo universal ("los más pobres del valle y un avión que cae a su lado"); espectador dentro; clímax visual en el primer fotograma (nunca un rótulo); un número o cambio que se mueva; 40–50 s; remate que vuelve al espectador ("¿qué harías tú con un golpe de suerte así?") y SIN llamada a la acción hablada al final (el envío va en el pie de foto/comentario fijado). Piezas: `Escalador` con casete y cerveza ya soportados parcialmente (E30: props de Cabeza/pies/bolsa/prismáticos); si falta algo, cambio pequeño y explicado.
+REGLAS DE FORMATO: la jerga ("Stonemasters", "Camp 4") no dice nada a quien no escala: abre con lo universal ("los más pobres del valle y un avión que cae a su lado"); espectador dentro; clímax visual en el primer fotograma (nunca un rótulo); un número o cambio que se mueva; 40–50 s; remate que vuelve al espectador ("¿qué harías tú con un golpe de suerte así?") y SIN llamada a la acción hablada al final (el envío va en el pie de foto/comentario fijado). Piezas: reutiliza `Escalador` (props de E30: Cabeza, cuerpo, pies, bolsa, prismáticos); casete, cerveza y avión no existen aún: créalos como piezas nuevas en `src/piezas/` o dentro de la plantilla, sin tocar el código compartido salvo un cambio pequeño y explicado.
 
 Voz: no la generes; pasa el texto con `npm run texto -- <id>` a Andrés.
 ```
