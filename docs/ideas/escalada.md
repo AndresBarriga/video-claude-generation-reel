@@ -88,3 +88,5 @@ Idea de Andrés: cómo empezó la escalada en Yosemite, el avión con marihuana,
 - Riesgo 3, la foto: no usar imagen real (derechos); dibujarlo con nuestras piezas.
 - Gancho posible: «Cayó un avión con marihuana junto a los escaladores más pobres de California» (clímax en el segundo 1). Final que vuelve al espectador: ¿qué harías tú con el golpe de suerte? Verificar antes la versión exacta (ver arriba).
 - Encaja como historia universal (formato que ha funcionado: E15/E14), pero **solo si el avión se confirma con una fuente mejor** (libro de Long y Fidelman, 2009, citado en Wikipedia).
+
+**Decisión de Andrés (29-oct): no hace falta contrastar** (la historia sale en el documental *Valley Uprising* y es conocida) **y las drogas se presentan en tono cute.** Reglas que se mantienen: sin cifras concretas del avión (las fuentes se contradicen: usar «un avión cargado de marihuana»); sin clips del documental ni fotos reales (derechos); sin mostrar consumo. Riesgo asumido: alcance limitado si el sistema lo marca; se mide con el primer vídeo.
