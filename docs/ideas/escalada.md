@@ -66,3 +66,9 @@ Ranking viralidad: 15 > 14 > 16 > 11 > 20. Nicho: 2, 3, 6. Educativo: 8, 9, 12. 
 - A Otras: el alivio de quitarse los pies de gato; las manos blancas de magnesio en el pantalón; la cola del bloque a las 19:00; calentar con un V8; el ritual de la magnesia; leer la vía 5 minutos y caer en el primer movimiento.
 - B ★ **Lo que cuesta empezar a escalar** (precios aprox. que suben; verificar solo rangos).
 - B **Mochila de bloque**: checklist (cepillo, esparadrapo, lija, crema, magnesio, plátano).
+
+## #16 Tommy Caldwell — notas de Andrés (29-oct), siguiente historia a producir
+- Fórmula E15/E14: historia universal, dilema o número que se mueve, sin jerga, pago al final, 40–45 s, sin cola tras el remate, directo al primer golpe (gancho candidato: dedo cortado + secuestro + la pared más difícil del mundo).
+- **Recuerdo de Andrés (sin verificar):** alguien proyectaba una vía en El Capitán, no pudo; al año siguiente, **tras cortarse/perder un dedo**, la escala. En el documental hay imágenes lado a lado, con y sin dedo: en una se cae, en la otra sube. **El chat debe verificar quién, qué vía y qué muestra exactamente** antes de afirmarlo (es el centro del vídeo; si no consta, se cuenta otra cosa).
+- **Visual:** pantalla dividida dibujada (mismo movimiento: a la izquierda cae, a la derecha sube). **Sin imágenes reales** del documental (derechos de autor) ni fotos de personas reales.
+- Hechos: contrastar cada dato en fuente fiable; sin dramatizar la violencia del secuestro.
