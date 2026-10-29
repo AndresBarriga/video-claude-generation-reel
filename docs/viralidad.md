@@ -66,4 +66,3 @@ Al enseñar un guion, pon la puntuación en una línea («Viralidad 13/14: falta
 
 ## Añadido 2026-10-29 (curva de E15)
 - La mayor caída de E15 está en el cierre de envío. Es normal (la historia ya se ha resuelto), pero resta visto medio y bucle. Regla: **cierre ≤3 s**, la pregunta va pegada al último dato y con la imagen todavía en movimiento; «mándaselo» va en rótulo/descripción, no en la voz. Ej.: «¿Y el tuyo? ¿Te cortaría?» → corte al primer plano.
-- **Dato real (E15, 29-oct):** el comentario fijado «Etiqueta a quien SÍ te cortaría la cuerda 😅» dio mucho juego y likes. Mientras los datos no digan lo contrario, se permite «etiqueta a…» con humor y una persona concreta (E11: «Etiqueta a quien llega a la fase 5 en un tercer piso 😅»).
