@@ -16,3 +16,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 **Lectura (29-oct):** el crítico dio 7 a E6 y fracasó; a E15 (viral) no consta nota. Hasta tener más datos, su nota no predice: sirve para encontrar fallos, no para decidir qué publicar.
 | 29-oct | E34 v1 | propuesta | 5 | «¿te paras?» se contesta solo; coste de pararse a mitad | — |
 | 29-oct | E34 v2 | propuesta | 6 | final juzgaba a los 40; aplicado «¿te habrías parado a averiguarlo?» | — |
+| 29-oct | E35 v1 | propuesta | 7 | dilema muere al rechazar helicóptero; aplicado: manta como gancho y «¿Te dejaría la manta?» | — |
