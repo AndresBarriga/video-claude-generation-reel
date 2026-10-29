@@ -17,3 +17,8 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 29-oct | E34 v1 | propuesta | 5 | «¿te paras?» se contesta solo; coste de pararse a mitad | — |
 | 29-oct | E34 v2 | propuesta | 6 | final juzgaba a los 40; aplicado «¿te habrías parado a averiguarlo?» | — |
 | 29-oct | E35 v1 | propuesta | 7 | dilema muere al rechazar helicóptero; aplicado: manta como gancho y «¿Te dejaría la manta?» | — |
+| 29-oct | E30 | stock | 5 (6,5 con cambios) | sin marco universal; cierre de envío en voz | — |
+| 29-oct | E11 | stock | 4,5 (6) | abre con título-jerga; centro es lección | — |
+| 29-oct | E31 | stock | 4 (5,5) | ritual de nicho sin rótulo | — |
+| 29-oct | E3 | stock | 3 (4,5) | jerga pura tipo E6; sin voz | — |
+| 29-oct | E32 | stock | 2 | relleno | — |
