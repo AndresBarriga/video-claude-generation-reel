@@ -31,3 +31,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · (E11) Consejos breves y prácticos al final de un vídeo de cuerpo («respira», «baja el talón»).
 - 2026-10-28 · (E11) Formato por fases, con muchos cambios de plano: «la gente reacciona mejor a cambios, si no se aburre».
 - 2026-10-28 · (E11, idea de Andrés) El chiste de la caída mínima: en tu cabeza la chapa estaba lejísimos y era todo miedo.
+- 2026-10-29 · (E11) Tintineo metálico de la cinta en bucle casi todo el vídeo: «agudo, molesta». Efectos agudos solo como gag puntual (≤3 s), nunca de fondo.

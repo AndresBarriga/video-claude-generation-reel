@@ -659,16 +659,15 @@
             "escena": "fase2"
           },
           "fin": {
-            "escena": "fase5",
-            "palabra": "pilla",
-            "mas": 0.25
+            "escena": "fase2",
+            "final": true
           },
-          "volumen": 0.6,
+          "volumen": 0.35,
           "bucle": true,
           "bajoVoz": 0.3,
           "fundido": [
             0.05,
-            0.05
+            0.4
           ]
         },
         {
@@ -735,31 +734,13 @@
           "duracion": 0.9
         },
         {
-          "nombre": "tintineo",
-          "inicio": {
-            "escena": "engano"
-          },
-          "fin": {
-            "escena": "truco",
-            "palabra": "aire",
-            "mas": 0.4
-          },
-          "volumen": 0.5,
-          "bucle": true,
-          "bajoVoz": 0.25,
-          "fundido": [
-            0.3,
-            0.3
-          ]
-        },
-        {
           "silencio": true,
           "inicio": {
             "escena": "truco",
             "palabra": "aire",
             "mas": 0.45
           },
-          "duracion": 1
+          "duracion": 1.0
         }
       ]
     }
