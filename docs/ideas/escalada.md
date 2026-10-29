@@ -95,3 +95,10 @@ Idea de Andrés: cómo empezó la escalada en Yosemite, el avión con marihuana,
 - **Everest 2006 «¿Te paras?»** — contraste en el mismo mes y la misma montaña: David Sharp, junto al cadáver de «Green Boots», ~40 personas pasan a su lado; días después Lincoln Hall, dado por muerto, aparece vivo y el equipo de Dan Mazur renuncia a la cumbre para bajarlo. Gancho elegido: «Hay un muerto en el Everest que se usa como señal del camino». Cierre: «¿Tu compañero renunciaría a la cumbre por ti?». [por verificar: cifra de ~40, fechas, Mazur]
 - **Caldwell «Las dos decisiones»** — 2000: empuja al secuestrador o mueren (sobrevivió). 2015 Dawn Wall: Jorgeson se atasca ~7 días en un largo; Tommy podía terminar solo y ser el primero, y le espera. Cierre: «¿Te esperaría el tuyo?». [por verificar: días del atasco]
 - **Hippies «¿Bajas?»** — eres pobre en Yosemite, se estrella un avión de marihuana en el lago helado al lado. Giro: rompen el hielo; luego, esos mismos pobres suben El Capitán en un día. Cierre: «¿Con qué amigo bajarías?».
+
+## Más ideas «decisión límite» (29-oct, por verificar)
+- **Revol y Mackiewicz, Nanga Parbat 2018** — ella tiene que dejarle para sobrevivir; el equipo polaco abandona su invernal al K2 para rescatarla de noche. «¿Le dejas?»
+- **Messner, Nanga Parbat 1970** — vuelve sin su hermano; le acusan de abandonarle 35 años; en 2005 aparece el cuerpo y le da la razón.
+- **Iñaki Ochoa de Olza, Annapurna 2008** (España) — Horia Colibășanu se queda días con él a 7.400 m; rescate internacional. «¿Te quedarías?»
+- **Beck Weathers, Everest 1996** — dado por muerto dos veces, vuelve andando solo al campamento.
+- **Aron Ralston (127 horas)** — barranquismo, no escalada; «¿te cortarías el brazo?». Muy contada.
