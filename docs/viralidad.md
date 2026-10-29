@@ -63,3 +63,6 @@ Al enseñar un guion, pon la puntuación en una línea («Viralidad 13/14: falta
 - **Amplitud del tema:** ¿el espectador lo está viviendo/tocando ahora mismo? Un tema que usa todo el mundo supera a uno de nicho. En escalada, tirar de experiencias universales (último intento, excusas, el colega que graba) y no del deporte en sí.
 - **Primer fotograma = acción física, nunca un rótulo/título.** El rótulo entra tras ~0,5 s. (E6 v2 corregido el 28-oct: abre con la palmada de magnesio.)
 - **Mostrar, no decir:** un número o cambio visible que se mueva (100→71, 23→9) como causa visible.
+
+## Añadido 2026-10-29 (curva de E15)
+- La mayor caída de E15 está en el cierre de envío. Es normal (la historia ya se ha resuelto), pero resta visto medio y bucle. Regla: **cierre ≤3 s**, la pregunta va pegada al último dato y con la imagen todavía en movimiento; «mándaselo» va en rótulo/descripción, no en la voz. Ej.: «¿Y el tuyo? ¿Te cortaría?» → corte al primer plano.
