@@ -31,3 +31,11 @@ Candidatos: humor de vida adulta (personaje fijo), mascotas «uy qué mono», hi
 - **Resultado:** mascotas «uy qué mono» **descartada** (falla 2: el vídeo real es más mono; solo ~12 ideas de «lo que piensa»). Vida adulta y animales reales pasan, con riesgos: vida adulta depende de la escritura y no tiene datos propios (E6 humor = 4K frente a E15 historia = 44–66K, n=2); animales reales solo tiene 4 ideas y las historias famosas (Hachiko) están muy contadas.
 - **Datos de saturación:** no hay cifras fiables de cuentas animadas en español (TikTok bloquea la consulta automática; fuentes = blogs). Mascotas reales en España: techo ~0,2–0,9 M en IG (Kolsquare, ago-2024); monetizan con marcas y animal real.
 - **Decisión pendiente de Andrés:** antes de abrir cuenta, 10 min de búsqueda manual (protocolo en el chat) y producir 1 vídeo de prueba de animales (en la cuenta de escalada) para ver si la fórmula generaliza.
+
+## 2026-10-29 · Patrón E15 (n=1 viral, hipótesis)
+E15 ~44K+ y creciendo frente a E6 ~4K. Lo que E15 tiene y E6/E14 no:
+1. **Dilema que el espectador resuelve en su cabeza** («¿cortas?»): sin respuesta obvia, cada uno opina → comentarios largos.
+2. **Vida o muerte real**: se entiende sin saber escalar (99,9 % no seguidores).
+3. **Bucle imposible de adivinar** («cortó… y el amigo volvió»).
+4. **La pregunta final es sobre una persona concreta** («¿te cortaría tu compañero?») → envío.
+E14 Honnold tiene 2 y 3 a medias, pero el espectador mira, no decide. Siguiente candidato: misma estructura «decisión límite real + ¿qué harías tú?» (Caldwell empuja al secuestrador; alternativa: David Sharp, Everest 2006). Pendiente: curva de retención y datos de E14.
