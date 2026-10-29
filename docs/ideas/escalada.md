@@ -102,3 +102,7 @@ Idea de Andrés: cómo empezó la escalada en Yosemite, el avión con marihuana,
 - **Iñaki Ochoa de Olza, Annapurna 2008** (España) — Horia Colibășanu se queda días con él a 7.400 m; rescate internacional. «¿Te quedarías?»
 - **Beck Weathers, Everest 1996** — dado por muerto dos veces, vuelve andando solo al campamento.
 - **Aron Ralston (127 horas)** — barranquismo, no escalada; «¿te cortarías el brazo?». Muy contada.
+
+## E35 Grossglockner 2025 «¿Te quedas o bajas?» (idea de Andrés, 29-oct) — hechos verificados
+Ene-2025, Grossglockner (3.798 m, arista Stüdlgrat): Kerstin G. (33) agotada a ~50 m de la cumbre, de noche y con viento. Su novio Thomas P. (más experto, había subido 4 veces) la deja ~2:00 para buscar ayuda y baja por el otro lado; la fiscalía dice que no usó manta térmica y avisó a las 3:30; antes, hacia las 22 h, rechazó la ayuda de un helicóptero. El viento impidió el rescate; ella murió de hipotermia. Una webcam le grabó bajando con el frontal. 19-feb-2026: condenado por homicidio por negligencia grave, 5 meses de cárcel suspendidos y ~9.600 € de multa; él dice que fue un accidente. Fuentes: CNN 19-feb-2026, BBC Mundo, Irish Times 20-feb-2026, Alpine Mag.
+Reglas: sin apellidos, solo lo publicado, tono respetuoso (muerte reciente, familia viva); no dibujar el cuerpo.
