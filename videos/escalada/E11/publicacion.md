@@ -10,6 +10,6 @@ Etiqueta a quien siempre llega a la fase 5.
 
 **Comentario fijado:** Yo me quedo en la fase 4. ¿Y tú?
 
-**Portada:** primer fotograma («Las 5 fases de la pierna de Elvis»).
+**Portada:** primer fotograma («Las 5 fases del miedo a las alturas»).
 
 Nota CTA: la voz termina con «¿En qué fase te quedas tú?». El envío lo empujan la descripción («Etiqueta a quien siempre llega a la fase 5») y el comentario fijado.
