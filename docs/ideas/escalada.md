@@ -74,3 +74,17 @@ Ranking viralidad: 15 > 14 > 16 > 11 > 20. Nicho: 2, 3, 6. Educativo: 8, 9, 12. 
 - Hechos: contrastar cada dato en fuente fiable; sin dramatizar la violencia del secuestro.
 - **Verificado (Wikipedia, 29-oct):** ago-2000 secuestro de 6 días en Kirguistán (Caldwell empuja a un secuestrador por un acantilado; el hombre sobrevivió); 2001 sierra de mesa, pierde gran parte del índice izquierdo (reimplantado, luego decide quitarlo; 3 operaciones); 2003 Flex Luthor (9a+), 2005 The Nose en menos de 12 h; **27-dic-2014 a 14-ene-2015, Dawn Wall con Kevin Jorgeson, 19 días**. **No verificado y no usar:** «Salathé a los cinco meses» y la comparación lado a lado con/sin dedo.
 - **Mecánica propuesta:** contador de años 2000 → 2015. **Visual del dedo:** nuestra `Mano` en SVG (no imagen de IA, que falla con las manos): macro con 4 dedos y el índice corto, sin gore (chispas/corte sin mostrar la herida), luego esa misma mano en una presa mínima.
+
+## #33 Los Stonemasters de Yosemite (hippies, avión de marihuana, LSD) — notas de Andrés (29-oct)
+Idea de Andrés: cómo empezó la escalada en Yosemite, el avión con marihuana, escalar con LSD, la foto mítica del tío con casete y cerveza.
+**Comprobado (con fuente):**
+- Un avión cargado de marihuana se estrelló cerca de Yosemite a mediados de los 70 y escaladores de Camp 4 estuvieron implicados ([Wikipedia](https://en.wikipedia.org/wiki/The_Stonemasters), [Climbing Gold «Dope Lake»](https://climbinggold.com/episodes/tag/Dope+Lake)). **Las fuentes discrepan:** 1976 frente a 1977, y «4 millones de dólares» frente a «unas 6.000 libras». Quién se la quedó y qué repartieron es relato oral: no afirmarlo como hecho.
+- Jim Bridwell era conocido por escalar con LSD (Wikipedia cita a GQ 2016 y a *Pilgrims of the Vertical*). Dato dudoso: «plan de tres días», no usar sin leer la fuente.
+- Primer «Nose en un día» (El Capitán): Bridwell, Billy Westbay y John Long, 1975. Foto de Ansel Adams Gallery «The pose that started it all» (con derechos: no usarla).
+**NO comprobado (no usar):** la foto del tío con casete y cerveza (no encontré cuál es; puede ser otra foto); quién tuvo la idea del avión; cifras de cuánto se llevaron.
+**Mi opinión (para el chat de producción):**
+- Riesgo 1, jerga: «Stonemasters», «Camp 4» no dicen nada a quien no escala. El tema universal es «los que vivían de sobras y se jugaron la vida por nada»; no empezar por el nombre.
+- Riesgo 2, drogas: Instagram y TikTok limitan el alcance de contenido que parezca promoverlas. Contar como historia (qué pasó), sin tono de «mola», y sin mostrar consumo.
+- Riesgo 3, la foto: no usar imagen real (derechos); dibujarlo con nuestras piezas.
+- Gancho posible: «Cayó un avión con marihuana junto a los escaladores más pobres de California» (clímax en el segundo 1). Final que vuelve al espectador: ¿qué harías tú con el golpe de suerte? Verificar antes la versión exacta (ver arriba).
+- Encaja como historia universal (formato que ha funcionado: E15/E14), pero **solo si el avión se confirma con una fuente mejor** (libro de Long y Fidelman, 2009, citado en Wikipedia).
