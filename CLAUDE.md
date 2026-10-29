@@ -13,7 +13,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
   2. 5 aperturas y la que eliges.
   3. Guion puntuado (`docs/viralidad.md`), escena por escena: qué se ve / qué se dice.
   4. Reparto y la idea visual que recorre el vídeo, y como mucho 2–3 bocetos (fotogramas fijos rápidos) si ayudan.
-  **Antes de enseñarla, pásala por el subagente `critico`** (Agent con `subagent_type: critico`): aplica lo que tenga razón y añade a la propuesta su veredicto y su nota de envío en una línea. Haz lo mismo con el vídeo terminado (hoja de escenas + guion).
+  **Antes de enseñarla, pásala por el subagente `critico`** (Agent con `subagent_type: critico`): aplica lo que tenga razón y añade a la propuesta su veredicto y su nota de envío en una línea, **y añade la línea a `docs/criticas.md`**. Haz lo mismo con el vídeo terminado (hoja de escenas + guion).
   Espera su OK o sus cambios. Después produce sin interrumpir.
 - **Todo lo demás (correcciones, cambios concretos, tareas claras): haz, no pidas permiso.** No termines con "¿arranco?" ni ofrezcas opciones que no ha pedido.
 - **Andrés decide ritmo, orden y fechas.** Calendario y test son orientativos: no frenes la producción por ellos ni le sermonees sobre "romper el test". Si ves un riesgo real, dilo en una línea y sigue trabajando.
