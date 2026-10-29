@@ -90,3 +90,8 @@ Idea de Andrés: cómo empezó la escalada en Yosemite, el avión con marihuana,
 - Encaja como historia universal (formato que ha funcionado: E15/E14), pero **solo si el avión se confirma con una fuente mejor** (libro de Long y Fidelman, 2009, citado en Wikipedia).
 
 **Decisión de Andrés (29-oct): no hace falta contrastar** (la historia sale en el documental *Valley Uprising* y es conocida) **y las drogas se presentan en tono cute.** Reglas que se mantienen: sin cifras concretas del avión (las fuentes se contradicen: usar «un avión cargado de marihuana»); sin clips del documental ni fotos reales (derechos); sin mostrar consumo. Riesgo asumido: alcance limitado si el sistema lo marca; se mide con el primer vídeo.
+
+## Vueltas de tuerca (29-oct, chat Escalada) — patrón E15: decisión límite + «¿qué harías tú?»
+- **Everest 2006 «¿Te paras?»** — contraste en el mismo mes y la misma montaña: David Sharp, junto al cadáver de «Green Boots», ~40 personas pasan a su lado; días después Lincoln Hall, dado por muerto, aparece vivo y el equipo de Dan Mazur renuncia a la cumbre para bajarlo. Gancho elegido: «Hay un muerto en el Everest que se usa como señal del camino». Cierre: «¿Tu compañero renunciaría a la cumbre por ti?». [por verificar: cifra de ~40, fechas, Mazur]
+- **Caldwell «Las dos decisiones»** — 2000: empuja al secuestrador o mueren (sobrevivió). 2015 Dawn Wall: Jorgeson se atasca ~7 días en un largo; Tommy podía terminar solo y ser el primero, y le espera. Cierre: «¿Te esperaría el tuyo?». [por verificar: días del atasco]
+- **Hippies «¿Bajas?»** — eres pobre en Yosemite, se estrella un avión de marihuana en el lago helado al lado. Giro: rompen el hielo; luego, esos mismos pobres suben El Capitán en un día. Cierre: «¿Con qué amigo bajarías?».
