@@ -43,3 +43,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E3) Para el gancho, macro de una mano cerrando regleta mejor que un personaje temblando.
 - 2026-10-28 · Recordatorio de Andrés para todo vídeo: algo impactante al principio, que el espectador se reconozca («tú»), que explique algo y cambios de plano constantes.
 - 2026-10-28 · (E31) La presa limpia tiene que brillar mucho, con destellos («cositas shiny»): `Destellos` en `Cepillado.tsx`.
+- 2026-10-29 · Frenar ideas por respeto, mal gusto o verificación total: «somos una cuenta de Instagram, no una institución». Se prioriza viralidad; tono de suceso/morbo permitido (cadáver dibujado en gris sí). Límite que se mantiene: no inventar hechos concretos sobre personas reales identificables.

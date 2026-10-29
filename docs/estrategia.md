@@ -39,3 +39,4 @@ E15 ~44K+ y creciendo frente a E6 ~4K. Lo que E15 tiene y E6/E14 no:
 3. **Bucle imposible de adivinar** («cortó… y el amigo volvió»).
 4. **La pregunta final es sobre una persona concreta** («¿te cortaría tu compañero?») → envío.
 E14 Honnold tiene 2 y 3 a medias, pero el espectador mira, no decide. Siguiente candidato: misma estructura «decisión límite real + ¿qué harías tú?» (Caldwell empuja al secuestrador; alternativa: David Sharp, Everest 2006). Pendiente: curva de retención y datos de E14.
+- 2026-10-29 · Andrés: prioridad absoluta a viralidad; fuera restricciones de tono/respeto y de verificación total. Se mantiene solo: no inventar hechos sobre personas reales (riesgo legal) y evitar gore explícito (Instagram lo tapa como «contenido sensible» y mata el alcance).
