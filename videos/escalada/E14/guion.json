@@ -1,0 +1,86 @@
+{
+  "id": "E14",
+  "titulo": "A ti te tiembla la pierna en una escalera de mano (Honnold, El Capitán sin cuerda)",
+  "nicho": "escalada",
+  "plantilla": "Honnold",
+  "verificado": true,
+  "fuentes": [
+    "Guinness World Records: primer free solo de El Capitán, Alex Honnold, 3 de junio de 2017, 2.900 ft (884 m), 3 h 56 min. Wikipedia (Freerider): 884 m. La prensa redondea a 3.000 ft (914 m): no usamos 914.",
+    "Torre Eiffel: 330 m desde el 15-3-2022 (nueva antena; antes 324 m). EFE / AP.",
+    "MacKinnon, «The Strange Brain of the World's Greatest Solo Climber», Nautilus, 2016: resonancia funcional de Jane Joseph; ante imágenes que activan la amígdala del sujeto de control (otro escalador), la de Honnold no mostró activación. Joseph: el control «como un árbol de Navidad»."
+  ],
+  "nota_rigor": "En pantalla solo: 884 m, 3 h 56 min, 330 m (Eiffel), contador de metros. «Un tercer piso» ≈ 10 m es aproximación cotidiana, sin cifra propia. Escáner: un solo caso (n=1) y un control; se cuenta como lo que vieron, no como ley. Ensayos con cuerda y la «patada de kárate» del Boulder Problem: hechos conocidos del documental Free Solo.",
+  "ganchos_alternativos": [
+    "1 · Situación (elegida): «A ti te tiembla la pierna en una escalera de mano. Él subió esto sin cuerda. Con esta cara.»",
+    "2 · Cifra: «884 metros. Casi tres Torres Eiffel. Sin cuerda.»",
+    "3 · Pregunta: «¿En qué metro te habrías bajado tú?» (descartada por Andrés: no hay a quién mandárselo)",
+    "4 · Imagen imposible: una Torre Eiffel al lado de la pared… y él la adelanta.",
+    "5 · Afirmación que choca: «No es valiente. Su cerebro no enciende el miedo.»"
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "escalera",
+      "texto": "A ti te tiembla la pierna en una escalera de mano."
+    },
+    {
+      "tipo": "texto",
+      "visual": "pared",
+      "texto": "Él subió esto sin cuerda."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cara",
+      "texto": "Con esta cara. Y le escanearon el cerebro para entender por qué."
+    },
+    {
+      "tipo": "texto",
+      "visual": "tuEscalera",
+      "titulo": "Tu escalera",
+      "texto": "Metro dos: tu escalera."
+    },
+    {
+      "tipo": "texto",
+      "visual": "subida",
+      "titulo": "Cola del súper",
+      "texto": "Metro cien: él, con cara de estar en la cola del súper."
+    },
+    {
+      "tipo": "cifra",
+      "visual": "prado",
+      "titulo": "Una Torre Eiffel",
+      "cifra": "330 m",
+      "fuente": "Torre Eiffel: 330 m",
+      "texto": "Metro trescientos treinta: una Torre Eiffel entera. Le quedan casi dos más."
+    },
+    {
+      "tipo": "texto",
+      "visual": "escaner",
+      "texto": "En el escáner, su zona del miedo, la amígdala, ni se encendía."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cerebros",
+      "texto": "A otro escalador se le iluminaba como un árbol de Navidad. A él, nada."
+    },
+    {
+      "tipo": "texto",
+      "visual": "ensayo",
+      "texto": "Pero no es magia: ensayó cada paso con cuerda, hasta sabérselo de memoria."
+    },
+    {
+      "tipo": "cifra",
+      "visual": "cumbre",
+      "titulo": "884 m",
+      "cifra": "884 m",
+      "fuente": "Guinness World Records",
+      "texto": "Ochocientos ochenta y cuatro metros. Tres horas y cincuenta y seis minutos."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "titulo": "¿Valiente?",
+      "texto": "¿Valiente, o es que su cerebro no se entera? Mándaselo al que no se sube ni a una escalera de mano."
+    }
+  ]
+}

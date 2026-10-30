@@ -20,6 +20,10 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · (E11 v1) Vídeo de cuerpo que se queda en explicación: necesita conflicto o humor (en E11, el asegurador que se ríe desde abajo).
 - 2026-10-28 · (E11) Pedir al espectador que haga una prueba física: en la cama nadie la hace. Y la experiencia de Andrés: no le funcionó.
 - 2026-10-28 · (E11 v2) Experimento en laboratorio con plataforma elevadora: no se entendía.
+- 2026-10-28 · (E14) CTA tipo «para el vídeo en el metro en que te bajarías»: no hay a quién mandárselo ni nada especial.
+- 2026-10-28 · (E14) «Tú sudas en un tercer piso»: a mucha gente un tercer piso no le da miedo; el punto de partida debe ser universal (escalera de mano).
+- 2026-10-28 · (E14) Gestos a medias (la patada de kárate de perfil): o se representan bien o se quitan.
+- 2026-10-28 · (E14) Objetos mal colocados (prismáticos fuera de las manos): colocarlos con el esqueleto, no a ojo.
 - 2026-10-28 · (E3 v1) El bloque exterior como escenario de todo: «muy visto». Variar escenarios en cada vídeo (rocódromo, desplome, exterior).
 - 2026-10-28 · (E3 v1) Conformarse con un 6/10 del crítico: hay que subirlo antes de enseñar.
 - 2026-10-28 · (E3 v2) Macro de la mano cerrando regleta (pieza ManoRegleta): «quedan feas». No usar manos de perfil así.
@@ -27,6 +31,8 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E3 v3) Escalador colgado alto sin cuerda ni arnés: poco real. Si está alto, vía con arnés y cuerda.
 - 2026-10-28 · (E3) Voz y subtítulos que no dicen lo mismo (texto cambiado en ElevenLabs) → se desincroniza. Si se cambia el texto en ElevenLabs, avisar para actualizar `guion.json`.
 - 2026-10-28 · (E31) Mano que sujeta el cepillo «al revés» (dorso con nudillos arriba y el mango asomando): «muy malo». Ahora: mano por la palma, dedos cruzando el mango, pulgar encima (`Puno`).
+- 2026-10-30 · (E35) Objetos que no se entienden (manta dorada en la mochila en todos los planos, encima de la cara): mejor un inserto claro con etiqueta cuando se nombra.
+- 2026-10-30 · (E35) Picos como triángulo flotante con cruz; helicóptero «cutre»; gente flotando en el juicio; gesto que parece un saludo; rótulo final sin contexto («#3: …»).
 - (30-oct) No abusar de «las N fases de…»: para temas de curiosidad (p. ej. pies de gato) prefiere un **por qué** que funcione en dos públicos: el que no escala piensa «qué locos» y el que escala se lo manda al que no lo entiende.
 
 ## Sí
@@ -39,9 +45,12 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · (E11) Consejos breves y prácticos al final de un vídeo de cuerpo («respira», «baja el talón»).
 - 2026-10-28 · (E11) Formato por fases, con muchos cambios de plano: «la gente reacciona mejor a cambios, si no se aburre».
 - 2026-10-28 · (E11, idea de Andrés) El chiste de la caída mínima: en tu cabeza la chapa estaba lejísimos y era todo miedo.
+- 2026-10-28 · (E14) Caricaturas de personas reales: pocos rasgos muy marcados (Honnold: cara larga, ojos redondos de mirada fija, cejas rectas, expresión inexpresiva) y su atrezo icónico (camiseta roja, bolsa de magnesio, pies de gato).
 - 2026-10-28 · (E6 v3) «El vídeo es perfecto». Pegas: personajes sentados que parecen flotar y escaladores con los pies en el aire (poco real); mano del antebrazo poco clara.
 - 2026-10-28 · (E3) El plano del desplome enorme con el escalador diminuto («es un seis A»): le gusta mucho.
 - 2026-10-28 · (E3) Para el gancho, macro de una mano cerrando regleta mejor que un personaje temblando.
 - 2026-10-28 · Recordatorio de Andrés para todo vídeo: algo impactante al principio, que el espectador se reconozca («tú»), que explique algo y cambios de plano constantes.
 - 2026-10-28 · (E31) La presa limpia tiene que brillar mucho, con destellos («cositas shiny»): `Destellos` en `Cepillado.tsx`.
 - 2026-10-29 · Frenar ideas por respeto, mal gusto o verificación total: «somos una cuenta de Instagram, no una institución». Se prioriza viralidad; tono de suceso/morbo permitido (cadáver dibujado en gris sí). Límite que se mantiene: no inventar hechos concretos sobre personas reales identificables.
+- 2026-10-30 · (E35) Primer plano de la congelación (cara gris, escarcha, labios morados): sí, sin gore.
+- 2026-10-30 · (E35) Que las mujeres se lean como mujeres (melena larga) y cada personaje se distinga a primera vista.

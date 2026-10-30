@@ -211,6 +211,18 @@ const RECETAS = {
     }
     return nivelar(bucle(out, 0.6), 0.1, 0.7);
   },
+  /** Rotor de helicóptero: golpes graves de aire ~9 por segundo (bucle 2 s). */
+  rotor() {
+    const seg = 2, out = buf(seg);
+    for (let t = 0; t < seg; t += 1 / 9) mezclar(out, env(biquad(ruido(Math.round(0.07 * SR), 900 + Math.round(t * 100)), "lp", 260), (s) => Math.exp(-s * 40)), t, 0.9);
+    return nivelar(bucle(out, 0.2), 0.12, 0.8);
+  },
+  /** Móvil vibrando: zumbido de 160 Hz en pulsos (0,4 s sí / 0,25 s no). */
+  vibra() {
+    const seg = 1.3, out = buf(seg);
+    for (const t of [0, 0.65]) mezclar(out, env(seno(0.4, 160), (s) => (s < 0.38 ? 1 : 0)), t, 0.6);
+    return nivelar(out, 0.1, 0.7);
+  },
 };
 
 Object.assign(RECETAS, recetasCepillado({ SR, buf, ruido, biquad, mezclar, env, normalizar, nivelar, prng, seno }));
