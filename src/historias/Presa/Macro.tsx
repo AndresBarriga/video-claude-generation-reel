@@ -78,13 +78,14 @@ export const Pie: React.FC<P> = ({ d }) => {
 
 /** Macro final: se cepilla la suela con el cepillo de dientes; acaba en una pasada hacia la derecha, como el fotograma 0. */
 export const SuelaMacro: React.FC<{ d: number }> = ({ d }) => {
-  const f = useCurrentFrame(), fase = (3 * (f - d)) / 30; // fase 0 (hacia la derecha) en el último fotograma
+  // El cepillo para 0,6 s antes del final (18 fotogramas) y el plano queda quieto: el corte no es seco.
+  const f = Math.min(useCurrentFrame(), d - 18), fase = (3 * (f - d)) / 30;
   const a = 2 * Math.PI * fase, x = 540 + 120 * Math.sin(a), v = Math.cos(a);
   return (
     <Camara d={d} empuje={0.08} entrada={false}>
       <Svg>
         <rect width={1080} height={1920} fill="#2E4B7A" />
-        <Suela x={540} y={1000} s={1.6} color={PIE} sucia={interpolate(f, [0, d], [1, 0.3], clamp)} />
+        <Suela x={540} y={1000} s={1.6} color={PIE} sucia={interpolate(f, [0, d - 18], [1, 0.3], clamp)} />
         <Polvo x={x} y={760} k={(f % 5) + 2} n={6} seed={`s${Math.floor(f / 5)}`} escala={0.7} />
         <CepilloDientes x={x} y={760} rot={32 - v * 10} s={0.85} doblado={-v} {...MANO} />
       </Svg>
