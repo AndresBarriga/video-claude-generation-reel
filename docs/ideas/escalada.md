@@ -1,6 +1,12 @@
 # Ideas de escalada
 Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre corchetes.
 
+## Resumen de estado (30-oct) — mantener al día; el detalle de cada idea sigue abajo
+**Gastadas (hechas):** #15→E15 · #14→E14 · #11→E11 · #6→E6 · #3→E3 · #5 y «La beta que no pediste»→E30 · #33 Stonemasters y «Hippies ¿Bajas?»→E36 · Grossglockner→E35 · cepillar presas→E31/E31B/E32.
+**Listas para publicar:** E35 (crítico 8) · E36 (8) · E30 (6,5, programado) → con expectativas. E31/E31B (5,5) → solo reel de prueba. E3 (4,5, sin voz) en espera · E32 (2) y E6-D (duplicado) descartados.
+**Cola de producción (orden propuesto):** 1) Caldwell «Las dos decisiones» = Decisiones límite #3 · 2) Pies de gato «Explícaselo a tu madre» · 3) Tendón vs músculo (#12) · 4) E34 Everest «¿Te paras?» (propuesta, crítico 6: subir a ≥7) · 5) E29 «El que asegura» · 6) «Está blando para el grado» · micro «Diez minutos».
+**Abiertas (futuro):** identidad #1, #2, #4 · cuerpo #7, #8, #9, #10, #13 · historias #17 Lynn Hill, #18 Güllich, #19, #20 Sharma en Mallorca · España #21 Naranjo de Bulnes, #22, #23, #24 · dinero #25, #26 (= segunda parte de pies de gato), #27, #28 · decisión límite: Iñaki Ochoa de Olza (España), Revol/Mackiewicz, Messner, Beck Weathers · micro de la lista. Descartadas: «Estancado por meses», Ralston (muy contada, no es escalada).
+
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — v final (28-oct): abre contigo en una **escalera de mano** cambiando una bombilla («A ti te tiembla la pierna en una escalera de mano. Él subió esto sin cuerda. Con esta cara.»), contador 2 → 884 m (Torre Eiffel como escala), escáner del cerebro como 2.º gancho, giro: ensayó cada paso con cuerda (sin la patada de kárate: de perfil no se podía representar bien). Cierre: «¿Valiente, o es que su cerebro no se entera? Mándaselo al que no se sube ni a una escalera de mano». Caricatura `piezas/Honnold.tsx`. Cifras: 884 m (Guinness; no 914), 3 h 56 min, Eiffel 330 m. Voz Danny, tiempos por frases. [producido; rama `video/E14-honnold`]
 - **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Voz Danny (ElevenLabs) sincronizada. [final, falta aprobar]
