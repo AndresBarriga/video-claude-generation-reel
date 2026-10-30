@@ -1,0 +1,10 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "pajaros", "inicio": { "escena": 0 }, "volumen": 0.25, "bucle": true, "fundido": [0.05, 0.5] },
+    { "nombre": "zas", "inicio": { "escena": "caida" }, "duracion": 0.5, "volumen": 0.7 },
+    { "nombre": "golpe", "inicio": { "escena": "caida", "mas": 0.3 }, "duracion": 0.6, "volumen": 0.6 },
+    { "nombre": "clic", "inicio": { "escena": "encadena" }, "duracion": 0.5, "volumen": 0.7 },
+    { "silencio": true, "inicio": { "escena": "pareja", "palabra": "yo", "mas": -0.5 }, "duracion": 0.45 }
+  ]
+}

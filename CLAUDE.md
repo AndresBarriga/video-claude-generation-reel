@@ -3,7 +3,7 @@
 Cuenta anónima de reels animados en español de España (Instagram + TikTok), probando escalada y mascotas. Este repo es la memoria compartida de todos los chats del proyecto: lo que no está aquí no existe.
 
 ## Al empezar un chat
-1. Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote), `docs/estrategia.md` y **`docs/viralidad.md` (obligatorio para cualquier guion)**.
+1. Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote), `docs/estrategia.md` (lo vigente), `docs/aprendizajes.md` (hipótesis con datos) y **`docs/viralidad.md` (obligatorio para cualquier guion)**. Historial de decisiones en `docs/decisiones.md`; docs antiguos en `archivo/` (no hace falta leerlos).
 2. Si vas a producir: lee `docs/guia-visual.md` (estándar obligatorio), `docs/no-me-gusta.md` y la lista de ideas de tu nicho en `docs/ideas/`.
 3. `npm install` si no hay `node_modules`. Chromium para renderizar: si existe `/opt/pw-browsers`, exporta `BROWSER_EXE=$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome | head -1)`.
 
@@ -13,7 +13,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
   2. 5 aperturas y la que eliges.
   3. Guion puntuado (`docs/viralidad.md`), escena por escena: qué se ve / qué se dice.
   4. Reparto y la idea visual que recorre el vídeo, y como mucho 2–3 bocetos (fotogramas fijos rápidos) si ayudan.
-  **Antes de enseñarla, pásala por el subagente `critico`** (Agent con `subagent_type: critico`): aplica lo que tenga razón y añade a la propuesta su veredicto y su nota de envío en una línea. Haz lo mismo con el vídeo terminado (hoja de escenas + guion).
+  **Antes de enseñarla, pásala por el subagente `critico`** (Agent con `subagent_type: critico`): aplica lo que tenga razón y añade a la propuesta su veredicto y su nota de envío en una línea, **y añade la línea a `docs/criticas.md`**. Haz lo mismo con el vídeo terminado (hoja de escenas + guion).
   Espera su OK o sus cambios. Después produce sin interrumpir.
 - **Todo lo demás (correcciones, cambios concretos, tareas claras): haz, no pidas permiso.** No termines con "¿arranco?" ni ofrezcas opciones que no ha pedido.
 - **Andrés decide ritmo, orden y fechas.** Calendario y test son orientativos: no frenes la producción por ellos ni le sermonees sobre "romper el test". Si ves un riesgo real, dilo en una línea y sigue trabajando.
@@ -21,7 +21,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - Directo, breve, crítico cuando aporte. En español.
 - Prioridad: **gancho → retención → visuales → envíos/comentarios**.
 - Puede ser un vídeo suelto o un lote; lo que pida Andrés.
-- Al terminar algo: commit + push. Si cambia una decisión, añádela al registro en `docs/estrategia.md`.
+- Al terminar algo: commit + push. Si cambia una decisión, añade una línea a `docs/decisiones.md` y, si cambia lo vigente, reescribe `docs/estrategia.md`. Si Andrés manda métricas: filas en `datos/publicados.csv`, tabla de `docs/resultados.md` y ficha del vídeo.
 - Si Andrés rechaza o elogia algo concreto, añádelo a `docs/no-me-gusta.md` en ese momento.
 
 ## Cada guion
@@ -33,10 +33,10 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - Rigor: ver `docs/proceso.md` (suficiente, no paralizante; estricto en salud/seguridad).
 
 ## Estructura
-- `videos/<nicho>/<id>/guion.json` (escenas con `texto` hablado, `visual` = escena a medida, `titulo` = rótulo de dato, `pausa` = silencio en s) · `sonido.json` · `publicacion.md` · `final.mp4` (no se sube a git).
+- `videos/<nicho>/<id>/guion.json` (escenas con `texto` hablado, `visual` = escena a medida, `titulo` = rótulo de dato, `pausa` = silencio en s) · `sonido.json` · `ficha.md` (estado, formato, resultado, aprendizajes y la descripción para publicar) · `final.mp4` (no se sube a git).
 - `src/historias/<Plantilla>.tsx`: escenas a medida por vídeo (ej. `Vacio.tsx` para E15). `src/piezas/`: personajes y elementos reutilizables (`Escalador.tsx`: Joe/Simon con poses por ángulos y caras; `Grano.tsx`: grano + viñeta). Hoja de poses: plantilla `Poses` con `public/datos/_poses.json`.
 - `src/Reel.tsx`: plantilla genérica antigua de tarjetas de texto. **No usar para vídeos publicables**; solo pruebas.
-- Herramientas: `npm run texto -- <id>` (texto para ElevenLabs) · `npm run voz -- <id> --audio ruta` (sincroniza audio subido; `--simulado` sin audio) · `npm run qa -- <id>` · `npm run render -- <id>` · `npm run fotograma -- <id> <segundo>` (imagen fija para storyboard) · `npm run hoja -- <id>` (un fotograma por escena + hoja de contacto en `out/<id>-hoja.png`; `MOMENTOS=24.5,25` añade instantes) · `npm run sonido -- <id>` (efectos de `sonido.json`, ver `docs/sonido.md`) · `npm run whisper` (una vez, mejora la sincronía).
+- Herramientas: `npm run texto -- <id>` (texto para ElevenLabs) · `npm run voz -- <id> --audio ruta` (sincroniza audio subido; `--simulado` sin audio) · `npm run qa -- <id>` · `npm run render -- <id>` · `npm run fotograma -- <id> <segundo>` (imagen fija para storyboard) · `npm run hoja -- <id>` (un fotograma por escena + hoja de contacto en `out/<id>-hoja.png`; `MOMENTOS=24.5,25` añade instantes) · `npm run sonido -- <id>` (efectos de `sonido.json`, ver `docs/sonido.md`) · `npm run whisper` (una vez, mejora la sincronía; en la nube de Claude no se puede descargar). Sin Whisper, si la voz se desincroniza: pon en `guion.json` `"frases": [palabras por tramo de voz]` (un número por cada trozo entre pausas del audio) y repite `npm run voz`.
 
 ## Si no eres Andrés
 Lee `docs/colaborar.md`: rama por vídeo, pull request, sin tocar los gustos de Andrés, voz la genera él.

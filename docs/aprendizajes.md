@@ -1,0 +1,16 @@
+# Aprendizajes (hipótesis con evidencia)
+Estados: **abierta** (menos de 3 vídeos) · **reforzada** (≥3 a favor, sin contraejemplo claro) · **descartada**.
+Solo una reforzada puede pasar a `docs/viralidad.md` (y Andrés lo aprueba). Datos en `datos/publicados.csv`.
+
+| Id | Hipótesis | A favor | En contra | Qué la refutaría | Estado |
+|---|---|---|---|---|---|
+| H1 | Un dilema límite real que el espectador resuelve («¿qué harías tú?») trae mucho más alcance que una historia que solo se mira | E15 (189K) | — (E14, que no es dilema, 4K a 16 h) | Los 2 próximos dilemas < 20K vistas a 48 h | abierta |
+| H2 | El humor con jerga de escalada retiene pero no se envía fuera del nicho | E6 (envíos 1,2/1k vs 5,6 en E15) | — | Un humor con jerga con envíos > 4/1k | abierta |
+| H3 | Un viral universal convierte peor por vista (público de fuera), pero aporta más seguidores en bruto | E15 (0,33 seg./1k, 62 seg.) vs E6/E11/E14 (~1/1k) | — | Un viral con ≥ 1 seg./1k | abierta |
+| H4 | Una cuadrícula que no confirma lo que promete el vídeo baja el visita→seguir | E6 (7 visitas/1k, solo 13 % sigue) | E15 (36 %) con la misma cuadrícula | Tras ordenar la cuadrícula, el visita→seguir no sube | abierta |
+| H5 | Skip > 25 % indica gancho fallido, no tema fallido | E14 (28 %) | — | Re-subir E14 con otro gancho y que el skip no baje | abierta |
+| H7 | El formato «cuerpo/fases» (lo que te pasa por dentro, escalada de tensión) convierte mejor por vista que humor e historia | E11 (1,26 seg./1k) | — | El próximo «cuerpo/fases» < 0,8 seg./1k | abierta |
+| H6 | La nota del crítico no predice el rendimiento; sirve para encontrar fallos | E6 (7/10 → plano) | — (E15 sin nota) | Correlación clara nota ↔ seguidores con ≥ 8 vídeos | abierta |
+
+## Cómo se actualiza
+Tras cada medición a 7 días: añadir el vídeo a «a favor»/«en contra» de las hipótesis que toque, cambiar estado si procede y anotar hipótesis nuevas. Proponer el cambio a Andrés antes de tocar `viralidad.md`.

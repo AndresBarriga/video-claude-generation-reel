@@ -1,23 +1,31 @@
-# Estrategia (fuente de verdad; el PRD completo está en https://claude.ai/artifact/3Nf3ndsDCyLLPdTnEux4Ls)
+# Estrategia vigente (se reescribe cuando cambia; el historial está en `docs/decisiones.md`)
 
-- Cuenta anónima, sin cara, reels animados en español de España. Instagram + TikTok (mismo archivo); Shorts después.
-- Test de nichos: escalada vs mascotas. Fechas orientativas (decisión hacia el 30 nov 2026; revisión a 90 días ~28 feb 2027). Andrés puede adelantar o publicar antes; no es un experimento de laboratorio.
-- Métricas que importan, por orden: **envíos por 1.000 visualizaciones**, % que ve el vídeo entero / repeticiones, comentarios, seguidores por vídeo.
-- Qué buscan los vídeos: retención (gancho que te pone en la situación, segundo gancho a mitad, bucle final), comentarios (pregunta moral o de identidad sin respuesta obvia), envíos (a quién se lo mandarías).
-- Las ideas de escalada salen de la lista aprobada (`docs/ideas/escalada.md`). Las de mascotas están por rehacer con el mismo nivel.
-- Voz: ElevenLabs a mano en la web; plan de pago activo antes de generar audio para publicar (licencia comercial).
-- Visuales: todo hecho por IA en código (sin ilustradora humana). Estándar en `docs/guia-visual.md`.
+## Qué es la cuenta
+- **@ultimo.pegue**: cuenta anónima, sin cara, reels animados en español de España sobre escalada. Instagram + TikTok (mismo archivo); Shorts después.
+- Mascotas en pausa (`docs/ideas/mascotas.md`). Segunda cuenta fuera de nicho: pendiente (`archivo/segunda-cuenta.md`).
 
-## Registro de decisiones
-- 2026-10-27 · Todo el trabajo se hace en chats del proyecto con este repo en GitHub (no zip, no Claude Code local).
-- 2026-10-27 · Voz manual en la web de ElevenLabs; Claude sincroniza el audio subido.
-- 2026-10-27 · Rigor rebajado: fuente solo para cifras/estudios; estricto en salud/seguridad.
-- 2026-10-27 · Escalada empieza por la lista de 28; E14 (Honnold) propuesto para abrir la cuenta, E15 (Tocando el vacío) segundo. Pendiente de confirmar en el chat de Estrategia.
-- 2026-10-27 · Instrucciones menos estrictas: producir sin pedir permiso, fechas orientativas, enseñar borradores pronto.
-- 2026-10-27 · Manual de viralidad (`docs/viralidad.md`) obligatorio: todo guion se puntúa (≥12/14) antes de enseñarse. E15 v3 con estructura in medias res + cierre de envío.
-- 2026-10-27 · Identidad visual fija (caras/expresiones, cuerda naranja, paleta, tipografía, apertura en tensión, cierre en bucle) en `docs/guia-visual.md`. Cada vídeo lleva capa de sonido (`docs/sonido.md`).
-- 2026-10-27 · Andrés produce un stock de vídeos antes de abrir la cuenta; el orden de publicación se decide después con lo que haya.
-- 2026-10-27 · Cada vídeo nuevo empieza con una propuesta (opinión, 5 aperturas, guion, reparto, bocetos) que Andrés aprueba antes de producir. Reparto variado con el mismo estilo de dibujo.
-- 2026-10-27 · Crítico independiente (subagente `critico`) obligatorio antes de enseñar propuesta y vídeo; referencias en `docs/referencias.md`. E6 se hace en bloque.
-- 2026-10-27 · Vídeos de cuerpo/explicación con conflicto o humor (E11: el asegurador que se ríe y el vídeo te defiende). Inicios alternativos que solo cambian el rótulo, para reels de prueba sin rehacer la voz.
-- 2026-10-28 · Formato «las N fases de…»: escalada de tensión reconocible, una fase cada 3–4 s con marcador de progreso y chiste final (E11: «¡pilla!» y caes 20 cm). La ciencia entra como remate/alivio, no como cuerpo del vídeo. Andrés descartó pruebas para el espectador («tirado en la cama no quiere hacer pruebas»).
+## Objetivo y métricas
+- Objetivo: **seguidores**. Un viral vale aunque convierta poco.
+- Métricas (definiciones en `docs/resultados.md`, datos en `datos/publicados.csv`): alcance (vistas), **seguidores por vídeo** (principal), conversión (seg./1.000, visitas al perfil, visita→seguir), retención (visto medio, skip), envíos/guardados por 1.000.
+
+## Test en curso: humor vs historias límite
+- 4–5 vídeos de cada uno en la cuadrícula, intercalados. Gana el que tenga más del doble en mediana de seguidores por vídeo a 7 días; si no, empate y se pueden mantener ambos.
+- Mientras dura: `docs/viralidad.md` congelado; lo nuevo va como hipótesis a `docs/aprendizajes.md`.
+- Reparto orientativo ~60 % explotar (decisión límite / historia universal) ~40 % explorar (humor, cuerpo, micro, series). Pruebas de formato pueden ir como reels de prueba.
+
+## Contenido
+- Prioridad absoluta a viralidad. Límites que se mantienen: no inventar hechos sobre personas reales y nada de gore explícito.
+- Ideas desde `docs/ideas/escalada.md`. Cada vídeo: propuesta → crítico → OK de Andrés → producción.
+- Rigor: comprobación rápida en historias; fuente solo para cifras en pantalla; estricto en salud/seguridad.
+
+## Producción
+- Visuales: todo por código (Remotion), estándar en `docs/guia-visual.md`; sonido en `docs/sonido.md`.
+- Voz: ElevenLabs a mano en la web (pendiente pasar a API); plan de pago activo para lo que se publique.
+
+## 2026-10-30 · Crecimiento: serie, comentarios y reels de prueba
+Contexto: E15 189K vistas / 134K espectadores → 62 seguidores (0,05 %). Llega gente, no se queda: el perfil no promete nada.
+- **Serie «Decisiones límite #N»**: E15 = #1. El siguiente vídeo con la misma estructura (decisión límite real + ¿qué harías tú?) = #2 (candidato: Caldwell y el secuestrador). Número visible en el vídeo y en el pie de foto.
+- **Perfil**: bio de una línea que prometa la serie (p. ej. «Historias reales donde alguien tuvo que decidir. ¿Tú qué harías?»). Fijar 3 reels de la serie, E15 primero. No fijar lo que no encaje (E6).
+- **Cierre de cada vídeo de la serie** anuncia el siguiente («En la próxima: …») → motivo para seguir.
+- **Comentarios (regla en cada publicación)**: pie de foto con pregunta que obligue a elegir bando (nunca «¿qué opináis?»); Andrés responde a todos en la primera hora, preferiblemente con otra pregunta; fijar el comentario más polémico; dejar en el vídeo un detalle discutible que invite a opinar o corregir. Ojo: según Instagram pesan más tasa de saltos y envíos; los comentarios son consecuencia del dilema, no sustituto.
+- **Reels de prueba / versiones**: solo de vídeos con ≥3× la media de la cuenta (hoy solo E15). Cada versión cambia de verdad los primeros 3 s (escena de apertura + rótulo + música; mejor si cambia la primera frase), no solo el rótulo, por la detección de duplicados. Primero 1 versión de E15 cuando el original baje de ~5K vistas/día; si se distribuye bien, 1 por semana. En vídeos nuevos: 2–3 aperturas como prueba, gana la de menor tasa de saltos y mayor % visto a 48 h.

@@ -1,0 +1,82 @@
+{
+  "id": "E3",
+  "titulo": "Escalador → Español (v3)",
+  "nicho": "escalada",
+  "plantilla": "Traductor",
+  "verificado": true,
+  "fuentes": [],
+  "nota": "v3 (28-oct): abre en el desplome con «es un quinto» (sin manos: rechazadas). Downgrade «está blando, un seis B» → pantalla partida ayer pegue 30 / hoy + maldición del conocimiento; hace pareja con el upgrade de los grados. Bucle: el móvil del porteador crece hasta el desplome. v2 en el historial.",
+  "ganchos_alternativos": [
+    "D · «Lo tengo a un pegue.» → sit start que se despega cinco centímetros y cae al pad (variante para reel de prueba).",
+    "B · Macro de yemas en un canto de un centímetro: «Es un cazo.»",
+    "C · El porteador con el móvil primero (el más cruel delante).",
+    "E · Tres frases en tres segundos: «Has dicho las tres.»"
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "roco",
+      "corte": "Aquí,",
+      "texto": "«En mi roco esto es un quinto.» Aquí, otro deporte."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cazo",
+      "corte": "Y",
+      "texto": "«Es un cazo.» Y tú, colgado de una regleta diminuta."
+    },
+    {
+      "tipo": "texto",
+      "visual": "blando",
+      "corte": "Lo",
+      "texto": "«Está blando. Como mucho, un seis B.» Lo sacó en el pegue treinta. Cuando ya te lo sabes, no recuerdas lo que costaba."
+    },
+    {
+      "tipo": "texto",
+      "visual": "pegue",
+      "corte": "Repetición.",
+      "texto": "«Lo tengo a un pegue.» Repetición.",
+      "pausa": 0.9
+    },
+    {
+      "tipo": "texto",
+      "visual": "grados",
+      "corte": "Ya",
+      "texto": "«A mí los grados me dan igual.» Ya ha pedido que se lo suban."
+    },
+    {
+      "tipo": "texto",
+      "visual": "porteo",
+      "corte": "Y",
+      "texto": "«Te porteo yo.» Y está viendo este vídeo.",
+      "pausa": 0.4
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "titulo": "¿Quién te portea?",
+      "texto": "Mándaselo a quien te portea. Que lo vea con las manos libres.",
+      "pausa": 0.6
+    }
+  ],
+  "frases": [
+    7,
+    1,
+    2,
+    3,
+    2,
+    5,
+    2,
+    5,
+    6,
+    10,
+    5,
+    1,
+    7,
+    7,
+    3,
+    5,
+    5,
+    7
+  ]
+}

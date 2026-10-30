@@ -24,6 +24,19 @@ const guion = JSON.parse(fs.readFileSync(guionPath, "utf8"));
 const config = JSON.parse(fs.readFileSync(path.join(raiz, "config.json"), "utf8"));
 const fps = config.fps ?? 30;
 
+// Vídeos sin voz (micro-vídeos): "mudo": true y cada escena con "dur" (s). Los tiempos salen de ahí.
+if (guion.mudo) {
+  let t = 0;
+  const escenas = guion.escenas.map((e) => { const r = { texto: "", ...e, inicio: +t.toFixed(3), fin: +(t + e.dur).toFixed(3) }; t += e.dur; return r; });
+  const sonPath = path.join(carpetaVideo(id), "sonido.json");
+  const sonido = fs.existsSync(sonPath) ? JSON.parse(fs.readFileSync(sonPath, "utf8")) : undefined;
+  fs.mkdirSync(path.join(raiz, "public/datos"), { recursive: true });
+  const datos = { id, titulo: guion.titulo, nicho: guion.nicho ?? "otro", plantilla: guion.plantilla, fps, duracion: +t.toFixed(3), mudo: true, palabras: [], escenas, sonido };
+  fs.writeFileSync(path.join(raiz, `public/datos/${id}.json`), JSON.stringify(datos, null, 2));
+  console.log(`OK ${id}: sin voz, ${t.toFixed(2)}s, ${escenas.length} escenas`);
+  process.exit(0);
+}
+
 // Palabras del guion y a qué escena pertenece cada una
 const palabrasGuion = [];
 const rangoEscena = guion.escenas.map((e) => {
@@ -82,7 +95,7 @@ if (simulado) {
     metodo = `audio ${dur.toFixed(1)} s, tiempos con Whisper`;
   } else {
     // Intento 2: alinear las pausas del audio con la puntuación del guion (sin Whisper)
-    const { tiempos: t2, pareja } = alinear(destino, palabrasGuion, dur);
+    const { tiempos: t2, pareja } = alinear(destino, palabrasGuion, dur, guion.frases);
     tiempos = t2;
     metodo = `audio ${dur.toFixed(1)} s, tiempos por pausas (${pareja.size} frases ancladas; Whisper daría precisión por palabra)`;
   }

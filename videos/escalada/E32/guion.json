@@ -1,0 +1,18 @@
+{
+  "id": "E32",
+  "titulo": "ASMR cepillado (micro, bucle)",
+  "nicho": "escalada",
+  "plantilla": "Asmr",
+  "mudo": true,
+  "verificado": true,
+  "fuentes": [],
+  "nota": "8 s, bucle perfecto, sin texto. Frame 239 empalma con frame 0; el reinicio se esconde en la nube del soplido.",
+  "escenas": [
+    {
+      "tipo": "texto",
+      "visual": "asmr",
+      "dur": 8,
+      "texto": ""
+    }
+  ]
+}

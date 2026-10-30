@@ -1,6 +1,8 @@
 # Manual de viralidad (obligatorio antes de enseñar cualquier guion)
 
-Sale del análisis de las cuentas de referencia (numerosdepareja, dasdingo, resultaaquee, beaniesurvives, porquetuperro…) y de lo aprendido con E15. **Ningún guion se enseña a Andrés sin pasar la puntuación del final.** Si no llega, reescríbelo tú antes; no le hagas detectar lo que este documento ya dice.
+> **Congelado desde el 30-oct hasta acabar el test humor vs historias.** No se añade nada aquí: lo nuevo va como hipótesis a `docs/aprendizajes.md`. Solo entra lo que esté «reforzado» y Andrés apruebe.
+
+Sale del análisis de las cuentas de referencia (numerosdepareja, dasdingo, resultaaquee, beaniesurvives, porquetuperro…) y de lo aprendido con E15. **Ningún guion se enseña a Andrés sin pasar la puntuación del final.** Las palancas son herramientas, no una plantilla: lo de E15 (dilema de vida o muerte) es una hipótesis con n=1 y no debe convertir todos los vídeos en lo mismo. Si no llega, reescríbelo tú antes; no le hagas detectar lo que este documento ya dice.
 
 ## Antes de nada
 - **Especificidad > concepto.** Lo que se comparte son los detalles que solo reconoce alguien de ese mundo (ver `docs/referencias.md`).
@@ -63,3 +65,6 @@ Al enseñar un guion, pon la puntuación en una línea («Viralidad 13/14: falta
 - **Amplitud del tema:** ¿el espectador lo está viviendo/tocando ahora mismo? Un tema que usa todo el mundo supera a uno de nicho. En escalada, tirar de experiencias universales (último intento, excusas, el colega que graba) y no del deporte en sí.
 - **Primer fotograma = acción física, nunca un rótulo/título.** El rótulo entra tras ~0,5 s. (E6 v2 corregido el 28-oct: abre con la palmada de magnesio.)
 - **Mostrar, no decir:** un número o cambio visible que se mueva (100→71, 23→9) como causa visible.
+
+## Añadido 2026-10-29 (curva de E15)
+- La mayor caída de E15 está en el cierre de envío. Es normal (la historia ya se ha resuelto), pero resta visto medio y bucle. Regla: **cierre ≤3 s**, la pregunta va pegada al último dato y con la imagen todavía en movimiento; «mándaselo» va en rótulo/descripción, no en la voz. Ej.: «¿Y el tuyo? ¿Te cortaría?» → corte al primer plano.

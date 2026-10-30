@@ -1,0 +1,85 @@
+{
+  "id": "E31B",
+  "titulo": "La presa perfecta (variante con rótulo)",
+  "nicho": "escalada",
+  "plantilla": "Presa",
+  "mudo": true,
+  "verificado": true,
+  "fuentes": [],
+  "nota": "Variante de apertura de E31 para reels de prueba: igual, con rótulo a los 0,5 s.",
+  "escenas": [
+    {
+      "tipo": "texto",
+      "visual": "cepillo",
+      "dur": 1.3,
+      "texto": "",
+      "titulo": "Tú antes de cada pegue"
+    },
+    {
+      "tipo": "texto",
+      "visual": "sopla",
+      "dur": 1.0,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "yemas",
+      "dur": 1.0,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "furia",
+      "dur": 1.0,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "mochila",
+      "dur": 1.2,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "dientes",
+      "dur": 1.5,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "mira",
+      "dur": 0.6,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "agarra",
+      "dur": 0.5,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "pie",
+      "dur": 0.5,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "sale",
+      "dur": 0.4,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "suelo",
+      "dur": 2.0,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "suela",
+      "dur": 2.0,
+      "texto": ""
+    }
+  ]
+}

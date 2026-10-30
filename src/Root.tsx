@@ -8,7 +8,11 @@ import { Bloque } from "./historias/Bloque";
 import { Pierna } from "./historias/Pierna";
 import { Honnold } from "./historias/Honnold";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Pierna, Honnold, Poses: Poses as any };
+import { Traductor } from "./historias/Traductor";
+import { Beta } from "./historias/Beta";
+import { Presa } from "./historias/Presa";
+import { Asmr } from "./historias/Asmr";
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { datos: Datos };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;
@@ -29,7 +33,7 @@ export const Root: React.FC = () => (
     calculateMetadata={async ({ props }: any) => {
       const r = await fetch(staticFile(`datos/${props.id}.json`));
       const datos: Datos = await r.json();
-      return { durationInFrames: Math.ceil(datos.duracion * datos.fps) + 15, fps: datos.fps, props: { ...props, datos } };
+      return { durationInFrames: Math.ceil(datos.duracion * datos.fps) + ((datos as any).mudo ? 0 : 15), fps: datos.fps, props: { ...props, datos } };
     }}
   />
 );
