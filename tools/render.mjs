@@ -7,11 +7,13 @@ import { carpetaVideo } from "./rutas.mjs";
 const id = process.argv[2];
 if (!id) { console.error("Falta el id. Ej: npm run render -- E1"); process.exit(1); }
 const raiz = path.resolve(import.meta.dirname, "..");
+// CLI de Remotion con node (no "npx": en Windows spawnSync("npx") falla sin aviso)
+const remotionCli = path.join(raiz, "node_modules/@remotion/cli/remotion-cli.js");
 fs.mkdirSync(path.join(raiz, "out"), { recursive: true });
 // Efectos de sonido al día (generados o propios) antes de renderizar
 spawnSync("node", [path.join(raiz, "tools/sonido.mjs"), id], { cwd: raiz, stdio: "inherit" });
 const extra = process.env.BROWSER_EXE ? ["--browser-executable", process.env.BROWSER_EXE] : [];
-const r = spawnSync("npx", ["remotion", "render", "src/index.ts", "Reel", `out/${id}.mp4`, `--props=${JSON.stringify({ id })}`, ...extra], { cwd: raiz, stdio: "inherit" });
+const r = spawnSync(process.execPath, [remotionCli, "render", "src/index.ts", "Reel", `out/${id}.mp4`, `--props=${JSON.stringify({ id })}`, ...extra], { cwd: raiz, stdio: "inherit" });
 if (r.status === 0) {
   // volumen estándar de redes (-14 LUFS); el vídeo se copia sin recodificar
   const n = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", `out/${id}.mp4`, "-c:v", "copy", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", path.join(carpetaVideo(id), "final.mp4")], { cwd: raiz, encoding: "utf8" });
