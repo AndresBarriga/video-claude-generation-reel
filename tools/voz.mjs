@@ -1,20 +1,23 @@
 #!/usr/bin/env node
 // Tres formas de preparar la voz de un vídeo (id = E1, M1…):
-//   1) Manual (recomendada): generas el audio en la web de ElevenLabs con el texto de `npm run texto -- E1`,
-//      guardas el archivo y ejecutas:  npm run voz -- E1 --audio ruta/al/audio.mp3
-//   2) API de ElevenLabs (opcional, necesita .env):  npm run voz -- E1
+//   1) API de ElevenLabs (Andrés, en local, con ELEVENLABS_API_KEY en .env):  npm run voz -- E1
+//      Envía el texto de `npm run texto` (con las pausas), guarda la toma en videos/<nicho>/<id>/voz-elevenlabs.mp3 + voz.json
+//      y la reutiliza mientras no cambien texto ni voz. --nueva: otra toma · --si: no pregunta antes de gastar créditos.
+//      Voz: config.json → "voz"; guion.json → "voz" la sobrescribe para ese vídeo.
+//   2) Manual: audio de la web de ElevenLabs con el texto de `npm run texto -- E1`:  npm run voz -- E1 --audio ruta/al/audio.mp3
 //   3) Solo diseño, sin voz:  npm run voz -- E1 --simulado
 import fs from "node:fs";
 import path from "node:path";
 import { carpetaVideo } from "./rutas.mjs";
 import { spawnSync } from "node:child_process";
 import { alinear } from "./alinear.mjs";
+import { palabrasGuion as trocear, textoVoz } from "./texto-voz.mjs";
 
 const args = process.argv.slice(2);
-const id = args.find((a) => !a.startsWith("--"));
-const simulado = args.includes("--simulado");
 const iAudio = args.indexOf("--audio");
 const audioIn = iAudio >= 0 ? args[iAudio + 1] : null;
+const id = args.find((a, i) => !a.startsWith("--") && !(iAudio >= 0 && i === iAudio + 1));
+const simulado = args.includes("--simulado");
 if (!id) { console.error("Falta el id. Ej: npm run voz -- E1 --audio audio.mp3"); process.exit(1); }
 
 const raiz = path.resolve(import.meta.dirname, "..");
@@ -38,20 +41,38 @@ if (guion.mudo) {
 }
 
 // Palabras del guion y a qué escena pertenece cada una
-const palabrasGuion = [];
-const rangoEscena = guion.escenas.map((e) => {
-  const ws = e.texto.trim().split(/\s+/);
-  const ini = palabrasGuion.length;
-  palabrasGuion.push(...ws);
-  return [ini, palabrasGuion.length - 1];
-});
-const completo = palabrasGuion.join(" ");
+const { palabras: palabrasGuion, rangos: rangoEscena } = trocear(guion);
 const N = palabrasGuion.length;
 let tiempos; // [{start,end}] por palabra del guion
-let audioB64 = null, metodo = "";
+let metodo = "", durAudio = 0, conAudio = false;
 
 const sh = (cmd, a) => spawnSync(cmd, a, { encoding: "utf8" });
 const duracionAudio = (f) => parseFloat(sh("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).stdout);
+
+// "pausa" del guion: si el locutor no la ha respetado (p. ej. ignora <break>), se inserta silencio en el audio
+function asegurarPausas(destino) {
+  const huecos = [];
+  guion.escenas.forEach((e, i) => {
+    const li = rangoEscena[i][1];
+    if (!e.pausa || li >= N - 1) return;
+    const hueco = tiempos[li + 1].start - tiempos[li].end;
+    if (hueco < e.pausa - 0.1) huecos.push({ en: tiempos[li].end + Math.min(0.12, hueco / 2), extra: +(e.pausa - hueco).toFixed(2) });
+  });
+  if (!huecos.length) return "";
+  const partes = [], filtros = []; let previo = 0;
+  huecos.forEach((h, k) => {
+    filtros.push(`[0]atrim=${previo}:${h.en},asetpts=N/SR/TB[a${k}]`, `anullsrc=r=44100:cl=mono,atrim=0:${h.extra}[s${k}]`);
+    partes.push(`[a${k}]`, `[s${k}]`); previo = h.en;
+  });
+  filtros.push(`[0]atrim=${previo},asetpts=N/SR/TB[fin]`); partes.push("[fin]");
+  const tmp = destino.replace(/.mp3$/, ".tmp.mp3");
+  const r = sh("ffmpeg", ["-y", "-loglevel", "error", "-i", destino, "-filter_complex", `${filtros.join(";")};${partes.join("")}concat=n=${partes.length}:v=0:a=1[o]`, "-map", "[o]", "-ac", "1", "-ar", "44100", "-b:a", "128k", tmp]);
+  if (r.status !== 0) { console.error("No pude insertar la pausa:", r.stderr); process.exit(1); }
+  fs.renameSync(tmp, destino);
+  for (const h of [...huecos].reverse()) tiempos = tiempos.map((x) => (x.start >= h.en ? { start: x.start + h.extra, end: x.end + h.extra } : x));
+  durAudio = duracionAudio(destino);
+  return ` · pausa insertada: ${huecos.map((h) => `${h.extra}s en ${h.en.toFixed(1)}s`).join(", ")}`;
+}
 
 if (simulado) {
   const pps = 15, w = palabrasGuion.map((p) => p.length + 1);
@@ -99,57 +120,31 @@ if (simulado) {
     tiempos = t2;
     metodo = `audio ${dur.toFixed(1)} s, tiempos por pausas (${pareja.size} frases ancladas; Whisper daría precisión por palabra)`;
   }
-  // "pausa" del guion: si el locutor no la ha respetado (p. ej. ignora <break>), se inserta silencio en el audio
-  const huecos = [];
-  guion.escenas.forEach((e, i) => {
-    const li = rangoEscena[i][1];
-    if (!e.pausa || li >= N - 1) return;
-    const hueco = tiempos[li + 1].start - tiempos[li].end;
-    if (hueco < e.pausa - 0.1) huecos.push({ en: tiempos[li].end + Math.min(0.12, hueco / 2), extra: +(e.pausa - hueco).toFixed(2) });
-  });
-  if (huecos.length) {
-    const partes = [], filtros = []; let previo = 0;
-    huecos.forEach((h, k) => {
-      filtros.push(`[0]atrim=${previo}:${h.en},asetpts=N/SR/TB[a${k}]`, `anullsrc=r=44100:cl=mono,atrim=0:${h.extra}[s${k}]`);
-      partes.push(`[a${k}]`, `[s${k}]`); previo = h.en;
-    });
-    filtros.push(`[0]atrim=${previo},asetpts=N/SR/TB[fin]`); partes.push("[fin]");
-    const tmp = destino.replace(/\.mp3$/, ".tmp.mp3");
-    const r = sh("ffmpeg", ["-y", "-loglevel", "error", "-i", destino, "-filter_complex", `${filtros.join(";")};${partes.join("")}concat=n=${partes.length}:v=0:a=1[o]`, "-map", "[o]", "-ac", "1", "-ar", "44100", "-b:a", "128k", tmp]);
-    if (r.status !== 0) { console.error("No pude insertar la pausa:", r.stderr); process.exit(1); }
-    fs.renameSync(tmp, destino);
-    for (const h of [...huecos].reverse()) tiempos = tiempos.map((x) => (x.start >= h.en ? { start: x.start + h.extra, end: x.end + h.extra } : x));
-    dur = duracionAudio(destino);
-    metodo += ` · pausa insertada: ${huecos.map((h) => `${h.extra}s en ${h.en.toFixed(1)}s`).join(", ")}`;
-  }
-  fs.writeFileSync(path.join(raiz, `public/datos/.dur-${id}`), String(dur));
+  durAudio = dur;
+  metodo += asegurarPausas(destino);
+  conAudio = true;
 } else {
-  const envPath = path.join(raiz, ".env");
-  if (fs.existsSync(envPath)) {
-    for (const l of fs.readFileSync(envPath, "utf8").split("\n")) {
-      const m = l.match(/^\s*([A-Z_]+)\s*=\s*(.*)\s*$/);
-      if (m && !process.env[m[1]]) process.env[m[1]] = m[2];
-    }
+  // API de ElevenLabs: mismo texto que `npm run texto` (con <break>), caché en la carpeta del vídeo
+  const { vozElevenLabs, tiemposDesdeAlineacion, ajustesVoz, ErrorVoz } = await import("./elevenlabs.mjs");
+  try {
+    const voz = ajustesVoz(config, guion);
+    const r = await vozElevenLabs({ raiz, carpeta: carpetaVideo(id), id, texto: textoVoz(guion), voz, nueva: args.includes("--nueva"), si: args.includes("--si") });
+    tiempos = tiemposDesdeAlineacion(r.alignment, palabrasGuion, rangoEscena);
+    fs.mkdirSync(path.join(raiz, "public/voz"), { recursive: true });
+    const destino = path.join(raiz, `public/voz/${id}.mp3`);
+    fs.copyFileSync(r.mp3, destino);
+    const fin = r.alignment.character_end_times_seconds.at(-1);
+    metodo = `voz por API, ${r.cache ? "toma guardada (sin gastar créditos)" : `toma nueva, ${r.info.creditos ?? "?"} créditos`} del ${r.info.fecha.slice(0, 10)}, voz ${voz.voice_id}`;
+    metodo += asegurarPausas(destino);
+    const d = duracionAudio(destino);
+    durAudio = Number.isFinite(d) ? d : fin;
+    conAudio = true;
+  } catch (e) {
+    if (!(e instanceof ErrorVoz)) throw e;
+    console.error(`
+✗ ${e.message}`);
+    process.exit(1);
   }
-  const key = process.env.ELEVENLABS_API_KEY, v = config.voz;
-  if (!key) { console.error("Sin ELEVENLABS_API_KEY. Usa el flujo manual: --audio archivo.mp3 (ver README)."); process.exit(1); }
-  if (!v.voice_id || v.voice_id.startsWith("PON_AQUI")) { console.error("Falta voice_id en config.json"); process.exit(1); }
-  const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${v.voice_id}/with-timestamps?output_format=mp3_44100_128`, {
-    method: "POST", headers: { "xi-api-key": key, "Content-Type": "application/json" },
-    body: JSON.stringify({ text: completo, model_id: v.model_id, voice_settings: { stability: v.stability, similarity_boost: v.similarity_boost, style: v.style } }),
-  });
-  if (!res.ok) { console.error("Error ElevenLabs:", res.status, await res.text()); process.exit(1); }
-  const j = await res.json();
-  audioB64 = j.audio_base64;
-  const { characters: ch, character_start_times_seconds: cs, character_end_times_seconds: ce } = j.alignment;
-  const ws = []; let buf = "", t0 = 0;
-  ch.forEach((c, i) => {
-    if (/\s/.test(c)) { if (buf) ws.push({ start: t0, end: ce[i - 1] }); buf = ""; }
-    else { if (!buf) t0 = cs[i]; buf += c; }
-  });
-  if (buf) ws.push({ start: t0, end: ce[ch.length - 1] });
-  tiempos = ws;
-  metodo = "voz por API";
 }
 
 // Escenas: empiezan donde empieza su primera palabra
@@ -158,17 +153,10 @@ const escenas = guion.escenas.map((e, i) => {
   return { ...e, inicio: i === 0 ? 0 : +tiempos[a].start.toFixed(3), fin: +tiempos[b].end.toFixed(3) };
 });
 const palabras = palabrasGuion.map((w, i) => ({ w, start: +tiempos[i].start.toFixed(3), end: +tiempos[i].end.toFixed(3) }));
-let duracion = +(tiempos[N - 1].end + 0.6).toFixed(2);
-const durFile = path.join(raiz, `public/datos/.dur-${id}`);
-if (audioIn && fs.existsSync(durFile)) { duracion = +(Math.max(duracion, parseFloat(fs.readFileSync(durFile, "utf8")))).toFixed(2); fs.unlinkSync(durFile); }
+const duracion = +Math.max(tiempos[N - 1].end + 0.6, durAudio || 0).toFixed(2);
 
 fs.mkdirSync(path.join(raiz, "public/datos"), { recursive: true });
-let vozRuta;
-if (audioB64) {
-  fs.mkdirSync(path.join(raiz, "public/voz"), { recursive: true });
-  fs.writeFileSync(path.join(raiz, `public/voz/${id}.mp3`), Buffer.from(audioB64, "base64"));
-}
-if (audioB64 || audioIn) vozRuta = `voz/${id}.mp3`;
+const vozRuta = conAudio ? `voz/${id}.mp3` : undefined;
 // Capa de sonido (opcional): videos/<nicho>/<id>/sonido.json → se resuelve en src/Sonidos.tsx
 const sonPath = path.join(carpetaVideo(id), "sonido.json");
 const sonido = fs.existsSync(sonPath) ? JSON.parse(fs.readFileSync(sonPath, "utf8")) : undefined;
