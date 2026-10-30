@@ -1,5 +1,5 @@
 # Registro del crítico (una línea por revisión; añadir siempre, no borrar)
-Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md`).
+Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md` y `datos/publicados.csv`).
 
 | Fecha | Vídeo | Fase | Nota envío | Problema principal / qué se aplicó | Resultado real |
 |---|---|---|---|---|---|

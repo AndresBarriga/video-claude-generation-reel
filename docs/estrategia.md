@@ -2,7 +2,8 @@
 
 - Cuenta anónima, sin cara, reels animados en español de España. Instagram + TikTok (mismo archivo); Shorts después.
 - Test de nichos: escalada vs mascotas. Fechas orientativas (decisión hacia el 30 nov 2026; revisión a 90 días ~28 feb 2027). Andrés puede adelantar o publicar antes; no es un experimento de laboratorio.
-- Métricas que importan, por orden: **envíos por 1.000 visualizaciones**, % que ve el vídeo entero / repeticiones, comentarios, seguidores por vídeo.
+- Objetivo: **seguidores**. Métricas (definiciones en `docs/resultados.md`, datos en `datos/publicados.csv`): alcance (vistas), **seguidores por vídeo** (principal), conversión (seg./1.000, visitas al perfil, visita→seguir), retención (visto medio, skip), envíos/guardados por 1.000. Un viral vale aunque convierta poco.
+- Test humor vs historias límite: 4–5 vídeos de cada uno en la cuadrícula, intercalados. Gana el que tenga más del doble en mediana de seguidores por vídeo a 7 días; si no, empate y se pueden mantener ambos.
 - Qué buscan los vídeos: retención (gancho que te pone en la situación, segundo gancho a mitad, bucle final), comentarios (pregunta moral o de identidad sin respuesta obvia), envíos (a quién se lo mandarías).
 - Las ideas de escalada salen de la lista aprobada (`docs/ideas/escalada.md`). Las de mascotas están por rehacer con el mismo nivel.
 - Voz: ElevenLabs a mano en la web; plan de pago activo antes de generar audio para publicar (licencia comercial).
@@ -41,3 +42,4 @@ E15 ~44K+ y creciendo frente a E6 ~4K. Lo que E15 tiene y E6/E14 no:
 E14 Honnold tiene 2 y 3 a medias, pero el espectador mira, no decide. Siguiente candidato: misma estructura «decisión límite real + ¿qué harías tú?» (Caldwell empuja al secuestrador; alternativa: David Sharp, Everest 2006). Pendiente: curva de retención y datos de E14.
 - 2026-10-29 · Andrés: prioridad absoluta a viralidad; fuera restricciones de tono/respeto y de verificación total. Se mantiene solo: no inventar hechos sobre personas reales (riesgo legal) y evitar gore explícito (Instagram lo tapa como «contenido sensible» y mata el alcance).
 - 2026-10-29 · Andrés: no sesgar todo hacia E15. Reparto orientativo **~60 % explotar** (decisión límite / historia universal) **~40 % explorar** formatos distintos (humor, cuerpo, micro, series). Las pruebas de formato pueden ir como *reels de prueba* (solo no seguidores, no ensucian la cuadrícula). El crítico juzga cada vídeo dentro de su formato.
+- 2026-10-30 · Objetivo de la cuenta: seguidores. Varias métricas (no una sola); principal = seguidores por vídeo a 7 d. Datos en `datos/publicados.csv` (una fila por medición). `docs/viralidad.md` congelado hasta acabar el test: lo nuevo va como hipótesis, no al manual.
