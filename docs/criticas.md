@@ -22,3 +22,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 29-oct | E31 | stock | 4 (5,5) | ritual de nicho sin rótulo | — |
 | 29-oct | E3 | stock | 3 (4,5) | jerga pura tipo E6; sin voz | — |
 | 29-oct | E32 | stock | 2 | relleno | — |
+| 30-oct | E36 | vídeo final (voz Danny, 44,5 s) | 8 | gancho en el seg. 0 (avión + fardos), bucle abierto «y eso no es lo más loco», rehook LSD con la visión animada a pantalla completa, giro «lo que hacían sin un duro», útil (Midnight Lightning sigue ahí), pregunta de una palabra. Riesgo: alcance limitado por el tema drogas (asumido) | — |
