@@ -6,19 +6,21 @@ import { Subtitulos } from "../../Subtitulos";
 import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { C, type P } from "./comun";
-import { Cierre, Mensaje, Webcam } from "./Webcam";
+import { Mensaje, Webcam } from "./Webcam";
 import { Manana } from "./Manana";
 import { MantaPrimer } from "./MantaPrimer";
 import { Noche } from "./Noche";
-import { Helicoptero, Rechazo } from "./Helicoptero";
+import { Abre, CierreHeli, Helicoptero, Rechazo } from "./Helicoptero";
+import { Rebobina } from "./Rebobina";
 import { Color } from "./Color";
 import { Movil } from "./Movil";
 import { Amanecer } from "./Amanecer";
 import { Juzgado } from "./Juzgado";
 
 const ESCENAS: Record<string, React.FC<P>> = {
+  abre: Abre, rebobina: Rebobina,
   webcam: Webcam as React.FC<P>, manta: MantaPrimer, manana: Manana, noche: Noche, helicoptero: Helicoptero, rechazo: Rechazo, mensaje: Mensaje as React.FC<P>,
-  color: Color, movil: Movil, amanecer: Amanecer, juzgado: Juzgado, cierre: Cierre as React.FC<P>,
+  color: Color, movil: Movil, amanecer: Amanecer, juzgado: Juzgado, cierre: CierreHeli,
 };
 
 export const Grossglockner: React.FC<{ datos: Datos }> = ({ datos }) => {

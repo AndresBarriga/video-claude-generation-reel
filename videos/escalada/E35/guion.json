@@ -12,29 +12,29 @@
   ],
   "nota_rigor": "Narración en segunda persona («tú» vives sus decisiones) y vuelta a la realidad («Eso no lo hiciste tú. Lo hizo él.»): los hechos son los de la ficha E35; el «tú» es un recurso hipotético, no atribuye nada nuevo a nadie. «Según la fiscalía» para la manta. Sin nombres. Cuerpo en gris, nada explícito; el vaho que se apaga cuenta la muerte. Detalles graciosos solo en planos neutros (subida, webcam, juzgado).",
   "ganchos_alternativos": [
-    "1 ★ Webcam «02:04», dos frontales; uno baja. «¿Te quedas?»",
-    "2 «Esta cámara grabó a un hombre bajando solo. Arriba se quedó su novia.»",
-    "3 «Fue a buscar ayuda. Y le condenaron por ello.»",
-    "4 «Un helicóptero vino a por ellos. Él lo rechazó.»",
-    "5 Ella, gris y con escarcha, a 50 m de la cumbre. «¿Te quedas?»"
+    "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
+    "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
+    "C · in medias res con ella ya gris (8): destripa el final y abre con la víctima muerta.",
+    "v4: «Esta cámara grabó a un hombre bajando solo…» (7,5)."
   ],
   "escenas": [
     {
       "tipo": "gancho",
-      "visual": "webcam",
-      "titulo": "¿Te quedas?",
-      "texto": "Esta cámara grabó a un hombre bajando solo. Arriba se quedó su novia."
+      "visual": "abre",
+      "titulo": "22:00",
+      "texto": "Este helicóptero venía a por ellos. Y él dijo que no."
     },
     {
       "tipo": "texto",
-      "visual": "manta",
-      "texto": "Ahora el que baja eres tú."
+      "visual": "rebobina",
+      "titulo": "¿Te quedas?",
+      "texto": "Rebobina. Ahora el que decide eres tú."
     },
     {
       "tipo": "texto",
       "visual": "manana",
       "titulo": "4 veces arriba",
-      "texto": "Eres el experto: has subido esta montaña cuatro veces. Ella va contigo."
+      "texto": "Eres el experto: has subido esta montaña cuatro veces."
     },
     {
       "tipo": "texto",
@@ -46,12 +46,12 @@
       "tipo": "texto",
       "visual": "helicoptero",
       "titulo": "22:00",
-      "texto": "A las diez llega un helicóptero. Y tú…"
+      "texto": "A las diez llega el helicóptero del principio. Y tú…"
     },
     {
       "tipo": "texto",
       "visual": "rechazo",
-      "texto": "…rechazas la ayuda."
+      "texto": "…también dices que no."
     },
     {
       "tipo": "texto",
@@ -81,7 +81,7 @@
     {
       "tipo": "texto",
       "visual": "mensaje",
-      "texto": "En la montaña, lo difícil no es subir. Es decidir cuando ella ya no puede."
+      "texto": "Lo difícil no es subir. Es decidir cuando ella ya no puede."
     },
     {
       "tipo": "cierre",
