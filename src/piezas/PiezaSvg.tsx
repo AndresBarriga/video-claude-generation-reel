@@ -11,21 +11,25 @@ export type PiezaProps = {
   rot?: Record<string, number>;
   /** Desplazamiento (x, y en unidades del SVG) por id de grupo. */
   mueve?: Record<string, [number, number]>;
+  /** Escala por id de grupo y opacidad por id; `origen` fija el punto de giro/escala (px del SVG) de grupos sin data-pivot. */
+  escala?: Record<string, number>; opac?: Record<string, number>; origen?: Record<string, [number, number]>;
   cara?: "normal" | "platos" | "feliz";
   ocultar?: string[];
   espejo?: boolean;
   opacidad?: number;
 };
 
-export const PiezaSvg: React.FC<PiezaProps> = ({ piezas, nombre, x, y, alto, rot = {}, mueve = {}, cara, ocultar = [], espejo, opacidad = 1 }) => {
+export const PiezaSvg: React.FC<PiezaProps> = ({ piezas, nombre, x, y, alto, rot = {}, mueve = {}, escala = {}, opac = {}, origen = {}, cara, ocultar = [], espejo, opacidad = 1 }) => {
   const k = "p" + useId().replace(/[^a-zA-Z0-9]/g, "");
   const p = piezas[nombre];
   if (!p) return null;
   const [, , vw, vh] = p.viewBox.split(/\s+/).map(Number);
   const ancho = (alto * vw) / vh;
-  const ids = new Set([...Object.keys(rot), ...Object.keys(mueve)]);
+  const ids = new Set([...Object.keys(rot), ...Object.keys(mueve), ...Object.keys(escala)]);
   let css = "";
-  for (const id of ids) css += `.${k} #${id}{transform:translate(${(mueve[id] ?? [0, 0])[0]}px,${(mueve[id] ?? [0, 0])[1]}px) rotate(${rot[id] ?? 0}deg) !important}`;
+  for (const id of ids) css += `.${k} #${id}{transform:translate(${(mueve[id] ?? [0, 0])[0]}px,${(mueve[id] ?? [0, 0])[1]}px) rotate(${rot[id] ?? 0}deg) scale(${escala[id] ?? 1}) !important}`;
+  for (const [id, [ox, oy]] of Object.entries(origen)) css += `.${k} #${id}{transform-origin:${ox}px ${oy}px !important;transform-box:view-box !important}`;
+  for (const [id, o] of Object.entries(opac)) css += `.${k} #${id}{opacity:${o}}`;
   if (cara) css += `.${k} #cara_normal,.${k} #cara_platos,.${k} #cara_feliz{display:none}.${k} #cara_${cara}{display:inline}`;
   for (const id of ocultar) css += `.${k} #${id}{display:none}`;
   return (

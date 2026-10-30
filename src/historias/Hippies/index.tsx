@@ -13,8 +13,10 @@ import { Dilema } from "./Dilema";
 import { Bajan } from "./Bajan";
 import { Pose } from "./Pose";
 import { Bloque, Util } from "./Bloque";
+import { Loco } from "./Loco";
+import { SinUnDuro } from "./SinUnDuro";
 
-const ESCENAS: Record<string, React.FC<P>> = { avion: Avion, campamento: Campamento, sobras: Sobras, lsd: Lsd, dilema: Dilema, bajan: Bajan, pose: Pose, bloque: Bloque, util: Util, cierre: Cierre };
+const ESCENAS: Record<string, React.FC<P>> = { avion: Avion, campamento: Campamento, sobras: Sobras, lsd: Lsd, dilema: Dilema, bajan: Bajan, pose: Pose, bloque: Bloque, util: Util, cierre: Cierre, loco: Loco, sinunduro: SinUnDuro };
 
 export const Hippies: React.FC<{ datos: Datos }> = ({ datos }) => {
   const { fps } = useVideoConfig();

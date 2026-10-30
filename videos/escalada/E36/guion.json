@@ -19,15 +19,72 @@
     "5 «Los mejores escaladores del mundo eran unos hippies sin un duro. Hasta que se estrelló un avión.»"
   ],
   "escenas": [
-    { "tipo": "gancho", "visual": "avion", "texto": "En los setenta, un avión lleno de marihuana se estrelló en Yosemite…" },
-    { "tipo": "texto", "visual": "campamento", "texto": "…al lado de los escaladores más pobres de América." },
-    { "tipo": "texto", "visual": "sobras", "texto": "Ponte en su piel: vives en una tienda y comes lo que dejan los turistas." },
-    { "tipo": "texto", "visual": "lsd", "texto": "Y vuestro líder escala… con LSD." },
-    { "tipo": "texto", "visual": "dilema", "titulo": "¿Bajas?", "texto": "Entonces cae el avión. ¿Bajas?" },
-    { "tipo": "texto", "visual": "bajan", "texto": "Ellos bajaron." },
-    { "tipo": "texto", "visual": "pose", "titulo": "El Capitán en 1 día", "texto": "Lo más loco: eran los mismos que ya habían subido El Capitán en un solo día." },
-    { "tipo": "texto", "visual": "bloque", "titulo": "Midnight Lightning", "texto": "Y en su campamento dejaron el bloque más famoso del mundo. Lo encontró uno de ellos… colocado." },
-    { "tipo": "texto", "visual": "util", "titulo": "Camp 4 · 7B", "texto": "El rayo de magnesio sigue ahí. Si vas a Yosemite, puedes probarlo." },
-    { "tipo": "cierre", "visual": "cierre", "texto": "¿Con qué amigo bajarías?" }
+    {
+      "tipo": "gancho",
+      "visual": "avion",
+      "texto": "Del cielo cayó un avión lleno de marihuana…"
+    },
+    {
+      "tipo": "texto",
+      "visual": "campamento",
+      "texto": "…justo al lado de los escaladores más pobres de América."
+    },
+    {
+      "tipo": "texto",
+      "visual": "loco",
+      "titulo": "Y eso no es lo más loco",
+      "texto": "Y eso no es lo más loco de esta historia."
+    },
+    {
+      "tipo": "texto",
+      "visual": "sobras",
+      "texto": "Ponte en su piel: vives en una tienda, comes las sobras de los turistas y escalas todo el día."
+    },
+    {
+      "tipo": "texto",
+      "visual": "lsd",
+      "texto": "Y vuestro líder escala… con LSD."
+    },
+    {
+      "tipo": "texto",
+      "visual": "dilema",
+      "titulo": "¿Vas a por ella?",
+      "texto": "Un día, el avión: marihuana gratis en un lago helado. ¿Vas a por ella?"
+    },
+    {
+      "tipo": "texto",
+      "visual": "bajan",
+      "texto": "Ellos fueron."
+    },
+    {
+      "tipo": "texto",
+      "visual": "sinunduro",
+      "titulo": "Sin un duro",
+      "texto": "Pero lo increíble es lo que hacían sin un duro."
+    },
+    {
+      "tipo": "texto",
+      "visual": "pose",
+      "titulo": "El Capitán en 1 día",
+      "texto": "Fueron los primeros en subir El Capitán en un solo día."
+    },
+    {
+      "tipo": "texto",
+      "visual": "bloque",
+      "titulo": "La roca más famosa",
+      "texto": "Y una roca que uno de ellos vio… colocado, acabó siendo la más famosa de la escalada."
+    },
+    {
+      "tipo": "texto",
+      "visual": "util",
+      "titulo": "Midnight Lightning · Camp 4",
+      "texto": "Tiene un rayo pintado y sigue ahí: si vas a Yosemite, puedes intentar subirla."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "titulo": "¿Fardo sí o fardo no?",
+      "texto": "¿Tú te habrías llevado un fardo?"
+    }
   ]
 }
