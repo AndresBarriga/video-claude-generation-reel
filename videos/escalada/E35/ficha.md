@@ -13,6 +13,6 @@ Comenta QUEDO o BAJO.
 
 **Comentario fijado:** Bajar a por ayuda no es abandonar. ¿O sí?
 
-**Portada:** primer fotograma (webcam, dos frontales, «¿Te quedas?»).
+**Portada:** primer fotograma (el helicóptero con el foco y él diciendo que no; «22:00», «Decisiones límite #2»).
 
 **Fuentes (no en pantalla salvo la condena):** CNN 19-feb-2026, BBC Mundo, Irish Times 20-feb-2026, Alpine Mag.
