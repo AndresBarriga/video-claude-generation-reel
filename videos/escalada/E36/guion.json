@@ -32,7 +32,6 @@
     {
       "tipo": "texto",
       "visual": "loco",
-      "titulo": "Y eso no es lo más loco",
       "texto": "Y eso no es lo más loco de esta historia."
     },
     {
@@ -65,7 +64,6 @@
     {
       "tipo": "texto",
       "visual": "pose",
-      "titulo": "El Capitán en 1 día",
       "texto": "Fueron los primeros en subir El Capitán en un solo día."
     },
     {
