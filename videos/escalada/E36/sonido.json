@@ -1,0 +1,14 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "golpe", "inicio": { "escena": 0 }, "duracion": 0.8, "volumen": 0.8 },
+    { "nombre": "viento", "inicio": { "escena": 0 }, "fin": { "escena": "campamento" }, "volumen": 0.3, "bucle": true, "fundido": [0.0, 0.2] },
+    { "nombre": "pajaros", "inicio": { "escena": "campamento" }, "fin": { "escena": "lsd" }, "volumen": 0.3, "bucle": true, "fundido": [0.1, 0.2] },
+    { "nombre": "zas", "inicio": { "escena": "sobras", "fraccion": 0.5 }, "duracion": 0.5, "volumen": 0.6 },
+    { "nombre": "tintineo", "inicio": { "escena": "lsd" }, "fin": { "escena": "dilema" }, "volumen": 0.4, "bucle": true, "fundido": [0.2, 0.2] },
+    { "nombre": "latido", "inicio": { "escena": "dilema" }, "fin": { "escena": "bajan" }, "volumen": 0.5, "bucle": true, "fundido": [0.1, 0.1] },
+    { "nombre": "roce", "inicio": { "escena": "bajan" }, "fin": { "escena": "pose" }, "volumen": 0.4, "bucle": true, "fundido": [0.1, 0.2] },
+    { "nombre": "pajaros", "inicio": { "escena": "pose" }, "volumen": 0.3, "bucle": true, "fundido": [0.2, 0.3] },
+    { "nombre": "clic", "inicio": { "escena": "util" }, "duracion": 0.5, "volumen": 0.6 }
+  ]
+}

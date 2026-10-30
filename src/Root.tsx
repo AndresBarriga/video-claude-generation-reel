@@ -6,12 +6,13 @@ import { Poses } from "./historias/Poses";
 import { Pegue } from "./historias/Pegue";
 import { Bloque } from "./historias/Bloque";
 import { Pierna } from "./historias/Pierna";
+import { Hippies } from "./historias/Hippies";
 import { Traductor } from "./historias/Traductor";
 import { Beta } from "./historias/Beta";
 import { Presa } from "./historias/Presa";
 import { Asmr } from "./historias/Asmr";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Poses: Poses as any };
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Poses: Poses as any };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;

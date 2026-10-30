@@ -1,0 +1,33 @@
+{
+  "id": "E36",
+  "titulo": "Los hippies del avión de marihuana (Camp 4, Yosemite)",
+  "nicho": "escalada",
+  "plantilla": "Hippies",
+  "verificado": true,
+  "fuentes": [
+    "Wikipedia, The Stonemasters (avión cargado de marihuana estrellado cerca de Yosemite a mediados de los 70; escaladores de Camp 4 implicados). Fechas y cifras discrepan: no se dan.",
+    "Wikipedia, Jim Bridwell (conocido por escalar con LSD; cita a GQ 2016).",
+    "Primer Nose en un día, 1975: Bridwell, Westbay y Long (Wikipedia).",
+    "Midnight Lightning: bloque Columbia, Camp 4; 1.ª ascensión Ron Kauk, mayo 1978; V8/7B; rayo de magnesio dibujado por John Bachar; borrado en 2013 y repintado (Wikipedia, Gripped, Planetmountain). Según climbing-history.org, John Yablonski «encontró» la línea bajo los efectos del LSD («allegedly»)."
+  ],
+  "nota_rigor": "Decisión de Andrés (29-oct): no contrastar más el avión (Valley Uprising), tono cute, sin cifras del avión, sin mostrar consumo, sin fotos reales. Orden real: el Nose en un día (1975) es ANTERIOR al avión (1976-77): se dice «ya habían subido», nunca «después». La pose del casete y la cerveza es dibujo propio (homenaje), no copia de ninguna foto. «Lo encontró… colocado» se apoya en climbing-history («allegedly») y Wikipedia («drug-intoxicated»).",
+  "ganchos_alternativos": [
+    "1 ★ In medias res: avión estrellado en la nieve con fardos y un hippie asomando con los ojos como platos.",
+    "2 «Eres escalador en Yosemite. Comes sobras de los turistas. Y un día cae del cielo un avión lleno de marihuana.»",
+    "3 «¿Qué harías si un avión lleno de marihuana se estrella al lado de tu tienda?»",
+    "4 Un tío corriendo por la nieve con un fardo en brazos mientras un guardabosques mira con los prismáticos al revés.",
+    "5 «Los mejores escaladores del mundo eran unos hippies sin un duro. Hasta que se estrelló un avión.»"
+  ],
+  "escenas": [
+    { "tipo": "gancho", "visual": "avion", "texto": "En los setenta, un avión lleno de marihuana se estrelló en Yosemite…" },
+    { "tipo": "texto", "visual": "campamento", "texto": "…al lado de los escaladores más pobres de América." },
+    { "tipo": "texto", "visual": "sobras", "texto": "Ponte en su piel: vives en una tienda y comes lo que dejan los turistas." },
+    { "tipo": "texto", "visual": "lsd", "texto": "Y vuestro líder escala… con LSD." },
+    { "tipo": "texto", "visual": "dilema", "titulo": "¿Bajas?", "texto": "Entonces cae el avión. ¿Bajas?" },
+    { "tipo": "texto", "visual": "bajan", "texto": "Ellos bajaron." },
+    { "tipo": "texto", "visual": "pose", "titulo": "El Capitán en 1 día", "texto": "Lo más loco: eran los mismos que ya habían subido El Capitán en un solo día." },
+    { "tipo": "texto", "visual": "bloque", "titulo": "Midnight Lightning", "texto": "Y en su campamento dejaron el bloque más famoso del mundo. Lo encontró uno de ellos… colocado." },
+    { "tipo": "texto", "visual": "util", "titulo": "Camp 4 · 7B", "texto": "El rayo de magnesio sigue ahí. Si vas a Yosemite, puedes probarlo." },
+    { "tipo": "cierre", "visual": "cierre", "texto": "¿Con qué amigo bajarías?" }
+  ]
+}
