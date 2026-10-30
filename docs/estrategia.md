@@ -20,7 +20,7 @@
 
 ## Producción
 - Visuales: todo por código (Remotion), estándar en `docs/guia-visual.md`; sonido en `docs/sonido.md`.
-- Voz: ElevenLabs a mano en la web (pendiente pasar a API); plan de pago activo para lo que se publique.
+- Voz: ElevenLabs por API (`npm run voz -- <id>`, Andrés en local; la toma se guarda con el vídeo); plan de pago activo para lo que se publique.
 
 ## 2026-10-30 · Crecimiento: serie, comentarios y reels de prueba
 Contexto: E15 189K vistas / 134K espectadores → 62 seguidores (0,05 %). Llega gente, no se queda: el perfil no promete nada.

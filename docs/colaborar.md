@@ -5,5 +5,5 @@
 3. Elige ideas de `docs/ideas/` y avisa a Andrés de cuál coges (para no duplicar).
 4. Código compartido (`src/piezas`, `tools`, `docs/guia-visual.md`, `docs/viralidad.md`): solo con un cambio pequeño y explicado.
 5. `docs/no-me-gusta.md` recoge el gusto de **Andrés**: no lo edites con tus preferencias; propón en el PR.
-6. **Voz:** no la generes tú. Pasa a Andrés el texto (`npm run texto -- <id>`); él genera el audio con la voz y la licencia de la cuenta.
+6. **Voz:** no la generes tú (ni por API ni en la web). Mientras produces, usa `npm run voz -- <id> --simulado`. Cuando el guion esté cerrado, avisa a Andrés: él ejecuta `npm run voz -- <id>` en local con la voz y la licencia de la cuenta y sube `voz-elevenlabs.mp3` + `voz.json` a tu rama; luego `npm run voz -- <id>` sincroniza sin gastar créditos. Nunca subas claves (`.env` está en `.gitignore`).
 7. Al terminar: push de tu rama y **pull request** con la hoja de escenas (`out/<id>-hoja.png`) adjunta. Andrés revisa y fusiona.

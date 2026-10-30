@@ -16,8 +16,8 @@ La propuesta (paso 1) no se salta salvo que Andrés diga explícitamente «produ
 1. **Propuesta (Claude), siempre antes de producir:** opinión breve, 5 aperturas, guion puntuado con qué se ve / qué se dice, reparto e idea visual, y 2–3 bocetos fijos si ayudan. Es barato: corregir aquí cuesta mucho menos que tras el render.
 2. **Revisión (Andrés, 1 mensaje):** elige gancho y pide cambios.
 3. **Producción (Claude, sin interrumpir):** construye, renderiza con tiempos simulados, revisa fotogramas con la lista de `docs/guia-visual.md`, corrige.
-4. **Voz (Andrés):** `npm run texto -- <id>` → pega el texto en ElevenLabs → sube el audio al chat.
-5. **Final (Claude → Andrés):** sincroniza, renderiza, entrega `final.mp4` + `ficha.md` (con la descripción para publicar). Andrés aprueba o pide un último ajuste.
+4. **Voz (Andrés):** ejecuta `npm run voz -- <id>` en local (enseña los créditos y pide confirmación) y sube `voz-elevenlabs.mp3` + `voz.json` (commit + push en la rama del vídeo). Si el texto cambia, se repite y solo entonces gasta créditos. Alternativa a mano: `npm run texto -- <id>` → web de ElevenLabs → sube el audio (`--audio`).
+5. **Final (Claude → Andrés):** `npm run voz -- <id>` (usa la toma subida, sin API ni créditos), renderiza, entrega `final.mp4` + `ficha.md` (con la descripción para publicar). Andrés aprueba o pide un último ajuste.
 
 ## Rigor (suficiente, no paralizante)
 - Historias famosas e ideas de identidad: una comprobación rápida de los hechos clave basta; sin fuente en pantalla.
