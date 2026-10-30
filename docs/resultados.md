@@ -13,6 +13,8 @@
 | ¿Se queda? | visto medio / duración · skip | Gancho (skip) y cuerpo (visto medio) |
 | ¿Se mueve? | envíos / 1.000 · guardados / 1.000 | Distribución futura |
 
+- Columna `estilo` en el CSV: `codigo` o `design` (desde E36), para separar el efecto del dibujo del del guion.
+
 Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 
 ## Última medición (30-oct 07:47)
