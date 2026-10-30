@@ -27,6 +27,7 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E3 v3) Escalador colgado alto sin cuerda ni arnés: poco real. Si está alto, vía con arnés y cuerda.
 - 2026-10-28 · (E3) Voz y subtítulos que no dicen lo mismo (texto cambiado en ElevenLabs) → se desincroniza. Si se cambia el texto en ElevenLabs, avisar para actualizar `guion.json`.
 - 2026-10-28 · (E31) Mano que sujeta el cepillo «al revés» (dorso con nudillos arriba y el mango asomando): «muy malo». Ahora: mano por la palma, dedos cruzando el mango, pulgar encima (`Puno`).
+- (30-oct) No abusar de «las N fases de…»: para temas de curiosidad (p. ej. pies de gato) prefiere un **por qué** que funcione en dos públicos: el que no escala piensa «qué locos» y el que escala se lo manda al que no lo entiende.
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.

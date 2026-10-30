@@ -1,7 +1,7 @@
 # E11 · Las 5 fases de la pierna de Elvis («Miedo te engaña dos») — ficha
 - **Estado:** publicado IG 29-oct noche (cuadrícula)
 - **Formato:** cuerpo-fases
-- **Resultado:** 9,2K vistas, 9 seg. a 10 h (detalle en `datos/publicados.csv`)
+- **Resultado:** 17,5K vistas, 22 seg. a 13 h (1,26 seg./1k) (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
 - **Propuesta:** `propuesta.md`
 
