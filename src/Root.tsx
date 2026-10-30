@@ -10,9 +10,10 @@ import { Traductor } from "./historias/Traductor";
 import { Beta } from "./historias/Beta";
 import { Presa } from "./historias/Presa";
 import { Asmr } from "./historias/Asmr";
+import { Grossglockner } from "./historias/Grossglockner";
 import { Hippies } from "./historias/Hippies";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Poses: Poses as any };
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Grossglockner, Poses: Poses as any };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;
