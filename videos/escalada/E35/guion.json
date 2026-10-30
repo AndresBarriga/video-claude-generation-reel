@@ -10,7 +10,7 @@
     "Irish Times 20-feb-2026",
     "Alpine Mag (ver docs/ideas/escalada.md, E35)"
   ],
-  "nota_rigor": "Solo hechos de la ficha E35. Sin nombres. «Según la fiscalía» para la manta. El gesto de rechazo al helicóptero es dramatización visual de «rechazó la ayuda». Cuerpo en gris con escarcha, nada explícito.",
+  "nota_rigor": "Narración en segunda persona («tú» vives sus decisiones) y vuelta a la realidad («Eso no lo hiciste tú. Lo hizo él.»): los hechos son los de la ficha E35; el «tú» es un recurso hipotético, no atribuye nada nuevo a nadie. «Según la fiscalía» para la manta. Sin nombres. Cuerpo en gris, nada explícito; el vaho que se apaga cuenta la muerte. Detalles graciosos solo en planos neutros (subida, webcam, juzgado).",
   "ganchos_alternativos": [
     "1 ★ Webcam «02:04», dos frontales; uno baja. «¿Te quedas?»",
     "2 «Esta cámara grabó a un hombre bajando solo. Arriba se quedó su novia.»",
@@ -23,55 +23,52 @@
       "tipo": "gancho",
       "visual": "webcam",
       "titulo": "¿Te quedas?",
-      "texto": "Tu novia no puede dar un paso más."
+      "texto": "Esta cámara grabó a un hombre bajando solo. Arriba se quedó su novia."
     },
     {
       "tipo": "texto",
       "visual": "manta",
-      "titulo": "¿Te quedas?",
-      "texto": "Tú llevas una manta térmica en la mochila. ¿Te quedas o bajas a por ayuda?"
-    },
-    {
-      "tipo": "texto",
-      "visual": "webcam2",
-      "texto": "Él bajó. Esta cámara le grabó. Y un año después, un juez le condenó."
+      "texto": "Ahora el que baja eres tú."
     },
     {
       "tipo": "texto",
       "visual": "manana",
       "titulo": "4 veces arriba",
-      "texto": "Él era el experto: había subido esa montaña cuatro veces."
+      "texto": "Eres el experto: has subido esta montaña cuatro veces. Ella va contigo."
     },
     {
       "tipo": "texto",
       "visual": "noche",
       "titulo": "50 m",
-      "texto": "Se les hizo de noche a cincuenta metros de la cumbre."
+      "texto": "Se os hace de noche a cincuenta metros de la cumbre. Ella no puede más."
     },
     {
       "tipo": "texto",
       "visual": "helicoptero",
       "titulo": "22:00",
-      "texto": "Hacia las diez llegó un helicóptero. Y él rechazó la ayuda.",
-      "pausa": 0.5
+      "texto": "A las diez llega un helicóptero. Y tú…"
+    },
+    {
+      "tipo": "texto",
+      "visual": "rechazo",
+      "texto": "…rechazas la ayuda."
     },
     {
       "tipo": "texto",
       "visual": "color",
       "titulo": "02:00",
-      "texto": "A las dos, la dejó para buscar ayuda. Según la fiscalía, ni usó la manta térmica."
+      "texto": "A las dos, la dejas para ir a buscar ayuda. Llevas una manta térmica. Según la fiscalía, ni la usaste."
     },
     {
       "tipo": "texto",
       "visual": "movil",
       "titulo": "03:30",
-      "texto": "Avisó a las tres y media. El viento ya no dejaba subir a nadie."
+      "texto": "Avisas a las tres y media. El viento ya no deja subir a nadie."
     },
     {
       "tipo": "texto",
       "visual": "amanecer",
-      "texto": "Murió de hipotermia. A cincuenta metros de la cumbre.",
-      "pausa": 0.8
+      "texto": "Ella muere de hipotermia. A cincuenta metros de la cumbre."
     },
     {
       "tipo": "cifra",
@@ -79,7 +76,12 @@
       "titulo": "5 meses (suspendidos) + 9.600 €",
       "cifra": "5 meses + 9.600 €",
       "fuente": "CNN, 19-feb-2026",
-      "texto": "Cinco meses que no cumplirá. Él dice que fue un accidente."
+      "texto": "Eso no lo hiciste tú. Lo hizo él. Cinco meses que no cumplirá. Él dice que fue un accidente."
+    },
+    {
+      "tipo": "texto",
+      "visual": "mensaje",
+      "texto": "En la montaña, lo difícil no es subir. Es decidir cuando ella ya no puede."
     },
     {
       "tipo": "cierre",

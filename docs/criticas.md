@@ -23,3 +23,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 29-oct | E3 | stock | 3 (4,5) | jerga pura tipo E6; sin voz | — |
 | 29-oct | E32 | stock | 2 | relleno | — |
 | 30-oct | E35 v2.1 | vídeo (hoja, tiempos simulados) | 7 | tramo 4–8 denso de horas (22:00/02:00/03:30), riesgo de saltos; el rótulo #3 de 0,9 s se lee justo. Aplicado: gancho partido (webcam + manta), «¿Te quedas?» desde 0,5 s, manta como prueba en el juicio | — |
+| 30-oct | E35 v4 | hoja (simulado) | 7,5 | narrado en «tú» con vuelta a la realidad («Eso no lo hiciste tú. Lo hizo él.»), rehook en el helicóptero, vaho que se apaga, mensaje final antes de la pregunta; riesgo: 49 s, gancho en 3.ª persona | — |

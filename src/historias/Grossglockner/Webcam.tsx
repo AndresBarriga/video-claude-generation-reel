@@ -40,8 +40,9 @@ export const PlanoWebcam: React.FC<{ d: number; baja: [number, number]; hora: (f
 };
 
 const reloj = (m0: number, s0: number) => (f: number) => { const t = s0 + Math.floor(f / 30); return `02:${String(m0 + Math.floor(t / 60)).padStart(2, "0")}:${String(t % 60).padStart(2, "0")}`; };
-export const Webcam: React.FC<{ e: { titulo?: string }; d: number }> = ({ e, d }) => <PlanoWebcam d={d} baja={[0, 0.45]} hora={reloj(4, 0)} titulo={e.titulo} serie />;
+export const Webcam: React.FC<{ e: { titulo?: string }; d: number }> = ({ e, d }) => <PlanoWebcam d={d} baja={[0, 0.9]} hora={reloj(4, 0)} titulo={e.titulo} serie />;
 export const Webcam2: React.FC<{ d: number }> = ({ d }) => <PlanoWebcam d={d} baja={[0.9, 2.6]} hora={reloj(4, 9)} zoom={0.92} />;
+export const Mensaje: React.FC<{ d: number }> = ({ d }) => <PlanoWebcam d={d} baja={[0, 0]} hora={reloj(3, 30)} zoom={1.15} />;
 export const Cierre: React.FC<{ e: { titulo?: string }; d: number }> = ({ e, d }) => (
   <PlanoWebcam d={d} baja={[0, 0]} hora={reloj(4, 0)} titulo={e.titulo} final="#3: el que empujó a su secuestrador" tFinal={d - 27} />
 );

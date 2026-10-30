@@ -101,3 +101,52 @@ export const Webcamizar: React.FC = () => {
   );
 };
 export const T = { fuenteTitulo, fuenteTexto };
+
+/* ---------- Apoyo en el suelo (nadie flota) ---------- */
+const rad = (g: number) => (g * Math.PI) / 180;
+type Pierna = [number, number];
+/** Suela de un pie (relativa a la cadera, sin escalar) para los ángulos de una pierna. */
+export const suela = (p: Pierna): [number, number] => {
+  const rx = Math.sin(rad(p[0])) * 66, ry = Math.cos(rad(p[0])) * 66;
+  const tx = rx + Math.sin(rad(p[1])) * 64, ty = ry + Math.cos(rad(p[1])) * 64;
+  return [tx + Math.sin(rad(p[1] + 90)) * 11, ty + 11];
+};
+/** y de la cadera para que el pie más bajo toque la arista (base = la de <Arista>). */
+export const caderaApoyada = (x: number, s: number, a: Pierna, b: Pierna, mira: 1 | -1 = 1, base = 1250) =>
+  Math.min(...[a, b].map((p) => { const [fx, fy] = suela(p); return sueloY(x + fx * s * mira, base) - fy * s; }));
+/** Ciclo de paso (k = fase 0–1): piernas, brazos y torso. */
+export const paso = (k: number, inclina = -10) => {
+  const w = Math.sin(k * 2 * Math.PI), w2 = Math.cos(k * 2 * Math.PI);
+  return { torso: inclina, piernaA: [10 + 22 * w, -4 - 18 * Math.max(0, w2)] as Pierna, piernaB: [10 - 22 * w, -4 - 18 * Math.max(0, -w2)] as Pierna, brazoA: [-20 * w, -6] as Pierna, brazoB: [20 * w, -2] as Pierna };
+};
+
+/** Roca para sentarse (cima en (x, y)). */
+export const Roca: React.FC<{ x: number; y: number; w?: number; nieve?: boolean }> = ({ x, y, w = 150, nieve = true }) => (
+  <g>
+    <path d={`M${x - w / 2 - 20} ${y + 120} L${x - w / 2} ${y + 40} L${x - w / 3} ${y + 4} Q${x - 10} ${y - 16} ${x + w / 4} ${y - 2} L${x + w / 2 + 6} ${y + 30} L${x + w / 2 + 24} ${y + 120} Z`} fill={PG.rocaL} stroke="#0B1624" strokeWidth={6} />
+    <path d={`M${x - w / 4} ${y + 30} l20 40 M${x + w / 6} ${y + 20} l-10 50`} stroke={PG.roca} strokeWidth={6} fill="none" />
+    {nieve && <path d={`M${x - w / 2 + 16} ${y + 8} Q${x} ${y - 16} ${x + w / 2 - 12} ${y + 4}`} stroke={PG.nieve} strokeWidth={10} fill="none" strokeLinecap="round" />}
+  </g>
+);
+
+/** Vaho que sale de la boca; `fuerza` 0–1 (0 = ya no sale). */
+export const Vaho: React.FC<{ x: number; y: number; fuerza: number; dir?: 1 | -1 }> = ({ x, y, fuerza, dir = 1 }) => {
+  const f = useCurrentFrame(), c = (f % 40) / 40;
+  if (fuerza <= 0.02) return null;
+  return <g opacity={(1 - c) * 0.8 * fuerza}>{[0, 1, 2].map((i) => <ellipse key={i} cx={x + dir * (10 + c * 70 * fuerza + i * 14)} cy={y - c * 20 - i * 4} rx={(8 + i * 6) * (0.4 + c) * fuerza} ry={(6 + i * 4) * (0.4 + c) * fuerza} fill="#F4F9FF" />)}</g>;
+};
+
+/** Chova piquigualda (detalle secundario): curiosea dando saltitos. */
+export const Chova: React.FC<{ x: number; y: number; s?: number; mira?: 1 | -1 }> = ({ x, y, s = 1, mira = 1 }) => {
+  const f = useCurrentFrame(), salto = Math.max(0, Math.sin(f / 5)) * 10, pico = Math.sin(f / 3) > 0.6 ? 6 : 0;
+  return (
+    <g transform={`translate(${x} ${y - salto}) scale(${s * mira} ${s})`}>
+      <ellipse cx={0} cy={-20} rx={26} ry={16} fill="#141B26" />
+      <circle cx={20} cy={-36} r={12} fill="#141B26" />
+      <path d={`M30 ${-38 + pico / 2} L46 ${-34 + pico} L30 -31 Z`} fill="#F2C230" />
+      <circle cx={23} cy={-39} r={3} fill="#fff" />
+      <path d="M-26 -20 L-44 -10 L-26 -12 Z" fill="#141B26" />
+      <path d="M-4 -6 L-6 4 M6 -6 L8 4" stroke="#E0645A" strokeWidth={4} strokeLinecap="round" />
+    </g>
+  );
+};
