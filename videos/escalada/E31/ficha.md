@@ -1,5 +1,11 @@
-# E31 · La presa perfecta (micro, 13 s, sin voz) — publicación
+# E31 · La presa perfecta (micro, 13 s, sin voz) — ficha
+- **Estado:** producido, sin publicar
+- **Formato:** micro (envío)
+- **Resultado:** — (detalle en `datos/publicados.csv`)
+- **Aprendizajes:** — (`docs/aprendizajes.md`)
+- **Propuesta:** `propuesta.md`
 
+## Publicación
 **Descripción (Instagram y TikTok):**
 Cepillar. Soplar. Cepillar. Cepillo de dientes. La presa, perfecta.
 El pie, en otra.

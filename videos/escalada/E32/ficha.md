@@ -1,5 +1,10 @@
-# E32 · ASMR cepillado (micro, 8 s en bucle, sin texto) — publicación
+# E32 · ASMR cepillado (micro, 8 s en bucle, sin texto) — ficha
+- **Estado:** producido, sin publicar
+- **Formato:** micro (repeticiones)
+- **Resultado:** — (detalle en `datos/publicados.csv`)
+- **Aprendizajes:** — (`docs/aprendizajes.md`)
 
+## Publicación
 **Descripción:**
 Cepillar una presa hasta que brille. Con sonido 🔊
 

@@ -3,7 +3,7 @@
 ## Chats del proyecto (todos usan este repo)
 | Chat | Para qué | Escribe en |
 |---|---|---|
-| **Estrategia** | pensar, decidir, orden de publicación, revisar métricas | `docs/estrategia.md`, `docs/calendario.md` |
+| **Estrategia** | pensar, decidir, orden de publicación, revisar métricas | `docs/estrategia.md`, `docs/decisiones.md`, `docs/aprendizajes.md`, `datos/publicados.csv` |
 | **Escalada** | ideas, storyboards y vídeos de escalada | `docs/ideas/escalada.md`, `videos/escalada/` |
 | **Mascotas** | ideas, storyboards y vídeos de mascotas | `docs/ideas/mascotas.md`, `videos/mascotas/` |
 
@@ -17,7 +17,7 @@ La propuesta (paso 1) no se salta salvo que Andrés diga explícitamente «produ
 2. **Revisión (Andrés, 1 mensaje):** elige gancho y pide cambios.
 3. **Producción (Claude, sin interrumpir):** construye, renderiza con tiempos simulados, revisa fotogramas con la lista de `docs/guia-visual.md`, corrige.
 4. **Voz (Andrés):** `npm run texto -- <id>` → pega el texto en ElevenLabs → sube el audio al chat.
-5. **Final (Claude → Andrés):** sincroniza, renderiza, entrega `final.mp4` + `publicacion.md`. Andrés aprueba o pide un último ajuste.
+5. **Final (Claude → Andrés):** sincroniza, renderiza, entrega `final.mp4` + `ficha.md` (con la descripción para publicar). Andrés aprueba o pide un último ajuste.
 
 ## Rigor (suficiente, no paralizante)
 - Historias famosas e ideas de identidad: una comprobación rápida de los hechos clave basta; sin fuente en pantalla.

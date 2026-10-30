@@ -1,5 +1,10 @@
-# E15 · Tocando el vacío — publicación
+# E15 · Tocando el vacío — ficha
+- **Estado:** publicado IG 28-oct 20:00 (cuadrícula)
+- **Formato:** historia-dilema
+- **Resultado:** 189K vistas, 62 seg. a 36 h (detalle en `datos/publicados.csv`)
+- **Aprendizajes:** H1, H3 (`docs/aprendizajes.md`)
 
+## Publicación
 **Descripción (Instagram y TikTok):**
 Perú, 1985. Simon Yates tenía a su amigo Joe Simpson colgando de su cuerda, de noche, sin ningún anclaje. Cortó. Joe cayó a una grieta… y volvió.
 Lo contó Joe en el libro «Tocando el vacío» (luego película). Le dijeron que no volvería a escalar: en 1987 ya estaba escalando otra vez.
