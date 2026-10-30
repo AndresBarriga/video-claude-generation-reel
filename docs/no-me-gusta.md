@@ -29,6 +29,7 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E31) Mano que sujeta el cepillo «al revés» (dorso con nudillos arriba y el mango asomando): «muy malo». Ahora: mano por la palma, dedos cruzando el mango, pulgar encima (`Puno`).
 - 2026-10-30 · (E35) Objetos que no se entienden (manta dorada en la mochila en todos los planos, encima de la cara): mejor un inserto claro con etiqueta cuando se nombra.
 - 2026-10-30 · (E35) Picos como triángulo flotante con cruz; helicóptero «cutre»; gente flotando en el juicio; gesto que parece un saludo; rótulo final sin contexto («#3: …»).
+- (30-oct) No abusar de «las N fases de…»: para temas de curiosidad (p. ej. pies de gato) prefiere un **por qué** que funcione en dos públicos: el que no escala piensa «qué locos» y el que escala se lo manda al que no lo entiende.
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.

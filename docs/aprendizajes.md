@@ -9,6 +9,7 @@ Solo una reforzada puede pasar a `docs/viralidad.md` (y Andrés lo aprueba). Dat
 | H3 | Un viral universal convierte peor por vista (público de fuera), pero aporta más seguidores en bruto | E15 (0,33 seg./1k, 62 seg.) vs E6/E11/E14 (~1/1k) | — | Un viral con ≥ 1 seg./1k | abierta |
 | H4 | Una cuadrícula que no confirma lo que promete el vídeo baja el visita→seguir | E6 (7 visitas/1k, solo 13 % sigue) | E15 (36 %) con la misma cuadrícula | Tras ordenar la cuadrícula, el visita→seguir no sube | abierta |
 | H5 | Skip > 25 % indica gancho fallido, no tema fallido | E14 (28 %) | — | Re-subir E14 con otro gancho y que el skip no baje | abierta |
+| H7 | El formato «cuerpo/fases» (lo que te pasa por dentro, escalada de tensión) convierte mejor por vista que humor e historia | E11 (1,26 seg./1k) | — | El próximo «cuerpo/fases» < 0,8 seg./1k | abierta |
 | H6 | La nota del crítico no predice el rendimiento; sirve para encontrar fallos | E6 (7/10 → plano) | — (E15 sin nota) | Correlación clara nota ↔ seguidores con ≥ 8 vídeos | abierta |
 
 ## Cómo se actualiza

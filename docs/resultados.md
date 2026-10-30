@@ -28,4 +28,5 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 - E15 casi no genera visitas al perfil: público del dilema, no de la escalada.
 - E6 genera muchas visitas al perfil pero solo el 13 % sigue: la cuadrícula no confirma el humor → coherencia de cuadrícula importa.
 - E14: el gancho falla (skip 28 %), no necesariamente el tema.
+- 30-oct 11:00 · E11 a 17,5K vistas y 22 seguidores (**1,26/1k**, el mejor por vista; 2.º en bruto tras E15). Formato «cuerpo/fases»: ni humor ni historia → tercer candidato del test.
 - Pendiente: medición a 7 días de los cuatro (~4-nov) y envíos de E11.

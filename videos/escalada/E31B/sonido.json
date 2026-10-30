@@ -1,20 +1,131 @@
 {
   "bajoVoz": 0,
   "efectos": [
-    { "nombre": "sala", "inicio": { "escena": 0 }, "volumen": 0.35, "bucle": true, "fundido": [0, 0.2] },
-    { "nombre": "cepillo3", "inicio": { "escena": "cepillo" }, "volumen": 0.9 },
-    { "nombre": "soplido", "inicio": { "escena": "sopla", "mas": 0.05 }, "volumen": 0.8 },
-    { "nombre": "soplidoCorto", "inicio": { "escena": "yemas" }, "volumen": 0.6 },
-    { "nombre": "palmada", "inicio": { "escena": "yemas", "fraccion": 0.55 }, "volumen": 0.9 },
-    { "nombre": "cepillo5", "inicio": { "escena": "furia" }, "volumen": 1 },
-    { "nombre": "cremallera", "inicio": { "escena": "mochila", "fraccion": 0.15 }, "volumen": 0.6 },
-    { "nombre": "dientes", "inicio": { "escena": "dientes" }, "volumen": 0.9 },
-    { "nombre": "brillo", "inicio": { "escena": "dientes", "fraccion": 0.75 }, "volumen": 0.5 },
-    { "silencio": true, "inicio": { "escena": "mira", "mas": 0.1 }, "duracion": 0.45 },
-    { "nombre": "agarre", "inicio": { "escena": "agarra", "fraccion": 0.5 }, "volumen": 0.8, "ignoraSilencio": true },
-    { "nombre": "chirrido", "inicio": { "escena": "pie", "fraccion": 0.4 }, "volumen": 0.9, "ignoraSilencio": true },
-    { "nombre": "zas", "inicio": { "escena": "sale" }, "volumen": 0.6, "ignoraSilencio": true },
-    { "nombre": "golpePad", "inicio": { "escena": "suelo" }, "volumen": 1, "ignoraSilencio": true },
-    { "nombre": "suela", "inicio": { "escena": "suela" }, "volumen": 0.9 }
+    {
+      "nombre": "sala",
+      "inicio": {
+        "escena": 0
+      },
+      "volumen": 0.35,
+      "bucle": true,
+      "fundido": [
+        0,
+        0.2
+      ]
+    },
+    {
+      "nombre": "cepillo3",
+      "inicio": {
+        "escena": "cepillo"
+      },
+      "volumen": 0.9
+    },
+    {
+      "nombre": "soplido",
+      "inicio": {
+        "escena": "sopla",
+        "mas": 0.05
+      },
+      "volumen": 0.8
+    },
+    {
+      "nombre": "soplidoCorto",
+      "inicio": {
+        "escena": "yemas"
+      },
+      "volumen": 0.6
+    },
+    {
+      "nombre": "palmada",
+      "inicio": {
+        "escena": "yemas",
+        "fraccion": 0.55
+      },
+      "volumen": 0.9
+    },
+    {
+      "nombre": "cepillo5",
+      "inicio": {
+        "escena": "furia"
+      },
+      "volumen": 1
+    },
+    {
+      "nombre": "cremallera",
+      "inicio": {
+        "escena": "mochila",
+        "fraccion": 0.15
+      },
+      "volumen": 0.6
+    },
+    {
+      "nombre": "dientes",
+      "inicio": {
+        "escena": "dientes"
+      },
+      "volumen": 0.9
+    },
+    {
+      "nombre": "brillo",
+      "inicio": {
+        "escena": "dientes",
+        "fraccion": 0.75
+      },
+      "volumen": 0.5
+    },
+    {
+      "silencio": true,
+      "inicio": {
+        "escena": "mira",
+        "mas": 0.1
+      },
+      "duracion": 0.45
+    },
+    {
+      "nombre": "agarre",
+      "inicio": {
+        "escena": "agarra",
+        "fraccion": 0.5
+      },
+      "volumen": 0.8,
+      "ignoraSilencio": true
+    },
+    {
+      "nombre": "chirrido",
+      "inicio": {
+        "escena": "pie",
+        "fraccion": 0.4
+      },
+      "volumen": 0.9,
+      "ignoraSilencio": true
+    },
+    {
+      "nombre": "zas",
+      "inicio": {
+        "escena": "sale"
+      },
+      "volumen": 0.6,
+      "ignoraSilencio": true
+    },
+    {
+      "nombre": "golpePad",
+      "inicio": {
+        "escena": "suelo"
+      },
+      "volumen": 1,
+      "ignoraSilencio": true
+    },
+    {
+      "nombre": "suela",
+      "inicio": {
+        "escena": "suela"
+      },
+      "volumen": 0.9,
+      "fin": {
+        "escena": "suela",
+        "final": true,
+        "mas": -0.6
+      }
+    }
   ]
 }
