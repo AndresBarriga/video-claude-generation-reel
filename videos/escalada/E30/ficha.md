@@ -3,6 +3,7 @@
 - **Formato:** humor-identidad
 - **Resultado:** — (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
+- **Archivos:** `guion.json` · `sonido.json` · `texto-voz.txt` · `voz.mp3` (audio usado) · `datos-corregidos.json` (tiempos por frases) · `hoja.png` · `final.mp4` (no se versiona: `npm run render -- E30`)
 
 ## Publicación (versión final 30-oct)
 **Descripción:**
