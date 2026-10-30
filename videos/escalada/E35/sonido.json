@@ -1,0 +1,10 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "viento", "inicio": { "escena": 0 }, "fin": { "escena": "amanecer" }, "volumen": 0.35, "bucle": true, "fundido": [0.05, 0.4] },
+    { "nombre": "latido", "inicio": { "escena": "color" }, "fin": { "escena": "amanecer" }, "volumen": 0.55, "bucle": true, "bajoVoz": 0.2, "fundido": [0.4, 0.2] },
+    { "silencio": true, "inicio": { "escena": "amanecer", "final": true, "mas": -0.8 }, "duracion": 0.8 },
+    { "nombre": "golpe", "inicio": { "escena": "juzgado" }, "duracion": 0.6, "volumen": 0.6 },
+    { "nombre": "viento", "inicio": { "escena": "cierre" }, "volumen": 0.35, "bucle": true, "fundido": [0.05, 0.1] }
+  ]
+}

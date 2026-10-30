@@ -1,0 +1,91 @@
+{
+  "id": "E35",
+  "titulo": "Grossglockner – ¿Te quedas? (Decisiones límite #2)",
+  "nicho": "escalada",
+  "plantilla": "Grossglockner",
+  "verificado": true,
+  "fuentes": [
+    "CNN 19-feb-2026",
+    "BBC Mundo",
+    "Irish Times 20-feb-2026",
+    "Alpine Mag (ver docs/ideas/escalada.md, E35)"
+  ],
+  "nota_rigor": "Solo hechos de la ficha E35. Sin nombres. «Según la fiscalía» para la manta. El gesto de rechazo al helicóptero es dramatización visual de «rechazó la ayuda». Cuerpo en gris con escarcha, nada explícito.",
+  "ganchos_alternativos": [
+    "1 ★ Webcam «02:04», dos frontales; uno baja. «¿Te quedas?»",
+    "2 «Esta cámara grabó a un hombre bajando solo. Arriba se quedó su novia.»",
+    "3 «Fue a buscar ayuda. Y le condenaron por ello.»",
+    "4 «Un helicóptero vino a por ellos. Él lo rechazó.»",
+    "5 Ella, gris y con escarcha, a 50 m de la cumbre. «¿Te quedas?»"
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "webcam",
+      "titulo": "¿Te quedas?",
+      "texto": "Tu novia no puede dar un paso más."
+    },
+    {
+      "tipo": "texto",
+      "visual": "manta",
+      "titulo": "¿Te quedas?",
+      "texto": "Tú llevas una manta térmica en la mochila. ¿Te quedas o bajas a por ayuda?"
+    },
+    {
+      "tipo": "texto",
+      "visual": "webcam2",
+      "texto": "Él bajó. Esta cámara le grabó. Y un año después, un juez le condenó."
+    },
+    {
+      "tipo": "texto",
+      "visual": "manana",
+      "titulo": "4 veces arriba",
+      "texto": "Él era el experto: había subido esa montaña cuatro veces."
+    },
+    {
+      "tipo": "texto",
+      "visual": "noche",
+      "titulo": "50 m",
+      "texto": "Se les hizo de noche a cincuenta metros de la cumbre."
+    },
+    {
+      "tipo": "texto",
+      "visual": "helicoptero",
+      "titulo": "22:00",
+      "texto": "Hacia las diez llegó un helicóptero. Y él rechazó la ayuda.",
+      "pausa": 0.5
+    },
+    {
+      "tipo": "texto",
+      "visual": "color",
+      "titulo": "02:00",
+      "texto": "A las dos, la dejó para buscar ayuda. Según la fiscalía, ni usó la manta térmica."
+    },
+    {
+      "tipo": "texto",
+      "visual": "movil",
+      "titulo": "03:30",
+      "texto": "Avisó a las tres y media. El viento ya no dejaba subir a nadie."
+    },
+    {
+      "tipo": "texto",
+      "visual": "amanecer",
+      "texto": "Murió de hipotermia. A cincuenta metros de la cumbre.",
+      "pausa": 0.8
+    },
+    {
+      "tipo": "cifra",
+      "visual": "juzgado",
+      "titulo": "5 meses (suspendidos) + 9.600 €",
+      "cifra": "5 meses + 9.600 €",
+      "fuente": "CNN, 19-feb-2026",
+      "texto": "Cinco meses que no cumplirá. Él dice que fue un accidente."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "titulo": "¿Y la tuya?",
+      "texto": "¿Y tu pareja? ¿Te dejaría la manta?"
+    }
+  ]
+}

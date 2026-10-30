@@ -8,6 +8,9 @@ Tono: morbo de suceso (decisión de Andrés). Hechos: ver `docs/ideas/escalada.m
 4. «Un helicóptero vino a por ellos. Él le dijo que no hacía falta.»
 5. Cuerpo gris en la nieve a 50 m de la cumbre, rótulo «¿Te quedas?».
 
+## Guion v2.1 (30-oct, aprobado) — hechos solo de la ficha; «el color se le va» en vez de cadáver cómico
+Ver `guion.json`. Cambios sobre v2: «Decisiones límite #2» pequeño en la escena 1; «según la fiscalía» para la manta; sin botas de ella ni «ella iba detrás»; «murió de hipotermia» (no «la encontraron por la mañana»); «él dice que fue un accidente»; rótulo final «#3: el que empujó a su secuestrador» ≤1 s sin voz y bucle al plano 1.
+
 ## Guion v2 (~42 s) — tras crítico 7/10: manta como objeto-gancho, dos frontales en el fotograma 1, experiencia visible, cierre ≤3 s
 | # | Se ve | Se dice |
 |---|---|---|

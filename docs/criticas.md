@@ -22,3 +22,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 29-oct | E31 | stock | 4 (5,5) | ritual de nicho sin rótulo | — |
 | 29-oct | E3 | stock | 3 (4,5) | jerga pura tipo E6; sin voz | — |
 | 29-oct | E32 | stock | 2 | relleno | — |
+| 30-oct | E35 v2.1 | vídeo (hoja, tiempos simulados) | 7 | tramo 4–8 denso de horas (22:00/02:00/03:30), riesgo de saltos; el rótulo #3 de 0,9 s se lee justo. Aplicado: gancho partido (webcam + manta), «¿Te quedas?» desde 0,5 s, manta como prueba en el juicio | — |
