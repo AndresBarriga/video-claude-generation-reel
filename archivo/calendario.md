@@ -2,7 +2,7 @@
 
 | Fecha | Nicho | Vídeo | Estado |
 |---|---|---|---|
-| 9 nov | escalada | E14 Honnold (propuesta) | idea |
+| 9 nov | escalada | E14 Honnold (escalera de mano) | producido con voz, falta revisión de Andrés |
 | 11 nov | mascotas | M? por definir | idea |
 | 14 nov | escalada | E15 Tocando el vacío | final con voz (falta aprobar) |
 | 16 nov | mascotas | M? | idea |

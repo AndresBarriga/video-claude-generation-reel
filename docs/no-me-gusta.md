@@ -20,6 +20,10 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · (E11 v1) Vídeo de cuerpo que se queda en explicación: necesita conflicto o humor (en E11, el asegurador que se ríe desde abajo).
 - 2026-10-28 · (E11) Pedir al espectador que haga una prueba física: en la cama nadie la hace. Y la experiencia de Andrés: no le funcionó.
 - 2026-10-28 · (E11 v2) Experimento en laboratorio con plataforma elevadora: no se entendía.
+- 2026-10-28 · (E14) CTA tipo «para el vídeo en el metro en que te bajarías»: no hay a quién mandárselo ni nada especial.
+- 2026-10-28 · (E14) «Tú sudas en un tercer piso»: a mucha gente un tercer piso no le da miedo; el punto de partida debe ser universal (escalera de mano).
+- 2026-10-28 · (E14) Gestos a medias (la patada de kárate de perfil): o se representan bien o se quitan.
+- 2026-10-28 · (E14) Objetos mal colocados (prismáticos fuera de las manos): colocarlos con el esqueleto, no a ojo.
 - 2026-10-28 · (E3 v1) El bloque exterior como escenario de todo: «muy visto». Variar escenarios en cada vídeo (rocódromo, desplome, exterior).
 - 2026-10-28 · (E3 v1) Conformarse con un 6/10 del crítico: hay que subirlo antes de enseñar.
 - 2026-10-28 · (E3 v2) Macro de la mano cerrando regleta (pieza ManoRegleta): «quedan feas». No usar manos de perfil así.
@@ -41,6 +45,7 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-27 · (E11) Consejos breves y prácticos al final de un vídeo de cuerpo («respira», «baja el talón»).
 - 2026-10-28 · (E11) Formato por fases, con muchos cambios de plano: «la gente reacciona mejor a cambios, si no se aburre».
 - 2026-10-28 · (E11, idea de Andrés) El chiste de la caída mínima: en tu cabeza la chapa estaba lejísimos y era todo miedo.
+- 2026-10-28 · (E14) Caricaturas de personas reales: pocos rasgos muy marcados (Honnold: cara larga, ojos redondos de mirada fija, cejas rectas, expresión inexpresiva) y su atrezo icónico (camiseta roja, bolsa de magnesio, pies de gato).
 - 2026-10-28 · (E6 v3) «El vídeo es perfecto». Pegas: personajes sentados que parecen flotar y escaladores con los pies en el aire (poco real); mano del antebrazo poco clara.
 - 2026-10-28 · (E3) El plano del desplome enorme con el escalador diminuto («es un seis A»): le gusta mucho.
 - 2026-10-28 · (E3) Para el gancho, macro de una mano cerrando regleta mejor que un personaje temblando.
