@@ -2,7 +2,7 @@
 import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Escalador, POSES } from "../../piezas/Escalador";
-import { Arista, Camara, CieloNoche, CruzCumbre, EL, ELLA, Manta, Roca, Svg, Vaho, Viento, caderaApoyada, sueloY, type P } from "./comun";
+import { Arista, Camara, CieloNoche, EL, ELLA, Pico, Roca, Svg, Vaho, Viento, cabezaElla, caderaApoyada, sueloY, type P } from "./comun";
 import { fuenteTitulo } from "../../tema";
 
 export const PAREJA = { s: 1.6, xa: 360, xe: 640 };
@@ -19,18 +19,17 @@ export const Noche: React.FC<P> = ({ e, d }) => {
       <Svg>
         <CieloNoche id="no" />
         <rect x={-300} y={-500} width={1700} height={3000} fill="#E89A5A" opacity={0.4 * luz} />
-        <path d="M760 520 L900 260 L1040 540 Z" fill="#9FB0C6" /><CruzCumbre x={900} y={262} s={0.7} color="#C9D6E6" />
-        <path d="M860 280 L860 520" stroke="#fff" strokeWidth={5} strokeDasharray="14 12" />
+        <Pico cx={860} cimaY={300} base={1300} ancho={1000} />
+        <path d="M860 330 L860 980" stroke="#fff" strokeWidth={5} strokeDasharray="14 12" />
         <Arista base={1250} />
         <Roca x={xa} y={rocaDe(xa)} />
-        <Escalador x={xa} y={ha} quien="joe" s={s} aspecto={ELLA} pose="pie" poseB="sentado" t={sienta} cara="cerrados" mira={1} frontal sombra={sueloY(xa)} />
+        <Escalador x={xa} y={ha} quien="joe" s={s} aspecto={ELLA} Cabeza={cabezaElla()} pose="pie" poseB="sentado" t={sienta} cara="cerrados" mira={1} frontal sombra={sueloY(xa)} />
         <Vaho x={xa + 30 * s} y={ha - 150 * s} fuerza={1} />
         <Escalador x={xe} y={he} quien="joe" s={s} aspecto={EL} mochila cara="miedo" mira={-1} angulos={{ cabeza: 10 }} frontal sombra={sueloY(xe)} />
         <Vaho x={xe - 30 * s} y={he - 166 * s} fuerza={1} dir={-1} />
-        <Manta x={xe + 34 * s} y={he - 112 * s} s={1.3} />
         <Viento n={60} fuerza={1.3} op={0.6} />
       </Svg>
-      <div style={{ position: "absolute", left: 640, top: 340, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 84, color: "#fff", WebkitTextStroke: "10px #050B14", paintOrder: "stroke fill" }}>{e.titulo}</div>
+      <div style={{ position: "absolute", left: 880, top: 600, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 84, color: "#fff", WebkitTextStroke: "10px #050B14", paintOrder: "stroke fill" }}>{e.titulo}</div>
     </Camara>
   );
 };

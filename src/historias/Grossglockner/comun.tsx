@@ -150,3 +150,49 @@ export const Chova: React.FC<{ x: number; y: number; s?: number; mira?: 1 | -1 }
     </g>
   );
 };
+
+/** Macizo con la cumbre: pico nevado con masa que nace del suelo (no flota), aristas, sombra y la cruz arriba. (cx, cimaY) = cumbre. */
+export const Pico: React.FC<{ cx: number; cimaY: number; base?: number; ancho?: number; noche?: boolean }> = ({ cx, cimaY, base = 1500, ancho = 900, noche = true }) => {
+  const roca = noche ? "#27324A" : "#7E8B9E", rocaS = noche ? "#1B2438" : "#62708A", nieve = noche ? "#B9C8DC" : "#F2F6FA";
+  const izq = cx - ancho / 2, der = cx + ancho / 2;
+  return (
+    <g>
+      <path d={`M${izq} ${base} L${cx - 150} ${cimaY + 260} L${cx - 60} ${cimaY + 110} L${cx} ${cimaY} L${cx + 70} ${cimaY + 120} L${cx + 190} ${cimaY + 300} L${der} ${base} Z`} fill={roca} />
+      <path d={`M${cx} ${cimaY} L${cx + 70} ${cimaY + 120} L${cx + 190} ${cimaY + 300} L${der} ${base} L${cx + 40} ${base} L${cx + 20} ${cimaY + 200} Z`} fill={rocaS} />
+      <path d={`M${cx - 60} ${cimaY + 110} L${cx} ${cimaY} L${cx + 70} ${cimaY + 120} L${cx + 40} ${cimaY + 150} L${cx + 10} ${cimaY + 90} L${cx - 20} ${cimaY + 160} Z`} fill={nieve} />
+      <path d={`M${cx - 150} ${cimaY + 260} L${cx - 110} ${cimaY + 230} L${cx - 90} ${cimaY + 290} M${cx + 120} ${cimaY + 200} L${cx + 150} ${cimaY + 240}`} stroke={nieve} strokeWidth={10} fill="none" strokeLinecap="round" opacity={0.8} />
+      <CruzCumbre x={cx} y={cimaY + 2} s={0.55} color={noche ? "#DCE6EE" : "#3A4656"} />
+    </g>
+  );
+};
+
+/** Cabeza de ella (para Escalador `Cabeza`): melena larga en coleta que cae por la espalda, pestañas, labios; casco blanco.
+ *  `helada` 0–1: piel gris azulada, labios morados, escarcha en cejas, pestañas y casco. */
+export const cabezaElla = (helada = 0) => {
+  const C: React.FC<{ cara: import("../../piezas/Escalador").Cara }> = ({ cara }) => {
+    const piel = agris("#EBC3A0", helada, "#A9B6C4"), pielS = agris("#C99B78", helada, "#8794A4"), pelo = agris("#5A3A24", helada * 0.6, "#8C96A2");
+    const labio = agris("#C46A6A", helada, "#6E6A9C"), T = "#141B26", cerrados = cara === "cerrados" || helada > 0.5;
+    return (
+      <g>
+        {/* melena larga: coleta gruesa que cae por la espalda */}
+        <path d="M-24 -6 C-46 10 -50 46 -40 84 C-34 104 -22 112 -16 100 C-24 70 -20 36 -6 14 Z" fill={pelo} stroke={T} strokeWidth={3} />
+        <circle r={30} fill={piel} />
+        <path d="M-30 2 A30 30 0 0 0 -6 30" fill={pielS} opacity={0.6} />
+        {/* flequillo bajo el casco */}
+        <path d="M-26 -8 Q-8 -2 6 -12 Q14 -4 26 -10 L26 -18 L-26 -18 Z" fill={pelo} />
+        {/* casco */}
+        <path d="M-35 -8 A35 35 0 0 1 35 -8 L42 -4 L-35 -2 Z" transform="translate(0 -6)" fill={agris("#EEF1F4", helada * 0.3, "#DCE6EE")} />
+        {/* ojos con pestañas */}
+        {cerrados
+          ? <path d="M-1 6 Q6 10 13 6 M17 6 Q23 10 29 6" stroke={T} strokeWidth={3} fill="none" strokeLinecap="round" />
+          : <g><ellipse cx={6} cy={4} rx={5} ry={7} fill="#fff" /><ellipse cx={22} cy={4} rx={5} ry={7} fill="#fff" /><circle cx={7} cy={5} r={3} fill={T} /><circle cx={23} cy={5} r={3} fill={T} /></g>}
+        <path d="M1 1 L-2 -2 M17 1 L14 -2" stroke={T} strokeWidth={1.6} strokeLinecap="round" />
+        {/* boca */}
+        <path d={cara === "miedo" ? "M12 18 Q16 24 20 18 Z" : "M10 19 Q16 22 22 19"} fill={cara === "miedo" ? T : "none"} stroke={labio} strokeWidth={3.5} strokeLinecap="round" />
+        {/* escarcha */}
+        {helada > 0.05 && <g opacity={helada} fill="#F4F9FF">{Array.from({ length: 26 }).map((_, i) => { const a = i / 26; const [x, y] = i < 8 ? [-1 + a * 3.4 * 13, -1 + Math.sin(i) * 1.2] : i < 18 ? [-28 + (i - 8) * 6.4, -16 + Math.sin(i * 1.7) * 2] : [-10 + (i - 18) * 4.6, 24 + Math.cos(i) * 2]; return <circle key={i} cx={x} cy={y} r={0.9 + (i % 3) * 0.5} />; })}</g>}
+      </g>
+    );
+  };
+  return C;
+};

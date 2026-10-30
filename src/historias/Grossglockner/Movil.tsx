@@ -2,7 +2,7 @@
 import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Camara, CieloNoche, Hora, Svg, Viento, type P, T } from "./comun";
-import { Heli } from "./Helicoptero";
+import { Heli } from "./Heli";
 
 export const Movil: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame();
@@ -12,7 +12,7 @@ export const Movil: React.FC<P> = ({ e, d }) => {
     <Camara d={d} empuje={0.07} foco="50% 60%" sacudida={2}>
       <Svg>
         <CieloNoche id="mo" />
-        <Heli x={vx} y={vy} rot={Math.sin(f / 4) * 18} s={0.8} />
+        <Heli x={vx} y={vy} rot={Math.sin(f / 4) * 18} s={0.7} foco={false} />
         <Viento n={100} fuerza={2.2} op={0.65} />
         <g transform={`translate(${470 + vib} 1060) rotate(${-8 + vib / 2})`}>
           <rect x={-150} y={-260} width={300} height={540} rx={40} fill="#0E1420" stroke="#0B1624" strokeWidth={8} />

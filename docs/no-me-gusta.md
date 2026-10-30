@@ -27,6 +27,8 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · (E3 v3) Escalador colgado alto sin cuerda ni arnés: poco real. Si está alto, vía con arnés y cuerda.
 - 2026-10-28 · (E3) Voz y subtítulos que no dicen lo mismo (texto cambiado en ElevenLabs) → se desincroniza. Si se cambia el texto en ElevenLabs, avisar para actualizar `guion.json`.
 - 2026-10-28 · (E31) Mano que sujeta el cepillo «al revés» (dorso con nudillos arriba y el mango asomando): «muy malo». Ahora: mano por la palma, dedos cruzando el mango, pulgar encima (`Puno`).
+- 2026-10-30 · (E35) Objetos que no se entienden (manta dorada en la mochila en todos los planos, encima de la cara): mejor un inserto claro con etiqueta cuando se nombra.
+- 2026-10-30 · (E35) Picos como triángulo flotante con cruz; helicóptero «cutre»; gente flotando en el juicio; gesto que parece un saludo; rótulo final sin contexto («#3: …»).
 
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
@@ -44,3 +46,5 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-28 · Recordatorio de Andrés para todo vídeo: algo impactante al principio, que el espectador se reconozca («tú»), que explique algo y cambios de plano constantes.
 - 2026-10-28 · (E31) La presa limpia tiene que brillar mucho, con destellos («cositas shiny»): `Destellos` en `Cepillado.tsx`.
 - 2026-10-29 · Frenar ideas por respeto, mal gusto o verificación total: «somos una cuenta de Instagram, no una institución». Se prioriza viralidad; tono de suceso/morbo permitido (cadáver dibujado en gris sí). Límite que se mantiene: no inventar hechos concretos sobre personas reales identificables.
+- 2026-10-30 · (E35) Primer plano de la congelación (cara gris, escarcha, labios morados): sí, sin gore.
+- 2026-10-30 · (E35) Que las mujeres se lean como mujeres (melena larga) y cada personaje se distinga a primera vista.

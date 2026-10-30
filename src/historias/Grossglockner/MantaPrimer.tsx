@@ -1,22 +1,26 @@
-// Escena 1b: primer plano de su mochila de noche; la manta térmica dorada asoma y brilla con el frontal. «¿Te quedas?»
+// Inserto de la manta: primer plano de su mochila abierta con la manta térmica dorada (plegada, arrugada, brillante) y su etiqueta.
 import React from "react";
-import { useCurrentFrame } from "remotion";
-import { Camara, CieloNoche, Manta, Svg, Viento, type P } from "./comun";
+import { random, spring, useCurrentFrame } from "remotion";
+import { CieloNoche, PG, Svg, T } from "./comun";
 
-export const MantaPrimer: React.FC<P> = ({ d }) => {
-  const f = useCurrentFrame();
+export const MantaInserto: React.FC<{ f0: number }> = ({ f0 }) => {
+  const f = useCurrentFrame(), k = spring({ frame: f - f0, fps: 30, config: { damping: 14, stiffness: 160 } }), b = (Math.sin(f / 5) + 1) / 2;
   return (
-    <Camara d={d} empuje={0.08} foco="50% 55%">
+    <div style={{ position: "absolute", inset: 0, transform: `scale(${0.9 + 0.1 * k})`, opacity: k }}>
       <Svg>
-        <CieloNoche id="mp" />
-        <path transform={`translate(0 ${Math.abs(Math.sin(f / 6)) * -14})`} d="M200 1500 Q190 760 300 640 L760 640 Q880 760 870 1500 Z" fill="#3A4656" stroke="#0B1624" strokeWidth={10} />
-        <path d="M300 760 L780 760" stroke="#2A3442" strokeWidth={14} />
-        <rect x={420} y={880} width={230} height={150} rx={30} fill="#2E3A4A" stroke="#0B1624" strokeWidth={6} />
-        <g transform={`rotate(${Math.sin(f / 3) * 4} 540 640)`}><Manta x={540} y={640 + Math.abs(Math.sin(f / 6)) * -14} s={5.5} /></g>
-        <circle cx={540 + 60 * Math.sin(f / 12)} cy={600} r={170} fill="#FFF6D0" opacity={0.08} />
-        <Viento n={40} fuerza={1.2} op={0.5} />
+        <CieloNoche id="mi" estrellas={false} />
+        {/* mochila abierta */}
+        <path d="M170 1460 Q160 760 280 640 L800 640 Q920 760 910 1460 Z" fill="#3A4656" stroke="#0B1624" strokeWidth={10} />
+        <path d="M230 690 Q540 560 850 690 L850 760 Q540 650 230 760 Z" fill="#2A3442" stroke="#0B1624" strokeWidth={8} />
+        {/* manta térmica dorada saliendo de la mochila: pliegues y arrugas */}
+        <path d="M300 720 L420 520 L560 560 L700 480 L790 720 Z" fill={PG.oro} stroke="#7A5A10" strokeWidth={6} strokeLinejoin="round" />
+        {Array.from({ length: 9 }).map((_, i) => <path key={i} d={`M${330 + i * 50} ${700} L${360 + i * 45 + random(`m${i}`) * 30} ${560 + random(`n${i}`) * 60}`} stroke="#B8891E" strokeWidth={4} />)}
+        <path d="M430 540 L540 580 L660 510" stroke={PG.oroL} strokeWidth={14} strokeLinecap="round" opacity={0.5 + 0.5 * b} />
+        <path d="M380 640 L470 600" stroke="#fff" strokeWidth={8} strokeLinecap="round" opacity={0.4 * b} />
       </Svg>
-      
-    </Camara>
+      <div style={{ position: "absolute", top: 380, left: 0, right: 0, textAlign: "center" }}>
+        <span style={{ fontFamily: T.fuenteTexto, fontWeight: 800, fontSize: 56, color: "#0B1624", background: PG.oro, borderRadius: 18, padding: "8px 26px" }}>Manta térmica</span>
+      </div>
+    </div>
   );
 };
