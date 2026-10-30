@@ -107,6 +107,7 @@ Idea de Andrés: cómo empezó la escalada en Yosemite, el avión con marihuana,
 
 ## E35 Grossglockner 2025 «¿Te quedas o bajas?» (idea de Andrés, 29-oct) — hechos verificados
 Ene-2025, Grossglockner (3.798 m, arista Stüdlgrat): Kerstin G. (33) agotada a ~50 m de la cumbre, de noche y con viento. Su novio Thomas P. (más experto, había subido 4 veces) la deja ~2:00 para buscar ayuda y baja por el otro lado; la fiscalía dice que no usó manta térmica y avisó a las 3:30; antes, hacia las 22 h, rechazó la ayuda de un helicóptero. El viento impidió el rescate; ella murió de hipotermia. Una webcam le grabó bajando con el frontal. 19-feb-2026: condenado por homicidio por negligencia grave, 5 meses de cárcel suspendidos y ~9.600 € de multa; él dice que fue un accidente. Fuentes: CNN 19-feb-2026, BBC Mundo, Irish Times 20-feb-2026, Alpine Mag.
+Ampliación (30-oct, juicio): el helicóptero de la policía pasó hacia las 22:50 y él no hizo señal de socorro; un policía declaró que él le dijo que todo iba bien y que no necesitaban el helicóptero; según los investigadores ofrecieron ayuda varias veces (una por SMS) sin respuesta; puso el móvil en silencio; llamó a la policía de montaña hacia las 0:30 sin dejar claro que necesitaran ayuda. Fuentes: Irish Times, vol.at, Il Sole 24 Ore, Newswav.
 Reglas: sin apellidos, solo lo publicado, tono respetuoso (muerte reciente, familia viva); no dibujar el cuerpo.
 
 ## Ideas de Andrés (30-oct) — formato «cuerpo/fases» (H7: el que mejor convierte por vista)
