@@ -1,93 +1,75 @@
 {
-  "id": "E35",
-  "titulo": "Grossglockner – ¿Te quedas? (Decisiones límite #2)",
-  "nicho": "escalada",
-  "plantilla": "Grossglockner",
-  "verificado": true,
-  "fuentes": [
-    "CNN 19-feb-2026",
-    "BBC Mundo",
-    "Irish Times 20-feb-2026",
-    "Alpine Mag (ver docs/ideas/escalada.md, E35)"
-  ],
-  "nota_rigor": "Narración en segunda persona («tú» vives sus decisiones) y vuelta a la realidad («Eso no lo hiciste tú. Lo hizo él.»): los hechos son los de la ficha E35; el «tú» es un recurso hipotético, no atribuye nada nuevo a nadie. «Según la fiscalía» para la manta. Sin nombres. Cuerpo en gris, nada explícito; el vaho que se apaga cuenta la muerte. Detalles graciosos solo en planos neutros (subida, webcam, juzgado). Decisión de Andrés (30-oct): se mantiene «dijo que no» y el gesto de rechazo con los brazos aunque la investigación dice que no hizo ninguna señal; «dijo que no» se apoya en el testimonio del policía (le dijo que todo iba bien y que no necesitaban el helicóptero). Hora del helicóptero redondeada a «las diez» (fue hacia las 22:50).",
-  "ganchos_alternativos": [
-    "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
-    "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
-    "C · in medias res con ella ya gris (8): destripa el final y abre con la víctima muerta.",
-    "v4: «Esta cámara grabó a un hombre bajando solo…» (7,5)."
-  ],
-  "escenas": [
-    {
-      "tipo": "gancho",
-      "visual": "abre",
-      "titulo": "22:00",
-      "texto": "Este helicóptero venía a por ellos. Y él dijo que no."
-    },
-    {
-      "tipo": "texto",
-      "visual": "rebobina",
-      "titulo": "¿Te quedas?",
-      "texto": "Rebobina. Ahora el que decide eres tú."
-    },
-    {
-      "tipo": "texto",
-      "visual": "manana",
-      "titulo": "4 veces arriba",
-      "texto": "Eres el experto: has subido esta montaña cuatro veces."
-    },
-    {
-      "tipo": "texto",
-      "visual": "noche",
-      "titulo": "50 m",
-      "texto": "Se os hace de noche a cincuenta metros de la cumbre."
-    },
-    {
-      "tipo": "texto",
-      "visual": "helicoptero",
-      "titulo": "22:00",
-      "texto": "A las diez llega el helicóptero del principio. Y tú…"
-    },
-    {
-      "tipo": "texto",
-      "visual": "rechazo",
-      "texto": "…también dices que no."
-    },
-    {
-      "tipo": "texto",
-      "visual": "color",
-      "titulo": "02:00",
-      "texto": "A las dos, la dejas para ir a buscar ayuda. Llevas una manta térmica. Según la fiscalía, ni la usaste."
-    },
-    {
-      "tipo": "texto",
-      "visual": "movil",
-      "titulo": "03:30",
-      "texto": "Avisas a las tres y media. El viento ya no deja subir a nadie."
-    },
-    {
-      "tipo": "texto",
-      "visual": "amanecer",
-      "texto": "Ella muere de hipotermia. A cincuenta metros de la cumbre."
-    },
-    {
-      "tipo": "cifra",
-      "visual": "juzgado",
-      "titulo": "5 meses (suspendidos) + 9.600 €",
-      "cifra": "5 meses + 9.600 €",
-      "fuente": "CNN, 19-feb-2026",
-      "texto": "Eso no lo hiciste tú. Lo hizo él. Cinco meses que no cumplirá. Él dice que fue un accidente."
-    },
-    {
-      "tipo": "texto",
-      "visual": "mensaje",
-      "texto": "Lo difícil no es subir. Es decidir cuando ella ya no puede."
-    },
-    {
-      "tipo": "cierre",
-      "visual": "cierre",
-      "titulo": "¿Y la tuya?",
-      "texto": "¿Y tu pareja? ¿Te dejaría la manta?"
-    }
-  ]
+ "id": "E35",
+ "titulo": "Grossglockner – ¿Te quedas? (Decisiones límite #2)",
+ "nicho": "escalada",
+ "plantilla": "Grossglockner",
+ "verificado": true,
+ "fuentes": [
+  "CNN 19-feb-2026",
+  "BBC Mundo",
+  "Irish Times 20-feb-2026",
+  "Alpine Mag (ver docs/ideas/escalada.md, E35)"
+ ],
+ "nota_rigor": "v7 (31-oct): arranque con el dilema real en 2.ª persona («¿Te quedas?»). Lo legal va al principio y con prudencia: condenado en primera instancia (19-feb-2026, homicidio imprudente grave, 5 meses suspendidos), recurrido por defensa y fiscalía, sentencia NO firme (OLG Innsbruck); él se declara inocente. Sin «lo hizo él», sin «no cumplirá» y sin «dice que fue un accidente». «Según la fiscalía» para la manta. Sin humor ni detalles graciosos en este vídeo (la madre de ella sigue viva). Sin nombres. Cuerpo en gris, nada explícito.",
+ "ganchos_alternativos": [
+  "R ★ (elegida 31-oct, crítico 7): dilema real primero, 2.ª persona: «Tu novia no puede dar un paso más… ¿Te quedas con ella o bajas a por ayuda?» + 2.º gancho legal («Le pasó a un hombre de verdad… condenado en primera instancia… se declara inocente»).",
+  "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
+  "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
+  "C · in medias res con ella ya gris (8): destripa el final y abre con la víctima muerta.",
+  "v4: «Esta cámara grabó a un hombre bajando solo…» (7,5)."
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "noche",
+   "titulo": "¿Te quedas?",
+   "texto": "Tu novia no puede dar un paso más. Estáis a cincuenta metros de la cumbre, de noche, a unos veinte bajo cero. ¿Te quedas con ella o bajas a por ayuda?"
+  },
+  {
+   "tipo": "texto",
+   "visual": "juzgado",
+   "titulo": "Condenado en 1.ª instancia · recurrido",
+   "texto": "Le pasó a un hombre de verdad. La dejó para buscar ayuda. Un tribunal lo condenó en primera instancia y hay recurso. Él se declara inocente.",
+   "fuente": "CNN, 19-feb-2026 · Salzburg24, 23-jun-2026 (sentencia no firme)"
+  },
+  {
+   "tipo": "texto",
+   "visual": "helicoptero",
+   "titulo": "22:00",
+   "texto": "Así fue la noche. A las diez llega un helicóptero. Y tú…"
+  },
+  {
+   "tipo": "texto",
+   "visual": "rechazo",
+   "texto": "…también dices que no."
+  },
+  {
+   "tipo": "texto",
+   "visual": "color",
+   "titulo": "02:00",
+   "texto": "A las dos, la dejas para ir a buscar ayuda. Llevas una manta térmica. Según la fiscalía, ni la usaste."
+  },
+  {
+   "tipo": "texto",
+   "visual": "movil",
+   "titulo": "03:30",
+   "texto": "Avisas a las tres y media. El viento ya no deja subir a nadie."
+  },
+  {
+   "tipo": "texto",
+   "visual": "amanecer",
+   "texto": "Ella muere de hipotermia. A cincuenta metros de la cumbre."
+  },
+  {
+   "tipo": "texto",
+   "visual": "mensaje",
+   "texto": "Lo difícil no es subir. Es decidir cuando ella ya no puede."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "titulo": "¿Y la tuya?",
+   "texto": "¿Y tu pareja? ¿Se quedaría contigo?"
+  }
+ ]
 }

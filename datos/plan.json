@@ -37,11 +37,10 @@
    "id": "E35",
    "nombre": "E35 ¿Te quedas? (Decisiones límite #2)",
    "formato": "historia-dilema",
-   "estado": "Listo con arreglos",
+   "estado": "Guion v7 listo; falta voz y render",
    "bloqueos": [
-    "Gancho nuevo",
-    "Cierre legal (condena no firme, se declara inocente)",
-    "Voz nueva (Andrés, ~47 s)"
+    "Voz nueva (Andrés, ~50 s)",
+    "Render y revisión (~30 min)"
    ],
    "h": [
     "H1",
@@ -49,7 +48,7 @@
     "H12"
    ],
    "potencial": 4,
-   "por_que": "Dilema en 2.ª persona, como E15 (203K). Es la prueba más importante de la serie.",
+   "por_que": "Dilema real en 2.ª persona (receta E15, 203K) con lo legal al principio. Prueba H1, H9 y H12.",
    "riesgo": 3,
    "riesgo_txt": "Tema sensible (muerte real, caso en apelación) y arranque en 3.ª persona como E14/E36.",
    "esfuerzo": "1–2 h",
@@ -68,11 +67,11 @@
     "H1"
    ],
    "potencial": 2,
-   "por_que": "Base de 5K; el valor es lo que enseña: gancho (H5) frente a «no es un dilema» (H1).",
+   "por_que": "Descartado: el crítico a ciegas ya señala su gancho como fallo y con E36b se prueba H5.",
    "riesgo": 1,
    "riesgo_txt": "Casi ninguno; va como reel de prueba.",
    "esfuerzo": "30–45 min",
-   "slot": "trial"
+   "slot": "no"
   },
   {
    "id": "E3",
@@ -171,21 +170,23 @@
   },
   {
    "id": "E36b",
-   "nombre": "E36b Hippies con gancho nuevo (trial)",
+   "nombre": "E36b Hippies: «¿Te llevas un fardo?» (trial)",
    "formato": "historia-golpe-de-suerte",
-   "estado": "Por reordenar",
+   "estado": "Por rehacer el arranque",
    "bloqueos": [
-    "Gancho"
+    "Gancho nuevo (cara + dilema + coste)",
+    "Voz nueva (Andrés)"
    ],
    "h": [
-    "H5"
+    "H5",
+    "H12"
    ],
-   "potencial": 1,
-   "por_que": "Su gancho en papel ya era bueno y tiene 38 % de skip: probar otro gancho enseñaría menos que con E14.",
+   "potencial": 2,
+   "por_que": "Arranque con la receta E15 (tú + decisión + coste: los guardas). Prueba H5 y H12 con el vídeo de peor skip (38 %).",
    "riesgo": 2,
    "riesgo_txt": "El tema (drogas) puede limitar el alcance por sí solo.",
-   "esfuerzo": "30–45 min",
-   "slot": "no"
+   "esfuerzo": "45–60 min + voz",
+   "slot": "trial"
   }
  ]
 }
