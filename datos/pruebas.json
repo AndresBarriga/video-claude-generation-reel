@@ -197,9 +197,8 @@
   "limites": "Estilo y guion van juntos y ningún vídeo está marcado design todavía."
  },
  "H12": {
-  "texto": "Un vídeo «tuyo» (E35 o el próximo cuerpo) < 10K vistas a 48 h",
+  "texto": "Un vídeo «tuyo» (próximo cuerpo) < 10K vistas a 48 h",
   "videos": [
-   "E35",
    "Tendón"
   ],
   "ventana": 48,
@@ -216,6 +215,6 @@
   "impacto": 5,
   "calidad": 2,
   "coste": 1,
-  "limites": "Mezcla causas: E15 y E11 también tienen mejor gancho y tema universal. Falta una historia ajena sin «tú» con buen gancho para separarlas."
+  "limites": "E35 v16 está contado en 3.ª persona (solo la pregunta final es «tú»): ya no es una prueba limpia de «tuyo». Mezcla causas: E15 y E11 también tienen mejor gancho y tema universal."
  }
 }
