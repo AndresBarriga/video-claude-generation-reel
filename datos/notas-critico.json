@@ -66,5 +66,11 @@
   "fase": "A CIEGAS, retrospectiva (31-oct): 8/14, predijo 3–10K vistas",
   "hist": "Sin nota original. Revisión ciega sin resultados: 5; predijo «bajo» y acertó (5K)",
   "ciego": true
+ },
+ "E38": {
+  "nota": 6,
+  "orig": 5.5,
+  "fase": "propuesta v3 (nota de v2)",
+  "hist": "31-oct 5,5 → 6"
  }
 }

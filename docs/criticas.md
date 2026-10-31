@@ -39,3 +39,5 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 31-oct | Sin permiso (cuenta + Demodex/Bostezo/Respiración) | propuesta | 6,5 / 5,5 / 4 | Datos universales sin detalle de nicho ni identidad: alcance sin seguidores (riesgo E15); solo el bostezo tiene mecanismo en directo |
 | 31-oct | E37 (Cuerpo #2) v1 | propuesta | 5,5 | Explicación sin conflicto; «eternidad» no cumplida (+36 % ≈ 1,9 s); asegurador con el móvil normaliza el descuido | — |
 | 31-oct | E37 v2→v3 | propuesta | 6 | Pensamientos genéricos y estructura de E11; explicación tardía. Aplicado: pensamientos absurdos y concretos, sin la promesa a la roca, final del asegurador | — |
+| 31-oct | E38 v1 | propuesta | 5,5 | Lección sin conflicto; gancho = dato; envío «tecleando» sin destinatario |
+| 31-oct | E38 v2 | propuesta | 6 | Final adivinable; gancho en 3.ª persona con dos ideas; humor sin voz; alcance de nicho |

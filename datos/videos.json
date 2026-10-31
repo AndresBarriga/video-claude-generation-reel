@@ -58,5 +58,9 @@
  "E37": {
   "corto": "¿En qué pensaste al caer?",
   "desc": "Cuerpo #2: en una caída de 10 m (~1,4 s) te dio tiempo a pensar en tu hipoteca. Humor + el dato del +36 % de memoria; secuela de E11."
+ },
+ "E38": {
+  "corto": "Cero músculos en los dedos",
+  "desc": "Cuerpo #3: un chasquido en el dedo y la pregunta de quién falla; el antebrazo tira de los dedos con tendones y una anilla cede. Mano de rayos X con hilos naranjas."
  }
 }

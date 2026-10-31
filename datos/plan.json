@@ -201,6 +201,28 @@
    "riesgo_txt": "Casi ninguno; solo no seguidores.",
    "esfuerzo": "8 min de render",
    "slot": "trial"
+  },
+  {
+   "id": "E38",
+   "nombre": "E38 Cero músculos en los dedos (Cuerpo #3, mano de rayos X)",
+   "formato": "cuerpo-fases",
+   "estado": "Propuesta v3 (crítico 6/10 en v2); falta tu OK y boceto de la mano",
+   "bloqueos": [
+    "Tu OK",
+    "Boceto de la mano",
+    "Producción",
+    "Voz"
+   ],
+   "h": [
+    "H7",
+    "H12"
+   ],
+   "potencial": 6,
+   "por_que": "Cuerpo por dentro, la apuesta con más datos; la mano se reutiliza en E39.",
+   "riesgo": 3,
+   "riesgo_txt": "Explicador de nicho: techo 15–30K (crítico); la mano puede quedar fea (ManoRegleta, 28-oct).",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
   }
  ]
 }
