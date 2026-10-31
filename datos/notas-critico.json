@@ -52,5 +52,19 @@
   "orig": 5,
   "fase": "propuesta v2",
   "hist": "29-oct v1 5 · v2 6"
+ },
+ "E15": {
+  "nota": 6.5,
+  "orig": 6.5,
+  "fase": "A CIEGAS, retrospectiva (guion v3, 31-oct): 10/14, predijo 3–10K vistas",
+  "hist": "Sin nota original. Revisión ciega sin resultados: 6,5; predijo «bajo» y fue viral (203K)",
+  "ciego": true
+ },
+ "E14": {
+  "nota": 5,
+  "orig": 5,
+  "fase": "A CIEGAS, retrospectiva (31-oct): 8/14, predijo 3–10K vistas",
+  "hist": "Sin nota original. Revisión ciega sin resultados: 5; predijo «bajo» y acertó (5K)",
+  "ciego": true
  }
 }
