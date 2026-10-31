@@ -1,0 +1,54 @@
+{
+ "E15": {
+  "corto": "¿Cortas?",
+  "desc": "Tocando el vacío: tu amigo cuelga de tu cuerda, ¿cortas? Dilema de vida o muerte."
+ },
+ "E11": {
+  "corto": "Pierna de Elvis",
+  "desc": "Las 5 fases de la pierna de Elvis: por qué te tiembla la pierna al mirar abajo."
+ },
+ "E6": {
+  "corto": "Último pegue",
+  "desc": "Humor de bloque: el «último pegue» que nunca es el último; yemas rotas, batería 40→1 %."
+ },
+ "E14": {
+  "corto": "Honnold",
+  "desc": "Honnold sin cuerda en El Capitán: 884 m y su amígdala ni se enciende. Abre en una escalera de mano."
+ },
+ "E30": {
+  "corto": "Beta no pedida",
+  "desc": "Tres colegas te dan betas contradictorias y encadenas ignorándolos. Remate: «yo no he dicho nada»."
+ },
+ "E36": {
+  "corto": "Hippies y avión",
+  "desc": "Stonemasters: escaladores pobres, un avión con marihuana, LSD y Midnight Lightning."
+ },
+ "E35": {
+  "corto": "¿Te quedas?",
+  "desc": "Decisiones límite #2 (Grossglockner): ¿te quedas con ella o bajas a por ayuda? Muere a 50 m de la cumbre."
+ },
+ "E3": {
+  "corto": "Escalador→Español",
+  "desc": "Traductor de jerga: «es un quinto», «un cazo», «te porteo». Lo que dice un escalador vs lo que significa."
+ },
+ "E31": {
+  "corto": "Cepillar presas",
+  "desc": "Ritual de cepillar presas, estilo ASMR. Sin publicar (crítico 5,5)."
+ },
+ "E31B": {
+  "corto": "Cepillar presas B",
+  "desc": "Variante de E31 con rótulo."
+ },
+ "E32": {
+  "corto": "Cepillar presas (descartado)",
+  "desc": "Otra versión de cepillar presas; relleno, descartada."
+ },
+ "E34": {
+  "corto": "Everest ¿te paras?",
+  "desc": "Propuesta: en el Everest, ¿te paras a ayudar a alguien que se muere? (crítico 6)."
+ },
+ "E6-D": {
+  "corto": "Último pegue (inicio D)",
+  "desc": "Variante de inicio de E6; duplicado, descartada."
+ }
+}

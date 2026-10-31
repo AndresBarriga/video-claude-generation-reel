@@ -43,6 +43,8 @@ const data = {
   ideas: bloques.filter((b) => !/Cola/i.test(b.k)),
   pruebas: JSON.parse(read('datos/pruebas.json') || '{}'),
   cuenta: JSON.parse(read('datos/cuenta.json') || '{}'),
+  videos: JSON.parse(read('datos/videos.json') || '{}'),
+  criterios: JSON.parse(read('datos/criterios.json') || '{}'),
 };
 
 const css = fs.readFileSync(path.join(here, 'dashboard.css'), 'utf8');
@@ -51,17 +53,20 @@ const json = JSON.stringify(data).replace(/</g, '\\u003c');
 
 const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>@ultimo.pegue · Dashboard</title><style>${css}</style></head><body>
-<header class="top"><div><h1>@ultimo.pegue</h1><div class="sub" id="fresh"></div></div><div class="kpis" id="kpis"></div></header>
+<header class="top"><div><h1>@ultimo.pegue</h1><div class="sub" id="fresh"></div></div><nav class="nav"><button data-tab="panel" class="on">Panel</button><button data-tab="crit">Criterios de viralidad</button></nav><div class="kpis" id="kpis"></div></header>
 <main>
+<div id="pg-panel">
 <section><h2>Qué hacer ahora <small>sale de las hipótesis, los vídeos y la cola</small></h2><div id="acciones"></div></section>
-<section><h2>Hipótesis <small>el centro: cada una con su prueba y el estado en vivo de los vídeos que la deciden</small></h2>
-<div class="bar2" id="hfiltros"></div><div class="hgrid" id="hip"></div></section>
+<section><h2>Hipótesis <small>lo que estamos validando, por qué importa y con qué calidad podemos validarlo</small></h2>
+<div id="hmap"></div><div class="bar2" id="hfiltros"></div><div class="hgrid" id="hip"></div></section>
 <section><h2>Vídeos</h2><div class="bar2" id="vfiltros"></div><div class="tw"><table id="vt"></table></div></section>
 <section class="two"><div><h2>Añadir o corregir una medición <small>vista previa</small></h2><div id="form"></div></div>
 <div><h2>Cambios pendientes de guardar</h2><div id="cambios"></div></div></section>
 <section><h2>Audiencia y cuenta</h2><div class="g3" id="aud"></div></section>
 <section><h2>Cola e ideas</h2><div id="ideas"></div></section>
-<footer class="sub">Fuentes: datos/publicados.csv · datos/cuenta.json · datos/pruebas.json · docs/aprendizajes.md · docs/ideas/escalada.md · videos/escalada/*/ficha.md · Regenerar: <code>npm run dashboard</code> · Medir: <code>npm run medir -- E15 vistas=… seg=…</code></footer>
+</div>
+<div id="pg-crit" hidden></div>
+<footer class="sub">Fuentes: datos/publicados.csv · datos/cuenta.json · datos/pruebas.json · datos/videos.json · datos/criterios.json · docs/aprendizajes.md · docs/viralidad.md · docs/ideas/escalada.md · fichas · Regenerar: <code>npm run dashboard</code> · Medir: <code>npm run medir -- E15 vistas=… seg=…</code></footer>
 </main>
 <aside id="drawer" class="drawer" hidden></aside>
 <script type="application/json" id="data">${json}</script>

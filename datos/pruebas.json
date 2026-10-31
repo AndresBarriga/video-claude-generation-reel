@@ -1,14 +1,199 @@
 {
-  "_ayuda": "Pruebas comprobables de cada hipótesis de docs/aprendizajes.md. videos = ids o palabras clave de la cola (docs/ideas/escalada.md). ventana = horas. refuta_si: m = vistas|segk|envk|skip_pct, op = < <= > >=. modo: 'todos' (refuta si todos los vídeos la refutan) o 'alguno'. Al cambiar una hipótesis, actualiza su prueba aquí.",
-  "H1": { "texto": "Los 2 próximos dilemas < 20K vistas a 48 h", "videos": ["E35", "Caldwell"], "ventana": 48, "refuta_si": [{ "m": "vistas", "op": "<", "v": 20000 }], "modo": "todos" },
-  "H2": { "texto": "Un humor con jerga con envíos > 4/1k", "videos": ["E30", "E3"], "ventana": 48, "refuta_si": [{ "m": "envk", "op": ">", "v": 4 }], "modo": "alguno" },
-  "H3": { "texto": "Un viral con ≥ 1 seg./1k", "videos": ["E15"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": ">=", "v": 1 }], "modo": "alguno", "nota": "E11 (66K vistas, 2,0 seg./1k) la refutaría si cuenta como viral universal. Decidir si E11 es «viral»." },
-  "H4": { "manual": "Ordenar la cuadrícula y ver si sube el visita→seguir (necesita visitas al perfil por vídeo)." },
-  "H5": { "manual": "Re-subir E14 con otro gancho y comparar el skip." },
-  "H6": { "manual": "Necesita ≥ 8 vídeos con nota del crítico para correlacionar." },
-  "H7": { "texto": "El próximo «cuerpo/fases» < 0,8 seg./1k", "videos": ["Tendón"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": "<", "v": 0.8 }], "modo": "alguno" },
-  "H8": { "texto": "E30 y pies de gato < 0,8 seg./1k", "videos": ["E30", "Pies de gato"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": "<", "v": 0.8 }], "modo": "todos" },
-  "H9": { "texto": "E35 (#2) ≤ 0,35 seg./1k, como E15", "videos": ["E35"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": "<=", "v": 0.35 }], "modo": "alguno" },
-  "H10": { "texto": "E36 < 10K vistas o < 0,8 seg./1k a 48 h", "videos": ["E36"], "ventana": 48, "refuta_si": [{ "m": "vistas", "op": "<", "v": 10000 }, { "m": "segk", "op": "<", "v": 0.8 }], "modo": "alguno" },
-  "H11": { "texto": "Skip de vídeos `design` ≥ mediana de `codigo`", "estilo": "design", "metrica": "skip_pct", "vs": "codigo", "nota": "Ningún vídeo está marcado `design` en el CSV (E36 consta como `codigo`)." }
+ "_ayuda": "Pruebas comprobables de cada hipótesis de docs/aprendizajes.md. videos = ids o palabras clave de la cola (docs/ideas/escalada.md). ventana = horas. refuta_si: m = vistas|segk|envk|skip_pct, op = < <= > >=. modo: 'todos' (refuta si todos los vídeos la refutan) o 'alguno'. Al cambiar una hipótesis, actualiza su prueba aquí. Pesos (estimación editable): impacto 1-5 = cuánto cambia la estrategia; calidad 1-5 = lo buena que es nuestra forma de validarla; coste 1-3 = esfuerzo de probarla. Prioridad = impacto × calidad / coste.",
+ "H1": {
+  "texto": "Los 2 próximos dilemas < 20K vistas a 48 h",
+  "videos": [
+   "E35",
+   "Caldwell"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "vistas",
+    "op": "<",
+    "v": 20000
+   }
+  ],
+  "modo": "todos",
+  "importa": "Decide si la serie «Decisiones límite» (la apuesta principal, ~60 % del plan) es el camino.",
+  "decide": "Seguir o parar la serie de dilemas",
+  "impacto": 5,
+  "calidad": 3,
+  "coste": 2,
+  "limites": "n=1 a favor. E35 mezcla dilema + tema trágico + serie, así que no aísla la causa. Falta Caldwell."
+ },
+ "H2": {
+  "texto": "Un humor con jerga con envíos > 4/1k",
+  "videos": [
+   "E30",
+   "E3"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "envk",
+    "op": ">",
+    "v": 4
+   }
+  ],
+  "modo": "alguno",
+  "importa": "Decide si el humor con jerga merece producción o es solo relleno barato.",
+  "decide": "Cuánto humor-jerga producir",
+  "impacto": 2,
+  "calidad": 2,
+  "coste": 1,
+  "limites": "E6 y E30 difieren en más cosas que la jerga (público, formato)."
+ },
+ "H3": {
+  "texto": "Un viral con ≥ 1 seg./1k",
+  "videos": [
+   "E15"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "segk",
+    "op": ">=",
+    "v": 1
+   }
+  ],
+  "modo": "alguno",
+  "nota": "E11 (66K vistas, 2,0 seg./1k) la refutaría si cuenta como viral universal. Decidir si E11 es «viral».",
+  "importa": "Define si el objetivo es alcance o conversión y cómo leer un viral.",
+  "decide": "Qué métrica mandar: vistas o seg./1k",
+  "impacto": 3,
+  "calidad": 2,
+  "coste": 1,
+  "limites": "«Viral» no está definido; E11 (66K) la contradice si cuenta como viral."
+ },
+ "H4": {
+  "manual": "Ordenar la cuadrícula y ver si sube el visita→seguir (necesita visitas al perfil por vídeo).",
+  "importa": "La conversión visita→seguir es una palanca barata (bio, cuadrícula) que multiplica todo lo demás.",
+  "decide": "Si hay que cuidar la cuadrícula/bio antes que producir más",
+  "impacto": 4,
+  "calidad": 2,
+  "coste": 1,
+  "limites": "Faltan visitas al perfil por vídeo; habría que cambiar el perfil y medir antes/después."
+ },
+ "H5": {
+  "manual": "Re-subir E14 con otro gancho y comparar el skip.",
+  "importa": "El skip es el factor que más pesa en la distribución: si es el gancho, se arregla en cada vídeo.",
+  "decide": "Dónde poner el esfuerzo: ganchos o temas",
+  "impacto": 5,
+  "calidad": 4,
+  "coste": 1,
+  "limites": "Prueba limpia: mismo vídeo, solo cambia el arranque. Con ~4K vistas se mide bien el skip."
+ },
+ "H6": {
+  "manual": "Necesita ≥ 8 vídeos con nota del crítico para correlacionar.",
+  "importa": "Decide si el crítico y la puntuación 12/14 siguen siendo listón para publicar (hoy bloquean y cuestan tiempo).",
+  "decide": "Quitar o mantener el listón ≥7",
+  "impacto": 4,
+  "calidad": 3,
+  "coste": 1,
+  "limites": "n=4–6 con nota. La nota se pone antes de ver el resultado, así que mide bien, pero la muestra es pequeña."
+ },
+ "H7": {
+  "texto": "El próximo «cuerpo/fases» < 0,8 seg./1k",
+  "videos": [
+   "Tendón"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "segk",
+    "op": "<",
+    "v": 0.8
+   }
+  ],
+  "modo": "alguno",
+  "importa": "E11 es el mejor motor de seguidores por vídeo: si «cuerpo por dentro» se repite, es el formato principal.",
+  "decide": "Si el formato principal pasa a ser cuerpo/fases",
+  "impacto": 5,
+  "calidad": 3,
+  "coste": 2,
+  "limites": "n=1. E11 mezcla cuerpo + humor + serie de fases."
+ },
+ "H8": {
+  "texto": "E30 y pies de gato < 0,8 seg./1k",
+  "videos": [
+   "E30",
+   "Pies de gato"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "segk",
+    "op": "<",
+    "v": 0.8
+   }
+  ],
+  "modo": "todos",
+  "importa": "Decide si el humor/identidad sirve para convertir aunque alcance poco.",
+  "decide": "Si el humor de identidad entra en el plan",
+  "impacto": 3,
+  "calidad": 2,
+  "coste": 2,
+  "limites": "E30 es un solo vídeo; falta pies de gato."
+ },
+ "H9": {
+  "texto": "E35 (#2) ≤ 0,35 seg./1k, como E15",
+  "videos": [
+   "E35"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "segk",
+    "op": "<=",
+    "v": 0.35
+   }
+  ],
+  "modo": "alguno",
+  "importa": "La serie numerada es el motivo para seguir la cuenta; si no sube la conversión, hay que buscar otro motivo.",
+  "decide": "Si la serie numerada es la forma de retener",
+  "impacto": 4,
+  "calidad": 2,
+  "coste": 1,
+  "limites": "E35 no aísla el «en la próxima…» del tema."
+ },
+ "H10": {
+  "texto": "E36 < 10K vistas o < 0,8 seg./1k a 48 h",
+  "videos": [
+   "E36"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "vistas",
+    "op": "<",
+    "v": 10000
+   },
+   {
+    "m": "segk",
+    "op": "<",
+    "v": 0.8
+   }
+  ],
+  "modo": "alguno",
+  "importa": "Decide si las historias de cultura escaladora (Stonemasters…) merecen producción.",
+  "decide": "Si seguir con historias de cultura",
+  "impacto": 3,
+  "calidad": 2,
+  "coste": 1,
+  "limites": "Un solo vídeo; los datos preliminares ya la refutarían (6K vistas, 0,33 seg./1k a 18 h)."
+ },
+ "H11": {
+  "texto": "Skip de vídeos `design` ≥ mediana de `codigo`",
+  "estilo": "design",
+  "metrica": "skip_pct",
+  "vs": "codigo",
+  "nota": "Ningún vídeo está marcado `design` en el CSV (E36 consta como `codigo`).",
+  "importa": "Decide si compensa producir con Claude Design frente al código.",
+  "decide": "Cuánto invertir en Design",
+  "impacto": 3,
+  "calidad": 1,
+  "coste": 3,
+  "limites": "Estilo y guion van juntos y ningún vídeo está marcado design todavía."
+ }
 }
