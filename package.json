@@ -14,7 +14,8 @@
     "whisper": "node tools/whisper.mjs",
     "fotograma": "node tools/fotograma.mjs",
     "hoja": "node tools/hoja.mjs",
-    "sonido": "node tools/sonido.mjs"
+    "sonido": "node tools/sonido.mjs",
+    "dashboard": "node tools/dashboard.mjs"
   },
   "engines": {
     "node": ">=20"
