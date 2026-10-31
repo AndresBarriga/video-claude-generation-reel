@@ -90,13 +90,13 @@
    "slot": "trial"
   },
   {
-   "id": "CUERPO2",
-   "nombre": "Cuerpo #2: secuela de E11 (miedo a soltar / dedos)",
+   "id": "E37",
+   "nombre": "E37 ¿En qué pensaste al caer? (Cuerpo #2, secuela de E11)",
    "formato": "cuerpo-fases",
-   "estado": "Por producir (propuesta + crítico + voz)",
+   "estado": "Propuesta v3 (crítico 6/10): pendiente de tu OK",
    "bloqueos": [
-    "Propuesta",
-    "Producción",
+    "Tu OK",
+    "Producción (3–4 h)",
     "Voz"
    ],
    "h": [

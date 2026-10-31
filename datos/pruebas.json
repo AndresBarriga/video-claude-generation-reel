@@ -96,7 +96,7 @@
  "H7": {
   "texto": "El próximo «cuerpo/fases» < 0,8 seg./1k",
   "videos": [
-   "Tendón"
+   "E37"
   ],
   "ventana": 48,
   "refuta_si": [
@@ -200,7 +200,7 @@
   "texto": "Un vídeo «tuyo» (E35 en 2.ª persona o el próximo cuerpo) < 10K vistas a 48 h",
   "videos": [
    "E35",
-   "Tendón"
+   "E37"
   ],
   "ventana": 48,
   "refuta_si": [

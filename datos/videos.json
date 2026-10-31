@@ -54,5 +54,9 @@
  "E35B": {
   "corto": "¿Te quedas? (3.ª persona)",
   "desc": "Misma historia que E35 contada en 3.ª persona, como reel de prueba para comparar el skip con la versión en «tú»."
+ },
+ "E37": {
+  "corto": "¿En qué pensaste al caer?",
+  "desc": "Cuerpo #2: en una caída de 10 m (~1,4 s) te dio tiempo a pensar en tu hipoteca. Humor + el dato del +36 % de memoria; secuela de E11."
  }
 }
