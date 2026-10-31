@@ -13,7 +13,7 @@ Comenta QUEDO o BAJO.
 
 #divorcioalpino #grossglockner #alpinismo #escalada #montaña
 
-**Comentario fijado:** Sentencia de 1.ª instancia (19-feb-2026) recurrida por defensa y fiscalía: no es firme. Fuentes: CNN, Irish Times, Salzburg24. Y tú, ¿QUEDO o BAJO?
+**Comentario fijado:** Yo bajo. Quedarse sin refugio a −20 °C es morir los dos. ¿O me equivoco? (la nota legal va en la descripción)
 
 **Portada:** primer fotograma (ella sentada y él de pie; rótulo «A 50 METROS», «50 m», «−20 °C»).
 
