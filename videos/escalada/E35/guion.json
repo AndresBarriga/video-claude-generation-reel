@@ -10,7 +10,7 @@
   "Irish Times 20-feb-2026",
   "Alpine Mag (ver docs/ideas/escalada.md, E35)"
  ],
- "nota_rigor": "v10 (31-oct): vuelve a la v6 con arreglos mínimos de hechos. Helicóptero de rescate ~22:50 (fuentes: 22:30–22:50): no hizo ninguna señal de socorro (no consta que lo rechazara de palabra), por eso «no pidió ayuda» y sin gesto de rechazo. Salida a las 03:30 (ambas partes). «Según la fiscalía» para manta térmica y llamadas. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por defensa y fiscalía, NO firme; él se declara inocente; la sentencia lo trató como líder de facto. Cierre en masculino para el público: «¿Tú te quedarías? ¿Y tu compañero de cordada?». Sin humor, sin nombres, cuerpo en gris, nada explícito.",
+ "nota_rigor": "v11 (31-oct): v6 con arreglos mínimos de hechos y del crítico (7/10). Helicóptero ~22:50 (fuentes 22:30–22:50): no hizo señal de socorro (él dice que aún no estaban en apuros); no consta que lo rechazara de palabra. Experiencia: según su propia declaración había subido la montaña 14–15 veces (corregido: la ficha decía «cuatro»); el tribunal lo trató como líder de facto. Salida a las 02:00 según el relato de la acusación (él dice que avisó a las 03:30 de que bajaba solo). «Según la fiscalía» para manta y móvil en silencio. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por defensa y fiscalía, NO firme; él se declara inocente; la madre de ella lo defendió en el juicio. El tribunal estimó que no la dejó «a propósito» (negligencia, no dolo). Sin humor, sin nombres, cuerpo en gris, nada explícito.",
  "ganchos_alternativos": [
   "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
   "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
@@ -33,8 +33,8 @@
   {
    "tipo": "texto",
    "visual": "manana",
-   "titulo": "4 veces arriba",
-   "texto": "Eres el experto: has subido esta montaña cuatro veces."
+   "titulo": "14 veces arriba",
+   "texto": "Para el tribunal, eres el experto: has subido esta montaña catorce veces."
   },
   {
    "tipo": "texto",
@@ -51,18 +51,18 @@
   {
    "tipo": "texto",
    "visual": "rechazo",
-   "texto": "…tampoco pides ayuda."
+   "texto": "…no haces ninguna señal. Aún no estáis en apuros."
   },
   {
    "tipo": "texto",
    "visual": "color",
-   "titulo": "03:30",
-   "texto": "A las tres y media, la dejas para ir a buscar ayuda. Llevas una manta térmica. Según la fiscalía, ni la usaste."
+   "titulo": "02:00",
+   "texto": "A las dos, la dejas para ir a buscar ayuda. Llevas una manta térmica. Según la fiscalía, ni la usaste."
   },
   {
    "tipo": "texto",
    "visual": "movil",
-   "texto": "Según la fiscalía, tampoco contestas a las llamadas de rescate."
+   "texto": "Según la fiscalía, tenías el móvil en silencio."
   },
   {
    "tipo": "texto",
@@ -73,18 +73,18 @@
    "tipo": "texto",
    "visual": "juzgado",
    "titulo": "Condenado en 1.ª instancia · recurrido",
-   "texto": "Eso no lo hiciste tú. Lo hizo él, según la sentencia. Está recurrida. Él se declara inocente."
+   "texto": "Eso no lo hiciste tú. Un tribunal lo condenó, pero hay recurso y él se declara inocente."
   },
   {
    "tipo": "texto",
    "visual": "mensaje",
-   "texto": "Lo difícil no es subir. Es decidir cuando ella ya no puede."
+   "texto": "La madre de ella lo defendió."
   },
   {
    "tipo": "cierre",
    "visual": "cierre",
    "titulo": "¿Y el tuyo?",
-   "texto": "¿Tú te quedarías? ¿Y tu compañero de cordada?"
+   "texto": "¿Y tu compañero de cordada? ¿Se quedaría contigo?"
   }
  ]
 }

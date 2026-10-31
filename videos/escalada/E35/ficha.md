@@ -1,5 +1,5 @@
 # E35 — ficha
-- **Estado:** v10 (31-oct): vuelve a la v6 con arreglos mínimos de hechos y cierre en masculino; hoja con tiempos simulados; falta voz nueva y render
+- **Estado:** v11 (31-oct): vuelve a la v6 con arreglos mínimos de hechos (14 veces, no 4) y cierre en masculino; hoja con tiempos simulados; falta voz nueva y render
 - **Formato:** historia-dilema (Decisiones límite #2)
 - **Resultado:** — (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
