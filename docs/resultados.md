@@ -32,3 +32,8 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 - E14: el gancho falla (skip 28 %), no necesariamente el tema.
 - 30-oct 11:00 · E11 a 17,5K vistas y 22 seguidores (**1,26/1k**, el mejor por vista; 2.º en bruto tras E15). Formato «cuerpo/fases»: ni humor ni historia → tercer candidato del test.
 - Pendiente: medición a 7 días de los cuatro (~4-nov) y envíos de E11.
+
+## Cuenta, 31-oct 16:53 (30 días, grabación de Insights)
+- 284 K visualizaciones, 186,9 K espectadores, +78 seguidores netos (231 en total, +51 %), 17 K interacciones, 510 visitas al perfil, 0 toques al enlace. 99,4 % de lo que se ve es de no seguidores: el crecimiento es 100 % algoritmo.
+- Audiencia (seguidores): hombres 93,9 %; 25–34 años 53 %, 35–44 22,7 %, 18–24 16,7 %. Países: España 34,6 %, Chile 21,8 %, México 11,5 %, Colombia 7,7 %, Ecuador 5,1 % (≈46 % Latinoamérica). Seguidores más activos de tarde-noche (pico ~21 h CET).
+- Ratio de envíos: E11 1,3 % · E15 0,55 % · E14 0,56 % · E36 0,45 % · E30 0,25 % · E6 0,14 %.
