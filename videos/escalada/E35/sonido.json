@@ -13,39 +13,7 @@
       "bucle": true,
       "fundido": [
         0.0,
-        0.15
-      ]
-    },
-    {
-      "nombre": "zas",
-      "inicio": {
-        "escena": "juzgado"
-      },
-      "duracion": 0.5,
-      "volumen": 0.6
-    },
-    {
-      "nombre": "golpe",
-      "inicio": {
-        "escena": "juzgado",
-        "palabra": "condenó"
-      },
-      "duracion": 0.6,
-      "volumen": 0.7
-    },
-    {
-      "nombre": "viento",
-      "inicio": {
-        "escena": "helicoptero"
-      },
-      "fin": {
-        "escena": "amanecer"
-      },
-      "volumen": 0.35,
-      "bucle": true,
-      "fundido": [
-        0.3,
-        0.3
+        0.2
       ]
     },
     {
@@ -89,22 +57,6 @@
       "volumen": 0.7
     },
     {
-      "nombre": "rotor",
-      "inicio": {
-        "escena": "movil",
-        "mas": 0.6
-      },
-      "fin": {
-        "escena": "amanecer"
-      },
-      "volumen": 0.35,
-      "bucle": true,
-      "fundido": [
-        0.2,
-        0.3
-      ]
-    },
-    {
       "silencio": true,
       "inicio": {
         "escena": "amanecer",
@@ -114,9 +66,26 @@
       "duracion": 0.8
     },
     {
+      "nombre": "zas",
+      "inicio": {
+        "escena": "juzgado"
+      },
+      "duracion": 0.5,
+      "volumen": 0.6
+    },
+    {
+      "nombre": "golpe",
+      "inicio": {
+        "escena": "juzgado",
+        "palabra": "condenó"
+      },
+      "duracion": 0.6,
+      "volumen": 0.7
+    },
+    {
       "nombre": "viento",
       "inicio": {
-        "escena": "mensaje"
+        "escena": 6
       },
       "volumen": 0.3,
       "bucle": true,
