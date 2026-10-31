@@ -1,5 +1,5 @@
 # E35 — ficha
-- **Estado:** v12 (31-oct): gancho con el titular + «divorcio alpino», hoja con tiempos simulados; falta voz nueva y render
+- **Estado:** v13 (31-oct): gancho con el hecho conocido, rehook con la grabación del helicóptero; hoja con tiempos simulados; falta voz nueva y render
 - **Formato:** historia-dilema (Decisiones límite #2)
 - **Resultado:** — (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
@@ -15,6 +15,6 @@ Comenta QUEDO o BAJO.
 
 **Comentario fijado:** Sentencia de 1.ª instancia (19-feb-2026) recurrida por defensa y fiscalía: no es firme. Fuentes: CNN, Irish Times, Salzburg24. Y tú, ¿QUEDO o BAJO?
 
-**Portada:** primer fotograma (ella sentada y él de pie; rótulo «DIVORCIO ALPINO», «50 m», «−20 °C»).
+**Portada:** primer fotograma (ella sentada y él de pie; rótulo «A 50 METROS», «50 m», «−20 °C»).
 
 **Fuentes (no en pantalla salvo la condena):** CNN 19-feb-2026, BBC Mundo, Irish Times 20-feb-2026, Alpine Mag.

@@ -10,7 +10,7 @@
   "Irish Times 20-feb-2026",
   "Alpine Mag (ver docs/ideas/escalada.md, E35)"
  ],
- "nota_rigor": "v12 (31-oct): gancho con el titular que ya conoce la gente («dejar morir a su novia a 50 m de la cumbre», BBC Mundo/T13/CNN) y rótulo «DIVORCIO ALPINO» (término usado por CNN en Español, Outside, Newsweek). Condena en primera instancia (19-feb-2026, homicidio por negligencia grave, 5 meses suspendidos), recurrida por ambas partes, NO firme; él se declara inocente. Helicóptero ~22:50: no hizo señal de socorro (dice que aún no estaban en apuros). Salida a las 02:00 según la acusación. Expareja: «declaró que» (testimonio en juicio; no fue base de la condena; sin nombre). La madre de ella lo defendió. Sin manta térmica ni teléfono. Sin humor, sin nombres, cuerpo en gris, nada explícito.",
+ "nota_rigor": "v13 (31-oct): gancho con el hecho que ya conoce la gente (la dejó sola a 50 m de la cumbre, murió congelada, condenado, se declara inocente) sin «dejar morir» (el tribunal estimó negligencia, no intención). Rótulo «A 50 METROS» (el término «divorcio alpino» va en descripción y hashtags: la conversación en redes es sobre todo de mujeres y el público es 94 % hombres). Una sola atribución: «según el juez» (vídeo grabado desde el helicóptero a las 22:30, el juez vio que ella estaba en apuros; Outside/Climbing). Él admitió que no hizo señales al helicóptero (dice que aún no estaban en apuros). Sin hora exacta de la salida («Horas después»: 02:00 según la acusación, 03:30 según él). Sin expareja (testimonio de una persona privada que el tribunal no usó para condenar), sin manta ni móvil. La madre de ella lo defendió. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por ambas partes, NO firme.",
  "ganchos_alternativos": [
   "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
   "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
@@ -21,8 +21,8 @@
   {
    "tipo": "gancho",
    "visual": "noche",
-   "titulo": "DIVORCIO ALPINO",
-   "texto": "Lo condenaron por dejar morir a su novia a cincuenta metros de la cumbre. Él dice que es inocente."
+   "titulo": "A 50 METROS",
+   "texto": "Dejó sola a su novia a cincuenta metros de la cumbre. Ella murió congelada. Lo condenaron. Él dice que es inocente."
   },
   {
    "tipo": "texto",
@@ -34,40 +34,40 @@
    "tipo": "texto",
    "visual": "noche",
    "titulo": "50 m",
-   "texto": "Es de noche, hace veinte bajo cero y ella no puede dar un paso más."
+   "texto": "Es de noche, hace unos veinte bajo cero y ella no puede dar un paso más."
   },
   {
    "tipo": "texto",
    "visual": "helicoptero",
    "titulo": "22:50",
-   "texto": "A las once menos diez pasa un helicóptero de rescate."
+   "texto": "A las once menos diez pasa un helicóptero de rescate. Su cámara graba a la mujer: según el juez, ya se la ve en apuros."
   },
   {
    "tipo": "texto",
    "visual": "rechazo",
-   "texto": "Y tú… no haces ninguna señal. Crees que aún no hace falta."
+   "texto": "Y tú… no haces ninguna señal."
   },
   {
    "tipo": "texto",
    "visual": "color",
-   "titulo": "02:00",
-   "texto": "A las dos, la dejas sola para ir a buscar ayuda."
+   "titulo": "Horas después",
+   "texto": "Horas después, la dejas sola para ir a buscar ayuda."
   },
   {
    "tipo": "texto",
    "visual": "amanecer",
-   "texto": "Ella muere de hipotermia. A cincuenta metros de la cumbre."
+   "texto": "A la mañana siguiente, la encuentran muerta. A cincuenta metros de la cumbre."
   },
   {
    "tipo": "texto",
    "visual": "mensaje",
-   "texto": "En el juicio, una expareja declaró que ya la había dejado sola en esa misma montaña. La madre de ella lo defendió."
+   "texto": "La madre de ella lo defendió en el juicio."
   },
   {
    "tipo": "texto",
    "visual": "juzgado",
    "titulo": "Condenado en 1.ª instancia · recurrido",
-   "texto": "Hay recurso: la condena aún no es firme."
+   "texto": "Pero la sentencia no es firme: hay recurso."
   },
   {
    "tipo": "cierre",
