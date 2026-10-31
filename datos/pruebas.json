@@ -195,5 +195,27 @@
   "calidad": 1,
   "coste": 3,
   "limites": "Estilo y guion van juntos y ningún vídeo está marcado design todavía."
+ },
+ "H12": {
+  "texto": "Un vídeo «tuyo» (E35 o el próximo cuerpo) < 10K vistas a 48 h",
+  "videos": [
+   "E35",
+   "Tendón"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "vistas",
+    "op": "<",
+    "v": 10000
+   }
+  ],
+  "modo": "alguno",
+  "importa": "Si es cierta, dice qué producir: ser el protagonista (decisión, cuerpo) en vez de contar la vida de otro. Engloba H1 y H7.",
+  "decide": "Qué tipo de guion producir por defecto",
+  "impacto": 5,
+  "calidad": 2,
+  "coste": 1,
+  "limites": "Mezcla causas: E15 y E11 también tienen mejor gancho y tema universal. Falta una historia ajena sin «tú» con buen gancho para separarlas."
  }
 }

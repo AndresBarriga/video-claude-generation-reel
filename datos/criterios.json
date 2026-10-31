@@ -2,7 +2,7 @@
  "estado": {
   "congelado": "30-oct (decisión nuestra, hasta acabar el test)",
   "ultima_edicion": "29-oct (cierre ≤3 s)",
-  "texto": "No se ha reescrito. Nació de E15 (n=1) y de cuentas de referencia. Con 6 vídeos medidos, casi ninguna palanca está validada y algunas se contradicen."
+  "texto": "No se ha reescrito. Nació de E15 (n=1) y de cuentas de referencia. Con 6 vídeos medidos casi nada es concluyente: esta pestaña lista pistas y el dato que falta, no veredictos."
  },
  "criterios": [
   {
@@ -10,70 +10,77 @@
    "nombre": "Segundo 1 = clímax / acción física",
    "regla": "El primer plano es el momento de máxima tensión; rótulo de 1–3 palabras.",
    "origen": "Referencias + E15; «acción física» añadida el 28-oct tras E6",
-   "estado": "no distingue",
-   "datos": "Skip bajo: E6 15 % (palmada de magnesio) y E15 19 % (navaja). Skip alto: E36 38 % (avión + fardos, «gancho en el seg. 0») y E14 28 %. Cumplir la regla no separa ganadores.",
+   "estado": "sin señal",
+   "datos": "Skip bajo: E6 15 % (palmada de magnesio) y E15 19 % (navaja). Skip alto: E36 38 % y E14 28 %. Con 6 vídeos y tantas cosas distintas entre ellos, no se puede atribuir el skip a esta palanca.",
    "hip": "H5",
-   "accion": "Definir qué cuenta como clímax (acción de una persona con resultado incierto) y puntuarlo por vídeo."
+   "accion": "Definir qué cuenta como clímax (acción de una persona con resultado incierto) y puntuarlo por vídeo.",
+   "n": 6
   },
   {
    "id": "P2",
    "nombre": "El espectador dentro («tú»)",
    "regla": "La 1.ª frase le pone en la situación o le etiqueta.",
    "origen": "E15",
-   "estado": "no distingue",
-   "datos": "E14 abre con «A ti…» y tiene 28 % de skip; E36 en 3.ª persona 38 %; E15 («Tu mejor amigo…») 19 %.",
+   "estado": "sin señal",
+   "datos": "E14 abre con «A ti…» y tiene 28 % de skip; E36 en 3.ª persona 38 %; E15 19 %. Sin patrón claro.",
    "hip": "",
-   "accion": "Mantener como heurística; no exigirla."
+   "accion": "Mantener como heurística; no exigirla.",
+   "n": 6
   },
   {
    "id": "P3",
    "nombre": "Bucle abierto antes de 5 s",
    "regla": "Se revela lo obvio y se abre lo que no se puede adivinar.",
    "origen": "E15",
-   "estado": "sin validar",
+   "estado": "sin datos suficientes",
    "datos": "Lo llevan todos (E36: «y eso no es lo más loco»). Sin contraste no se puede medir.",
    "hip": "",
-   "accion": "Anotar si hay bucle y en qué segundo, para cruzarlo."
+   "accion": "Anotar si hay bucle y en qué segundo, para cruzarlo.",
+   "n": 6
   },
   {
    "id": "P4",
    "nombre": "Segundo gancho a mitad",
    "regla": "Giro o cifra al 40–60 % del vídeo.",
    "origen": "Referencias",
-   "estado": "sin validar",
+   "estado": "sin datos suficientes",
    "datos": "No guardamos la curva de retención. Visto medio: E15 66 %, E6 64 %, E11 61 %, E36 57 %, E14 50 %.",
    "hip": "",
-   "accion": "Apuntar en qué segundo cae la retención de cada vídeo (Insights)."
+   "accion": "Apuntar en qué segundo cae la retención de cada vídeo (Insights).",
+   "n": 6
   },
   {
    "id": "P5",
    "nombre": "Causa visible (se entiende sin audio)",
    "regla": "Cada «por qué» se ve en pantalla.",
    "origen": "E15",
-   "estado": "sin validar",
+   "estado": "sin datos suficientes",
    "datos": "Es subjetiva; no hay medida.",
    "hip": "",
-   "accion": "Convertirla en pregunta de sí/no por vídeo."
+   "accion": "Convertirla en pregunta de sí/no por vídeo.",
+   "n": 6
   },
   {
    "id": "P6",
    "nombre": "Final que vuelve a tu vida",
    "regla": "Cierra con una pregunta sobre tu relación o tu vida.",
    "origen": "E15",
-   "estado": "no distingue",
+   "estado": "sin señal",
    "datos": "Lo llevan casi todos (E14, E15, E35, E11): sin contraste.",
    "hip": "",
-   "accion": "Probar un vídeo sin ella cuando toque."
+   "accion": "Probar un vídeo sin ella cuando toque.",
+   "n": 6
   },
   {
    "id": "P7",
    "nombre": "Envío con mecanismo explícito («Mándaselo a…»)",
    "regla": "El vídeo es una pregunta para alguien concreto.",
    "origen": "E15",
-   "estado": "contradicha",
-   "datos": "E14 (lo pide) 0,56 % de envíos ≈ E15 0,55 %; E6 (mecanismo «colega») 0,14 %; E11 1,3 % y su voz solo pregunta «¿en qué fase te quedas tú?». Se envía lo que el espectador vive, no lo que se le pide.",
+   "estado": "pista en contra",
+   "datos": "Pista en contra, n pequeña: E14 (lo pide) 0,56 % de envíos ≈ E15 0,55 %; E6 (mecanismo «colega») 0,14 %; E11 1,3 % solo preguntando «¿en qué fase te quedas tú?». Puede ser el tema y no la petición; no se ha aislado.",
    "hip": "H7",
-   "accion": "Reescribir: el envío sale de la identificación («esto me pasa a mí»), no de la petición."
+   "accion": "Seguir pidiendo envío, pero medir qué vídeos se envían sin pedirlo.",
+   "n": 6
   },
   {
    "id": "P8",
@@ -81,56 +88,60 @@
    "regla": "Un tema que vive todo el mundo supera al de nicho.",
    "origen": "Caso 300k vs 16M, 28-oct",
    "estado": "parcial",
-   "datos": "Apoya: E15 y E11 (universales) frente a E6/E30 (jerga). Contradice: E14 (Honnold, universal) 5K. Parece pesar más que le pase a ELLOS (decisión, cuerpo) que que sea famoso.",
-   "hip": "H1",
-   "accion": "Candidata H12: «lo que le pasa al espectador > lo que le pasó a otro». Pendiente de tu OK."
+   "datos": "Mixto: E15 y E11 (universales) frente a E6/E30 (jerga) apoyan; E14 (Honnold, universal) 5K lo contradice.",
+   "hip": "H12",
+   "accion": "Archivada como H12 («lo que le pasa al espectador > lo que le pasó a otro»); se prueba con E35 y el próximo cuerpo.",
+   "n": 6
   },
   {
    "id": "P9",
-   "nombre": "Comentario genuino, no «comenta X»",
-   "regla": "Pregunta que invite a contar algo propio; nada de cebos.",
-   "origen": "Política de Meta sobre engagement bait",
-   "estado": "sin validar",
-   "datos": "E35 lleva «Comenta QUEDO o BAJO» en la descripción: incumple nuestra propia regla.",
+   "nombre": "Comentario con pregunta; cuidado con el «comenta X»",
+   "regla": "Pregunta que invite a contar algo propio. «Comenta X» es el patrón que Meta llama engagement bait.",
+   "origen": "Política de Meta (documentada en Facebook; en Instagram no está claro)",
+   "estado": "sin datos suficientes",
+   "datos": "En E15 el comentario fijado «Etiqueta a…» coincidió con el viral: no hay evidencia de que perjudicara. E35 usa «Comenta QUEDO o BAJO».",
    "hip": "",
-   "accion": "Corregir la descripción de E35 antes de publicar."
+   "accion": "No tratarlo como error. Mirar comentarios y alcance de E35 para ir viendo.",
+   "n": 6
   },
   {
    "id": "P10",
    "nombre": "Cierre ≤ 3 s",
    "regla": "La pregunta final pegada al último dato; «mándaselo» en rótulo.",
    "origen": "Curva de E15, 29-oct",
-   "estado": "sin validar",
+   "estado": "sin datos suficientes",
    "datos": "Sin contraste.",
    "hip": "",
-   "accion": "Mirar la curva de E35."
+   "accion": "Mirar la curva de E35.",
+   "n": 6
   },
   {
    "id": "P11",
    "nombre": "Puntuación 12/14 + crítico ≥7 como listón",
    "regla": "Un guion no se enseña ni se produce por debajo.",
    "origen": "Decisión 28-oct",
-   "estado": "contradicha",
-   "datos": "Ver tabla: E11 tuvo la nota más baja y es el 2.º mejor; E36 (8) y E6 (7) rinden 6–8K. n=4.",
+   "estado": "pista en contra",
+   "datos": "n=4 con nota y resultado: E11 (nota baja) rinde mejor que E36 y E6 (nota alta). Pista en contra, pero con 4 vídeos no concluye.",
    "hip": "H6",
-   "accion": "Quitar el listón; usar el crítico para encontrar fallos, no para decidir."
+   "accion": "Repensar: mantener la nota como referencia visible, no como puerta (ver Plan de publicación).",
+   "n": 6
   }
  ],
  "notas_critico": [
   {
    "video": "E6",
-   "nota": 7,
-   "fase": "vídeo (8 con cambios)"
+   "nota": 8,
+   "fase": "vídeo final (7; 8 con los cambios)"
   },
   {
    "video": "E11",
    "nota": 6,
-   "fase": "stock 4,5; con cambios 6"
+   "fase": "stock (4,5; 6 con cambios)"
   },
   {
    "video": "E30",
    "nota": 6.5,
-   "fase": "stock 5; con cambios 6,5"
+   "fase": "stock (5; 6,5 con cambios)"
   },
   {
    "video": "E36",
@@ -140,19 +151,19 @@
   {
    "video": "E35",
    "nota": 8,
-   "fase": "vídeo final (sin publicar)"
+   "fase": "vídeo final v6"
   },
   {
    "video": "E3",
    "nota": 6.5,
-   "fase": "v3 (sin publicar)"
+   "fase": "v3 (stock 3; 4,5 con cambios)"
   }
  ],
  "propuesta": [
-  "Quitar el listón «crítico ≥7»: el crítico encuentra fallos, no predice.",
-  "Reordenar el manual en tres niveles: con datos (n≥3) · hipótesis con evidencia parcial · heurísticas sin validar.",
-  "Puntuar cada vídeo por palanca (0–2) y cruzarlo con skip, envíos y seg./1k a medida que haya datos.",
-  "Guardar por vídeo el segundo donde cae la retención.",
-  "Candidata H12 («lo que le pasa al espectador > lo que le pasó a otro»): esperar tu OK antes de archivarla."
+  "No quitar el crítico: dejar su nota como referencia visible en cada vídeo y no usarla como puerta hasta tener ≥8 vídeos con nota y resultado (H6).",
+  "Sustituir el listón por una lista de «no-fallos» antes de publicar: hechos y tema legal comprobados, gancho que se entiende en 3 s sin audio, frase exacta con la que se enviaría, y al menos una hipótesis que prueba.",
+  "Cuando haya datos (≥8 vídeos), reordenar el manual en tres niveles: con datos · hipótesis con evidencia parcial · heurísticas sin validar.",
+  "Guardar por vídeo el segundo donde cae la retención y cruzarlo con las palancas.",
+  "H12 archivada en aprendizajes.md (abierta)."
  ]
 }

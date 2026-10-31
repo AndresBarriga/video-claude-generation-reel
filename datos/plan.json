@@ -1,0 +1,191 @@
+{
+ "_ayuda": "Candidatos a publicar. potencial (1-5) y riesgo (1-5) son estimaciones editables; el «prior del formato» sale de los datos reales del dashboard. slot: hoy | man_am | man_pm | trial | despues | no.",
+ "slots": [
+  {
+   "id": "hoy",
+   "nombre": "Hoy noche (el potente)",
+   "hora": "~21:30"
+  },
+  {
+   "id": "man_am",
+   "nombre": "Mañana por la mañana",
+   "hora": "~10:30"
+  },
+  {
+   "id": "man_pm",
+   "nombre": "Mañana noche",
+   "hora": "~21:00"
+  },
+  {
+   "id": "trial",
+   "nombre": "Reel de prueba (solo no seguidores)",
+   "hora": "cuando convenga"
+  },
+  {
+   "id": "despues",
+   "nombre": "Después / esperar datos",
+   "hora": ""
+  },
+  {
+   "id": "no",
+   "nombre": "No publicar",
+   "hora": ""
+  }
+ ],
+ "candidatos": [
+  {
+   "id": "E35",
+   "nombre": "E35 ¿Te quedas? (Decisiones límite #2)",
+   "formato": "historia-dilema",
+   "estado": "Listo con arreglos",
+   "bloqueos": [
+    "Gancho nuevo",
+    "Cierre legal (condena no firme, se declara inocente)",
+    "Voz nueva (Andrés, ~47 s)"
+   ],
+   "h": [
+    "H1",
+    "H9",
+    "H12"
+   ],
+   "potencial": 4,
+   "por_que": "Dilema en 2.ª persona, como E15 (203K). Es la prueba más importante de la serie.",
+   "riesgo": 3,
+   "riesgo_txt": "Tema sensible (muerte real, caso en apelación) y arranque en 3.ª persona como E14/E36.",
+   "esfuerzo": "1–2 h",
+   "slot": "hoy"
+  },
+  {
+   "id": "E14b",
+   "nombre": "E14b Honnold con gancho nuevo (trial)",
+   "formato": "historia-universal",
+   "estado": "Por reordenar el audio (sin voz nueva)",
+   "bloqueos": [
+    "Abrir con el escáner; escalera a segundo gancho"
+   ],
+   "h": [
+    "H5",
+    "H1"
+   ],
+   "potencial": 2,
+   "por_que": "Base de 5K; el valor es lo que enseña: gancho (H5) frente a «no es un dilema» (H1).",
+   "riesgo": 1,
+   "riesgo_txt": "Casi ninguno; va como reel de prueba.",
+   "esfuerzo": "30–45 min",
+   "slot": "trial"
+  },
+  {
+   "id": "E3",
+   "nombre": "E3 Escalador→Español",
+   "formato": "humor-jerga",
+   "estado": "Falta voz",
+   "bloqueos": [
+    "Voz (Andrés)"
+   ],
+   "h": [
+    "H2",
+    "H8"
+   ],
+   "potencial": 2,
+   "por_que": "Humor de jerga: se espera 6–8K. E30 convirtió bien con ese público.",
+   "riesgo": 1,
+   "riesgo_txt": "Bajo; mejor como prueba para no ensuciar la cuadrícula.",
+   "esfuerzo": "15 min de voz",
+   "slot": "trial"
+  },
+  {
+   "id": "CUERPO2",
+   "nombre": "Cuerpo #2: secuela de E11 (miedo a soltar / dedos)",
+   "formato": "cuerpo-fases",
+   "estado": "Por producir (propuesta + crítico + voz)",
+   "bloqueos": [
+    "Propuesta",
+    "Producción",
+    "Voz"
+   ],
+   "h": [
+    "H7",
+    "H12"
+   ],
+   "potencial": 5,
+   "por_que": "E11 es el mejor motor de seguidores (2,0 seg./1k con 66K) y su público ya pidió algo así.",
+   "riesgo": 2,
+   "riesgo_txt": "Una secuela puede rendir menos; cuerpo es el formato con más datos a favor.",
+   "esfuerzo": "3–4 h",
+   "slot": "man_pm"
+  },
+  {
+   "id": "MINIDILEMA",
+   "nombre": "Mini-dilema cotidiano de cordada (formato nuevo)",
+   "formato": "historia-dilema",
+   "estado": "Por producir (propuesta)",
+   "bloqueos": [
+    "Propuesta",
+    "Producción"
+   ],
+   "h": [
+    "H1",
+    "H12"
+   ],
+   "potencial": 3,
+   "por_que": "Combina lo que funcionó: dilema (E15) y algo que vives tú (E11), sin tema legal ni investigación.",
+   "riesgo": 2,
+   "riesgo_txt": "Formato sin probar: mejor primero como reel de prueba.",
+   "esfuerzo": "2–3 h",
+   "slot": "despues"
+  },
+  {
+   "id": "CALDWELL",
+   "nombre": "Caldwell «Las dos decisiones» (Decisiones límite #3)",
+   "formato": "historia-dilema",
+   "estado": "Por producir",
+   "bloqueos": [
+    "Propuesta",
+    "Producción",
+    "Esperar lectura de E35 a 48 h"
+   ],
+   "h": [
+    "H1",
+    "H9"
+   ],
+   "potencial": 4,
+   "por_que": "Segundo dilema real, para separar «dilema» de «tema» (H1).",
+   "riesgo": 3,
+   "riesgo_txt": "Si sale antes de leer E35 se mezclan las señales.",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
+  },
+  {
+   "id": "E31B",
+   "nombre": "E31B Cepillar presas",
+   "formato": "asmr-ritual",
+   "estado": "Producido",
+   "bloqueos": [],
+   "h": [],
+   "potencial": 1,
+   "por_que": "Crítico 5,5: solo como reel de prueba.",
+   "riesgo": 1,
+   "riesgo_txt": "Bajo.",
+   "esfuerzo": "0",
+   "slot": "no"
+  },
+  {
+   "id": "E36b",
+   "nombre": "E36b Hippies con gancho nuevo (trial)",
+   "formato": "historia-golpe-de-suerte",
+   "estado": "Por reordenar",
+   "bloqueos": [
+    "Gancho"
+   ],
+   "h": [
+    "H5"
+   ],
+   "potencial": 1,
+   "por_que": "Su gancho en papel ya era bueno y tiene 38 % de skip: probar otro gancho enseñaría menos que con E14.",
+   "riesgo": 2,
+   "riesgo_txt": "El tema (drogas) puede limitar el alcance por sí solo.",
+   "esfuerzo": "30–45 min",
+   "slot": "no"
+  }
+ ]
+}

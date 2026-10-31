@@ -37,6 +37,17 @@ const resumen = (read('docs/ideas/escalada.md').match(/## Resumen de estado[^\n]
 const bloques = [...resumen.matchAll(/\*\*(.+?):\*\*\s*(.+)/g)].map((m) => ({ k: m[1], v: m[2] }));
 const cola = (bloques.find((b) => /Cola/i.test(b.k))?.v || '').split(/\s·\s(?=\d\)\s)/).map((s) => s.replace(/^\d\)\s*/, '').trim()).filter(Boolean);
 
+// Archivos de vídeo disponibles (relativos a docs/)
+const archivos = {};
+const allIds = new Set([...rows.map((r) => r.video), ...Object.keys(estados), ...Object.keys(JSON.parse(read('datos/videos.json') || '{}')), ...(JSON.parse(read('datos/plan.json') || '{"candidatos":[]}').candidatos || []).map((c) => c.id)]);
+for (const id of allIds) {
+  const L = [];
+  if (fs.existsSync(R(`previews/${id}.mp4`))) L.push({ label: 'Vista previa (ligera)', href: `../previews/${id}.mp4`, kind: 'preview' });
+  const d = R(`videos/escalada/${id}`);
+  if (fs.existsSync(d)) for (const f of fs.readdirSync(d).filter((f) => /^final.*\.mp4$/.test(f))) L.push({ label: f === 'final.mp4' ? 'Final (calidad completa)' : f.replace(/\.mp4$/, ''), href: `../videos/escalada/${id}/${f}`, kind: 'final' });
+  if (L.length) archivos[id] = L;
+}
+
 const data = {
   generado: new Date().toISOString(),
   rows, estados, hipotesis, cola,
@@ -45,6 +56,9 @@ const data = {
   cuenta: JSON.parse(read('datos/cuenta.json') || '{}'),
   videos: JSON.parse(read('datos/videos.json') || '{}'),
   criterios: JSON.parse(read('datos/criterios.json') || '{}'),
+  notas: JSON.parse(read('datos/notas-critico.json') || '{}'),
+  plan: JSON.parse(read('datos/plan.json') || '{}'),
+  archivos,
 };
 
 const css = fs.readFileSync(path.join(here, 'dashboard.css'), 'utf8');
@@ -53,7 +67,7 @@ const json = JSON.stringify(data).replace(/</g, '\\u003c');
 
 const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>@ultimo.pegue · Dashboard</title><style>${css}</style></head><body>
-<header class="top"><div><h1>@ultimo.pegue</h1><div class="sub" id="fresh"></div></div><nav class="nav"><button data-tab="panel" class="on">Panel</button><button data-tab="crit">Criterios de viralidad</button></nav><div class="kpis" id="kpis"></div></header>
+<header class="top"><div><h1>@ultimo.pegue</h1><div class="sub" id="fresh"></div></div><nav class="nav"><button data-tab="panel" class="on">Panel</button><button data-tab="plan">Plan de publicación</button><button data-tab="crit">Criterios de viralidad</button></nav><div class="kpis" id="kpis"></div></header>
 <main>
 <div id="pg-panel">
 <section><h2>Qué hacer ahora <small>sale de las hipótesis, los vídeos y la cola</small></h2><div id="acciones"></div></section>
@@ -65,8 +79,9 @@ const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta n
 <section><h2>Audiencia y cuenta</h2><div class="g3" id="aud"></div></section>
 <section><h2>Cola e ideas</h2><div id="ideas"></div></section>
 </div>
+<div id="pg-plan" hidden></div>
 <div id="pg-crit" hidden></div>
-<footer class="sub">Fuentes: datos/publicados.csv · datos/cuenta.json · datos/pruebas.json · datos/videos.json · datos/criterios.json · docs/aprendizajes.md · docs/viralidad.md · docs/ideas/escalada.md · fichas · Regenerar: <code>npm run dashboard</code> · Medir: <code>npm run medir -- E15 vistas=… seg=…</code></footer>
+<footer class="sub">Fuentes: datos/publicados.csv · datos/cuenta.json · datos/pruebas.json · datos/videos.json · datos/criterios.json · datos/notas-critico.json · datos/plan.json · docs/aprendizajes.md · docs/viralidad.md · docs/ideas/escalada.md · fichas · Regenerar: <code>npm run dashboard</code> · Medir: <code>npm run medir -- E15 vistas=… seg=…</code></footer>
 </main>
 <aside id="drawer" class="drawer" hidden></aside>
 <script type="application/json" id="data">${json}</script>

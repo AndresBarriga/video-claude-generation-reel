@@ -1,0 +1,56 @@
+{
+ "E6": {
+  "nota": 8,
+  "orig": 7,
+  "fase": "vídeo final (7; 8 con los cambios)",
+  "hist": "27-oct v2 7 · 28-oct v3 7 (8 con cambios)"
+ },
+ "E11": {
+  "nota": 6,
+  "orig": 4.5,
+  "fase": "stock (4,5; 6 con cambios)",
+  "hist": "29-oct 4,5 (6)"
+ },
+ "E30": {
+  "nota": 6.5,
+  "orig": 5,
+  "fase": "stock (5; 6,5 con cambios)",
+  "hist": "29-oct 5 (6,5)"
+ },
+ "E36": {
+  "nota": 8,
+  "orig": 8,
+  "fase": "vídeo final",
+  "hist": "30-oct 8"
+ },
+ "E35": {
+  "nota": 8,
+  "orig": 7,
+  "fase": "vídeo final v6",
+  "hist": "29-oct v1 7 · 30-oct 7 → 7,5 → 8,5 (B) → 8 → 8"
+ },
+ "E3": {
+  "nota": 6.5,
+  "orig": 6,
+  "fase": "v3 (stock 3; 4,5 con cambios)",
+  "hist": "28-oct 6 · 6 · 7 · 6,5 · 29-oct stock 3 (4,5)"
+ },
+ "E31": {
+  "nota": 5.5,
+  "orig": 4,
+  "fase": "stock (4; 5,5 con cambios)",
+  "hist": "28-oct 6 → 7 · 29-oct stock 4 (5,5)"
+ },
+ "E32": {
+  "nota": 2,
+  "orig": 2,
+  "fase": "relleno, descartada",
+  "hist": "28-oct 2 · 29-oct 2"
+ },
+ "E34": {
+  "nota": 6,
+  "orig": 5,
+  "fase": "propuesta v2",
+  "hist": "29-oct v1 5 · v2 6"
+ }
+}

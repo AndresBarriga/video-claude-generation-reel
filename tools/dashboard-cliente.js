@@ -10,7 +10,7 @@ const dia = (ms) => new Date(ms).toLocaleString('es-ES', { weekday: 'short', day
 const en = (ms) => { const h = (ms - Date.now()) / 36e5; return h <= 0 ? 'ya' : h < 48 ? `en ${Math.round(h)} h` : `en ${Math.round(h / 24)} d`; };
 const short = (s, n) => (s.length > n ? s.slice(0, n - 1) + '…' : s);
 const NUMK = ['vistas', 'espectadores', 'visto_medio_s', 'duracion_s', 'skip_pct', 'envios', 'guardados', 'likes', 'comentarios', 'reposts', 'visitas_perfil', 'seguidores'];
-const S = { tab: 'panel', win: 'last', fmt: '', sort: { k: 'vistas', d: -1 }, hf: 'todas', hsort: 'prio', extra: [], cambios: {}, pesos: {}, drawer: null, preview: '' };
+const S = { slot: {}, pot: {}, tab: 'panel', win: 'last', fmt: '', sort: { k: 'vistas', d: -1 }, hf: 'todas', hsort: 'prio', extra: [], cambios: {}, pesos: {}, drawer: null, preview: '' };
 
 // ---------- Datos ----------
 function build() {
@@ -31,6 +31,9 @@ let V = build();
 const lab = (id) => V[id]?.titulo || D.videos[id]?.corto || '';
 const desc = (id) => D.videos[id]?.desc || '';
 const nm = (id) => `<b>${esc(id)}</b>${lab(id) ? ' «' + esc(lab(id)) + '»' : ''}`;
+const nota = (id) => D.notas[id];
+const ntBadge = (id) => { const n = nota(id); if (!n) return '<span class="dim" title="Sin nota registrada">—</span>'; const c = n.nota >= 7.5 ? 'hi' : n.nota >= 6 ? 'mid' : 'lo'; return `<span class="nt ${c}" title="${esc(n.fase + ' · ' + n.hist)}">${String(n.nota).replace('.', ',')}</span>${n.orig !== n.nota ? `<small> (${String(n.orig).replace('.', ',')})</small>` : ''}`; };
+const vidBlock = (id) => { const f = D.archivos[id] || []; if (!f.length) return `<p class="mut">Sin archivo de vídeo en el repo (el final no se versiona). Para verlo aquí: <code>npm run render -- ${esc(id)}</code> o guarda una vista previa en <code>previews/${esc(id)}.mp4</code> y regenera.</p>`; const first = f.find((x) => x.kind === 'preview') || f[0]; return `<div class="vid"><video controls preload="metadata" src="${esc(first.href)}"></video>${f.map((x) => `<a href="${esc(x.href)}" download>⬇ ${esc(x.label)}</a>`).join('')}${f.length > 1 ? '<small class="mut"> Hay versión ligera y completa.</small>' : ''}</div>`; };
 const colaFor = (k) => D.cola.find((c) => c.toLowerCase().includes(String(k).toLowerCase()));
 
 function at(v, keys, win) {
@@ -204,10 +207,11 @@ function renderVid() {
   const w = S.win === 'last' ? 'last' : +S.win;
   const cell = (v, m, d) => { const r = M(v, m, w); if (r.s === 'sin') return '–'; if (r.s === 'pend') return `<span class="dim" title="Aún no llega a ${w} h (va por ${Math.round(r.h)} h)">–</span>`; return (r.s === 'aprox' ? '<i class="ap">≈</i>' : '') + fmt(r.val, d); };
   const list = Object.values(V).filter((v) => !S.fmt || v.formato === S.fmt).map((v) => ({ v, x: { vistas: M(v, 'vistas', w).val, seg: M(v, 'seg', w).val, segk: M(v, 'segk', w).val, envk: M(v, 'envk', w).val, skip: v.last.skip_pct, h: v.pts[v.pts.length - 1].h } }));
+  list.forEach((l) => { l.x.nota = nota(l.v.id)?.nota; });
   list.sort((a, b) => ((b.x[S.sort.k] ?? -1) - (a.x[S.sort.k] ?? -1)) * -S.sort.d);
   const mx = Math.max(...list.map((l) => l.x.vistas || 0), 1);
-  const cols = [['vistas', 'Vistas'], ['seg', 'Seg.'], ['segk', 'Seg./1k'], ['envk', 'Env./1k'], ['skip', 'Skip'], ['h', 'Edad']];
-  $('#vt').innerHTML = `<tr><th class="l">Vídeo</th><th class="l">Formato · estilo</th>${cols.map(([k, l]) => `<th data-s="${k}">${l}${S.sort.k === k ? (S.sort.d < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('')}</tr>` + list.map(({ v, x }) => `<tr class="v" data-v="${v.id}"><td class="vn"><b>${v.id}</b> ${esc(v.titulo)}<div class="desc">${esc(desc(v.id))}</div></td><td class="l"><small>${esc(v.formato)}<br>${esc(v.estilo)}</small></td><td>${cell(v, 'vistas')}<span class="mini"><i style="width:${((x.vistas || 0) / mx) * 100}%"></i></span></td><td>${cell(v, 'seg')}</td><td class="${x.segk >= 1 ? 'good' : ''}">${cell(v, 'segk', 2)}</td><td>${cell(v, 'envk', 1)}</td><td class="${v.last.skip_pct > 25 ? 'bad' : ''}">${v.last.skip_pct != null ? fmt(v.last.skip_pct, 1) + ' %' : '–'}</td><td>${Math.round(x.h)} h</td></tr>`).join('');
+  const cols = [['nota', 'Crítico'], ['vistas', 'Vistas'], ['seg', 'Seg.'], ['segk', 'Seg./1k'], ['envk', 'Env./1k'], ['skip', 'Skip'], ['h', 'Edad']];
+  $('#vt').innerHTML = `<tr><th class="l">Vídeo</th><th class="l">Formato · estilo</th>${cols.map(([k, l]) => `<th data-s="${k}">${l}${S.sort.k === k ? (S.sort.d < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('')}</tr>` + list.map(({ v, x }) => `<tr class="v" data-v="${v.id}"><td class="vn"><b>${v.id}</b> ${esc(v.titulo)}<div class="desc">${esc(desc(v.id))}${D.archivos[v.id] ? ' ▶' : ''}</div></td><td class="l"><small>${esc(v.formato)}<br>${esc(v.estilo)}</small></td><td>${ntBadge(v.id)}</td><td>${cell(v, 'vistas')}<span class="mini"><i style="width:${((x.vistas || 0) / mx) * 100}%"></i></span></td><td>${cell(v, 'seg')}</td><td class="${x.segk >= 1 ? 'good' : ''}">${cell(v, 'segk', 2)}</td><td>${cell(v, 'envk', 1)}</td><td class="${v.last.skip_pct > 25 ? 'bad' : ''}">${v.last.skip_pct != null ? fmt(v.last.skip_pct, 1) + ' %' : '–'}</td><td>${Math.round(x.h)} h</td></tr>`).join('');
 }
 
 function renderForm() {
@@ -233,15 +237,36 @@ function renderIdeas() { $('#ideas').innerHTML = `<div class="card"><ol>${D.cola
 const rank = (a) => { const o = a.map((x, i) => [x, i]).sort((p, q) => p[0] - q[0]); const r = []; o.forEach(([, i], j) => (r[i] = j + 1)); return r; };
 const rho = (x, y) => { const n = x.length; if (n < 3) return null; const a = rank(x), b = rank(y), d = a.reduce((s, v, i) => s + (v - b[i]) ** 2, 0); return 1 - (6 * d) / (n * (n * n - 1)); };
 function renderCrit() {
-  const C = D.criterios, EP = { 'sin validar': '', 'no distingue': 'curso', contradicha: 'no', apoyada: 'ok', parcial: 'abierta' };
+  const C = D.criterios, EP = { 'sin datos suficientes': '', 'sin señal': '', 'pista en contra': 'curso', 'pista a favor': 'ok', parcial: 'abierta' };
   const notas = C.notas_critico.map((n) => ({ ...n, v: V[n.video] })).sort((a, b) => b.nota - a.nota);
   const pub = notas.filter((n) => n.v && n.v.last.vistas);
   const r1 = rho(pub.map((n) => n.nota), pub.map((n) => n.v.last.vistas)), r2 = rho(pub.map((n) => n.nota), pub.map((n) => M(n.v, 'segk', 'last').val));
   $('#pg-crit').innerHTML = `<section><h2>Estado del manual <small>docs/viralidad.md</small></h2><div class="card"><p><b>Congelado:</b> ${esc(C.estado.congelado)} · <b>último cambio:</b> ${esc(C.estado.ultima_edicion)}</p><p>${esc(C.estado.texto)}</p></div></section>
-<section><h2>Criterios y lo que dicen los datos <small>con 6 vídeos medidos: pistas, no reglas</small></h2><div class="tw"><table><tr><th>#</th><th>Criterio</th><th>Estado</th><th>Lo que dicen los datos</th><th>Qué hacer</th></tr>${C.criterios.map((c) => `<tr><td><b>${c.id}</b></td><td><b>${esc(c.nombre)}</b><div class="desc">${esc(c.regla)}<br><i>Origen: ${esc(c.origen)}</i></div></td><td><span class="pill ${EP[c.estado] ?? ''}">${esc(c.estado)}</span>${c.hip ? `<br><span class="pill">${c.hip}</span>` : ''}</td><td>${esc(c.datos)}</td><td>${esc(c.accion)}</td></tr>`).join('')}</table></div></section>
+<section><h2>Criterios y lo que dicen los datos <small>con 6 vídeos medidos: pistas, no reglas</small></h2><div class="tw"><table><tr><th>#</th><th>Criterio</th><th>Estado</th><th>Lo que dicen los datos</th><th>Qué hacer</th></tr>${C.criterios.map((c) => `<tr><td><b>${c.id}</b></td><td><b>${esc(c.nombre)}</b><div class="desc">${esc(c.regla)}<br><i>Origen: ${esc(c.origen)}</i></div></td><td><span class="pill ${EP[c.estado] ?? ''}">${esc(c.estado)}</span><br><small>n=${c.n ?? '?'}</small>${c.hip ? `<br><span class="pill">${c.hip}</span>` : ''}</td><td>${esc(c.datos)}</td><td>${esc(c.accion)}</td></tr>`).join('')}</table></div></section>
 <section><h2>La nota del crítico frente al resultado <small>¿predice?</small></h2><div class="tw"><table><tr><th>Vídeo</th><th>Nota</th><th>Fase</th><th>Vistas</th><th>Seg./1k</th><th>Skip</th><th>Env. %</th></tr>${notas.map((n) => `<tr><td>${nm(n.video)}</td><td><b>${n.nota}</b></td><td>${esc(n.fase)}</td>${n.v && n.v.last.vistas ? `<td>${fmt(n.v.last.vistas)}</td><td>${fmt(M(n.v, 'segk', 'last').val, 2)}</td><td>${n.v.last.skip_pct != null ? fmt(n.v.last.skip_pct, 1) + ' %' : '–'}</td><td>${n.v.last.envios ? fmt((n.v.last.envios / n.v.last.vistas) * 100, 2) : '–'}</td>` : '<td colspan="4" class="dim">sin publicar</td>'}</tr>`).join('')}</table></div>
-<div class="card"><b>Lectura (n=${pub.length}):</b> correlación nota↔vistas ρ=${r1 == null ? '–' : fmt(r1, 2)}, nota↔seg./1k ρ=${r2 == null ? '–' : fmt(r2, 2)}. Con tan pocos vídeos no es concluyente, pero no hay ninguna señal de que la nota prediga, y el vídeo de nota más baja es el 2.º mejor. Por eso el listón «≥7» sobra.</div></section>
+<div class="card"><b>Lectura (n=${pub.length}):</b> con tan pocos vídeos no se puede concluir nada. Solo orientativo: correlación nota↔vistas ρ=${r1 == null ? '–' : fmt(r1, 2)} y nota↔seg./1k ρ=${r2 == null ? '–' : fmt(r2, 2)}. Se vuelve a mirar con más vídeos (H6: ≥8).</div></section>
 <section><h2>Propuesta de reescritura</h2><div class="card"><ol>${C.propuesta.map((p) => `<li>${esc(p)}</li>`).join('')}</ol></div></section>`;
+}
+
+// ---------- Render: plan de publicación ----------
+function renderPlan() {
+  const Pn = D.plan, rk = rankMap();
+  Pn.candidatos.forEach((c) => { S.slot[c.id] ??= c.slot; });
+  const prior = (f) => { const l = Object.values(V).filter((v) => v.formato === f); return l.length ? l.map((v) => `${v.id}: ${fmt(v.last.vistas)} vistas · ${fmt(M(v, 'segk', 'last').val, 2)} seg./1k`).join('<br>') : '<span class="dim">formato nuevo, sin datos</span>'; };
+  const info = (c) => Math.max(0, ...c.h.map((x) => score(x)));
+  const rows = Pn.candidatos.map((c) => `<tr><td><b>${esc(c.nombre)}</b><div class="desc">${esc(desc(c.id))}</div>${D.archivos[c.id] ? `<div class="vid">${(D.archivos[c.id] || []).map((x) => `<a href="${esc(x.href)}" target="_blank">▶ ${esc(x.label)}</a><a href="${esc(x.href)}" download>⬇</a>`).join('')}</div>` : ''}</td>
+<td>${esc(c.estado)}${c.bloqueos.length ? `<div class="desc">${c.bloqueos.map(esc).join(' · ')}</div>` : ''}</td><td>${ntBadge(c.id)}</td><td><small>${prior(c.formato)}</small></td>
+<td><b>${dots(S.pot[c.id] ?? c.potencial)}</b><div class="desc">${esc(c.por_que)}</div><select data-pot="${c.id}">${[1, 2, 3, 4, 5].map((o) => `<option ${o === (S.pot[c.id] ?? c.potencial) ? 'selected' : ''}>${o}</option>`).join('')}</select></td>
+<td>${c.h.length ? c.h.map((x) => `<span class="pill" title="${esc(D.hipotesis.find((h) => h.id === x)?.h || '')}">${x} #${rk[x]}</span>`).join(' ') + `<div class="desc">valor informativo ${fmt(info(c), 0)}</div>` : '<span class="dim">no aporta</span>'}</td>
+<td><b>${dots(c.riesgo)}</b><div class="desc">${esc(c.riesgo_txt)}</div></td><td>${esc(c.esfuerzo)}</td>
+<td><select data-slot="${c.id}">${Pn.slots.map((sl) => `<option value="${sl.id}" ${S.slot[c.id] === sl.id ? 'selected' : ''}>${esc(sl.nombre)}</option>`).join('')}</select></td></tr>`).join('');
+  const board = Pn.slots.filter((sl) => !['no'].includes(sl.id)).map((sl) => { const l = Pn.candidatos.filter((c) => S.slot[c.id] === sl.id); return `<div class="card"><b>${esc(sl.nombre)}</b><small>${esc(sl.hora)}</small>${l.map((c) => `<div>· ${esc(c.nombre)}</div>`).join('') || '<span class="dim">—</span>'}</div>`; }).join('');
+  const txt = Pn.slots.map((sl) => `${sl.nombre}${sl.hora ? ' (' + sl.hora + ')' : ''}: ` + (Pn.candidatos.filter((c) => S.slot[c.id] === sl.id).map((c) => c.id).join(', ') || '—')).join('\n');
+  $('#pg-plan').innerHTML = `<section><h2>Qué subir, cuándo y cómo <small>propuesta mía para discutir: cambia los desplegables</small></h2>
+<div class="card"><b>Cómo decidimos.</b> Ya no hay una nota mínima. Cada candidato se mira con cinco señales: <b>potencial</b> (qué esperar según los datos de su formato), <b>qué aprendemos</b> (la prioridad de las hipótesis que prueba), <b>crítico</b> (referencia, no puerta), <b>riesgo</b> y <b>esfuerzo</b>. Antes de publicar, una lista de no-fallos: hechos y tema legal comprobados · el gancho se entiende en 3 s sin audio · sabemos qué frase se mandaría · prueba al menos una hipótesis.</div>
+<div class="slots">${board}</div><pre id="ptxt">${esc(txt)}</pre><button data-copy="ptxt">Copiar plan</button></section>
+<section><h2>Candidatos</h2><div class="tw"><table><tr><th>Vídeo</th><th>Estado</th><th>Crítico</th><th>Prior del formato (datos reales)</th><th>Potencial</th><th>Qué aprendemos</th><th>Riesgo</th><th>Esfuerzo</th><th>Cuándo</th></tr>${rows}</table></div>
+<p class="mut">Potencial y riesgo son estimaciones mías, editables. El «prior del formato» sale de un solo vídeo por formato: es una pista, no una predicción.</p></section>`;
 }
 
 // ---------- Cajón de vídeo ----------
@@ -260,7 +285,7 @@ function renderDrawer() {
   const L = v.last, up = T(v.subido);
   const k = [['Vistas', fmt(L.vistas)], ['Seguidores', fmt(L.seguidores)], ['Seg./1k', fmt(M(v, 'segk', 'last').val, 2)], ['Env./1k', fmt(M(v, 'envk', 'last').val, 1)], ['Skip', L.skip_pct != null ? fmt(L.skip_pct, 1) + ' %' : '–'], ['Guardados', fmt(L.guardados)]];
   const hs = hypsFor(v.id).map((id) => D.hipotesis.find((h) => h.id === id)).filter(Boolean);
-  el.innerHTML = `<button class="x" data-close>✕</button><h3>${esc(v.id)} · ${esc(v.titulo)}</h3><p style="margin:4px 0">${esc(desc(v.id))}</p><div class="mut">${esc(v.formato)} · ${esc(v.estilo)} · subido ${dia(up)}</div><div class="mut">${esc(D.estados[v.id] || '')}</div>
+  el.innerHTML = `<button class="x" data-close>✕</button><h3>${esc(v.id)} · ${esc(v.titulo)}</h3><p style="margin:4px 0">${esc(desc(v.id))}</p><div class="mut">${esc(v.formato)} · ${esc(v.estilo)} · subido ${dia(up)}</div><div class="mut">${esc(D.estados[v.id] || '')}</div><p style="margin:6px 0">Crítico: ${ntBadge(v.id)} <small class="mut">${esc(nota(v.id) ? nota(v.id).fase + ' · ' + nota(v.id).hist : 'sin nota registrada')}</small></p>${vidBlock(v.id)}
 <div class="dk">${k.map(([a, b]) => `<div><b>${b}</b><span>${a}</span></div>`).join('')}</div>${curve(v, 'vistas', 'Vistas según la edad del vídeo (horas)')}${curve(v, 'seguidores', 'Seguidores')}
 <p class="mut" style="margin-top:12px">Próximas ventanas: 48 h → ${dia(up + 48 * 36e5)} · 7 d → ${dia(up + 168 * 36e5)}</p>
 <p class="mut">Hipótesis donde aparece:</p><ul>${hs.map((h) => `<li><b>${h.id}</b> ${md(h.h)}</li>`).join('') || '<li class="mut">ninguna</li>'}</ul>
@@ -268,7 +293,7 @@ function renderDrawer() {
 }
 
 // ---------- Eventos ----------
-function setTab(t) { S.tab = t; $('#pg-panel').hidden = t !== 'panel'; $('#pg-crit').hidden = t !== 'crit'; document.querySelectorAll('[data-tab]').forEach((b) => b.classList.toggle('on', b.dataset.tab === t)); window.scrollTo(0, 0); }
+function setTab(t) { S.tab = t; $('#pg-panel').hidden = t !== 'panel'; $('#pg-crit').hidden = t !== 'crit'; $('#pg-plan').hidden = t !== 'plan'; document.querySelectorAll('[data-tab]').forEach((b) => b.classList.toggle('on', b.dataset.tab === t)); window.scrollTo(0, 0); }
 document.addEventListener('click', (e) => {
   const t = e.target.closest('[data-tab],[data-hj],[data-hs],[data-v],[data-hf],[data-win],[data-s],[data-close],[data-copy],#fprev,#fundo,#creset');
   if (!t) return;
@@ -299,12 +324,14 @@ document.addEventListener('click', (e) => {
 });
 document.addEventListener('change', (e) => {
   const t = e.target;
+  if (t.dataset.slot) { S.slot[t.dataset.slot] = t.value; renderPlan(); }
+  if (t.dataset.pot) { S.pot[t.dataset.pot] = +t.value; renderPlan(); }
   if (t.dataset.hc) { const h = D.hipotesis.find((x) => x.id === t.dataset.hc); if (t.value === h.estado) delete S.cambios[h.id]; else S.cambios[h.id] = t.value; renderHip(); renderCambios(); }
   if (t.dataset.wk) { const [id, k] = t.dataset.wk.split('|'), orig = D.pruebas[id][k]; (S.pesos[id] ??= {})[k] = +t.value; if (+t.value === orig) delete S.pesos[id][k]; if (!Object.keys(S.pesos[id]).length) delete S.pesos[id]; renderHip(); renderCambios(); document.getElementById('hy-' + id)?.querySelector('details')?.setAttribute('open', ''); }
   if (t.id === 'ffmt') { S.fmt = t.value; renderVid(); }
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { S.drawer = null; renderDrawer(); } });
 
-function refresh() { V = build(); renderTop(); acciones(); renderHip(); renderVid(); renderForm(); renderCambios(); renderCrit(); renderDrawer(); }
+function refresh() { V = build(); renderTop(); acciones(); renderHip(); renderVid(); renderForm(); renderCambios(); renderCrit(); renderPlan(); renderDrawer(); }
 refresh(); renderAud(); renderIdeas();
 })();
