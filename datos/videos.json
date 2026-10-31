@@ -25,7 +25,7 @@
  },
  "E35": {
   "corto": "¿Te quedas?",
-  "desc": "Decisiones límite #2 (Grossglockner): ¿te quedas con ella o bajas a por ayuda? Muere a 50 m de la cumbre."
+  "desc": "Decisiones límite #2 (Grossglockner), en «tú»: ¿te quedas con tu novia o bajas a por ayuda? El helicóptero, el WhatsApp y la condena."
  },
  "E3": {
   "corto": "Escalador→Español",
@@ -50,5 +50,9 @@
  "E6-D": {
   "corto": "Último pegue (inicio D)",
   "desc": "Variante de inicio de E6; duplicado, descartada."
+ },
+ "E35B": {
+  "corto": "¿Te quedas? (3.ª persona)",
+  "desc": "Misma historia que E35 contada en 3.ª persona, como reel de prueba para comparar el skip con la versión en «tú»."
  }
 }

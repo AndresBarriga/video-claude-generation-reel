@@ -1,5 +1,5 @@
 # E35 — ficha
-- **Estado:** v16 producido con voz (Danny, audio recortado; 44,7 s); listo para publicar IG 31-oct ~21:30 (cuadrícula)
+- **Estado:** v17 en «tú» producido con voz (Danny, 47,4 s); listo para publicar IG 31-oct ~21:45 (cuadrícula). Versión en 3.ª persona = E35B (reel de prueba)
 - **Formato:** historia-dilema (Decisiones límite #2)
 - **Resultado:** — (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)

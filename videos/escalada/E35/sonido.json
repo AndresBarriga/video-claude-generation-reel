@@ -39,7 +39,7 @@
         "escena": 3
       },
       "fin": {
-        "escena": 8
+        "escena": 9
       },
       "volumen": 0.4,
       "bucle": true,
@@ -109,7 +109,7 @@
     {
       "nombre": "viento",
       "inicio": {
-        "escena": 9
+        "escena": 10
       },
       "volumen": 0.3,
       "bucle": true,

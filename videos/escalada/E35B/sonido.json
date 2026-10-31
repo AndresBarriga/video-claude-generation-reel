@@ -1,0 +1,122 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    {
+      "nombre": "viento",
+      "inicio": {
+        "escena": 0
+      },
+      "fin": {
+        "escena": 1
+      },
+      "volumen": 0.4,
+      "bucle": true,
+      "fundido": [
+        0.0,
+        0.2
+      ]
+    },
+    {
+      "nombre": "zas",
+      "inicio": {
+        "escena": "rebobina"
+      },
+      "duracion": 0.5,
+      "volumen": 0.8
+    },
+    {
+      "nombre": "roce",
+      "inicio": {
+        "escena": "rebobina",
+        "mas": 0.2
+      },
+      "duracion": 1.2,
+      "volumen": 0.5
+    },
+    {
+      "nombre": "viento",
+      "inicio": {
+        "escena": 3
+      },
+      "fin": {
+        "escena": 8
+      },
+      "volumen": 0.4,
+      "bucle": true,
+      "fundido": [
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "nombre": "rotor",
+      "inicio": {
+        "escena": "helicoptero"
+      },
+      "fin": {
+        "escena": "color"
+      },
+      "volumen": 0.6,
+      "bucle": true,
+      "bajoVoz": 0.3,
+      "fundido": [
+        0.4,
+        0.6
+      ]
+    },
+    {
+      "nombre": "vibra",
+      "inicio": {
+        "escena": "movil"
+      },
+      "duracion": 1.3,
+      "volumen": 0.7
+    },
+    {
+      "nombre": "latido",
+      "inicio": {
+        "escena": "color"
+      },
+      "fin": {
+        "escena": "amanecer"
+      },
+      "volumen": 0.6,
+      "bucle": true,
+      "bajoVoz": 0.2,
+      "fundido": [
+        0.3,
+        0.1
+      ]
+    },
+    {
+      "silencio": true,
+      "inicio": {
+        "escena": "amanecer",
+        "final": true,
+        "mas": -0.8
+      },
+      "duracion": 0.8
+    },
+    {
+      "nombre": "golpe",
+      "inicio": {
+        "escena": 1,
+        "palabra": "condenaron"
+      },
+      "duracion": 0.6,
+      "volumen": 0.7
+    },
+    {
+      "nombre": "viento",
+      "inicio": {
+        "escena": 9
+      },
+      "volumen": 0.3,
+      "bucle": true,
+      "fundido": [
+        0.3,
+        0.1
+      ]
+    }
+  ]
+}

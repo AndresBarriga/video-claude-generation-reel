@@ -37,14 +37,15 @@
    "id": "E35",
    "nombre": "E35 ¿Te quedas? (Decisiones límite #2)",
    "formato": "historia-dilema",
-   "estado": "Producido con voz (44,7 s); listo para publicar",
+   "estado": "Producido con voz «tú» (47,4 s); listo para publicar",
    "bloqueos": [],
    "h": [
     "H1",
-    "H9"
+    "H9",
+    "H12"
    ],
    "potencial": 4,
-   "por_que": "Dilema con titular fuerte y rehook comprobado. Cuenta en 3.ª persona (riesgo tipo E14/E36); prueba H1 y H9.",
+   "por_que": "Titular fuerte + rehook comprobado + «tú» como pregunta (receta E15). Prueba H1, H9 y H12.",
    "riesgo": 3,
    "riesgo_txt": "Tema sensible (muerte real, caso en apelación) y arranque en 3.ª persona como E14/E36.",
    "esfuerzo": "1–2 h",
@@ -182,6 +183,23 @@
    "riesgo": 2,
    "riesgo_txt": "El tema (drogas) puede limitar el alcance por sí solo.",
    "esfuerzo": "45–60 min + voz",
+   "slot": "trial"
+  },
+  {
+   "id": "E35B",
+   "nombre": "E35B misma historia en 3.ª persona (trial)",
+   "formato": "historia-dilema",
+   "estado": "Producido con voz (44,7 s); reel de prueba pendiente",
+   "bloqueos": [],
+   "h": [
+    "H12",
+    "H5"
+   ],
+   "potencial": 2,
+   "por_que": "A/B limpio con E35: misma historia, 3.ª frente a 2.ª persona. Compara skip a 48 h.",
+   "riesgo": 1,
+   "riesgo_txt": "Casi ninguno; solo no seguidores.",
+   "esfuerzo": "8 min de render",
    "slot": "trial"
   }
  ]
