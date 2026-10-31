@@ -93,7 +93,7 @@
    "id": "E37",
    "nombre": "E37 ¿En qué pensaste al caer? (Cuerpo #2, secuela de E11)",
    "formato": "cuerpo-fases",
-   "estado": "Propuesta v3 (crítico 6/10): pendiente de tu OK",
+   "estado": "Propuesta v3 (crítico 6/10): Andrés no está convencido; en espera",
    "bloqueos": [
     "Tu OK",
     "Producción (3–4 h)",
@@ -108,7 +108,7 @@
    "riesgo": 2,
    "riesgo_txt": "Una secuela puede rendir menos; cuerpo es el formato con más datos a favor.",
    "esfuerzo": "3–4 h",
-   "slot": "man_pm"
+   "slot": "despues"
   },
   {
    "id": "MINIDILEMA",
