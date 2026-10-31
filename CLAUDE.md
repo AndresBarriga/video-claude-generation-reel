@@ -22,7 +22,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - Prioridad: **gancho → retención → visuales → envíos/comentarios**.
 - Puede ser un vídeo suelto o un lote; lo que pida Andrés.
 - Al terminar algo: commit + push. Si cambia una decisión, añade una línea a `docs/decisiones.md` y, si cambia lo vigente, reescribe `docs/estrategia.md`. Si Andrés manda métricas: filas en `datos/publicados.csv`, tabla de `docs/resultados.md` y ficha del vídeo.
-- Tras tocar datos, hipótesis, cola o estados: `npm run dashboard` y commit de `docs/dashboard.html`. Si Andrés manda grabación de Insights de cuenta: actualiza `datos/cuenta.json`.
+- **Dashboard = centro de trabajo** (`docs/dashboard.html`, generado; no editar a mano). Tras tocar datos, hipótesis, cola o estados: `npm run dashboard` y commit. Medición nueva: `npm run medir -- <id> vistas=… seg=… env=… skip=…` (añade la fila al CSV y regenera). Cada hipótesis de `docs/aprendizajes.md` tiene su prueba comprobable en `datos/pruebas.json`: al crear o cambiar una hipótesis, actualiza también su prueba. Grabación de Insights de cuenta → `datos/cuenta.json`.
 - Si Andrés rechaza o elogia algo concreto, añádelo a `docs/no-me-gusta.md` en ese momento.
 
 ## Cada guion

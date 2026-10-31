@@ -1,13 +1,13 @@
 {
-  "fecha": "2026-10-31",
-  "ventana": "(30 días)",
+  "fecha": "2026-10-31 16:53",
+  "ventana": "30 días",
   "seguidores": 231,
-  "seguidores_neto": 78,
   "visualizaciones": 284000,
   "espectadores": 186900,
   "visitas_perfil": 510,
   "toques_enlace": 0,
   "no_seguidores_pct": 99.4,
+  "notas": "Insights marcó +78 seguidores netos (+51 %), pero la suma de seguidores por vídeo (~237) ya iguala el total de 231: no cuadra, pendiente de aclarar.",
   "genero": { "Hombres": 93.9, "Mujeres": 6.1 },
   "edad": { "18–24": 16.7, "25–34": 53, "35–44": 22.7 },
   "paises": { "España": 34.6, "Chile": 21.8, "México": 11.5, "Colombia": 7.7, "Ecuador": 5.1 }

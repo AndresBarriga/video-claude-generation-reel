@@ -1,7 +1,7 @@
 # E30 · El que da beta siempre tiene razón — ficha
-- **Estado:** programado IG 30-oct 13:00 (cuadrícula)
+- **Estado:** publicado IG 30-oct 13:00 (cuadrícula)
 - **Formato:** humor-identidad
-- **Resultado:** — (detalle en `datos/publicados.csv`)
+- **Resultado:** 5,9K vistas, 17 seg. a 22 h (2,9 seg./1k) (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
 - **Archivos:** `guion.json` · `sonido.json` · `texto-voz.txt` · `voz.mp3` (audio usado) · `datos-corregidos.json` (tiempos por frases) · `hoja.png` · `final.mp4` (no se versiona: `npm run render -- E30`)
 

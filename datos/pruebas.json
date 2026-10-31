@@ -1,0 +1,14 @@
+{
+  "_ayuda": "Pruebas comprobables de cada hipótesis de docs/aprendizajes.md. videos = ids o palabras clave de la cola (docs/ideas/escalada.md). ventana = horas. refuta_si: m = vistas|segk|envk|skip_pct, op = < <= > >=. modo: 'todos' (refuta si todos los vídeos la refutan) o 'alguno'. Al cambiar una hipótesis, actualiza su prueba aquí.",
+  "H1": { "texto": "Los 2 próximos dilemas < 20K vistas a 48 h", "videos": ["E35", "Caldwell"], "ventana": 48, "refuta_si": [{ "m": "vistas", "op": "<", "v": 20000 }], "modo": "todos" },
+  "H2": { "texto": "Un humor con jerga con envíos > 4/1k", "videos": ["E30", "E3"], "ventana": 48, "refuta_si": [{ "m": "envk", "op": ">", "v": 4 }], "modo": "alguno" },
+  "H3": { "texto": "Un viral con ≥ 1 seg./1k", "videos": ["E15"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": ">=", "v": 1 }], "modo": "alguno", "nota": "E11 (66K vistas, 2,0 seg./1k) la refutaría si cuenta como viral universal. Decidir si E11 es «viral»." },
+  "H4": { "manual": "Ordenar la cuadrícula y ver si sube el visita→seguir (necesita visitas al perfil por vídeo)." },
+  "H5": { "manual": "Re-subir E14 con otro gancho y comparar el skip." },
+  "H6": { "manual": "Necesita ≥ 8 vídeos con nota del crítico para correlacionar." },
+  "H7": { "texto": "El próximo «cuerpo/fases» < 0,8 seg./1k", "videos": ["Tendón"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": "<", "v": 0.8 }], "modo": "alguno" },
+  "H8": { "texto": "E30 y pies de gato < 0,8 seg./1k", "videos": ["E30", "Pies de gato"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": "<", "v": 0.8 }], "modo": "todos" },
+  "H9": { "texto": "E35 (#2) ≤ 0,35 seg./1k, como E15", "videos": ["E35"], "ventana": 48, "refuta_si": [{ "m": "segk", "op": "<=", "v": 0.35 }], "modo": "alguno" },
+  "H10": { "texto": "E36 < 10K vistas o < 0,8 seg./1k a 48 h", "videos": ["E36"], "ventana": 48, "refuta_si": [{ "m": "vistas", "op": "<", "v": 10000 }, { "m": "segk", "op": "<", "v": 0.8 }], "modo": "alguno" },
+  "H11": { "texto": "Skip de vídeos `design` ≥ mediana de `codigo`", "estilo": "design", "metrica": "skip_pct", "vs": "codigo", "nota": "Ningún vídeo está marcado `design` en el CSV (E36 consta como `codigo`)." }
+}

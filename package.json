@@ -15,7 +15,8 @@
     "fotograma": "node tools/fotograma.mjs",
     "hoja": "node tools/hoja.mjs",
     "sonido": "node tools/sonido.mjs",
-    "dashboard": "node tools/dashboard.mjs"
+    "dashboard": "node tools/dashboard.mjs",
+    "medir": "node tools/medir.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -1,7 +1,7 @@
 # E36 — ficha
-- **Estado:** producido con voz, pendiente de publicar (PR #2)
+- **Estado:** publicado IG 30-oct 22:35 (cuadrícula)
 - **Formato:** historia (golpe de suerte + logro + dato útil)
-- **Resultado:** — (detalle en `datos/publicados.csv`)
+- **Resultado:** 6,0K vistas, 2 seg. a 18 h, skip 38 % (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
 - **Archivos:** `guion.json` · `sonido.json` · `texto-voz.txt` · `voz-recortada.mp3` (audio usado) · `datos-corregidos.json` (tiempos por frases) · `hoja.png` · `final.mp4` (no se versiona: `npm run render -- E36`)
 
