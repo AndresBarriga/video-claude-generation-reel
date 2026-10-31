@@ -7,13 +7,99 @@
         "escena": 0
       },
       "fin": {
-        "escena": "juzgado"
+        "escena": "manana"
       },
       "volumen": 0.4,
       "bucle": true,
       "fundido": [
         0.0,
+        0.15
+      ]
+    },
+    {
+      "nombre": "rotor",
+      "inicio": {
+        "escena": 0
+      },
+      "fin": {
+        "escena": "rebobina"
+      },
+      "volumen": 0.7,
+      "bucle": true,
+      "bajoVoz": 0.3,
+      "fundido": [
+        0.0,
+        0.1
+      ]
+    },
+    {
+      "nombre": "zas",
+      "inicio": {
+        "escena": "rebobina"
+      },
+      "duracion": 0.5,
+      "volumen": 0.8
+    },
+    {
+      "nombre": "roce",
+      "inicio": {
+        "escena": "rebobina",
+        "mas": 0.2
+      },
+      "duracion": 1.2,
+      "volumen": 0.5
+    },
+    {
+      "nombre": "zas",
+      "inicio": {
+        "escena": "manana"
+      },
+      "duracion": 0.5,
+      "volumen": 0.5
+    },
+    {
+      "nombre": "roce",
+      "inicio": {
+        "escena": "manana"
+      },
+      "fin": {
+        "escena": "noche"
+      },
+      "volumen": 0.5,
+      "bucle": true,
+      "fundido": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "nombre": "pajaros",
+      "inicio": {
+        "escena": "manana"
+      },
+      "fin": {
+        "escena": "noche"
+      },
+      "volumen": 0.3,
+      "bucle": true,
+      "fundido": [
+        0.1,
         0.2
+      ]
+    },
+    {
+      "nombre": "viento",
+      "inicio": {
+        "escena": "noche"
+      },
+      "fin": {
+        "escena": "juzgado"
+      },
+      "volumen": 0.35,
+      "bucle": true,
+      "fundido": [
+        0.3,
+        0.3
       ]
     },
     {
@@ -57,6 +143,22 @@
       "volumen": 0.7
     },
     {
+      "nombre": "rotor",
+      "inicio": {
+        "escena": "movil",
+        "mas": 0.6
+      },
+      "fin": {
+        "escena": "amanecer"
+      },
+      "volumen": 0.35,
+      "bucle": true,
+      "fundido": [
+        0.2,
+        0.3
+      ]
+    },
+    {
       "silencio": true,
       "inicio": {
         "escena": "amanecer",
@@ -66,18 +168,10 @@
       "duracion": 0.8
     },
     {
-      "nombre": "zas",
-      "inicio": {
-        "escena": "juzgado"
-      },
-      "duracion": 0.5,
-      "volumen": 0.6
-    },
-    {
       "nombre": "golpe",
       "inicio": {
         "escena": "juzgado",
-        "palabra": "condenó"
+        "palabra": "sentencia"
       },
       "duracion": 0.6,
       "volumen": 0.7
@@ -85,7 +179,7 @@
     {
       "nombre": "viento",
       "inicio": {
-        "escena": 6
+        "escena": "mensaje"
       },
       "volumen": 0.3,
       "bucle": true,

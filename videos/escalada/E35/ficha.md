@@ -1,5 +1,5 @@
 # E35 — ficha
-- **Estado:** v8 (31-oct): narración con atribuciones, hoja con tiempos simulados; falta voz nueva y render
+- **Estado:** v10 (31-oct): vuelve a la v6 con arreglos mínimos de hechos y cierre en masculino; hoja con tiempos simulados; falta voz nueva y render
 - **Formato:** historia-dilema (Decisiones límite #2)
 - **Resultado:** — (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
@@ -15,6 +15,6 @@ Comenta QUEDO o BAJO.
 
 **Comentario fijado:** Sentencia de 1.ª instancia (19-feb-2026) recurrida por defensa y fiscalía: no es firme. Fuentes: CNN, Irish Times, Salzburg24. Y tú, ¿QUEDO o BAJO?
 
-**Portada:** primer fotograma (ella sentada, él de pie, «¿Te quedas?», «50 m», «−20 °C»).
+**Portada:** primer fotograma (el helicóptero con el foco sobre los dos; «22:50», «Decisiones límite #2»).
 
 **Fuentes (no en pantalla salvo la condena):** CNN 19-feb-2026, BBC Mundo, Irish Times 20-feb-2026, Alpine Mag.

@@ -10,9 +10,8 @@
   "Irish Times 20-feb-2026",
   "Alpine Mag (ver docs/ideas/escalada.md, E35)"
  ],
- "nota_rigor": "v9 (31-oct): narración sin heroizarlo. Hechos con atribución. Condena en primera instancia (19-feb-2026, homicidio imprudente grave; 5 meses suspendidos; recurrida por defensa y fiscalía; NO firme). Él se declara inocente. El tribunal lo trató como líder de facto: «excelente escalador» frente a ella mucho menos experimentada. Helicóptero de rescate ~22:50 (las fuentes dan 22:30–22:50): NO hizo señal de socorro (no consta que lo rechazara de palabra); él dijo que aún no estaban en apuros. Su versión (ella le pidió bajar a por ayuda) va como «según él». Fiscalía/investigadores: la dejó sin protección, sin usar la manta térmica, con el móvil en silencio y sin contestar llamadas. Sin humor, sin nombres, cuerpo en gris, nada explícito (la madre de ella sigue viva y lo defendió en el juicio). Hora de la salida (03:30) según ambas partes (él dice que avisó de que bajaba solo a esa hora; la acusación, que esperó a las 03:30 para pedir ayuda). Helicóptero 22:30–22:50 según la fuente: se usa 22:50 (acusación).",
+ "nota_rigor": "v10 (31-oct): vuelve a la v6 con arreglos mínimos de hechos. Helicóptero de rescate ~22:50 (fuentes: 22:30–22:50): no hizo ninguna señal de socorro (no consta que lo rechazara de palabra), por eso «no pidió ayuda» y sin gesto de rechazo. Salida a las 03:30 (ambas partes). «Según la fiscalía» para manta térmica y llamadas. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por defensa y fiscalía, NO firme; él se declara inocente; la sentencia lo trató como líder de facto. Cierre en masculino para el público: «¿Tú te quedarías? ¿Y tu compañero de cordada?». Sin humor, sin nombres, cuerpo en gris, nada explícito.",
  "ganchos_alternativos": [
-  "R ★ (elegida 31-oct, crítico 7): dilema real primero, 2.ª persona: «Tu novia no puede dar un paso más… ¿Te quedas con ella o bajas a por ayuda?» + 2.º gancho legal («Le pasó a un hombre de verdad… condenado en primera instancia… se declara inocente»).",
   "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
   "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
   "C · in medias res con ella ya gris (8): destripa el final y abre con la víctima muerta.",
@@ -21,44 +20,71 @@
  "escenas": [
   {
    "tipo": "gancho",
-   "visual": "noche",
+   "visual": "abre",
+   "titulo": "22:50",
+   "texto": "Este helicóptero de rescate pasó justo encima. Y él no pidió ayuda."
+  },
+  {
+   "tipo": "texto",
+   "visual": "rebobina",
    "titulo": "¿Te quedas?",
-   "texto": "Tu novia no puede dar un paso más. A cincuenta metros de la cumbre, de noche, a unos veinte bajo cero. ¿Te quedas o bajas a por ayuda?"
+   "texto": "Rebobina. Ahora el que decide eres tú."
+  },
+  {
+   "tipo": "texto",
+   "visual": "manana",
+   "titulo": "4 veces arriba",
+   "texto": "Eres el experto: has subido esta montaña cuatro veces."
+  },
+  {
+   "tipo": "texto",
+   "visual": "noche",
+   "titulo": "50 m",
+   "texto": "Se os hace de noche a cincuenta metros de la cumbre."
   },
   {
    "tipo": "texto",
    "visual": "helicoptero",
    "titulo": "22:50",
-   "texto": "Esto pasó de verdad. Horas antes, un helicóptero de rescate sobrevoló la zona. Según la sentencia, él no hizo ninguna señal. Dice que aún no estaban en apuros."
+   "texto": "A las once menos diez llega el helicóptero del principio. Y tú…"
+  },
+  {
+   "tipo": "texto",
+   "visual": "rechazo",
+   "texto": "…tampoco pides ayuda."
   },
   {
    "tipo": "texto",
    "visual": "color",
    "titulo": "03:30",
-   "texto": "A las tres y media, él bajó solo. Según él, ella se lo pidió. Según la acusación, la dejó sin protección ni manta térmica."
+   "texto": "A las tres y media, la dejas para ir a buscar ayuda. Llevas una manta térmica. Según la fiscalía, ni la usaste."
   },
   {
    "tipo": "texto",
    "visual": "movil",
-   "texto": "Según la acusación, no contestó a las llamadas de rescate."
+   "texto": "Según la fiscalía, tampoco contestas a las llamadas de rescate."
   },
   {
    "tipo": "texto",
    "visual": "amanecer",
-   "texto": "Ella murió de hipotermia, a cincuenta metros de la cumbre."
+   "texto": "Ella muere de hipotermia. A cincuenta metros de la cumbre."
   },
   {
    "tipo": "texto",
    "visual": "juzgado",
    "titulo": "Condenado en 1.ª instancia · recurrido",
-   "texto": "El tribunal lo vio como el líder y lo condenó en primera instancia por homicidio imprudente: cinco meses, suspendidos. Hay recurso. Él se declara inocente.",
-   "fuente": "CNN, 19-feb-2026"
+   "texto": "Eso no lo hiciste tú. Lo hizo él, según la sentencia. Está recurrida. Él se declara inocente."
+  },
+  {
+   "tipo": "texto",
+   "visual": "mensaje",
+   "texto": "Lo difícil no es subir. Es decidir cuando ella ya no puede."
   },
   {
    "tipo": "cierre",
-   "visual": "noche",
-   "titulo": "¿Y la tuya?",
-   "texto": "Ella pidió que bajara, dice él. ¿Tu pareja se quedaría contigo?"
+   "visual": "cierre",
+   "titulo": "¿Y el tuyo?",
+   "texto": "¿Tú te quedarías? ¿Y tu compañero de cordada?"
   }
  ]
 }
