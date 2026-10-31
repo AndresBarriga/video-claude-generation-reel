@@ -19,3 +19,6 @@ Mándaselo a tu compañero de cordada y pregúntale si te cortaría 👀
 **Portada:** fotograma del gancho (mano con la navaja sobre la cuerda + «¿Cortas?»).
 
 Fuentes: Wikipedia — Touching the Void (book); Joe Simpson (mountaineer); Simon Yates (mountaineer).
+
+## Curva de retención (captura 31-oct, lectura aproximada)
+¿Cortas? (56 s): ≈70 % a los 8 s, meseta ≈65 % de 10 s a 50 s, cae solo en los últimos 5 s (→≈25 %). La mejor curva.

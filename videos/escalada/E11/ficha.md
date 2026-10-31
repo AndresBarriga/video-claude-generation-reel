@@ -19,3 +19,6 @@ Mándaselo al que siempre llega a la fase 5.
 **Portada:** primer fotograma («Las 5 fases de la pierna de Elvis»).
 
 Nota CTA: la voz termina con «¿En qué fase te quedas tú?». El envío lo empujan la descripción («Etiqueta a quien siempre llega a la fase 5») y el comentario fijado.
+
+## Curva de retención (captura 31-oct, lectura aproximada)
+Pierna de Elvis (41 s): ≈73 % a los 6 s, plano hasta el s 22 (≈61 %, las fases), cae a ≈37 % en el s 23-33 (explicación), final ≈25 %.

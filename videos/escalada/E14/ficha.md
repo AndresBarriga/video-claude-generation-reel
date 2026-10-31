@@ -17,3 +17,6 @@ Mándaselo al que no se sube ni a una escalera de mano.
 **Comentario fijado:** ¿Valiente, o es que su cerebro no se entera? Yo voto lo segundo.
 
 **Portada:** primer fotograma (tú en la escalera con la bombilla).
+
+## Curva de retención (captura 31-oct, lectura aproximada)
+Honnold (46 s): ≈58 % a los 12 s, meseta ≈45 %, desde el s 41 cae a ≈9 % (el cierre expulsa a casi todos).

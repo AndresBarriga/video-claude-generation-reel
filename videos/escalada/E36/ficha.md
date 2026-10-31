@@ -15,3 +15,6 @@ Etiqueta al que se habría llevado dos.
 **Comentario fijado:** Sé sincero: ¿fardo sí o fardo no?
 
 **Portada:** primer fotograma (el avión en la nieve con los fardos y el hippie asomando).
+
+## Curva de retención (captura 31-oct, lectura aproximada)
+Hippies y avión (44 s): ≈65 % a los 5 s y ≈50 % a los 12 s, meseta ≈45 %: todo el problema está en los primeros 10-15 s.

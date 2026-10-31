@@ -16,3 +16,6 @@ Mándaselo a quien te sujetaba el móvil 📱
 **Comentario fijado:** ¿Qué proyecto te dejaste en un viaje?
 
 **Portada:** primer fotograma (la mano llegando al último canto, de noche).
+
+## Curva de retención (captura 31-oct, lectura aproximada)
+Último pegue (42 s): ≈76 % a los 7 s, meseta 55-59 %, final ≈41 % (el mejor final); pocas vistas por poco envío, no por retención.

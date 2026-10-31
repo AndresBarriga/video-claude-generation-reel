@@ -19,3 +19,6 @@ Etiqueta al que siempre te da beta sin que se la pidas.
 **Comentario fijado (lo pone Andrés):** ¿Cuál de los tres eres tú: el veterano, el del móvil o el de «tú puedes»?
 **Primera hora:** responder a todos, mejor con otra pregunta («¿y te salió con talón?»).
 **Portada:** primer fotograma (tú en el paso clave rodeado de globos).
+
+## Curva de retención (captura 31-oct, lectura aproximada)
+Beta no pedida (28 s): ≈61 % a los 6 s (gancho flojo), meseta ≈46 %, final ≈25 %.
