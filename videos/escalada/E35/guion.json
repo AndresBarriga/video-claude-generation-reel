@@ -10,7 +10,7 @@
   "Irish Times 20-feb-2026",
   "Alpine Mag (ver docs/ideas/escalada.md, E35)"
  ],
- "nota_rigor": "v15 (31-oct): gancho con «dejar morir» como ACUSACIÓN («Lo acusaron de dejar morir…», titular de CNN en Español/BBC Mundo/ARA) y la condena exacta («por negligencia grave»): el tribunal estimó negligencia, no intención, así que no se dice «condenado por dejar morir». Rehook: helicóptero ~22:30–22:50 que da vueltas con el foco y graba a la mujer; el juez vio en esa grabación que ya estaba en apuros (Outside/Climbing): única atribución «según el juez». WhatsApp de la policía «¿Necesitáis ayuda ahora o no?» sin respuesta (Climbing, testimonio del agente). Él admite que no hizo señales (dice que aún no estaban en apuros). Sin hora exacta de la salida. Sin expareja, manta ni teléfono. La madre de ella lo defendió. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por ambas partes, NO firme. Narración en 3.ª persona con la pregunta al espectador solo al final.",
+ "nota_rigor": "v15 (31-oct): gancho con «dejar morir» como ACUSACIÓN («Lo acusaron de dejar morir…», titular de CNN en Español/BBC Mundo/ARA) y la condena exacta («por negligencia grave»): el tribunal estimó negligencia, no intención, así que no se dice «condenado por dejar morir». Rehook: helicóptero ~22:30–22:50 que da vueltas con el foco y graba a la mujer; el juez vio en esa grabación que ya estaba en apuros (Outside/Climbing): única atribución «según el juez». WhatsApp de la policía «¿Necesitáis ayuda ahora o no?» sin respuesta (Climbing, testimonio del agente). Él admite que no hizo señales (dice que aún no estaban en apuros). Sin hora exacta de la salida. Sin expareja, manta ni teléfono. La madre de ella lo defendió. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por ambas partes, NO firme. Narración en 3.ª persona con la pregunta al espectador solo al final. v16: sin la madre ni «hay recurso» en voz (el rótulo «Condenado en 1.ª instancia · recurrido» ya lo dice, y el comentario fijado lo detalla).",
  "ganchos_alternativos": [
   "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
   "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
@@ -38,8 +38,7 @@
   },
   {
    "tipo": "texto",
-   "visual": "noche",
-   "titulo": "50 m",
+   "visual": "mensaje",
    "texto": "Hace unos veinte bajo cero y ella no puede dar un paso más."
   },
   {
@@ -56,12 +55,7 @@
   {
    "tipo": "texto",
    "visual": "movil",
-   "texto": "Le escriben: «¿Necesitáis ayuda ahora o no?». Él no contesta."
-  },
-  {
-   "tipo": "texto",
-   "visual": "rechazo",
-   "texto": "Dice que aún no estaban en apuros."
+   "texto": "Le escriben: «¿Necesitáis ayuda ahora o no?». Él no contesta. Dice que aún no estaban en apuros."
   },
   {
    "tipo": "texto",
@@ -73,17 +67,6 @@
    "tipo": "texto",
    "visual": "amanecer",
    "texto": "A la mañana siguiente, la encuentran muerta. A cincuenta metros de la cumbre."
-  },
-  {
-   "tipo": "texto",
-   "visual": "mensaje",
-   "texto": "La madre de ella lo defendió en el juicio."
-  },
-  {
-   "tipo": "texto",
-   "visual": "juzgado",
-   "titulo": "Condenado en 1.ª instancia · recurrido",
-   "texto": "Pero la sentencia no es firme: hay recurso."
   },
   {
    "tipo": "cierre",

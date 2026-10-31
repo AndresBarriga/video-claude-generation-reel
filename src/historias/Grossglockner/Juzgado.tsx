@@ -19,8 +19,8 @@ const Silla: React.FC<{ x: number; y: number; mira?: 1 | -1 }> = ({ x, y, mira =
 );
 
 export const Juzgado: React.FC<P> = ({ e, d, pal }) => {
-  const f = useCurrentFrame(), corte = (pal("Cinco") ?? Math.round(d * 0.4)) - 2;
-  if (f < corte) return <PlanoWebcam d={corte} baja={[1.2, 2.2]} hora={(k) => `02:${String(31 + Math.floor(k / 30)).padStart(2, "0")}:00`} titulo="ÉL" />;
+  const f = useCurrentFrame(), pc = pal("Cinco"), corte = pc != null ? pc - 2 : 0; // el plano webcam «ÉL» solo si el texto trae «Cinco…»
+  if (corte > 0 && f < corte) return <PlanoWebcam d={corte} baja={[1.2, 2.2]} hora={(k) => `02:${String(31 + Math.floor(k / 30)).padStart(2, "0")}:00`} titulo="ÉL" />;
   const g = f - corte, golpe = g < 6 ? 0 : spring({ frame: g - 6, fps: 30, config: { damping: 7, stiffness: 320 } });
   const mazo = interpolate(golpe, [0, 1], [-50, 0]);
   return (
