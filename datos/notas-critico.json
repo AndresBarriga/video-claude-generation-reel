@@ -72,5 +72,11 @@
   "orig": 5.5,
   "fase": "propuesta v3 (nota de v2)",
   "hist": "31-oct 5,5 → 6"
+ },
+ "E40": {
+  "nota": 5.5,
+  "orig": 5.5,
+  "fase": "propuesta v1 (v2 sin re-puntuar)",
+  "hist": "31-oct 5,5"
  }
 }

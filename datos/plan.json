@@ -134,11 +134,11 @@
    "id": "CALDWELL",
    "nombre": "Caldwell «Las dos decisiones» (Decisiones límite #3)",
    "formato": "historia-dilema",
-   "estado": "Por producir",
+   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
    "bloqueos": [
-    "Propuesta",
+    "Tu OK",
     "Producción",
-    "Esperar lectura de E35 a 48 h"
+    "Voz"
    ],
    "h": [
     "H1",

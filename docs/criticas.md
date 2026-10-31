@@ -41,3 +41,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 31-oct | E37 v2→v3 | propuesta | 6 | Pensamientos genéricos y estructura de E11; explicación tardía. Aplicado: pensamientos absurdos y concretos, sin la promesa a la roca, final del asegurador | — |
 | 31-oct | E38 v1 | propuesta | 5,5 | Lección sin conflicto; gancho = dato; envío «tecleando» sin destinatario |
 | 31-oct | E38 v2 | propuesta | 6 | Final adivinable; gancho en 3.ª persona con dos ideas; humor sin voz; alcance de nicho |
+| 31-oct | E40 v1 | propuesta | 5,5 | Dilema muere en s 8 y salto al dedo; gancho en 3.ª persona; tres episodios; «19 días después» y «casi la deja» incorrectos; cierre largo con «mándaselo» en voz |
