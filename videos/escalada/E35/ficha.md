@@ -1,5 +1,5 @@
 # E35 — ficha
-- **Estado:** v13 (31-oct): gancho con el hecho conocido, rehook con la grabación del helicóptero; hoja con tiempos simulados; falta voz nueva y render
+- **Estado:** v15 (31-oct): gancho «Lo acusaron de dejar morir…», rehook con el helicóptero y el WhatsApp; hoja con tiempos simulados; falta voz nueva y render
 - **Formato:** historia-dilema (Decisiones límite #2)
 - **Resultado:** — (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
@@ -7,7 +7,7 @@
 - **Archivos:** `guion.json` · `propuesta.md` · `sonido.json` · `texto-voz.txt` · `voz-recortada.mp3` (audio usado) · `datos-corregidos.json` (tiempos por frases) · `hoja.png` · `final.mp4` (no se versiona: `npm run render -- E35`)
 
 ## Publicación
-**Descripción:** Decisiones límite #2. Lo que se llama «divorcio alpino»: la sentencia es de primera instancia y está recurrida. Mándaselo a tu novia y pregúntale qué haría ella.
+**Descripción:** Decisiones límite #2. Lo que la prensa llama «divorcio alpino» (Grossglockner): la sentencia es de primera instancia y está recurrida. Mándaselo a tu novia y pregúntale qué haría ella.
 
 Comenta QUEDO o BAJO.
 

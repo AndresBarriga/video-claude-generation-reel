@@ -10,7 +10,7 @@
   "Irish Times 20-feb-2026",
   "Alpine Mag (ver docs/ideas/escalada.md, E35)"
  ],
- "nota_rigor": "v13 (31-oct): gancho con el hecho que ya conoce la gente (la dejó sola a 50 m de la cumbre, murió congelada, condenado, se declara inocente) sin «dejar morir» (el tribunal estimó negligencia, no intención). Rótulo «A 50 METROS» (el término «divorcio alpino» va en descripción y hashtags: la conversación en redes es sobre todo de mujeres y el público es 94 % hombres). Una sola atribución: «según el juez» (vídeo grabado desde el helicóptero a las 22:30, el juez vio que ella estaba en apuros; Outside/Climbing). Él admitió que no hizo señales al helicóptero (dice que aún no estaban en apuros). Sin hora exacta de la salida («Horas después»: 02:00 según la acusación, 03:30 según él). Sin expareja (testimonio de una persona privada que el tribunal no usó para condenar), sin manta ni móvil. La madre de ella lo defendió. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por ambas partes, NO firme.",
+ "nota_rigor": "v15 (31-oct): gancho con «dejar morir» como ACUSACIÓN («Lo acusaron de dejar morir…», titular de CNN en Español/BBC Mundo/ARA) y la condena exacta («por negligencia grave»): el tribunal estimó negligencia, no intención, así que no se dice «condenado por dejar morir». Rehook: helicóptero ~22:30–22:50 que da vueltas con el foco y graba a la mujer; el juez vio en esa grabación que ya estaba en apuros (Outside/Climbing): única atribución «según el juez». WhatsApp de la policía «¿Necesitáis ayuda ahora o no?» sin respuesta (Climbing, testimonio del agente). Él admite que no hizo señales (dice que aún no estaban en apuros). Sin hora exacta de la salida. Sin expareja, manta ni teléfono. La madre de ella lo defendió. Condena en primera instancia (19-feb-2026; 5 meses suspendidos), recurrida por ambas partes, NO firme. Narración en 3.ª persona con la pregunta al espectador solo al final.",
  "ganchos_alternativos": [
   "B ★ (elegida, 30-oct, crítico 8,5): in medias res — el helicóptero a las 22:00 y él diciendo que no; «Rebobina» y vuelta al principio; el helicóptero vuelve como rehook.",
   "A · v5: «Tu novia se está congelando. La manta térmica la llevas tú. ¿Te quedas o bajas?» con su cara en el fotograma 1 (8).",
@@ -22,36 +22,36 @@
    "tipo": "gancho",
    "visual": "noche",
    "titulo": "A 50 METROS",
-   "texto": "Dejó sola a su novia a cincuenta metros de la cumbre. Ella murió congelada. Lo condenaron. Él dice que es inocente."
+   "texto": "Lo acusaron de dejar morir a su novia a cincuenta metros de la cumbre. Lo condenaron por negligencia grave. Él dice que es inocente."
   },
   {
    "tipo": "texto",
    "visual": "rebobina",
-   "titulo": "¿Te quedas?",
-   "texto": "Rebobina. Ahora decides tú."
+   "titulo": "Esa noche",
+   "texto": "Rebobina. Esa noche."
   },
   {
    "tipo": "texto",
    "visual": "noche",
    "titulo": "50 m",
-   "texto": "Es de noche, hace unos veinte bajo cero y ella no puede dar un paso más."
+   "texto": "Hace unos veinte bajo cero y ella no puede dar un paso más."
   },
   {
    "tipo": "texto",
    "visual": "helicoptero",
    "titulo": "22:50",
-   "texto": "A las once menos diez pasa un helicóptero de rescate. Su cámara graba a la mujer: según el juez, ya se la ve en apuros."
+   "texto": "A las once menos diez, un helicóptero de rescate da varias vueltas con el foco. La cámara del helicóptero graba a la mujer: según el juez, ya se la ve en apuros."
   },
   {
    "tipo": "texto",
    "visual": "rechazo",
-   "texto": "Y tú… no haces ninguna señal."
+   "texto": "Le escriben: «¿Necesitáis ayuda ahora o no?». Él no contesta. Dice que aún no estaban en apuros."
   },
   {
    "tipo": "texto",
    "visual": "color",
    "titulo": "Horas después",
-   "texto": "Horas después, la dejas sola para ir a buscar ayuda."
+   "texto": "Horas después, la deja sola para ir a buscar ayuda."
   },
   {
    "tipo": "texto",
