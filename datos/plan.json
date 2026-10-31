@@ -37,11 +37,8 @@
    "id": "E35",
    "nombre": "E35 ¿Te quedas? (Decisiones límite #2)",
    "formato": "historia-dilema",
-   "estado": "Guion v7 listo; falta voz y render",
-   "bloqueos": [
-    "Voz nueva (Andrés, ~50 s)",
-    "Render y revisión (~30 min)"
-   ],
+   "estado": "Producido con voz (50,6 s); listo para publicar",
+   "bloqueos": [],
    "h": [
     "H1",
     "H9",

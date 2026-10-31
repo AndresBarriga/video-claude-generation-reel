@@ -22,7 +22,13 @@
    "tipo": "gancho",
    "visual": "noche",
    "titulo": "A 50 METROS",
-   "texto": "Lo acusaron de dejar morir a su novia a cincuenta metros de la cumbre. Lo condenaron por negligencia grave. Él dice que es inocente."
+   "texto": "Lo acusaron de dejar morir a su novia a cincuenta metros de la cumbre."
+  },
+  {
+   "tipo": "texto",
+   "visual": "juzgado",
+   "titulo": "Condenado en 1.ª instancia · recurrido",
+   "texto": "Lo condenaron por negligencia grave. Él dice que es inocente."
   },
   {
    "tipo": "texto",
@@ -40,12 +46,22 @@
    "tipo": "texto",
    "visual": "helicoptero",
    "titulo": "22:50",
-   "texto": "A las once menos diez, un helicóptero de rescate da varias vueltas con el foco. La cámara del helicóptero graba a la mujer: según el juez, ya se la ve en apuros."
+   "texto": "A las once menos diez, un helicóptero de rescate da varias vueltas con el foco."
   },
   {
    "tipo": "texto",
    "visual": "rechazo",
-   "texto": "Le escriben: «¿Necesitáis ayuda ahora o no?». Él no contesta. Dice que aún no estaban en apuros."
+   "texto": "La cámara del helicóptero graba a la mujer: según el juez, ya se la ve en apuros."
+  },
+  {
+   "tipo": "texto",
+   "visual": "movil",
+   "texto": "Le escriben: «¿Necesitáis ayuda ahora o no?». Él no contesta."
+  },
+  {
+   "tipo": "texto",
+   "visual": "rechazo",
+   "texto": "Dice que aún no estaban en apuros."
   },
   {
    "tipo": "texto",

@@ -1,5 +1,5 @@
 # E35 — ficha
-- **Estado:** v15 (31-oct): gancho «Lo acusaron de dejar morir…», rehook con el helicóptero y el WhatsApp; hoja con tiempos simulados; falta voz nueva y render
+- **Estado:** v15 producido con voz (Danny, 50,6 s); listo para publicar IG 31-oct ~21:30 (cuadrícula)
 - **Formato:** historia-dilema (Decisiones límite #2)
 - **Resultado:** — (detalle en `datos/publicados.csv`)
 - **Aprendizajes:** — (`docs/aprendizajes.md`)
