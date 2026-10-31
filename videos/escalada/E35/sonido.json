@@ -7,7 +7,7 @@
         "escena": 0
       },
       "fin": {
-        "escena": "manana"
+        "escena": "juzgado"
       },
       "volumen": 0.4,
       "bucle": true,
@@ -17,83 +17,29 @@
       ]
     },
     {
-      "nombre": "rotor",
-      "inicio": {
-        "escena": 0
-      },
-      "fin": {
-        "escena": "rebobina"
-      },
-      "volumen": 0.7,
-      "bucle": true,
-      "bajoVoz": 0.3,
-      "fundido": [
-        0.0,
-        0.1
-      ]
-    },
-    {
       "nombre": "zas",
       "inicio": {
-        "escena": "rebobina"
+        "escena": "juzgado"
       },
       "duracion": 0.5,
-      "volumen": 0.8
+      "volumen": 0.6
     },
     {
-      "nombre": "roce",
+      "nombre": "golpe",
       "inicio": {
-        "escena": "rebobina",
-        "mas": 0.2
+        "escena": "juzgado",
+        "palabra": "condenó"
       },
-      "duracion": 1.2,
-      "volumen": 0.5
-    },
-    {
-      "nombre": "zas",
-      "inicio": {
-        "escena": "manana"
-      },
-      "duracion": 0.5,
-      "volumen": 0.5
-    },
-    {
-      "nombre": "roce",
-      "inicio": {
-        "escena": "manana"
-      },
-      "fin": {
-        "escena": "noche"
-      },
-      "volumen": 0.5,
-      "bucle": true,
-      "fundido": [
-        0.1,
-        0.1
-      ]
-    },
-    {
-      "nombre": "pajaros",
-      "inicio": {
-        "escena": "manana"
-      },
-      "fin": {
-        "escena": "noche"
-      },
-      "volumen": 0.3,
-      "bucle": true,
-      "fundido": [
-        0.1,
-        0.2
-      ]
+      "duracion": 0.6,
+      "volumen": 0.7
     },
     {
       "nombre": "viento",
       "inicio": {
-        "escena": "noche"
+        "escena": "helicoptero"
       },
       "fin": {
-        "escena": "juzgado"
+        "escena": "amanecer"
       },
       "volumen": 0.35,
       "bucle": true,
@@ -166,15 +112,6 @@
         "mas": -0.8
       },
       "duracion": 0.8
-    },
-    {
-      "nombre": "golpe",
-      "inicio": {
-        "escena": "juzgado",
-        "palabra": "Cinco"
-      },
-      "duracion": 0.6,
-      "volumen": 0.7
     },
     {
       "nombre": "viento",

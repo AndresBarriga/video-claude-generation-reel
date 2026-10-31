@@ -9,8 +9,10 @@ export const PAREJA = { s: 1.6, xa: 360, xe: 640 };
 export const rocaDe = (x: number) => sueloY(x) - 70;
 export const Noche: React.FC<P> = ({ e, d }) => {
   const f = useCurrentFrame(), { s, xa, xe } = PAREJA;
-  const luz = interpolate(f, [0, d * 0.7], [1, 0], { extrapolateRight: "clamp" });
-  const sienta = interpolate(f, [4, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // Si abre o cierra el vídeo (gancho/cierre), ella ya está sentada desde el fotograma 0 y es de noche cerrada.
+  const fijo = e.tipo === "gancho" || e.tipo === "cierre";
+  const luz = fijo ? 0 : interpolate(f, [0, d * 0.7], [1, 0], { extrapolateRight: "clamp" });
+  const sienta = fijo ? 1 : interpolate(f, [4, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const pie = POSES.pie as { piernaA: [number, number]; piernaB: [number, number] };
   const he = caderaApoyada(xe, s, pie.piernaA, pie.piernaB, -1);
   const ha = rocaDe(xa) - 8 * s - (1 - sienta) * 100 * s;
@@ -29,7 +31,15 @@ export const Noche: React.FC<P> = ({ e, d }) => {
         <Vaho x={xe - 30 * s} y={he - 166 * s} fuerza={1} dir={-1} />
         <Viento n={60} fuerza={1.3} op={0.6} />
       </Svg>
-      <div style={{ position: "absolute", left: 880, top: 600, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 84, color: "#fff", WebkitTextStroke: "10px #050B14", paintOrder: "stroke fill" }}>{e.titulo}</div>
+      {fijo ? (
+        <>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 230, textAlign: "center", whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 130, color: "#fff", WebkitTextStroke: "12px #050B14", paintOrder: "stroke fill" }}>{e.titulo}</div>
+          <div style={{ position: "absolute", left: 886, top: 600, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 56, color: "#fff", WebkitTextStroke: "8px #050B14", paintOrder: "stroke fill" }}>50 m</div>
+          <div style={{ position: "absolute", left: 60, top: 620, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 56, color: "#9FD4FF", WebkitTextStroke: "8px #050B14", paintOrder: "stroke fill" }}>−20 °C</div>
+        </>
+      ) : (
+        <div style={{ position: "absolute", left: 880, top: 600, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 84, color: "#fff", WebkitTextStroke: "10px #050B14", paintOrder: "stroke fill" }}>{e.titulo}</div>
+      )}
     </Camara>
   );
 };
