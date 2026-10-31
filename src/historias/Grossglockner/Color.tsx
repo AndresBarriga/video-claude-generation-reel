@@ -33,7 +33,7 @@ export const Color: React.FC<P> = ({ e, d, pal }) => {
         <Viento n={70} fuerza={1.6} op={0.6} />
       </Svg>
       <Hora t={e.titulo} />
-      {f >= i0 && f < i1 && <MantaInserto f0={i0} />}
+      {/manta/i.test(e.texto) && f >= i0 && f < i1 && <MantaInserto f0={i0} />}
     </Camara>
   );
 };

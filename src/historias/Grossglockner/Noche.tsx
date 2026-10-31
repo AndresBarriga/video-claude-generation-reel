@@ -33,7 +33,7 @@ export const Noche: React.FC<P> = ({ e, d }) => {
       </Svg>
       {fijo ? (
         <>
-          <div style={{ position: "absolute", left: 0, right: 0, top: 230, textAlign: "center", whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 130, color: "#fff", WebkitTextStroke: "12px #050B14", paintOrder: "stroke fill" }}>{e.titulo}</div>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 230, textAlign: "center", whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: (e.titulo ?? "").length > 11 ? 92 : 130, color: "#fff", WebkitTextStroke: "12px #050B14", paintOrder: "stroke fill" }}>{e.titulo}</div>
           <div style={{ position: "absolute", left: 886, top: 600, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 56, color: "#fff", WebkitTextStroke: "8px #050B14", paintOrder: "stroke fill" }}>50 m</div>
           <div style={{ position: "absolute", left: 60, top: 620, whiteSpace: "nowrap", fontFamily: fuenteTitulo, fontWeight: 800, fontSize: 56, color: "#9FD4FF", WebkitTextStroke: "8px #050B14", paintOrder: "stroke fill" }}>−20 °C</div>
         </>
