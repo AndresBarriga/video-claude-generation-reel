@@ -7,6 +7,15 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 **Cola de producción (orden propuesto):** 1) E37 «¿En qué pensaste al caer?» (cuerpo #2, #10; propuesta en `videos/escalada/E37/`) · 2) Caldwell «Las dos decisiones» = Decisiones límite #3 · 3) Pies de gato «Explícaselo a tu madre» · 4) Tendón vs músculo (#12) · 5) E34 Everest «¿Te paras?» (propuesta, crítico 6: subir a ≥7) · 6) E29 «El que asegura» · 7) «Está blando para el grado» · micro «Diez minutos».
 **Abiertas (futuro):** identidad #1, #2, #4 · cuerpo #7, #8, #9, #10, #13 · historias #17 Lynn Hill, #18 Güllich, #19, #20 Sharma en Mallorca · España #21 Naranjo de Bulnes, #22, #23, #24 · dinero #25, #26 (= segunda parte de pies de gato), #27, #28 · decisión límite: Iñaki Ochoa de Olza (España), Revol/Mackiewicz, Messner, Beck Weathers · micro de la lista. Descartadas: «Estancado por meses», Ralston (muy contada, no es escalada).
 
+## Ideas nuevas (31-oct, Andrés) — sin evaluar salvo nota
+- **Antebrazo/pump** con prueba en casa (puño apretado 1 min; la bolsa de la compra con brazo recto vs doblado explica «brazos rectos», no el pump de agarre). Mismo hueco que #8.
+- **Tendones vs músculo** (#12): músculo se adapta antes que el tendón; la lesión llega cuando te sientes fuerte; ojo: el tendón sí se adapta, a otro ritmo. Verificar plazos con fuentes. Propuesto como siguiente.
+- **Cómo entrenar los dedos** (regleta, polea; enlaza con tendón; riesgo: consejo saturado → ángulo de lesión/ritmo).
+- **Por qué entrenar en Kilterboard** (qué hace y por qué engancha; ángulo humor/identidad o «el entreno que no sabías»).
+- **Factor de caída** («una caída de 2 m puede ser peor que una de 10»; seguridad con cautela; se solapa con E37).
+- **Factor miedo** (idea suelta; solapa con #7 y E11).
+- Pies de gato (ya en cola), cuánto cuesta empezar (#25/#26), historia Sharma en Mallorca (#20, más adelante).
+
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — v final (28-oct): abre contigo en una **escalera de mano** cambiando una bombilla («A ti te tiembla la pierna en una escalera de mano. Él subió esto sin cuerda. Con esta cara.»), contador 2 → 884 m (Torre Eiffel como escala), escáner del cerebro como 2.º gancho, giro: ensayó cada paso con cuerda (sin la patada de kárate: de perfil no se podía representar bien). Cierre: «¿Valiente, o es que su cerebro no se entera? Mándaselo al que no se sube ni a una escalera de mano». Caricatura `piezas/Honnold.tsx`. Cifras: 884 m (Guinness; no 914), 3 h 56 min, Eiffel 330 m. Voz Danny, tiempos por frases. [producido; rama `video/E14-honnold`]
 - **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Voz Danny (ElevenLabs) sincronizada. [final, falta aprobar]
