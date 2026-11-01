@@ -269,12 +269,9 @@
    "id": "E42",
    "nombre": "E42 La puerta (barn door)",
    "formato": "tecnica-info",
-   "estado": "Propuesta v2 (crítico 5 en v1); falta tu OK",
+   "estado": "Producido con voz (34 s); falta tu revisión",
    "bloqueos": [
-    "Tu OK",
-    "Boceto",
-    "Voz",
-    "Producción"
+    "Tu revisión"
    ],
    "h": [
     "H7"
@@ -284,7 +281,7 @@
    "riesgo": 3,
    "riesgo_txt": "Técnica genérica; techo 3–5K como las referencias.",
    "esfuerzo": "3–4 h",
-   "slot": "despues"
+   "slot": "man_pm"
   }
  ]
 }

@@ -1,0 +1,69 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    {
+      "nombre": "viento",
+      "inicio": {
+        "escena": 0
+      },
+      "volumen": 0.12,
+      "bucle": true,
+      "fundido": [
+        0.1,
+        0.5
+      ]
+    },
+    {
+      "nombre": "roce",
+      "inicio": {
+        "escena": "puerta",
+        "palabra": "abre"
+      },
+      "duracion": 0.6,
+      "volumen": 0.7
+    },
+    {
+      "nombre": "zas",
+      "inicio": {
+        "escena": "puerta",
+        "palabra": "puerta",
+        "mas": 0.1
+      },
+      "duracion": 0.5,
+      "volumen": 0.55
+    },
+    {
+      "nombre": "clic",
+      "inicio": {
+        "escena": "contrarios"
+      },
+      "duracion": 0.4,
+      "volumen": 0.6
+    },
+    {
+      "nombre": "clic",
+      "inicio": {
+        "escena": "triangulo",
+        "fraccion": 0.5
+      },
+      "duracion": 0.4,
+      "volumen": 0.6
+    },
+    {
+      "nombre": "clic",
+      "inicio": {
+        "escena": "contrapeso"
+      },
+      "duracion": 0.4,
+      "volumen": 0.6
+    },
+    {
+      "nombre": "clic",
+      "inicio": {
+        "escena": "core"
+      },
+      "duracion": 0.4,
+      "volumen": 0.6
+    }
+  ]
+}
