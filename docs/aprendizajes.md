@@ -16,6 +16,7 @@ Solo una reforzada puede pasar a `docs/viralidad.md` (y Andrés lo aprueba). Dat
 | H11 | Los personajes de Claude Design bajan el skip frente al dibujo por código | — | — | Skip de vídeos `design` no menor que la mediana `codigo` (~19 %) | abierta (E36 en adelante) |
 | H6 | La nota del crítico no predice el rendimiento; sirve para encontrar fallos | E6 (7/10 → plano) | — (E15 sin nota) | Correlación clara nota ↔ seguidores con ≥ 8 vídeos | abierta |
 | H12 | Rinde más lo que le pasa al espectador (su decisión, su cuerpo) que lo que le pasó a otro | E15 (decisión propia, 203K), E11 (su cuerpo, 66K, 2,03 seg./1k) | E14 (historia ajena, 5K), E36 (historia ajena, 6K) | Un vídeo «tuyo» (E35 o el próximo cuerpo) < 10K vistas a 48 h, o una historia ajena sin «tú» > 30K | abierta (prueban E35 y el próximo cuerpo) |
+| H13 | La información/técnica limpia con comparación del mismo paso se retiene y se envía | Referencia @escaladatips (580 «me gusta», 229 envíos); Pierna de Elvis (cuerpo + truco, 66K) | Honnold (5K) y Hippies y avión (6K) eran información con gancho flojo | La puerta (E42): skip ≤ 25 %, ≥ 5 envíos/1k y ≥ 1 seg./1k a 48 h | abierta (E42, hoy 20:30) |
 
 ## Cómo se actualiza
 Tras cada medición a 7 días: añadir el vídeo a «a favor»/«en contra» de las hipótesis que toque, cambiar estado si procede y anotar hipótesis nuevas. Proponer el cambio a Andrés antes de tocar `viralidad.md`.

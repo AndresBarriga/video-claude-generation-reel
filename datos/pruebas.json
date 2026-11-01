@@ -218,5 +218,36 @@
   "coste": 1,
   "limites": "Mezcla causas: E15 y E11 también tienen mejor gancho y tema universal. Prueba limpia en marcha: la MISMA historia (E35) en 2.ª persona frente a E35B en 3.ª persona como reel de prueba; se compara skip a 48 h.",
   "nota": "A/B de E35: comparar el skip de E35 («tú») con E35B (3.ª persona). Si el «tú» no baja el skip, H12 y P2 pierden fuerza."
+ },
+ "H13": {
+  "texto": "La puerta (información limpia con comparación del mismo paso): skip ≤ 25 %, ≥ 5 envíos/1k y ≥ 1 seg./1k a 48 h",
+  "videos": [
+   "E42"
+  ],
+  "ventana": 48,
+  "refuta_si": [
+   {
+    "m": "skip_pct",
+    "op": ">",
+    "v": 25
+   },
+   {
+    "m": "envk",
+    "op": "<",
+    "v": 5
+   },
+   {
+    "m": "segk",
+    "op": "<",
+    "v": 1
+   }
+  ],
+  "modo": "alguno",
+  "importa": "Decide si el pilar de información/técnica (puerta, descansos, pump, mano por dentro, nudo) merece producción, frente a dilemas e historias.",
+  "decide": "Si la información limpia pasa a ser un pilar de la cuenta",
+  "impacto": 5,
+  "calidad": 3,
+  "coste": 1,
+  "limites": "n=1. Mezcla tema, gancho y comparación del mismo paso; E43/E44 y el nudo la afinan (un cambio por vídeo)."
  }
 }
