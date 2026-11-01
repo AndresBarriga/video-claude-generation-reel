@@ -34,6 +34,15 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 - **Sharma / Es Pontas**: más adelante.
 - **Experimento «plano vs estructurado»** (sin apuntar como hipótesis hasta que Andrés lo diga): Caldwell como prueba.
 
+## Lista de Andrés (1-nov, 9:00): temas de entrenamiento y técnica
+- Lesiones de dedos + tiempo que tardan en fortalecerse las poleas (una sola historia: el músculo se adapta antes que el tendón).
+- Moonboard/Kilter: acostumbrarte al estilo, fuerza de dedos, tensión corporal, y el debate de si hace falta.
+- Campus y suspensiones: peso máximo frente a repeticiones.
+- Qué es una «puerta» y cómo frenarla.
+- No perder los pies en desplomes.
+- Descansar boca abajo o con empotre de rodilla.
+- Nota: el trauma de suspensión (colgar del arnés) es raro en rocódromo y deportiva; afecta sobre todo a montaña, glaciar y trabajos verticales. Relevancia baja para esta audiencia: nota bajada de 8 a ≈6.
+
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — v final (28-oct): abre contigo en una **escalera de mano** cambiando una bombilla («A ti te tiembla la pierna en una escalera de mano. Él subió esto sin cuerda. Con esta cara.»), contador 2 → 884 m (Torre Eiffel como escala), escáner del cerebro como 2.º gancho, giro: ensayó cada paso con cuerda (sin la patada de kárate: de perfil no se podía representar bien). Cierre: «¿Valiente, o es que su cerebro no se entera? Mándaselo al que no se sube ni a una escalera de mano». Caricatura `piezas/Honnold.tsx`. Cifras: 884 m (Guinness; no 914), 3 h 56 min, Eiffel 330 m. Voz Danny, tiempos por frases. [producido; rama `video/E14-honnold`]
 - **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Voz Danny (ElevenLabs) sincronizada. [final, falta aprobar]
