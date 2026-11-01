@@ -16,6 +16,14 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 - **Factor miedo** (idea suelta; solapa con #7 y E11).
 - Pies de gato (ya en cola), cuánto cuesta empezar (#25/#26), historia Sharma en Mallorca (#20, más adelante).
 
+## Ideas nuevas (1-nov, Andrés) — referencia @betaclimblab: info con diagramas y fuentes en el pie, 1,9–4 K «me gusta», pregunta final y «guárdalo»
+- **Factor de caída** (aprobado → E41, propuesta en `videos/escalada/E41/`).
+- **Cómo frenar una puerta** (la «puerta» de escalada: se abre el cuerpo al soltar una mano; el gesto contrario la frena). Imagen universal de una puerta con bisagra.
+- **Descansar colgado: empotres y «bat hang»** (boca abajo). Curiosidad visual para quien no escala.
+- **Cómo pisar con precisión:** el pie se coloca una sola vez; si la presa estuviera pintada, mínima superficie.
+- **Tensión corporal**, **talones**, **boards (Kilter)** (ya anotadas; sin ángulo todavía).
+- Ver la mano por dentro: la referencia lo hace en vista lateral con anillas A1-A4/C1-C3 etiquetadas y se ve limpio; sirve de prueba de que se puede hacer bien.
+
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — v final (28-oct): abre contigo en una **escalera de mano** cambiando una bombilla («A ti te tiembla la pierna en una escalera de mano. Él subió esto sin cuerda. Con esta cara.»), contador 2 → 884 m (Torre Eiffel como escala), escáner del cerebro como 2.º gancho, giro: ensayó cada paso con cuerda (sin la patada de kárate: de perfil no se podía representar bien). Cierre: «¿Valiente, o es que su cerebro no se entera? Mándaselo al que no se sube ni a una escalera de mano». Caricatura `piezas/Honnold.tsx`. Cifras: 884 m (Guinness; no 914), 3 h 56 min, Eiffel 330 m. Voz Danny, tiempos por frases. [producido; rama `video/E14-honnold`]
 - **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Voz Danny (ElevenLabs) sincronizada. [final, falta aprobar]
