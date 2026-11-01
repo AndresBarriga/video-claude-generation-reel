@@ -46,3 +46,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 1-nov | E39 v1 | propuesta | 5 | Gancho sin apuro (chasquido en s 7); barras abstractas sin humor ni bucle; «tendón» frente a polea; jerga de nicho |
 | 1-nov | E39 v3 | propuesta | 6 (viralidad 4) | Mejor dato enterrado (s 5); 15 s de vocabulario antes del payoff; bucle adivinable; falta aviso «si lo oyes, fisio»; «semanas» corto; cierre empieza con «Ahora sabes» |
 | 1-nov | E42 v1 | propuesta | 5 (viralidad 3) | Gancho de divulgación; puerta literal y línea abstracta; técnica genérica en 3 consejos; «mismo lado» y «cadera pegada» imprecisos |
+| 1-nov | E43 v1 | propuesta | 5,5 (viralidad 4) | Gancho de mecanismo sin persona en apuros; 20 s de fisiología antes de lo útil; «5:1» incoherente con las tarjetas; final adivinable |

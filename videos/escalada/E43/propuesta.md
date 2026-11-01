@@ -1,4 +1,4 @@
-# E43 · «El ciclo del pump»: por qué se te pone duro el antebrazo, por qué baja y por qué vuelve — propuesta v1 (1-nov)
+# E43 · «El ciclo del pump»: por qué se te pone duro el antebrazo, por qué baja y por qué vuelve — propuesta v2 (1-nov)
 Elegida por Andrés (1-nov, 15:05). Plantilla: `docs/plantilla-info.md`. Serie «La mano por dentro» (el antebrazo por dentro). Formato: cuerpo-por-dentro con utilidad: cuánto descansar entre pegues serios. Sin trucos mágicos: solo lo típico (brazos estirados, agarre relajado, respirar).
 
 ## Ficha de contenido
@@ -7,7 +7,7 @@ Elegida por Andrés (1-nov, 15:05). Plantilla: `docs/plantilla-info.md`. Serie �
    - Contracciones de ~20 % de la fuerza máxima ya frenan el flujo capilar; hacia el 50 % puede cortarse del todo (Nicros/Hörst, Lacrux).
    - El músculo se aprieta contra sus propios vasos (Dave MacLeod en UKC; biomedicus).
    - Tras soltar, entra sangre fresca pero retirar los residuos tarda en empezar (Hörst vía Lacrux).
-   - Descanso entre pegues: regla de partida 5:1 (5 min por cada min escalado); unos 20 min para sport (Climbing); bloque corto (≤30 s duro) 3-5 min y redpoint largo ≈30 min (Hörst, Nicros); caída arriba, más: 40-60 min como regla general (Hörst, Training Café).
+   - Descanso entre pegues (reglas generales, sin «5:1», que chocaba con las cifras): unos 20 min para sport (Climbing); bloque corto (≤30 s duro) 3-5 min y redpoint largo ≈30 min (Hörst, Nicros); caída arriba, más: 40-60 min como regla general (Hörst, Training Café).
    - Lo típico: agarre relajado, brazos estirados con la cadera cerca de la pared, respirar (UKC «Top ten tips», Climbing Doctor).
 3. **Por qué le sirve:** entiende por qué le pasa y se lleva cuánto descansar según el tipo de intento.
 4. **Qué se ve:** corte del antebrazo (músculo, venas rojas apretadas, puntos de residuo), medidor del 20 al 50 %, reloj con tres tarjetas de descanso, y el mismo paso al final sin pump.
@@ -23,22 +23,24 @@ Elegida por Andrés (1-nov, 15:05). Plantilla: `docs/plantilla-info.md`. Serie �
 4. **Qué sabe ya la gente:** «estoy pumpeado»; la idea de sacudir los brazos. No se promete un truco de recuperación (la evidencia de sacudir/G-Tox discrepa).
 
 ## Aperturas (5)
-- A (frase que choca, **elegida**): «Tu antebrazo no se agota: se aprieta a sí mismo hasta cortarse el riego.»
+- A (persona + resultado raro, **elegida**): «Caes en el último movimiento. Esperas cinco minutos. Y caes antes.»
 - B (pregunta): «¿Por qué se te pone duro el antebrazo justo en el paso clave?»
-- C (situación): «Caes, repites a los cinco minutos y vuelves a caer. Esto es lo que pasa dentro.»
+- C (situación): «Repites a los cinco minutos y vuelves a caer. Esto es lo que pasa dentro.»
 - D (cifra): «Con solo un veinte por ciento de tu fuerza, tu antebrazo ya recibe menos sangre.»
 - E (imagen): el antebrazo en corte con las venas aplastadas; rótulo «¿LO NOTAS?»
 
-## Guion (voz | imagen) — ~120 palabras, ~44 s
-1. «Tu antebrazo no se agota: se aprieta a sí mismo hasta cortarse el riego.» | escalador en el paso clave; corte del antebrazo: músculo apretando venas; rótulo «¿POR QUÉ SE PONE DURO?»
-2. «Con solo un veinte por ciento de tu fuerza ya llega menos sangre. Hacia el cincuenta, casi nada.» | medidor 20 → 50 %; las venas se estrechan hasta casi cerrarse
-3. «Sin sangre, los residuos se acumulan: eso es el pump.» | puntos de residuo que llenan el músculo; el antebrazo se hincha
-4. «Sueltas y vuelve la sangre. Pero limpiar tarda: por eso en el siguiente pegue empiezas ya cargado.» | venas se abren, flujo rojo; barra «LIMPIEZA» que avanza despacio
-5. «¿Cuánto descansar? Una regla de partida: cinco minutos por cada uno que escalaste.» | reloj; rótulo «5 : 1»
-6. «Bloque corto, de tres a cinco. Vía al límite, unos veinte. Si caes arriba, hasta una hora.» | tres tarjetas: BLOQUE 3-5 MIN · VÍA ≈20 MIN · CAÍDA ARRIBA ≈1 H
-7. «Y mientras escalas: agarre relajado, brazos estirados y respirar.» | tres iconos rápidos con el escalador
-8. «Y esta vez, el antebrazo aguanta.» | el mismo paso clave tras descansar; la sangre fluye; llega a la presa
-9. «¿Cuántos minutos descansas tú?» | rótulo «MÁNDASELO AL QUE REPITE A LOS CINCO MINUTOS»
+## Guion v2 (voz | imagen) — ~94 palabras, ~35 s
+Aplica al crítico (v1: viralidad 4, envío 5,5): gancho con persona (cae a los 5 min), mecanismo en ~10 s, una sola tarjeta de descanso sin «5:1» (chocaba con las cifras), final con comparación del mismo paso a los 5 y a los 20 minutos (como la referencia de 229 envíos), sin la escena de consejos (van al comentario fijado).
+1. «Caes en el último movimiento. Esperas cinco minutos. Y caes antes.» | intento a los 5 min: el escalador en el paso clave, antebrazo hinchado, reloj «5:00», cae; rótulo «¿POR QUÉ CAES ANTES?»
+2. «Dentro, agarrar fuerte aprieta el músculo contra sus propias venas. Con solo un veinte por ciento de tu fuerza ya llega menos sangre.» | corte del antebrazo etiquetado: MÚSCULO · VENAS · MENOS SANGRE; medidor al 20 %
+3. «Sin sangre se acumulan residuos: es el pump. Y al soltar, no se limpia al instante.» | puntos de residuo en el músculo; barra «LIMPIEZA» que avanza despacio
+4. «Por eso importa descansar. Muchos entrenadores dicen: bloque corto, de tres a cinco minutos; vía al límite, unos veinte; si caes arriba, hasta una hora.» | una tarjeta con tres filas y un reloj
+5. «Mismo paso, veinte minutos después.» | reloj «20:00»; el escalador repite el paso clave; antebrazo normal, sangre fluyendo
+6. «Y esta vez, lo pasas.» | llega a la presa
+7. «¿Cuánto esperas tú de verdad?» | rótulo «MÁNDASELO AL QUE REPITE A LOS CINCO MINUTOS»
+
+## Comentario fijado (los consejos típicos van aquí)
+«Además del descanso: agarre relajado (sin apretar de más), brazos estirados con la cadera cerca de la pared, y respirar. Las cifras de descanso son reglas generales de entrenadores (Hörst, Climbing): dependen de ti. Información general, sin tratamiento médico.»
 
 ## Reparto y visual
 - Idea visual: **el corte del antebrazo**: músculo grande y rojizo, dos venas rojas que se estrechan (aplastadas por el músculo) y puntos de residuo; mismo estilo plano que la mano de la puerta.
@@ -52,4 +54,6 @@ Elegida por Andrés (1-nov, 15:05). Plantilla: `docs/plantilla-info.md`. Serie �
 - Sin consejos médicos.
 
 ## Registro del crítico
-(pendiente)
+| 1-nov | E43 v1 | propuesta | 5,5 (viralidad 4) | Gancho de mecanismo sin persona en apuros; 20 s de fisiología antes de lo útil; «5:1» incoherente con las tarjetas; final adivinable |
+
+- Corregido por el crítico: «no se agota» era falso y se quita; «se corta del todo» al 50 % pasa a no decirse; «limpiar tarda» se matiza a «no se limpia al instante» (fuente: Hörst vía Lacrux, sin pares).

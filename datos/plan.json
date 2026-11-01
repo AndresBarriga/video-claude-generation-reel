@@ -282,6 +282,26 @@
    "riesgo_txt": "Técnica genérica; techo 3–5K como las referencias.",
    "esfuerzo": "3–4 h",
    "slot": "hoy"
+  },
+  {
+   "id": "E43",
+   "nombre": "E43 El ciclo del pump (serie La mano por dentro)",
+   "formato": "cuerpo-info",
+   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
+   "bloqueos": [
+    "Tu OK",
+    "Voz",
+    "Producción"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 5,
+   "por_que": "Elegida por Andrés; cuánto descansar entre pegues se guarda y se envía; comparación del mismo paso a 5 y 20 min.",
+   "riesgo": 3,
+   "riesgo_txt": "Cifras de entrenadores, no pautas médicas; el corte del antebrazo puede quedar cutre.",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
   }
  ]
 }
