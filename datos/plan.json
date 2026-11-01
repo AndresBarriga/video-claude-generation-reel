@@ -246,9 +246,9 @@
   },
   {
    "id": "E39",
-   "nombre": "E39 Dedos y poleas (Antebrazo y Polea)",
+   "nombre": "E39 ¿Qué ha crujido? (dedos y poleas, información limpia)",
    "formato": "cuerpo-info",
-   "estado": "Propuesta v2 (crítico 5 en v1); falta tu OK",
+   "estado": "Propuesta v4 (crítico 6 en v3); falta tu OK",
    "bloqueos": [
     "Tu OK",
     "Boceto del dedo",

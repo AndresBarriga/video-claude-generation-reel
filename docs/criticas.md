@@ -44,3 +44,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 31-oct | E40 v1 | propuesta | 5,5 | Dilema muere en s 8 y salto al dedo; gancho en 3.ª persona; tres episodios; «19 días después» y «casi la deja» incorrectos; cierre largo con «mándaselo» en voz |
 | 1-nov | E41 v1 | propuesta | 5,5 | Lección con quiz adivinable; gancho sin persona en apuros; sin detalle de rocódromo; final «al empezar» contradice el factor 2 |
 | 1-nov | E39 v1 | propuesta | 5 | Gancho sin apuro (chasquido en s 7); barras abstractas sin humor ni bucle; «tendón» frente a polea; jerga de nicho |
+| 1-nov | E39 v3 | propuesta | 6 (viralidad 4) | Mejor dato enterrado (s 5); 15 s de vocabulario antes del payoff; bucle adivinable; falta aviso «si lo oyes, fisio»; «semanas» corto; cierre empieza con «Ahora sabes» |

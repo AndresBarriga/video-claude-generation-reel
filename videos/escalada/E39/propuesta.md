@@ -1,5 +1,5 @@
-# E39 · «¿Qué ha crujido?» (dedos y poleas, información limpia) — propuesta v3 (1-nov)
-Andrés pide informar bien, sin tanta gracia. Plantilla: `docs/plantilla-info.md`. Mismo tema que el vídeo de @betaclimblab sobre arqueo/semiarqueo/extensión; aquí lo distinto es el gancho (chasquido + dato) y que explica de principio a fin cómo se carga el dedo. Crítico: v1 5/10 (envío 5) → v2 sin puntuar → v3 sin puntuar.
+# E39 · «¿Qué ha crujido?» (dedos y poleas, información limpia) — propuesta v4 (1-nov)
+Andrés pide informar bien, sin tanta gracia. Plantilla: `docs/plantilla-info.md`. Mismo tema que el vídeo de @betaclimblab sobre arqueo/semiarqueo/extensión; aquí lo distinto es el gancho (chasquido + dato) y que explica de principio a fin cómo se carga el dedo. Crítico: v1 5/10 (envío 5) → v3 viralidad 4, envío 6 (aguanta por criterio de información) → v4 aplica sus cambios, sin re-puntuar.
 
 ## Ficha de contenido
 1. **Una idea:** tu dedo es una cuerda (tendón) sujeta al hueso con anillas (poleas); la que más carga, al cerrar la mano, es la de la base.
@@ -28,21 +28,22 @@ Andrés pide informar bien, sin tanta gracia. Plantilla: `docs/plantilla-info.md
 - Qué falla: skip > 25 % = el gancho (cambiar solo los 3 primeros segundos); meseta baja = el medio es explicación.
 
 ## Aperturas (5)
-- A (acción + dato, **elegida**): «Un chasquido en el dedo. ¿Qué ha crujido? No ha sido un músculo: tus dedos no tienen.»
+- A (acción + dato, **elegida**): «Crac. No ha sido un músculo: los que cierran tus dedos ni están en ellos.»
 - B (pregunta): «¿Por qué se lesionan los dedos justo cuando vas mejor?»
-- C (dato): «Tus dedos no tienen ni un músculo.»
+- C (dato): «Tus dedos no tienen ni un músculo que los cierre.»
 - D (titular): «Tu músculo ya puede. Tu polea, todavía no.»
 - E (imagen): el dedo por dentro con la polea que vibra; rótulo «¿LA OYES?»
 
-## Guion (voz | imagen) — ~115 palabras, ~43 s
-1. «Un chasquido en el dedo. ¿Qué ha crujido? No ha sido un músculo: tus dedos no tienen.» | s 0: «crac», el escalador (28, camiseta verde) suelta la presa y se mira el dedo; rótulo «¿QUÉ HA CRUJIDO?»
-2. «Los mueve el antebrazo, con cuerdas que cruzan la muñeca: los tendones.» | dedo por dentro, dibujo plano: antebrazo y tendones naranjas; rótulo «TENDÓN»
-3. «Para que no salten hacia fuera, unas anillas las pegan al hueso, como las guías de una caña de pescar: las poleas.» | las anillas aparecen escalonadas; rótulo «POLEAS»
-4. «Al cerrar la mano en una presa pequeña, la polea de la base del dedo carga muchísimo.» | el dedo se cierra; la de la base brilla; rótulo «LA MÁS CARGADA»
-5. «Con la mano más abierta, mucho menos.» | lado a lado: cerrada (brilla) y abierta (apagada)
-6. «Tu músculo se adapta en semanas. Tus poleas, en meses. Por eso es fácil lesionarse cuando te sientes fuerte.» | rótulos «SEMANAS» y «MESES» sobre el antebrazo y la polea
-7. «Cuando no aguanta, a veces se oye un chasquido. Curarla lleva semanas, a veces meses.» | corte seco; silencio 0,5 s
-8. «Ahora sabes qué ha crujido. ¿Arqueas o abres la mano?» | vuelta al board; último plano = primero; rótulo «GUÁRDALO · MÁNDASELO AL QUE ARQUEA»
+## Guion v4 (voz | imagen) — ~105 palabras, ~39 s
+Aplica al crítico (v3: viralidad 4, envío 6): gancho con el dato desde el s 0, el segundo gancho («te lesionas cuando te sientes fuerte») sube al s 5, vocabulario comprimido, aviso de qué hacer, cierre en 1 línea.
+1. «Crac. No ha sido un músculo: los que cierran tus dedos ni están en ellos.» | s 0: «crac», el escalador (28, camiseta verde) suelta la presa y se agarra el dedo; rótulo «¿SE HA ROTO?»
+2. «Por eso te lesionas cuando te sientes fuerte: tu músculo se adapta en semanas y tus poleas, en meses.» | rótulos «SEMANAS» y «MESES» sobre el antebrazo y la polea
+3. «Los mueve el antebrazo con cuerdas, los tendones, y unas anillas las pegan al hueso: las poleas.» | dedo por dentro, dibujo plano; tendón naranja; anillas escalonadas
+4. «Al cerrar la mano en una presa pequeña, la de la base del dedo es la que más carga.» | el dedo se cierra; la de la base brilla; rótulo «LA MÁS CARGADA»
+5. «Con la mano abierta carga menos, pero eso no la hace segura.» | lado a lado: cerrada (brilla) y abierta (más suave)
+6. «Cuando no aguanta, a veces se oye un chasquido.» | corte seco; silencio 0,5 s
+7. «Si lo oyes y duele, para y ve a un fisio. Curarla va de semanas a meses, según el caso.» | rótulo «FISIO»
+8. «¿Arqueas o abres la mano?» | vuelta al board; último plano = primero; rótulo «GUÁRDALO · MÁNDASELO AL QUE ARQUEA»
 
 ## Producción barata
 Un OK sobre este paquete, 2 fotogramas boceto (el dedo por dentro y el lado a lado), voz una vez, un render, máximo 2 rondas. Un personaje con cara (el escalador); el resto es dibujo plano. El dedo queda como pieza reutilizable para otros vídeos de la lista.
@@ -50,9 +51,13 @@ Un OK sobre este paquete, 2 fotogramas boceto (el dedo por dentro y el lado a la
 ## Límites
 - La polea no es un tendón: el vídeo los nombra aparte.
 - «Muchísimo» y «mucho menos» son comparativos, sin cifras (una fuente da 31,5 veces; no se usa).
-- «A veces se oye un chasquido»; «semanas, a veces meses».
+- «A veces se oye un chasquido»; «de semanas a meses, según el caso» (el crítico pedía «meses»: las fuentes dan 8-12 semanas típicas y 45 días en un estudio de A2, así que se matiza en lugar de alargar).
+- «Los que cierran tus dedos no están en ellos»: matiz por los músculos pequeños de la palma (lumbricales), según el crítico.
+- «Con la mano abierta carga menos, pero eso no la hace segura»: información, no consejo.
+- Aviso añadido: «Si lo oyes y duele, para y ve a un fisio».
 - Sin pautas de entrenamiento ni de rehabilitación.
 - Rompe una norma suave de la identidad (sin personajes cómicos con cara para los órganos). Hay que anotarlo en `docs/decisiones.md` si se aprueba.
 
 ## Registro del crítico
 | 1-nov | E39 v1 | propuesta | 5 | Gancho sin apuro (chasquido en s 7); barras abstractas sin humor ni bucle; «tendón» frente a polea; jerga de nicho |
+| 1-nov | E39 v3 | propuesta | 6 (viralidad 4) | Mejor dato enterrado (s 5); 15 s de vocabulario antes del payoff; bucle adivinable; falta aviso «si lo oyes, fisio»; «semanas» corto; cierre empieza con «Ahora sabes» |
