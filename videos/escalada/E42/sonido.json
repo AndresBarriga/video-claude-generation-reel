@@ -35,7 +35,8 @@
     {
       "nombre": "clic",
       "inicio": {
-        "escena": "contrarios"
+        "escena": "uno",
+        "mas": 1.2
       },
       "duracion": 0.4,
       "volumen": 0.6
@@ -43,8 +44,8 @@
     {
       "nombre": "clic",
       "inicio": {
-        "escena": "triangulo",
-        "fraccion": 0.5
+        "escena": "dos",
+        "mas": 1.2
       },
       "duracion": 0.4,
       "volumen": 0.6
@@ -52,18 +53,20 @@
     {
       "nombre": "clic",
       "inicio": {
-        "escena": "contrapeso"
+        "escena": "tres",
+        "mas": 1.2
       },
       "duracion": 0.4,
       "volumen": 0.6
     },
     {
-      "nombre": "clic",
+      "nombre": "tintineo",
       "inicio": {
-        "escena": "core"
+        "escena": "llegas",
+        "mas": 0.6
       },
-      "duracion": 0.4,
-      "volumen": 0.6
+      "duracion": 0.8,
+      "volumen": 0.45
     }
   ]
 }

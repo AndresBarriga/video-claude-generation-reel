@@ -19,3 +19,5 @@ Solo una reforzada puede pasar a `docs/viralidad.md` (y Andrés lo aprueba). Dat
 
 ## Cómo se actualiza
 Tras cada medición a 7 días: añadir el vídeo a «a favor»/«en contra» de las hipótesis que toque, cambiar estado si procede y anotar hipótesis nuevas. Proponer el cambio a Andrés antes de tocar `viralidad.md`.
+
+- 2026-11-01 · Referencia @escaladatips (bandera trasera): 580 me gusta y 229 envíos con una sola técnica, mismo paso antes/después y etiquetas de carga. Los vídeos de técnica con comparación del mismo movimiento se envían mucho; a comprobar con E42.

@@ -13,7 +13,7 @@ export const Planta: React.FC<{ x: number; y: number; th: number; largo?: number
       <path d={`M${hx} ${hy} L${ex} ${ey}`} stroke={col} strokeWidth={22} strokeLinecap="round" />
       <circle cx={ex} cy={ey} r={24} fill={PU.piel} stroke={PU.tinta} strokeOpacity={0.5} strokeWidth={4} />
       <circle cx={hx} cy={hy} r={13} fill="#FF6A1F" stroke="#fff" strokeWidth={4} />
-      <Txt x={hx + 24} y={hy + 70} t={cerrada ? "CERRADA" : "BISAGRA"} tam={36} col="#FF8A4A" ancla="start" />
+      <Txt x={hx + 24} y={hy + 70} t={cerrada ? "CERRADA" : "LA LÍNEA"} tam={36} col="#FF8A4A" ancla="start" />
     </g>
   );
 };
