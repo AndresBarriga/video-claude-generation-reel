@@ -1,0 +1,70 @@
+{
+  "id": "E42",
+  "titulo": "La puerta",
+  "nicho": "escalada",
+  "plantilla": "Puerta",
+  "verificado": true,
+  "fuentes": [
+    "Philarockgym: How to Prevent the Annoying Barn Door",
+    "Movement Gyms: 3 Scary Climbing Moves",
+    "climbingtechnique.blogspot.com: Barn-Dooring",
+    "Nicros: Fundamentals of Technique 5",
+    "Climbing House: Flagging technique guide"
+  ],
+  "nota_rigor": "Técnica sin cifras; la puerta depende de que los apoyos queden en línea.",
+  "ganchos_alternativos": [
+    "1 · Momento reconocible (elegida): «Estiras la mano y tu cuerpo se abre como una puerta.»",
+    "2 · Pregunta: «¿Por qué tu cuerpo sale disparado hacia un lado?»",
+    "3 · Afirmación: «No te caes por falta de fuerza. Te caes por una puerta.»",
+    "4 · Situación: «Estiras la mano y todo gira. Otra vez.»",
+    "5 · Dato: «Cuando tus apoyos quedan en línea, tu cuerpo gira alrededor de ellos.»"
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "puerta",
+      "texto": "Estiras la mano y tu cuerpo se abre como una puerta. No es solo falta de fuerza."
+    },
+    {
+      "tipo": "texto",
+      "visual": "bisagra",
+      "texto": "Tu mano y tu pie forman una línea: es la bisagra. Y tu cuerpo, la puerta."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cadera",
+      "texto": "Cuanto más lejos está tu cadera de esa línea, más se abre."
+    },
+    {
+      "tipo": "texto",
+      "visual": "cuatro",
+      "texto": "Cuatro formas de frenarla."
+    },
+    {
+      "tipo": "texto",
+      "visual": "contrarios",
+      "texto": "Una: mano y pie contrarios."
+    },
+    {
+      "tipo": "texto",
+      "visual": "triangulo",
+      "texto": "Dos: muévete en triángulo. Tres apoyos que nunca queden en línea."
+    },
+    {
+      "tipo": "texto",
+      "visual": "contrapeso",
+      "texto": "Tres: la pierna libre de contrapeso."
+    },
+    {
+      "tipo": "texto",
+      "visual": "core",
+      "texto": "Cuatro: core tenso y la cadera hacia la pared.",
+      "pausa": 0.4
+    },
+    {
+      "tipo": "cierre",
+      "visual": "envio",
+      "texto": "¿Y tú, de qué lado te abres?"
+    }
+  ]
+}

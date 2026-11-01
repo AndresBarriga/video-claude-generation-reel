@@ -13,7 +13,7 @@
   ],
   "nota_rigor": "Técnica sin cifras; la puerta depende de que los apoyos queden en línea.",
   "ganchos_alternativos": [
-    "1 · Momento reconocible (elegida): «Estiras la mano y tu cuerpo se abre como una puerta.»",
+    "1 · Momento reconocible (elegida): «Estiras la mano y tu cuerpo se abre como una puerta.» (frase corta; «No es solo falta de fuerza» pasa a la escena 2)",
     "2 · Pregunta: «¿Por qué tu cuerpo sale disparado hacia un lado?»",
     "3 · Afirmación: «No te caes por falta de fuerza. Te caes por una puerta.»",
     "4 · Situación: «Estiras la mano y todo gira. Otra vez.»",
@@ -23,48 +23,43 @@
     {
       "tipo": "gancho",
       "visual": "puerta",
-      "texto": "Estiras la mano y tu cuerpo se abre como una puerta. No es solo falta de fuerza."
+      "texto": "Estiras la mano y tu cuerpo se abre como una puerta."
     },
     {
       "tipo": "texto",
-      "visual": "bisagra",
-      "texto": "Tu mano y tu pie forman una línea: es la bisagra. Y tu cuerpo, la puerta."
+      "visual": "causa",
+      "texto": "No es solo falta de fuerza. Pasa cuando solo un lado de tu cuerpo está agarrado: tu mano y tu pie del mismo lado. Todo lo demás gira alrededor de esa línea."
     },
     {
       "tipo": "texto",
-      "visual": "cadera",
-      "texto": "Cuanto más lejos está tu cadera de esa línea, más se abre."
+      "visual": "principio",
+      "texto": "Cuanto más lejos está tu peso de esa línea, más se abre. Para frenarla: cambiar los apoyos, o acercar el peso."
     },
     {
       "tipo": "texto",
-      "visual": "cuatro",
-      "texto": "Cuatro formas de frenarla."
+      "visual": "uno",
+      "texto": "Uno: cambiar los apoyos. Pie contrario a la mano, con el core tenso."
     },
     {
       "tipo": "texto",
-      "visual": "contrarios",
-      "texto": "Una: mano y pie contrarios."
+      "visual": "dos",
+      "texto": "Dos: acercar el peso. La pierna libre, de contrapeso."
     },
     {
       "tipo": "texto",
-      "visual": "triangulo",
-      "texto": "Dos: muévete en triángulo. Tres apoyos que nunca queden en línea."
+      "visual": "tres",
+      "texto": "Y tres, la que más ayuda en desplomes: girar la cadera hacia la pared, con cuidado en la rodilla.",
+      "pausa": 0.3
     },
     {
       "tipo": "texto",
-      "visual": "contrapeso",
-      "texto": "Tres: la pierna libre de contrapeso."
-    },
-    {
-      "tipo": "texto",
-      "visual": "core",
-      "texto": "Cuatro: core tenso y la cadera hacia la pared.",
-      "pausa": 0.4
+      "visual": "llegas",
+      "texto": "Y esta vez, llegas a la presa."
     },
     {
       "tipo": "cierre",
       "visual": "envio",
-      "texto": "¿Y tú, de qué lado te abres?"
+      "texto": "¿Cuál usas tú?"
     }
   ]
 }
