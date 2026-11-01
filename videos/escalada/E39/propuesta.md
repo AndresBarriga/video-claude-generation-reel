@@ -1,4 +1,4 @@
-# E39 · «Tu músculo ya puede. Tu tendón, todavía no» (dedos y poleas) — propuesta v1 (1-nov)
+# E39 · «Tu músculo ya puede. Tu polea, todavía no» (dedos y poleas) — propuesta v2 (1-nov)
 Une los dos primeros puntos de la lista de Andrés (lesiones de dedos + tiempo de adaptación de poleas): una sola historia, el músculo se adapta antes que el tendón y la lesión llega cuando te sientes más fuerte. Formato: cuerpo-por-dentro con humor ligero. Público: quien entrena dedos o escala con frecuencia; la explicación se entiende sin ser escalador.
 
 ## Plan para producir barato (pedido de Andrés: pocas iteraciones)
@@ -22,36 +22,34 @@ Lo que necesito de ti: OK al gancho, OK al personaje, OK al final.
 - **Qué falla si no funciona:** si el skip supera el 25 %, es el gancho (cambiar solo los 3 primeros segundos, barato); si la meseta es baja, el medio es explicación.
 
 ## Aperturas (5)
-- A (afirmación que choca con persona, **elegida**): «Llevas un mes entrenando los dedos y vas más fuerte que nunca. Justo ahora es cuando más riesgo tienes.»
-- B (titular): «Tu músculo ya puede. Tu tendón, todavía no.»
-- C (situación): chasquido, el escalador suelta la presa; rótulo «¿QUÉ HA PASADO?»
-- D (cifra): «Tu músculo se adapta en semanas. Tus dedos, en meses.»
+- A (acción física + decisión, **elegida**): «Oyes un chasquido en el dedo. Acabas de hacer tu mejor intento. ¿Sigues?»
+- B (titular): «Tu músculo ya puede. Tu polea, todavía no.»
+- C (imagen): la mano suelta la presa, «crac», rótulo «¿QUÉ HA PASADO?»
+- D (cifra): «Tu músculo se adapta en semanas. Tus poleas, en meses.»
 - E (pregunta): «¿Por qué se lesionan los dedos justo cuando vas mejor?»
 
-## Guion (voz | imagen) — ~100 palabras, ~38 s
-1. «Llevas un mes entrenando los dedos y vas más fuerte que nunca. Justo ahora es cuando más riesgo tienes.» | escalador (28, camiseta verde) en el board, celebra un récord; en «riesgo», chasquido breve; rótulo «JUSTO AHORA»
-2. «Tu músculo se adapta en semanas. Tus tendones y poleas, en meses.» | dos barras naranjas: la del músculo se llena rápido; la del tendón, lenta; rótulos «SEMANAS» y «MESES»
-3. «Así que tú te sientes más fuerte, pero tus dedos todavía no.» | el hueco entre barras crece y se marca en rojo suave; el escalador sonríe sin enterarse
-4. «Y lo peor: a veces no duele antes de fallar.» | dedo por dentro (vista lateral): hueso, tendón naranja, anillas; la de la base brilla
-5. «La que más sufre es la polea de la base del dedo cuando cierras la mano en regleta.» | el dedo cierra en regleta; la polea vibra
-6. «Si no aguanta, se oye un chasquido.» | corte seco; silencio 0,5 s
-7. «Y curarla lleva semanas, a veces meses.» | calendario con casillas que se tachan; rótulo «SEMANAS… MESES»
-8. «Tu músculo ya puede. Tu tendón, todavía no. ¿Cuántos días de descanso le das al tuyo?» | vuelta al board; último plano = primero; rótulo «MÁNDASELO AL QUE ENTRENA DEDOS TODOS LOS DÍAS»
+## Guion v2 (voz | imagen) — ~85 palabras, ~32 s
+Aplica al crítico (v1 5/10, envío 5): gancho con acción en el s 0, personajes con humor en lugar de barras, «polea» y no «tendón», sin calendario ni mano de perfil.
+1. «Oyes un chasquido en el dedo. Acabas de hacer tu mejor intento. ¿Sigues?» | s 0: la mano suelta la presa en el board, «crac», el escalador (28, camiseta verde) se mira el dedo; rótulo «¿SIGUES?»
+2. «Tu antebrazo dice: «¡más peso!». Tu polea, la pequeña de la base del dedo, no ha leído el mensaje.» | dibujo plano del dedo por dentro: el Antebrazo, grande y orgulloso, con una pesa; la Polea, pequeña, sudando
+3. «Tu músculo se adapta en semanas. Tus poleas, en meses.» | el Antebrazo ya musculoso; la Polea con un cartel «EN OBRAS» y un casco; rótulos «SEMANAS» y «MESES»
+4. «Y cuando cierras la mano en una presa pequeña, es la que más sufre.» | el dedo se cierra; la Polea de la base tiembla
+5. «Cuando no aguanta, a veces se oye un chasquido.» | corte seco; silencio 0,5 s (cierra el bucle del primer plano)
+6. «Curarla lleva semanas, a veces meses.» | la Polea con un vendaje, sentada
+7. «Tu antebrazo dice una más. Tu polea no ha leído el mensaje. ¿Haces la última?» | vuelta al board; último plano = primero; rótulo «MÁNDASELO AL DE LA ÚLTIMA»
 
 ## Reparto y visual
-- Idea visual: **las dos barras naranjas** (la cuerda de la cuenta, aquí como progreso) y el hueco entre ellas.
-- Reparto: un escalador (28, camiseta verde, pelo corto) y, por dentro, un dedo de dibujo plano (hueso gris nieve, tendón naranja, poleas como anillas pequeñas). Caras: alegría, orgullo, un pequeño temblor en el chasquido.
-- Escenario: board en un rocódromo (no exterior).
-- Sin vista de perfil con macro (rechazada el 28-oct): el dedo por dentro es dibujo plano y limpio, como el de @betaclimblab.
-- Sin instrucciones de entrenamiento ni de rehabilitación; en el pie: «Información general, no sustituye a un fisioterapeuta.»
+- Idea visual: **tres personajes con cara**: el escalador, el Antebrazo (orgulloso, «¡más peso!») y la Polea (pequeña, sudando, con casco de obra). Las barras se quitan (gráfico abstracto, rechazado en E6 v1).
+- Escenario: board en un rocódromo. Sin vista de perfil con macro; el dedo por dentro es dibujo plano y limpio, como el de @betaclimblab.
+- Pie: «Información general, no sustituye a un fisioterapeuta.» Sin consejos de entrenamiento.
 
 ## Hechos y límites (verificados 31-oct / 1-nov)
 - El músculo se adapta antes que el tendón: semanas frente a meses (The Climbing Doctor; Silvio Reffo: ≈3 semanas frente a 3-6 meses). Se dice «semanas» y «meses», sin cifras exactas.
 - La A2 (base del dedo) es la polea que más se lesiona, sobre todo en agarre en regleta (Nicros, The Climbing Doctor, MEND).
-- Un tendón puede degenerarse sin dolor (The Climbing Doctor).
+- «A veces no duele antes» es de la degeneración del tendón, no de la rotura de polea: se quita del vídeo (crítico).
 - Recuperación típica de lesión de tendón: 8-12 semanas, puede ser más de meses si es degenerativa (The Climbing Doctor); en un estudio francés, 8 de 12 escaladores de élite con lesión de A2 volvieron tras 45 días (Nicros). Se dice «semanas, a veces meses».
-- «Chasquido»: lo describen pacientes con rotura; no se afirma que siempre se oiga.
+- «Chasquido»: lo describen pacientes con rotura; el vídeo dice «a veces se oye». La polea no es un tendón: el vídeo habla de poleas.
 - Fuera: «regla del 2-5 %» y plazos de colágeno de 100-200 días (blogs de entrenamiento, sin base clara).
 
 ## Registro del crítico
-(pendiente)
+| 1-nov | E39 v1 | propuesta | 5 | Gancho sin apuro (chasquido en s 7); barras abstractas sin humor ni bucle; «tendón» frente a polea; jerga de nicho |

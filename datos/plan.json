@@ -243,6 +243,27 @@
    "riesgo_txt": "Info con quiz; seguridad: modelo simplificado; techo parecido a las cuentas de referencia (2–4K likes).",
    "esfuerzo": "3–4 h",
    "slot": "despues"
+  },
+  {
+   "id": "E39",
+   "nombre": "E39 Dedos y poleas (Antebrazo y Polea)",
+   "formato": "cuerpo-info",
+   "estado": "Propuesta v2 (crítico 5 en v1); falta tu OK",
+   "bloqueos": [
+    "Tu OK",
+    "Boceto del dedo",
+    "Voz",
+    "Producción"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 5,
+   "por_que": "Pilar de información con humor de personajes; la pieza del dedo se reutiliza.",
+   "riesgo": 3,
+   "riesgo_txt": "Nicho de dedos; techo 4–8K como Último pegue o Honnold.",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
   }
  ]
 }
