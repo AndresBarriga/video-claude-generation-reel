@@ -43,6 +43,12 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 - Descansar boca abajo o con empotre de rodilla.
 - Nota: el trauma de suspensión (colgar del arnés) es raro en rocódromo y deportiva; afecta sobre todo a montaña, glaciar y trabajos verticales. Relevancia baja para esta audiencia: nota bajada de 8 a ≈6.
 
+## Serie «La mano por dentro» (propuesta de Andrés, 1-nov, 3 partes)
+1. Los tendones mueven la mano como una marioneta: qué son los tendones, explicados con esa comparación (antes E38, hilos naranjas).
+2. Cómo se cargan, por qué se rompen y cómo se ponen fuertes (antes E39, la polea de la base).
+3. Qué pasa cuando se rompe y cómo se recupera.
+Ventajas: la mano se dibuja una vez y sirve para los tres; la serie da motivo para seguir. Riesgo: techo medio de la información (≈4-8K cada una). Plan: producir la parte 1, medirla y decidir las otras dos.
+
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — v final (28-oct): abre contigo en una **escalera de mano** cambiando una bombilla («A ti te tiembla la pierna en una escalera de mano. Él subió esto sin cuerda. Con esta cara.»), contador 2 → 884 m (Torre Eiffel como escala), escáner del cerebro como 2.º gancho, giro: ensayó cada paso con cuerda (sin la patada de kárate: de perfil no se podía representar bien). Cierre: «¿Valiente, o es que su cerebro no se entera? Mándaselo al que no se sube ni a una escalera de mano». Caricatura `piezas/Honnold.tsx`. Cifras: 884 m (Guinness; no 914), 3 h 56 min, Eiffel 330 m. Voz Danny, tiempos por frases. [producido; rama `video/E14-honnold`]
 - **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Voz Danny (ElevenLabs) sincronizada. [final, falta aprobar]
