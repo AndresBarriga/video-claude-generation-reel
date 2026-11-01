@@ -82,5 +82,9 @@
  "E43": {
   "corto": "El ciclo del pump",
   "desc": "Caes, esperas cinco minutos y caes antes: el músculo se aprieta contra sus venas, se acumulan residuos y no se limpian al instante; cuánto descansar según el intento."
+ },
+ "E44": {
+  "corto": "Descansar en la vía",
+  "desc": "Chapa ocho, se te abren los dedos y hay un descanso que no ves: empotre de rodilla, bat hang y cómo buscarlos; el mismo intento con el descanso de la chapa cinco."
  }
 }

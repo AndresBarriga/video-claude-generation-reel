@@ -1,0 +1,53 @@
+{
+  "id": "E44",
+  "titulo": "Descansar en la vía",
+  "nicho": "escalada",
+  "plantilla": "Descanso",
+  "verificado": true,
+  "fuentes": [
+    "Climbing: Effective resting for rock climbing",
+    "Climbing: How to rest while climbing",
+    "Nicros/Hörst: Optimize use of rest positions",
+    "Gripped: 10 techniques for climbing overhangs",
+    "Philarockgym: Knee bars",
+    "Friction Labs: knee bar y bat hang"
+  ],
+  "nota_rigor": "Técnica con avisos de seguridad en rótulo y pie.",
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "chapa8",
+      "texto": "Chapa ocho. Se te abren los dedos."
+    },
+    {
+      "tipo": "texto",
+      "visual": "descanso",
+      "texto": "Y justo ahí hay un descanso que no ves."
+    },
+    {
+      "tipo": "texto",
+      "visual": "empotre",
+      "texto": "Uno de los mejores: el empotre de rodilla. La rodilla contra una presa, la punta del pie contra otra, y el peso va a la pierna. Las manos, libres."
+    },
+    {
+      "tipo": "texto",
+      "visual": "bathang",
+      "texto": "Y el más extremo: el bat hang. Los pies enganchados en una presa o una bolsa, boca abajo."
+    },
+    {
+      "tipo": "texto",
+      "visual": "buscar",
+      "texto": "Lo difícil es verlos. Búscalos en los intentos de reconocimiento, como buscas las presas del paso clave."
+    },
+    {
+      "tipo": "texto",
+      "visual": "chapa5",
+      "texto": "Mismo intento. Y el descanso estaba en la chapa cinco."
+    },
+    {
+      "tipo": "cierre",
+      "visual": "envio",
+      "texto": "¿Cuál te has saltado tú?"
+    }
+  ]
+}

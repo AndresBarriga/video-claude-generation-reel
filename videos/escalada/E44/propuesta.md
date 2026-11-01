@@ -1,4 +1,4 @@
-# E44 · «Descansar en la vía: empotre de rodilla y bat hang» — propuesta v1 (1-nov)
+# E44 · «Descansar en la vía: empotre de rodilla y bat hang» — propuesta v2 (1-nov)
 Idea de Andrés (1-nov, 15:11): cómo descansar en una vía y por qué buscar descansos; el empotre de rodilla y el bat hang entran como rehook. Plantilla: `docs/plantilla-info.md`. Serie «Pump» (E44 en la vía, E43 entre pegues).
 
 ## Ficha de contenido
@@ -32,31 +32,33 @@ Idea de Andrés (1-nov, 15:11): cómo descansar en una vía y por qué buscar de
 - Si falla: skip alto = cambiar solo los 3 primeros segundos; meseta baja = acortar las explicaciones del empotre.
 
 ## Aperturas (5)
-- A (imagen inesperada, **elegida**): «Este escalador está descansando. Colgado boca abajo, en mitad de una vía.»
+- A (persona en apuro + descanso escondido, **elegida**): «Chapa ocho. Se te abren los dedos. Y justo ahí hay un descanso que no ves.»
 - B (afirmación): «No te pumpeas por falta de fondo: te falta encontrar dónde descansar.»
-- C (situación): «Llegas pumpeado a la chapa ocho. Y no hay ni un descanso. O sí, pero no lo ves.»
+- C (imagen): escalador boca abajo en un techo; «¿Descansando?» (la imagen pasa a la escena 4)
 - D (cifra): «Una vía bien descansada es media vía.»
-- E (pregunta): «¿Dónde se descansa en un techo? Boca abajo.»
+- E (pregunta): «¿Dónde se descansa en un techo?»
 
-## Guion (voz | imagen) — ~105 palabras, ~40 s
-1. «Este escalador está descansando. Colgado boca abajo, en mitad de una vía.» | s 0: escalador bat hang bajo un techo, manos colgando; medidor PUMP en verde; rótulo «¿DESCANSANDO?»
-2. «Muchos culpan a su fondo, pero a menudo el problema es otro: no encontraron dónde descansar.» | la misma vía sin descansos; PUMP sube a rojo; cae
-3. «El mejor descanso deja las manos libres. Empotre de rodilla: la rodilla contra una presa, la punta del pie contra otra, y cuelgas de la pierna.» | dibujo del empotre, manos sueltas; PUMP baja; etiquetas RODILLA · PUNTA DEL PIE
-4. «Y el extremo: el bat hang. Los pies enganchados en un techo, boca abajo, las manos sueltas.» | bat hang; PUMP baja más
-5. «Ojo: con colchoneta y ayuda; y en un empotre, la pierna puede quedarse atascada si caes.» | rótulo de aviso
-6. «Lo difícil es verlos. Búscalos como buscas las presas del paso clave: en los intentos de reconocimiento.» | el escalador señala descansos marcados en la vía
-7. «Mismo intento, ahora con descansos. Y llegas a la reunión.» | PUMP en verde; la reunión
-8. «¿Dónde descansas tú?» | rótulo «MÁNDASELO AL QUE SE PUMPEA EN LA CHAPA OCHO»
+## Guion v2 (voz | imagen) — ~90 palabras, ~33 s
+Aplica al crítico (v1: 5,5, viralidad 7/14): gancho con persona en apuro, antebrazo en vez de barra PUMP, un descanso «normal» (empotre) y el extremo (bat hang) en una frase, avisos solo como rótulo y pie, cierre personal («¿cuál te has saltado tú?»).
+1. «Chapa ocho. Se te abren los dedos.» | s 0: antebrazo rojo e hinchado, los dedos se abren sobre la presa; chapa 8 en pantalla; rótulo «¿CAES?»
+2. «Y justo ahí hay un descanso que no ves.» | la cámara sube; un hueco bajo un techo se ilumina
+3. «Uno de los mejores: el empotre de rodilla. La rodilla contra una presa, la punta del pie contra otra, y el peso va a la pierna. Las manos, libres.» | usa el empotre; el antebrazo recupera el color; los dedos se sacuden; rótulos RODILLA · PUNTA DEL PIE
+4. «Y el más extremo: el bat hang. Los pies enganchados en una presa o una bolsa, boca abajo.» | bat hang; rótulo «PRUÉBALO EN SEGURO»
+5. «Lo difícil es verlos. Búscalos en los intentos de reconocimiento, como buscas las presas del paso clave.» | el escalador recorre la vía señalando descansos
+6. «Mismo intento. Y el descanso estaba en la chapa cinco.» | repite el intento; en la chapa cinco aparece el descanso que se saltó; lo usa; llega a la reunión con el antebrazo normal
+7. «¿Cuál te has saltado tú?» | rótulo «MÁNDASELO AL QUE SE PUMPEA EN LA CHAPA OCHO»
 
 ## Reparto y visual
-- Idea visual: **el medidor PUMP** (barra con color) siempre visible.
-- Reparto: una escaladora de 28, pelo corto oscuro y chaqueta amarilla (distinta del escalador del pump y de la escaladora de La puerta); vía de techo en rocódromo, vista de perfil.
-- Riesgo visual: el bat hang exige un escalador invertido bien dibujado; boceto antes de producir.
+- Idea visual: **el antebrazo cuenta el pump**: color rojo e hinchazón al agarrar, vuelve a su color al descansar (sin barra abstracta, rechazada el 27-oct).
+- Reparto: escaladora de 28, pelo corto oscuro, chaqueta amarilla (distinta de las otras tres); vía de techo en rocódromo, vista de perfil; la cuerda siempre dibujada.
+- Riesgo visual: el bat hang y el empotre exigen poses nuevas; boceto antes de producir.
 
 ## Límites
 - Las cifras de pump no entran aquí; el descanso en la vía es de entrenadores (Climbing, Hörst, Nicros).
-- Bat hang y empotre: avisos de seguridad en voz y pie.
+- Corregido por el crítico: «cuelgas de la pierna» era falso (el empotre es oposición); «pies enganchados en un techo» pasa a «en una presa o una bolsa»; «el mejor descanso» pasa a «uno de los mejores».
+- Seguridad: «prueba en seguro» solo como rótulo (con colchoneta o cuerda y asegurador) y el riesgo de pierna atascada en el comentario fijado, no en la voz, para no frenar el pico.
+- Comentario fijado: «Fuentes: Climbing, Nicros/Hörst, Gripped, Friction Labs. Prueba bat hang y empotres con colchoneta o cuerda y asegurador: un empotre muy apretado puede dejar la pierna atascada si caes.»
 - «A menudo» y «muchos»: hedges de la fuente («more likely causes»).
 
 ## Registro del crítico
-(pendiente)
+| 1-nov | E44 v1 | propuesta | 5,5 (viralidad 7/14) | Gancho de divulgación sin apuro; PUMP abstracto; dos descansos + aviso + búsqueda; «cuelgas de la pierna» falso; final adivinable |

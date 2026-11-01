@@ -302,6 +302,27 @@
    "riesgo_txt": "Cifras de entrenadores, no pautas médicas; el corte del antebrazo puede quedar cutre.",
    "esfuerzo": "3–4 h",
    "slot": "despues"
+  },
+  {
+   "id": "E44",
+   "nombre": "E44 Descansar en la vía (empotre y bat hang)",
+   "formato": "cuerpo-info",
+   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
+   "bloqueos": [
+    "Tu OK",
+    "Boceto",
+    "Voz",
+    "Producción"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 6,
+   "por_que": "Idea de Andrés con más gancho visual; pareja del ciclo del pump.",
+   "riesgo": 3,
+   "riesgo_txt": "Poses nuevas (bat hang, empotre) pueden quedar cutres; seguridad con avisos.",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
   }
  ]
 }
