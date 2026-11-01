@@ -4,7 +4,7 @@
   {
    "id": "hoy",
    "nombre": "Hoy noche (el potente)",
-   "hora": "~21:30"
+   "hora": "~20:30"
   },
   {
    "id": "man_am",
@@ -14,7 +14,7 @@
   {
    "id": "man_pm",
    "nombre": "Mañana noche",
-   "hora": "~21:00"
+   "hora": "~20:30"
   },
   {
    "id": "trial",
@@ -37,7 +37,7 @@
    "id": "E35",
    "nombre": "E35 ¿Te quedas? (Decisiones límite #2)",
    "formato": "historia-dilema",
-   "estado": "Producido con voz «tú» (47,4 s); listo para publicar",
+   "estado": "Publicado el 31-oct 21:20; medir a 24 h (hoy 21:20) y 48 h (lun 21:20)",
    "bloqueos": [],
    "h": [
     "H1",
@@ -49,7 +49,7 @@
    "riesgo": 3,
    "riesgo_txt": "Tema sensible (muerte real, caso en apelación) y arranque en 3.ª persona como E14/E36.",
    "esfuerzo": "1–2 h",
-   "slot": "hoy"
+   "slot": "no"
   },
   {
    "id": "E14b",
@@ -74,7 +74,7 @@
    "id": "E3",
    "nombre": "E3 Escalador→Español",
    "formato": "humor-jerga",
-   "estado": "Falta voz",
+   "estado": "Jerga: lunes ~20:30 (Andrés ya tiene el vídeo con voz)",
    "bloqueos": [
     "Voz (Andrés)"
    ],
@@ -87,7 +87,7 @@
    "riesgo": 1,
    "riesgo_txt": "Bajo; mejor como prueba para no ensuciar la cuadrícula.",
    "esfuerzo": "15 min de voz",
-   "slot": "trial"
+   "slot": "man_pm"
   },
   {
    "id": "E37",
@@ -189,7 +189,7 @@
    "id": "E35B",
    "nombre": "E35B misma historia en 3.ª persona (trial)",
    "formato": "historia-dilema",
-   "estado": "Producido con voz (44,7 s); reel de prueba pendiente",
+   "estado": "Reel de prueba hoy ~14:30 (solo no seguidores); comparar skip a 48 h con E35",
    "bloqueos": [],
    "h": [
     "H12",
@@ -269,7 +269,7 @@
    "id": "E42",
    "nombre": "E42 La puerta (barn door)",
    "formato": "tecnica-info",
-   "estado": "Producido v4 con voz (43 s); falta tu revisión",
+   "estado": "Hoy domingo ~20:30; producido v4 con voz (43 s)",
    "bloqueos": [
     "Tu revisión"
    ],
@@ -281,7 +281,7 @@
    "riesgo": 3,
    "riesgo_txt": "Técnica genérica; techo 3–5K como las referencias.",
    "esfuerzo": "3–4 h",
-   "slot": "man_pm"
+   "slot": "hoy"
   }
  ]
 }
