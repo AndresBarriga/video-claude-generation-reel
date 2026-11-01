@@ -62,3 +62,6 @@ Aplica al crítico (v1: 5,5, viralidad 7/14): gancho con persona en apuro, anteb
 
 ## Registro del crítico
 | 1-nov | E44 v1 | propuesta | 5,5 (viralidad 7/14) | Gancho de divulgación sin apuro; PUMP abstracto; dos descansos + aviso + búsqueda; «cuelgas de la pierna» falso; final adivinable |
+
+## Decisión de Andrés (1-nov, 15:18): abrir con el bat hang y con la barra PUMP
+Prefiere esa apertura a la v2 (el crítico había pedido quitar la barra por abstracta y abrir con la persona en apuro). Se respeta. Para que la barra no sea un gráfico abstracto: lleva un número y una etiqueta, como la referencia de @escaladatips («PESO EN LAS MANOS 100 % → 39 %»), y el antebrazo cambia de color a la vez. Apertura v3: primer fotograma = escalador boca abajo en bat hang con la barra PUMP en 90 % cayendo a 20 % en 2 s; voz propuesta: «Este escalador llegó con el pump al noventa por ciento. Y mira cómo lo baja: boca abajo.» Producción en pausa: Andrés quiere producir menos ahora.
