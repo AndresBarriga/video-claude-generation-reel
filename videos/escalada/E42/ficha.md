@@ -17,3 +17,7 @@ Fuentes: Philarockgym («How to Prevent the Annoying Barn Door», serie de twist
 
 ## Referencia vista el 1-nov (@escaladatips, bandera trasera)
 Mismo paso antes y después (SIN BANDERA / CON BANDERA), etiquetas de lo que carga («CARGA», «PIE LIBRE», «CADERA CERCA»), una sola técnica y bucle al principio; 580 «me gusta», 229 envíos. Aplicado aquí: etiquetas CARGA/LIBRE, «MISMAS PRESAS, MISMO PASO» y «MENOS GIRO». No aplicado: una sola técnica, y modelo 3D.
+
+
+## v5 (1-nov, antes de publicar)
+Cambios sin tocar la voz: barra de progreso de las 3 técnicas (✓ al acabar), core explicado («= la cadera no se abre»), técnica 2 nombrada «bandera», regla final en pantalla («apoyos nunca en la misma línea») y subtítulos corregidos (desfase de ~1,5 s en «cambiar los apoyos» y «acercar el peso»: la voz decía la frase antes de la pausa).

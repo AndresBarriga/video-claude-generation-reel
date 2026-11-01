@@ -64,21 +64,21 @@ const Principio: React.FC<P> = ({ d, pal }) => {
 const Cierra: React.FC<{ th0?: number; th1?: number; f: number }> = ({ th0 = 44, th1 = 5, f }) => <Planta x={790} y={430} th={interpolate(f, [10, 36], [th0, th1], clamp)} largo={110} cerrada={f > 34} titulo={false} k={0.9} />;
 const Mismo: React.FC<{ f: number }> = ({ f }) => (<><g opacity={interpolate(f, [0, 8, 34, 42], [0, 1, 1, 0], clamp)}><Txt x={540} y={1340} t="MISMAS PRESAS, MISMO PASO" tam={44} col="#C9D3DE" /></g><g opacity={interpolate(f, [34, 44], [0, 1], clamp)}><Txt x={880} y={790} t="MENOS GIRO" tam={40} col={TEAL} /></g></>);
 
-const Uno: React.FC<P> = ({ d }) => {
-  const f = useCurrentFrame(), ML: V = [440, 640];
+const Uno: React.FC<P> = ({ d, pal }) => {
+  const f = useCurrentFrame(), ML: V = [440, 640], pc = (pal("core") ?? 130) - 4, oc = interpolate(f, [pc, pc + 8], [0, 1], clamp);
   return (
-    <Base d={d} marcadas={[ML, PR]} top={<Etiqueta texto="1 · PIE CONTRARIO A LA MANO" top={150} tam={76} desde={2} />}>
+    <Base d={d} marcadas={[ML, PR]} top={<Etiqueta texto="1 · PIE CONTRARIO A LA MANO" top={196} tam={72} desde={2} />}>
       <Linea a={ML} b={PR} col={TEAL} o={interpolate(f, [6, 18], [0, 1], clamp)} />
       <Frente cx={590} cy={1000} hx={700} th={interpolate(f, [10, 36], [44, 0], clamp)} manoL={ML} pieR={PR} manoR={[760, 600]} cara="alivio" f={f} tension />
       <ellipse cx={590} cy={920} rx={86} ry={92} fill="none" stroke={TEAL} strokeWidth={8} strokeDasharray="14 10" opacity={0.9} />
-      <Txt x={760} y={1000} t="CORE TENSO" tam={44} col={TEAL} /><Cierra f={f} /><Mismo f={f} />
+      <g opacity={oc}><Txt x={790} y={990} t="CORE TENSO" tam={46} col={TEAL} /><Txt x={790} y={1044} t="= LA CADERA NO SE ABRE" tam={32} col="#E6EDF3" /></g><Cierra f={f} /><Mismo f={f} />
     </Base>
   );
 };
 const Dos: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame(), PL: V = [290, 1090 + 12 * Math.sin(f / 10)];
   return (
-    <Base d={d} marcadas={[MR, PR]} top={<Etiqueta texto="2 · LA PIERNA LIBRE, DE CONTRAPESO" top={150} tam={68} desde={2} />}>
+    <Base d={d} marcadas={[MR, PR]} top={<Etiqueta texto="2 · BANDERA: LA PIERNA LIBRE, DE CONTRAPESO" top={196} tam={60} desde={2} />}>
       <path d="M470 1120 Q380 1030 330 1090" stroke={NARANJA} strokeWidth={9} fill="none" strokeLinecap="round" /><path d="M330 1090 L362 1074 M330 1090 L350 1118" stroke={NARANJA} strokeWidth={9} strokeLinecap="round" />
       <Frente cx={560} cy={1000} hx={700} th={interpolate(f, [10, 36], [44, 7], clamp)} manoR={MR} pieR={PR} pieL={PL} manoL={[380, 560]} cara="esfuerzo" f={f} /><Cierra f={f} th1={7} /><Mismo f={f} />
     </Base>
@@ -87,7 +87,7 @@ const Dos: React.FC<P> = ({ d }) => {
 const Tres: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame(), PL: V = [520, 1240], fr = pal("rodilla") ?? Math.round(d * 0.7);
   return (
-    <Base d={d} marcadas={[MR, PR, PL]} top={<><Etiqueta texto="3 · CADERA A LA PARED" top={150} tam={74} desde={2} /><Etiqueta texto="LA QUE MÁS AYUDA EN DESPLOMES" top={330} tam={44} desde={30} /></>}>
+    <Base d={d} marcadas={[MR, PR, PL]} top={<><Etiqueta texto="3 · CADERA A LA PARED" top={196} tam={72} desde={2} /><Etiqueta texto="LA QUE MÁS AYUDA EN DESPLOMES" top={370} tam={42} desde={30} /></>}>
       <path d="M470 980 L600 980" stroke={TEAL} strokeWidth={9} strokeLinecap="round" /><path d="M600 980 L574 956 M600 980 L574 1004" stroke={TEAL} strokeWidth={9} strokeLinecap="round" />
       <Frente cx={580} cy={1000} hx={700} th={interpolate(f, [10, 36], [44, 3], clamp)} manoR={MR} pieR={PR} pieL={PL} manoL={[400, 600]} cara="serio" f={f} /><Cierra f={f} th1={3} /><Mismo f={f} />
       <g opacity={interpolate(f, [fr - 4, fr + 6], [0, 1], clamp)}><Txt x={540} y={1400} t="¡CUIDADO CON LA RODILLA!" tam={50} col="#FF8A4A" /></g>
@@ -103,6 +103,7 @@ const Llegas: React.FC<P> = ({ d }) => {
       <Frente cx={560} cy={cy} hx={700} th={0} manoR={MR} manoL={k > 0.9 ? META : ml} pieR={pie} pieL={pl} cara={k > 0.9 ? "alivio" : "esfuerzo"} f={f} />
       <g opacity={interpolate(f, [22, 30, 50], [0, 1, 0], clamp)}>{[0, 1, 2, 3, 4].map((i) => <circle key={i} cx={META[0] - 30 + i * 22} cy={META[1] - 40 - ((f - 22) * (1.2 + i * 0.3))} r={9 + i} fill="#F4F7FA" opacity={0.8} />)}</g>
       <Anillo p={META} o={interpolate(f, [24, 34], [0, 1], clamp)} col="#6FE08A" />
+      <g opacity={interpolate(f, [30, 40], [0, 1], clamp)}><Txt x={540} y={1300} t="REGLA: APOYOS NUNCA EN LA MISMA LÍNEA" tam={38} col="#E6EDF3" /></g>
     </Base>
   );
 };
