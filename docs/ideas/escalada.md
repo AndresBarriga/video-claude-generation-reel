@@ -49,6 +49,18 @@ Lista aprobada por Andrés. 🌍 = la entiende quien no escala. Estado entre cor
 3. Qué pasa cuando se rompe y cómo se recupera.
 Ventajas: la mano se dibuja una vez y sirve para los tres; la serie da motivo para seguir. Riesgo: techo medio de la información (≈4-8K cada una). Plan: producir la parte 1, medirla y decidir las otras dos.
 
+## Ganchos propuestos por otra fuente (pegados por Andrés, 1-nov; sin verificar)
+- Cerebro al encadenar: «Tu cerebro es tu peor enemigo cuando estás a punto de encadenar».
+- Hoy no te sale el paso de ayer: «Ayer hacías este movimiento sin problema. ¿Qué ha pasado?» (falta una explicación verificada).
+- El que asegura: «Los 5 tipos de personas que te aseguran».
+- La puerta: «¿Por qué tu cuerpo sale disparado hacia un lado?».
+- Pump: «¿Por qué llega un momento en el que tus antebrazos dejan de funcionar?».
+- Factor de caída: «Una caída de un metro puede ser más peligrosa que una de tres» (cuidado: «peligrosa» no está respaldado; mejor «frena más seco»).
+- El último intento: «Todos los escaladores mentimos con esta frase» (ya hecho: Último pegue).
+- Moonboard/Kilter: «¿Necesitas realmente entrenar en Moonboard para escalar mejor?».
+- Jerga: «Escalador → Español» (ya hecho). Pies de gato: «Intenta explicarle a tu madre por qué estos zapatos cuestan 150 €».
+- Las notas de potencial 7-9/10 de esa lista no tienen datos detrás; el humor/identidad de la cuenta ha dado 5-8K hasta ahora.
+
 ## Prioridad actual (lote 1)
 - **E14** Honnold en El Capitán sin cuerda 🌍 — v final (28-oct): abre contigo en una **escalera de mano** cambiando una bombilla («A ti te tiembla la pierna en una escalera de mano. Él subió esto sin cuerda. Con esta cara.»), contador 2 → 884 m (Torre Eiffel como escala), escáner del cerebro como 2.º gancho, giro: ensayó cada paso con cuerda (sin la patada de kárate: de perfil no se podía representar bien). Cierre: «¿Valiente, o es que su cerebro no se entera? Mándaselo al que no se sube ni a una escalera de mano». Caricatura `piezas/Honnold.tsx`. Cifras: 884 m (Guinness; no 914), 3 h 56 min, Eiffel 330 m. Voz Danny, tiempos por frases. [producido; rama `video/E14-honnold`]
 - **E15** Tocando el vacío 🌍 — v3 (27-oct): estructura nueva (abre y cierra en la mano con la navaja, «¿Cortas?»), caída desde cortado de hielo, hoyo sin anclaje, cortado que no ven, capa de sonido. Voz Danny (ElevenLabs) sincronizada. [final, falta aprobar]
