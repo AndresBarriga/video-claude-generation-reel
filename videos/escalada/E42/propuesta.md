@@ -62,3 +62,15 @@ Un OK sobre este paquete, 2 fotogramas boceto (la bisagra y el giro), voz una ve
 
 ## Registro del crítico
 | 1-nov | E42 v1 | propuesta | 5 (viralidad 3) | Gancho de divulgación; puerta literal y línea abstracta; técnica genérica en 3 consejos; «mismo lado» y «cadera pegada» imprecisos |
+
+## v3 (1-nov, tras el comentario de Andrés sobre el borrador): ordenar «causa → principio → técnicas»
+Problema del borrador: mezclaba causa, técnicas y «core» sin explicar cuándo sirve cada una, y «bisagra» añadía un término que no se entendía.
+- **Quitar «bisagra»:** se dice «esa línea» (la que forman tu mano y tu pie). El rótulo del recuadro pasa de BISAGRA a LÍNEA.
+- **Causa en una frase:** solo un lado del cuerpo está agarrado (mano y pie del mismo lado) y el resto gira alrededor de esa línea (Philarockgym, Movement Gyms, climbingtechnique).
+- **Principio:** cuanto más lejos está tu peso de la línea, más se abre; frenarla es **cambiar los apoyos** o **acercar el peso** a la línea.
+- **Técnicas, cada una bajo su principio:**
+  - Cambiar los apoyos: pie contrario a la mano que agarra (tensión cruzada; el core mantiene esa diagonal).
+  - Acercar el peso: pierna libre de contrapeso (flag) o girar la cadera hacia la pared (rodilla caída) con el pie opuesto empujando.
+- «Core tenso» deja de ser una cuarta técnica y pasa a ser parte de la tensión cruzada (la base documentada es la tensión cruzada; «core» suelto es consejo común, poca fuente).
+- **Cuidado:** la rodilla caída exige cuidado con la rodilla (Friction Labs; póster de biomecánica): se dice en el vídeo y en el comentario fijado.
+- Texto de voz v3 (~106 palabras, ~40 s): «Estiras la mano y tu cuerpo se abre como una puerta. No es solo falta de fuerza. Pasa cuando solo un lado de tu cuerpo está agarrado: tu mano y tu pie del mismo lado. Todo lo demás gira alrededor de esa línea. Cuanto más lejos está tu peso de la línea, más se abre. Frenarla es hacer una de dos cosas: cambiar los apoyos, o acercar el peso a la línea. Cambiar los apoyos: pie contrario a la mano, con el core tenso. Acercar el peso: la pierna libre de contrapeso, o girar la cadera hacia la pared, con cuidado en la rodilla. ¿Cuál usas tú?» (pendiente de OK; hay que regrabar la voz).
