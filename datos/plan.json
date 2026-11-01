@@ -223,6 +223,26 @@
    "riesgo_txt": "Explicador de nicho: techo 15–30K (crítico); la mano puede quedar fea (ManoRegleta, 28-oct).",
    "esfuerzo": "3–4 h",
    "slot": "no"
+  },
+  {
+   "id": "E41",
+   "nombre": "E41 Factor de caída (cuerda como muelle)",
+   "formato": "info-sorpresa",
+   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
+   "bloqueos": [
+    "Tu OK",
+    "Producción",
+    "Voz"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 6,
+   "por_que": "Algo que no sabías, con humor de rocódromo y a quién mandárselo (el asegurador).",
+   "riesgo": 3,
+   "riesgo_txt": "Info con quiz; seguridad: modelo simplificado; techo parecido a las cuentas de referencia (2–4K likes).",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
   }
  ]
 }

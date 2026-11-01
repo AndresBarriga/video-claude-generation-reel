@@ -42,3 +42,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 31-oct | E38 v1 | propuesta | 5,5 | Lección sin conflicto; gancho = dato; envío «tecleando» sin destinatario |
 | 31-oct | E38 v2 | propuesta | 6 | Final adivinable; gancho en 3.ª persona con dos ideas; humor sin voz; alcance de nicho |
 | 31-oct | E40 v1 | propuesta | 5,5 | Dilema muere en s 8 y salto al dedo; gancho en 3.ª persona; tres episodios; «19 días después» y «casi la deja» incorrectos; cierre largo con «mándaselo» en voz |
+| 1-nov | E41 v1 | propuesta | 5,5 | Lección con quiz adivinable; gancho sin persona en apuros; sin detalle de rocódromo; final «al empezar» contradice el factor 2 |
