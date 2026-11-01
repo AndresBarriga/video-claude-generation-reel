@@ -1,4 +1,4 @@
-# E42 · La puerta «¿Por qué tu cuerpo sale disparado hacia un lado?» — propuesta v1 (1-nov)
+# E42 · La puerta «¿Por qué tu cuerpo sale disparado hacia un lado?» — propuesta v2 (1-nov)
 Elegida por Claude entre las ideas (Andrés, 1-nov: «elige una y vamos a crearla»). Plantilla: `docs/plantilla-info.md`. Formato: técnica con una sola idea y una imagen que se entiende sin escalar. Público: quien escala y se «abre» en la pared; el no escalador entiende la bisagra.
 
 ## Ficha de contenido
@@ -27,35 +27,38 @@ Elegida por Claude entre las ideas (Andrés, 1-nov: «elige una y vamos a crearl
 - Si falla: skip alto = cambiar solo los 3 primeros segundos; meseta baja = acortar las tres formas.
 
 ## Aperturas (5)
-- A (pregunta con persona, **elegida**): «¿Por qué tu cuerpo sale disparado hacia un lado?»
-- B (afirmación): «No te caes por falta de fuerza. Te caes por una puerta.»
-- C (imagen): una puerta que se abre sobre una escaladora que se abre igual; rótulo «¿LO RECONOCES?»
+- A (momento reconocible, **elegida**): «Estiras la mano y tu cuerpo se abre como una puerta. No es solo falta de fuerza.»
+- B (pregunta): «¿Por qué tu cuerpo sale disparado hacia un lado?»
+- C (afirmación): «No te caes por falta de fuerza. Te caes por una puerta.»
 - D (situación): «Estiras la mano y todo gira. Otra vez.»
-- E (dato): «Tres puntos en línea y tu cuerpo es una puerta.»
+- E (dato): «Cuando tus apoyos quedan en línea, tu cuerpo gira alrededor de ellos.»
 
-## Guion (voz | imagen) — ~100 palabras, ~37 s
-1. «¿Por qué tu cuerpo sale disparado hacia un lado?» | s 0: escaladora (28, trenza) estira una mano y su cuerpo se abre de golpe de la pared; cara de sorpresa; rótulo «¿POR QUÉ?»
-2. «Se llama puerta. Tu mano y tu pie están en el mismo lado: son la bisagra, y tu cuerpo, la puerta.» | corte de continuidad: una puerta de verdad se abre y la escaladora se abre igual; línea entre mano y pie; rótulo «BISAGRA»
-3. «Cuanto más lejos está tu cadera de esa línea, más se abre.» | dos escaladoras lado a lado: cadera cerca, giro pequeño; cadera lejos, giro grande
-4. «No es falta de fuerza. Se arregla con geometría. Tres formas.» | contador «1 · 2 · 3»
-5. «Una: mano y pie contrarios. La bisagra desaparece.» | la diagonal; el cuerpo queda estable
-6. «Dos: la pierna libre de contrapeso.» | la pierna libre se estira al lado contrario; rótulo «CONTRAPESO»
-7. «Tres: la cadera pegada a la pared.» | la cadera cerca del eje; el giro casi desaparece
-8. «¿Cuál te falta a ti?» | vuelta al primer plano; rótulo «MÁNDASELO AL QUE SIEMPRE SE ABRE»
+## Guion v2 (voz | imagen) — ~95 palabras, ~35 s
+Aplica al crítico (v1: viralidad 3, envío 5; para información, 6): momento reconocible en el s 0, sin puerta de verdad, hechos corregidos, cierre personal. Se mantienen las tres formas porque son lo que se guarda.
+1. «Estiras la mano y tu cuerpo se abre como una puerta. No es solo falta de fuerza.» | s 0: la mano se suelta de la presa, el pie resbala y el cuerpo gira hacia fuera; sonido de roce; rótulo «¿TE PASA?»
+2. «Tu mano y tu pie forman una línea: es la bisagra. Y tu cuerpo, la puerta.» | sobre el mismo plano: la línea entre mano y pie se ilumina y el arco del giro se dibuja; rótulo «BISAGRA»
+3. «Cuanto más lejos está tu cadera de esa línea, más se abre.» | zoom a la cadera; cadera lejos = arco grande; cerca = arco pequeño
+4. «Tres formas de frenarla.» | contador «1 · 2 · 3»
+5. «Una: mano y pie contrarios.» | la diagonal; el cuerpo queda estable
+6. «Dos: la pierna libre de contrapeso.» | la pierna libre se estira al otro lado
+7. «Tres: gira la cadera hacia la pared.» | la cadera se acerca al eje; el arco casi desaparece
+8. «¿Y tú, de qué lado te abres?» | vuelta al primer plano; rótulo «MÁNDASELO AL QUE SIEMPRE SE ABRE»
 
 ## Reparto y visual
-- Idea visual: **la bisagra**: una línea entre mano y pie y una puerta de verdad como corte de continuidad.
-- Reparto: escaladora de 28 con trenza y camiseta verde azulada (no naranja, reservada a la cuerda), una segunda escaladora con gorro para las comparaciones. Cada cara reacciona (sorpresa, «ahora lo entiendo»).
-- Escenario: rocódromo con desplome suave (no el bloque exterior). Sin mano de perfil en macro.
+- Idea visual: **el arco de giro** dibujado sobre la propia escalada (una línea y un arco, sin puerta de verdad ni cortes). La línea de bisagra es lo que explica; aparece solo en las escenas 2-3 y en la 7.
+- Reparto: escaladora de 28 con trenza y camiseta verde azulada (no naranja) y, en la 3, una segunda escaladora con gorro para la comparación. Cada cara reacciona.
+- Cámara: plano general en 1-2, zoom a la cadera en 3 y 7 (no se repite el mismo plano).
+- Escenario: rocódromo con desplome suave.
 
 ## Producción barata
 Un OK sobre este paquete, 2 fotogramas boceto (la bisagra y el giro), voz una vez, un render, máximo 2 rondas. Una sola escena base con poses de giro: reutilizable para boca abajo y desplomes.
 
 ## Hechos y límites
 - Es información de técnica, no de seguridad; sin cifras.
-- El giro «en el sentido de la puerta» depende del eje: el vídeo dibuja siempre la línea entre mano y pie.
+- Corregido por el crítico: la puerta depende de que los apoyos queden en línea y de que el cuerpo gire alrededor de ese eje, no de que mano y pie sean del mismo lado; «cadera pegada» pasa a «gira la cadera hacia la pared» (climbingtechnique); «geometría, no fuerza» pasa a «no es solo falta de fuerza» (la tensión también cuenta).
+- Las tres formas no son exhaustivas: el vídeo dice «tres formas», no «las tres».
 - «Con tres puntos no hay puerta» solo si no están en línea: el vídeo no lo dice, para no complicar.
-- Riesgo visual: el corte de continuidad entre la puerta y la escaladora puede leerse como metáfora literal (cf. no-me-gusta 27-oct). Mitigación: la puerta dura menos de 1 s y la línea de bisagra se queda.
+- Se quita la puerta de verdad (metáfora literal, no-me-gusta 27-oct). Riesgo: la línea de bisagra es un gráfico sobre la escena; solo aparece donde explica.
 
 ## Registro del crítico
-(pendiente)
+| 1-nov | E42 v1 | propuesta | 5 (viralidad 3) | Gancho de divulgación; puerta literal y línea abstracta; técnica genérica en 3 consejos; «mismo lado» y «cadera pegada» imprecisos |

@@ -74,5 +74,9 @@
  "E39": {
   "corto": "¿Qué ha crujido? (dedos)",
   "desc": "Crac en el dedo: los dedos no tienen músculos que los cierren; el antebrazo tira de tendones y las poleas los pegan al hueso; la de la base carga más al arquear."
+ },
+ "E42": {
+  "corto": "La puerta",
+  "desc": "Estiras la mano y tu cuerpo se abre como una puerta: la bisagra entre mano y pie y tres formas de frenarla (mano y pie contrarios, contrapeso, cadera hacia la pared)."
  }
 }

@@ -264,6 +264,27 @@
    "riesgo_txt": "Nicho de dedos; techo 4–8K como Último pegue o Honnold.",
    "esfuerzo": "3–4 h",
    "slot": "despues"
+  },
+  {
+   "id": "E42",
+   "nombre": "E42 La puerta (barn door)",
+   "formato": "tecnica-info",
+   "estado": "Propuesta v2 (crítico 5 en v1); falta tu OK",
+   "bloqueos": [
+    "Tu OK",
+    "Boceto",
+    "Voz",
+    "Producción"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 5,
+   "por_que": "Una idea, imagen que se entiende sin escalar; barata; la escena base se reutiliza.",
+   "riesgo": 3,
+   "riesgo_txt": "Técnica genérica; techo 3–5K como las referencias.",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
   }
  ]
 }
