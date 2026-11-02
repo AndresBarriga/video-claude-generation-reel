@@ -81,3 +81,6 @@ Cambios del resto: sustituir las barras por el mismo escalador con el antebrazo 
 
 ## v7 (2-nov 14:45) — «Las cinco fases del pump» (formato de Pierna de Elvis; H7) y enfoque en vías
 Idea de Andrés: enfocar en vías (donde el pump más penaliza), no en bloque. Voz en `texto-voz.txt` (≈105 palabras). Tarjeta de tiempos: vía de tu nivel ~20 min, proyecto largo hasta ~30, caída arriba hasta 1 h (reglas de entrenadores: Climbing, Hörst/Nicros, Training Café); el bloque (3-5 min) va al comentario fijado. Cierre: «¿En qué fase te quedas tú?» + rótulo MÁNDASELO AL QUE LLEGA A LA FASE 5. Consejo del brazo suelto: Baláš 2016.
+
+## v8 (2-nov 15:00) — críticas de v7 (5,5) aplicadas
+Regla propia (no-me-gusta 28-oct): primer fotograma = acción, nunca rótulo/título → abre con la mano que se abre en la última presa y «FASE 5» a 0,5 s (flash del final, luego «cuatro fases antes»). Fases 1+2 fundidas; el mecanismo, en una sola frase dentro de la fase 4 (antes del s 13); rehook antes del s 15; una sola cifra en el truco («unos veinte minutos») y «hasta una hora» guardado para el final; cierre «¿En qué fase te quedas tú?» con corte al fotograma 0 (bucle). Del crítico NO se acepta que Elvis sea «mediocre»: es nuestro mejor vídeo por envíos (1,3 %) y seguidores; sus notas no predicen (E11 4,5/6 → 66K; E15 6,5 → 203K; E36 8 → 6-8K).

@@ -16,50 +16,44 @@
  "escenas": [
   {
    "tipo": "gancho",
-   "visual": "titulo",
-   "texto": "Las cinco fases del pump.",
+   "visual": "gancho",
+   "texto": "Fase cinco: se te abre la mano y caes. Pero todo empieza cuatro fases antes.",
    "pausa": 0.3
   },
   {
    "tipo": "gancho",
-   "visual": "f1",
-   "texto": "Fase uno: ni lo notas.",
-   "pausa": 0.3
-  },
-  {
-   "tipo": "gancho",
-   "visual": "f2",
-   "texto": "Fase dos: el antebrazo se calienta.",
+   "visual": "f12",
+   "texto": "Fase uno: ni lo notas. Fase dos: el antebrazo se calienta.",
    "pausa": 0.3
   },
   {
    "tipo": "gancho",
    "visual": "f3",
-   "texto": "Fase tres: duro como una piedra. Y late. Dentro, el músculo aprieta sus propias venas y la sangre casi no entra.",
+   "texto": "Fase tres: duro como una piedra. Y late.",
    "pausa": 0.3
   },
   {
    "tipo": "gancho",
    "visual": "f4",
-   "texto": "Fase cuatro: ya no cierras la mano. Sin sangre fresca se acumulan residuos y la fuerza cae.",
-   "pausa": 0.3
-  },
-  {
-   "tipo": "gancho",
-   "visual": "f5",
-   "texto": "Fase cinco: se abre la mano y caes.",
+   "texto": "Fase cuatro: ya no puedes cerrar la mano. Porque dentro, el músculo aprieta sus propias venas, y la sangre casi deja de entrar. Sin sangre fresca, la fuerza cae.",
    "pausa": 0.5
   },
   {
    "tipo": "gancho",
    "visual": "rehook",
-   "texto": "Y lo peor: sueltas y en un minuto te sientes bien. Pero la fuerza tarda más en volver.",
+   "texto": "Y lo peor: sueltas y a los pocos minutos te sientes bien. Pero la fuerza tarda más en volver.",
    "pausa": 0.3
   },
   {
    "tipo": "gancho",
    "visual": "truco",
-   "texto": "No repitas enseguida. En una vía de tu nivel, unos veinte minutos; en un proyecto largo, hasta treinta; y si caes arriba, hasta una hora. Mientras esperas, sacude el brazo suelto.",
+   "texto": "En una vía de tu nivel, espera unos veinte minutos. Y mientras esperas, sacude el brazo suelto.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "gancho",
+   "visual": "arriba",
+   "texto": "¿Y si caes arriba? Hasta una hora.",
    "pausa": 0.3
   },
   {
