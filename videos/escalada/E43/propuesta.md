@@ -93,3 +93,8 @@ Voz: solo cambia la escena «arriba».
 ## v9b (2-nov 15:05) — tercera opinión externa, filtrada
 Aceptado: la barra PUMP es la única fija; el indicador AGARRE solo aparece en el segundo gancho (recuperación) para que la contradicción tenga su propio momento visual; si las fases 1-2 no se distinguen en el render, se comprimen aún más; portada y descripción encuadradas como «por qué se te abre la mano cuando escalas» (las fases, como mecanismo).
 Rechazado: «TU AGARRE ESTÁ MURIENDO» (hipérbole que la propia opinión desaconseja si la animación no lo representa); quitar la atribución a entrenadores y sustituir «hasta una hora» por «bastante más tiempo» (pierde el dato concreto y guardable; la cifra es una regla de entrenadores y así se dice). Se mantiene «TU ANTEBRAZO NO FALLA DE GOLPE». Voz congelada.
+
+## v10 (2-nov 16:05) — correcciones de Andrés (texto de voz SÍ cambia)
+1. «Sin sangre fresca» poco claro → «el músculo aprieta sus propios vasos… Sin oxígeno, y con residuos acumulándose, la fuerza cae».
+2. «Sacude el brazo suelto» fuera: se hace en los descansos DURANTE la vía, no esperando abajo. Pasa a la parte 2 (E44: Baláš 2016).
+3. «Si caes arriba, una hora» fuera (depende de cuánto arriba, del grado…). Sustituido por el principio «cuanto más duro y más largo, más tiempo» + «como regla general… unos veinte minutos».
