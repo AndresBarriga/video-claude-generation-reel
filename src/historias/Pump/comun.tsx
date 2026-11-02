@@ -107,3 +107,10 @@ export const Cronometro: React.FC<{ x: number; y: number; r?: number; min: numbe
     </g>
   );
 };
+
+/** Colocación del antebrazo en cortes grandes (la mano queda casi fuera de plano). */
+export const BRC = { x: 430, y: 1010, s: 1.0, rot: -16 };
+export const mundoC = (lx: number, ly: number): [number, number] => {
+  const a = (BRC.rot * Math.PI) / 180, X = lx * BRC.s, Y = ly * BRC.s;
+  return [BRC.x + X * Math.cos(a) - Y * Math.sin(a), BRC.y + X * Math.sin(a) + Y * Math.cos(a)];
+};

@@ -1,37 +1,50 @@
-// 1 · Gancho (0–6,7 s): el antebrazo al límite se abre y cae («fase cinco»); luego «rebobina» cuatro fases.
+// 1 · Gancho (0–7 s): el escalador aprieta de más en el último tramo, se le abre la mano y cae; la cuerda naranja lo frena; lupa de rayos X sobre el antebrazo.
 import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
-import { Polvo } from "../../piezas/Mano";
 import { Brazo } from "./Brazo";
-import { BR, Camara, Fondo, P, Rotulo, Svg, clamp, ei, mundo, suave } from "./comun";
+import { Corte } from "./Corte";
+import { Camara, Rotulo, Svg, clamp, ei, type P } from "./comun";
+import { Cuerda, Esc, FondoGym, MANOS, cyDoblado, ESC, lerpV, Vig, Zoom, type V } from "./Gym";
+
+export const Lupa: React.FC<{ x: number; y: number; r: number; k: number; f: number; aprieta?: number; flujo?: number }> = ({ x, y, r, k, f, aprieta = 1, flujo = 0.1 }) => {
+  if (k <= 0) return null;
+  return (
+    <g transform={`translate(${x} ${y}) scale(${k})`}>
+      <clipPath id="lupaC"><circle r={r} /></clipPath>
+      <circle r={r + 12} fill="#FF6A1F" />
+      <circle r={r} fill="#101A22" />
+      <g clipPath="url(#lupaC)"><Brazo x={-90} y={20} s={0.52} rot={-12} f={f} bomba={0.95} corte={1} presa={false} dentro={<Corte f={f} aprieta={aprieta} flujo={flujo} />} /></g>
+    </g>
+  );
+};
 
 export const Gancho: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fAbre = pal("abre") ?? 52, fCaes = pal("caes") ?? 85, fPero = pal("Pero") ?? 118, fAntes = pal("antes") ?? 175;
-  const fin = fPero + 4, back = f < fin ? 1 : ei(f, fin, fin + 24, 1, 0);
-  const tremor = f < fAbre ? (2.5 + 1.5 * Math.sin(f * 0.4)) * Math.sin(f * 2.4) : 0;
-  const empuja = ei(f, fAbre - 8, fAbre - 1, 0, 14) - ei(f, fAbre - 1, fAbre + 3, 0, 14);
-  const desliza = ei(f, fAbre, fAbre + 14, 0, -120);
-  const cae = interpolate(f, [fCaes, fCaes + 18], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
-  const abre = ei(f, fAbre, fAbre + 9, 0, 1) * back;
-  const bomba = f < fin ? 1 : ei(f, fPero + 8, fAntes + 6, 1, 0, suave);
-  const k = f - fCaes, sacud = k >= 0 && k < 9 ? Math.sin(k * 3) * 14 * (1 - k / 9) : 0;
-  const [px, py] = mundo(790, 40);
+  const fAbre = pal("abre") ?? 24, fMus = pal("músculo") ?? pal("musculo") ?? 130, fRiego = pal("riego") ?? 180;
+  const fSuelta = fAbre + 2, fCae = fAbre + 12;
+  const suelta = ei(f, fSuelta, fSuelta + 10, 0, 1);
+  const caida = interpolate(f, [fCae, fCae + 22], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
+  const k = f - (fCae + 22), rebote = k > 0 ? 26 * Math.sin(k * 0.45) * Math.exp(-k / 14) : 0;
+  const tiembla = f < fSuelta ? Math.sin(f * 2.3) * 2.4 : 0;
+  const cx = 540 + tiembla, cy = cyDoblado + caida * 200 + rebote, z = 1.45 - 0.2 * caida, oy = 880 + 0.9 * caida * 200;
+  const hang = (lado: 1 | -1): V => [cx + lado * 40 * ESC + lado * 18 * ESC, cy - 132 * ESC + 112 * ESC];
+  const manoL = lerpV(MANOS.L, hang(-1), suelta), manoR = lerpV(MANOS.R, hang(1), suelta);
+  const sacud = k >= -2 && k < 8 ? Math.sin((k + 2) * 3) * 12 * (1 - (k + 2) / 10) : 0;
+  const cara = f < fCae + 24 ? "miedo" : "serio";
+  const lupa = ei(f, fMus - 6, fMus + 8, 0, 1);
   return (
-    <Camara d={d} empuje={0.05} foco="62% 45%">
+    <Camara d={d} empuje={0.04} foco="50% 52%">
       <Svg>
-        <g transform={`translate(${sacud} ${Math.abs(sacud) * 0.4})`}>
-          <Fondo />
-          <Brazo {...BR} f={f} bomba={bomba} latido={0} abre={abre} cierra={f < fAbre ? 1 : 0} calor={bomba * 0.6}
-            dx={(tremor + empuja + desliza) * back} dy={cae * 1000 * back} giro={cae * 16 * back} polvo={0.6} />
-          {k >= 0 && k < 30 && <Polvo x={px - 30} y={py} k={k} n={14} seed="g" escala={1.2} />}
-          {f > fPero && f < fAntes + 12 && [0, 1, 2, 3, 4, 5].map((i) => (
-            <path key={i} d={`M${120 + i * 150} ${1180 - i * 60} l${260} ${-120}`} stroke="#fff" strokeWidth={8} strokeLinecap="round" opacity={0.28 * interpolate(f, [fPero, fPero + 8, fAntes - 4, fAntes + 12], [0, 1, 1, 0], clamp)} />
-          ))}
+        <g transform={`translate(${sacud} ${Math.abs(sacud) * 0.35})`}>
+          <Zoom z={z} oy={oy}>
+          <FondoGym fuerte={0.35} />
+          <Cuerda perno={[540, 430]} arnes={[cx, cy + 9 * ESC]} flojo={0.55 * (1 - caida) + 0.05} />
+          <Esc cx={cx} cy={cy} manoL={manoL} manoR={manoR} pieL={f < fCae ? [470, 1236] : undefined} pieR={f < fCae ? [610, 1250] : undefined} cara={cara} f={f} nud={1 - suelta} halo={1 - suelta} />
+          </Zoom>
         </g>
-        <Rotulo f={f} ini={15} fin={fCaes + 14} t="TU ANTEBRAZO" y={225} tam={84} />
-        <Rotulo f={f} ini={21} fin={fCaes + 14} t="NO FALLA DE GOLPE" y={320} tam={84} />
-        <Rotulo f={f} ini={(pal("cinco") ?? 3) + 2} fin={fCaes + 30} t="FASE 5" y={470} tam={120} col="#FF8A4A" />
+        <Vig />
+        <Lupa x={540} y={600} r={240} k={lupa} f={f} />
+        <Rotulo f={f} ini={15} fin={fRiego + 20} t="NO ERES DÉBIL" y={235} tam={104} col="#fff" />
       </Svg>
     </Camara>
   );

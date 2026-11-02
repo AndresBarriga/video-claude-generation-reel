@@ -28,8 +28,8 @@ const Rostro: React.FC<{ cara: CaraF; r: number; sh: number }> = ({ cara, r, sh 
   );
 };
 
-export type PropsFrente = { cx: number; cy: number; s?: number; hx?: number; th?: number; manoR?: V; manoL?: V; pieR?: V; pieL?: V; cara?: CaraF; chaqueta?: string; chaquetaS?: string; gorro?: string; trenza?: boolean; f?: number; tension?: boolean };
-export const Frente: React.FC<PropsFrente> = ({ cx, cy, s = 1.6, hx = 700, th = 0, manoR, manoL, pieR, pieL, cara = "normal", chaqueta = PU.chaqueta, chaquetaS = PU.chaquetaS, gorro, trenza = true, f = 0, tension }) => {
+export type PropsFrente = { cx: number; cy: number; s?: number; hx?: number; th?: number; manoR?: V; manoL?: V; pieR?: V; pieL?: V; cara?: CaraF; chaqueta?: string; chaquetaS?: string; gorro?: string; trenza?: boolean; f?: number; tension?: boolean; nud?: number; halo?: number; huesos?: number; codos?: { col: string; o: number } };
+export const Frente: React.FC<PropsFrente> = ({ cx, cy, s = 1.6, hx = 700, th = 0, manoR, manoL, pieR, pieL, cara = "normal", chaqueta = PU.chaqueta, chaquetaS = PU.chaquetaS, gorro, trenza = true, f = 0, tension, nud = 0, halo = 0, huesos = 0, codos }) => {
   const t = (th * Math.PI) / 180, c = Math.cos(t), sn = Math.sin(t);
   const w = (p: V) => { const r = hx - p[0]; return { p: [hx - r * c, p[1]] as V, z: r * sn }; };
   const LS = w([cx - 40 * s, cy - 132 * s]), RS = w([cx + 40 * s, cy - 132 * s]), LH = w([cx - 26 * s, cy + 6 * s]), RH = w([cx + 26 * s, cy + 6 * s]), HD = w([cx, cy - 172 * s]);
@@ -38,7 +38,7 @@ export const Frente: React.FC<PropsFrente> = ({ cx, cy, s = 1.6, hx = 700, th = 
   const aR = ik(RS.p, manoR ?? colgar(RS.p, 1, 112), 62 * s, 58 * s, -1), aL = ik(LS.p, manoL ?? colgar(LS.p, -1, 112), 62 * s, 58 * s, 1);
   const lR = ik(RH.p, pieR ?? [RH.p[0] + 10 * s - br, RH.p[1] + 150 * s], 80 * s, 78 * s, -1), lL = ik(LH.p, pieL ?? [LH.p[0] - 20 * s + br, LH.p[1] + 150 * s], 80 * s, 78 * s, 1);
   const torso = `M${LS.p} L${RS.p} L${RH.p} L${LH.p} Z`, sombra = HD.z * 0.8;
-  const mano = (e: V, i: number) => <circle key={i} cx={e[0]} cy={e[1]} r={17 * s * zs} fill={PU.piel} stroke={PU.tinta} strokeOpacity={0.5} strokeWidth={4} />;
+  const mano = (e: V, i: number) => <g key={i}><circle cx={e[0]} cy={e[1]} r={17 * s * zs} fill={PU.piel} stroke={PU.tinta} strokeOpacity={0.5} strokeWidth={4} />{nud > 0 && <circle cx={e[0]} cy={e[1] - 5 * s} r={8 * s} fill="#fff" opacity={0.9 * nud} />}</g>;
   const pie = (e: V, i: number) => <ellipse key={i} cx={e[0]} cy={e[1] + 6 * s} rx={22 * s} ry={13 * s} fill={PU.zapato} stroke="#fff" strokeOpacity={0.35} strokeWidth={3} />;
   return (
     <g>
@@ -49,7 +49,10 @@ export const Frente: React.FC<PropsFrente> = ({ cx, cy, s = 1.6, hx = 700, th = 
       <path d={torso} fill={chaqueta} stroke={chaqueta} strokeWidth={30 * s} strokeLinejoin="round" />
       <path d={torso} fill="none" stroke={chaquetaS} strokeWidth={6} strokeLinejoin="round" opacity={0.6} />
       {tension && <g stroke="#fff" strokeWidth={6} strokeLinecap="round" opacity={0.85}>{[0.35, 0.55, 0.75].map((k) => <path key={k} d={`M${LS.p[0] + (LH.p[0] - LS.p[0]) * k + 10 * s} ${LS.p[1] + (LH.p[1] - LS.p[1]) * k} L${RS.p[0] + (RH.p[0] - RS.p[0]) * k - 10 * s} ${RS.p[1] + (RH.p[1] - RS.p[1]) * k}`} />)}</g>}
+      {halo > 0 && [[LS.p, aL], [RS.p, aR]].map(([o, a], i) => <path key={`h${i}`} d={`M${(o as V)} L${(a as typeof aL).j} L${(a as typeof aL).e}`} stroke="#FF5A4A" strokeWidth={50 * s} strokeLinecap="round" strokeLinejoin="round" fill="none" opacity={0.3 * halo} />)}
       <Miembro a={LS.p} j={aL.j} e={aL.e} w={22 * s} col={chaqueta} fin={mano(aL.e, 3)} /><Miembro a={RS.p} j={aR.j} e={aR.e} w={22 * s} col={chaqueta} fin={mano(aR.e, 4)} />
+      {huesos > 0 && [[LS.p, aL], [RS.p, aR]].map(([o, a], i) => <g key={`b${i}`} opacity={huesos} stroke="#F4F7FA" strokeLinecap="round" strokeLinejoin="round" fill="none"><path d={`M${(o as V)} L${(a as typeof aL).j} L${(a as typeof aL).e}`} strokeWidth={9 * s} /><circle cx={(a as typeof aL).j[0]} cy={(a as typeof aL).j[1]} r={9 * s} fill="#F4F7FA" /></g>)}
+      {codos && [aL.j, aR.j].map((j, i) => <circle key={`c${i}`} cx={j[0]} cy={j[1]} r={26 * s + 4 * Math.sin(f * 0.45)} fill="none" stroke={codos.col} strokeWidth={8} opacity={codos.o} />)}
       {trenza && <path d={`M${HD.p[0] - 30 * s * zs} ${HD.p[1] + 4 * s} Q${HD.p[0] - 58 * s} ${HD.p[1] + 60 * s} ${HD.p[0] - 44 * s} ${HD.p[1] + 120 * s}`} stroke={PU.pelo} strokeWidth={17 * s} strokeLinecap="round" fill="none" />}
       <circle cx={HD.p[0]} cy={HD.p[1]} r={34 * s * zs} fill={PU.piel} stroke={PU.tinta} strokeOpacity={0.45} strokeWidth={4} />
       <path d={`M${HD.p[0] - 34 * s * zs} ${HD.p[1] - 2 * s} A${34 * s * zs} ${34 * s * zs} 0 0 1 ${HD.p[0] + 34 * s * zs} ${HD.p[1] - 2 * s} Q${HD.p[0]} ${HD.p[1] - 18 * s} ${HD.p[0] - 34 * s * zs} ${HD.p[1] - 2 * s} Z`} fill={gorro ?? PU.pelo} />

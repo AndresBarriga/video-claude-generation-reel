@@ -5,7 +5,7 @@
    "nombre": "vibra",
    "inicio": {
     "escena": "gancho",
-    "palabra": "Fase"
+    "palabra": "Se"
    },
    "duracion": 1.5,
    "volumen": 0.35
@@ -23,7 +23,8 @@
    "nombre": "caida",
    "inicio": {
     "escena": "gancho",
-    "palabra": "caes"
+    "palabra": "abre",
+    "mas": 0.45
    },
    "duracion": 1.0,
    "volumen": 0.7
@@ -31,67 +32,17 @@
   {
    "nombre": "zas",
    "inicio": {
-    "escena": "gancho",
-    "palabra": "Pero"
+    "escena": "produce",
+    "palabra": "Cuanto"
    },
-   "duracion": 0.6,
-   "volumen": 0.5
+   "duracion": 0.5,
+   "volumen": 0.4
   },
   {
    "nombre": "clic",
    "inicio": {
-    "escena": "f12",
-    "palabra": "uno"
-   },
-   "duracion": 0.3,
-   "volumen": 0.6
-  },
-  {
-   "nombre": "clic",
-   "inicio": {
-    "escena": "f12",
-    "palabra": "dos"
-   },
-   "duracion": 0.3,
-   "volumen": 0.6
-  },
-  {
-   "nombre": "clic",
-   "inicio": {
-    "escena": "f3",
-    "palabra": "tres"
-   },
-   "duracion": 0.3,
-   "volumen": 0.6
-  },
-  {
-   "nombre": "chasquido",
-   "inicio": {
-    "escena": "f3",
-    "palabra": "piedra"
-   },
-   "duracion": 0.4,
-   "volumen": 0.55
-  },
-  {
-   "nombre": "latido",
-   "inicio": {
-    "escena": "f3",
-    "palabra": "late"
-   },
-   "duracion": 12.0,
-   "volumen": 0.3,
-   "bucle": true,
-   "fundido": [
-    0.2,
-    1.2
-   ]
-  },
-  {
-   "nombre": "clic",
-   "inicio": {
-    "escena": "f4",
-    "palabra": "cuatro"
+    "escena": "produce",
+    "palabra": "mitad"
    },
    "duracion": 0.3,
    "volumen": 0.6
@@ -99,8 +50,77 @@
   {
    "nombre": "zas",
    "inicio": {
-    "escena": "f4",
-    "palabra": "Porque"
+    "escena": "produce",
+    "palabra": "sangre"
+   },
+   "duracion": 0.4,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "latido",
+   "inicio": {
+    "escena": "produce",
+    "palabra": "Resultado"
+   },
+   "duracion": 5.5,
+   "volumen": 0.25,
+   "bucle": true,
+   "fundido": [
+    0.2,
+    1.0
+   ]
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "split",
+    "palabra": "Mismo"
+   },
+   "duracion": 0.4,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "split",
+    "palabra": "flexionados"
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "split",
+    "palabra": "estirados"
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "evita",
+    "palabra": "pies"
+   },
+   "duracion": 0.4,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "evita",
+    "palabra": "chapa",
+    "mas": 0.3
+   },
+   "duracion": 0.3,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "evita",
+    "palabra": "sacude"
    },
    "duracion": 0.5,
    "volumen": 0.4
@@ -108,16 +128,35 @@
   {
    "nombre": "roce",
    "inicio": {
-    "escena": "rehook",
-    "palabra": "sueltas"
+    "escena": "evita",
+    "palabra": "luego"
    },
    "duracion": 0.5,
-   "volumen": 0.5
+   "volumen": 0.4
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "descansa",
+    "palabra": "repitas"
+   },
+   "duracion": 0.4,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "caida",
+   "inicio": {
+    "escena": "descansa",
+    "palabra": "minutos",
+    "mas": 0.3
+   },
+   "duracion": 1.0,
+   "volumen": 0.7
   },
   {
    "nombre": "tintineo",
    "inicio": {
-    "escena": "truco",
+    "escena": "descansa",
     "palabra": "veinte",
     "mas": 0.3
    },
