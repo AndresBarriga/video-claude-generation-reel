@@ -48,3 +48,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 1-nov | E42 v1 | propuesta | 5 (viralidad 3) | Gancho de divulgación; puerta literal y línea abstracta; técnica genérica en 3 consejos; «mismo lado» y «cadera pegada» imprecisos |
 | 1-nov | E43 v1 | propuesta | 5,5 (viralidad 4) | Gancho de mecanismo sin persona en apuros; 20 s de fisiología antes de lo útil; «5:1» incoherente con las tarjetas; final adivinable |
 | 1-nov | E44 v1 | propuesta | 5,5 (viralidad 7/14) | Gancho de divulgación sin apuro; PUMP abstracto; dos descansos + aviso + búsqueda; «cuelgas de la pierna» falso; final adivinable |
+| 2-nov | E43 v3 | propuesta | 6 (viralidad 9/14, envío 6/10) | Gancho promete el payoff; 5 min es error y regla de bloque a la vez; segundo gancho sin giro; cierre «ahora sabes» largo; escenas 2-5 abstractas, sin personas ni humor |

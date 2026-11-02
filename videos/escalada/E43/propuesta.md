@@ -57,3 +57,15 @@ Aplica al crítico (v1: viralidad 4, envío 5,5): gancho con persona (cae a los 
 | 1-nov | E43 v1 | propuesta | 5,5 (viralidad 4) | Gancho de mecanismo sin persona en apuros; 20 s de fisiología antes de lo útil; «5:1» incoherente con las tarjetas; final adivinable |
 
 - Corregido por el crítico: «no se agota» era falso y se quita; «se corta del todo» al 50 % pasa a no decirse; «limpiar tarda» se matiza a «no se limpia al instante» (fuente: Hörst vía Lacrux, sin pares).
+
+## v4 (2-nov) — estructura pedida por Andrés + cambios del crítico (v3: 6, viralidad 9/14)
+Voz (~90 palabras, ~33 s):
+1. «Caes en el último movimiento de la vía. Esperas cinco minutos. Y caes antes.» | brazo temblando fuera de la presa; rótulo ¿POR QUÉ CAES ANTES? a 0,5 s; el asegurador mira el reloj: «¿YA?»
+2. «Agarrar fuerte aprieta el músculo contra sus propias venas. Con solo un veinte por ciento de tu fuerza, ya llega menos sangre.» | corte del antebrazo + medidor 20 %
+3. «Sin sangre se acumulan residuos. Eso es el pump.» | residuos; el músculo se hincha
+[pausa 0,5 s: escalador sentado sacudiendo los brazos, asegurador de brazos cruzados]
+4. (2.º gancho) «Y lo raro: a los cinco minutos ya no lo notas. Pero por dentro, no está limpio todavía.» | rótulo «SE SIENTE BIEN» frente a barra LIMPIEZA a medias
+5. «Cuánto esperar entre intentos: bloque corto, de tres a cinco minutos. Vía al límite, unos veinte. ¿Caes arriba? Hasta una hora.» | tarjeta de 3 filas, «20 min» al centro; pie «reglas generales de entrenadores; depende de ti»
+6. «Mismo paso. Veinte minutos. Llega.» | reloj 20:00, antebrazo normal, llega a la presa
+7. «¿Y tú? ¿Cuánto esperas?» | corte seco al primer fotograma (5:00) = bucle; rótulo MÁNDASELO AL QUE REPITE A LOS CINCO MINUTOS
+Cambios frente a v3: el gancho ya no promete el payoff; «de la vía» resuelve la contradicción con la tarjeta (3-5 min es de bloque); humor/persona (asegurador); segundo gancho = diferencia entre cómo se siente y lo que pasa dentro; cierre ≤4 s sin «ahora sabes»; sin «según muchos entrenadores» en voz (va en el pie); sin garantía («llega» en lugar de «lo pasas»).
