@@ -19,7 +19,7 @@ export const Descansa: React.FC<P> = ({ d, pal }) => {
   const fCae = fMin + 8, caida = interpolate(f, [fCae, fCae + 20], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
   const k = f - (fCae + 20), rebote = k > 0 ? 34 * Math.sin(k * 0.4) * Math.exp(-k / 13) : 0;
   const q0 = posColg(0);
-  const hip5: V = [q0.hip[0] - 40 * caida, q0.hip[1] + 200 * caida + rebote], cuelga = ei(f, fCae + 14, fCae + 26, 0, 1);
+  const hip5: V = [q0.hip[0] - 40 * caida, q0.hip[1] + 440 * caida + rebote], cuelga = ei(f, fCae + 14, fCae + 26, 0, 1);
   const tiembla = f < fMin ? Math.sin(f * 2.3) * 2.4 : 0;
   const sube = ei(f, fVei - 6, fVei + 16, 0, 1);
   const parado: V = [xw(SUELO) - 150, SUELO - 130 * S0 + 4];
@@ -35,7 +35,7 @@ export const Descansa: React.FC<P> = ({ d, pal }) => {
         {quinto && <g transform="translate(230 60)">
           <MuroPerfil presas={[600, 668, q0.pA[1], q0.pB[1]]} otras={[380, 470, 790, 1180, 1280]} />
           {f < fCae ? <g transform={`translate(${tiembla} 0)`}><Colgado est={0} cara="esfuerzo" halo={1} nud={1 - ei(f, fMin, fMin + 8, 0, 1)} /></g> : (
-            <g><CuerdaP yb={360} arnes={[hip5[0] - 14, hip5[1] - 4]} flojo={0.55 * (1 - caida) + 0.05} />
+            <g><CuerdaP arnes={[hip5[0] - 14, hip5[1] - 4]} flojo={0.55 * (1 - caida) + 0.05} />
               <Perfil hip={hip5} torso={0} s={S0} manoA={[0, 0]} manoB={[0, 0]} pieA={[0, 0]} pieB={[0, 0]} libre="cayendo" libreB="colgado" t={cuelga} cara={f < fCae + 20 ? "miedo" : "serio"} rot={-8 * (1 - cuelga)} /></g>
           )}
         </g>}

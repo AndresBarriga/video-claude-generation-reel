@@ -65,17 +65,25 @@ export const Presa: React.FC<{ y: number; c: string; seed: string; mg?: number; 
   );
 };
 
-/** Cuerda desde el seguro (perno en el muro a la altura yb) hasta el arnés; `flojo` hace una curva hacia la sala. */
-export const CuerdaP: React.FC<{ yb: number; arnes: V; flojo?: number }> = ({ yb, arnes, flojo = 0.4 }) => {
-  const p: V = [xw(yb) - 10, yb];
-  const mx = (p[0] + arnes[0]) / 2 - 150 * flojo, my = (p[1] + arnes[1]) / 2 + 60 * flojo;
-  const d = `M${p} Q${mx} ${my} ${arnes}`;
+/** Cuerda: sube desde el suelo por las chapas (cintas exprés clavadas en el muro) hasta el arnés; `flojo` la comba hacia la sala. Tira hacia abajo (asegurador). */
+export const DRAWS = [1200, 1450, 1700];
+export const CuerdaP: React.FC<{ arnes: V; flojo?: number; draws?: number[]; yb?: number }> = ({ arnes, flojo = 0.4, draws = DRAWS }) => {
+  const ds = [...draws].sort((x, y) => y - x); // de abajo arriba
+  const pts: V[] = ds.map((y) => [xw(y) - 14, y]);
+  const fin: V = [xw(2300) - 30, 2300];
+  const top = pts[pts.length - 1];
+  const mx = (top[0] + arnes[0]) / 2 - 130 * flojo, my = (top[1] + arnes[1]) / 2 + 40 * flojo;
+  const d = `M${fin} L${pts.map((q) => q.join(" ")).join(" L")} Q${mx} ${my} ${arnes}`;
   return (
     <g>
-      <path d={d} stroke="#B8460E" strokeWidth={14} fill="none" strokeLinecap="round" />
-      <path d={d} stroke="#FF6A1F" strokeWidth={9} fill="none" strokeLinecap="round" />
-      <rect x={p[0] - 20} y={p[1] - 6} width={14} height={44} rx={7} fill="#AEB8C4" stroke="#141B26" strokeWidth={5} transform={`rotate(${-ANG} ${p[0]} ${p[1]})`} />
-      <circle cx={p[0] - 14} cy={p[1] + 36} r={13} fill="none" stroke="#AEB8C4" strokeWidth={7} />
+      <path d={d} stroke="#B8460E" strokeWidth={14} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path d={d} stroke="#FF6A1F" strokeWidth={9} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      {ds.map((y, i) => (
+        <g key={i} transform={`translate(${xw(y) - 4} ${y}) rotate(${-ANG})`}>
+          <rect x={-30} y={-6} width={26} height={11} rx={5} fill="#E8EDF2" stroke="#141B26" strokeWidth={3} />
+          <rect x={-40} y={-16} width={16} height={32} rx={8} fill="none" stroke="#AEB8C4" strokeWidth={6} />
+        </g>
+      ))}
     </g>
   );
 };

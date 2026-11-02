@@ -20,7 +20,7 @@ const Mundo: React.FC<{ estirado: boolean; f: number; halo: number; huesos: numb
     <g transform="translate(205 190)">
       <MuroPerfil presas={[600, 668, pA[1], pB[1]]} otras={[380, 470, 790, 1180, 1280]} />
       {mismo > 0 && [mA, mB].map((m, i) => <circle key={i} cx={m[0]} cy={m[1]} r={54 + 5 * Math.sin(f * 0.4)} fill="none" stroke="#fff" strokeWidth={7} opacity={mismo} />)}
-      <CuerdaP yb={380} arnes={[hip[0] - 14, hip[1] - 4]} flojo={0.6} />
+      <CuerdaP arnes={[hip[0] - 14, hip[1] - 4]} flojo={0.6} />
       <Perfil hip={hip} torso={torso} s={S} manoA={mA} manoB={mB} pieA={pA} pieB={pB} cara={estirado ? "normal" : "esfuerzo"} halo={halo} codos={{ col: codo, o: 1 }} />
       {huesos > 0 && <path d={`M${g.hombro} L${g.codoA} L${mA}`} stroke="#F4F6F8" strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" fill="none" opacity={huesos} />}
     </g>

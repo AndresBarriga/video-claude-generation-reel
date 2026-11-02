@@ -25,13 +25,13 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
   const fCorte = fAbre + 7, fCae = fCorte + 2;
   const macro = f < fCorte;
   // macro del antebrazo: hinchado, latiendo, con la mano cediendo
-  const abre = ei(f, fAbre - 12, fAbre + 4, 0, 1), push = 1 + 0.07 * ei(f, 0, fCorte, 0, 1);
+  const abre = 0.4 + 0.6 * ei(f, 3, fAbre, 0, 1), push = 1 + 0.07 * ei(f, 0, fCorte, 0, 1);
   const lat = Math.sin(f * 0.62);
   // caída y frenada
   const caida = interpolate(f, [fCae, fCae + 20], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
   const k = f - (fCae + 20), rebote = k > 0 ? 34 * Math.sin(k * 0.4) * Math.exp(-k / 13) : 0;
   const q = posColg(0);
-  const hip: V = [q.hip[0] - 40 * caida, q.hip[1] + 200 * caida + rebote];
+  const hip: V = [q.hip[0] - 40 * caida, q.hip[1] + 440 * caida + rebote];
   const cuelga = ei(f, fCae + 14, fCae + 26, 0, 1);
   const sacud = k >= -2 && k < 10 ? Math.sin((k + 2) * 3) * 12 * (1 - (k + 2) / 12) : 0;
   const lupa = ei(f, fMus - 6, fMus + 8, 0, 1);
@@ -45,7 +45,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
             <rect width={1080} height={1920} fill="url(#gm)" />
             {Array.from({ length: 7 }).map((_, i) => <circle key={i} cx={140 + i * 150} cy={380 + (i % 3) * 180} r={30 + (i % 4) * 14} fill="#9FD0E0" opacity={0.07} />)}
             <g transform={`translate(560 960) scale(${push}) translate(-560 -960)`}>
-              <Brazo x={170} y={960} s={0.85} rot={-4} f={f} bomba={2.1} latido={lat} calor={1} abre={abre} cierra={1 - abre} polvo={0.95} />
+              <Brazo x={170} y={960} s={0.85} rot={-4} f={f} bomba={1.5} latido={lat} calor={0.12} abre={abre} cierra={1 - abre} polvo={0.95} />
               <Nube x={560} y={760} k={ei(f, 0, 26, 0, 0.98)} r={1.6} />
             </g>
           </g>
@@ -55,7 +55,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
               <MuroPerfil presas={[600, 668]} otras={[380, 470, 790, 1180, 1280]} />
               {f < fCae ? <Colgado est={0} cara="miedo" halo={1} nud={0.5} /> : (
                 <g>
-                  <CuerdaP yb={360} arnes={[hip[0] - 14, hip[1] - 4]} flojo={0.55 * (1 - caida) + 0.05} />
+                  <CuerdaP arnes={[hip[0] - 14, hip[1] - 4]} flojo={0.55 * (1 - caida) + 0.05} />
                   <Perfil hip={hip} torso={0} s={S0} manoA={[0, 0]} manoB={[0, 0]} pieA={[0, 0]} pieB={[0, 0]} libre="cayendo" libreB="colgado" t={cuelga} cara={cara} rot={-8 * (1 - cuelga)} />
                 </g>
               )}

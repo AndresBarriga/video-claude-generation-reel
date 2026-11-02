@@ -31,7 +31,7 @@ export const Evita: React.FC<P> = ({ d, pal }) => {
         <Zoom z={1.2} ox={600} oy={1050}>
         <g transform="translate(230 250)">
           <MuroPerfil presas={[600, 668, 540, Math.round(posColg(0).pA[1]), Math.round(posColg(1).pA[1]), Math.round(posColg(1).pB[1])]} otras={[380, 470, 790, 1180, 1280]} />
-          <CuerdaP yb={540} arnes={[hip[0] - 14, hip[1] - 4]} flojo={0.6 - 0.2 * lazo} />
+          <CuerdaP arnes={[hip[0] - 14, hip[1] - 4]} flojo={0.6 - 0.2 * lazo} draws={f > fChapa + 14 ? [540, 1200, 1450, 1700] : [1200, 1450, 1700]} />
           <Perfil hip={hip} torso={q.torso} s={S0} manoA={manoA} manoB={manoB} pieA={lerpV(posColg(0).pA, posColg(1).pA, baja)} pieB={lerpV(posColg(0).pB, posColg(1).pB, baja)} cara={alivio ? "alivio" : baja > 0.5 ? "normal" : "esfuerzo"} halo={1 - baja} codos={{ col: rojo, o: 1 - 0.4 * baja }} />
           <Nube x={bolsa[0] - 20} y={bolsa[1] + 10} k={sB.puff} r={2} /><Nube x={bolsa[0] - 20} y={bolsa[1] + 10} k={sA.puff} r={2} />
         </g>
