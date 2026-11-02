@@ -96,7 +96,8 @@
  "H7": {
   "texto": "El próximo «cuerpo/fases» < 0,8 seg./1k",
   "videos": [
-   "E37"
+   "E37",
+   "E43"
   ],
   "ventana": 48,
   "refuta_si": [
@@ -249,27 +250,5 @@
   "calidad": 3,
   "coste": 1,
   "limites": "n=1. Mezcla tema, gancho y comparación del mismo paso; E43/E44 y el nudo la afinan (un cambio por vídeo)."
- },
- "H14": {
-  "texto": "Sorpresa sobre tu propio cuerpo o cabeza (mecanismo + dato contraintuitivo) para escaladores: ≥ 1,5 seg./1k a 48 h",
-  "videos": [
-   "E43",
-   "E39"
-  ],
-  "ventana": 48,
-  "refuta_si": [
-   {
-    "m": "segk",
-    "op": "<",
-    "v": 1.5
-   }
-  ],
-  "modo": "alguno",
-  "importa": "Es lo que más seguidores ha dado (Pierna de Elvis 2,5/1k). Decide si el próximo pilar para crecer seguidores es el cuerpo/cabeza y no la técnica ni la historia.",
-  "decide": "Qué producir para ganar seguidores",
-  "impacto": 5,
-  "calidad": 2,
-  "coste": 2,
-  "limites": "n=2 y Pierna de Elvis también tenía humor y truco; si funciona, no sabremos qué parte lo causa."
  }
 }
