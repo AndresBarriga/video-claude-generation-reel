@@ -134,7 +134,7 @@
    "id": "CALDWELL",
    "nombre": "Caldwell «Las dos decisiones» (Decisiones límite #3)",
    "formato": "historia-dilema",
-   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
+   "estado": "Propuesta v2; publicar mié 4-nov si Andrés da OK y graba voz",
    "bloqueos": [
     "Tu OK",
     "Producción",
@@ -285,9 +285,9 @@
   },
   {
    "id": "E43",
-   "nombre": "E43 El ciclo del pump (serie La mano por dentro)",
+   "nombre": "E43 Las cinco fases del pump (vía)",
    "formato": "cuerpo-info",
-   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
+   "estado": "v8 «Las cinco fases del pump» (crítico 5,5 en v7); Andrés graba voz 2-nov; publicar mar 3-nov",
    "bloqueos": [
     "Tu OK",
     "Voz",
@@ -301,13 +301,13 @@
    "riesgo": 3,
    "riesgo_txt": "Cifras de entrenadores, no pautas médicas; el corte del antebrazo puede quedar cutre.",
    "esfuerzo": "3–4 h",
-   "slot": "despues"
+   "slot": "man_pm"
   },
   {
    "id": "E44",
    "nombre": "E44 Descansar en la vía (empotre y bat hang)",
    "formato": "cuerpo-info",
-   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
+   "estado": "Propuesta v2; abrir con bat hang; parte 2 del pump; publicar ~vie 6-nov",
    "bloqueos": [
     "Tu OK",
     "Boceto",
@@ -323,6 +323,38 @@
    "riesgo_txt": "Poses nuevas (bat hang, empotre) pueden quedar cutres; seguridad con avisos.",
    "esfuerzo": "3–4 h",
    "slot": "despues"
+  },
+  {
+   "id": "E42B",
+   "nombre": "E42B La puerta con otra apertura (trial)",
+   "formato": "info-limpia",
+   "estado": "Por producir: solo cambia el inicio (primer fotograma = acción + rótulo a 0,5 s); misma voz",
+   "bloqueos": [],
+   "h": [
+    "H13"
+   ],
+   "potencial": 2,
+   "por_que": "Prueba limpia de si el skip de 27 % de La puerta era del gancho.",
+   "riesgo": 1,
+   "riesgo_txt": "Ninguno.",
+   "esfuerzo": "45 min + 1 render",
+   "slot": "trial"
+  },
+  {
+   "id": "E6-D",
+   "nombre": "E6-D Último pegue con otro inicio (trial)",
+   "formato": "humor-jerga",
+   "estado": "Producido (variante de inicio de E6), sin publicar",
+   "bloqueos": [],
+   "h": [
+    "H2"
+   ],
+   "potencial": 2,
+   "por_que": "Ya hecho: compara skip con E6 sin producir nada.",
+   "riesgo": 1,
+   "riesgo_txt": "Ninguno.",
+   "esfuerzo": "8 min de render",
+   "slot": "trial"
   }
  ]
 }
