@@ -84,3 +84,8 @@ Idea de Andrés: enfocar en vías (donde el pump más penaliza), no en bloque. V
 
 ## v8 (2-nov 15:00) — críticas de v7 (5,5) aplicadas
 Regla propia (no-me-gusta 28-oct): primer fotograma = acción, nunca rótulo/título → abre con la mano que se abre en la última presa y «FASE 5» a 0,5 s (flash del final, luego «cuatro fases antes»). Fases 1+2 fundidas; el mecanismo, en una sola frase dentro de la fase 4 (antes del s 13); rehook antes del s 15; una sola cifra en el truco («unos veinte minutos») y «hasta una hora» guardado para el final; cierre «¿En qué fase te quedas tú?» con corte al fotograma 0 (bucle). Del crítico NO se acepta que Elvis sea «mediocre»: es nuestro mejor vídeo por envíos (1,3 %) y seguidores; sus notas no predicen (E11 4,5/6 → 66K; E15 6,5 → 203K; E36 8 → 6-8K).
+
+## v9 (2-nov 15:10) — ajustes tras dos sugerencias externas (otra IA), revisadas con criterio
+Aceptado: rótulo a 0,5 s «TU ANTEBRAZO NO FALLA DE GOLPE» sobre dedos que se abren solos en una presa pequeña (no «FASE 5» sin contexto); barra PUMP fija en un lado (verde→rojo, satura en la fase 5; al soltar baja pero no a cero) más indicador cualitativo AGARRE que se recupera despacio (sin porcentajes inventados; «ilustrativo»); sonido: latido en la fase 3, corte seco al caer; «hasta una hora» con atribución («algunos entrenadores dicen»); las fases se presentan como narrativa, no como escala médica (pie/descripción).
+Rechazado: «no cambies de plano» (choca con la regla de cambio cada ~2 s y con la nota de Andrés del 28-oct); ganchos A y C de la otra IA (genéricos / alarmistas); porcentajes «100 % → 15 %» (inventados).
+Voz: solo cambia la escena «arriba».
