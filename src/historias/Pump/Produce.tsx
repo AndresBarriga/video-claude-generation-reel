@@ -4,7 +4,8 @@ import { useCurrentFrame } from "remotion";
 import { Brazo } from "./Brazo";
 import { Corte } from "./Corte";
 import { BLOQUES, BRC, Cabeza, Camara, Chip, P, PM, Rotulo, Svg, ei, mundoC } from "./comun";
-import { Cuerda, Esc, FondoGym, MANOS, Vig, Zoom, cyDoblado } from "./Gym";
+import { Vig } from "./Gym";
+import { Colgado, MuroPerfil } from "./Perfil";
 
 const Seccion: React.FC<{ k: number; f: number; o: number }> = ({ k, f, o }) => {
   if (o <= 0) return null;
@@ -54,7 +55,8 @@ export const Produce: React.FC<P> = ({ d, pal }) => {
   return (
     <Camara d={d} empuje={0.03} foco="50% 52%">
       <Svg>
-        <FondoGym fuerte={0.35} />
+        <g transform="translate(230 170)"><MuroPerfil presas={[600, 668]} otras={[380, 470, 790, 1180, 1280]} /></g>
+        <rect x={0} y={0} width={1080} height={1920} fill="#050B14" opacity={0.5} />
         <Vig />
         <Seccion k={k} f={f} o={sec} />
         <Dial p={dial} o={sec} />
@@ -73,12 +75,8 @@ export const Produce: React.FC<P> = ({ d, pal }) => {
         )}
         {codo > 0.01 && (
           <g opacity={codo}>
-            <Zoom z={1.45} oy={880}>
-            <FondoGym fuerte={0.35} />
-            <Cuerda perno={[540, 430]} arnes={[540, cyDoblado + 14]} flojo={0.6} />
-            <Esc cx={540} cy={cyDoblado} manoL={MANOS.L} manoR={MANOS.R} pieL={[470, 1236]} pieR={[610, 1250]} cara="esfuerzo" f={f} halo={1} codos={{ col: "#FF4A3A", o: 1 }} />
-            </Zoom>
-            <Chip x={850} y={960} t="CODOS" col="#FF4A3A" />
+            <g transform="translate(230 170)"><MuroPerfil presas={[600, 668]} otras={[380, 470, 790, 1180, 1280]} /><Colgado est={0} cara="esfuerzo" halo={1} nud={1} codos={{ col: "#FF4A3A", o: 0.6 + 0.4 * Math.sin(f * 0.5) ** 2 }} /></g>
+            <Chip x={860} y={1280} t="CODOS" col="#FF4A3A" />
           </g>
         )}
         <Cabeza x={170} y={470} cara={f < fRes ? "esfuerzo" : "dolor"} aro={BLOQUES[f < fRes ? 3 : 4]} o={1 - codo} />

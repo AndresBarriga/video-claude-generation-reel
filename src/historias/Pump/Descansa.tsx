@@ -1,9 +1,12 @@
 // 5 · Cómo se descansa (37,8–49,4 s) y cierre en bucle. Base de la pared: la sangre vuelve enseguida y la fuerza no; a los 5 min cae en el mismo paso; a los ~20 min lo pasa.
 import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
-import { Resina } from "../../piezas/Rocodromo";
 import { BLOQUES, Camara, Chip, Cronometro, P, Rotulo, Svg, clamp, ei } from "./comun";
-import { Cuerda, ESC, Esc, FondoGym, GY, MANOS, Vig, Zoom, cyDoblado, cyEstirado, lerpV, type V } from "./Gym";
+import { Vig, Zoom } from "./Gym";
+import { Colgado, CuerdaP, MuroPerfil, Perfil, S0, agarre, posColg, xw, type V } from "./Perfil";
+
+const SUELO = 1330;
+const OTRAS = [380, 470, 790, 1180];
 
 export const Descansa: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
@@ -13,20 +16,34 @@ export const Descansa: React.FC<P> = ({ d, pal }) => {
   const cr = (c: boolean) => (c ? "#FF8A4A" : BLOQUES[0]);
   const o = (a: number, b: number) => ei(f, a, a + 8, 0, 1) * (1 - ei(f, b, b + 8, 0, 1));
   // intento a los 5 min: igual que el gancho
-  const fCae = fMin + 8, suelta = ei(f, fMin, fMin + 8, 0, 1), caida = interpolate(f, [fCae, fCae + 20], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
-  const hang = (cx: number, cy: number, lado: 1 | -1): V => [cx + lado * 58 * ESC, cy - 132 * ESC + 112 * ESC];
-  const cy5 = cyDoblado + caida * 200, z5 = 1.45 - 0.2 * caida, oy5 = 880 + 0.9 * caida * 200, cx5 = 540 + (f < fMin ? Math.sin(f * 2.3) * 2.4 : 0);
-  const sube = ei(f, fVei - 6, fVei + 10, 0, 1);
-  const arriba: V = [560, 520];
+  const fCae = fMin + 8, caida = interpolate(f, [fCae, fCae + 20], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
+  const k = f - (fCae + 20), rebote = k > 0 ? 34 * Math.sin(k * 0.4) * Math.exp(-k / 13) : 0;
+  const q0 = posColg(0);
+  const hip5: V = [q0.hip[0] - 40 * caida, q0.hip[1] + 200 * caida + rebote], cuelga = ei(f, fCae + 14, fCae + 26, 0, 1);
+  const tiembla = f < fMin ? Math.sin(f * 2.3) * 2.4 : 0;
+  const sube = ei(f, fVei - 6, fVei + 16, 0, 1);
+  const parado: V = [xw(SUELO) - 150, SUELO - 130 * S0 + 4];
+  const zoomSuelo = suelo ? 1.1 : quinto ? 1.1 : 1.2;
   return (
     <Camara d={d} empuje={0.03} foco="50% 55%">
       <Svg>
-        <Zoom z={suelo ? 1 : quinto ? z5 : 1.25} oy={suelo ? 1000 : quinto ? oy5 : 1050}>
-        <FondoGym fuerte={0.3} mat={suelo} />
-        {final && <><Resina x={arriba[0]} y={arriba[1]} r={40} c={GY.ruta} seed="top" magnesio={0.9} /><circle cx={arriba[0]} cy={arriba[1]} r={70} fill="none" stroke="#6FE08A" strokeWidth={10} opacity={sube} /></>}
-        {suelo && <Esc cx={540} cy={1326} cara={f < fEns ? "esfuerzo" : "alivio"} f={f} />}
-        {quinto && <g><Cuerda perno={[540, 430]} arnes={[cx5, cy5 + 14]} flojo={0.5 * (1 - caida) + 0.05} /><Esc cx={cx5} cy={cy5} manoL={lerpV(MANOS.L, hang(cx5, cy5, -1), suelta)} manoR={lerpV(MANOS.R, hang(cx5, cy5, 1), suelta)} pieL={f < fCae ? [470, 1236] : undefined} pieR={f < fCae ? [610, 1250] : undefined} cara={f < fCae + 20 ? "miedo" : "serio"} f={f} nud={1 - suelta} halo={1 - suelta} /></g>}
-        {final && <g><Cuerda perno={[540, 430]} arnes={[540, cyEstirado + 14 - 30 * sube]} flojo={0.5} /><Esc cx={540} cy={cyEstirado - 40 * sube} manoL={lerpV(MANOS.L, [470, 640], sube)} manoR={lerpV(MANOS.R, arriba, sube)} pieL={[470, 1316 - 40 * sube]} pieR={[610, 1330 - 40 * sube]} cara={sube > 0.6 ? "alivio" : "normal"} f={f} codos={{ col: "#5FD1C5", o: 0.9 }} /></g>}
+        <Zoom z={zoomSuelo} ox={600} oy={suelo ? 1100 : quinto ? 900 : 1050}>
+        {suelo && <g transform="translate(90 170)">
+          <MuroPerfil presas={[900, 1000]} otras={OTRAS} suelo={SUELO} />
+          <Perfil hip={parado} torso={4} s={S0} manoA={[0, 0]} manoB={[0, 0]} pieA={[0, 0]} pieB={[0, 0]} libre="pie" cara={f < fEns ? "esfuerzo" : "alivio"} />
+        </g>}
+        {quinto && <g transform="translate(230 60)">
+          <MuroPerfil presas={[600, 668, q0.pA[1], q0.pB[1]]} otras={[380, 470, 790, 1180, 1280]} />
+          {f < fCae ? <g transform={`translate(${tiembla} 0)`}><Colgado est={0} cara="esfuerzo" halo={1} nud={1 - ei(f, fMin, fMin + 8, 0, 1)} /></g> : (
+            <g><CuerdaP yb={360} arnes={[hip5[0] - 14, hip5[1] - 4]} flojo={0.55 * (1 - caida) + 0.05} />
+              <Perfil hip={hip5} torso={0} s={S0} manoA={[0, 0]} manoB={[0, 0]} pieA={[0, 0]} pieB={[0, 0]} libre="cayendo" libreB="colgado" t={cuelga} cara={f < fCae + 20 ? "miedo" : "serio"} rot={-8 * (1 - cuelga)} /></g>
+          )}
+        </g>}
+        {final && <g transform="translate(230 170)">
+          <MuroPerfil presas={[600, 668, 460, 528]} otras={[380, 790, 1180, 1280]} />
+          <circle cx={agarre(460)[0]} cy={460} r={64} fill="none" stroke="#6FE08A" strokeWidth={9} opacity={sube} />
+          <Colgado est={0.2} cara={sube > 0.6 ? "alivio" : "normal"} dy={-140 * sube} codos={{ col: "#5FD1C5", o: 0.8 }} />
+        </g>}
         </Zoom>
         <Vig />
         <Chip x={800} y={560} t="SANGRE: VUELVE" col={BLOQUES[0]} o={o(fEns - 14, fFue - 6)} />
@@ -41,14 +58,14 @@ export const Descansa: React.FC<P> = ({ d, pal }) => {
 
 export const Cierre: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame();
-  const cx = 540 + Math.sin(f * 2.3) * 2.4;
   return (
-    <Camara d={d} empuje={0.04} foco="50% 52%">
+    <Camara d={d} empuje={0.05} foco="50% 55%">
       <Svg>
-        <Zoom z={1.45} oy={880}>
-        <FondoGym fuerte={0.35} />
-        <Cuerda perno={[540, 430]} arnes={[cx, cyDoblado + 14]} flojo={0.55} />
-        <Esc cx={cx} cy={cyDoblado} manoL={MANOS.L} manoR={MANOS.R} pieL={[470, 1236]} pieR={[610, 1250]} cara="miedo" f={f} nud={1} halo={1} />
+        <Zoom z={1.25} ox={560} oy={1050}>
+          <g transform={`translate(${230 + Math.sin(f * 2.3) * 2.4} 260)`}>
+            <MuroPerfil presas={[600, 668]} otras={[380, 470, 790, 1180, 1280]} />
+            <Colgado est={0} cara="miedo" halo={1} nud={1} />
+          </g>
         </Zoom>
         <Vig />
         <Rotulo f={f} ini={0} t="NO ERES DÉBIL" y={235} tam={104} />
