@@ -71,3 +71,10 @@ Voz (~90 palabras, ~33 s):
 Cambios frente a v3: el gancho ya no promete el payoff; «de la vía» resuelve la contradicción con la tarjeta (3-5 min es de bloque); humor/persona (asegurador); segundo gancho = diferencia entre cómo se siente y lo que pasa dentro; cierre ≤4 s sin «ahora sabes»; sin «según muchos entrenadores» en voz (va en el pie); sin garantía («llega» en lugar de «lo pasas»).
 
 ## 2-nov 13:35 — Andrés: sin chiste, solo consejo útil. Se produce la v4 sin el gag del asegurador («¿YA?»). Voz congelada en `texto-voz.txt` (93 palabras, pausas de 0,3 s entre escenas para sincronizar).
+
+## v6 (2-nov 14:00) — crítico: 6 (viralidad 9/14, envío 6/10)
+Ganchos propuestos por el crítico para probar como reels de prueba (mismo cuerpo, solo cambia la apertura):
+1. «Te sientes recuperado. Tu antebrazo, no.» (escalador sentado sacude el brazo; a 0,5 s corte al antebrazo con FUERZA al 70 %; rótulo «5 MIN DESPUÉS»)
+3. «Aprietas a la mitad de tu fuerza y a tu antebrazo casi no le llega sangre.» (escalador en el desplome con el antebrazo en transparencia y la vena aplastada; rótulo «50 %»)
+Otros: 2) la mano que se abre en cámara lenta; 4) «¿Cuánto esperas? ¿Tres minutos? ¿Veinte? ¿Una hora?»; 5) «Caes. Y la mano se abre sola.» (la más floja)
+Cambios del resto: sustituir las barras por el mismo escalador con el antebrazo en transparencia y un número que sube; tarjeta de descansos en tres mini-escenas con «una hora» como sorpresa final; guardar para el final «sacude el brazo suelto, no agarrado» (Baláš 2016: +32 % de reoxigenación; se dice «ayuda a que vuelva la sangre»); «suele empezar más abajo» en lugar de «empieza más abajo»; cierre que corta al fotograma 0.
