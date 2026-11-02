@@ -1,6 +1,6 @@
 {
  "id": "E43",
- "titulo": "El ciclo del pump",
+ "titulo": "Las cinco fases del pump",
  "nicho": "escalada",
  "plantilla": "Pump",
  "verificado": true,
@@ -16,44 +16,56 @@
  "escenas": [
   {
    "tipo": "gancho",
-   "visual": "cae5",
-   "texto": "Caes en el último movimiento de la vía. Esperas cinco minutos. Y caes antes.",
+   "visual": "titulo",
+   "texto": "Las cinco fases del pump.",
    "pausa": 0.3
   },
   {
-   "tipo": "texto",
-   "visual": "dentro",
-   "texto": "Agarrar fuerte aprieta el músculo contra sus propias venas. Con solo un veinte por ciento de tu fuerza, ya llega menos sangre.",
+   "tipo": "gancho",
+   "visual": "f1",
+   "texto": "Fase uno: ni lo notas.",
    "pausa": 0.3
   },
   {
-   "tipo": "texto",
-   "visual": "residuos",
-   "texto": "Sin sangre se acumulan residuos. Eso es el pump.",
+   "tipo": "gancho",
+   "visual": "f2",
+   "texto": "Fase dos: el antebrazo se calienta.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "gancho",
+   "visual": "f3",
+   "texto": "Fase tres: duro como una piedra. Y late. Dentro, el músculo aprieta sus propias venas y la sangre casi no entra.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "gancho",
+   "visual": "f4",
+   "texto": "Fase cuatro: ya no cierras la mano. Sin sangre fresca se acumulan residuos y la fuerza cae.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "gancho",
+   "visual": "f5",
+   "texto": "Fase cinco: se abre la mano y caes.",
    "pausa": 0.5
   },
   {
    "tipo": "gancho",
-   "visual": "sientes",
-   "texto": "Y lo raro: a los cinco minutos ya no lo notas. Pero por dentro, no está limpio todavía.",
-   "pausa": 0.3
-  },
-  {
-   "tipo": "texto",
-   "visual": "tarjeta",
-   "texto": "Cuánto esperar entre intentos: bloque corto, de tres a cinco minutos. Vía al límite, unos veinte. ¿Caes arriba? Hasta una hora.",
+   "visual": "rehook",
+   "texto": "Y lo peor: sueltas y en un minuto te sientes bien. Pero la fuerza tarda más en volver.",
    "pausa": 0.3
   },
   {
    "tipo": "gancho",
-   "visual": "llega",
-   "texto": "Mismo paso. Veinte minutos. Llega.",
+   "visual": "truco",
+   "texto": "No repitas enseguida. En una vía de tu nivel, unos veinte minutos; en un proyecto largo, hasta treinta; y si caes arriba, hasta una hora. Mientras esperas, sacude el brazo suelto.",
    "pausa": 0.3
   },
   {
-   "tipo": "cierre",
-   "visual": "envio",
-   "texto": "¿Y tú? ¿Cuánto esperas?"
+   "tipo": "gancho",
+   "visual": "cierre",
+   "texto": "¿En qué fase te quedas tú?"
   }
  ]
 }
