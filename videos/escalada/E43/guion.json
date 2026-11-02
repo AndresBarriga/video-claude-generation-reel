@@ -1,53 +1,59 @@
 {
-  "id": "E43",
-  "titulo": "El ciclo del pump",
-  "nicho": "escalada",
-  "plantilla": "Pump",
-  "verificado": true,
-  "fuentes": [
-    "Nicros/Hörst: Slowing the pump clock",
-    "Lacrux: G-Tox",
-    "UKC: Top ten tips for delaying forearm pump",
-    "Climbing: how to succeed redpointing",
-    "Nicros: optimal recovery interval",
-    "Training for Climbing: Training Café 38"
-  ],
-  "nota_rigor": "Reglas generales de entrenadores; sin pautas médicas.",
-  "escenas": [
-    {
-      "tipo": "gancho",
-      "visual": "cae5",
-      "texto": "Caes en el último movimiento. Esperas cinco minutos. Y caes antes."
-    },
-    {
-      "tipo": "texto",
-      "visual": "dentro",
-      "texto": "Dentro, agarrar fuerte aprieta el músculo contra sus propias venas. Con solo un veinte por ciento de tu fuerza ya llega menos sangre."
-    },
-    {
-      "tipo": "texto",
-      "visual": "residuos",
-      "texto": "Sin sangre se acumulan residuos: es el pump. Y al soltar, no se limpia al instante."
-    },
-    {
-      "tipo": "texto",
-      "visual": "tarjeta",
-      "texto": "Por eso importa descansar. Muchos entrenadores dicen: bloque corto, de tres a cinco minutos; vía al límite, unos veinte; si caes arriba, hasta una hora."
-    },
-    {
-      "tipo": "texto",
-      "visual": "veinte",
-      "texto": "Mismo paso, veinte minutos después."
-    },
-    {
-      "tipo": "texto",
-      "visual": "lo_pasas",
-      "texto": "Y esta vez, lo pasas."
-    },
-    {
-      "tipo": "cierre",
-      "visual": "envio",
-      "texto": "¿Cuánto esperas tú de verdad?"
-    }
-  ]
+ "id": "E43",
+ "titulo": "El ciclo del pump",
+ "nicho": "escalada",
+ "plantilla": "Pump",
+ "verificado": true,
+ "fuentes": [
+  "Nicros/Hörst: Slowing the pump clock",
+  "Lacrux: G-Tox",
+  "UKC: Top ten tips for delaying forearm pump",
+  "Climbing: how to succeed redpointing",
+  "Nicros: optimal recovery interval",
+  "Training for Climbing: Training Café 38"
+ ],
+ "nota_rigor": "Reglas generales de entrenadores; sin pautas médicas.",
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "cae5",
+   "texto": "Caes en el último movimiento de la vía. Esperas cinco minutos. Y caes antes.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "texto",
+   "visual": "dentro",
+   "texto": "Agarrar fuerte aprieta el músculo contra sus propias venas. Con solo un veinte por ciento de tu fuerza, ya llega menos sangre.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "texto",
+   "visual": "residuos",
+   "texto": "Sin sangre se acumulan residuos. Eso es el pump.",
+   "pausa": 0.5
+  },
+  {
+   "tipo": "gancho",
+   "visual": "sientes",
+   "texto": "Y lo raro: a los cinco minutos ya no lo notas. Pero por dentro, no está limpio todavía.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "texto",
+   "visual": "tarjeta",
+   "texto": "Cuánto esperar entre intentos: bloque corto, de tres a cinco minutos. Vía al límite, unos veinte. ¿Caes arriba? Hasta una hora.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "gancho",
+   "visual": "llega",
+   "texto": "Mismo paso. Veinte minutos. Llega.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "cierre",
+   "visual": "envio",
+   "texto": "¿Y tú? ¿Cuánto esperas?"
+  }
+ ]
 }

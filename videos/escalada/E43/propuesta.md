@@ -69,3 +69,5 @@ Voz (~90 palabras, ~33 s):
 6. «Mismo paso. Veinte minutos. Llega.» | reloj 20:00, antebrazo normal, llega a la presa
 7. «¿Y tú? ¿Cuánto esperas?» | corte seco al primer fotograma (5:00) = bucle; rótulo MÁNDASELO AL QUE REPITE A LOS CINCO MINUTOS
 Cambios frente a v3: el gancho ya no promete el payoff; «de la vía» resuelve la contradicción con la tarjeta (3-5 min es de bloque); humor/persona (asegurador); segundo gancho = diferencia entre cómo se siente y lo que pasa dentro; cierre ≤4 s sin «ahora sabes»; sin «según muchos entrenadores» en voz (va en el pie); sin garantía («llega» en lugar de «lo pasas»).
+
+## 2-nov 13:35 — Andrés: sin chiste, solo consejo útil. Se produce la v4 sin el gag del asegurador («¿YA?»). Voz congelada en `texto-voz.txt` (93 palabras, pausas de 0,3 s entre escenas para sincronizar).
