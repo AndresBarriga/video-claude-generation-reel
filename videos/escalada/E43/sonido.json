@@ -1,0 +1,128 @@
+{
+ "bajoVoz": 0.45,
+ "efectos": [
+  {
+   "nombre": "vibra",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "Fase"
+   },
+   "duracion": 1.5,
+   "volumen": 0.35
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "abre"
+   },
+   "duracion": 0.5,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "caida",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "caes"
+   },
+   "duracion": 1.0,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "Pero"
+   },
+   "duracion": 0.6,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "f12",
+    "palabra": "uno"
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "f12",
+    "palabra": "dos"
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "f3",
+    "palabra": "tres"
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "chasquido",
+   "inicio": {
+    "escena": "f3",
+    "palabra": "piedra"
+   },
+   "duracion": 0.4,
+   "volumen": 0.55
+  },
+  {
+   "nombre": "latido",
+   "inicio": {
+    "escena": "f3",
+    "palabra": "late"
+   },
+   "duracion": 12.0,
+   "volumen": 0.3,
+   "bucle": true,
+   "fundido": [
+    0.2,
+    1.2
+   ]
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "f4",
+    "palabra": "cuatro"
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "f4",
+    "palabra": "Porque"
+   },
+   "duracion": 0.5,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "rehook",
+    "palabra": "sueltas"
+   },
+   "duracion": 0.5,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "tintineo",
+   "inicio": {
+    "escena": "truco",
+    "palabra": "veinte",
+    "mas": 0.3
+   },
+   "duracion": 1.2,
+   "volumen": 0.5
+  }
+ ]
+}

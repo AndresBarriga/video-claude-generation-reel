@@ -287,12 +287,8 @@
    "id": "E43",
    "nombre": "E43 Las cinco fases del pump (vía)",
    "formato": "cuerpo-info",
-   "estado": "v8 «Las cinco fases del pump» (crítico 5,5 en v7); Andrés graba voz 2-nov; publicar mar 3-nov",
-   "bloqueos": [
-    "Tu OK",
-    "Voz",
-    "Producción"
-   ],
+   "estado": "PRODUCIDO (47,9 s, con voz); falta tu revisión; publicar mar 3-nov",
+   "bloqueos": [],
    "h": [
     "H7"
    ],
