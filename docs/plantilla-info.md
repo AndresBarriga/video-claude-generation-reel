@@ -1,4 +1,7 @@
 # Plantilla para vídeos de información (1-nov)
+
+## Mensaje primero (2-nov, Andrés)
+Antes de estructura y ganchos: **mensaje** (qué se quiere transmitir), **problema** (qué le pasa al espectador), **valor** (qué se lleva) y **cómo le ayuda**. Lo más importante para el espectador (p. ej. evitar la congestión antes que descansarla) manda el orden y la imagen protagonista.
 Se rellena antes del guion; cabe en 10 líneas. Si una casilla queda vacía, el vídeo no está listo.
 1. **Una idea** que el espectador se lleva (una frase).
 2. **Datos curiosos** (3–4, cada uno verificado con fuente y con su matiz).
