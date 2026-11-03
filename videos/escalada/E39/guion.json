@@ -1,0 +1,51 @@
+{
+ "id": "E39",
+ "titulo": "Poleas: ese crac",
+ "nicho": "escalada",
+ "plantilla": "Poleas",
+ "verificado": true,
+ "fuentes": [
+  "The Climbing Doctor",
+  "MEND",
+  "Nicros",
+  "Silvio Reffo"
+ ],
+ "nota_rigor": "Información general, no sustituye a un fisioterapeuta. Sin pautas de entrenamiento ni cifras.",
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "kilter",
+   "texto": "Hoy estás en tu mejor momento."
+  },
+  {
+   "tipo": "texto",
+   "visual": "marioneta",
+   "texto": "Tus dedos casi no tienen músculos: son una marioneta."
+  },
+  {
+   "tipo": "texto",
+   "visual": "partes",
+   "texto": "Las manos del titiritero son tu antebrazo. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas."
+  },
+  {
+   "tipo": "texto",
+   "visual": "agarres",
+   "texto": "Cuando arqueas en una presa pequeña, la polea de la base es la que más carga. Por eso, arquea solo cuando haga falta."
+  },
+  {
+   "tipo": "texto",
+   "visual": "adapta",
+   "texto": "Tu músculo se adapta en semanas. Tu polea va más despacio. Por eso la lesión puede llegar justo cuando vas mejor."
+  },
+  {
+   "tipo": "texto",
+   "visual": "crac",
+   "texto": "Ese crac era una polea. Si te pasa y duele, para y ve a un fisio."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "¿Arqueas o abres la mano?"
+  }
+ ]
+}
