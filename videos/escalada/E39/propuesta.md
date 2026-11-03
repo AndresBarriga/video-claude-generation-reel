@@ -78,3 +78,15 @@ Un OK sobre este paquete, 2 fotogramas boceto (el dedo por dentro y el lado a la
 7. «Con cuidado: sube la carga poco a poco, calienta y, si duele, para.» | rótulo FISIO · INFORMACIÓN GENERAL
 8. «¿Arqueas o abres la mano? En el siguiente, cómo entrenarlas.» | regleta; mano cerrada y mano abierta lado a lado
 **4 preguntas:** 1) Gancho: crac + paradoja «justo cuando vas mejor». 2) Rehook: «no tienen músculos: marioneta» (s 4). 3) Hasta el final: el chasquido se explica y la serie (parte 2). 4) Lo que ya sabe: «arquear», «regleta», «polea», «Kilter». Límites: sin pautas de entrenamiento; «semanas/meses» sin cifras; no decir que Kilter causa lesiones.
+
+## v6 (3-nov, tras el crítico 6/10 a la v5)
+Cambios: el fotograma 1 es la mano del escalador vibrando en la regleta del Kilter (la marioneta aparece en s 1–2, no en s 4); hook «Hoy estás en tu mejor momento. Crac.» (persona confiada y luego lo que pasa); el «crac» se resuelve al final («era una polea»); fuera las barras SEMANAS/MESES: la imagen es el titiritero con un antebrazo enorme y cuerdas finas; matiz «los dedos casi no tienen músculos (los que cierran la mano están en el antebrazo)»; «por eso puede llegar» en lugar de «por eso llega»; la pauta de entrenamiento sale (va a la parte 2) y queda solo «si duele, para y ve a un fisio»; cierre corto con la pregunta y el teaser como rótulo.
+**Guion v6 (~40 s):**
+1. «Hoy estás en tu mejor momento. Crac.» | Kilter: mano en la regleta, vibra; cara confiada; «crac»; suelta y se agarra la mano
+2. «Tus dedos casi no tienen músculos: son una marioneta.» | la mano se vuelve marioneta de huesos con cuerdas
+3. «Las manos del titiritero son tu antebrazo. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas.» | diagrama
+4. «Al cerrar la mano en una presa pequeña, la de la base es la que más carga.» | la polea de la base brilla
+5. «Tu músculo se adapta en semanas. Tu polea va más despacio.» | el titiritero con un antebrazo enorme y cuerdas finas
+6. «Por eso la lesión puede llegar justo cuando vas mejor.» | vuelve al Kilter
+7. «Ese crac era una polea. Si te pasa y duele, para y ve a un fisio.» | rótulo INFORMACIÓN GENERAL
+8. «¿Arqueas o abres la mano?» | rótulo «EN EL SIGUIENTE: CÓMO CUIDARLAS»
