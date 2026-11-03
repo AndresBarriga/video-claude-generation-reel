@@ -65,3 +65,23 @@ Aplica al crítico (v1: 5,5, viralidad 7/14): gancho con persona en apuro, anteb
 
 ## Decisión de Andrés (1-nov, 15:18): abrir con el bat hang y con la barra PUMP
 Prefiere esa apertura a la v2 (el crítico había pedido quitar la barra por abstracta y abrir con la persona en apuro). Se respeta. Para que la barra no sea un gráfico abstracto: lleva un número y una etiqueta, como la referencia de @escaladatips («PESO EN LAS MANOS 100 % → 39 %»), y el antebrazo cambia de color a la vez. Apertura v3: primer fotograma = escalador boca abajo en bat hang con la barra PUMP en 90 % cayendo a 20 % en 2 s; voz propuesta: «Este escalador llegó con el pump al noventa por ciento. Y mira cómo lo baja: boca abajo.» Producción en pausa: Andrés quiere producir menos ahora.
+
+## v3 (3-nov) — rehecha con «mensaje primero» y lo aprendido de E43
+**Mensaje:** en una vía no te pumpeas solo por falta de fondo: casi siempre es que no ves ni usas los descansos; se buscan como las presas del paso clave.
+**Problema del espectador:** se pumpea a media vía, cae o se rinde, y piensa que es su nivel; el bat hang le parece imposible.
+**Valor:** dos descansos concretos (empotre de rodilla y bat hang), cuánto baja el pump con ellos y dónde buscarlos (en el reconocimiento).
+**Cómo le ayuda:** la próxima vía que proyecte, marca antes dónde puede soltar una mano y lo prueba en seguro.
+**Cómo se identifica:** «Chapa ocho. Se te abren los dedos.» (pump a media vía, lo ha vivido) + imagen inesperada para quien no escala (boca abajo, relajado).
+
+**5 aperturas:** A «Chapa ocho. Se te abren los dedos. Y justo ahí había un descanso.» · B «No te falta fondo. Te faltan descansos.» (rima con «No eres débil») · C imagen bat hang + «¿Descansando… boca abajo?» · D «Hay un sitio donde el pump baja a media vía. Casi nadie lo ve.» · E «¿Dónde se descansa en un techo?». **Elegida: B sobre la imagen de C y A como segundo gancho.**
+
+**Guion (voz | imagen), ~38 s** (barra PUMP global y el escalador de perfil de E43; chalk al sacudir)
+1. «No te falta fondo: te faltan descansos.» | escalador boca abajo en un techo (bat hang), relajado; PUMP en rojo bajando; rótulo NO TE FALTA FONDO (0–3 s)
+2. «Chapa ocho. Se te abren los dedos. Y justo ahí había uno.» | mismo escalador, ahora agarrado a la chapa ocho, nudillos blancos, PUMP lleno; un hueco se ilumina bajo el techo (rehook: «había uno»)
+3. «El empotre de rodilla: la rodilla contra una presa, la punta del pie contra otra. El peso va a la pierna y las manos quedan libres.» | empotre de rodilla de perfil, magnesio y sacudida; PUMP baja un bloque por mano
+4. «Y el más extremo: el bat hang. Los pies enganchados en una presa o una bolsa, boca abajo.» | bat hang; rótulo «SOLO CON COLCHONETA O CUERDA»; PUMP baja
+5. «Lo difícil es verlos. Búscalos al reconocer la vía, como buscas las presas del paso clave.» | recorre la vía señalando huecos
+6. «Mismo intento. Y el descanso estaba en la chapa cinco.» | repite; en la cinco usa el empotre; llega a la reunión con PUMP en verde
+7. «¿Cuál te has saltado tú?» | pregunta que se responde con un dato (comentarios)
+
+**4 preguntas:** 1) Gancho: titular que rima con «No eres débil» + imagen imposible (boca abajo). 2) Rehook: «y justo ahí había uno» (s 4). 3) Hasta el final: «¿lo ves tú?» (el descanso de la chapa cinco se revela al final) y la barra PUMP. 4) Lo que ya sabe: «el pump», «sacudir», el bat hang visto en redes; y el «esperar» de los comentarios de Pump (se responde en el comentario fijado).
