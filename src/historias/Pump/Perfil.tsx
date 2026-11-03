@@ -149,6 +149,14 @@ export const Perfil: React.FC<PropsPerfil> = ({ hip, torso = 10, cabeza = -22, s
   );
 };
 
+/** Escalador boca abajo (bat hang): el cuerpo cuelga de los pies. Se calcula con la cadera en `hip` y los pies en la presa (espejo vertical). */
+export const PerfilInv: React.FC<{ hip: V; s?: number; pieA: V; pieB: V; brazoA?: [number, number]; brazoB?: [number, number]; cara?: Cara; cabeza?: number; torso?: number }> = ({ hip, s = 2.3, pieA, pieB, brazoA = [174, 170], brazoB = [186, 192], cara = "esfuerzo", cabeza = 0, torso = 0 }) => {
+  const m = (p: V): V => [p[0], 2 * hip[1] - p[1]];
+  const a = m(pieA), b = m(pieB);
+  const angulos = { torso, cabeza, brazoA, brazoB, piernaA: ikPierna(hip[0], hip[1], a[0], a[1], s), piernaB: ikPierna(hip[0], hip[1], b[0], b[1], s) };
+  return <Escalador x={hip[0]} y={hip[1]} quien="simon" aspecto={ASP} pose="escalando" angulos={angulos} cara={cara} s={s} rot={180} mira={-1} bolsa="#E8E4DA" />;
+};
+
 export const S0 = 2.3;
 export const MA = agarre(600), MB = agarre(668, -8);
 /** Escalador colgado de las dos presas: est 0 = codos doblados (cadera arriba), 1 = brazos estirados y pies más bajos. Pies sobre la pared. */
