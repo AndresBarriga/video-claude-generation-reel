@@ -61,3 +61,20 @@ Un OK sobre este paquete, 2 fotogramas boceto (el dedo por dentro y el lado a la
 ## Registro del crítico
 | 1-nov | E39 v1 | propuesta | 5 | Gancho sin apuro (chasquido en s 7); barras abstractas sin humor ni bucle; «tendón» frente a polea; jerga de nicho |
 | 1-nov | E39 v3 | propuesta | 6 (viralidad 4) | Mejor dato enterrado (s 5); 15 s de vocabulario antes del payoff; bucle adivinable; falta aviso «si lo oyes, fisio»; «semanas» corto; cierre empieza con «Ahora sabes» |
+
+## v5 (3-nov) — Kilter + marioneta, con mensaje primero
+**Mensaje:** tus dedos no tienen músculos: son una marioneta de tendones y poleas; el músculo se adapta en semanas y la polea en meses, por eso te lesionas cuando vas mejor.
+**Problema:** se siente más fuerte, entrena más duro y llega el chasquido; no entiende cómo se lesiona si «va mejor».
+**Valor:** entiende qué es y por qué se carga la polea de la base con la mano cerrada; sabe qué cautelas generales hay. **Cómo ayuda:** sube la carga poco a poco, calienta, para si duele (información general, sin pautas).
+**Identificación:** estás en el Kilter, regleta pequeña, intento fuerte, «crac»; o has oído a alguien con un dedo.
+**5 aperturas:** A «Crac. Te lesionas justo cuando vas mejor.» (acción + paradoja, **elegida**) · B «Tus dedos no tienen músculos.» · C «Tu músculo ya puede. Tu polea, todavía no.» · D imagen de la mano-marioneta vibrando + «¿Quién mueve tus dedos?» · E «¿Qué ha crujido?».
+**Guion (~45 s):**
+1. «Crac. Te lesionas justo cuando vas mejor.» | Kilter: regleta pequeña con LED, el escalador carga, «crac», suelta y se agarra la mano (0–3 s)
+2. «Y no ha sido un músculo: tus dedos no tienen. Son una marioneta.» | la mano del escalador se transforma en la marioneta de huesos con cuerdas (rehook, s 4–5)
+3. «Las manos del titiritero son el antebrazo. Las cuerdas, los tendones. Y unas anillas los pegan al hueso: las poleas.» | diagrama de la mano: antebrazo arriba, cuerdas naranjas, anillas
+4. «Al cerrar la mano en una presa pequeña, la de la base es la que más carga.» | la polea de la base brilla; rótulo LA MÁS CARGADA
+5. «Tu músculo se adapta en semanas. Tus poleas, en meses.» | dos barras: SEMANAS y MESES
+6. «Por eso la lesión llega cuando te sientes fuerte.» | vuelve al Kilter, el escalador sonriendo en el intento
+7. «Con cuidado: sube la carga poco a poco, calienta y, si duele, para.» | rótulo FISIO · INFORMACIÓN GENERAL
+8. «¿Arqueas o abres la mano? En el siguiente, cómo entrenarlas.» | regleta; mano cerrada y mano abierta lado a lado
+**4 preguntas:** 1) Gancho: crac + paradoja «justo cuando vas mejor». 2) Rehook: «no tienen músculos: marioneta» (s 4). 3) Hasta el final: el chasquido se explica y la serie (parte 2). 4) Lo que ya sabe: «arquear», «regleta», «polea», «Kilter». Límites: sin pautas de entrenamiento; «semanas/meses» sin cifras; no decir que Kilter causa lesiones.
