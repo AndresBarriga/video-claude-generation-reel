@@ -90,3 +90,5 @@ Cambios: el fotograma 1 es la mano del escalador vibrando en la regleta del Kilt
 6. «Por eso la lesión puede llegar justo cuando vas mejor.» | vuelve al Kilter
 7. «Ese crac era una polea. Si te pasa y duele, para y ve a un fisio.» | rótulo INFORMACIÓN GENERAL
 8. «¿Arqueas o abres la mano?» | rótulo «EN EL SIGUIENTE: CÓMO CUIDARLAS»
+
+**Voz v6 (para grabar; «crac» lo pongo yo como efecto, la pausa de la primera frase deja hueco para él):** Hoy estás en tu mejor momento. ... Tus dedos casi no tienen músculos: son una marioneta. Las manos del titiritero son tu antebrazo. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas. Al cerrar la mano en una presa pequeña, la de la base es la que más carga. Tu músculo se adapta en semanas. Tu polea va más despacio. Por eso la lesión puede llegar justo cuando vas mejor. Ese crac era una polea. Si te pasa y duele, para y ve a un fisio. ¿Arqueas o abres la mano?
