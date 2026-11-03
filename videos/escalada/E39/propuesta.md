@@ -96,3 +96,22 @@ Cambios: el fotograma 1 es la mano del escalador vibrando en la regleta del Kilt
 **Voz v7 (+ consejo «cierra la mano solo cuando haga falta»; resto de cautelas a la parte 2 con fuente):** Hoy estás en tu mejor momento. ... Tus dedos casi no tienen músculos: son una marioneta. Las manos del titiritero son tu antebrazo. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas. Al cerrar la mano en una presa pequeña, la de la base es la que más carga. Por eso, cierra la mano solo cuando haga falta. Tu músculo se adapta en semanas. Tu polea va más despacio. Por eso la lesión puede llegar justo cuando vas mejor. Ese crac era una polea. Si te pasa y duele, para y ve a un fisio. ¿Arqueas o abres la mano?
 
 **Voz v8 (término correcto: «arqueo» = full crimp; rótulo ARQUEO en pantalla la primera vez):** Hoy estás en tu mejor momento. ... Tus dedos casi no tienen músculos: son una marioneta. Las manos del titiritero son tu antebrazo. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas. Cuando arqueas en una presa pequeña, la polea de la base es la que más carga. Por eso, arquea solo cuando haga falta. Tu músculo se adapta en semanas. Tu polea va más despacio. Por eso la lesión puede llegar justo cuando vas mejor. Ese crac era una polea. Si te pasa y duele, para y ve a un fisio. ¿Arqueas o abres la mano?
+
+## v7 (3-nov, Andrés: «muy científico, poco gancho; más gracia, enfocado en el tú y en lo que jode una lesión»)
+**Mensaje:** tu músculo progresa en semanas y tus poleas en meses: por eso el chasquido llega justo cuando vas mejor, y una lesión de polea son semanas o meses sin colgarte.
+**Problema:** va fuerte, sube de nivel y se rompe; no ve venir que lo que le falla no es el músculo.
+**Valor:** entiende la marioneta (antebrazo, tendones, poleas), por qué la de la base carga más al arquear, y qué le cuesta: tiempo sin escalar.
+**Cómo ayuda:** arquea solo cuando haga falta; si duele, para y fisio.
+**Identificación:** «Crac. Adiós al proyecto del invierno.» (el miedo real: perder la temporada) + el chulo del gimnasio (el músculo) frente a la polea que no ha entrenado.
+**Humor:** el antebrazo es el chulo del gimnasio («¡DALE MÁS!») y la polea, la que no ha ido nunca («…YO NO HE ENTRENADO») en bocadillos; gag de consecuencia: el escalador en el sofá, con la mano vendada, viendo vídeos de otros escalando.
+**5 aperturas:** A «Crac. Adiós al proyecto del invierno.» (consecuencia, **elegida**) · B «Tu antebrazo es el chulo del gimnasio. Tus poleas, no.» · C «Hoy estás en tu mejor momento. Crac.» (v6) · D «Tus dedos casi no tienen músculos: son una marioneta.» · E «Tu músculo progresa en semanas. Tu polea, en meses.»
+**Guion (~40 s):**
+1. «Crac. Adiós al proyecto del invierno.» | Kilter A → crac → B (la mano agarrada)
+2. «Tu antebrazo es el chulo del gimnasio: en semanas ya puede con todo.» | el antebrazo de la marioneta brilla y flexiona; bocadillo «¡DALE MÁS!»
+3. «Pero tus dedos son una marioneta, y él es el titiritero. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas.» | partes iluminadas una a una
+4. «Y las poleas no van a ese ritmo: tardan meses.» | bocadillo de la polea «…YO NO HE ENTRENADO»; rótulo MESES
+5. «Cuando arqueas en una presa pequeña, la de la base es la que más carga. Así que arquea solo cuando haga falta.» | los tres agarres con la flecha de carga
+6. «Ese crac era una polea. Y no es un tirón: son semanas sin colgarte, a veces meses, y tú viendo vídeos de otros escalando.» | destello en la polea y corte al sofá (escalador con la mano vendada y el móvil)
+7. «Si te pasa y duele, para y ve a un fisio. ¿Arqueas o abres la mano?» | rótulo FISIO + vuelta al Kilter
+**Límites:** «semanas a meses» con matiz «según el caso»; sin cifras ni pautas de entrenamiento; «chulo del gimnasio» y «no he entrenado» son metáfora, no dato.
+**Voz v9:** Crac. Adiós al proyecto del invierno. Tu antebrazo es el chulo del gimnasio: en semanas ya puede con todo. Pero tus dedos son una marioneta, y él es el titiritero. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas. Y las poleas no van a ese ritmo: tardan meses. Cuando arqueas en una presa pequeña, la de la base es la que más carga. Así que arquea solo cuando haga falta. Ese crac era una polea. Y no es un tirón: son semanas sin colgarte, a veces meses, y tú viendo vídeos de otros escalando. Si te pasa y duele, para y ve a un fisio. ¿Arqueas o abres la mano?
