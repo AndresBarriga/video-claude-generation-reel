@@ -7,14 +7,14 @@ import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { C, type P } from "../Pump/comun";
 import { Kilter } from "./Kilter";
-import { Marioneta } from "./Marioneta";
+import { Chulo } from "./Chulo";
 import { Partes } from "./Partes";
 import { Agarres } from "./Agarres";
-import { Adapta } from "./Adapta";
+import { Meses } from "./Meses";
+import { Sofa } from "./Sofa";
 import { Crac } from "./Crac";
-import { Cierre } from "./Cierre";
 
-const ESCENAS: Record<string, React.FC<P>> = { kilter: Kilter, marioneta: Marioneta, partes: Partes, agarres: Agarres, adapta: Adapta, crac: Crac, cierre: Cierre };
+const ESCENAS: Record<string, React.FC<P>> = { kilter: Kilter, chulo: Chulo, partes: Partes, meses: Meses, agarres: Agarres, crac: Crac, sofa: Sofa };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Poleas: React.FC<{ datos: Datos }> = ({ datos }) => {

@@ -15,37 +15,64 @@
   {
    "tipo": "gancho",
    "visual": "kilter",
-   "texto": "Hoy estás en tu mejor momento."
+   "texto": "Crac. Tu invierno acaba de irse al sofá."
   },
   {
    "tipo": "texto",
-   "visual": "marioneta",
-   "texto": "Tus dedos casi no tienen músculos: son una marioneta."
+   "visual": "chulo",
+   "texto": "Tu antebrazo es el chulo del gimnasio: en semanas ya puede con todo."
   },
   {
    "tipo": "texto",
    "visual": "partes",
-   "texto": "Las manos del titiritero son tu antebrazo. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas."
+   "texto": "Pero tira de unas cuerdas, los tendones, sujetas al hueso con unas anillas, las poleas."
+  },
+  {
+   "tipo": "texto",
+   "visual": "meses",
+   "texto": "Y las poleas no han ido nunca al gimnasio: tardan meses."
   },
   {
    "tipo": "texto",
    "visual": "agarres",
-   "texto": "Cuando arqueas en una presa pequeña, la polea de la base es la que más carga. Por eso, arquea solo cuando haga falta."
-  },
-  {
-   "tipo": "texto",
-   "visual": "adapta",
-   "texto": "Tu músculo se adapta en semanas. Tu polea va más despacio. Por eso la lesión puede llegar justo cuando vas mejor."
+   "texto": "Cuando arqueas en una presa pequeña, la de la base es la que más carga. Por eso, arquea solo cuando haga falta."
   },
   {
    "tipo": "texto",
    "visual": "crac",
-   "texto": "Ese crac era una polea. Si te pasa y duele, para y ve a un fisio."
+   "texto": "Ese crac suele ser una polea. Si lo oyes, para y ve a un fisio."
   },
   {
    "tipo": "cierre",
-   "visual": "cierre",
-   "texto": "¿Arqueas o abres la mano?"
+   "visual": "sofa",
+   "texto": "Si no: semanas sin colgarte, a veces meses, y tú, en el sofá, dándole «me gusta» a los que sí escalan."
   }
+ ],
+ "frases": [
+  1,
+  7,
+  7,
+  6,
+  5,
+  2,
+  6,
+  2,
+  9,
+  2,
+  6,
+  9,
+  2,
+  5,
+  6,
+  3,
+  6,
+  2,
+  3,
+  3,
+  2,
+  3,
+  3,
+  3,
+  2
  ]
 }
