@@ -2,18 +2,23 @@
  "_ayuda": "Candidatos a publicar. potencial (1-5) y riesgo (1-5) son estimaciones editables; el «prior del formato» sale de los datos reales del dashboard. slot: hoy | man_am | man_pm | trial | despues | no.",
  "slots": [
   {
-   "id": "hoy",
-   "nombre": "Hoy noche (el potente)",
+   "id": "mie4",
+   "nombre": "Mié 4-nov noche",
    "hora": "~20:30"
   },
   {
-   "id": "man_am",
-   "nombre": "Mañana por la mañana",
-   "hora": "~10:30"
+   "id": "vie6",
+   "nombre": "Vie 6-nov noche",
+   "hora": "~20:30"
   },
   {
-   "id": "man_pm",
-   "nombre": "Mañana noche",
+   "id": "lun9",
+   "nombre": "Lun 9-nov noche",
+   "hora": "~20:30"
+  },
+  {
+   "id": "mie11",
+   "nombre": "Mié 11-nov noche",
    "hora": "~20:30"
   },
   {
@@ -28,7 +33,7 @@
   },
   {
    "id": "no",
-   "nombre": "No publicar",
+   "nombre": "No publicar / ya publicado",
    "hora": ""
   }
  ],
@@ -87,7 +92,7 @@
    "riesgo": 1,
    "riesgo_txt": "Bajo; mejor como prueba para no ensuciar la cuadrícula.",
    "esfuerzo": "15 min de voz",
-   "slot": "man_pm"
+   "slot": "despues"
   },
   {
    "id": "E37",
@@ -149,7 +154,7 @@
    "riesgo": 3,
    "riesgo_txt": "Si sale antes de leer E35 se mezclan las señales.",
    "esfuerzo": "3–4 h",
-   "slot": "man_pm"
+   "slot": "mie4"
   },
   {
    "id": "E31B",
@@ -263,7 +268,7 @@
    "riesgo": 3,
    "riesgo_txt": "Nicho de dedos; techo 4–8K como Último pegue o Honnold.",
    "esfuerzo": "3–4 h",
-   "slot": "despues"
+   "slot": "lun9"
   },
   {
    "id": "E42",
@@ -318,7 +323,7 @@
    "riesgo": 3,
    "riesgo_txt": "Poses nuevas (bat hang, empotre) pueden quedar cutres; seguridad con avisos.",
    "esfuerzo": "3–4 h",
-   "slot": "despues"
+   "slot": "vie6"
   },
   {
    "id": "E42B",
@@ -370,7 +375,7 @@
    "riesgo": 3,
    "riesgo_txt": "Seguridad real: fuente en pantalla y verificación estricta.",
    "esfuerzo": "3–4 h",
-   "slot": "despues"
+   "slot": "mie11"
   },
   {
    "id": "FATIGA",
