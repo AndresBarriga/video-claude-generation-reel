@@ -5,7 +5,7 @@
   { "nombre": "zas", "inicio": { "escena": "chulo", "palabra": "chulo" }, "duracion": 0.5, "volumen": 0.5 },
   { "nombre": "clic", "inicio": { "escena": "partes", "palabra": "cuerdas" }, "duracion": 0.3, "volumen": 0.5 },
   { "nombre": "clic", "inicio": { "escena": "partes", "palabra": "anillas" }, "duracion": 0.3, "volumen": 0.5 },
-  { "nombre": "latido", "inicio": { "escena": "meses", "palabra": "gimnasio", "mas": -1.5 }, "duracion": 2.5, "volumen": 0.35 },
+  { "nombre": "latido", "inicio": { "escena": "meses", "palabra": "ritmo", "mas": -1.5 }, "duracion": 2.5, "volumen": 0.35 },
   { "nombre": "chasquido", "inicio": { "escena": "crac", "palabra": "crac" }, "duracion": 1.2, "volumen": 0.9, "ignoraSilencio": true },
   { "silencio": true, "inicio": { "escena": "crac", "palabra": "crac", "mas": 0.2 }, "duracion": 0.5 }
  ]

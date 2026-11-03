@@ -15,7 +15,7 @@
   {
    "tipo": "gancho",
    "visual": "kilter",
-   "texto": "Crac. Tu invierno acaba de irse al sofá."
+   "texto": "Crac. Adiós al proyecto del invierno."
   },
   {
    "tipo": "texto",
@@ -25,51 +25,54 @@
   {
    "tipo": "texto",
    "visual": "partes",
-   "texto": "Pero tira de unas cuerdas, los tendones, sujetas al hueso con unas anillas, las poleas."
+   "texto": "Pero tus dedos son una marioneta, y él es el titiritero. Las cuerdas, los tendones. Y unas anillas las pegan al hueso: las poleas."
   },
   {
    "tipo": "texto",
    "visual": "meses",
-   "texto": "Y las poleas no han ido nunca al gimnasio: tardan meses."
+   "texto": "Y las poleas no van a ese ritmo: tardan meses."
   },
   {
    "tipo": "texto",
    "visual": "agarres",
-   "texto": "Cuando arqueas en una presa pequeña, la de la base es la que más carga. Por eso, arquea solo cuando haga falta."
+   "texto": "Cuando arqueas en una presa pequeña, la de la base es la que más carga. Así que arquea solo cuando haga falta."
   },
   {
    "tipo": "texto",
    "visual": "crac",
-   "texto": "Ese crac suele ser una polea."
+   "texto": "Ese crac era una polea. Y no es un tirón:"
   },
   {
    "tipo": "cierre",
    "visual": "sofa",
-   "texto": "Semanas sin colgarte, a veces meses, y tú, en el sofá, dándole «me gusta» a los que sí escalan."
+   "texto": "son semanas sin colgarte, a veces meses, y tú viendo vídeos de otros escalando. Si te pasa y duele, para y ve a un fisio. ¿Arqueas o abres la mano?"
   }
  ],
  "frases": [
   1,
+  5,
   7,
-  7,
+  6,
   6,
   5,
   2,
-  6,
   2,
-  9,
+  7,
+  2,
+  8,
   2,
   6,
   9,
+  7,
+  3,
   2,
   5,
+  4,
+  3,
+  7,
+  5,
   6,
-  3,
-  3,
   2,
-  3,
-  3,
-  3,
-  2
+  3
  ]
 }

@@ -7,7 +7,7 @@ import { PA } from "./laminas";
 
 export const Meses: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fGim = pal("gimnasio") ?? 60, fMes = pal("meses") ?? 100;
+  const fGim = pal("ritmo") ?? 60, fMes = pal("meses") ?? 100;
   const css = `#pA_antebrazo,#pA_barra_control,#pA_mano,#pA_regleta,#pA_piel{opacity:0.4}#pA_poleas_indice{filter:drop-shadow(0 0 12px #fff)}`;
   return (
     <Camara d={d} empuje={0.03} foco="55% 60%">

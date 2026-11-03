@@ -12,7 +12,7 @@ export const Kilter: React.FC<P> = ({ d, pal }) => {
   const k = antes ? 1.1 : 1.14 - 0.06 * ei(f, fCrac, d, 0, 1);
   const t = f - fCrac, sac = !antes && t < 10 ? (random(`s${f}`) - 0.5) * 26 * (1 - t / 10) : 0;
   const led = 0.85 + 0.15 * Math.sin(f * 0.5);
-  const fSofa = pal("sofá") ?? pal("sofa") ?? Math.round(d * 0.8);
+  const fSofa = pal("invierno") ?? Math.round(d * 0.8);
   const hunde = ei(f, fSofa - 8, fSofa + 18, 0, 1);
   return (
     <Camara d={d} empuje={0.02} foco="40% 30%">

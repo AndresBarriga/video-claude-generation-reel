@@ -1,7 +1,7 @@
 // 7 · el sofá: «semanas sin colgarte… y tú, en el sofá, dándole “me gusta” a los que sí escalan». Dibujado con la rig de Escalador.
 import React from "react";
 import { useCurrentFrame } from "remotion";
-import { Camara, Rotulo, Svg, ei, type P } from "../Pump/comun";
+import { Camara, Chip, Rotulo, Svg, ei, type P } from "../Pump/comun";
 import { Escalador } from "../../piezas/Escalador";
 import { ASP } from "../Pump/Perfil";
 import { Lamina, alrededor } from "./Lamina";
@@ -19,7 +19,7 @@ const mano = (ang: readonly [number, number], torso: number): [number, number] =
 
 export const Sofa: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fSem = pal("semanas") ?? 10, fMes = pal("meses") ?? 70, fSofa = pal("sofá") ?? pal("sofa") ?? 120, fGus = pal("gusta") ?? 160;
+  const fSem = pal("semanas") ?? 10, fMes = pal("meses") ?? 70, fSofa = pal("pasa") ?? 200, fGus = pal("vídeos") ?? pal("videos") ?? 160, fArq = pal("¿Arqueas") ?? pal("Arqueas") ?? d - 50;
   const mB = mano(POSE.brazoB, POSE.torso), mA = mano(POSE.brazoA, POSE.torso);
   const luz = 0.5 + 0.08 * Math.sin(f * 0.2);
   const tg = f - fGus, pop = tg >= 0 ? Math.min(1, tg / 6) : 0, sube = tg >= 0 ? tg * 3 : 0;
@@ -49,7 +49,9 @@ export const Sofa: React.FC<P> = ({ d, pal }) => {
         <g transform={`translate(${mB[0]} ${mB[1]})`}><rect x={-34} y={-26} width={68} height={22} rx={8} fill="#F4F1E8" stroke="#8A8272" strokeWidth={3} transform="rotate(-18)" /><rect x={-30} y={0} width={62} height={20} rx={8} fill="#F4F1E8" stroke="#8A8272" strokeWidth={3} transform="rotate(12)" /></g>
         {/* me gusta */}
         {tg >= 0 && <g transform={`translate(${mA[0] + 40} ${mA[1] - 120 - sube}) scale(${0.5 + 0.7 * pop})`} opacity={Math.max(0, 1 - tg / 75)}><path d="M0 18 C-40 -14 -26 -46 0 -26 C26 -46 40 -14 0 18 Z" fill="#E5484D" stroke="#050B14" strokeWidth={5} /></g>}
-        {f > d - 26 && <g opacity={ei(f, d - 26, d - 6, 0, 1)}><rect width={1080} height={1920} fill="#08111D" /><Lamina html={TA} tf={alrededor(430, 440, 1.1)} /></g>}
+        {f > fArq && <g opacity={ei(f, fArq, fArq + 24, 0, 1)}><rect width={1080} height={1920} fill="#08111D" /><Lamina html={TA} tf={alrededor(430, 440, 1.1)} /></g>}
+        <g transform="translate(540 1290) scale(1.3) translate(-540 -1290)"><Chip x={540} y={1290} t="SI DUELE: FISIO" col="#9ED8F2" o={ei(f, fSofa, fSofa + 8, 0, 1) * (1 - ei(f, fArq - 6, fArq, 0, 1))} /></g>
+        <Rotulo f={f} ini={fSofa} fin={fArq - 4} t="INFORMACIÓN GENERAL" y={235} tam={44} col="#B9C6D3" />
         <Rotulo f={f} ini={fSem - 2} fin={fMes} t="SEMANAS SIN COLGARTE" y={235} tam={78} col="#fff" />
         <Rotulo f={f} ini={fMes - 2} fin={fSofa - 4} t="A VECES, MESES" y={235} tam={78} col="#FFB070" />
       </Svg>
