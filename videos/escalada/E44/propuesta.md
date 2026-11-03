@@ -85,3 +85,9 @@ Prefiere esa apertura a la v2 (el crítico había pedido quitar la barra por abs
 7. «¿Cuál te has saltado tú?» | pregunta que se responde con un dato (comentarios)
 
 **4 preguntas:** 1) Gancho: titular que rima con «No eres débil» + imagen imposible (boca abajo). 2) Rehook: «y justo ahí había uno» (s 4). 3) Hasta el final: «¿lo ves tú?» (el descanso de la chapa cinco se revela al final) y la barra PUMP. 4) Lo que ya sabe: «el pump», «sacudir», el bat hang visto en redes; y el «esperar» de los comentarios de Pump (se responde en el comentario fijado).
+
+## v4 (3-nov, tras el crítico 5,5): cambios aplicados
+- **Gancho:** s 0 = mano que se abre sobre la presa (continuidad con E43), corte a boca abajo en s 2 como respuesta; la tesis pasa al s 4–5 con «quizá» (la fuente dice «más probable»).
+- **Veracidad:** barra PUMP «ilustrativa», baja un bloque por descanso (sin números ni «en verde» al final); empotre = «te encajas entre dos puntos», pide abdominales en desplome; bat hang como curiosidad, rótulo «SOLO CON COLCHONETA Y ASEGURADOR»; rótulo de 1 s «UN EMPOTRE MUY APRETADO PUEDE ATASCAR LA PIERNA».
+- **Final:** el hueco se ve sin iluminar en la escena 2 y se revela al final («¿lo viste?»); pregunta «¿En qué chapa se te abren los dedos a ti?»; el «mándaselo» va a la descripción.
+**Voz v4 (~36 s):** «Chapa ocho. Se te abren los dedos. Y hay quien aquí se cuelga boca abajo. Quizá no te falta fondo: te faltan descansos, y se buscan como las presas del paso clave. El empotre de rodilla: te encajas entre dos puntos, la rodilla contra una presa y la punta del pie contra otra. Las manos quedan libres para sacudir. En desplome pide abdominales. Y el más extremo, el bat hang: los pies enganchados en una presa o una bolsa, boca abajo. Solo con colchoneta y asegurador. Búscalos al reconocer la vía. Mismo intento. Mira la chapa cinco. ¿Lo viste? ¿En qué chapa se te abren los dedos a ti?»
