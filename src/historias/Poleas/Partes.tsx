@@ -20,9 +20,9 @@ export const Partes: React.FC<P> = ({ d, pal }) => {
     <Camara d={d} empuje={0.02} foco="50% 45%">
       <Svg>
         <Lamina html={PA} css={css} tf={alrededor(540, 700, 1.02)} />
-        <Chip x={830} y={480} t="ANTEBRAZO" col="#FF8A4A" o={o(fAnt - 4, fCue - 8)} />
-        <Chip x={830} y={820} t="TENDONES" col="#FF6A1F" o={o(fCue - 4, fAni - 8)} />
-        <Chip x={830} y={1130} t="POLEAS" col="#fff" o={o(fAni - 4, d + 20)} />
+        <g transform="translate(830 480) scale(1.5) translate(-830 -480)"><Chip x={830} y={480} t="ANTEBRAZO" col="#FF8A4A" o={o(fAnt - 4, fCue - 8)} /></g>
+        <g transform="translate(830 820) scale(1.5) translate(-830 -820)"><Chip x={830} y={820} t="TENDONES" col="#FF6A1F" o={o(fCue - 4, fAni - 8)} /></g>
+        <g transform="translate(830 1130) scale(1.5) translate(-830 -1130)"><Chip x={830} y={1130} t="POLEAS" col="#fff" o={o(fAni - 4, d + 20)} /></g>
       </Svg>
     </Camara>
   );

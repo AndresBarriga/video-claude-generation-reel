@@ -14,7 +14,12 @@ export const Chulo: React.FC<P> = ({ d, pal }) => {
     <Camara d={d} empuje={0.025} foco="50% 35%">
       <Svg>
         <Lamina html={PA} css={css} o={ei(f, 0, 6, 0, 1)} tf={alrededor(540, 700, 1.04)} />
-        <ellipse cx={590} cy={480} rx={330 * pulso} ry={210 * pulso} fill="#FF5A4A" opacity={0.3 * pres} />
+        <defs><radialGradient id="rojoM"><stop offset="0" stopColor="#FF5A4A" stopOpacity="0.5" /><stop offset="1" stopColor="#FF5A4A" stopOpacity="0" /></radialGradient></defs>
+        <ellipse cx={590} cy={480} rx={340 * pulso} ry={220 * pulso} fill="url(#rojoM)" opacity={pres} />
+        <g opacity={pres}>
+          <rect x={470} y={395} width={120} height={64} rx={26} fill="#0B1624" stroke="#fff" strokeWidth={4} /><rect x={610} y={395} width={120} height={64} rx={26} fill="#0B1624" stroke="#fff" strokeWidth={4} /><path d="M590 420 q10 -10 20 0" stroke="#fff" strokeWidth={6} fill="none" />
+          <path d="M520 410 l50 0 M650 410 l50 0" stroke="#fff" strokeWidth={5} opacity={0.5} strokeLinecap="round" /><path d="M520 520 q70 40 140 -10" stroke="#0B1624" strokeWidth={9} fill="none" strokeLinecap="round" />
+        </g>
         <Bocadillo x={780} y={250} t="¡DALE MÁS!" col="#FFB070" o={ei(f, fCh, fCh + 6, 0, 1) * (1 - ei(f, fSem + 12, fSem + 20, 0, 1))} lado={-1} />
       </Svg>
     </Camara>

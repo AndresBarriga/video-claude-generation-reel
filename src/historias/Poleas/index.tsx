@@ -18,7 +18,7 @@ const ESCENAS: Record<string, React.FC<P>> = { kilter: Kilter, chulo: Chulo, par
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Poleas: React.FC<{ datos: Datos }> = ({ datos }) => {
-  const { fps } = useVideoConfig(), n = datos.escenas.length;
+  const { fps, durationInFrames } = useVideoConfig(), n = datos.escenas.length;
   return (
     <AbsoluteFill style={{ background: "#08111D" }}>
       {datos.voz && <Audio src={staticFile(datos.voz)} />}
@@ -26,7 +26,7 @@ export const Poleas: React.FC<{ datos: Datos }> = ({ datos }) => {
       {datos.escenas.map((e, i) => {
         const iniS = e.inicio ?? 0, ini0 = Math.round(iniS * fps);
         const finS = i === n - 1 ? datos.duracion : datos.escenas[i + 1].inicio ?? datos.duracion;
-        const dur = Math.max(1, Math.round(finS * fps) - ini0);
+        const dur = Math.max(1, (i === n - 1 ? durationInFrames : Math.round(finS * fps)) - ini0);
         const pal = (w: string) => { const p = datos.palabras.find((x) => x.start >= iniS - 0.01 && x.start < finS && norm(x.w) === norm(w)); return p ? Math.round((p.start - iniS) * fps) : undefined; };
         const Comp = ESCENAS[e.visual ?? ""] ?? Kilter;
         return <Sequence key={i} from={ini0} durationInFrames={dur}><Comp e={e} d={dur} pal={pal} /></Sequence>;
