@@ -93,7 +93,7 @@
    "id": "E37",
    "nombre": "E37 ¿En qué pensaste al caer? (Cuerpo #2, secuela de E11)",
    "formato": "cuerpo-fases",
-   "estado": "Propuesta v3 (crítico 6/10): Andrés no está convencido; en espera",
+   "estado": "Después de las 48 h de Pump. Nuevo hook aceptado por Andrés (3-nov): «el tiempo no se ralentiza, recuerdas más detalle»; verificar el estudio",
    "bloqueos": [
     "Tu OK",
     "Producción (3–4 h)",
@@ -104,7 +104,7 @@
     "H12"
    ],
    "potencial": 5,
-   "por_que": "E11 es el mejor motor de seguidores (2,0 seg./1k con 66K) y su público ya pidió algo así.",
+   "por_que": "E11 es el mejor motor de seguidores a gran escala; el hook del tiempo lento es contraintuitivo",
    "riesgo": 2,
    "riesgo_txt": "Una secuela puede rendir menos; cuerpo es el formato con más datos a favor.",
    "esfuerzo": "3–4 h",
@@ -134,7 +134,7 @@
    "id": "CALDWELL",
    "nombre": "Caldwell «Las dos decisiones» (Decisiones límite #3)",
    "formato": "historia-dilema",
-   "estado": "Propuesta v2; publicar mié 4-nov si Andrés da OK y graba voz",
+   "estado": "Propuesta v2; mié 4-nov noche si hay OK y voz. Es la pieza de alcance de la semana",
    "bloqueos": [
     "Tu OK",
     "Producción",
@@ -149,7 +149,7 @@
    "riesgo": 3,
    "riesgo_txt": "Si sale antes de leer E35 se mezclan las señales.",
    "esfuerzo": "3–4 h",
-   "slot": "despues"
+   "slot": "man_pm"
   },
   {
    "id": "E31B",
@@ -228,7 +228,7 @@
    "id": "E41",
    "nombre": "E41 Factor de caída (cuerda como muelle)",
    "formato": "info-sorpresa",
-   "estado": "Propuesta v2 (crítico 5,5 en v1); falta tu OK",
+   "estado": "Propuesta hecha; reserva tras el mosquetón (se solapan en fuerzas)",
    "bloqueos": [
     "Tu OK",
     "Producción",
@@ -237,7 +237,7 @@
    "h": [
     "H7"
    ],
-   "potencial": 6,
+   "potencial": 5,
    "por_que": "Algo que no sabías, con humor de rocódromo y a quién mandárselo (el asegurador).",
    "riesgo": 3,
    "riesgo_txt": "Info con quiz; seguridad: modelo simplificado; techo parecido a las cuentas de referencia (2–4K likes).",
@@ -246,9 +246,9 @@
   },
   {
    "id": "E39",
-   "nombre": "E39 ¿Qué ha crujido? (dedos y poleas, información limpia)",
+   "nombre": "E39 Poleas rotas + músculo vs tendón («¿Qué ha crujido?»)",
    "formato": "cuerpo-info",
-   "estado": "Reencuadrado como parte 2 de la serie «La mano por dentro»; falta tu OK",
+   "estado": "Lun 9-nov: unir poleas y «el músculo se adapta antes que el tendón»; precisión médica y fuente en pantalla",
    "bloqueos": [
     "Tu OK",
     "Boceto del dedo",
@@ -258,7 +258,7 @@
    "h": [
     "H7"
    ],
-   "potencial": 5,
+   "potencial": 6,
    "por_que": "Pilar de información con humor de personajes; la pieza del dedo se reutiliza.",
    "riesgo": 3,
    "riesgo_txt": "Nicho de dedos; techo 4–8K como Último pegue o Honnold.",
@@ -269,7 +269,7 @@
    "id": "E42",
    "nombre": "E42 La puerta (barn door)",
    "formato": "tecnica-info",
-   "estado": "Hoy domingo ~20:30; producido v4 con voz (43 s)",
+   "estado": "Publicado 1-nov; medir 48 h",
    "bloqueos": [
     "Tu revisión"
    ],
@@ -281,13 +281,13 @@
    "riesgo": 3,
    "riesgo_txt": "Técnica genérica; techo 3–5K como las referencias.",
    "esfuerzo": "3–4 h",
-   "slot": "hoy"
+   "slot": "no"
   },
   {
    "id": "E43",
    "nombre": "E43 Las cinco fases del pump (vía)",
    "formato": "cuerpo-info",
-   "estado": "PRODUCIDO (47,9 s, con voz); falta tu revisión; publicar mar 3-nov",
+   "estado": "Publicado 2-nov ~21:30 (12,4k vistas, 42 seguidores a 16 h; 3,4 seg./1k). Medir a 48 h (mié 4-nov ~21:30)",
    "bloqueos": [],
    "h": [
     "H7"
@@ -297,13 +297,13 @@
    "riesgo": 3,
    "riesgo_txt": "Cifras de entrenadores, no pautas médicas; el corte del antebrazo puede quedar cutre.",
    "esfuerzo": "3–4 h",
-   "slot": "man_pm"
+   "slot": "no"
   },
   {
    "id": "E44",
    "nombre": "E44 Descansar en la vía (empotre y bat hang)",
    "formato": "cuerpo-info",
-   "estado": "Propuesta v2; abrir con bat hang; parte 2 del pump; publicar ~vie 6-nov",
+   "estado": "Vie 6-nov: pareja de Pump; empotre/bat hang + medidor PUMP",
    "bloqueos": [
     "Tu OK",
     "Boceto",
@@ -351,6 +351,98 @@
    "riesgo_txt": "Ninguno.",
    "esfuerzo": "8 min de render",
    "slot": "trial"
+  },
+  {
+   "id": "MOSQUETON",
+   "nombre": "Cuánto aguanta de verdad un mosquetón (y cómo se coloca mal)",
+   "formato": "seguridad-objeto",
+   "estado": "Mié 11-nov; cifras de la norma (EN 12275 / UIAA 121) por verificar antes del guion",
+   "bloqueos": [
+    "Verificar cifras",
+    "Propuesta",
+    "Voz"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 5,
+   "por_que": "Mismo molde que Pump (mecanismo visual + barra de kN). Referencia UIAA: 27 % de compartidos sobre me gusta (carrusel).",
+   "riesgo": 3,
+   "riesgo_txt": "Seguridad real: fuente en pantalla y verificación estricta.",
+   "esfuerzo": "3–4 h",
+   "slot": "despues"
+  },
+  {
+   "id": "FATIGA",
+   "nombre": "Escalar cansado: más accidentes cuando acabas hecho (incluye rapeles y nudo al final de la cuerda)",
+   "formato": "cuerpo-seguridad",
+   "estado": "Idea de Andrés 3-nov; necesita fuente (estadística de accidentes en rapel/fin de jornada) o mecanismo concreto",
+   "bloqueos": [
+    "Fuente",
+    "Propuesta"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 5,
+   "por_que": "Gancho universal entre escaladores; incluye al asegurador. Riesgo de consejo genérico si no hay mecanismo.",
+   "riesgo": 3,
+   "riesgo_txt": "No afirmar estadísticas sin comprobar; seguridad.",
+   "esfuerzo": "3 h",
+   "slot": "despues"
+  },
+  {
+   "id": "OCHO",
+   "nombre": "El ocho apretado: cómo deshacerlo (y por qué a veces cambias de nudo)",
+   "formato": "tecnica-info",
+   "estado": "Idea de Andrés 3-nov: incluye cómo deshacerlo y al final el cambio de nudo; no presentarlo como sustituto del ocho",
+   "bloqueos": [
+    "Propuesta",
+    "Fuente (UIAA/fabricantes)"
+   ],
+   "h": [
+    "H7"
+   ],
+   "potencial": 4,
+   "por_que": "Hook concreto y reconocible («el ocho que no se deshace»); humor + utilidad.",
+   "riesgo": 3,
+   "riesgo_txt": "Seguridad al encordarse: verificar variante (doble as de guía con remate).",
+   "esfuerzo": "2–3 h",
+   "slot": "trial"
+  },
+  {
+   "id": "SHARMA",
+   "nombre": "Chris Sharma (historia concreta, p. ej. Es Pontas)",
+   "formato": "historia-universal",
+   "estado": "Sin propuesta; elegir una historia y comprobar hechos",
+   "bloqueos": [
+    "Investigación"
+   ],
+   "h": [
+    "H1"
+   ],
+   "potencial": 3,
+   "por_que": "Alcance potencial; solo después de Caldwell.",
+   "riesgo": 2,
+   "riesgo_txt": "Datos de personas reales: comprobar.",
+   "esfuerzo": "4 h",
+   "slot": "despues"
+  },
+  {
+   "id": "VIASFALLAN",
+   "nombre": "Vías que fallan: presas y anclajes en mal estado (hook con accidente reciente, p. ej. Kalymnos)",
+   "formato": "seguridad-historia",
+   "estado": "Solo con caso verificado y fuentes; estado legal en una frase",
+   "bloqueos": [
+    "Investigación rigurosa"
+   ],
+   "h": [],
+   "potencial": 4,
+   "por_que": "Alcance y compartidos altos, pero tema delicado.",
+   "riesgo": 5,
+   "riesgo_txt": "Accidente reciente: no explotar, no inventar, no culpar.",
+   "esfuerzo": "5 h",
+   "slot": "despues"
   }
  ]
 }
