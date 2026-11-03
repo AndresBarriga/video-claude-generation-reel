@@ -91,3 +91,19 @@ Prefiere esa apertura a la v2 (el crítico había pedido quitar la barra por abs
 - **Veracidad:** barra PUMP «ilustrativa», baja un bloque por descanso (sin números ni «en verde» al final); empotre = «te encajas entre dos puntos», pide abdominales en desplome; bat hang como curiosidad, rótulo «SOLO CON COLCHONETA Y ASEGURADOR»; rótulo de 1 s «UN EMPOTRE MUY APRETADO PUEDE ATASCAR LA PIERNA».
 - **Final:** el hueco se ve sin iluminar en la escena 2 y se revela al final («¿lo viste?»); pregunta «¿En qué chapa se te abren los dedos a ti?»; el «mándaselo» va a la descripción.
 **Voz v4 (~36 s):** «Chapa ocho. Se te abren los dedos. Y hay quien aquí se cuelga boca abajo. Quizá no te falta fondo: te faltan descansos, y se buscan como las presas del paso clave. El empotre de rodilla: te encajas entre dos puntos, la rodilla contra una presa y la punta del pie contra otra. Las manos quedan libres para sacudir. En desplome pide abdominales. Y el más extremo, el bat hang: los pies enganchados en una presa o una bolsa, boca abajo. Solo con colchoneta y asegurador. Búscalos al reconocer la vía. Mismo intento. Mira la chapa cinco. ¿Lo viste? ¿En qué chapa se te abren los dedos a ti?»
+
+## v5 (3-nov, Andrés: «que no parezca lo de ayer; más consejos, no solo empotre y bat hang»)
+**Mensaje:** en una vía casi siempre hay sitios para bajar el pump sin parar; hay descansos de todos los niveles, del que ya haces al que parece imposible.
+**Problema:** se pumpea a media vía y cree que es su fondo; solo conoce el «sacudir».
+**Valor:** 4 descansos en orden de facilidad y dónde buscarlos. **Cómo ayuda:** al reconocer la vía marca dónde descansar y con cuál.
+**Identificación:** «Chapa ocho. Se te abren los dedos.»
+**Formato distinto a E43:** vista **frontal de la vía entera** (topo con chapas numeradas) y escalador pequeño subiendo; cada descanso es un punto que se ilumina en el topo y se abre un **recuadro de perfil** con la pose; cuenta atrás «4, 3, 2, 1» (del que ya haces al imposible). Se reutiliza: escalador de perfil, magnesio y barra PUMP (en otro sitio y con otro color). No hay cortes de músculo ni plano de antebrazo.
+**Guion (~38 s):**
+1. «Chapa ocho. Se te abren los dedos. Pero había cuatro sitios para descansar antes.» | topo; barra PUMP llena; los cuatro puntos aparecen apagados (¿los ves?)
+2. «Uno, el que ya haces: una mano segura, la otra sacude. Con el brazo estirado.» | recuadro: sacudida con magnesio; PUMP baja un bloque
+3. «Dos: una repisa o un cambio de pendiente, donde el peso se va a los pies.» | recuadro: de pie en repisa, brazos colgando
+4. «Tres: el empotre de rodilla. Te encajas entre dos puntos y las manos quedan libres. En desplome pide abdominales.» | recuadro knee bar
+5. «Cuatro, el extremo: el bat hang. Boca abajo, solo con colchoneta y asegurador.» | recuadro bat hang; rótulo UN EMPOTRE MUY APRETADO PUEDE ATASCAR LA PIERNA (1 s)
+6. «Búscalos al reconocer la vía. Mira la chapa cinco: ¿lo viste?» | los cuatro puntos del topo vuelven a verse; el de la chapa cinco se ilumina
+7. «¿En qué chapa se te abren los dedos a ti?»
+**Fuera del vídeo (comentario fijado):** respiración, shake-out de 2 s en movimiento, escalar rápido en lo duro y despacio en lo bueno. Dudosos de la lista de Andrés, sin fuente verificada: «técnica Güllich», «5 s arriba/5 s abajo» y el «ácido láctico»: no entran.
