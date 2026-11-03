@@ -40,12 +40,12 @@
   {
    "tipo": "texto",
    "visual": "crac",
-   "texto": "Ese crac suele ser una polea. Si lo oyes, para y ve a un fisio."
+   "texto": "Ese crac suele ser una polea."
   },
   {
    "tipo": "cierre",
    "visual": "sofa",
-   "texto": "Si no: semanas sin colgarte, a veces meses, y tú, en el sofá, dándole «me gusta» a los que sí escalan."
+   "texto": "Semanas sin colgarte, a veces meses, y tú, en el sofá, dándole «me gusta» a los que sí escalan."
   }
  ],
  "frases": [
@@ -64,9 +64,6 @@
   2,
   5,
   6,
-  3,
-  6,
-  2,
   3,
   3,
   2,
