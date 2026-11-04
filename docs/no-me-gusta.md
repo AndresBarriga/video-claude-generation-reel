@@ -35,6 +35,8 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-30 · (E35) Picos como triángulo flotante con cruz; helicóptero «cutre»; gente flotando en el juicio; gesto que parece un saludo; rótulo final sin contexto («#3: …»).
 - (30-oct) No abusar de «las N fases de…»: para temas de curiosidad (p. ej. pies de gato) prefiere un **por qué** que funcione en dos públicos: el que no escala piensa «qué locos» y el que escala se lo manda al que no lo entiende.
 
+- 2026-11-04 · Humor forzado: los chistes están saliendo mal (E39: chulo del gimnasio, «no he entrenado»). Mantener el tono relajado y cercano, pero sin intentar humor; la gracia solo si sale natural del dato o la situación.
+
 ## Sí
 - 2026-10-27 · Caras y expresiones de los personajes de E15 v2: son la identidad.
 - 2026-10-27 · La lista de 28 ideas de escalada (identidad, cuerpo, historias épicas, España, dinero).
