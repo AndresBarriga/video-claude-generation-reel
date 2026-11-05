@@ -10,13 +10,37 @@
   "Climbing.com: rappelling errors and fatalities (Karr, familiaridad)",
   "Petzl: multi-pitch rappelling with a single rope (nudo en el extremo)"
  ],
- "nota_rigor": "Caso atribuido a un testigo; el NPS no ha publicado informe. Cuerda doblada = más del doble del rapel (regla general). Gobright: análisis del AAC dice «strongly suggests»; en el vídeo solo «un rapel parecido».",
+ "nota_rigor": "Caso atribuido a un testigo; el NPS no ha publicado informe. Cuerda doblada = más del doble de la distancia hasta la siguiente reunión (regla general); lo que importa es llegar a la reunión, no al suelo. Gobright: análisis del AAC dice «strongly suggests»; en el vídeo solo «un rapel parecido».",
  "escenas": [
-  { "tipo": "gancho", "visual": "gancho", "texto": "Estás en el último rapel del día. Tu cuerda no llega al suelo. Y todavía no lo sabes.", "pausa": 0.3 },
-  { "tipo": "texto", "visual": "caso", "texto": "Balin Miller tenía veintitrés años. Según un testigo, la cuerda no llegaba al saco atascado, él parecía no saberlo, y en el descenso se fue por el extremo. Se emitió por TikTok.", "pausa": 1.0 },
-  { "tipo": "texto", "visual": "gobright", "texto": "Y no es cosa de novatos: en dos mil diecinueve murió Brad Gobright, de los mejores del mundo, en un rapel parecido.", "pausa": 0.3 },
-  { "tipo": "texto", "visual": "regla", "texto": "Antes de bajar, que la cuerda llegue. Si bajas con ella doblada, tiene que medir más del doble del rapel. Y un nudo en los dos extremos.", "pausa": 0.3 },
-  { "tipo": "cierre", "visual": "cierre", "texto": "¿Cuánto mide la tuya?" }
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "texto": "Estás bajando en rapel, reventado. Tu cuerda no llega a la siguiente reunión. Y todavía no lo sabes.",
+   "pausa": 0.4
+  },
+  {
+   "tipo": "texto",
+   "visual": "caso",
+   "texto": "Balin Miller tenía veintitrés años. Según un testigo, la cuerda no llegaba al saco atascado, él parecía no saberlo, y en el descenso se fue por el extremo. Se emitió por TikTok.",
+   "pausa": 1.0
+  },
+  {
+   "tipo": "texto",
+   "visual": "gobright",
+   "texto": "Y no es cosa de novatos: en dos mil diecinueve murió Brad Gobright, de los mejores del mundo, en un rapel parecido.",
+   "pausa": 0.4
+  },
+  {
+   "tipo": "texto",
+   "visual": "regla",
+   "texto": "Antes de bajar, mira que la cuerda llegue a la siguiente reunión. Si bajas con ella doblada, tiene que medir más del doble de esa distancia. Y un nudo en los dos extremos.",
+   "pausa": 0.4
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "¿Cuántos metros tiene tu cuerda?"
+  }
  ],
- "frases": [7, 6, 5, 5, 11, 4, 9, 4, 6, 16, 3, 4, 13, 7, 4]
+ "pausaFrase": 0.4
 }

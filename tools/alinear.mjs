@@ -12,8 +12,8 @@ export function silencios(audio, umbral = "-38dB", minimo = 0.15) {
 }
 
 /** palabras: array de strings del guion. Devuelve [{start, end}] por palabra y los emparejamientos de pausa. */
-export function alinear(audio, palabras, dur, frases) {
-  const sil = silencios(audio);
+export function alinear(audio, palabras, dur, frases, minimo) {
+  const sil = silencios(audio, "-38dB", minimo ?? 0.15);
   const ini = sil.length && sil[0].a < 0.05 ? sil[0].b : 0.05;
   const ultimo = sil.length && sil[sil.length - 1].b >= dur - 0.05 ? sil[sil.length - 1].a : dur;
   const internos = sil.filter((s) => s.a > ini + 0.05 && s.b < ultimo - 0.05);

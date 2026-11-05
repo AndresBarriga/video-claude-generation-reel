@@ -69,3 +69,15 @@ export const Nudo: React.FC<{ x: number; y: number; k: number }> = ({ x, y, k })
     <path d="M-16 -4 Q0 8 16 -4 M-14 6 Q0 -6 14 6" stroke="#B8460E" strokeWidth={4} fill="none" strokeLinecap="round" />
   </g>
 );
+
+/** Puño enguantado agarrando una cuerda vertical (vista frontal). (x, y) = centro; `manga` = hacia dónde sale el antebrazo. */
+export const Puno: React.FC<{ x: number; y: number; s?: number; manga?: [number, number] }> = ({ x, y, s = 1, manga = [150, -420] }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <path d={`M20 -10 L${manga[0]} ${manga[1]}`} stroke="#2C506A" strokeWidth={150} strokeLinecap="round" />
+    <path d={`M20 -10 L${manga[0]} ${manga[1]}`} stroke="#3E6E8E" strokeWidth={128} strokeLinecap="round" />
+    <rect x={-100} y={-82} width={200} height={164} rx={58} fill="#1B2230" stroke="#0B1624" strokeWidth={8} />
+    {[-48, -16, 16, 48].map((dy) => <path key={dy} d={`M-92 ${dy} Q-20 ${dy - 10} 92 ${dy}`} stroke="#34425A" strokeWidth={6} fill="none" strokeLinecap="round" />)}
+    <ellipse cx={70} cy={-70} rx={52} ry={32} fill="#1B2230" stroke="#0B1624" strokeWidth={8} transform="rotate(-24 70 -70)" />
+    <rect x={-56} y={60} width={150} height={26} rx={13} fill="#34425A" opacity={0.7} />
+  </g>
+);
