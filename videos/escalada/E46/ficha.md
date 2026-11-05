@@ -11,15 +11,18 @@
 
 ## Publicación
 **Descripción:**
-Antes de bajar: que la cuerda llegue a la siguiente reunión, no al suelo. Con la cuerda doblada, tiene que medir más del doble de esa distancia. Y un nudo en los dos extremos.
+Antes de bajar en rapel: comprueba que la cuerda llega a la siguiente reunión (la próxima parada con anclajes), no al suelo. Con la cuerda doblada, tiene que medir más del doble de esa distancia. Y un nudo en cada extremo: te para antes de irte por la punta.
 
-Mándaselo a quien baja contigo. ¿Cuántos metros tiene tu cuerda? Dímelo en comentarios 👇
+Nunca te olvides del nudo. Mándaselo a quien baja contigo 👇
 
 Caso: Balin Miller, El Capitán (1-oct-2025). Según un testigo, la cuerda no llegaba al saco atascado y se fue por el extremo; el Servicio de Parques investiga. Brad Gobright (2019): análisis del American Alpine Club sobre extremos desiguales y rapel sin nudos. Fuentes: AP, Fox News, Daily Beast, Daily Dot, American Alpine Club (ANAM), Petzl.
 
-**Comentario fijado:** ¿Cuántos metros tiene tu cuerda y cuántos hay hasta la siguiente reunión en tu rapel más largo? Escríbelo y mira si la cuenta sale.
+**Comentario fijado:** ¿Haces siempre el nudo en los dos extremos? Etiqueta a quien baja contigo y no lo hace.
 **Hashtags:** #escalada #rapel #seguridadenescalada #nudo #escaladaespañola
 
 
 ## v9 (5-nov)
 Gancho nuevo: cuenta atrás «QUEDAN 12→4 m» + latido + viñeta roja; «la siguiente parada está a quince» con línea discontinua. Cierre: el nudo frena a la figurita («EL NUDO TE PARA»). Directo de TikTok dentro del caso. Voz regrabada y alineada (18 tramos manuales: guion.json `frases` + `frasesManual` + `minSilencio` 0,22). Críticas: crítico 5,5 (gancho adivinable, 2 casos); se descartó su gancho POV (rechazado por Andrés).
+
+## v10 (5-nov)
+Apertura con zoom al extremo de la cuerda; caída de 15 m grande con cámara que baja; cierre «NUNCA OLVIDES EL NUDO» sobre la figurita parada. Audio de Andrés recortado tras «…por la punta.» (+2 s de silencio) para no regrabar; si regraba con «Nunca te olvides del nudo.», restaurar esa frase en guion.json y `frases` (+5 palabras).

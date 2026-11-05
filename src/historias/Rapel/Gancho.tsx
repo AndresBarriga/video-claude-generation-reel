@@ -28,7 +28,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
 
 export const Cierre: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fNudo = pal("nudo") ?? 8, fPare = pal("pare") ?? 80, fOlvides = pal("Nunca") ?? 140;
+  const fNudo = pal("nudo") ?? 8, fPare = pal("pare") ?? 80, fOlvides = (pal("punta") ?? 120) + 12;
   const fStop = fPare + 6;
   const rebote = f > fStop ? 12 * Math.exp(-(f - fStop) / 7) * Math.sin((f - fStop) * 0.85) : 0;
   const baja = ei(f, 0, fStop, 340, 434, Easing.in(Easing.quad)) + rebote;
@@ -38,7 +38,7 @@ export const Cierre: React.FC<P> = ({ d, pal }) => {
       <Frente f={f} cam={360} baja={baja} nudo={ei(f, fNudo, fNudo + 8, 0, 1)} cara={parado ? "normal" : "serio"} sacude={parado ? 6 * Math.exp(-(f - fStop) / 10) : 0} />
       <svg viewBox="0 0 1080 1920" width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
         <Rotulo f={f} ini={fStop} fin={fOlvides - 4} t="EL NUDO TE PARA" y={300} tam={104} col="#5FD1C5" />
-        <Rotulo f={f} ini={fOlvides} t="NUNCA OLVIDES EL NUDO" y={300} tam={84} col="#FF6A1F" />
+        <Rotulo f={f} ini={fOlvides} t="NUNCA OLVIDES" y={290} tam={92} col="#FF6A1F" /><Rotulo f={f} ini={fOlvides + 3} t="EL NUDO" y={385} tam={104} col="#FF6A1F" />
       </svg>
     </Camara>
   );

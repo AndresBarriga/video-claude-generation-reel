@@ -39,7 +39,7 @@
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "texto": "Y un nudo en cada extremo, para que te pare antes de irte por la punta. Nunca te olvides del nudo."
+      "texto": "Y un nudo en cada extremo, para que te pare antes de irte por la punta."
     }
   ],
   "pausaFrase": 0.4,
@@ -60,8 +60,7 @@
     5,
     9,
     6,
-    10,
-    5
+    10
   ],
   "frasesManual": true,
   "minSilencio": 0.22
