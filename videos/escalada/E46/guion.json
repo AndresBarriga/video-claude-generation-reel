@@ -42,5 +42,27 @@
       "texto": "Y un nudo en cada extremo, siempre: te para antes de irte por la punta. Nunca te olvides del nudo."
     }
   ],
-  "pausaFrase": 0.4
+  "pausaFrase": 0.4,
+  "frases": [
+    13,
+    6,
+    5,
+    13,
+    6,
+    6,
+    6,
+    16,
+    9,
+    5,
+    12,
+    5,
+    5,
+    9,
+    6,
+    1,
+    8,
+    5
+  ],
+  "frasesManual": true,
+  "minSilencio": 0.26
 }

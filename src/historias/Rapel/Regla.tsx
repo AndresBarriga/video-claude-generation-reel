@@ -28,7 +28,7 @@ export const Regla: React.FC<P> = ({ d, pal }) => {
           {f > fReu && <circle cx={B.x} cy={B.y} r={54 * pulso} fill="none" stroke="#5FD1C5" strokeWidth={6} strokeDasharray="8 12" opacity={ei(f, fReu, fReu + 8, 0, 1)} />}
         </g>
         <Chip x={870} y={A.y + 110} t="REUNIÓN" o={ei(f, fBajar, fBajar + 10, 0, 1)} />
-        <Chip x={870} y={B.y + 150} t="REUNIÓN" o={ei(f, fReu, fReu + 10, 0, 1)} col="#5FD1C5" />
+        <Chip x={870} y={B.y + 100} t="REUNIÓN" o={ei(f, fReu, fReu + 10, 0, 1)} col="#5FD1C5" />
         <Rotulo f={f} ini={fDoble} t="60 m > 2 × 25 m" y={250} tam={104} />
       </Svg>
     </Camara>
