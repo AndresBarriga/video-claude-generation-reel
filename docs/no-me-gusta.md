@@ -57,3 +57,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-30 · (E35) Primer plano de la congelación (cara gris, escarcha, labios morados): sí, sin gore.
 - 2026-10-30 · (E35) Que las mujeres se lean como mujeres (melena larga) y cada personaje se distinga a primera vista.
 - 2026-11-05 (E46): el gancho solo con texto y un muñeco quieto no engancha; las imágenes tienen que ser lo más impactante posible, no ilustrar. Quiere un muñequito haciendo rápeles en una pared muy alta y que en uno se caiga. POV solo = "cutre".
+- 2026-11-05 (E46): «¿Cuántos metros tiene tu cuerda?» no sirve como cierre; mejor un mensaje directo («nunca te olvides del nudo»). Empezar con más gancho visual y que la caída de 15 m se vea grande.
