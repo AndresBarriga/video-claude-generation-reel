@@ -1,12 +1,12 @@
-// 4 · La regla: hay 25 m entre reuniones; con la cuerda doblada cada brazo tiene que pasar de 25 m y llegar a la reunión de abajo. Nudo en los dos extremos.
+// 4 · La regla: hay 25 m entre reuniones; con la cuerda doblada cada brazo tiene que pasar de 25 m y llegar a la reunión de abajo.
 import React from "react";
 import { Easing, useCurrentFrame } from "remotion";
-import { Anclaje, Chip, Cuerda, Nudo, Roca, Rotulo, Svg, ei, type P, Camara } from "./comun";
+import { Anclaje, Chip, Cuerda, Roca, Rotulo, Svg, ei, type P, Camara } from "./comun";
 
 const A = { x: 700, y: 520 }, B = { x: 700, y: 1260 };
 export const Regla: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fBajar = pal("bajar") ?? 20, fReu = pal("reunión") ?? 70, fDob = pal("doblada") ?? 150, fDoble = pal("doble") ?? 210, fNudo = pal("nudo") ?? 270, fExt = pal("extremos") ?? 300;
+  const fBajar = pal("bajar") ?? 20, fReu = pal("reunión") ?? 70, fDob = pal("doblada") ?? 150, fDoble = pal("doble") ?? 210;
   const cae = ei(f, fReu - 30, fReu + 8, 0, 1, Easing.in(Easing.quad)), doblada = ei(f, fDob - 4, fDob + 14, 0, 1), sobra = ei(f, fDoble, fDoble + 20, 0, 1);
   const largo = (B.y - A.y + 20) * cae, pulso = f > fReu ? 1 + 0.1 * Math.sin((f - fReu) * 0.4) : 1;
   return (
@@ -21,7 +21,6 @@ export const Regla: React.FC<P> = ({ d, pal }) => {
           <Cuerda d={`M${A.x - 14} ${A.y + 20} L${A.x - 170} ${A.y + 20 + largo}`} w={12} />
           {doblada > 0 && <Cuerda d={`M${A.x + 10} ${A.y + 20} L${A.x - 80} ${A.y + 20 + largo + 24 * sobra}`} w={12} />}
           {sobra > 0 && <path d={`M${A.x - 80} ${B.y + 34} q-30 30 -60 8 q-34 -18 -74 4`} stroke="#FF6A1F" strokeWidth={12} fill="none" strokeLinecap="round" opacity={sobra} />}
-          <Nudo x={A.x - 170} y={B.y + 18} k={ei(f, fNudo, fNudo + 8, 0, 1)} /><Nudo x={A.x - 80} y={B.y + 40} k={ei(f, fExt, fExt + 8, 0, 1)} />
           {f > fBajar && <g opacity={ei(f, fBajar, fBajar + 10, 0, 1)}>
             <path d={`M290 ${A.y} L290 ${B.y}`} stroke="#fff" strokeWidth={6} /><path d={`M270 ${A.y} L310 ${A.y} M270 ${B.y} L310 ${B.y}`} stroke="#fff" strokeWidth={6} />
             <Chip x={290} y={(A.y + B.y) / 2} t="25 m" />

@@ -33,13 +33,13 @@
     {
       "tipo": "texto",
       "visual": "regla",
-      "texto": "Antes de bajar, mira que la cuerda llegue a la siguiente reunión, la próxima parada con anclajes. Si bajas con ella doblada, tiene que medir más del doble de esa distancia. Y un nudo en cada extremo, para que te pare antes de irte por la punta.",
+      "texto": "Antes de bajar, mira que la cuerda llegue a la siguiente reunión, la próxima parada con anclajes. Si bajas con ella doblada, tiene que medir más del doble de esa distancia.",
       "pausa": 0.4
     },
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "texto": "¿Cuántos metros tiene tu cuerda?"
+      "texto": "Y un nudo en cada extremo, para que te pare antes de irte por la punta. ¿Cuántos metros tiene tu cuerda?"
     }
   ],
   "pausaFrase": 0.4,

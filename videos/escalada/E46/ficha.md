@@ -19,3 +19,7 @@ Caso: Balin Miller, El Capitán (1-oct-2025). Según un testigo, la cuerda no ll
 
 **Comentario fijado:** ¿Cuántos metros tiene tu cuerda y cuántos hay hasta la siguiente reunión en tu rapel más largo? Escríbelo y mira si la cuenta sale.
 **Hashtags:** #escalada #rapel #seguridadenescalada #nudo #escaladaespañola
+
+
+## v9 (5-nov)
+Gancho nuevo: cuenta atrás «QUEDAN 12→4 m» + latido + viñeta roja; «la siguiente parada está a quince» con línea discontinua. Cierre: el nudo frena a la figurita («EL NUDO TE PARA»). Directo de TikTok dentro del caso. Voz regrabada y alineada (18 tramos manuales: guion.json `frases` + `frasesManual` + `minSilencio` 0,22). Críticas: crítico 5,5 (gancho adivinable, 2 casos); se descartó su gancho POV (rechazado por Andrés).
