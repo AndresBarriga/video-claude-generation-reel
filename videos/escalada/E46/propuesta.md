@@ -26,3 +26,14 @@
 5. «Antes de bajar, comprueba que el centro de la cuerda está en el anclaje.» | marca central en el anclaje
 6. «Y haz un nudo en cada extremo. Diez segundos.» | nudo + contador 10 s
 7. «¿Tu compañero lo hace siempre?»
+
+## v3 (5-nov, tras el crítico 5/10 a la v2)
+Cambios: abre con el espectador (final del día, último rapel, «¿LLEGA?», extremo de la cuerda en primer plano); el nombre va DESPUÉS del apuro; fuera «maniobra de rutina» (no sostenido: Evans solo dice que la cuerda no llegaba y se fue por el extremo) y fuera el contador abstracto (14 muñecos, 8 en gris); sin insinuar que no había nudo (primeros informes: «quizá», sin confirmar); final con apuro personal («¿cuándo fue la última vez que viste a tu compañero hacerlo?»). No se menciona el directo de TikTok ni se dibuja a Balin.
+**Guion v3 (~36 s):**
+1. «Final del día. Último rapel. ¿Has mirado dónde acaba la cuerda?» | primer plano del extremo de la cuerda pasando por el dispositivo, rótulo ¿LLEGA?; escalador cansado en perfil mirando abajo
+2. «Según un testigo, a Balin Miller, de veintitrés años, no le llegó en El Capitán: se fue por el extremo.» | la silueta cae fuera de plano, sin impacto
+3. «Y no es un caso raro: en 2023 hubo catorce accidentes de rapel en Norteamérica, y ocho fueron mortales.» | catorce muñecos, ocho en gris
+4. «Muchas veces hay un descuido detrás: cansancio y rutina.» (Karr, AAC)
+5. «Antes de bajar, comprueba que la cuerda llega hasta donde vas. Y haz un nudo en cada extremo. Diez segundos.» | nudo
+6. «¿Cuándo fue la última vez que viste a tu compañero hacerlo?»
+**Descripción:** términos Balin Miller, rapel, nudo en el extremo de la cuerda. Fuentes (en descripción, no en pantalla): AAC (14 accidentes de rapel y 8 mortales en 2023), AP/NBC/Reuters/Guardian para el caso. Pendiente: comprobar si el Servicio de Parques ha publicado ya su informe antes de publicar.

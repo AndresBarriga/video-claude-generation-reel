@@ -59,3 +59,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 3-nov | E39 v5 | propuesta | 6 | Marioneta (rehook) bien pero tarde; lesión ya ocurrida sin decisión; «crac» sin resolver; barras SEMANAS/MESES abstractas; final adivinable; pierde matiz de músculos de la mano y da pauta de entrenamiento |
 | 3-nov | E39 v7 | propuesta | 6 | Gancho es resultado sin «tú»; humor solo en bocadillos y tres metáforas; final adivinable; «era una polea» y «si duele» imprecisos |
 | 2026-11-03 | E39 vídeo | terminado | 5 | Humor depende de la voz, lámina abstracta con jerga, final adivinable y cierre largo; nicho estrecho |
+| 2026-11-05 | Balin Miller (rapel) | propuesta | 5 | historia ajena en 3.ª persona, gancho sin apuro del espectador, lección con final adivinable (v3 abre con el espectador y quita «de rutina») |
