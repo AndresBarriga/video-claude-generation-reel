@@ -23,3 +23,4 @@ La propuesta (paso 1) no se salta salvo que Andrés diga explícitamente «produ
 - Historias famosas e ideas de identidad: una comprobación rápida de los hechos clave basta; sin fuente en pantalla.
 - Cifras o estudios: fuente en `guion.json` y, si la cifra es el clímax, rótulo pequeño en pantalla.
 - Salud y seguridad: estrictos (nada de instrucciones; "aprende con un instructor"/"consulta al veterinario").
+- **Guion visual (desde E46):** junto al texto de cada escena, escribe la imagen más impactante posible (escala, movimiento, primer plano, qué hace el espectador al verla), no solo qué se ve. El gancho visual cuenta tanto como el verbal.

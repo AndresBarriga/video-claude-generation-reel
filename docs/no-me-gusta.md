@@ -56,3 +56,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-10-29 · Frenar ideas por respeto, mal gusto o verificación total: «somos una cuenta de Instagram, no una institución». Se prioriza viralidad; tono de suceso/morbo permitido (cadáver dibujado en gris sí). Límite que se mantiene: no inventar hechos concretos sobre personas reales identificables.
 - 2026-10-30 · (E35) Primer plano de la congelación (cara gris, escarcha, labios morados): sí, sin gore.
 - 2026-10-30 · (E35) Que las mujeres se lean como mujeres (melena larga) y cada personaje se distinga a primera vista.
+- 2026-11-05 (E46): el gancho solo con texto y un muñeco quieto no engancha; las imágenes tienen que ser lo más impactante posible, no ilustrar. Quiere un muñequito haciendo rápeles en una pared muy alta y que en uno se caiga. POV solo = "cutre".
