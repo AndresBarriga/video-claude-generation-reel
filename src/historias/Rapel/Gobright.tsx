@@ -5,7 +5,7 @@ import { Anclaje, Chip, Cuerda, Extremo, Rotulo, Svg, ei, type P, Camara } from 
 
 export const Gobright: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fAno = pal("diecinueve") ?? 90, fNom = pal("Gobright,") ?? pal("Gobright") ?? 130, fParecido = pal("parecido.") ?? pal("parecido") ?? 200;
+  const fAno = pal("diecinueve") ?? 90, fNom = pal("Gobright,") ?? pal("Gobright") ?? 130, fParecido = pal("parecido.") ?? pal("parecido") ?? 200, fCans = pal("cansado:") ?? pal("cansado") ?? 260;
   const caen = ei(f, 6, 40, 0, 1, Easing.out(Easing.cubic));
   const pulso = f > fParecido ? 1 + 0.12 * Math.sin((f - fParecido) * 0.45) : 1;
   const Y0 = 560, YR = 1260, YC = 1060;
@@ -22,7 +22,8 @@ export const Gobright: React.FC<P> = ({ d, pal }) => {
         {f > fParecido && <circle cx={610} cy={YC + 30} r={46 * pulso} fill="none" stroke="#fff" strokeWidth={6} strokeDasharray="8 12" />}
         {f > fParecido && <line x1={610} y1={YC + 90} x2={610} y2={YR - 12} stroke="#fff" strokeWidth={5} strokeDasharray="4 16" strokeLinecap="round" opacity={ei(f, fParecido, fParecido + 14, 0, 1)} />}
         </g>
-        <Rotulo f={f} ini={fAno - 2} t="2019" y={250} tam={150} />
+        <Rotulo f={f} ini={fAno - 2} fin={fCans - 4} t="2019" y={250} tam={150} />
+        <Rotulo f={f} ini={fCans} t="LO DAS POR HECHO" y={250} tam={104} col="#FF5A4A" />
         <Chip x={300} y={600} t="BRAD GOBRIGHT" o={ei(f, fNom - 4, fNom + 6, 0, 1)} />
       </Svg>
     </Camara>

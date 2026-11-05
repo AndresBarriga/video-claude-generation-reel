@@ -27,7 +27,7 @@
     {
       "tipo": "texto",
       "visual": "gobright",
-      "texto": "Y le pasa también a los expertos: en dos mil diecinueve murió Brad Gobright, de los mejores del mundo, en un rapel parecido.",
+      "texto": "Le pasa hasta a los expertos: en dos mil diecinueve murió Brad Gobright, de los mejores del mundo, en un rapel parecido. Y los fallos más tontos llegan cuando estás cansado: das las cosas por hechas.",
       "pausa": 0.4
     },
     {
@@ -39,7 +39,7 @@
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "texto": "Y un nudo en cada extremo, sobre todo cuando estás cansado: te para antes de irte por la punta. Nunca te olvides del nudo."
+      "texto": "Y un nudo en cada extremo, siempre: te para antes de irte por la punta. Nunca te olvides del nudo."
     }
   ],
   "pausaFrase": 0.4

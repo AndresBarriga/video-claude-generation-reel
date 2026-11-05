@@ -11,7 +11,7 @@
 
 ## Publicación
 **Descripción:**
-Antes de bajar en rapel: comprueba que la cuerda llega a la siguiente reunión (la próxima parada con anclajes), no al suelo. Con la cuerda doblada, tiene que medir más del doble de esa distancia. Y un nudo en cada extremo, sobre todo cuando estás cansado: te para antes de irte por la punta.
+Antes de bajar en rapel: comprueba que la cuerda llega a la siguiente reunión (la próxima parada con anclajes), no al suelo. Con la cuerda doblada, tiene que medir más del doble de esa distancia. Y un nudo en cada extremo, siempre: te para antes de irte por la punta.
 
 Nunca te olvides del nudo. Mándaselo a quien baja contigo 👇
 
