@@ -16,9 +16,9 @@ export const Roca: React.FC<{ y0: number; y1: number; x0?: number }> = ({ y0, y1
   for (let y = y0; y <= y1; y += 40) pts.push(`${bordeX(y, x0).toFixed(1)} ${y}`);
   return (
     <g>
-      <defs><linearGradient id="rocaG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor={t.cara} /><stop offset="0.45" stopColor={t.caraS} /><stop offset="1" stopColor={t.roca} /></linearGradient></defs>
+      <defs><linearGradient id="rocaG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#6A7B93" /><stop offset="0.45" stopColor="#4C5B73" /><stop offset="1" stopColor="#37445A" /></linearGradient></defs>
       <path d={`M${pts.join(" L")} L1300 ${y1} L1300 ${y0} Z`} fill="url(#rocaG)" />
-      <path d={`M${pts.join(" L")}`} fill="none" stroke="#0B1624" strokeOpacity={0.35} strokeWidth={10} />
+      <path d={`M${pts.join(" L")}`} fill="none" stroke="#0B1624" strokeOpacity={0.35} strokeWidth={10} /><path d={`M${pts.join(" L")}`} fill="none" stroke="#F0B27A" strokeOpacity={0.5} strokeWidth={5} transform="translate(-5 0)" />
       {Array.from({ length: Math.ceil((y1 - y0) / 90) }).map((_, i) => {
         const y = y0 + i * 90 + random(`g${i}`) * 60, x = bordeX(y, x0) + 40 + random(`gx${i}`) * 260;
         return <path key={i} d={`M${x} ${y} l${20 + random(`gl${i}`) * 50} ${40 + random(`gh${i}`) * 70}`} stroke="#0B1624" strokeOpacity={0.22} strokeWidth={4} fill="none" strokeLinecap="round" />;
@@ -81,3 +81,52 @@ export const Puno: React.FC<{ x: number; y: number; s?: number; manga?: [number,
     <rect x={-56} y={60} width={150} height={26} rx={13} fill="#34425A" opacity={0.7} />
   </g>
 );
+
+/** Cielo de hora azul con peñones lejanos y brillo cálido en el horizonte (fijo, no se desplaza con la cámara). */
+export const CieloNubes: React.FC = () => (
+  <g>
+    <defs>
+      <linearGradient id="cnS" gradientUnits="userSpaceOnUse" x1="0" y1={-300} x2="0" y2={1700}><stop offset="0" stopColor="#0F1B38" /><stop offset="0.5" stopColor="#2E4676" /><stop offset="0.85" stopColor="#E59A6A" /><stop offset="1" stopColor="#F7D3A0" /></linearGradient>
+      <radialGradient id="cnG"><stop offset="0" stopColor="#FFE2B0" stopOpacity="0.9" /><stop offset="1" stopColor="#FFE2B0" stopOpacity="0" /></radialGradient>
+    </defs>
+    <rect x={-300} y={-500} width={1680} height={2800} fill="url(#cnS)" />
+    <circle cx={200} cy={1420} r={420} fill="url(#cnG)" />
+    {[[40, 1500, 180], [330, 1500, 120], [560, 1500, 230], [860, 1500, 150], [1060, 1500, 200]].map(([x, y, h], i) => <path key={i} d={`M${x - 190} ${y} L${x - 20 + random(`pk${i}`) * 40} ${y - h} L${x + 190} ${y} Z`} fill="#2A3558" opacity={0.85} />)}
+  </g>
+);
+
+/** Mar de nubes: tres capas en y de mundo. */
+export const MarNubes: React.FC<{ y: number }> = ({ y }) => {
+  const capa = (y0: number, amp: number, seed: string, fill: string) => {
+    const pts: [number, number][] = [];
+    for (let x = -240; x <= 1320; x += 130) pts.push([x, y0 - amp * random(`${seed}${x}`)]);
+    let d = `M-300 ${y0 + 1400} L${pts[0][0]} ${pts[0][1]}`;
+    pts.forEach((p, i) => { const q = pts[i + 1] ?? p; d += ` Q${p[0]} ${p[1] - 26} ${(p[0] + q[0]) / 2} ${(p[1] + q[1]) / 2}`; });
+    return <path d={d + ` L1400 ${y0 + 1400} Z`} fill={fill} />;
+  };
+  return <g>{capa(y - 40, 60, "na", "#9AA9C6")}{capa(y + 40, 70, "nb", "#CFD8EA")}{capa(y + 150, 80, "nc", "#EEF2F9")}</g>;
+};
+
+/** Pilar de roca visto de frente (el cielo se ve a los lados), en y de mundo. */
+export const xIzq = (y: number) => 170 + 18 * Math.sin(y / 140) + 10 * Math.sin(y / 47), xDer = (y: number) => 930 + 20 * Math.sin(y / 170 + 1) + 9 * Math.sin(y / 53);
+export const Muro: React.FC<{ y0: number; y1: number }> = ({ y0, y1 }) => {
+  const L: string[] = [], R: string[] = [];
+  for (let y = y0; y <= y1; y += 40) { L.push(`${xIzq(y).toFixed(1)} ${y}`); R.unshift(`${xDer(y).toFixed(1)} ${y}`); }
+  const d = `M${L.join(" L")} L${R.join(" L")} Z`;
+  return (
+    <g>
+      <defs>
+        <linearGradient id="muroG" gradientUnits="userSpaceOnUse" x1="0" y1={y0} x2="0" y2={y1}><stop offset="0" stopColor="#74869E" /><stop offset="0.6" stopColor="#52627A" /><stop offset="1" stopColor="#38455B" /></linearGradient>
+        <linearGradient id="muroL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#F0B27A" stopOpacity="0.34" /><stop offset="0.3" stopColor="#F0B27A" stopOpacity="0" /><stop offset="0.75" stopColor="#0B1624" stopOpacity="0" /><stop offset="1" stopColor="#0B1624" stopOpacity="0.5" /></linearGradient>
+        <clipPath id="pilar"><path d={d} /></clipPath>
+      </defs>
+      <path d={d} fill="url(#muroG)" />
+      <g clipPath="url(#pilar)">
+        {Array.from({ length: 16 }).map((_, i) => { let x = 200 + random(`cx${i}`) * 720, y = y0 + random(`cy${i}`) * (y1 - y0) * 0.85, p = `M${x} ${y}`; for (let k = 0; k < 6; k++) { x += -30 + random(`ck${i}${k}`) * 60; y += 70 + random(`cd${i}${k}`) * 70; p += ` L${x} ${y}`; } return <path key={i} d={p} stroke="#202A3A" strokeOpacity={0.5} strokeWidth={5} fill="none" strokeLinecap="round" strokeLinejoin="round" />; })}
+        {Array.from({ length: 26 }).map((_, i) => { const x = 220 + random(`fx${i}`) * 680, y = y0 + random(`fy${i}`) * (y1 - y0), w = 50 + random(`fw${i}`) * 110; return <path key={i} d={`M${x} ${y} l${w} ${-12} l${w * 0.4} ${34} l${-w * 0.7} ${26} Z`} fill="#8EA0B8" opacity={0.2} />; })}
+        <rect x={100} y={y0} width={900} height={y1 - y0} fill="url(#muroL)" />
+      </g>
+      <path d={`M${L.join(" L")}`} fill="none" stroke="#F0B27A" strokeOpacity={0.6} strokeWidth={6} />
+    </g>
+  );
+};

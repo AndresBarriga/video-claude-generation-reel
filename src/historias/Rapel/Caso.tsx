@@ -1,8 +1,7 @@
 // 2 · El caso real: silueta sin cara en una pared enorme; el saco atascado queda lejos del extremo; primer plano del reverso; la silueta sale de plano.
 import React from "react";
 import { Easing, useCurrentFrame } from "remotion";
-import { Cielo } from "../Pegue/comun";
-import { Anclaje, Chip, Cuerda, Extremo, H_DIA, Roca, Rotulo, Silueta, Suelo, Svg, bordeX, ei, type P, Camara } from "./comun";
+import { Anclaje, Chip, CieloNubes, Cuerda, Extremo, MarNubes, Roca, Rotulo, Silueta, Svg, bordeX, ei, type P, Camara } from "./comun";
 import { Macro } from "./Extremo";
 
 const ENDY = 1400, BAGY = 1690, X0 = 560;
@@ -21,10 +20,10 @@ export const Caso: React.FC<P> = ({ d, pal }) => {
   return (
     <Camara d={d} empuje={0.015} entrada={false}>
       <Svg>
-        <Cielo h={H_DIA} id="cieloC" />
+        <CieloNubes />
         <g transform={`translate(0 ${-cam})`}>
           <Roca y0={-200} y1={2600} />
-          <Suelo y={2450} />
+          <MarNubes y={2060} />
           <Anclaje x={680} y={-60} />
           <Cuerda d={`M674 -40 L${X0 + 36} ${hip - 30}`} w={11} />
           <Cuerda d={`M${X0 + 36} ${hip - 30} C${X0 + 50} ${hip + 100} ${X0 + 20 + sw} ${ENDY - 160} ${X0 + 28 + sw} ${ENDY}`} w={11} />
