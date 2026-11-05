@@ -61,3 +61,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-03 | E39 vídeo | terminado | 5 | Humor depende de la voz, lámina abstracta con jerga, final adivinable y cierre largo; nicho estrecho |
 | 2026-11-05 | Balin Miller (rapel) | propuesta | 5 | historia ajena en 3.ª persona, gancho sin apuro del espectador, lección con final adivinable (v3 abre con el espectador y quita «de rutina») |
 | 2026-11-05 | Balin Miller (rapel) v4 | propuesta | 5,5 (viralidad 9/14, gancho 6) | Gancho resuelve el final en s 8; «eso le pasó» afirma lo que solo dice un testigo con NPS investigando; silueta dramatiza una caída; consejo adivinable |
+| 2026-11-05 | E46 v5→v6 | guion | sin nota (revisión de errores, nuevo rol) | «sin darse cuenta»/«porque se fían» no verificados; «se vio en directo» → «se emitió»; rehook sin dato → Gobright 2019; regla cuerda doblada + nudo en los dos extremos |
