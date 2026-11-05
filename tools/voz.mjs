@@ -95,8 +95,8 @@ if (simulado) {
     metodo = `audio ${dur.toFixed(1)} s, tiempos con Whisper`;
   } else {
     // Intento 2: alinear las pausas del audio con la puntuación del guion (sin Whisper)
-    const frasesAuto = guion.pausaFrase ? guion.escenas.flatMap((e) => e.texto.trim().split(/(?<=[.!?:])\s+/).map((f) => f.split(/\s+/).length)) : guion.frases;
-    const { tiempos: t2, pareja } = alinear(destino, palabrasGuion, dur, frasesAuto, guion.pausaFrase ? guion.pausaFrase * 0.7 : undefined);
+    const frasesAuto = (guion.frases && guion.frasesManual) ? guion.frases : guion.pausaFrase ? guion.escenas.flatMap((e) => e.texto.trim().split(/(?<=[.!?:])\s+/).map((f) => f.split(/\s+/).length)) : guion.frases;
+    const { tiempos: t2, pareja } = alinear(destino, palabrasGuion, dur, frasesAuto, guion.minSilencio ?? (guion.pausaFrase ? guion.pausaFrase * 0.7 : undefined));
     tiempos = t2;
     metodo = `audio ${dur.toFixed(1)} s, tiempos por pausas (${pareja.size} frases ancladas; Whisper daría precisión por palabra)`;
   }
