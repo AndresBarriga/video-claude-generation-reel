@@ -1,0 +1,22 @@
+{
+ "id": "E46",
+ "titulo": "¿Llega tu cuerda?",
+ "nicho": "escalada",
+ "plantilla": "Rapel",
+ "verificado": true,
+ "fuentes": [
+  "AP / Fox News / Daily Beast / Daily Dot: Balin Miller, El Capitán, 1-oct-2025 (testigo Tom Evans; NPS investiga)",
+  "American Alpine Club, ANAM: Rappel Error – Uneven Ropes, No Stopper Knots (Brad Gobright, 2019)",
+  "Climbing.com: rappelling errors and fatalities (Karr, familiaridad)",
+  "Petzl: multi-pitch rappelling with a single rope (nudo en el extremo)"
+ ],
+ "nota_rigor": "Caso atribuido a un testigo; el NPS no ha publicado informe. Cuerda doblada = más del doble del rapel (regla general). Gobright: análisis del AAC dice «strongly suggests»; en el vídeo solo «un rapel parecido».",
+ "escenas": [
+  { "tipo": "gancho", "visual": "gancho", "texto": "Estás en el último rapel del día. Tu cuerda no llega al suelo. Y todavía no lo sabes.", "pausa": 0.3 },
+  { "tipo": "texto", "visual": "caso", "texto": "Balin Miller tenía veintitrés años. Según un testigo, la cuerda no llegaba al saco atascado, él parecía no saberlo, y en el descenso se fue por el extremo. Se emitió por TikTok.", "pausa": 1.0 },
+  { "tipo": "texto", "visual": "gobright", "texto": "Y no es cosa de novatos: en dos mil diecinueve murió Brad Gobright, de los mejores del mundo, en un rapel parecido.", "pausa": 0.3 },
+  { "tipo": "texto", "visual": "regla", "texto": "Antes de bajar, que la cuerda llegue. Si bajas con ella doblada, tiene que medir más del doble del rapel. Y un nudo en los dos extremos.", "pausa": 0.3 },
+  { "tipo": "cierre", "visual": "cierre", "texto": "¿Cuánto mide la tuya?" }
+ ],
+ "frases": [7, 6, 5, 5, 11, 4, 9, 4, 6, 16, 3, 4, 13, 7, 4]
+}

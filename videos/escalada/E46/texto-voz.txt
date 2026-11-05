@@ -1,7 +1,1 @@
-Estás en el último rapel del día. Tu cuerda no llega al suelo. Y todavía no lo sabes.
-Balin Miller tenía veintitrés años. Según un testigo, la cuerda no llegaba al saco atascado, él parecía no saberlo, y en el descenso se fue por el extremo. Se emitió por TikTok.
-[pausa 1 s]
-Y no es cosa de novatos: en 2019 murió Brad Gobright, de los mejores del mundo, en un rapel parecido.
-Antes de bajar, que la cuerda llegue. Si bajas con ella doblada, tiene que medir más del doble del rapel. Y un nudo en los dos extremos.
-¿Cuánto mide la tuya?
-[rótulo final: Mándaselo a quien baja contigo]
+Estás en el último rapel del día. Tu cuerda no llega al suelo. Y todavía no lo sabes. <break time="0.3s" /> Balin Miller tenía veintitrés años. Según un testigo, la cuerda no llegaba al saco atascado, él parecía no saberlo, y en el descenso se fue por el extremo. Se emitió por TikTok. <break time="1s" /> Y no es cosa de novatos: en dos mil diecinueve murió Brad Gobright, de los mejores del mundo, en un rapel parecido. <break time="0.3s" /> Antes de bajar, que la cuerda llegue. Si bajas con ella doblada, tiene que medir más del doble del rapel. Y un nudo en los dos extremos. <break time="0.3s" /> ¿Cuánto mide la tuya?

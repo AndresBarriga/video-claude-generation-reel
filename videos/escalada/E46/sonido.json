@@ -1,0 +1,9 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  { "nombre": "viento", "inicio": { "escena": 0 }, "volumen": 0.3, "bucle": true, "fundido": [0.3, 0.6] },
+  { "nombre": "crujido", "inicio": { "escena": "caso", "palabra": "descenso" }, "duracion": 2.2, "volumen": 0.35 },
+  { "nombre": "roce", "inicio": { "escena": "caso", "palabra": "extremo." }, "duracion": 0.8, "volumen": 0.8, "ignoraSilencio": true },
+  { "silencio": true, "inicio": { "escena": "caso", "palabra": "TikTok." , "mas": 0.7 }, "duracion": 1.3 }
+ ]
+}
