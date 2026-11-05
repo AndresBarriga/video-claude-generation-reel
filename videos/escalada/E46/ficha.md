@@ -11,11 +11,11 @@
 
 ## Publicación
 **Descripción:**
-Antes de bajar en rapel: comprueba que la cuerda llega a la siguiente reunión (la próxima parada con anclajes), no al suelo. Con la cuerda doblada, tiene que medir más del doble de esa distancia. Y un nudo en cada extremo: te para antes de irte por la punta.
+Antes de bajar en rapel: comprueba que la cuerda llega a la siguiente reunión (la próxima parada con anclajes), no al suelo. Con la cuerda doblada, tiene que medir más del doble de esa distancia. Y un nudo en cada extremo, sobre todo cuando estás cansado: te para antes de irte por la punta.
 
 Nunca te olvides del nudo. Mándaselo a quien baja contigo 👇
 
-Caso: Balin Miller, El Capitán (1-oct-2025). Según un testigo, la cuerda no llegaba al saco atascado y se fue por el extremo; el Servicio de Parques investiga. Brad Gobright (2019): análisis del American Alpine Club sobre extremos desiguales y rapel sin nudos. Fuentes: AP, Fox News, Daily Beast, Daily Dot, American Alpine Club (ANAM), Petzl.
+Caso: Balin Miller, El Capitán (1-oct-2025). Según un testigo, bajaba en rapel con una cuerda que se quedó corta y se fue por el extremo; el Servicio de Parques investiga. Brad Gobright (2019): análisis del American Alpine Club sobre extremos desiguales y rapel sin nudos. Fuentes: AP, Fox News, Daily Beast, Daily Dot, American Alpine Club (ANAM), Petzl.
 
 **Comentario fijado:** ¿Haces siempre el nudo en los dos extremos? Etiqueta a quien baja contigo y no lo hace.
 **Hashtags:** #escalada #rapel #seguridadenescalada #nudo #escaladaespañola

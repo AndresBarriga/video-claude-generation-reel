@@ -21,7 +21,7 @@
     {
       "tipo": "texto",
       "visual": "caso",
-      "texto": "Balin Miller tenía veintitrés años. Según un testigo, la cuerda no llegaba al saco atascado, él parecía no saberlo, y en el descenso se fue por el extremo. Se emitió en directo por TikTok.",
+      "texto": "Balin Miller tenía veintitrés años. Según un testigo, bajaba en rapel con una cuerda que se quedó corta, y se fue por el extremo. Se emitió en directo por TikTok.",
       "pausa": 1.0
     },
     {
@@ -39,29 +39,8 @@
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "texto": "Y un nudo en cada extremo, para que te pare antes de irte por la punta."
+      "texto": "Y un nudo en cada extremo, sobre todo cuando estás cansado: te para antes de irte por la punta. Nunca te olvides del nudo."
     }
   ],
-  "pausaFrase": 0.4,
-  "frases": [
-    13,
-    6,
-    5,
-    3,
-    7,
-    4,
-    9,
-    6,
-    7,
-    16,
-    3,
-    9,
-    5,
-    5,
-    9,
-    6,
-    10
-  ],
-  "frasesManual": true,
-  "minSilencio": 0.22
+  "pausaFrase": 0.4
 }

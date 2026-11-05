@@ -28,7 +28,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
 
 export const Cierre: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fNudo = pal("nudo") ?? 8, fPare = pal("pare") ?? 80, fOlvides = (pal("punta") ?? 120) + 12;
+  const fNudo = pal("nudo") ?? 8, fPare = pal("pare") ?? 80, fOlvides = pal("Nunca") ?? 140;
   const fStop = fPare + 6;
   const rebote = f > fStop ? 12 * Math.exp(-(f - fStop) / 7) * Math.sin((f - fStop) * 0.85) : 0;
   const baja = ei(f, 0, fStop, 340, 434, Easing.in(Easing.quad)) + rebote;
