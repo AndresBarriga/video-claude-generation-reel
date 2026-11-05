@@ -39,7 +39,7 @@
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "texto": "Y un nudo en cada extremo, para que te pare antes de irte por la punta. ¿Cuántos metros tiene tu cuerda?"
+      "texto": "Y un nudo en cada extremo, para que te pare antes de irte por la punta. Nunca te olvides del nudo."
     }
   ],
   "pausaFrase": 0.4,
@@ -47,13 +47,13 @@
     13,
     6,
     5,
-    10,
+    3,
+    7,
     4,
     9,
     6,
     7,
-    12,
-    4,
+    16,
     3,
     9,
     5,
