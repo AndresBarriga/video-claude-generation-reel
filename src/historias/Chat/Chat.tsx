@@ -40,6 +40,7 @@ export const PantallaChat: React.FC<{ f: number; enviado?: boolean }> = ({ f, en
       <Burbuja x={0} y={700} yo t="¿Escalamos mañana?" />
       <Burbuja x={44} y={806} t="Uf, no puedo, tengo planes." />
       {enviadoYa && <Burbuja x={0} y={912} yo t="No pasa nada" smiley esc={esc} />}
+      {enviadoYa && <text x={1030} y={1020} textAnchor="end" fontFamily={UI} fontWeight={500} fontSize={30} fill="#8DA0B5" opacity={enviado ? 1 : ei(f, T_ENVIO * 30 + 10, T_ENVIO * 30 + 22, 0, 1)}>Entregado</text>}
       <rect x={40} y={1215} width={850} height={86} rx={43} fill="#1E2936" />
       {!enviadoYa && <text x={86} y={1272} fontFamily={UI} fontWeight={500} fontSize={44} fill="#fff">{texto}</text>}
       {!enviadoYa && t >= T_SMILE && <Smiley x={86 + texto.length * 25 + 16} y={1258} r={21} />}

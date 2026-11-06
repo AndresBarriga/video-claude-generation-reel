@@ -1,4 +1,4 @@
-// Pantallas de las apps (1080×1920): tiempo, rutas de montaña y mapa. Genéricas, sin marcas.
+// Pantallas de las apps (1080×1920): tiempo y senderismo (tipo Wikiloc, genérica).
 import React from "react";
 import { NARANJA, UI } from "./comun";
 
@@ -29,36 +29,23 @@ export const Tiempo: React.FC = () => (
   </g>
 );
 
+/** App de rutas a pie: terreno con relieve, track naranja, estadísticas y perfil de altitud. */
 export const Rutas: React.FC = () => (
   <g>
-    <rect width={1080} height={1920} fill="#E8EEE0" />
-    {[0, 1, 2, 3, 4, 5, 6].map((i) => <path key={i} d={`M${-60 + i * 30} ${420 + i * 150} C${260} ${300 + i * 150} ${620} ${620 + i * 110} ${1140} ${380 + i * 150}`} stroke="#C6D3B8" strokeWidth={5} fill="none" />)}
-    {[0, 1, 2, 3].map((i) => <ellipse key={i} cx={760} cy={900} rx={90 + i * 80} ry={60 + i * 62} fill="none" stroke="#C0CEB0" strokeWidth={5} />)}
-    <path d="M-40 1380 C260 1260 460 1500 1120 1240" stroke="#9FD0E6" strokeWidth={46} fill="none" />
-    <path d="M200 1500 C260 1300 360 1180 480 1120 C640 1040 600 880 760 800 C860 750 900 640 860 560" stroke={NARANJA} strokeWidth={16} fill="none" strokeLinecap="round" strokeDasharray="1 0" />
-    <circle cx={200} cy={1500} r={26} fill="#fff" stroke={NARANJA} strokeWidth={10} /><circle cx={860} cy={560} r={30} fill={NARANJA} />
-    <rect x={40} y={110} width={1000} height={120} rx={60} fill="#fff" /><circle cx={110} cy={170} r={22} fill="none" stroke="#6B7A5C" strokeWidth={7} /><path d="M126 186 L146 206" stroke="#6B7A5C" strokeWidth={7} strokeLinecap="round" />
-    <text x={180} y={186} fontFamily={UI} fontWeight={500} fontSize={46} fill="#2B3A22">El Balcón, Chulilla</text>
-    <rect x={40} y={1470} width={1000} height={380} rx={44} fill="#fff" />
-    <rect x={80} y={1510} width={230} height={230} rx={28} fill="#C9A06E" /><path d="M80 1700 L170 1580 L230 1650 L270 1610 L310 1740 L80 1740Z" fill="#9A7447" />
-    <text x={350} y={1565} fontFamily={UI} fontWeight={700} fontSize={50} fill="#1D2B16">Aproximación al sector</text>
-    <text x={350} y={1630} fontFamily={UI} fontWeight={500} fontSize={42} fill="#5B6B4E">0,7 km  ·  55 m de desnivel</text>
-    <rect x={350} y={1672} width={290} height={84} rx={42} fill={NARANJA} /><text x={495} y={1730} textAnchor="middle" fontFamily={UI} fontWeight={700} fontSize={42} fill="#fff">Ver ruta</text>
-  </g>
-);
-
-export const Mapa: React.FC = () => (
-  <g>
-    <rect width={1080} height={1920} fill="#1B2733" />
-    {[[0, 300, 1080, 420], [0, 700, 1080, 640], [0, 1000, 1080, 980], [200, 0, 280, 1920], [620, 0, 700, 1920], [900, 0, 840, 1920]].map(([a, b, c, d], i) => <path key={i} d={`M${a} ${b} L${c} ${d}`} stroke="#2E3F50" strokeWidth={i < 3 ? 30 : 22} />)}
-    <path d="M-40 1250 C240 1100 330 1160 470 980 C640 780 560 560 800 420 L900 330" stroke="#3D8BFF" strokeWidth={24} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx={110} cy={1230} r={24} fill="#fff" stroke="#3D8BFF" strokeWidth={10} />
-    <g transform="translate(900 330)"><path d="M0 0 C-36 -50 -52 -74 -52 -102 A52 52 0 1 1 52 -102 C52 -74 36 -50 0 0Z" fill="#E94B4B" /><circle cy={-102} r={20} fill="#fff" /></g>
-    <rect x={40} y={110} width={1000} height={200} rx={36} fill="#10181F" />
-    <text x={110} y={190} fontFamily={UI} fontWeight={500} fontSize={44} fill="#9FB1C4">Mi ubicación</text><text x={110} y={265} fontFamily={UI} fontWeight={700} fontSize={50} fill="#fff">Chulilla</text>
-    <rect y={1480} width={1080} height={440} rx={56} fill="#10181F" />
-    <text x={80} y={1610} fontFamily={UI} fontWeight={700} fontSize={110} fill="#5BD16F">1 h 05</text>
-    <text x={80} y={1690} fontFamily={UI} fontWeight={500} fontSize={46} fill="#9FB1C4">78 km  ·  ruta más rápida</text>
-    <rect x={640} y={1560} width={360} height={130} rx={65} fill="#3D8BFF" /><text x={820} y={1645} textAnchor="middle" fontFamily={UI} fontWeight={700} fontSize={54} fill="#fff">Empezar</text>
+    <defs>
+      <linearGradient id="rt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#DCE6C6" /><stop offset="0.5" stopColor="#C8D6A8" /><stop offset="1" stopColor="#B7C894" /></linearGradient>
+      <linearGradient id="rp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#FF6A1F" stopOpacity="0.55" /><stop offset="1" stopColor="#FF6A1F" stopOpacity="0.05" /></linearGradient>
+    </defs>
+    <rect width={1080} height={1920} fill="url(#rt)" />
+    <path d="M0 700 C260 560 520 740 1080 560 L1080 1180 C700 1300 360 1120 0 1260Z" fill="#B3C48C" opacity={0.7} /><path d="M0 1260 C360 1120 700 1300 1080 1180 L1080 1500 L0 1500Z" fill="#9FB478" opacity={0.7} />
+    {Array.from({ length: 12 }, (_, i) => <path key={i} d={`M-40 ${300 + i * 105} C260 ${220 + i * 105} 700 ${420 + i * 90} 1120 ${260 + i * 110}`} stroke="#8FA46E" strokeWidth={i % 4 === 0 ? 5 : 3} fill="none" opacity={0.7} />)}
+    <path d="M80 1340 C300 1260 520 1280 760 1200 C960 1130 1040 1000 1000 900" stroke="#7FBBE0" strokeWidth={30} fill="none" opacity={0.9} />
+    <path d="M180 1110 C260 960 380 900 500 800 C640 690 700 760 820 640 C900 560 880 470 760 420" stroke="#fff" strokeWidth={26} fill="none" strokeLinecap="round" strokeLinejoin="round" /><path d="M180 1110 C260 960 380 900 500 800 C640 690 700 760 820 640 C900 560 880 470 760 420" stroke={NARANJA} strokeWidth={16} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx={180} cy={1110} r={28} fill="#2E9E4F" stroke="#fff" strokeWidth={8} /><circle cx={760} cy={420} r={28} fill="#E94B4B" stroke="#fff" strokeWidth={8} />
+    <rect width={1080} height={250} fill="#2E9E4F" /><text x={70} y={170} fontFamily={UI} fontWeight={700} fontSize={58} fill="#fff">Aproximación a El Balcón</text>
+    <rect y={1380} width={1080} height={540} rx={56} fill="#fff" />
+    {[["Distancia", "0,7 km"], ["Desnivel +", "55 m"], ["Tiempo", "20 min"]].map(([a, b], i) => <g key={a}><text x={90 + i * 330} y={1470} fontFamily={UI} fontWeight={500} fontSize={38} fill="#6B7A5C">{a}</text><text x={90 + i * 330} y={1540} fontFamily={UI} fontWeight={700} fontSize={64} fill="#1D2B16">{b}</text></g>)}
+    <path d="M90 1830 L90 1730 C220 1750 300 1650 440 1680 C620 1720 700 1600 840 1610 C920 1616 960 1580 990 1560 L990 1830Z" fill="url(#rp)" /><path d="M90 1730 C220 1750 300 1650 440 1680 C620 1720 700 1600 840 1610 C920 1616 960 1580 990 1560" stroke={NARANJA} strokeWidth={8} fill="none" />
+    <path d="M90 1830 L990 1830" stroke="#D5DBC9" strokeWidth={4} />
   </g>
 );

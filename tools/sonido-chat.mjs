@@ -33,5 +33,19 @@ export function recetasChat(u) {
       mezclar(out, env(biquad(ruido(Math.round(0.2 * SR), 91), "bp", 1800, 0.9), (s) => Math.exp(-s * 30)), 0, 0.4);
       return normalizar(out, 0.6);
     },
+    /** Cerrar una app: tirón hacia arriba, aire corto y agudo. */
+    cierra() {
+      const out = buf(0.5);
+      mezclar(out, env(biquad(ruido(Math.round(0.3 * SR), 111), "bp", (t) => 3800 - 2600 * Math.min(1, t / 0.25), 0.9), (s) => Math.min(1, s / 0.02) * Math.exp(-s * 12)), 0, 0.7);
+      mezclar(out, env(seno(0.12, (t) => 420 + 700 * t / 0.1), (s) => Math.exp(-s * 40)), 0.02, 0.25);
+      return normalizar(out, 0.55);
+    },
+    /** Final resignado: dos notas suaves que bajan. */
+    triste() {
+      const out = buf(2.2);
+      mezclar(out, env(seno(1.4, 392), (s) => Math.min(1, s / 0.03) * Math.exp(-s * 2.6)), 0, 0.5);
+      mezclar(out, env(seno(1.6, 311), (s) => Math.min(1, s / 0.03) * Math.exp(-s * 2.2)), 0.55, 0.5);
+      return normalizar(out, 0.4);
+    },
   };
 }

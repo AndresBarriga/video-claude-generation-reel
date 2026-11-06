@@ -8,3 +8,7 @@
 ## Publicación
 **Descripción:** Hay planes que se cancelan y planes que no. 🙂 ¿Cuál fue tu mejor «tengo planes»?
 **Hashtags:** #escalada #escaladaespañola #climbing #humorescalada
+
+
+## v2 (6-nov)
+Cambios tras feedback: apps que se cierran una a una (tirón hacia arriba), topo claro del sector, Maps y Música más realistas, app tipo Wikiloc añadida, foto mejorada, toque resignado ("Entregado", pantalla que se apaga, dos notas descendentes). ~16,3 s.

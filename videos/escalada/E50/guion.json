@@ -6,7 +6,7 @@
   "mudo": true,
   "verificado": true,
   "fuentes": [],
-  "nota": "Test de formato: réplica del mecanismo de un reel ajeno (rechazo educado → desfile de apps → va igualmente). Sin voz, 15,5 s. Interfaz genérica sin marcas.",
+  "nota": "Test de formato: réplica del mecanismo de un reel ajeno (rechazo educado → apps que se cierran una a una → va igualmente). Sin voz, ~16 s. Interfaz genérica sin marcas.",
   "escenas": [
     {
       "tipo": "texto",
@@ -17,7 +17,7 @@
     {
       "tipo": "texto",
       "visual": "tira",
-      "dur": 11,
+      "dur": 11.7,
       "texto": ""
     }
   ]
