@@ -42,6 +42,19 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 Descartadas: E32, E6-D (duplicado), «Estancado por meses» (repetía el contador de E6), Ralston.
 
 
+## PRÓXIMAS, en orden (análisis de Claude, 6-nov; criterio: caso real + «tú» inmediato + dilema + universal; sin notas numéricas)
+| # | Idea | Caso real | Dilema | Tú | 🌍 | Qué falta |
+|---|---|---|---|---|---|---|
+| 1 | **Kalymnos: la reunión que se rompió** (anclajes rotos) | sí, 27-mar-2026 | no | sí (todo el que limpia una vía) | no | Verificar informe y estado de la investigación; sin nombre, sin cuerpo |
+| 2 | **Caldwell «Las dos decisiones»** (2000 secuestro / 2015 Dawn Wall) | sí | sí (doble) | sí | sí | Notas ya hechas (#16); verificar cifras |
+| 3 | **Everest 2006 «¿Te paras?»** (E34) | sí | sí | sí | sí | Propuesta existente (crítico 6): subir a ≥7 |
+| 4 | **Ochoa de Olza, Annapurna 2008** (España) | sí | sí («¿te quedarías?») | sí | sí | Verificar; sensible (familia) |
+| 5 | **E41 Factor de caída** | falta caso | no | sí | no | Buscarle un caso o titular (sin él, riesgo tipo E39/E42) |
+| 6 | **Asegurador sale disparado** | falta caso | no | sí | no | Verificar física; buscar caso |
+| 7 | **Dilema social: desconocido sin nudo** | no | sí | sí | no | Prueba de comentarios |
+| 8 | Revol/Mackiewicz · Messner 1970 | sí | sí | sí | sí | Verificar |
+**Kalymnos (hechos con fuente, 6-nov):** 27-mar-2026, escalador checo de 60 años, vía St. Savvas (7b+), sector Jurassic Park, equipada en 2002; limpiando la vía al bajar, soltó la segunda cinta antes de la reunión y fallaron la reunión y el seguro siguiente (triple fallo); Rebolt Kalymnos: «el escalador no hizo nada mal»; informe preliminar (David Reeve, 8a.nu, 9-jun): sospecha de defecto del anclaje, no de corrosión por sulfato; rescate criticado. Fuentes: Planetmountain, Lacrux, Vertige Media, Explorersweb, 8a.nu. Ojo: investigación y conclusiones preliminares; una atribución por vídeo.
+
 ## A. Dilema y decisión límite (H1, H12)
 _Origen: Andrés / Claude, 6-nov_
 - **Dilema social: el desconocido sin nudo** (propuesta de Claude, 6-nov): ves a alguien encordado sin nudo de seguridad, ¿le dices algo? Pensado para generar reparto de opiniones. Sin verificar ni guion.
