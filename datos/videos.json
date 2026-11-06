@@ -1,94 +1,98 @@
 {
- "E15": {
-  "corto": "¿Cortas?",
-  "desc": "Tocando el vacío: tu amigo cuelga de tu cuerda, ¿cortas? Dilema de vida o muerte."
- },
- "E11": {
-  "corto": "Pierna de Elvis",
-  "desc": "Las 5 fases de la pierna de Elvis: por qué te tiembla la pierna al mirar abajo."
- },
- "E6": {
-  "corto": "Último pegue",
-  "desc": "Humor de bloque: el «último pegue» que nunca es el último; yemas rotas, batería 40→1 %."
- },
- "E14": {
-  "corto": "Honnold",
-  "desc": "Honnold sin cuerda en El Capitán: 884 m y su amígdala ni se enciende. Abre en una escalera de mano."
- },
- "E30": {
-  "corto": "Beta no pedida",
-  "desc": "Tres colegas te dan betas contradictorias y encadenas ignorándolos. Remate: «yo no he dicho nada»."
- },
- "E36": {
-  "corto": "Hippies y avión",
-  "desc": "Stonemasters: escaladores pobres, un avión con marihuana, LSD y Midnight Lightning."
- },
- "E35": {
-  "corto": "¿Te quedas?",
-  "desc": "Decisiones límite #2 (Grossglockner), en «tú»: ¿te quedas con tu novia o bajas a por ayuda? El helicóptero, el WhatsApp y la condena."
- },
- "E3": {
-  "corto": "Escalador→Español",
-  "desc": "Traductor de jerga: «es un quinto», «un cazo», «te porteo». Lo que dice un escalador vs lo que significa."
- },
- "E31": {
-  "corto": "Cepillar presas",
-  "desc": "Ritual de cepillar presas, estilo ASMR. Sin publicar (crítico 5,5)."
- },
- "E31B": {
-  "corto": "Cepillar presas B",
-  "desc": "Variante de E31 con rótulo."
- },
- "E32": {
-  "corto": "Cepillar presas (descartado)",
-  "desc": "Otra versión de cepillar presas; relleno, descartada."
- },
- "E34": {
-  "corto": "Everest ¿te paras?",
-  "desc": "Propuesta: en el Everest, ¿te paras a ayudar a alguien que se muere? (crítico 6)."
- },
- "E6-D": {
-  "corto": "Último pegue (inicio D)",
-  "desc": "Variante de inicio de E6; duplicado, descartada."
- },
- "E35B": {
-  "corto": "¿Te quedas? (3.ª persona)",
-  "desc": "Misma historia que E35 contada en 3.ª persona, como reel de prueba para comparar el skip con la versión en «tú»."
- },
- "E37": {
-  "corto": "¿En qué pensaste al caer?",
-  "desc": "Cuerpo #2: en una caída de 10 m (~1,4 s) te dio tiempo a pensar en tu hipoteca. Humor + el dato del +36 % de memoria; secuela de E11."
- },
- "E38": {
-  "corto": "Cero músculos en los dedos",
-  "desc": "Cuerpo #3: un chasquido en el dedo y la pregunta de quién falla; el antebrazo tira de los dedos con tendones y una anilla cede. Mano de rayos X con hilos naranjas."
- },
- "E40": {
-  "corto": "Caldwell: las dos decisiones",
-  "desc": "Decisiones límite #3, versión «plana»: Caldwell empuja a su guardia en el secuestro y, 15 años después, espera a su compañero atascado en la Dawn Wall."
- },
- "E41": {
-  "corto": "Factor de caída",
-  "desc": "Ella cae dos metros y la cuerda la frena en seco; él cae diez y lo frena suave: por qué la cuerda naranja funciona como muelle (factor de caída)."
- },
- "E39": {
-  "corto": "¿Qué ha crujido? (dedos)",
-  "desc": "Crac en el dedo: los dedos no tienen músculos que los cierren; el antebrazo tira de tendones y las poleas los pegan al hueso; la de la base carga más al arquear."
- },
- "E42": {
-  "corto": "La puerta",
-  "desc": "Estiras la mano y tu cuerpo se abre como una puerta: la bisagra entre mano y pie y tres formas de frenarla (mano y pie contrarios, contrapeso, cadera hacia la pared)."
- },
- "E43": {
-  "corto": "Fases del pump",
-  "desc": "Las cinco fases del pump en una vía: antebrazo de lado, corte interior (vasos, oxígeno, residuos), barra PUMP y AGARRE, y cuánto esperar entre intentos."
- },
- "E44": {
-  "corto": "Descansar en la vía",
-  "desc": "Chapa ocho, se te abren los dedos y hay un descanso que no ves: empotre de rodilla, bat hang y cómo buscarlos; el mismo intento con el descanso de la chapa cinco."
- },
- "E46": {
-  "corto": "¿Llega tu cuerda?",
-  "desc": "Último rapel del día y el extremo de tu cuerda cuelga lejos del suelo: el caso de Balin Miller (según un testigo), Gobright 2019, cuerda doblada = más del doble del rapel y nudo en los dos extremos."
- }
+  "E15": {
+    "corto": "¿Cortas?",
+    "desc": "Tocando el vacío: tu amigo cuelga de tu cuerda, ¿cortas? Dilema de vida o muerte."
+  },
+  "E11": {
+    "corto": "Pierna de Elvis",
+    "desc": "Las 5 fases de la pierna de Elvis: por qué te tiembla la pierna al mirar abajo."
+  },
+  "E6": {
+    "corto": "Último pegue",
+    "desc": "Humor de bloque: el «último pegue» que nunca es el último; yemas rotas, batería 40→1 %."
+  },
+  "E14": {
+    "corto": "Honnold",
+    "desc": "Honnold sin cuerda en El Capitán: 884 m y su amígdala ni se enciende. Abre en una escalera de mano."
+  },
+  "E30": {
+    "corto": "Beta no pedida",
+    "desc": "Tres colegas te dan betas contradictorias y encadenas ignorándolos. Remate: «yo no he dicho nada»."
+  },
+  "E36": {
+    "corto": "Hippies y avión",
+    "desc": "Stonemasters: escaladores pobres, un avión con marihuana, LSD y Midnight Lightning."
+  },
+  "E35": {
+    "corto": "¿Te quedas?",
+    "desc": "Decisiones límite #2 (Grossglockner), en «tú»: ¿te quedas con tu novia o bajas a por ayuda? El helicóptero, el WhatsApp y la condena."
+  },
+  "E3": {
+    "corto": "Escalador→Español",
+    "desc": "Traductor de jerga: «es un quinto», «un cazo», «te porteo». Lo que dice un escalador vs lo que significa."
+  },
+  "E31": {
+    "corto": "Cepillar presas",
+    "desc": "Ritual de cepillar presas, estilo ASMR. Sin publicar (crítico 5,5)."
+  },
+  "E31B": {
+    "corto": "Cepillar presas B",
+    "desc": "Variante de E31 con rótulo."
+  },
+  "E32": {
+    "corto": "Cepillar presas (descartado)",
+    "desc": "Otra versión de cepillar presas; relleno, descartada."
+  },
+  "E34": {
+    "corto": "Everest ¿te paras?",
+    "desc": "Propuesta: en el Everest, ¿te paras a ayudar a alguien que se muere? (crítico 6)."
+  },
+  "E6-D": {
+    "corto": "Último pegue (inicio D)",
+    "desc": "Variante de inicio de E6; duplicado, descartada."
+  },
+  "E35B": {
+    "corto": "¿Te quedas? (3.ª persona)",
+    "desc": "Misma historia que E35 contada en 3.ª persona, como reel de prueba para comparar el skip con la versión en «tú»."
+  },
+  "E37": {
+    "corto": "¿En qué pensaste al caer?",
+    "desc": "Cuerpo #2: en una caída de 10 m (~1,4 s) te dio tiempo a pensar en tu hipoteca. Humor + el dato del +36 % de memoria; secuela de E11."
+  },
+  "E38": {
+    "corto": "Cero músculos en los dedos",
+    "desc": "Cuerpo #3: un chasquido en el dedo y la pregunta de quién falla; el antebrazo tira de los dedos con tendones y una anilla cede. Mano de rayos X con hilos naranjas."
+  },
+  "E40": {
+    "corto": "Caldwell: las dos decisiones",
+    "desc": "Decisiones límite #3, versión «plana»: Caldwell empuja a su guardia en el secuestro y, 15 años después, espera a su compañero atascado en la Dawn Wall."
+  },
+  "E41": {
+    "corto": "Factor de caída",
+    "desc": "Ella cae dos metros y la cuerda la frena en seco; él cae diez y lo frena suave: por qué la cuerda naranja funciona como muelle (factor de caída)."
+  },
+  "E39": {
+    "corto": "¿Qué ha crujido? (dedos)",
+    "desc": "Crac en el dedo: los dedos no tienen músculos que los cierren; el antebrazo tira de tendones y las poleas los pegan al hueso; la de la base carga más al arquear."
+  },
+  "E42": {
+    "corto": "La puerta",
+    "desc": "Estiras la mano y tu cuerpo se abre como una puerta: la bisagra entre mano y pie y tres formas de frenarla (mano y pie contrarios, contrapeso, cadera hacia la pared)."
+  },
+  "E43": {
+    "corto": "Fases del pump",
+    "desc": "Las cinco fases del pump en una vía: antebrazo de lado, corte interior (vasos, oxígeno, residuos), barra PUMP y AGARRE, y cuánto esperar entre intentos."
+  },
+  "E44": {
+    "corto": "Descansar en la vía",
+    "desc": "Chapa ocho, se te abren los dedos y hay un descanso que no ves: empotre de rodilla, bat hang y cómo buscarlos; el mismo intento con el descanso de la chapa cinco."
+  },
+  "E46": {
+    "corto": "¿Llega tu cuerda?",
+    "desc": "Último rapel del día y el extremo de tu cuerda cuelga lejos del suelo: el caso de Balin Miller (según un testigo), Gobright 2019, cuerda doblada = más del doble del rapel y nudo en los dos extremos."
+  },
+  "E50": {
+    "corto": "No pasa nada (chat)",
+    "desc": "Test de formato sin voz, 15,5 s: te dicen «no puedo, tengo planes», respondes «no pasa nada» y al deslizar entre apps (tiempo, ruta, mapa, música, foto) tienes todo listo para ir a escalar igualmente. Réplica del mecanismo de un reel ajeno, con interfaz genérica y escenario propio."
+  }
 }

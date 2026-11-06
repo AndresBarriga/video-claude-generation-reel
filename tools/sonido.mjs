@@ -9,6 +9,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { carpetaVideo, raiz } from "./rutas.mjs";
 import { recetasCepillado } from "./sonido-cepillado.mjs";
+import { recetasChat } from "./sonido-chat.mjs";
 
 const SR = 44100;
 
@@ -226,6 +227,7 @@ const RECETAS = {
 };
 
 Object.assign(RECETAS, recetasCepillado({ SR, buf, ruido, biquad, mezclar, env, normalizar, nivelar, prng, seno }));
+Object.assign(RECETAS, recetasChat({ SR, buf, ruido, biquad, mezclar, env, normalizar, seno }));
 
 /* ---------- WAV ---------- */
 function escribirWav(ruta, b) {

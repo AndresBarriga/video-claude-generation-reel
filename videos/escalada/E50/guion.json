@@ -1,0 +1,24 @@
+{
+  "id": "E50",
+  "titulo": "No pasa nada (chat + deslizar apps)",
+  "nicho": "escalada",
+  "plantilla": "ChatRechazo",
+  "mudo": true,
+  "verificado": true,
+  "fuentes": [],
+  "nota": "Test de formato: réplica del mecanismo de un reel ajeno (rechazo educado → desfile de apps → va igualmente). Sin voz, 15,5 s. Interfaz genérica sin marcas.",
+  "escenas": [
+    {
+      "tipo": "texto",
+      "visual": "chat",
+      "dur": 4.5,
+      "texto": ""
+    },
+    {
+      "tipo": "texto",
+      "visual": "tira",
+      "dur": 11,
+      "texto": ""
+    }
+  ]
+}
