@@ -26,3 +26,8 @@ Gancho nuevo: cuenta atrás «QUEDAN 12→4 m» + latido + viñeta roja; «la si
 
 ## v10 (5-nov)
 Apertura con zoom al extremo de la cuerda; caída de 15 m grande con cámara que baja; cierre «NUNCA OLVIDES EL NUDO» sobre la figurita parada. Audio de Andrés recortado tras «…por la punta.» (+2 s de silencio) para no regrabar; si regraba con «Nunca te olvides del nudo.», restaurar esa frase en guion.json y `frases` (+5 palabras).
+
+## Resultado (6-nov 10:04, ~12 h)
+11.913 vistas, 8.255 espectadores, 31 s de media sobre 45 (≈69%), skip 20,6% (el mejor de la cuenta), 34 seguidores, 44 guardados, 249 me gusta, 13 reposts, 1 comentario. ≈3x un reel típico y subiendo. 81% llega por la pestaña Reels (público frío).
+**Lectura de la curva:** 100→≈83% a 3 s (gancho de la cuenta atrás funciona), meseta ≈72% de 0:10 a 0:18 (el caso retiene sin pérdida), bajada suave a ≈60% en 0:26 y ≈50% en 0:43 (zona Gobright→regla), caída final solo en los últimos 2 s. Picos de me gusta: gancho, 0:19 («en directo por TikTok» = el dato que la gente ya conoce) y el cierre del nudo.
+**Lo débil:** comentarios 0,0% y guardados/me gusta por espectador por debajo de lo típico; seguidores 0,29% de las vistas. Falta un mecanismo de envío hablado o en pantalla («mándaselo a quien baja contigo»).
