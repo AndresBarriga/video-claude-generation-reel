@@ -42,17 +42,31 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 Descartadas: E32, E6-D (duplicado), «Estancado por meses» (repetía el contador de E6), Ralston.
 
 
-## PRÓXIMAS, en orden (análisis de Claude, 6-nov; criterio: caso real + «tú» inmediato + dilema + universal; sin notas numéricas)
-| # | Idea | Caso real | Dilema | Tú | 🌍 | Qué falta |
-|---|---|---|---|---|---|---|
-| 1 | **Kalymnos: la reunión que se rompió** (anclajes rotos) | sí, 27-mar-2026 | no | sí (todo el que limpia una vía) | no | Verificar informe y estado de la investigación; sin nombre, sin cuerpo |
-| 2 | **Caldwell «Las dos decisiones»** (2000 secuestro / 2015 Dawn Wall) | sí | sí (doble) | sí | sí | Notas ya hechas (#16); verificar cifras |
-| 3 | **Everest 2006 «¿Te paras?»** (E34) | sí | sí | sí | sí | Propuesta existente (crítico 6): subir a ≥7 |
-| 4 | **Ochoa de Olza, Annapurna 2008** (España) | sí | sí («¿te quedarías?») | sí | sí | Verificar; sensible (familia) |
-| 5 | **E41 Factor de caída** | falta caso | no | sí | no | Buscarle un caso o titular (sin él, riesgo tipo E39/E42) |
-| 6 | **Asegurador sale disparado** | falta caso | no | sí | no | Verificar física; buscar caso |
-| 7 | **Dilema social: desconocido sin nudo** | no | sí | sí | no | Prueba de comentarios |
-| 8 | Revol/Mackiewicz · Messner 1970 | sí | sí | sí | sí | Verificar |
+## PRÓXIMAS, por objetivo (análisis de Claude, 6-nov; ganchos = candidatos, hechos por verificar)
+Criterios: **momento reconocible en 1 s** · **tú** · **algo en juego** · **mecanismo de envío (persona concreta) o de comentario (reparto real de opiniones)**. El titular/caso es solo UNA vía: E11 y E43 (los de más conversión y envíos) no tenían titular. Reparto buscado: alcance + seguidores + comentarios + seguridad.
+
+**1) Alcance (dilema y universales 🌍)**
+- Caldwell «Las dos decisiones» · Everest 2006 «¿Te paras?» (E34) · Ochoa de Olza (España) · Revol/Mackiewicz · Messner 1970. Dilema real con historia (H1: E15 y E35).
+- **E37 «¿En qué pensaste al caer?»** (cuerpo + cabeza, universal): «Caes 10 metros. Lo que piensa tu cabeza no es lo que crees».
+- **«Oyes un pop en el dedo a mitad de la vía. ¿Sigues?»** (nueva, dilema + cuerpo + momento): une poleas (E39 se quedó en 1,7k sin momento) con decisión. Salud: sin protocolos, «consulta a un fisio». Verificar qué es el «pop».
+
+**2) Seguidores y envíos (cuerpo e identidad con momento; el patrón de E11/E43/E30)**
+- **Secuela de Pierna de Elvis** (E11: 77k, 2,6 seg./1k, 1,7 % envíos): mismo mecanismo, otro gancho.
+- **«¿Y si no te da miedo caer, sino soltar?»** (#7) y **«Por qué hoy no te sale el paso de ayer»** (#9): momento universal del escalador; explicación por verificar.
+- **Aguantas la respiración justo en el paso duro** (nueva): momento muy reconocible; envío «al que se queda sin aire». Verificar fisiología.
+- **La piel de los dedos que se abre en el último pegue** (nueva): cuerpo + identidad (E6); útil y verificable.
+- **«El que asegura» (E29)**, **«Los 7 del rocódromo»**, **«¿Qué compañero de cordada eres?»**: identidad; E30 (3,5 seg./1k) mostró que convierte con público escalador.
+
+**3) Comentarios (reparto real de opiniones; prueba de la hipótesis de comentarios)**
+- **«Está blando para el grado»** (blando/duro divide de verdad).
+- **«Por qué encadenas dentro y no fuera»**: cada uno cuenta su razón.
+- **Dilema social: desconocido sin nudo / «¿le aseguras a un desconocido?»**. Comentario fijado que reparta, no quiz de sí/no.
+
+**4) Seguridad (caso o dato contraintuitivo)**
+- **Kalymnos: la reunión que se rompió** (caso reciente) · **E41 factor de caída** · **asegurador sale disparado** · cinta exprés (v2) · qué le pasa a tu cuerda con cada caída.
+
+**Orden sugerido (mezcla, no solo titulares):** 1) Caldwell (alcance) · 2) «Oyes un pop en el dedo» (dilema + cuerpo, nuevo) · 3) Secuela de Elvis (conversión) · 4) «Está blando para el grado» (comentarios) · 5) Kalymnos (seguridad con caso).
+
 **Kalymnos (hechos con fuente, 6-nov):** 27-mar-2026, escalador checo de 60 años, vía St. Savvas (7b+), sector Jurassic Park, equipada en 2002; limpiando la vía al bajar, soltó la segunda cinta antes de la reunión y fallaron la reunión y el seguro siguiente (triple fallo); Rebolt Kalymnos: «el escalador no hizo nada mal»; informe preliminar (David Reeve, 8a.nu, 9-jun): sospecha de defecto del anclaje, no de corrosión por sulfato; rescate criticado. Fuentes: Planetmountain, Lacrux, Vertige Media, Explorersweb, 8a.nu. Ojo: investigación y conclusiones preliminares; una atribución por vídeo.
 
 ## A. Dilema y decisión límite (H1, H12)
