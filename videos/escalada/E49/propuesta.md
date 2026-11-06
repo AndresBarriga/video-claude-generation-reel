@@ -1,4 +1,4 @@
-# E49 · «Se cae él y vuelas tú» (asegurador volando; idea de Andrés 6-nov) — propuesta v3 (crítico v1: 6/10, viralidad 10/14; v3 = enfoque de Andrés)
+# E49 · «Se cae él y vuelas tú» (asegurador volando; idea de Andrés 6-nov) — propuesta v3c (crítico v1: 6/10, viralidad 10/14; v3 = enfoque de Andrés)
 
 Formato: «algo que te pasa y no sabías por qué» + solución real al final. Público: quien escala en rocódromo con alguien que pesa bastante más/menos. Se lo manda al compañero de cordada.
 
@@ -21,6 +21,23 @@ Formato: «algo que te pasa y no sabías por qué» + solución real al final. P
 - C: «Él baja. Tú subes. ¿Quién aguanta a quién?»
 - D: «La primera cinta, a un palmo de tu cara.»
 - E (imagen): pies del asegurador despegando del suelo, cuerda tensa.
+
+## Guion v3c (6-nov, revisión de Andrés: fuera «un poco está bien») — ~65 palabras, ~25 s
+1. «Tu pareja pesa treinta kilos más. Se cae… y la que vuela eres tú.» | F1
+2. «La cuerda pasa por la primera cinta y tira de ti hacia arriba.» | F2
+3. «Y cuanto más subes tú, más cae él.» | F3 (rehook visual: dos medidores a la vez)
+4. «Tú, contra la primera cinta. Él, cada vez más cerca del suelo.» | F4
+5. «Se puede compensar: hay frenos que van en la primera cinta y añaden rozamiento cuando cae.» | F5 (repetición con freno)
+6. «Podéis escalar juntos. Pero con esa diferencia, hay que compensarla. ¿Lo habíais hablado?» | F6 → bucle a F1
+Hechos: el desplazamiento del asegurador alarga la caída (bergundsteigen/UIAA); OHM II: fabricante declara ≈25 kg, no cubre cualquier diferencia (solo en descripción). 1,3× DAV es proporción: no se dice en voz.
+
+## Fotogramas (escena a medida `src/historias/Asegurador/`)
+- **F1** Plano lateral fijo de rocódromo: pared, primera cinta a ~3 m, ella al pie, él encima de la 2.ª chapa. Él cae; la cuerda (naranja) se tensa y ella despega ~1 m con cara de sorpresa. Rótulo «+30 KG».
+- **F2** Mismo plano; la cuerda se ilumina en su recorrido él → cinta → ella (la cinta funciona como polea); flecha hacia arriba en ella.
+- **F3** Rehook: en el mismo plano, dos medidores a la vez: la altura de ella sube y la distancia de él al suelo baja (línea «SUELO» con cifra que cae). Se entiende sin sonido.
+- **F4** Pantalla partida vertical: arriba, sus nudillos a un palmo de la cinta; abajo, los pies de él a un palmo del suelo. Silencio.
+- **F5** Repetición exacta de F1 con un freno dibujado (genérico, sin marca) en la primera cinta: ella sube poco, él para más alto. Comparación antes/después en el mismo encuadre.
+- **F6** Los dos al pie, ella con la cuerda en la mano mirándole («¿lo habíais hablado?»); corte a F1.
 
 ## Guion v3b (crítico v3: 6/10, 12/14; aplicado gancho afirmativo y cierre con condición) (enfoque de Andrés 6-nov: «podéis escalar juntos, pero conoced cómo afecta la diferencia de peso») — ~75 palabras, ~27 s
 Mensaje: la diferencia de peso no os impide escalar juntos; ignorarla sí puede dar problemas. Física y prevención, no accidente.
