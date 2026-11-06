@@ -32,3 +32,12 @@ Deja un archivo con el **mismo nombre** en `videos/<nicho>/<id>/sonido/` (wav, m
 ## Vídeos sin voz (micro-vídeos)
 `guion.json` con `"mudo": true` y `"dur"` (s) en cada escena; `npm run voz -- <id> --simulado` saca los tiempos de ahí y el vídeo dura exactamente la suma (sin los 15 fotogramas de cola, para bucles perfectos).
 Recetas de cepillado en `tools/sonido-cepillado.mjs` (cepillo3/5, dientes, suela, soplido, palmada, cremallera, brillo, agarre, chirrido, golpePad, sala, asmr1–3). Un cepillo real grabado con el móvil siempre sonará mejor que lo sintético.
+
+## Reglas de dirección de sonido (las comprueba `npm run qa`)
+- Cada acción visible tiene su sonido (golpe, tela, papel, click); el material decide el timbre.
+- **Ambiente** constante (efecto con `bucle`) para que la voz no flote en el vacío.
+- **Al menos un silencio** (`"silencio": true`) justo antes o después del clímax; el primer sonido tras él es el más importante del vídeo.
+- Usa el sonido como transición al menos una vez: entra el sonido de la escena siguiente antes del corte, o el de la anterior sigue sobre él.
+- Anclas con `palabra` (no tiempos a ojo): así el efecto sigue a la voz si se regenera el audio.
+- Tras renderizar: `npm run qa-final -- <id>` mide volumen real (objetivo -14 LUFS, pico ≤ -1 dBTP), fotogramas negros (también el primero) y formato.
+- Con el audio de ElevenLabs ya sincronizado: `npm run verificar-voz -- <id>` (necesita Whisper en tu ordenador) detecta palabras saltadas o cambiadas.

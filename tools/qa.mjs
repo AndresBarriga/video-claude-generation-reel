@@ -2,11 +2,11 @@
 // Uso: npm run qa -- E1   → comprueba guion y tiempos contra las normas de CLAUDE.md
 import fs from "node:fs";
 import path from "node:path";
-import { carpetaVideo } from "./rutas.mjs";
+import { carpetaVideo, raiz as _raiz } from "./rutas.mjs";
 
 const id = process.argv[2];
 if (!id) { console.error("Falta el id. Ej: npm run qa -- E1"); process.exit(1); }
-const raiz = path.resolve(import.meta.dirname, "..");
+const raiz = _raiz;
 const g = JSON.parse(fs.readFileSync(path.join(carpetaVideo(id), "guion.json"), "utf8"));
 const dPath = path.join(raiz, "public/datos", `${id}.json`);
 const d = fs.existsSync(dPath) ? JSON.parse(fs.readFileSync(dPath, "utf8")) : null;
@@ -44,7 +44,41 @@ if (d) {
     if (dur > 7 && e.tipo !== "lista") A(`Escena ${i + 1} dura ${dur.toFixed(1)} s: sin cambio visual >7 s. Divídela.`);
   });
   if (!d.voz) A("Sin audio: datos simulados. No publicar.");
+  // Tiempo de lectura de rótulos (docs/guia-visual.md: ≥0,3 s por palabra, mínimo 1 s)
+  d.escenas.forEach((e, i, arr) => {
+    if (!e.titulo) return;
+    const dur = (arr[i + 1]?.inicio ?? d.duracion) - e.inicio, min = Math.max(1, 0.3 * e.titulo.trim().split(/\s+/).length);
+    if (dur < min) A(`Escena ${i + 1}: el rótulo «${e.titulo}» dura ${dur.toFixed(1)} s y necesita ≥${min.toFixed(1)} s para leerse.`);
+  });
 } else A("No hay tiempos todavía: ejecuta npm run voz -- " + id);
+
+// Sonido (docs/sonido.md): reglas de dirección + anclas que no existen (fallarían en el render)
+const sonPath = path.join(carpetaVideo(id), "sonido.json");
+if (fs.existsSync(sonPath)) {
+  const son = JSON.parse(fs.readFileSync(sonPath, "utf8"));
+  const efs = son.efectos ?? [];
+  if (!efs.some((x) => x.silencio)) A("sonido.json sin ningún «silencio»: añade uno justo antes o después del momento clave (docs/sonido.md).");
+  if (!efs.some((x) => x.nombre && x.bucle)) A("sonido.json sin ambiente (efecto con bucle) que dé continuidad a la voz.");
+  const nombres = new Set(); // recetas = claves de tools/sonido.mjs y sonido-cepillado.mjs + sonidos propios del vídeo
+  for (const f of ["sonido.mjs", "sonido-cepillado.mjs"]) for (const m of fs.readFileSync(path.join(raiz, "tools", f), "utf8").matchAll(/(?:^|[\s,{])([A-Za-z][A-Za-z0-9_]*)\s*[:(]/gm)) nombres.add(m[1]);
+  const propios = path.join(carpetaVideo(id), "sonido");
+  if (fs.existsSync(propios)) for (const f of fs.readdirSync(propios)) nombres.add(f.replace(/\.[^.]+$/, ""));
+  const norm = (x) => x.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9ñ]+/g, " ").trim();
+  const buscar = (ref) => {
+    if (typeof ref === "number") return g.escenas[ref];
+    const [vis, n = "1"] = String(ref).split("#"); let c = 0;
+    return g.escenas.find((e) => e.visual === vis && ++c === Number(n));
+  };
+  for (const x of efs) {
+    if (x.nombre && !nombres.has(x.nombre)) A(`sonido.json: el efecto «${x.nombre}» no es una receta ni hay archivo propio en videos/…/sonido/.`);
+    for (const k of ["inicio", "fin"]) {
+      const an = x[k]; if (!an || an.escena === undefined) continue;
+      const esc = buscar(an.escena);
+      if (!esc) { F(`sonido.json: ${k} apunta a la escena ${JSON.stringify(an.escena)}, que no existe.`); continue; }
+      if (an.palabra && !norm(esc.texto ?? "").split(" ").includes(norm(an.palabra))) F(`sonido.json: «${an.palabra}» no está en el texto de la escena ${JSON.stringify(an.escena)}.`);
+    }
+  }
+}
 
 console.log(`QA ${id}: ${nPal} palabras`);
 fallos.forEach((m) => console.log("  ✗ FALLO:", m));
