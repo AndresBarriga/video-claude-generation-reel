@@ -42,30 +42,14 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 Descartadas: E32, E6-D (duplicado), «Estancado por meses» (repetía el contador de E6), Ralston.
 
 
-## PRÓXIMAS, por objetivo (análisis de Claude, 6-nov; ganchos = candidatos, hechos por verificar)
-Criterios: **momento reconocible en 1 s** · **tú** · **algo en juego** · **mecanismo de envío (persona concreta) o de comentario (reparto real de opiniones)**. El titular/caso es solo UNA vía: E11 y E43 (los de más conversión y envíos) no tenían titular. Reparto buscado: alcance + seguidores + comentarios + seguridad.
+## PRÓXIMAS (reordenado 6-nov tras feedback de Andrés)
+**Descartado hoy por Andrés:** «Oyes un pop en el dedo, ¿sigues?» (si duele tanto no puedes seguir: no hay dilema), aguantar la respiración en el paso duro, piel de los dedos. **Caldwell:** sin interés ahora (se queda en la lista). **Vale:** «¿Y si no te da miedo caer, sino soltar?» (#7).
 
-**1) Alcance (dilema y universales 🌍)**
-- Caldwell «Las dos decisiones» · Everest 2006 «¿Te paras?» (E34) · Ochoa de Olza (España) · Revol/Mackiewicz · Messner 1970. Dilema real con historia (H1: E15 y E35).
-- **E37 «¿En qué pensaste al caer?»** (cuerpo + cabeza, universal): «Caes 10 metros. Lo que piensa tu cabeza no es lo que crees».
-- **«Oyes un pop en el dedo a mitad de la vía. ¿Sigues?»** (nueva, dilema + cuerpo + momento): une poleas (E39 se quedó en 1,7k sin momento) con decisión. Salud: sin protocolos, «consulta a un fisio». Verificar qué es el «pop».
-
-**2) Seguidores y envíos (cuerpo e identidad con momento; el patrón de E11/E43/E30)**
-- **Secuela de Pierna de Elvis** (E11: 77k, 2,6 seg./1k, 1,7 % envíos): mismo mecanismo, otro gancho.
-- **«¿Y si no te da miedo caer, sino soltar?»** (#7) y **«Por qué hoy no te sale el paso de ayer»** (#9): momento universal del escalador; explicación por verificar.
-- **Aguantas la respiración justo en el paso duro** (nueva): momento muy reconocible; envío «al que se queda sin aire». Verificar fisiología.
-- **La piel de los dedos que se abre en el último pegue** (nueva): cuerpo + identidad (E6); útil y verificable.
-- **«El que asegura» (E29)**, **«Los 7 del rocódromo»**, **«¿Qué compañero de cordada eres?»**: identidad; E30 (3,5 seg./1k) mostró que convierte con público escalador.
-
-**3) Comentarios (reparto real de opiniones; prueba de la hipótesis de comentarios)**
-- **«Está blando para el grado»** (blando/duro divide de verdad).
-- **«Por qué encadenas dentro y no fuera»**: cada uno cuenta su razón.
-- **Dilema social: desconocido sin nudo / «¿le aseguras a un desconocido?»**. Comentario fijado que reparta, no quiz de sí/no.
-
-**4) Seguridad (caso o dato contraintuitivo)**
-- **Kalymnos: la reunión que se rompió** (caso reciente) · **E41 factor de caída** · **asegurador sale disparado** · cinta exprés (v2) · qué le pasa a tu cuerda con cada caída.
-
-**Orden sugerido (mezcla, no solo titulares):** 1) Caldwell (alcance) · 2) «Oyes un pop en el dedo» (dilema + cuerpo, nuevo) · 3) Secuela de Elvis (conversión) · 4) «Está blando para el grado» (comentarios) · 5) Kalymnos (seguridad con caso).
+**A. Serie de seguridad «eslabones» (propuesta de Andrés: factor de caída, por qué fallan los mosquetones, cómo hacerlo bien, Kalymnos, estado de las vías).** Cada vídeo es un eslabón de la cadena. Orden: 1) Kalymnos = la chapa/reunión (caso) · 2) E41 factor de caída = la cuerda · 3) por qué fallan los mosquetones (puerta abierta o de lado; casos ANAM) · 4) cómo colocar la cinta / hacerlo bien · 5) el asegurador. Cada uno necesita caso o dato contraintuitivo (si no, riesgo tipo E39/E42). Techo esperado orientativo: el de E46 (12k) si el caso engancha.
+**B. Secuela de Pierna de Elvis** (E11: las fases retienen 61 % hasta el s 22; la explicación cae a 37 %; la explicación debe ir dentro de las fases): a) **«Las 5 fases del agarre de miedo»**: aprietas el doble → antebrazo se llena → pierdes la presa → caes (verificar el sobreagarre con miedo); b) **«Las 5 fases de clipar con miedo»**: la cinta lejos, clipas con la cuerda por detrás (enlaza con la serie A).
+**C. Cuerpo y cabeza:** #7 soltar · E37 «¿En qué pensaste al caer?» · «Por qué hoy no te sale el paso de ayer» (#9).
+**D. Comentarios (reparto real de opiniones):** «Está blando para el grado» · «Por qué encadenas dentro y no fuera» · desconocido sin nudo.
+**E. Historia con «tú» (más adelante, una vez):** por qué el boulder/los rocódromos se han vuelto tan populares · cómo nació el campus board/hangboard (Güllich, #18). Historias ajenas dieron 5–9k y H10 salió refutada; solo con giro verificado y ligadas al entrenamiento del espectador.
 
 **Kalymnos (hechos con fuente, 6-nov):** 27-mar-2026, escalador checo de 60 años, vía St. Savvas (7b+), sector Jurassic Park, equipada en 2002; limpiando la vía al bajar, soltó la segunda cinta antes de la reunión y fallaron la reunión y el seguro siguiente (triple fallo); Rebolt Kalymnos: «el escalador no hizo nada mal»; informe preliminar (David Reeve, 8a.nu, 9-jun): sospecha de defecto del anclaje, no de corrosión por sulfato; rescate criticado. Fuentes: Planetmountain, Lacrux, Vertige Media, Explorersweb, 8a.nu. Ojo: investigación y conclusiones preliminares; una atribución por vídeo.
 
