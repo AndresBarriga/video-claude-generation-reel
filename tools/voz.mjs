@@ -8,7 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { carpetaVideo } from "./rutas.mjs";
 import { spawnSync } from "node:child_process";
-import { alinear } from "./alinear.mjs";
+import { alinear, silencios } from "./alinear.mjs";
 
 const args = process.argv.slice(2);
 const id = args.find((a) => !a.startsWith("--"));
@@ -122,6 +122,28 @@ if (simulado) {
     for (const h of [...huecos].reverse()) tiempos = tiempos.map((x) => (x.start >= h.en ? { start: x.start + h.extra, end: x.end + h.extra } : x));
     dur = duracionAudio(destino);
     metodo += ` · pausa insertada: ${huecos.map((h) => `${h.extra}s en ${h.en.toFixed(1)}s`).join(", ")}`;
+  }
+  // Ritmo apretado: ningún silencio de la voz pasa de 0,26 s. Se recortan al vuelo (quedan ~0,2 s) y se desplazan los tiempos.
+  // Exentas: pausas declaradas con "pausa" en el guion. Se desactiva con --sin-apretar.
+  if (!args.includes("--sin-apretar")) {
+    const exentas = [];
+    guion.escenas.forEach((e, i) => { const li = rangoEscena[i][1]; if (e.pausa && li < N - 1) exentas.push([tiempos[li].end - 0.1, tiempos[li + 1].start + 0.1]); });
+    const cortes = silencios(destino, "-40dB", 0.261)
+      .filter((x) => x.a > 0.1 && x.b < dur - 0.1 && !exentas.some(([a, b]) => x.a >= a - 0.05 && x.a <= b))
+      .map((x) => [x.a + 0.1, x.b - 0.1]).filter(([a, b]) => b - a > 0.02);
+    if (cortes.length) {
+      const partes = [], filtros = []; let previo = 0;
+      cortes.forEach(([a, b], k) => { filtros.push(`[0]atrim=${previo}:${a},asetpts=N/SR/TB[c${k}]`); partes.push(`[c${k}]`); previo = b; });
+      filtros.push(`[0]atrim=${previo},asetpts=N/SR/TB[fin]`); partes.push("[fin]");
+      const tmp = destino.replace(/\.mp3$/, ".tmp.mp3");
+      const r = sh("ffmpeg", ["-y", "-loglevel", "error", "-i", destino, "-filter_complex", `${filtros.join(";")};${partes.join("")}concat=n=${partes.length}:v=0:a=1[o]`, "-map", "[o]", "-ac", "1", "-ar", "44100", "-b:a", "128k", tmp]);
+      if (r.status !== 0) { console.error("No pude apretar los silencios:", r.stderr); process.exit(1); }
+      fs.renameSync(tmp, destino);
+      const quitado = (t) => cortes.reduce((acc, [a, b]) => acc + (b <= t + 0.001 ? b - a : a < t ? t - a : 0), 0);
+      tiempos = tiempos.map((x) => ({ start: x.start - quitado(x.start), end: x.end - quitado(x.end) }));
+      dur = duracionAudio(destino);
+      metodo += ` · ${cortes.length} silencios apretados (−${cortes.reduce((acc, [a, b]) => acc + b - a, 0).toFixed(1)} s)`;
+    }
   }
   fs.writeFileSync(path.join(raiz, `public/datos/.dur-${id}`), String(dur));
 } else {

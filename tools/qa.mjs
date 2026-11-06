@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Uso: npm run qa -- E1   → comprueba guion y tiempos contra las normas de CLAUDE.md
 import fs from "node:fs";
+import { spawnSync } from "node:child_process";
 import path from "node:path";
 import { carpetaVideo, raiz as _raiz } from "./rutas.mjs";
 
@@ -44,13 +45,31 @@ if (d) {
     if (dur > 7 && e.tipo !== "lista") A(`Escena ${i + 1} dura ${dur.toFixed(1)} s: sin cambio visual >7 s. Divídela.`);
   });
   if (!d.voz) A("Sin audio: datos simulados. No publicar.");
-  // Tiempo de lectura de rótulos (docs/guia-visual.md: ≥0,3 s por palabra, mínimo 1 s)
+  // Rótulos: nada menos de 0,8 s en pantalla (fallo); y ≥0,3 s por palabra para leerse (aviso)
   d.escenas.forEach((e, i, arr) => {
     if (!e.titulo) return;
-    const dur = (arr[i + 1]?.inicio ?? d.duracion) - e.inicio, min = Math.max(1, 0.3 * e.titulo.trim().split(/\s+/).length);
-    if (dur < min) A(`Escena ${i + 1}: el rótulo «${e.titulo}» dura ${dur.toFixed(1)} s y necesita ≥${min.toFixed(1)} s para leerse.`);
+    const dur = (arr[i + 1]?.inicio ?? d.duracion) - e.inicio, pal = e.titulo.trim().split(/\s+/).length;
+    if (dur < 0.8) F(`Escena ${i + 1}: el rótulo «${e.titulo}» está ${dur.toFixed(2)} s en pantalla (mínimo 0,8 s).`);
+    else if (dur < 0.3 * pal) A(`Escena ${i + 1}: el rótulo «${e.titulo}» (${pal} palabras) dura ${dur.toFixed(1)} s; para leerse necesita ≥${(0.3 * pal).toFixed(1)} s.`);
   });
 } else A("No hay tiempos todavía: ejecuta npm run voz -- " + id);
+
+// Silencios de la voz: ninguno de más de 0,26 s (ritmo apretado). Se miden en el audio, no en los tiempos estimados.
+// Las pausas declaradas con "pausa" en una escena del guion son intencionadas y quedan exentas.
+const vozMp3 = path.join(raiz, `public/voz/${id}.mp3`);
+if (!g.mudo && fs.existsSync(vozMp3)) {
+  const sd = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", vozMp3, "-af", "silencedetect=n=-40dB:d=0.261", "-f", "null", "-"], { encoding: "utf8" });
+  const ini = [...sd.stderr.matchAll(/silence_start: ([\d.]+)/g)].map((m) => +m[1]), fin = [...sd.stderr.matchAll(/silence_end: ([\d.]+) \| silence_duration: ([\d.]+)/g)].map((m) => [+m[1], +m[2]]);
+  const total = parseFloat(spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", vozMp3], { encoding: "utf8" }).stdout);
+  const decl = d ? d.escenas.filter((e) => e.pausa).map((e) => [e.fin - 0.4, e.fin + e.pausa + 0.4]) : [];
+  ini.forEach((s0, k) => {
+    const dur = fin[k]?.[1] ?? total - s0;
+    if (s0 < 0.1 || s0 + dur > total - 0.1) return; // principio y final del audio
+    if (decl.some(([a, b]) => s0 >= a && s0 <= b)) return;
+    const cerca = d?.palabras?.filter((p) => p.end <= s0 + 0.05).slice(-3).map((p) => p.w).join(" ");
+    A(`Silencio de ${dur.toFixed(2)} s en la voz a los ${s0.toFixed(1)} s${cerca ? ` (tras «${cerca}»)` : ""}: máximo 0,26 s. Recórtalo o declara «pausa» en esa escena si es intencionado.`);
+  });
+}
 
 // Sonido (docs/sonido.md): reglas de dirección + anclas que no existen (fallarían en el render)
 const sonPath = path.join(carpetaVideo(id), "sonido.json");

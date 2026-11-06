@@ -19,7 +19,7 @@ Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumpl
 - **Anticipación y continuidad:** antes de una acción fuerte, un gesto contrario breve (agacharse antes de saltar); después, el movimiento sigue un poco (pelo, mochila, cuerda) y se detiene.
 - **Escalonar:** elementos de un grupo entran con 2–4 frames de diferencia, nunca todos a la vez.
 - **Una acción principal a la vez.** Si dos cosas importantes pasan juntas, una espera.
-- **Tiempo de lectura:** un rótulo se mantiene al menos 0,3 s por palabra (mínimo 1 s) antes de cambiar.
+- **Tiempo de lectura:** un rótulo se mantiene al menos 0,3 s por palabra y **nunca menos de 0,8 s** antes de cambiar (`npm run qa` lo comprueba).
 - **Cámara motivada:** se mueve porque algo pasa (cae → la cámara cae; tensión → empuje lento), no por decorar. Sacudida solo en impactos y < 10 frames.
 - **Transiciones con sentido:** corte en la palabra clave, *match cut* (misma forma/posición entre escenas) o barrido en la dirección del movimiento. Nada de fundidos genéricos.
 
