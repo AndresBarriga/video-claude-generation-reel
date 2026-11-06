@@ -59,5 +59,5 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-11-05 (E46): el gancho solo con texto y un muñeco quieto no engancha; las imágenes tienen que ser lo más impactante posible, no ilustrar. Quiere un muñequito haciendo rápeles en una pared muy alta y que en uno se caiga. POV solo = "cutre".
 - 2026-11-05 (E46): «¿Cuántos metros tiene tu cuerda?» no sirve como cierre; mejor un mensaje directo («nunca te olvides del nudo»). Empezar con más gancho visual y que la caída de 15 m se vea grande.
 - 2026-11-06 · «Oyes un pop en el dedo, ¿sigues?»: si duele tanto no puedes seguir, no hay dilema. Tampoco aguantar la respiración en el paso duro ni la piel de los dedos.
-- 2026-11-06 · Caldwell «Las dos decisiones»: no le ve la gracia ahora.
+- 2026-11-06 · Caldwell «Las dos decisiones»: no le ve la gracia tal cual, pero le gusta y quiere pensarlo bien (otro ángulo).
 - 2026-11-06 · Priorizar ideas solo porque «tienen titular en internet»: es una vía válida, no el patrón único (E11/E43 no tenían titular).
