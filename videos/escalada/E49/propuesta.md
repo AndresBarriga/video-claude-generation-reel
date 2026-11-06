@@ -112,3 +112,6 @@ Ver `guion.json`. Cambios: «tú sales volando»; F4 = ella hacia la pared y él
 | 21,5 | Rótulo «AYUDA, NO LO COMPENSA TODO» | texto |
 | 23,0 | Los dos al pie de la vía, hablando antes de escalar | cierre |
 | 25,5 | Corte al rocódromo congelado (bucle) + «MÁNDASELO…» | bucle |
+
+## Descripción: otras soluciones (6-nov, Andrés: el OHM no es la única)
+Otras formas de compensar, según Mammut, UKC y bergundsteigen: otros frenos de primera cinta (p. ej. Edelrid OHMEGA, Mammut Assist Belay Resistor; bergundsteigen probó cinco), anclar a quien asegura al suelo o lastrarlo, añadir rozamiento con el recorrido de la cuerda, y aprender aseguramiento dinámico con alguien formado. Cada uno, con sus instrucciones.
