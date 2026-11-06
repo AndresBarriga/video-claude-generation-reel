@@ -1,4 +1,4 @@
-# E47 · «El cronómetro del miedo» (antes «5 fases del agarre de miedo») (secuela de E11, idea de Andrés 6-nov) — propuesta v3 (críticos: v1 5,5/9 sobre 14 · v2 6,5 y 10/14)
+# E47 · «El cronómetro del miedo» (antes «5 fases del agarre de miedo») (secuela de E11, idea de Andrés 6-nov) — propuesta v4b (críticos: v4 6,5 y 10/14 ·: v1 5,5 · v2 6,5 y 10/14; v3 debajo, archivada)
 
 Base: E11 (Pierna de Elvis; 17,5K a 13 h según su ficha, 77k y 1,7 % envíos en la captura de 6-nov a ~209 h) y E43 (Pump, 5,1 seg./1k). v2 **no repite el molde «N fases»** (el crítico lo penalizó en E43 y `no-me-gusta.md` 30-oct pide no abusarlo): tres momentos con un cronómetro. Se mantiene de E11 el humor de reconocimiento y el dato que cambia lo que crees.
 
@@ -21,6 +21,19 @@ Base: E11 (Pierna de Elvis; 17,5K a 13 h según su ficha, 77k y 1,7 % envíos en
 - C: «¿Por qué te quedas colgado pensando en vez de moverte?»
 - D: «La chapa estaba ahí. Lo que se te acabó fue el tiempo.»
 - E: mano blanca de magnesio y cronómetro (solo imagen, sin voz).
+
+## Guion v4b «¿En qué segundo se te fue la vía?» (voz | imagen) — ~75 palabras, ~30 s
+Punto débil de v3 (se adivina que caes): **v4b empieza por la caída** y el bucle es **en qué segundo se perdió la vía**. Formato «Rebobina» de E35. Crítico v4: 6,5 y 10/14; con estos cambios estima 13/14 y ~7.
+Gráfico único: **cronómetro con marcas** (sin barra de tiempo; barra PUMP solo en la escena 5).
+1. «Te has caído a un brazo de la chapa. Pero no fue aquí.» | f0: la mano se abre en la presa; cronómetro se congela en **0:52 en rojo**; rótulo «¿EN QUÉ SEGUNDO?»
+2. «Rebobina. Segundo cero: llegas.» | icono ◀◀ y el cronómetro corre hacia atrás a la vista hasta 0:00; él llega, la chapa arriba
+3. «Segundo ocho: la presa buena está ahí… y te vas a otra.» | **se ve la presa buena hacia la chapa** (brillo sutil) y la mano elige otra; marca gris en el cronómetro
+4. «Y otra. Y la primera otra vez. Con miedo tocas más presas, no menos.» | rehook (≈ s 12); la mano salta; marcas grises
+5. «Segundo treinta: el antebrazo arde.» | barra PUMP casi llena; temblor; el asegurador abajo: «¡Clippea!»
+6. «Segundo cincuenta y dos: fuera.» | la mano se abre (sin repetir el f0 entero); silencio 0,4 s
+7. «Fue en el ocho: el paso estaba ahí y buscaste otra presa. ¿Cuál es tu segundo ocho?» | **giro**: solo ahora la marca del 8 se vuelve amarilla y se ve de nuevo la presa buena; corte al f0 (bucle); rótulo «MÁNDASELO AL QUE SE QUEDA COLGADO»
+
+Hechos: Pijpers 2005 respalda 4 (más exploración y más tiempo en cada presa con ansiedad). «Fue en el ocho» es **la historia de este personaje**, no un hallazgo general; sin «dejaste de decidir». Consejo (decidir antes) solo en descripción/comentario.
 
 ## Guion v3 (voz | imagen) — ~85 palabras, ~33 s
 1. Asegurador (voz desde abajo): «¡Clippea!» Sin pausa: «Llevas un minuto colgado. ¿Qué haces?» | f0: mano blanca de magnesio que tiembla en la presa; cronómetro corriendo; rótulo «¿CUÁNTO LLEVAS?»
