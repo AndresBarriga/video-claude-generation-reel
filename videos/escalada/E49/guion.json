@@ -32,13 +32,13 @@
     {
       "tipo": "texto",
       "visual": "freno",
-      "texto": "Para eso existe el OHM II: va en la primera chapa y frena la cuerda cuando cae. Así subes menos.",
+      "texto": "Para eso existe el Om dos: va en la primera chapa y frena la cuerda cuando cae. Así subes menos.",
       "titulo": "OHM II"
     },
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "texto": "Podéis escalar juntos. Pero antes, habladlo.",
+      "texto": "Podéis escalar juntos. Solo hablad antes de cuánto pesáis.",
       "titulo": "MÁNDASELO A QUIEN ESCALA CONTIGO"
     }
   ]

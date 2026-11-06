@@ -13,7 +13,7 @@ const Rebobina: React.FC<{ o: number }> = ({ o }) => (
 
 export const Freno: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fOhm = pal("ohm") ?? 20, fFrena = pal("frena") ?? 80, fMenos = pal("menos") ?? 140;
+  const fOhm = pal("om") ?? 20, fFrena = pal("frena") ?? 80, fMenos = pal("menos") ?? 140;
   const rebob = f < fOhm - 2;
   const primer = f >= fOhm - 2 && f < fFrena - 6;
   const k = rebob ? ei(f, 0, fOhm - 4, 1, 0, Easing.inOut(Easing.cubic)) : primer ? 0 : ei(f, fFrena - 6, fMenos - 2, 0, 1, Easing.inOut(Easing.quad));
