@@ -3,7 +3,7 @@
 Formato: «algo que te pasa y no sabías por qué» + solución real al final. Público: quien escala en rocódromo con alguien que pesa bastante más/menos. Se lo manda al compañero de cordada.
 
 ## Mensaje (5 líneas)
-1. **Mensaje:** si pesas mucho menos que quien aseguras, su caída te levanta; un poco ayuda, mucho es peligroso.
+1. **Mensaje:** podéis escalar juntos, pero si pesas bastante menos, su caída te levanta y eso alarga su caída: hay que compensarlo.
 2. **Problema:** sales volando hacia la primera cinta y él baja más de lo que debería.
 3. **Valor:** entender por qué pasa, cuándo es un problema (≈10 kg o más) y que existe un freno para eso.
 4. **Cómo ayuda:** lo habláis antes de la vía y, si la diferencia es grande, buscáis compensarla.
@@ -23,7 +23,7 @@ Formato: «algo que te pasa y no sabías por qué» + solución real al final. P
 - E (imagen): pies del asegurador despegando del suelo, cuerda tensa.
 
 ## Guion v3c (6-nov, revisión de Andrés: fuera «un poco está bien») — ~65 palabras, ~25 s
-1. «Tu pareja pesa treinta kilos más. Se cae… y la que vuela eres tú.» | F1
+1. «Tu pareja pesa treinta kilos más. Se cae… y la que vuela eres tú.» | F4 congelado (rocódromo parado) → F1
 2. «La cuerda pasa por la primera cinta y tira de ti hacia arriba.» | F2
 3. «Y cuanto más subes tú, más cae él.» | F3 (rehook visual: dos medidores a la vez)
 4. «Tú, contra la primera cinta. Él, cada vez más cerca del suelo.» | F4
@@ -35,7 +35,8 @@ Hechos: el desplazamiento del asegurador alarga la caída (bergundsteigen/UIAA);
 - **F1** Plano lateral fijo de rocódromo: pared, primera cinta a ~3 m, ella al pie, él encima de la 2.ª chapa. Él cae; la cuerda (naranja) se tensa y ella despega ~1 m con cara de sorpresa. Rótulo «+30 KG».
 - **F2** Mismo plano; la cuerda se ilumina en su recorrido él → cinta → ella (la cinta funciona como polea); flecha hacia arriba en ella.
 - **F3** Rehook: en el mismo plano, dos medidores a la vez: la altura de ella sube y la distancia de él al suelo baja (línea «SUELO» con cifra que cae). Se entiende sin sonido.
-- **F4** Pantalla partida vertical: arriba, sus nudillos a un palmo de la cinta; abajo, los pies de él a un palmo del suelo. Silencio.
+- **F4 = f0** (petición de Andrés; crítico: es el clímax, abre el vídeo) **El rocódromo se para.** Congelado: manos de ella junto a la primera cinta (~2,8 m), sus pies a la altura de la cabeza de él; él con los pies a un palmo del suelo; cuerda tensa en V invertida. Toda la sala se gira a mirarles con caras de miedo (otro escalador a medio bloque, alguien con la magnesera; sin gags). Silencio 0,5 s. La voz 1 entra sobre este plano y la acción se descongela hacia F1.
+- **Escena 4:** primeros planos rápidos (nudillos a un palmo de la cinta; pies a un palmo del suelo), sin pantalla partida.
 - **F5** Repetición exacta de F1 con un freno dibujado (genérico, sin marca) en la primera cinta: ella sube poco, él para más alto. Comparación antes/después en el mismo encuadre.
 - **F6** Los dos al pie, ella con la cuerda en la mano mirándole («¿lo habíais hablado?»); corte a F1.
 
