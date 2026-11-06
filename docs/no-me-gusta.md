@@ -61,3 +61,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-11-06 · «Oyes un pop en el dedo, ¿sigues?»: si duele tanto no puedes seguir, no hay dilema. Tampoco aguantar la respiración en el paso duro ni la piel de los dedos.
 - 2026-11-06 · Caldwell «Las dos decisiones»: no le ve la gracia tal cual, pero le gusta y quiere pensarlo bien (otro ángulo).
 - 2026-11-06 · Priorizar ideas solo porque «tienen titular en internet»: es una vía válida, no el patrón único (E11/E43 no tenían titular).
+- 2026-11-06: Miedo 2 tipo cronómetro/«agarre de miedo»: «lo veo flojo, no hay tensión». Quiere miedo centrado en el miedo (qué hace tu cerebro), no datos sueltos de estudios.

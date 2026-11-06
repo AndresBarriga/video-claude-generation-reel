@@ -1,3 +1,5 @@
+> **6-nov, Andrés: v1–v4b aparcadas (idea flojísima, sin tensión). Nuevo ángulo elegido para Miedo 2: «Llevas cuerda. Tu cerebro no lo sabe»** — la primera caída a propósito (3, 2, 1 y la mano no se abre); el miedo dispara antes de pensar; lo único que lo convence es caer. Centrado en miedo, sin estudios en voz. Pendiente de propuesta (semana que viene).
+
 # E47 · «El cronómetro del miedo» (antes «5 fases del agarre de miedo») (secuela de E11, idea de Andrés 6-nov) — propuesta v4b (críticos: v4 6,5 y 10/14 ·: v1 5,5 · v2 6,5 y 10/14; v3 debajo, archivada)
 
 Base: E11 (Pierna de Elvis; 17,5K a 13 h según su ficha, 77k y 1,7 % envíos en la captura de 6-nov a ~209 h) y E43 (Pump, 5,1 seg./1k). v2 **no repite el molde «N fases»** (el crítico lo penalizó en E43 y `no-me-gusta.md` 30-oct pide no abusarlo): tres momentos con un cronómetro. Se mantiene de E11 el humor de reconocimiento y el dato que cambia lo que crees.

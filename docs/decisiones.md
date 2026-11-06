@@ -42,3 +42,4 @@ Lo vigente está resumido en `docs/estrategia.md`.
 - 2026-11-06 · Andrés: rótulos nunca <0,8 s en pantalla; ningún silencio de voz >0,26 s (salvo «pausa» declarada; `npm run voz` los aprieta solo, `--sin-apretar` lo desactiva); y poda del guion línea por línea (comando `/podar`): lo que no ayude a entender la idea, fuera.
 - 2026-11-06: el radar de repos NO es parte del workflow (una sola vez). Queda `node tools/radar-repos.mjs "consulta"` por si se quiere repetir a mano. rea-video aparcado hasta que Andrés encuentre reels que quiera analizar de verdad.
 - 2026-11-06: docs/ideas/escalada.md reorganizado por zonas (A–K) con mapa de estado e hipótesis; nada borrado. Las notas de potencial de ChatGPT no se usan para decidir.
+- 2026-11-06 · Miedo 2: se aparca el guion del cronómetro/«¿en qué segundo?» (idea sin tensión) y se elige el ángulo «Llevas cuerda. Tu cerebro no lo sabe» (caída a propósito). Prioridad: asegurador volando primero.
