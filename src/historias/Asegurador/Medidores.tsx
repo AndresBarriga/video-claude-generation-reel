@@ -23,11 +23,11 @@ export const Medidores: React.FC<P> = ({ d, pal }) => {
   const [cx, cy] = aPantalla(st.hx, SUELO - 40);
   return (
     <Camara d={d} empuje={0.02} entrada={false}>
-      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${(cx / 1080) * 100}% ${(cy / 1920) * 100}%` }}>
+      <AbsoluteFill style={{ transform: `translateY(${pies ? -330 : 0}px) scale(${z})`, transformOrigin: `${(cx / 1080) * 100}% ${(cy / 1920) * 100}%` }}>
         <Svg>
           <Encuadre><Fondo />
           <Caida k={k} publico={<Publico r="miedo" />} />
-          {pies && <path d={`M${st.hx - 120} ${SUELO + 2} L${st.hx + 120} ${SUELO + 2}`} stroke="#FF5A4A" strokeWidth={6} strokeDasharray="14 10" />}</Encuadre>
+          {pies && <path d={`M${st.hx - 120} ${SUELO + 2} L${st.hx + 120} ${SUELO + 2}`} stroke="#FF5A4A" strokeWidth={6} strokeDasharray="14 10" />}{pies && <text x={st.hx - 250} y={SUELO - 14} fontFamily="Bricolage Grotesque" fontWeight={800} fontSize={30} fill="#FF5A4A" stroke="#050B14" strokeWidth={6} paintOrder="stroke">SUELO</text>}</Encuadre>
           {!pies && <>
             <Barra x={110} v={st.u} col="#5FD1C5" arriba />
             <Barra x={985} v={lejos} col="#FF6A1F" arriba={false} />

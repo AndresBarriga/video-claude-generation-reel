@@ -31,7 +31,7 @@ export const Cierre: React.FC<P> = ({ d, pal }) => {
         </g>
         {/* ellos dos, hablando antes de escalar */}
         <Escalador x={560} y={hip(ELLA.s)} quien="simon" pose={f >= fAntes ? "senalando" : "pie"} cara={habla && f < fAntes ? "sopla" : "normal"} s={ELLA.s} aspecto={ELLA.aspecto} pies="#C8566B" sombra={SUELO + 6} />
-        <Escalador x={700} y={hip(EL.s)} quien="joe" pose="pie" cara={f >= fAntes ? "alivio" : "normal"} s={EL.s} mira={-1} aspecto={EL.aspecto} cuerpo={EL.cuerpo} pies="#E0A526" sombra={SUELO + 6} />
+        <Escalador x={700} y={hip(EL.s)} quien="joe" pose={f >= fAntes && Math.sin(f * 0.4) > 0 ? "senalando" : "pie"} angulos={{ cabeza: 8 * Math.sin(f * 0.6) }} cara={f >= fAntes ? (Math.sin(f * 0.5) > 0 ? "sopla" : "alivio") : "normal"} s={EL.s} mira={-1} aspecto={EL.aspecto} cuerpo={EL.cuerpo} pies="#E0A526" sombra={SUELO + 6} />
         <path d={`M-300 ${SUELO + 4} L1400 ${SUELO + 4} L1400 2400 L-300 2400 Z`} fill="#2E4B7A" />
         <path d={`M-300 ${SUELO + 4} L1400 ${SUELO + 4}`} stroke="#4E6FA6" strokeWidth={10} />
         {f >= fAntes && <g transform="translate(660 1120)"><Ohm x={0} y={0} s={0.28} /></g>}

@@ -1,0 +1,16 @@
+{
+ "bajoVoz": 0.45,
+ "efectos": [
+  { "nombre": "latido", "inicio": { "escena": 0 }, "fin": { "escena": 0, "palabra": "Se" }, "volumen": 0.55, "bucle": true, "fundido": [0.1, 0.1] },
+  { "nombre": "sala", "inicio": { "escena": 0, "palabra": "Se", "mas": -0.1 }, "volumen": 0.3, "bucle": true, "fundido": [0.15, 0.6] },
+  { "nombre": "zas", "inicio": { "escena": 0, "palabra": "cae…" }, "duracion": 0.8, "volumen": 0.7 },
+  { "nombre": "crujido", "inicio": { "escena": 0, "palabra": "volando." }, "duracion": 1.2, "volumen": 0.5, "ignoraSilencio": true },
+  { "nombre": "crujido", "inicio": { "escena": "polea", "palabra": "tira" }, "duracion": 1.4, "volumen": 0.35 },
+  { "nombre": "caida", "inicio": { "escena": "medidores", "palabra": "subir" }, "duracion": 1.2, "volumen": 0.5 },
+  { "silencio": true, "inicio": { "escena": "medidores", "palabra": "suelo,", "mas": 0.1 }, "duracion": 1.0 },
+  { "nombre": "zas", "inicio": { "escena": "freno" }, "duracion": 0.6, "volumen": 0.5 },
+  { "nombre": "clic", "inicio": { "escena": "freno", "palabra": "Om" }, "duracion": 0.4, "volumen": 0.9, "ignoraSilencio": true },
+  { "nombre": "roce", "inicio": { "escena": "freno", "palabra": "frena" }, "duracion": 0.8, "volumen": 0.7 },
+  { "nombre": "palmada", "inicio": { "escena": "freno", "palabra": "menos." }, "duracion": 0.6, "volumen": 0.6 }
+ ]
+}

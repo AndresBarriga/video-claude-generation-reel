@@ -37,9 +37,9 @@ export const Freno: React.FC<P> = ({ d, pal }) => {
       {primer && <AbsoluteFill style={{ background: "rgba(8,17,29,0.86)" }}>
         <Svg>
                     <g transform={`translate(520 1020) scale(${entra * 2.1})`}>
-            <path d="M-300 260 Q-120 120 -10 10 L20 -20 Q120 -160 420 -520" stroke={C.cuerdaS} strokeWidth={30} fill="none" />
-            <path d="M-300 260 Q-120 120 -10 10 L20 -20 Q120 -160 420 -520" stroke={C.cuerda} strokeWidth={24} fill="none" />
-            <Ohm x={0} y={0} s={1} />
+            <path d="M-320 420 Q-60 260 -6 104 M30 -40 Q120 -260 420 -560" stroke={C.cuerdaS} strokeWidth={30} fill="none" strokeLinecap="round" />
+            <path d="M-320 420 Q-60 260 -6 104 M30 -40 Q120 -260 420 -560" stroke={C.cuerda} strokeWidth={24} fill="none" strokeLinecap="round" />
+            <Ohm x={0} y={0} s={1} cuerda />
           </g>
           <Rotulo f={f} ini={fOhm} fin={fFrena - 6} t="OHM II" y={300} tam={150} col="#C7DC2E" />
         </Svg>

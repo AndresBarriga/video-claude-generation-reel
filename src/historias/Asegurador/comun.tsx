@@ -77,7 +77,7 @@ export const Cinta: React.FC<{ x: number; y: number }> = ({ x, y }) => (
 
 /** Edelrid OHM II, dibujado reconocible: mosquetón gris, cinta lima con etiqueta, giratorio y cuerpo lima con leva plateada.
  *  (x, y) = punto por donde pasa la cuerda (centro del cuerpo); s = escala (1 = primer plano ~ 330 px de alto). */
-export const Ohm: React.FC<{ x: number; y: number; s?: number; muerde?: number }> = ({ x, y, s = 1, muerde = 0 }) => (
+export const Ohm: React.FC<{ x: number; y: number; s?: number; muerde?: number; cuerda?: boolean }> = ({ x, y, s = 1, muerde = 0, cuerda }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`}>
     {/* mosquetón en la chapa */}
     <circle cx={44} cy={-300} r={16} fill="#AEB8C4" stroke="#5E6A78" strokeWidth={4} />
@@ -95,6 +95,7 @@ export const Ohm: React.FC<{ x: number; y: number; s?: number; muerde?: number }
     <g transform={`rotate(${-muerde * 8} 0 0)`}>
       <path d="M-46 -52 Q-10 -70 34 -58 Q58 -50 54 -20 L44 70 Q38 104 6 100 Q-18 96 -30 70 L-62 -10 Q-70 -40 -46 -52 Z" fill={LIMA} stroke={LIMA_S} strokeWidth={6} strokeLinejoin="round" />
       <path d="M-40 -40 Q-8 -54 30 -44" stroke="#E9F49A" strokeWidth={6} fill="none" strokeLinecap="round" opacity={0.8} />
+      {cuerda && <><path d="M-6 104 L30 -40" stroke="#B8460E" strokeWidth={30} strokeLinecap="round" /><path d="M-6 104 L30 -40" stroke="#FF6A1F" strokeWidth={24} strokeLinecap="round" /></>}
       {/* leva plateada */}
       <path d="M10 20 L44 4 L40 74 Q34 90 18 86 L14 50 Z" fill="#B9C2CC" stroke="#6B7684" strokeWidth={5} strokeLinejoin="round" />
       <path d="M20 30 L38 22" stroke="#6B7684" strokeWidth={4} />

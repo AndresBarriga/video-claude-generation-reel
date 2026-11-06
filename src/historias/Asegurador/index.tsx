@@ -16,7 +16,7 @@ const ESCENAS: Record<string, React.FC<P>> = { parado: Gancho, polea: Polea, med
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Asegurador: React.FC<{ datos: Datos }> = ({ datos }) => {
-  const { fps } = useVideoConfig();
+  const { fps, durationInFrames } = useVideoConfig();
   const n = datos.escenas.length;
   return (
     <AbsoluteFill style={{ background: "#08111D" }}>
@@ -25,7 +25,7 @@ export const Asegurador: React.FC<{ datos: Datos }> = ({ datos }) => {
       {datos.escenas.map((e, i) => {
         const iniS = e.inicio ?? 0, ini0 = Math.round(iniS * fps);
         const finS = i === n - 1 ? datos.duracion : datos.escenas[i + 1].inicio ?? datos.duracion;
-        const dur = Math.max(1, Math.round(finS * fps) - ini0);
+        const dur = i === n - 1 ? Math.max(1, durationInFrames - ini0) : Math.max(1, Math.round(finS * fps) - ini0);
         const pal = (w: string) => { const p = datos.palabras.find((x) => x.start >= iniS - 0.01 && x.start < finS && norm(x.w) === norm(w)); return p ? Math.round((p.start - iniS) * fps) : undefined; };
         const Comp = ESCENAS[e.visual ?? ""] ?? Gancho;
         return <Sequence key={i} from={ini0} durationInFrames={dur}><Comp e={e} d={dur} pal={pal} /></Sequence>;
