@@ -1,7 +1,8 @@
 // 4 · Rebobinado ◀◀ → primer plano del OHM II (reconocible) → la misma caída con el OHM II: muerde, chispa, ella apenas sube; el público respira.
 import React from "react";
 import { AbsoluteFill, Easing, useCurrentFrame } from "remotion";
-import { C, CINTA1, Caida, Camara, Encuadre, Fondo, Ohm, Publico, Rotulo, Svg, ei, estado, type P } from "./comun";
+import { C, CINTA1, Caida, Camara, Chip, Encuadre, Fondo, Ohm, Publico, Rotulo, Svg, ei, estado, SUELO, type P } from "./comun";
+import { Barra } from "./Medidores";
 
 const Rebobina: React.FC<{ o: number }> = ({ o }) => (
   <g opacity={o}>
@@ -24,8 +25,13 @@ export const Freno: React.FC<P> = ({ d, pal }) => {
     <Camara d={d} empuje={0.03} entrada={false}>
       <Svg>
         <Encuadre><Fondo />
-        <Caida k={k} ohm={!rebob} publico={<Publico r={f >= fMenos ? "alivio" : "miedo"} />} />
+        <Caida k={k} ohm={!rebob} fantasma={!rebob && !primer ? 1 : 0} publico={<Publico r={f >= fMenos ? "alivio" : "miedo"} />} />
         {chispa > 0 && [0, 1, 2, 3, 4, 5, 6].map((i) => { const a = (i / 7) * Math.PI * 2; const r1 = 20 + (1 - chispa) * 30, r2 = r1 + 26; return <path key={i} d={`M${CINTA1.x + Math.cos(a) * r1} ${CINTA1.y + Math.sin(a) * r1} L${CINTA1.x + Math.cos(a) * r2} ${CINTA1.y + Math.sin(a) * r2}`} stroke="#FFF3C4" strokeWidth={6} strokeLinecap="round" opacity={chispa} />; })}</Encuadre>
+        {!rebob && !primer && (() => { const n = estado(k, false), lejos = (y: number) => Math.max(0, (SUELO - 30 - y) / (SUELO - 30 - 430)); return <>
+          <Barra x={110} v={st.u * ((1216 - 1168) / (1216 - 965))} ref0={n.u} col="#5FD1C5" arriba />
+          <Barra x={985} v={lejos(st.hy)} ref0={lejos(n.hy)} col="#FF6A1F" arriba={false} />
+          <Chip x={540} y={330} t="- - -  SIN OHM" col="#F4F7FA" o={0.9} />
+        </>; })()}
         {rebob && <Rebobina o={ei(f, 0, 4, 0, 1)} />}
       </Svg>
       {primer && <AbsoluteFill style={{ background: "rgba(8,17,29,0.86)" }}>

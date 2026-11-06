@@ -8,7 +8,7 @@ import { Cuerda } from "../Pegue/comun";
 export { C, Camara, Svg, clamp, type P } from "../Pegue/comun";
 export { Rotulo, Chip, ei, salida } from "../Pump/comun";
 
-export const SUELO = 1330, PARED = 800;
+export const SUELO = 1330, PARED = 800, MADEJA = 380;
 export const CINTA1 = { x: 786, y: 800 }, CINTA2 = { x: 800, y: 520 }; // punto por donde pasa la cuerda
 /** Encuadre: plano medio (suelo → primera cinta), personajes grandes. Todo lo del mundo va dentro. */
 export const ENC = { s: 1.5, cx: 640, cy: 1000, tx: 560, ty: 900 };
@@ -30,12 +30,12 @@ export const estado = (k: number, ohm = false) => {
   const caida = Easing.in(Easing.quad)(cl(k / 0.62));
   const asienta = cl((k - 0.62) / 0.38);
   const rebote = asienta > 0 ? Math.sin(asienta * Math.PI * 2.2) * 26 * (1 - asienta) : 0;
-  const yFin = ohm ? 1010 : 1172;
+  const yFin = ohm ? 1010 : 1135;
   const hy = k < 0.62 ? lerp(430, yFin, caida) : yFin + rebote;
-  const hx = lerp(752, ohm ? 720 : 690, cl(k * 1.4));
+  const hx = lerp(752, ohm ? 730 : 718, cl(k * 1.4));
   const u = Easing.out(Easing.cubic)(cl((k - 0.42) / 0.5));
-  const my = lerp(1216, ohm ? 1168 : 928, u) + (ohm ? 0 : -rebote * 0.6);
-  const mx = lerp(470, ohm ? 492 : 628, u);
+  const my = lerp(1216, ohm ? 1168 : 965, u) + (ohm ? 0 : -rebote * 0.6);
+  const mx = lerp(470, ohm ? 492 : 585, u);
   return { hx, hy, mx, my, u, caida: cl(k / 0.62) };
 };
 
@@ -106,35 +106,67 @@ export const Ohm: React.FC<{ x: number; y: number; s?: number; muerde?: number }
 );
 
 /* ---- personajes ---- */
-const ANG_ASEGURA: Partial<Angulos> = { brazoA: [118, 165], brazoB: [70, 120] };
+
 
 export const Ella: React.FC<{ x: number; y: number; u: number; cara: Cara }> = ({ x, y, u, cara }) => {
-  const vuela: Partial<Angulos> = { torso: 16 * u, cabeza: -24 * u, brazoA: [lerp(118, 168, u), lerp(165, 178, u)], brazoB: [lerp(70, 150, u), lerp(120, 170, u)], piernaA: [lerp(6, 34, u), lerp(0, -8, u)], piernaB: [lerp(-6, -4, u), lerp(0, -34, u)] };
+  const vuela: Partial<Angulos> = { torso: 16 * u, cabeza: -24 * u, brazoA: [lerp(118, 168, u), lerp(165, 178, u)], brazoB: [lerp(28, 36, u), lerp(14, 20, u)], piernaA: [lerp(6, 34, u), lerp(0, -8, u)], piernaB: [lerp(-6, -4, u), lerp(0, -34, u)] };
   return <Escalador x={x} y={y} quien="simon" pose="pie" angulos={vuela} cara={cara} s={ELLA.s} aspecto={ELLA.aspecto} pies="#C8566B" sombra={SUELO + 6} />;
 };
 export const El: React.FC<{ x: number; y: number; pose: NombrePose; poseB?: NombrePose; t?: number; cara: Cara; rot?: number }> = ({ x, y, pose, poseB, t, cara, rot = 0 }) => (
   <Escalador x={x} y={y} quien="joe" pose={pose} poseB={poseB} t={t} cara={cara} s={EL.s} aspecto={EL.aspecto} cuerpo={EL.cuerpo} pies="#E0A526" bolsa="#3A4656" rot={rot} sombra={y > 1100 ? SUELO + 6 : undefined} />
 );
 
+const rad = (g: number) => (g * Math.PI) / 180;
+/** Mano trasera (derecha) de Ella en coordenadas de mundo, misma geometría que Escalador. */
+export const manoFreno = (x: number, y: number, u: number) => {
+  const s = ELLA.s, torso = 16 * u, a0 = lerp(28, 36, u), a1 = lerp(14, 20, u);
+  const hx = Math.sin(rad(180 - torso)) * 88, hy = Math.cos(rad(180 - torso)) * 88;
+  const ex = hx + Math.sin(rad(a0)) * 52, ey = hy + Math.cos(rad(a0)) * 52;
+  return [x + (ex + Math.sin(rad(a1)) * 50) * s, y + (ey + Math.cos(rad(a1)) * 50) * s] as const;
+};
+/** Aparato de aseguramiento en el arnés. */
+export const Aparato: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+  <g transform={`translate(${x} ${y})`}>
+    <rect x={-13} y={-20} width={26} height={38} rx={9} fill="#3A4656" stroke="#141B26" strokeWidth={4} />
+    <circle cx={0} cy={-6} r={5} fill="#AEB8C4" />
+  </g>
+);
+/** Cuerda sobrante en el suelo (madeja). */
+export const Madeja: React.FC<{ x: number }> = ({ x }) => (
+  <g>
+    {[0, 1, 2, 3].map((i) => <ellipse key={i} cx={x + i * 6} cy={SUELO - 6 - i * 7} rx={62 - i * 6} ry={14} fill="none" stroke="#B8460E" strokeWidth={13} />)}
+    {[0, 1, 2, 3].map((i) => <ellipse key={i} cx={x + i * 6} cy={SUELO - 6 - i * 7} rx={62 - i * 6} ry={14} fill="none" stroke="#FF6A1F" strokeWidth={9} />)}
+  </g>
+);
 /** Punto del arnés (anilla) a partir de la cadera. */
 export const arnes = (x: number, y: number, s: number) => [x + 16 * s, y - 20 * s] as const;
 
 /** Escena completa de la caída. */
-export const Caida: React.FC<{ k: number; ohm?: boolean; ohmVisible?: number; caraElla?: Cara; caraEl?: Cara; brillo?: number; publico?: React.ReactNode }> = ({ k, ohm = false, ohmVisible, caraElla, caraEl, brillo = 0, publico }) => {
+export const Caida: React.FC<{ k: number; ohm?: boolean; ohmVisible?: number; caraElla?: Cara; caraEl?: Cara; brillo?: number; publico?: React.ReactNode; fantasma?: number }> = ({ k, ohm = false, ohmVisible, caraElla, caraEl, brillo = 0, publico, fantasma = 0 }) => {
   const st = estado(k, ohm);
   const [ax, ay] = arnes(st.mx, st.my, ELLA.s), [bx, by] = arnes(st.hx, st.hy, EL.s);
   const holgura = (1 - st.u) * 40;
   const dCuerda = `M${ax} ${ay} Q${(ax + CINTA1.x) / 2 - 20} ${(ay + CINTA1.y) / 2 + holgura} ${CINTA1.x} ${CINTA1.y} L${CINTA2.x} ${CINTA2.y} L${bx} ${by}`;
   const poseEl: NombrePose = k < 0.05 ? "escalando" : "cayendo";
+  const [fx, fy] = manoFreno(st.mx, st.my, st.u);
+  const dFreno = `M${ax} ${ay + 10} Q${(ax + fx) / 2 + 10} ${ay + 30} ${fx} ${fy} Q${fx - 20} ${(fy + SUELO) / 2 + 40} ${MADEJA + 30} ${SUELO - 30}`;
+  const g = estado(k, false);
   return (
     <g>
       {publico}
       <ParedCuerda ohm={ohmVisible ?? (ohm ? 1 : 0)} />
+      <Madeja x={MADEJA} />
+      {fantasma > 0 && <g opacity={fantasma * 0.42}>
+        <Ella x={g.mx} y={g.my} u={g.u} cara="miedo" />
+        {k >= 0.62 ? <El x={g.hx} y={g.hy} pose="colgado" cara="miedo" /> : <El x={g.hx} y={g.hy} pose="escalando" poseB="cayendo" t={Math.min(1, k * 3)} cara="miedo" />}
+      </g>}
       <Ella x={st.mx} y={st.my} u={st.u} cara={caraElla ?? (st.u > 0.3 ? "miedo" : "serio")} />
       {k < 0.62
         ? <El x={st.hx} y={st.hy} pose="escalando" poseB={poseEl} t={Math.min(1, k * 3)} cara={caraEl ?? (k > 0.05 ? "miedo" : "esfuerzo")} />
         : <El x={st.hx} y={st.hy} pose="colgado" cara={caraEl ?? (ohm ? "alivio" : "miedo")} />}
+      <Cuerda d={dFreno} w={9} />
       <Cuerda d={dCuerda} w={9} />
+      <Aparato x={ax} y={ay + 6} />
       {brillo > 0 && <path d={dCuerda} stroke="#FFE2C8" strokeWidth={22} fill="none" strokeLinecap="round" strokeDasharray="90 2400" strokeDashoffset={-brillo * 1500} opacity={0.85} />}
       {/* suelo (colchoneta) */}
       <path d={`M-300 ${SUELO + 4} L1400 ${SUELO + 4} L1400 2400 L-300 2400 Z`} fill="#2E4B7A" />

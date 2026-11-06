@@ -4,10 +4,11 @@ import React from "react";
 import { AbsoluteFill, Easing, useCurrentFrame } from "remotion";
 import { Caida, Camara, Chip, Encuadre, Fondo, Publico, Svg, aPantalla, ei, estado, SUELO, EL, type P } from "./comun";
 
-const Barra: React.FC<{ x: number; v: number; col: string; arriba: boolean }> = ({ x, v, col, arriba }) => (
+export const Barra: React.FC<{ x: number; v: number; col: string; arriba: boolean; ref0?: number }> = ({ x, v, col, arriba, ref0 }) => (
   <g>
     <rect x={x - 26} y={360} width={52} height={640} rx={26} fill="#0B1624" opacity={0.85} stroke="#F4F7FA" strokeWidth={4} />
     <rect x={x - 18} y={368 + 624 * (1 - v)} width={36} height={624 * v} rx={18} fill={col} />
+    {ref0 !== undefined && <path d={`M${x - 40} ${368 + 624 * (1 - ref0)} L${x + 40} ${368 + 624 * (1 - ref0)}`} stroke="#F4F7FA" strokeWidth={6} strokeDasharray="10 8" />}
     <path d={arriba ? `M${x - 22} 330 L${x} 300 L${x + 22} 330 Z` : `M${x - 22} 1030 L${x} 1060 L${x + 22} 1030 Z`} fill={col} />
   </g>
 );
