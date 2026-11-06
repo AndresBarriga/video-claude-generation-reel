@@ -9,13 +9,37 @@
     "Mammut / UKC: DAV-SAC, escalador ≤ ≈1,3 veces el peso del asegurador; medidas desde ≈10 kg",
     "Edelrid / UKC: OHM y OHM II en la primera chapa; diferencia recomendada 10–40 kg; fabricante declara ≈25 kg"
   ],
-  "nota_rigor": "Modelo simplificado. «Ella más alta que él» es el caso extremo (caída baja entre la 2.ª y la 3.ª chapa). Frenos sin marca en voz; marca solo en descripción. Sin técnica de aseguramiento.",
+  "nota_rigor": "Modelo simplificado. «Ella más alta que él» es el caso extremo (caída baja entre la 2.ª y la 3.ª chapa). Frenos sin marca en voz; marca solo en descripción. Sin técnica de aseguramiento. OHM II nombrado en voz por decisión de Andrés (6-nov); el fabricante declara ≈25 kg: «no lo compensa todo».",
   "escenas": [
-    { "tipo": "gancho", "visual": "parado", "texto": "Tu pareja pesa treinta kilos más. Se cae… y la que vuela eres tú.", "titulo": "+30 KG", "pausa": 0.4 },
-    { "tipo": "texto", "visual": "polea", "texto": "La cuerda pasa por la primera cinta y tira de ti hacia arriba." },
-    { "tipo": "texto", "visual": "medidores", "texto": "Y cuanto más subes tú, más cae él." },
-    { "tipo": "texto", "visual": "riesgos", "texto": "Tú, contra la primera cinta. Él, cada vez más cerca del suelo.", "pausa": 0.4 },
-    { "tipo": "texto", "visual": "freno", "texto": "Se puede compensar: hay frenos que van en la primera cinta y añaden rozamiento cuando cae." },
-    { "tipo": "cierre", "visual": "cierre", "texto": "Podéis escalar juntos. Pero con esa diferencia, hay que compensarla. ¿Lo habíais hablado?", "titulo": "MÁNDASELO A TU PAREJA DE CORDADA" }
+    {
+      "tipo": "gancho",
+      "visual": "parado",
+      "texto": "Tu pareja pesa treinta kilos más. Se cae… y tú sales volando.",
+      "titulo": "+30 KG",
+      "pausa": 0.4
+    },
+    {
+      "tipo": "texto",
+      "visual": "polea",
+      "texto": "La cuerda pasa por la primera cinta y tira de ti hacia arriba."
+    },
+    {
+      "tipo": "texto",
+      "visual": "medidores",
+      "texto": "Al subir tú, su caída se alarga. Y si está cerca del suelo, puede acabar tocándolo.",
+      "pausa": 0.4
+    },
+    {
+      "tipo": "texto",
+      "visual": "freno",
+      "texto": "Para eso existe el OHM II: va en la primera chapa y añade rozamiento cuando cae. Ayuda, pero no lo compensa todo.",
+      "titulo": "OHM II"
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "texto": "Podéis escalar juntos. Pero antes, hablad de cómo compensar esa diferencia.",
+      "titulo": "MÁNDASELO A TU PAREJA DE CORDADA"
+    }
   ]
 }

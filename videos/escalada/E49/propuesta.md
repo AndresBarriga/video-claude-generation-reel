@@ -89,3 +89,26 @@ Fuera de la voz: báscula, «+10 kg», cualquier norma de técnica. Umbral (≈1
 ## Puntuación
 Crítico v1: 6/10, 10/14 (lección de física que acaba en producto; faltaba lo que da miedo; cierre obvio). v2 aplica sus cambios; sin re-puntuar.
 - Corrección de hecho: te levanta incluso con pesos iguales; con más diferencia, más.
+
+## Guion v4 (6-nov, Andrés: se puede exagerar; OHM II en voz; cierre con acción) — final para voz
+Ver `guion.json`. Cambios: «tú sales volando»; F4 = ella hacia la pared y él hacia el suelo (no «contra la cinta»); OHM II real en F5 con «ayuda, pero no lo compensa todo»; cierre «hablad de cómo compensar» y envío solo en rótulo (viralidad.md: cierre ≤3 s). Riesgo aceptado: nombrar la marca puede sonar a anuncio.
+
+## Hoja de planos (cambio cada ~2 s)
+| s | Plano | Cambio |
+|---|---|---|
+| 0,0 | Rocódromo congelado, todos mirando; ella arriba, él abajo | f0, silencio 0,4 |
+| 1,5 | Zoom brusco a la cara de ella (susto) | corte |
+| 3,0 | Él cayendo, cuerda que se tensa (descongela) | acción |
+| 4,5 | Cuerda iluminada él → cinta → ella | gráfico |
+| 6,5 | Primer plano de la cinta girando como polea | detalle |
+| 8,0 | Pies de ella despegando del suelo, magnesio que cae | detalle + sonido |
+| 9,5 | Plano lateral: ella sube, él baja; dos flechas | rehook |
+| 11,5 | Él acercándose al suelo, un espectador se tapa los ojos | reacción |
+| 13,0 | Pies de él a un palmo del suelo; silencio | tensión |
+| 14,5 | Rebobinado ◀◀ a la caída | transición |
+| 15,5 | Mano de ella poniendo el OHM II en la primera chapa (dispositivo real dibujado) | objeto |
+| 17,5 | Misma caída: el OHM II muerde la cuerda, chispa de rozamiento | acción |
+| 19,5 | Ella sube poco; la sala vuelve a moverse, alguien aplaude | alivio |
+| 21,5 | Rótulo «AYUDA, NO LO COMPENSA TODO» | texto |
+| 23,0 | Los dos al pie de la vía, hablando antes de escalar | cierre |
+| 25,5 | Corte al rocódromo congelado (bucle) + «MÁNDASELO…» | bucle |
