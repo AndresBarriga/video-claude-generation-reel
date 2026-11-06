@@ -1,6 +1,6 @@
 {
   "id": "E49",
-  "titulo": "Tu pareja pesa treinta kilos más",
+  "titulo": "Pesa veinticuatro kilos más",
   "nicho": "escalada",
   "plantilla": "Asegurador",
   "verificado": true,
@@ -9,13 +9,13 @@
     "Mammut / UKC: DAV-SAC, escalador ≤ ≈1,3 veces el peso del asegurador; medidas desde ≈10 kg",
     "Edelrid / UKC: OHM y OHM II en la primera chapa; diferencia recomendada 10–40 kg; fabricante declara ≈25 kg"
   ],
-  "nota_rigor": "Modelo simplificado. «Ella más alta que él» es el caso extremo (caída baja entre la 2.ª y la 3.ª chapa). Frenos sin marca en voz; marca solo en descripción. Sin técnica de aseguramiento. OHM II nombrado en voz por decisión de Andrés (6-nov); el fabricante declara ≈25 kg: «no lo compensa todo».",
+  "nota_rigor": "Modelo simplificado y exagerado a propósito (decisión de Andrés 6-nov). 24 kg < ≈25 kg declarados por Edelrid para el OHM II (no se dice en voz). «Ella más alta que él» = caso extremo. Sin técnica de aseguramiento.",
   "escenas": [
     {
       "tipo": "gancho",
       "visual": "parado",
-      "texto": "Tu pareja pesa treinta kilos más. Se cae… y tú sales volando.",
-      "titulo": "+30 KG",
+      "texto": "Escalas con alguien que pesa veinticuatro kilos más. Se cae… y tú sales volando.",
+      "titulo": "+24 KG",
       "pausa": 0.4
     },
     {
@@ -32,14 +32,14 @@
     {
       "tipo": "texto",
       "visual": "freno",
-      "texto": "Para eso existe el OHM II: va en la primera chapa y añade rozamiento cuando cae. Ayuda, pero no lo compensa todo.",
+      "texto": "Para eso existe el OHM II: va en la primera chapa y frena la cuerda cuando cae. Así subes menos.",
       "titulo": "OHM II"
     },
     {
       "tipo": "cierre",
       "visual": "cierre",
-      "texto": "Podéis escalar juntos. Pero antes, hablad de cómo compensar esa diferencia.",
-      "titulo": "MÁNDASELO A TU PAREJA DE CORDADA"
+      "texto": "Podéis escalar juntos. Pero antes, habladlo.",
+      "titulo": "MÁNDASELO A QUIEN ESCALA CONTIGO"
     }
   ]
 }
