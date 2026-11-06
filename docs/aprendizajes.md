@@ -22,3 +22,16 @@ Solo una reforzada puede pasar a `docs/viralidad.md` (y Andrés lo aprueba). Dat
 Tras cada medición a 7 días: añadir el vídeo a «a favor»/«en contra» de las hipótesis que toque, cambiar estado si procede y anotar hipótesis nuevas. Proponer el cambio a Andrés antes de tocar `viralidad.md`.
 
 - 2026-11-01 · Referencia @escaladatips (bandera trasera): 580 me gusta y 229 envíos con una sola técnica, mismo paso antes/después y etiquetas de carga. Los vídeos de técnica con comparación del mismo movimiento se envían mucho; a comprobar con E42.
+
+## 2026-11-06 · Medición de 11 vídeos (captura de Andrés 12:45; ventanas de 39 h a 209 h, no comparables al 100 %)
+Seguidores/1k vistas: Pump 5,1 · Beta 3,5 · Poleas 3,2 · Descansos 2,9 · Miedo 2,6 · Último pegue 2,1 · La puerta 1,8 · Honnold 0,9 · Hippies 0,5 · Grossglockner 0,5 · ¿Cortas? 0,4. (Suma 529 de 563 seguidores; los 34 restantes cuadran con el rapel.)
+- **H1:** E35 38,5k (>20k) → 2 a favor (E15, E35); falta un 3.º. Abierta.
+- **H2:** Último pegue 2 envíos/1k frente a 7 en ¿Cortas? → 2 a favor.
+- **H3:** reforzada. ¿Cortas? 0,4, Grossglockner 0,5, Hippies 0,5, Honnold 0,9 frente a 2–5 en cuerpo/identidad.
+- **H7:** reforzada con matiz. Cuerpo = 2,6–5,1 seg./1k (Pump, Miedo, Poleas, Descansos); Pump y Miedo también son los más enviados (1,2 % y 1,7 %). No hace falta que sean «fases».
+- **H8:** Beta 3,5 seg./1k ≥ 1 → 1 a favor.
+- **H10:** refutada. Hippies 9,1k (<10k) y 0,5 seg./1k (<0,8).
+- **H13:** refutada. La puerta: skip 28,8 % (>25), 1 envío/1k (<5); solo cumple seg./1k. La info limpia convierte seguidores (Poleas, Descansos) pero alcanza poco (1,9–4,8k).
+- **H12:** matiz. «Tuyo» no basta: Poleas y Descansos son del cuerpo del espectador y se quedan en 2–5k. Decide el gancho/momento reconocible.
+- **Correlación (Spearman, n=11):** vistas ↔ visto medio/duración **+0,75** (la única que aguanta con n=11); vistas ↔ skip −0,53; el resto |ρ|<0,4 (ruido). Seguidores/1k baja cuando sube el alcance (−0,39: H3). Comentarios: solo Grossglockner pasa de 0,1 % (0,3 %).
+- Cautelas: Insights de IG pueden estar sin actualizar; envíos/likes/guardados convertidos de % (aprox.); «Bandera» asumida = La puerta; «19m» de Último pegue leído como 19 seguidores.
