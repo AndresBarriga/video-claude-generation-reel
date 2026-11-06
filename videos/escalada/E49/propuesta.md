@@ -1,4 +1,4 @@
-# E49 · «Se cae él y vuelas tú» (asegurador volando; idea de Andrés 6-nov) — propuesta v2 (crítico v1: 6/10, viralidad 10/14)
+# E49 · «Se cae él y vuelas tú» (asegurador volando; idea de Andrés 6-nov) — propuesta v3 (crítico v1: 6/10, viralidad 10/14; v3 = enfoque de Andrés)
 
 Formato: «algo que te pasa y no sabías por qué» + solución real al final. Público: quien escala en rocódromo con alguien que pesa bastante más/menos. Se lo manda al compañero de cordada.
 
@@ -21,6 +21,24 @@ Formato: «algo que te pasa y no sabías por qué» + solución real al final. P
 - C: «Él baja. Tú subes. ¿Quién aguanta a quién?»
 - D: «La primera cinta, a un palmo de tu cara.»
 - E (imagen): pies del asegurador despegando del suelo, cuerda tensa.
+
+## Guion v3b (crítico v3: 6/10, 12/14; aplicado gancho afirmativo y cierre con condición) (enfoque de Andrés 6-nov: «podéis escalar juntos, pero conoced cómo afecta la diferencia de peso») — ~75 palabras, ~27 s
+Mensaje: la diferencia de peso no os impide escalar juntos; ignorarla sí puede dar problemas. Física y prevención, no accidente.
+1. «Tu pareja pesa treinta kilos más. Se cae… y la que vuela eres tú.» | f0 (acción): él ya cayendo y ella despegando del suelo; rótulo «+30 KG»
+2. «La cuerda pasa por la primera cinta y tira de ti hacia arriba.» | la cuerda se tensa en la cinta; ella sube
+3. «Un poco está bien: le frena más suave.» | él para sin golpe (rehook)
+4. «Pero si subes mucho, te comes la primera cinta. Y él cae más cerca del suelo.» | nudillos a un palmo de la cinta; él a un palmo del suelo
+5. «Se puede compensar. Por ejemplo, con un freno en la primera cinta: añade rozamiento y tú subes menos.» | mismo plano con el freno: ella sube poco
+6. «Podéis escalar juntos. Pero con esa diferencia, hay que compensarla. ¿Lo habíais hablado?» | corte al f0 (bucle); rótulo «MÁNDASELO A TU PAREJA DE CORDADA»
+
+Marca del freno (p. ej. Edelrid OHM II / OHMEGA) **solo en descripción**, no en voz (riesgo de anuncio).
+
+## Descripción (consejos para guardar)
+1. Conoced vuestra diferencia de peso: desde unos 10 kg, conviene hacer algo (DAV: el escalador no más de ≈1,3 veces el asegurador).
+2. Existen frenos para la primera cinta (p. ej. Edelrid OHM II u OHMEGA). Seguid sus instrucciones; no sustituyen a asegurar bien.
+3. Mirad la primera chapa y lo que hay alrededor: altura, pared, obstáculos.
+4. Aseguramiento dinámico: apréndelo con alguien formado; no improvises saltos.
+Modelo simplificado. Aprende a asegurar con un instructor.
 
 ## Guion v2 (voz | imagen) — ~80 palabras, ~30 s
 1. «Tu pareja se cae. Y la que vuela eres tú.» | f0: plano lateral, él cae, ella despega; rótulo «¿POR QUÉ VUELO YO?»
