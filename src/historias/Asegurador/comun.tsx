@@ -5,7 +5,7 @@ import { Easing, interpolate, random } from "remotion";
 import { Escalador, type Cara, type NombrePose, type Angulos } from "../../piezas/Escalador";
 import { Resina, RESINA } from "../../piezas/Rocodromo";
 import { Cuerda } from "../Pegue/comun";
-export { C, Camara, Svg, clamp, type P } from "../Pegue/comun";
+export { C, Camara, Svg, clamp, golpe, type P } from "../Pegue/comun";
 export { Rotulo, Chip, ei, salida } from "../Pump/comun";
 
 export const SUELO = 1330, PARED = 800, MADEJA = 380;
@@ -33,8 +33,8 @@ export const estado = (k: number, ohm = false) => {
   const yFin = ohm ? 1010 : 1135;
   const hy = k < 0.62 ? lerp(430, yFin, caida) : yFin + rebote;
   const hx = lerp(752, ohm ? 730 : 718, cl(k * 1.4));
-  const u = Easing.out(Easing.cubic)(cl((k - 0.42) / 0.5));
-  const my = lerp(1216, ohm ? 1168 : 965, u) + (ohm ? 0 : -rebote * 0.6);
+  const u = Easing.inOut(Easing.cubic)(cl((k - 0.4) / 0.6));
+  const my = lerp(1216, ohm ? 1168 : 1000, u) + (ohm ? 0 : -rebote * 0.6);
   const mx = lerp(470, ohm ? 492 : 585, u);
   return { hx, hy, mx, my, u, caida: cl(k / 0.62) };
 };
@@ -185,10 +185,10 @@ export const Publico: React.FC<{ r: Reaccion; giro?: number }> = ({ r, giro = 1 
   const m = (giro > 0.5 ? 1 : -1) as 1 | -1;
   return (
     <g opacity={0.9}>
-      <Escalador x={385} y={700} quien="joe" pose="escalando" angulos={{ cabeza: r === "nada" ? -20 : 30 }} cara={cara} s={s} mira={m} aspecto={{ chaqueta: "#6FA34A", chaquetaSombra: "#4E7A33", casco: null, peinado: "rapado", pelo: "#1B1410", piel: "#8D5A3B", pielSombra: "#6E4429", manos: "piel" }} pies="#2FA39A" />
-      <Escalador x={300} y={hip} quien="simon" pose={r === "alivio" ? "celebrando" : "pie"} cara={cara} s={s} mira={m} aspecto={{ chaqueta: "#E0A526", chaquetaSombra: "#A97812", casco: null, peinado: "rizado", pelo: "#2B1D14", piel: "#B9805A", pielSombra: "#94603F", manos: "piel" }} bolsa="#C8566B" sombra={yS + 4} />
-      <Escalador x={372} y={hip} quien="joe" pose={r === "miedo" ? "soplando" : "pie"} cara={r === "miedo" ? "cerrados" : cara} s={s * 1.05} mira={m} aspecto={{ chaqueta: "#4F7FC9", chaquetaSombra: "#36599A", casco: null, peinado: "corto", pelo: "#C9B48A", piel: "#F0C7A4", pielSombra: "#D3A27C", gafas: true, manos: "piel" }} sombra={yS + 4} />
-      <Escalador x={430} y={hip + 4} quien="simon" pose={r === "alivio" ? "celebrando" : "pie"} cara={cara} s={s * 0.96} mira={m} aspecto={{ chaqueta: "#C8566B", chaquetaSombra: "#963F50", casco: null, peinado: "trenzas", pelo: "#1B1410", piel: "#7A4B30", pielSombra: "#5C3621", manos: "piel" }} sombra={yS + 4} />
+      <Escalador x={300} y={hip + 2} quien="joe" pose={r === "miedo" ? "senalando" : "pie"} angulos={r === "miedo" ? { brazoA: [150, 160], cabeza: -30 } : undefined} cara={cara} sombra={yS + 4} s={s} mira={m} aspecto={{ chaqueta: "#6FA34A", chaquetaSombra: "#4E7A33", casco: null, peinado: "rapado", pelo: "#1B1410", piel: "#8D5A3B", pielSombra: "#6E4429", manos: "piel" }} pies="#2FA39A" />
+      <Escalador x={352} y={hip} quien="simon" pose={r === "alivio" ? "celebrando" : "pie"} cara={cara} s={s} mira={m} aspecto={{ chaqueta: "#E0A526", chaquetaSombra: "#A97812", casco: null, peinado: "rizado", pelo: "#2B1D14", piel: "#B9805A", pielSombra: "#94603F", manos: "piel" }} bolsa="#C8566B" sombra={yS + 4} />
+      <Escalador x={410} y={hip} quien="joe" pose={r === "miedo" ? "soplando" : "pie"} cara={r === "miedo" ? "cerrados" : cara} s={s * 1.05} mira={m} aspecto={{ chaqueta: "#4F7FC9", chaquetaSombra: "#36599A", casco: null, peinado: "corto", pelo: "#C9B48A", piel: "#F0C7A4", pielSombra: "#D3A27C", gafas: true, manos: "piel" }} sombra={yS + 4} />
+      <Escalador x={462} y={hip + 4} quien="simon" pose={r === "alivio" ? "celebrando" : "pie"} cara={cara} s={s * 0.96} mira={m} aspecto={{ chaqueta: "#C8566B", chaquetaSombra: "#963F50", casco: null, peinado: "trenzas", pelo: "#1B1410", piel: "#7A4B30", pielSombra: "#5C3621", manos: "piel" }} sombra={yS + 4} />
       <rect x={-300} y={0} width={760} height={SUELO} fill="#0B1624" opacity={0.12} />
     </g>
   );
