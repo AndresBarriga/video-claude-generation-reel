@@ -24,9 +24,12 @@
   "Colombia": 7.7,
   "Ecuador": 5.1
  },
- "aprox_2026-11-07": {
-  "seguidores": "~700",
-  "impresiones": "~500000",
-  "nota": "Cifras aproximadas dichas por Andrés (19:13), sin captura; ventana de impresiones no indicada. Antes: 297 seguidores el 2-nov."
+ "captura_2026-11-07": {
+  "hora": "19:14",
+  "ventana": "30 días (8-oct a 6-nov)",
+  "visualizaciones": 491191,
+  "seguidores": 704,
+  "seguidores_netos": 547,
+  "nota": "Pestaña Home de Insights. Visualizaciones 284K→491K frente al 2-nov; seguidores 297→704. La curva muestra el pico del 28-oct y una subida al final. Herramienta Monetización visible en el panel (sin comprobar elegibilidad)."
  }
 }
