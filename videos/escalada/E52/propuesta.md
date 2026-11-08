@@ -146,3 +146,20 @@ Fuente del casco: título del informe del AAC («Poor Position, No Helmet»). La
 **Comentario fijado:** ¿Cuándo te pillaste la cuerda detrás de la pierna? ¿Cómo te diste cuenta?
 **Envío:** mándaselo a quien te asegura y que te mire el pie tras la segunda chapa.
 **Viralidad (honesta): 11/14.** Falta personaje humano (H3: cuerpo/identidad convierte más); riesgo de verse técnico/frío.
+
+---
+## v7 (8-nov, vigente) tras el crítico de v6 (5/10): una sola regla, 28 s, sin pictogramas
+**Cambios:** fuera la regla 2 («lado contrario»: solo vale si la chapa queda detrás; sin fuente suficiente) y la regla 1 («entre las piernas»); fuera pantalla partida, flechas, ✓ y rótulo «LADO CONTRARIO». Una sola regla, la de las fuentes (Petzl, REI, Gripped): **la cuerda no debe quedar detrás de ninguna pierna; si queda, pasa el pie por encima**. El truco se presenta como comprobación nuestra, no como garantía: «mira que la cuerda no rodee ninguna pierna». Textura en vez de iconos: zapatillas con magnesio, pierna que tiembla, roce de cuerda en el sonido, suelo visible abajo. «No lo vio» → «no recordaba haberla visto» (AAC).
+
+| # | Seg. | Se ve (frontal, cámara = pared; solo piernas, zapatillas con magnesio, cuerda naranja, suelo y asegurador pequeño abajo) | Se dice |
+|---|---|---|---|
+| 1 | 0–3 | Primer plano del pie temblando en una regleta; la cuerda cruza por detrás de la pantorrilla. Rótulo «ESTO TE DA LA VUELTA» (0,5 s) | «Antes de la segunda chapa. Un pie al otro lado de la cuerda. Y cuando caes, la cuerda no te para: te voltea.» |
+| 2 | 3–8 | Caída: la cuerda se tensa, tira de la pantorrilla, giro; corte a negro 0,3 s con el sonido | «Caes. La cuerda se tensa y, en vez de pararte, te da la vuelta.» |
+| 3 | 8–15 | **Rehook.** Casco en el suelo + asegurador pequeño mirando arriba; rótulo «SIN CASCO» | «Le pasó a una escaladora con tres años de experiencia. Se golpeó la cabeza y perdió el conocimiento. Su asegurador no recordaba haber visto la cuerda ahí.» |
+| 4 | 15–22 | Misma pierna: el pie rodea la cuerda por encima y queda por delante; roce de cuerda | «Si la cuerda queda detrás de tu pierna, pasa el pie por encima, nunca por detrás.» |
+| 5 | 22–28 | Tras clipear, la cámara sigue la cuerda con un travelling de la cinta al arnés; ninguna pierna enredada | «Y después de cada chapa, sigue la cuerda con la vista: que no rodee ninguna pierna.» |
+| 6 | 28–31 | Vuelve al primer plano de f0, ahora con la cuerda por delante. Rótulo «MÁNDASELO A QUIEN TE ASEGURA» | «¿Quién te mira el pie?» |
+**Comentario fijado:** ¿Cuándo te pillaste la cuerda detrás de la pierna? ¿Cómo te diste cuenta?
+**Envío:** «Mírame el pie cuando chape la segunda, que a mí no me da tiempo a verlo.»
+**Descripción:** quemadura de cuerda y casco (experiencia de Andrés; sin cifras). El truco es nuestra comprobación, no una norma.
+**Viralidad (honesta): 10/14.** Sin cara humana (H3) y tutorial: se espera poco alcance; es la prueba de «útil y compartible».
