@@ -163,3 +163,16 @@ Fuente del casco: título del informe del AAC («Poor Position, No Helmet»). La
 **Envío:** «Mírame el pie cuando chape la segunda, que a mí no me da tiempo a verlo.»
 **Descripción:** quemadura de cuerda y casco (experiencia de Andrés; sin cifras). El truco es nuestra comprobación, no una norma.
 **Viralidad (honesta): 10/14.** Sin cara humana (H3) y tutorial: se espera poco alcance; es la prueba de «útil y compartible».
+
+---
+## v8 (8-nov, vigente) = v7 con personajes con cara, cámara frontal y efectos de cámara; tiempos corregidos al texto
+**Estilo (decidido por Andrés):** escalador y asegurador nuevos, cara grande de frente (cámara = pared), rocódromo cálido, cuerda naranja como único color vivo. Efectos de cámara (referencia: post de annderrey, 29-oct): **zoom digital de golpe** (al pie y al inicio de la caída), **atraviesa la escena** (travelling que sigue la cuerda por las cintas hasta el arnés), **rompe el marco** (el pie/la cuerda sale del cuadro en la caída), **garabato vivo** (trazo naranja a mano que tiembla marcando la cuerda). Descartados: órbita, interfaces, muro de titulares, gráfico.
+| # | Seg. | Se ve | Voz |
+|---|---|---|---|
+| 1 | 0–2,5 | Cara tensa arriba, pie temblando abajo; cuerda por detrás de la pantorrilla con garabato naranja. Zoom de golpe al pie. Rótulo «ESTO TE DA LA VUELTA» | «Un pie detrás de la cuerda.» |
+| 2 | 2,5–7 | Cae: la cuerda tira de la pierna, el pie rompe el marco, giro; corte a negro 0,3 s con el sonido | «Caes. Y la cuerda no te para: te voltea.» |
+| 3 | 7–17 | **Rehook.** Casco en el suelo, asegurador pequeño con cara mirando arriba; «SIN CASCO» | «Le pasó a una escaladora con tres años de experiencia. Se golpeó la cabeza y perdió el conocimiento. Su asegurador no recordaba haber visto la cuerda ahí.» |
+| 4 | 17–23 | El pie rodea la cuerda por encima y queda por delante; roce de cuerda | «Si la cuerda queda detrás de tu pierna, pasa el pie por encima. Nunca por detrás.» |
+| 5 | 23–29 | Travelling a través de las cintas siguiendo la cuerda hasta el arnés | «Y después de cada chapa, sigue la cuerda con la vista: que no rodee ninguna pierna.» |
+| 6 | 29–32 | Vuelve al encuadre de f0 con la cuerda por delante; «MÁNDASELO A QUIEN TE ASEGURA» | «¿Quién te mira el pie?» |
+Pausas declaradas: 0,4 s tras «cuerda» (esc. 1) y 0,4 s antes de «te voltea» (esc. 2). Voz: la de E35 (continuidad), tono cercano y bajo, sin dramatizar. ~32 s.
