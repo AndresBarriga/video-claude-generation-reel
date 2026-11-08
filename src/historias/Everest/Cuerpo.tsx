@@ -1,6 +1,7 @@
 // Escena «cuerpo»: el cuerpo medio enterrado en el nicho, la cuerda fija cruzándolo y una bota con crampones pasando por encima.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { CuerpoDibujo } from "./CuerpoDibujo";
 import { NOCHE, Nieve, Escarcha, Cono, Svg, Rotulo, ei, type P } from "./comun";
 
 export const Cuerpo: React.FC<P> = () => {
@@ -22,32 +23,21 @@ export const Cuerpo: React.FC<P> = () => {
         {/* ladera de nieve */}
         <path d="M-100 1180 Q300 1120 700 1210 T1200 1280 L1200 2100 L-100 2100 Z" fill="url(#nieveC)" />
         <path d="M-100 1180 Q300 1120 700 1210 T1200 1280" stroke="#E6F0F8" strokeWidth={6} fill="none" opacity={0.6} />
-        <g transform="translate(-170 -330) scale(1.2)">
-        {/* cuerpo: pantalón azul y bota amarilla con crampones saliendo de la nieve (hacia abajo-derecha) */}
-        <path d="M430 1180 Q520 1150 600 1210 L760 1390 L700 1440 L520 1300 Z" fill="#3B5B8C" />
-        <path d="M430 1230 Q520 1210 600 1260 L740 1400" stroke="#27406A" strokeWidth={26} fill="none" opacity={0.7} />
-        <path d="M720 1370 L850 1330 L900 1400 L880 1470 L750 1480 L700 1430 Z" fill="#E0B93A" />
-        <path d="M750 1480 L880 1470 L890 1500 L760 1512 Z" fill="#2B3442" />
-        {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M${765 + i * 24} 1508 L${772 + i * 24} 1540 L${782 + i * 24} 1508 Z`} fill="#AEB6C0" />)}
-        {/* torso con chaqueta roja cubierta de nieve y capucha vuelta hacia la roca */}
-        <path d="M200 1090 Q330 1000 520 1090 Q560 1170 470 1240 Q330 1280 220 1210 Z" fill="#7E2A2A" />
-        <path d="M200 1090 Q330 1000 520 1090 Q420 1100 330 1120 Q250 1130 200 1160 Z" fill="#9E3A33" opacity={0.8} />
-        <ellipse cx={300} cy={1065} rx={92} ry={78} fill="#561D1D" />
-        <ellipse cx={278} cy={1050} rx={50} ry={44} fill="#AEB6C0" opacity={0.9} />
-        <path d="M180 1200 Q330 1160 520 1230 Q430 1290 300 1285 Z" fill="#E6F0F8" opacity={0.85} />
-        <path d="M400 1090 Q470 1060 540 1100 Q500 1130 430 1135 Z" fill="#E6F0F8" opacity={0.8} />
-        <Escarcha x={278} y={1048} r={64} n={30} seed="cu" />
+        <g transform="translate(40 790) scale(1.22)"><CuerpoDibujo /></g>
         {/* cuerda fija cruzando por encima del cuerpo */}
-        <path d="M-60 930 L1140 1700" stroke="#FF6A1F" strokeWidth={18} strokeLinecap="round" />
-        <path d="M-60 930 L1140 1700" stroke="#FFC9A8" strokeWidth={5} strokeDasharray="6 22" strokeLinecap="round" />
-        </g>
+        <path d="M-60 740 L1140 1590" stroke="#FF6A1F" strokeWidth={18} strokeLinecap="round" />
+        <path d="M-60 740 L1140 1590" stroke="#FFC9A8" strokeWidth={5} strokeDasharray="6 22" strokeLinecap="round" />
         {/* luz de la frontal del que pasa */}
-        <Cono x={bx + 60} y={by - 330} tx={260} ty={950} ancho={380} op={0.42} id="cn" />
+        <Cono x={bx + 60} y={by - 330} tx={230} ty={1050} ancho={380} op={0.42} id="cn" />
         {/* bota con crampones del escalador que pasa por encima de la cuerda, en primer plano */}
-        <g transform={`translate(${bx} ${by})`}>
-          <path d="M-60 -60 L40 -300 L150 -290 L130 -120 L200 -70 L210 20 L-70 20 Z" fill="#3A4556" />
-          <path d="M-80 20 L220 20 L230 70 L-90 74 Z" fill="#2B3442" />
-          {[0, 1, 2, 3, 4, 5].map((i) => <path key={i} d={`M${-70 + i * 50} 72 L${-55 + i * 50} 120 L${-35 + i * 50} 72 Z`} fill="#D5DCE4" />)}
+        <g transform={`translate(${bx + 60} ${by + 40})`}>
+          <path d="M-20 -420 L120 -430 L150 -190 Q250 -150 270 -70 L275 10 L-80 10 L-60 -120 Z" fill="#2F6F6B" />
+          <path d="M-60 -120 L150 -190 L160 -150 L-62 -70 Z" fill="#2B3442" />
+          <path d="M-70 -90 Q40 -130 160 -120 Q250 -110 270 -50 L275 10 L-80 10 Z" fill="#3A4556" />
+          <path d="M-84 10 L282 10 L292 62 L-92 66 Z" fill="#161C25" />
+          <path d="M120 -125 Q210 -100 250 -40" stroke="#6B7A8E" strokeWidth={8} fill="none" opacity={0.7} />
+          {[0, 1, 2, 3, 4, 5, 6].map((i) => <path key={i} d={`M${-78 + i * 52} 64 L${-62 + i * 52} 118 L${-42 + i * 52} 64 Z`} fill="#D5DCE4" />)}
+          <path d="M276 10 L330 -20 L338 40 L292 62 Z" fill="#D5DCE4" opacity={0.9} />
         </g>
         <Nieve f={f} n={55} />
         <Rotulo f={f} ini={0} t="EVEREST 2006" y={270} tam={74} col="#fff" />
