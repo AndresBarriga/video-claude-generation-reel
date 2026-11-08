@@ -7,13 +7,13 @@ import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { C, type P } from "./comun";
 import { Gancho } from "./Gancho";
-import { Caida } from "./Caida";
+import { Whip } from "./Whip";
 import { Consecuencias } from "./Consecuencias";
 import { Regla } from "./Regla";
-import { Palabra } from "./Palabra";
+import { Habito } from "./Habito";
 import { Cierre } from "./Cierre";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, caida: Caida, consecuencias: Consecuencias, regla: Regla, palabra: Palabra, cierre: Cierre };
+const ESCENAS: Record<string, React.FC<P>> = { whip: Whip, gancho: Gancho, consecuencias: Consecuencias, regla: Regla, habito: Habito, cierre: Cierre };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Cuerda: React.FC<{ datos: Datos }> = ({ datos }) => {

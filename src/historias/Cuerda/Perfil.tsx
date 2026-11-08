@@ -9,11 +9,12 @@ import { X0, PY, PX } from "../Pierna/Plano";
 const rot2 = (p: [number, number], g: number): [number, number] => { const a = (g * Math.PI) / 180; return [p[0] * Math.cos(a) - p[1] * Math.sin(a), p[0] * Math.sin(a) + p[1] * Math.cos(a)]; };
 export const S3 = 3;
 export const H0 = caderaDe(PX, PY, S3);
+export const LARGO = 640; // la caída pasa de largo la cinta y voltea por debajo
 export const CHY = H0.y + 330, CHX = borde(CHY, X0) + 4;
 
 /** Geometría de la caída: cadera, giro y punto de la pantorrilla donde engancha la cuerda. */
 export const caida = (v: number, giro: number, dx = 0) => {
-  const hx = H0.x - 70 * v + dx, hy = H0.y + 250 * v;
+  const hx = H0.x - 90 * Math.sin(Math.PI * Math.min(v, 1)) - 30 * v + dx, hy = H0.y + LARGO * v;
   const sc = (q: [number, number]) => [q[0] * S3, q[1] * S3] as [number, number];
   const rod = ext(0, 0, POSE_PARED.piernaA[0], 66), tob = ext(rod[0], rod[1], POSE_PARED.piernaA[1], 64);
   const pant = rot2(sc([(rod[0] + tob[0]) / 2 - 12, (rod[1] + tob[1]) / 2]), giro);
