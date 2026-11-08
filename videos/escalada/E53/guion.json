@@ -1,0 +1,14 @@
+{
+  "id": "E53",
+  "titulo": "Sharp / Everest (boceto)",
+  "nicho": "escalada",
+  "plantilla": "Everest",
+  "mudo": true,
+  "verificado": false,
+  "fuentes": [],
+  "nota": "Solo bocetos de estilo (gancho A y fila de luces). La voz y el guion final siguen en propuesta.md (v4).",
+  "escenas": [
+    { "tipo": "texto", "visual": "gancho", "dur": 3, "texto": "" },
+    { "tipo": "texto", "visual": "fila", "dur": 3, "texto": "" }
+  ]
+}
