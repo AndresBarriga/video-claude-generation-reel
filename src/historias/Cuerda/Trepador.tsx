@@ -1,5 +1,5 @@
-// Escalador visto DE ESPALDAS (la cámara es el asegurador mirando la pared). Proporciones reales: cabeza ≈ 1/7,8 del alto.
-// Coordenadas locales ~1080×1600; se dibuja con transform desde la escena. detras=true: la cuerda pasa por detrás de la pierna izquierda.
+// Escalador visto DE ESPALDAS (la cámara es el asegurador mirando la pared). Proporciones de dibujo: cabeza ≈ 1/5 del alto.
+// Coordenadas de pantalla (1080×1920). detras=true: la cuerda pasa por detrás de la pierna izquierda.
 import React from "react";
 import { GYM } from "./comun";
 
@@ -7,51 +7,47 @@ const T = "#2FB8A8", TS = "#1F7F73", PA = "#2B3442", PL = "#3C4A5E", PIEL = "#E9
 const trazo = (d: string, w: number, c: string, o = 1) => <path d={d} stroke={c} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" fill="none" opacity={o} />;
 
 export const Trepador: React.FC<{ f: number; slip?: number; detras?: boolean }> = ({ f, slip = 0, detras = true }) => {
-  const tr = Math.sin(f * 2.3) * 2.6, tr2 = Math.cos(f * 2.9) * 2.6;
-  const rodR = 1160, tobR = 1290 + slip, tobL = 1330;
-  const cuerda = detras
-    ? "M500 1560 Q482 1430 462 1300 Q448 1150 520 1030"
-    : "M500 1560 Q372 1450 374 1250 Q376 1110 462 1020";
+  const tr = Math.sin(f * 2.3) * 3, tr2 = Math.cos(f * 2.9) * 3;
+  const tobR = 1138 + slip;
+  const cuerda = detras ? "M520 1396 Q506 1300 482 1200 Q464 1080 522 950" : "M520 1396 Q380 1300 382 1130 Q384 1020 450 930";
   return (
     <g>
-      {/* presas: manos y pies */}
-      <ellipse cx={346} cy={392} rx={58} ry={46} fill="#F2C230" /><ellipse cx={734} cy={392} rx={58} ry={46} fill="#E04F8A" />
-      <ellipse cx={440} cy={1388} rx={46} ry={22} fill="#6B7CE0" /><ellipse cx={700} cy={1368} rx={44} ry={22} fill="#F28A30" />
-      {/* chapa (cinta exprés) por debajo de él y cuerda subiendo al arnés */}
-      <circle cx={500} cy={1440} r={13} fill="#9AA3AE" />
-      <ellipse cx={500} cy={1478} rx={17} ry={28} fill="none" stroke="#C8D0D8" strokeWidth={8} />
-      <rect x={487} y={1500} width={26} height={48} rx={12} fill="#F2C230" />
-      <ellipse cx={500} cy={1572} rx={17} ry={28} fill="none" stroke="#C8D0D8" strokeWidth={8} />
+      {/* presas */}
+      <ellipse cx={372} cy={392} rx={60} ry={48} fill="#F2C230" /><ellipse cx={708} cy={392} rx={60} ry={48} fill="#E04F8A" />
+      <ellipse cx={452} cy={1200} rx={50} ry={22} fill="#6B7CE0" /><ellipse cx={676} cy={1186} rx={48} ry={22} fill="#F28A30" />
+      {/* chapa: tornillo, cinta exprés y mosquetón de abajo por donde pasa la cuerda */}
+      <circle cx={520} cy={1262} r={13} fill="#9AA3AE" />
+      <ellipse cx={520} cy={1298} rx={18} ry={28} fill="none" stroke="#C8D0D8" strokeWidth={8} />
+      <rect x={507} y={1322} width={26} height={44} rx={12} fill="#F2C230" />
+      <ellipse cx={520} cy={1392} rx={18} ry={28} fill="none" stroke="#C8D0D8" strokeWidth={8} />
       {trazo(cuerda, 16, GYM.cuerda)}
       {/* piernas */}
-      {trazo(`M478 1012 L452 1170`, 100, PA)}{trazo(`M452 1170 L440 ${tobL - 12}`, 76, PA)}
-      {trazo(`M602 1012 L650 ${rodR}`, 100, PA)}{trazo(`M650 ${rodR} L${692} ${tobR - 12}`, 76, PA)}
-      {trazo(`M520 1020 L492 1160`, 22, PL, 0.6)}{trazo(`M628 1020 L660 1150`, 22, PL, 0.6)}
-      {/* zapatillas vistas desde el talón */}
-      <ellipse cx={440} cy={tobL + 12} rx={46} ry={32} fill="#1B2230" /><ellipse cx={440} cy={tobL + 28} rx={40} ry={14} fill="#E04F8A" />
-      <ellipse cx={692} cy={tobR + 12} rx={46} ry={32} fill="#1B2230" /><ellipse cx={692} cy={tobR + 28} rx={40} ry={14} fill="#E04F8A" />
-      {/* torso con costura central y bolsa de magnesio */}
-      <path d="M392 692 Q540 648 688 692 L664 1004 L416 1004 Z" fill={T} />
-      <path d="M392 692 Q420 800 416 1004 L440 1004 Q430 800 440 690 Z" fill={TS} opacity={0.8} />
-      <path d="M688 692 Q660 800 664 1004 L640 1004 Q650 800 640 690 Z" fill={TS} opacity={0.8} />
-      {trazo("M540 664 L540 1000", 5, TS, 0.9)}
-      {trazo("M440 760 Q540 790 640 760", 6, TS, 0.5)}
-      <ellipse cx={540} cy={1050} rx={62} ry={50} fill="#7A4FA3" /><ellipse cx={540} cy={1008} rx={50} ry={14} fill="#F4EFE6" opacity={0.9} />
-      {trazo("M420 996 L660 996", 40, "#E0B020")}
-      {trazo("M428 1062 L508 1052", 20, "#E0B020")}{trazo("M586 1052 L670 1066", 20, "#E0B020")}
-      {/* brazos arriba, temblando */}
-      {trazo(`M414 706 L${330 + tr} 560`, 78, T)}{trazo(`M${330 + tr} 560 L${346 + tr} 436`, 66, TS)}
-      {trazo(`M666 706 L${752 + tr2} 560`, 78, T)}{trazo(`M${752 + tr2} 560 L${734 + tr2} 436`, 66, TS)}
-      <circle cx={346 + tr} cy={414} r={40} fill={PIEL} /><circle cx={346 + tr} cy={408} r={30} fill="#F4EFE6" opacity={0.75} />
-      <circle cx={734 + tr2} cy={414} r={40} fill={PIEL} /><circle cx={734 + tr2} cy={408} r={30} fill="#F4EFE6" opacity={0.75} />
-      {/* cabeza: cuello, nuca, orejas, casco */}
-      <rect x={510} y={618} width={60} height={56} fill={PIELS} />
-      <ellipse cx={486} cy={604} rx={10} ry={17} fill={PIEL} /><ellipse cx={594} cy={604} rx={10} ry={17} fill={PIEL} />
-      <ellipse cx={540} cy={590} rx={54} ry={58} fill="#3B2A20" />
-      <path d="M470 566 Q470 492 540 488 Q610 492 610 566 Q540 540 470 566 Z" fill="#F2C230" />
-      <path d="M474 566 Q540 546 606 566 L606 580 Q540 560 474 580 Z" fill="#C79A1B" />
-      {trazo("M540 490 L540 548", 5, "#C79A1B", 0.9)}
-      {trazo("M486 590 L486 640 M594 590 L594 640", 4, "#141B26", 0.7)}
+      {trazo("M482 940 L462 1040", 98, PA)}{trazo("M462 1040 L452 1130", 76, PA)}
+      {trazo("M598 940 L640 1040", 98, PA)}{trazo(`M640 1040 L672 ${tobR - 10}`, 76, PA)}
+      {trazo("M512 952 L492 1030", 20, PL, 0.6)}{trazo("M620 952 L644 1030", 20, PL, 0.6)}
+      <ellipse cx={452} cy={1146} rx={48} ry={32} fill="#1B2230" /><ellipse cx={452} cy={1162} rx={42} ry={14} fill="#E04F8A" />
+      <ellipse cx={672} cy={tobR + 8} rx={48} ry={32} fill="#1B2230" /><ellipse cx={672} cy={tobR + 24} rx={42} ry={14} fill="#E04F8A" />
+      {/* torso corto, costura y bolsa de magnesio */}
+      <path d="M412 692 Q540 650 668 692 L650 918 L430 918 Z" fill={T} />
+      <path d="M412 692 Q434 800 430 918 L452 918 Q446 800 454 690 Z" fill={TS} opacity={0.8} />
+      <path d="M668 692 Q646 800 650 918 L628 918 Q634 800 626 690 Z" fill={TS} opacity={0.8} />
+      {trazo("M540 664 L540 916", 5, TS, 0.9)}
+      <ellipse cx={540} cy={968} rx={58} ry={48} fill="#7A4FA3" /><ellipse cx={540} cy={928} rx={48} ry={13} fill="#F4EFE6" opacity={0.9} />
+      {trazo("M428 912 L652 912", 38, "#E0B020")}
+      {trazo("M436 972 L506 964", 18, "#E0B020")}{trazo("M580 964 L654 974", 18, "#E0B020")}
+      {/* brazos */}
+      {trazo(`M434 706 L${350 + tr} 560`, 78, T)}{trazo(`M${350 + tr} 560 L${372 + tr} 428`, 66, TS)}
+      {trazo(`M646 706 L${730 + tr2} 560`, 78, T)}{trazo(`M${730 + tr2} 560 L${708 + tr2} 428`, 66, TS)}
+      <circle cx={372 + tr} cy={408} r={42} fill={PIEL} /><circle cx={372 + tr} cy={402} r={31} fill="#F4EFE6" opacity={0.75} />
+      <circle cx={708 + tr2} cy={408} r={42} fill={PIEL} /><circle cx={708 + tr2} cy={402} r={31} fill="#F4EFE6" opacity={0.75} />
+      {/* cabeza grande de dibujo: cuello, nuca, orejas, casco */}
+      <rect x={508} y={628} width={64} height={52} fill={PIELS} />
+      <ellipse cx={470} cy={590} rx={12} ry={20} fill={PIEL} /><ellipse cx={610} cy={590} rx={12} ry={20} fill={PIEL} />
+      <ellipse cx={540} cy={582} rx={68} ry={74} fill="#3B2A20" />
+      <path d="M466 572 Q466 470 540 466 Q614 470 614 572 Q540 544 466 572 Z" fill="#F2C230" />
+      <path d="M470 574 Q540 548 610 574 L610 590 Q540 564 470 590 Z" fill="#C79A1B" />
+      {trazo("M540 468 L540 548", 5, "#C79A1B", 0.9)}
+      {trazo("M478 596 L482 650 M602 596 L598 650", 4, "#141B26", 0.7)}
     </g>
   );
 };
