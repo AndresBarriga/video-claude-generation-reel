@@ -66,3 +66,17 @@ La cuerda por detrás de la pierna puede voltearte en una caída. Pasa el pie po
 **Envío:** «Fíjate en mi pie cuando clipee la segunda chapa, que yo no me doy cuenta.»
 **Pendiente de fuente:** «se frena aquí» (frecuencia) y quién lo ve desde abajo: no entran en la voz.
 **Viralidad (honesta): 10/14.** Falta el giro de mitad (4) y que el cierre vuelva a ti con algo más que una pregunta (6).
+
+---
+## v3 (8-nov) ideas de Andrés: volteo, quemadura, casco; sin explicación larga del pie
+**Cambios sobre v2:** la escena 4 añade la gradación «lo habitual: una quemadura de cuerda; lo grave: la cabeza»; casco como cierre práctico (plan B porque no siempre te ves el pie); la colocación detallada del pie queda como vídeo aparte (no entra).
+| # | Seg. | Se ve | Se dice |
+|---|---|---|---|
+| 1 | 0–3 | Primer plano del pie; cuerda en color vivo cruza por detrás de la pantorrilla. Rótulo «ESTO TE DA LA VUELTA» | «Antes de la segunda chapa. Un pie al otro lado de la cuerda. Y cuando caes, la cuerda no te para: te voltea.» |
+| 2 | 3–8 | Caída y giro; corte a negro 0,3 s con el sonido del golpe | «Caes. La cuerda se tensa, y en vez de pararte, te da la vuelta.» |
+| 3 | 8–14 | **Rehook.** Asegurador abajo, rótulo «NO LA VIO» | «Le pasó a una escaladora con tres años de experiencia. Su asegurador no recordaba haber visto la cuerda ahí. Se golpeó la cabeza y perdió el conocimiento.» |
+| 4 | 14–20 | Dos planos: pierna con quemadura de cuerda (rozadura, sin sangre explícita) → casco en el suelo, rótulo «SIN CASCO» (informe del AAC) | «Lo normal es una quemadura de cuerda. Lo grave es la cabeza.» |
+| 5 | 20–27 | Plano desde detrás: el pie pasa por encima de la cuerda | «Si la cuerda queda detrás de tu pierna, pasa el pie por encima. Mantenla por delante.» |
+| 6 | 27–31 | Escalador sacando la cinta, paso atrás; casco puesto | «Y como no siempre te vas a ver el pie, lleva casco.» |
+| 7 | 31–34 | Corte al primer plano de f0 con la cuerda por delante. Rótulo «MÁNDASELO A QUIEN TE ASEGURA» | «¿Quién te mira el pie cuando clipeas?» |
+**Sin fuente (fuera de la voz):** que el casco evite el volteo, frecuencia, qué ve el asegurador.
