@@ -206,3 +206,11 @@ Pausas declaradas: 0,4 s tras «cuerda» (esc. 1) y 0,4 s antes de «te voltea»
 **Truco, dicho con honestidad:** no hay truco infalible en las fuentes; lo que hay es regla (pie por encima), hábito (mirar tras cada chapa) y un segundo par de ojos (la palabra). El vídeo vende lo tercero.
 **Comentario fijado:** ¿Qué grita tu asegurador cuando ve la cuerda detrás de tu pierna?
 **Envío:** «Pactemos una palabra para cuando me veas la cuerda detrás de la pierna, que yo no me entero.»
+
+---
+## v11 (8-nov, vigente) — cambios de Andrés tras ver el vídeo
+- Whip de verdad: cae un buen trozo y voltea **por debajo de la cinta**, y va en el **segundo 1** (clímax primero; luego «un segundo antes» rebobina).
+- Fuera la palabra pactada como solución: el mensaje es **el hábito propio** (mira la cuerda cada vez que chapas); el asegurador ayuda pero desde abajo no siempre lo ve.
+- Quemadura en primer plano, con pantalón corto.
+- Cierre «Chapa. Mira. Sube.» + pregunta real para comentarios.
+**4 preguntas:** 1) Gancho: el volteo ya en marcha + «mira dónde estaba la cuerda» (la causa escondida). 2) Rehook: «te da la vuelta por debajo de la cinta» y luego «desde abajo no siempre lo ve». 3) Hasta el final: la rutina de 3 palabras llega al final. 4) La gente ya ha visto whips en vídeo; «rope behind leg» en la descripción.

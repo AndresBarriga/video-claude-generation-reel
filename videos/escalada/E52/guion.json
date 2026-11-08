@@ -14,33 +14,33 @@
  "escenas": [
   {
    "tipo": "gancho",
-   "visual": "gancho",
-   "texto": "Tu asegurador grita «pierna». Mira tu pie. Ya."
+   "visual": "whip",
+   "texto": "Esto pasa por un pie mal puesto. Mira dónde estaba la cuerda."
   },
   {
    "tipo": "texto",
-   "visual": "caida",
-   "texto": "Si caes así, la cuerda puede voltearte."
+   "visual": "gancho",
+   "texto": "Un segundo antes: la cuerda, por detrás de la pantorrilla. Caes, te engancha la pierna y te da la vuelta por debajo de la cinta."
   },
   {
    "tipo": "texto",
    "visual": "consecuencias",
-   "texto": "A veces, una quemadura. Puede ser peor: te golpeas la cabeza y pierdes el conocimiento. Y quien te asegura no siempre la ve."
+   "texto": "Con suerte, una quemadura. Si no, la cabeza contra la pared. Por eso, casco."
   },
   {
    "tipo": "texto",
    "visual": "regla",
-   "texto": "Si la cuerda queda detrás de tu pierna, pasa el pie por encima. Nunca por detrás."
+   "texto": "Si la ves detrás, pasa el pie por encima. Nunca por detrás."
   },
   {
    "tipo": "texto",
-   "visual": "palabra",
-   "texto": "Y antes de subir, pactad una palabra. Si ve la cuerda detrás de tu pierna, que la grite."
+   "visual": "habito",
+   "texto": "Tu asegurador puede avisarte, pero desde abajo no siempre lo ve. El hábito es tuyo: cada vez que chapas, mira dónde queda la cuerda."
   },
   {
    "tipo": "cierre",
    "visual": "cierre",
-   "texto": "¿Cuál es la vuestra?"
+   "texto": "Chapa. Mira. Sube. ¿Te ha pasado alguna vez?"
   }
  ]
 }
