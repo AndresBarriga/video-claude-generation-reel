@@ -10,8 +10,9 @@ import { Gancho } from "./Gancho";
 import { Fila } from "./Fila";
 import { Perfil } from "./Perfil";
 import { Cuerpo } from "./Cuerpo";
+import { CuerpoImg } from "./CuerpoImg";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, fila: Fila, perfil: Perfil, cuerpo: Cuerpo };
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, fila: Fila, perfil: Perfil, cuerpo: Cuerpo, cuerpoimg: CuerpoImg };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Everest: React.FC<{ datos: Datos }> = ({ datos }) => {
