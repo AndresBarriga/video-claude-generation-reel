@@ -176,3 +176,18 @@ Fuente del casco: título del informe del AAC («Poor Position, No Helmet»). La
 | 5 | 23–29 | Travelling a través de las cintas siguiendo la cuerda hasta el arnés | «Y después de cada chapa, sigue la cuerda con la vista: que no rodee ninguna pierna.» |
 | 6 | 29–32 | Vuelve al encuadre de f0 con la cuerda por delante; «MÁNDASELO A QUIEN TE ASEGURA» | «¿Quién te mira el pie?» |
 Pausas declaradas: 0,4 s tras «cuerda» (esc. 1) y 0,4 s antes de «te voltea» (esc. 2). Voz: la de E35 (continuidad), tono cercano y bajo, sin dramatizar. ~32 s.
+
+---
+## v9 (8-nov, vigente) — correcciones de Andrés sobre v8
+**Cambios:** fuera «le pasó a una escaladora» (les pasa a muchos, no es especial). El rehook es la **escalera de consecuencias** (te voltea → te quemas → te golpeas la cabeza y pierdes el conocimiento, peor sin casco) y «es de los fallos más comunes» (Climbing School AU, Petzl lo lista entre los errores). Truco nuevo: **imaginar la caída tras cada chapa + pacto de palabra con el asegurador** («¡pierna!»; el asegurador que avisa «watch your leg» está en Climbing School AU; la palabra pactada es nuestra propuesta).
+**Contenido contestado en fuentes (no decir «entre las piernas»):** VDiff dice que la cuerda entre las piernas también puede voltear; se queda la regla de las fuentes sólidas: la cuerda por el lado de la pared de tu pierna (nunca el pie entre la cuerda y la pared); si no, pasa el pie por encima.
+| # | Seg. | Se ve | Voz |
+|---|---|---|---|
+| 1 | 0–3 | Cara tensa arriba, pie temblando abajo; cuerda por detrás de la pantorrilla (garabato naranja), zoom de golpe al pie. «ESTO TE DA LA VUELTA» | «Tu pie, al otro lado de la cuerda. Y caes.» |
+| 2 | 3–8 | Caída, el pie rompe el marco, giro; corte a negro con sonido | «La cuerda no te frena: te voltea.» |
+| 3 | 8–19 | **Rehook en 3 golpes**, rótulos grandes: «TE VOLTEA» → «TE QUEMA LA PIERNA» → «SIN CASCO: LA CABEZA» (casco en el suelo) | «Es de los fallos más comunes. En el mejor de los casos, te quemas la pierna con la cuerda. En el peor, te golpeas la cabeza y pierdes el conocimiento. Y sin casco, mucho peor.» |
+| 4 | 19–24 | El pie rodea la cuerda por encima y queda por delante | «Si la cuerda queda detrás de tu pierna, pasa el pie por encima. Nunca por detrás.» |
+| 5 | 24–31 | Travelling por las cintas siguiendo la cuerda; la cara cierra los ojos un segundo (imagina la caída); el asegurador abajo con la boca abierta gritando «¡PIERNA!» | «Truco: después de cada chapa, imagina que caes. ¿Dónde queda la cuerda? Y pacta con quien te asegura una palabra: “pierna”.» |
+| 6 | 31–35 | Vuelve al encuadre de f0 con la cuerda por delante; «MÁNDASELO A QUIEN TE ASEGURA» | «Mándaselo a quien te asegura. ¿Cuál es vuestra palabra?» |
+**Comentario fijado:** ¿Qué grita tu asegurador cuando ve la cuerda detrás de tu pierna? (pregunta real, no bait)
+**Sin fuente (fuera de la voz o suave):** «brecha» (se dice «te golpeas la cabeza», que es lo que dice el AAC); el truco de imaginar la caída viene de un foro (Mountain Project), no de una autoridad; frecuencia suave («de los fallos más comunes»).
