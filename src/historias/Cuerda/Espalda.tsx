@@ -16,9 +16,11 @@ export const piernas = (pie: number, alza = 0) => {
   return { hL: [-14, 4] as [number, number], kL, fL, hR: [14, 4] as [number, number], kR: [62, 26] as [number, number], fR: [84, 72] as [number, number] };
 };
 
-export const Espalda: React.FC<{ x: number; y: number; s: number; tr?: number; pie?: number; alza?: number; mira?: number; cara?: "miedo" | "alivio"; slip?: number }> = ({ x, y, s, tr = 0, pie = 0, alza = 0, mira = 0, cara = "miedo", slip = 0 }) => {
+export const Espalda: React.FC<{ x: number; y: number; s: number; tr?: number; pie?: number; alza?: number; mira?: number; cara?: "miedo" | "alivio"; slip?: number; paso?: number }> = ({ x, y, s, tr = 0, pie = 0, alza = 0, mira = 0, cara = "miedo", slip = 0, paso = 0 }) => {
   const g = piernas(pie, alza);
+  g.kR = [62 - 4 * paso, 26 - 34 * paso]; g.fR = [84 - 6 * paso, 72 - 44 * paso];
   const fR: [number, number] = [g.fR[0] + slip * 6, g.fR[1] + slip * 22];
+  const hR: [number, number] = [46 - tr - 4 * paso, -194 - 60 * paso], eR: [number, number] = [54 - tr, -138 - 24 * paso];
   const ropeTop = pie < 0.5 && alza < 0.55; // la cuerda va por encima (= por detrás de la pantorrilla)
   const cuerda = `M0 10 Q${8 + tr} 120 ${CHAPA_L[0]} ${CHAPA_L[1] - 30}`;
   const pierna = (h: [number, number], k: [number, number], f: [number, number], sombra: boolean) => (
@@ -32,15 +34,16 @@ export const Espalda: React.FC<{ x: number; y: number; s: number; tr?: number; p
   const ty = -1.5 * tr;
   return (
     <g transform={`translate(${x} ${y}) scale(${s})`}>
+      <Cuerda d={`M${CHAPA_L[0]} ${CHAPA_L[1] - 30} Q${CHAPA_L[0] + 6} ${CHAPA_L[1] + 140} ${CHAPA_L[0] - 4} ${CHAPA_L[1] + 700}`} w={9} />
       {!ropeTop && <Cuerda d={cuerda} w={9} />}
       {pierna(g.hR, g.kR, fR, true)}
       {pierna(g.hL, g.kL, g.fL, false)}
       {ropeTop && <Cuerda d={cuerda} w={9} />}
       {/* brazos (detrás del torso solo los hombros) */}
       <path d={lin([[-22, -90], [-56 + tr, -128], [-50 + tr, -178]])} {...st(24, CHS)} />
-      <path d={lin([[22, -90], [54 - tr, -138], [46 - tr, -190]])} {...st(24, CH)} />
+      <path d={lin([[22, -90], eR, hR])} {...st(24, CH)} />
       <circle cx={-50 + tr} cy={-182} r={13} fill={PIEL} /><circle cx={-50 + tr} cy={-186} r={9} fill="#F4EFE6" opacity={0.6} />
-      <circle cx={46 - tr} cy={-194} r={13} fill={PIEL} /><circle cx={46 - tr} cy={-198} r={9} fill="#F4EFE6" opacity={0.6} />
+      <circle cx={hR[0]} cy={hR[1]} r={13} fill={PIEL} /><circle cx={hR[0]} cy={hR[1] - 4} r={9} fill="#F4EFE6" opacity={0.6} />
       {/* torso (espalda de la chaqueta) */}
       <g transform={`translate(0 ${ty})`}>
         <rect x={-27} y={-108} width={54} height={118} rx={24} fill={CH} />

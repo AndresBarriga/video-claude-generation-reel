@@ -7,9 +7,12 @@ import { Garabato } from "./Garabato";
 
 /** Estado del whip en el fotograma g (lento = factor de cámara lenta). */
 export const whip = (g: number) => {
-  const v = spring({ frame: g, fps: 30, config: { damping: 13, stiffness: 70, mass: 0.9 } });
-  const giro = -175 * sube(g, 12, 30);
-  return { v, giro, imp: 30 };
+  const T = 16; // fotograma en que la cuerda se tensa (ya por debajo de la cinta)
+  const libre = Math.min(1, Math.max(0, g / T)) ** 2 * 0.86; // caída libre, acelerando
+  const tir = g > T ? spring({ frame: g - T, fps: 30, config: { damping: 7, stiffness: 160 } }) : 0; // estiramiento y rebote
+  const v = libre + 0.14 * tir;
+  const giro = -18 * Math.min(1, g / T) - 157 * (g > T - 2 ? 1 - Math.exp(-(g - T + 2) / 4) : 0);
+  return { v, giro, imp: T + 6 };
 };
 
 export const Whip: React.FC<P> = ({ d, pal }) => {
