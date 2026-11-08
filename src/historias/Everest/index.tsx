@@ -8,8 +8,9 @@ import { Sonidos } from "../../Sonidos";
 import { type P } from "./comun";
 import { Gancho } from "./Gancho";
 import { Fila } from "./Fila";
+import { Perfil } from "./Perfil";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, fila: Fila };
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, fila: Fila, perfil: Perfil };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Everest: React.FC<{ datos: Datos }> = ({ datos }) => {
