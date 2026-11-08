@@ -87,3 +87,16 @@ Tras la crítica a v3 (5/10): se quita la quemadura (frase sin fuente suficiente
 Escenas 1–5 como en v2. **Escena 6 (cierre ≤3 s, 30–33 s):** corte al primer plano del pie de f0 con la cuerda por delante; rótulo «MÁNDASELO A QUIEN TE ASEGURA»; voz: «¿Quién te mira el pie? ¿Y llevas casco?»
 En la escena 3, plano de un casco en el suelo con el rótulo «SIN CASCO» tras «perdió el conocimiento».
 **Fuera por decisión:** quemadura de cuerda como escalón; colocación detallada del pie (vídeo aparte).
+
+---
+## v5 (8-nov, vigente) decisión de Andrés: quemadura y casco dentro
+Andrés: la quemadura hay que decirla (le pasó a él) y el casco es para que, si te voltea, al menos no te golpees la cabeza. Se integran en **una sola escena** (no tres consejos) y sin afirmar frecuencia ni que el casco evite el volteo. Riesgo anotado por el crítico: diluir el volteo; se mitiga con el orden (volteo → quemadura → cabeza → casco) y manteniendo el cierre ≤3 s.
+| # | Seg. | Se ve | Se dice |
+|---|---|---|---|
+| 1 | 0–3 | Primer plano del pie, cuerda por detrás de la pantorrilla. Rótulo «ESTO TE DA LA VUELTA» | «Antes de la segunda chapa. Un pie al otro lado de la cuerda. Y cuando caes, la cuerda no te para: te voltea.» |
+| 2 | 3–8 | Caída y giro; corte a negro 0,3 s con el sonido del golpe | «Caes. La cuerda se tensa, y en vez de pararte, te da la vuelta.» |
+| 3 | 8–14 | **Rehook.** Asegurador abajo; rótulo «NO LA VIO» | «Le pasó a una escaladora con tres años de experiencia. Su asegurador no recordaba haber visto la cuerda ahí. Se golpeó la cabeza y perdió el conocimiento.» |
+| 4 | 14–21 | Rozadura de cuerda en la pierna (sin sangre explícita) → casco en el suelo, rótulo «SIN CASCO» | «Y aunque no pase eso, la cuerda te puede quemar la pierna. Y si te voltea, que al menos la cabeza vaya protegida: casco.» |
+| 5 | 21–28 | Plano desde detrás: el pie pasa por encima de la cuerda | «Si la cuerda queda detrás de tu pierna, pasa el pie por encima, no por detrás.» |
+| 6 | 28–31 | Primer plano del pie de f0 con la cuerda por delante. Rótulo «MÁNDASELO A QUIEN TE ASEGURA» | «¿Quién te mira el pie?» |
+Fuente del casco: título del informe del AAC («Poor Position, No Helmet»). La quemadura: relato de accidentes (nota de Accidents in North American Climbing) y experiencia de Andrés; en la voz va «te puede quemar», no «siempre».
