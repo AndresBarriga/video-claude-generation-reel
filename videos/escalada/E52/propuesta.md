@@ -191,3 +191,18 @@ Pausas declaradas: 0,4 s tras «cuerda» (esc. 1) y 0,4 s antes de «te voltea»
 | 6 | 31–35 | Vuelve al encuadre de f0 con la cuerda por delante; «MÁNDASELO A QUIEN TE ASEGURA» | «Mándaselo a quien te asegura. ¿Cuál es vuestra palabra?» |
 **Comentario fijado:** ¿Qué grita tu asegurador cuando ve la cuerda detrás de tu pierna? (pregunta real, no bait)
 **Sin fuente (fuera de la voz o suave):** «brecha» (se dice «te golpeas la cabeza», que es lo que dice el AAC); el truco de imaginar la caída viene de un foro (Mountain Project), no de una autoridad; frecuencia suave («de los fallos más comunes»).
+
+---
+## v10 (8-nov, vigente) tras el crítico de v9 (5,5/10)
+**Aplicado:** fuera «de los fallos más comunes» (sin fuente), «en el mejor de los casos» (falso: lo mejor es que no pase nada), «te voltea» en firme (→ «puede voltearte»), «mucho peor sin casco» (el AAC solo dice «No Helmet») y el truco de imaginar la caída (foro; irreal con pump). La **palabra pactada pasa a ser el gancho y el cierre** (lo más enviable). «Mándaselo» solo en rótulo, cierre ≤3 s. Se mantiene fuera «le pasó a una escaladora» (Andrés); el dato del AAC entra como «quien te asegura no siempre la ve».
+| # | Seg. | Se ve | Voz |
+|---|---|---|---|
+| 1 | 0–3 | Abajo, el asegurador grita con la boca abierta «¡PIERNA!»; arriba, el escalador mira su pie: la cuerda pasa por detrás de la pantorrilla (garabato naranja, zoom de golpe) | «Tu asegurador grita “pierna”. Mira tu pie. Ya.» |
+| 2 | 3–8 | Cae; el pie rompe el marco; giro; corte a negro con el sonido | «Si caes así, la cuerda puede voltearte.» |
+| 3 | 8–16 | Dos golpes con rótulo: «QUEMADURA DE CUERDA» → casco en el suelo, «SIN CASCO: LA CABEZA» | «A veces, una quemadura. Puede ser peor: te golpeas la cabeza y pierdes el conocimiento. Y quien te asegura no siempre la ve.» |
+| 4 | 16–21 | El pie rodea la cuerda por encima y queda por delante | «Si la cuerda queda detrás de tu pierna, pasa el pie por encima. Nunca por detrás.» |
+| 5 | 21–27 | Asegurador y escalador chocan puños abajo; sube y chapa; el asegurador mira las piernas | «Y antes de subir, pactad una palabra. Si te ve la cuerda detrás de la pierna, que la grite.» |
+| 6 | 27–30 | Primer plano del pie con la cuerda por delante; rótulo «MÁNDASELO A QUIEN TE ASEGURA» | «¿Cuál es la vuestra?» |
+**Truco, dicho con honestidad:** no hay truco infalible en las fuentes; lo que hay es regla (pie por encima), hábito (mirar tras cada chapa) y un segundo par de ojos (la palabra). El vídeo vende lo tercero.
+**Comentario fijado:** ¿Qué grita tu asegurador cuando ve la cuerda detrás de tu pierna?
+**Envío:** «Pactemos una palabra para cuando me veas la cuerda detrás de la pierna, que yo no me entero.»
