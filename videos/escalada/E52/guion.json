@@ -1,0 +1,24 @@
+{
+ "id": "E52",
+ "titulo": "Cuerda detrás de la pierna (boceto)",
+ "nicho": "escalada",
+ "plantilla": "Cuerda",
+ "mudo": true,
+ "verificado": false,
+ "fuentes": [],
+ "nota": "Solo bocetos",
+ "escenas": [
+  {
+   "tipo": "texto",
+   "visual": "gancho",
+   "dur": 3,
+   "texto": ""
+  },
+  {
+   "tipo": "texto",
+   "visual": "cierre",
+   "dur": 3,
+   "texto": ""
+  }
+ ]
+}
