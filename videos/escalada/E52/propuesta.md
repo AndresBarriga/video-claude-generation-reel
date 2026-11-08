@@ -100,3 +100,49 @@ Andrés: la quemadura hay que decirla (le pasó a él) y el casco es para que, s
 | 5 | 21–28 | Plano desde detrás: el pie pasa por encima de la cuerda | «Si la cuerda queda detrás de tu pierna, pasa el pie por encima, no por detrás.» |
 | 6 | 28–31 | Primer plano del pie de f0 con la cuerda por delante. Rótulo «MÁNDASELO A QUIEN TE ASEGURA» | «¿Quién te mira el pie?» |
 Fuente del casco: título del informe del AAC («Poor Position, No Helmet»). La quemadura: relato de accidentes (nota de Accidents in North American Climbing) y experiencia de Andrés; en la voz va «te puede quemar», no «siempre».
+
+---
+## v6 (8-nov, vigente) — formato nuevo: planos FRONTALES de piernas y cuerda + regla + truco de comprobación
+**Por qué cambia:** Andrés: centrarse en la cuerda, estilo distinto al resto (nada de personajes de perfil + dilema), planos de frente que enseñen cómo colocar el pie y un truco para asegurar que está bien. Pasa de «historia de accidente» a **consejo visual** (un público, un formato); el caso del AAC queda como rehook.
+
+## Mensaje primero
+1. **Mensaje:** la cuerda va siempre entre tú y la pared, y en una travesía sale del lado contrario a donde vas; si la encuentras detrás, pasa el pie por encima.
+2. **Problema:** no notas dónde está la cuerda mientras escalas; solo se ve cuando caes.
+3. **Valor:** una regla de dos frases y una comprobación de 1 s tras cada chapa.
+4. **Cómo ayuda:** ves el error y la corrección en planos de frente, como si la cámara fuera la pared.
+5. **Identificación:** acabas de chapar, das un paso atrás con el pie y no miras la cuerda.
+
+## 5 aperturas (elijo la 1)
+1. Pantalla partida de frente, dos pares de piernas en la pared: A cuerda por delante, B cuerda por detrás de una pantorrilla. Rótulo «¿CUÁL TE VOLTEA?»
+2. «Una de estas dos posiciones te da la vuelta si caes.»
+3. Primer plano del pie y la cuerda naranja cruzando por detrás: «ESTO TE DA LA VUELTA».
+4. «Tres años de experiencia. Antes de la segunda chapa. Y no vio la cuerda.»
+5. «¿Sabes dónde está tu cuerda ahora mismo?»
+
+## Guion (~38 s, sin personajes con cara: piernas, pies, cuerda y pared)
+| # | Seg. | Se ve (todo de frente, cámara = pared) | Se dice |
+|---|---|---|---|
+| 1 | 0–3 | Pantalla partida A/B; la cuerda naranja resalta; rótulo «¿CUÁL TE VOLTEA?» | «Una de estas dos posiciones te da la vuelta si caes. ¿Cuál?» |
+| 2 | 3–8 | B se tensa: la cuerda tira de la pantorrilla y las piernas giran hacia arriba; corte a negro 0,3 s con el sonido | «La de la derecha. La cuerda queda detrás de la pierna, y al caer no te frena: te voltea.» |
+| 3 | 8–14 | **Rehook.** Casco en el suelo, rótulo «SIN CASCO» | «Le pasó a una escaladora con tres años de experiencia. Se golpeó la cabeza y perdió el conocimiento. Su asegurador no recordaba haber visto la cuerda ahí.» |
+| 4 | 14–21 | **Regla 1 (subes recto):** cuerda cae entre las dos piernas, flecha verde | «Si subes recto, la cuerda va entre tus piernas.» |
+| 5 | 21–28 | **Regla 2 (te mueves a un lado):** pierna derecha avanza, la cuerda sale del muslo izquierdo; rótulo «LADO CONTRARIO» | «Si te mueves a la derecha, la cuerda sale por tu pierna izquierda: del lado contrario a donde vas.» |
+| 6 | 28–34 | **Corrección:** B otra vez; el pie rodea la cuerda por encima y queda por delante | «Si te la encuentras detrás, pasa el pie por encima de la cuerda, nunca por detrás.» |
+| 7 | 34–39 | **Truco:** tras clipear, un trazo luminoso sigue la cuerda desde la última cinta hasta el arnés y pasa por delante de las dos rodillas; ✓ | «Y después de cada chapa, sigue la cuerda con la vista desde la cinta hasta tu arnés. Tiene que pasar por delante de tus dos rodillas.» |
+| 8 | 39–42 | Vuelve al plano A/B del principio, ahora solo A; rótulo «MÁNDASELO A QUIEN TE ASEGURA» | «¿Dónde está tu cuerda ahora?» |
+(Casco: el cierre práctico va en la descripción y en el comentario fijado; en pantalla solo el rótulo «SIN CASCO» de la escena 3.)
+
+## Fuentes
+- AAC, *Accidents in North American Climbing* (tres años de experiencia, antes de la segunda chapa, giró, golpe en la cabeza, pérdida de conocimiento, asegurador no recordaba la cuerda; título del informe «No Helmet»).
+- Climbing Tech Tips (recto: cuerda entre las piernas; travesía: cuerda en el lado opuesto al movimiento; si está detrás, pasar el pie por encima).
+- REI («mantén siempre la cuerda entre tú y la pared»; si está detrás de la pierna, sal y pásala por encima), Petzl (error a evitar), Gripped.
+- **Sin fuente, fuera de la voz:** que el truco de «seguir la cuerda con la vista» lo recomiende nadie como tal (es nuestra síntesis de la regla «entre tú y la pared»); frecuencia; que el casco evite el volteo; quemadura (Andrés: «me ha pasado a mí», solo descripción/comentario).
+
+## Las 4 preguntas
+1. **Gancho:** pantalla partida con rótulo «¿CUÁL TE VOLTEA?»: el espectador mira y apuesta; la imagen ya tiene el error dentro.
+2. **Rehook (8–14 s):** «tres años de experiencia… no vio la cuerda».
+3. **Hasta el final:** la pregunta del segundo 1 se contesta en el 3, pero el truco de comprobación llega al final y el cierre vuelve al plano inicial.
+4. **Qué sabe ya la gente:** «cuerda detrás de la pierna / rope behind leg», Petzl lo lista como error; va en la descripción.
+**Comentario fijado:** ¿Cuándo te pillaste la cuerda detrás de la pierna? ¿Cómo te diste cuenta?
+**Envío:** mándaselo a quien te asegura y que te mire el pie tras la segunda chapa.
+**Viralidad (honesta): 11/14.** Falta personaje humano (H3: cuerpo/identidad convierte más); riesgo de verse técnico/frío.
