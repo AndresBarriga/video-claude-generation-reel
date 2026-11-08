@@ -91,3 +91,18 @@ La noche en que cuarenta escaladores pasaron junto a David Sharp, en el Everest,
 6 (35–41) «Ahora piensa que eres tú, sin fuerzas, con años de preparación. ¿Paras?» [vuelve al primer plano]
 **Comentario fijado:** Equipo parar o equipo seguir: ¿qué habrías hecho tú, y por qué?
 **Envío:** «Dime que tú habrías parado.»
+
+---
+## v4 (8-nov, vigente) gancho de B + estructura de A (crítico 6,5)
+Aplicado: sin «avisaron por radio» ni «no pudieron bajarlo» como hecho (queda «intentaron ayudarle, sin éxito»: Wikipedia sobre Chaya); «se cree que» para lo del cuerpo; dos atribuciones máximo (Hillary y «otros defienden»); Hillary paráfrasis verificada (NZ Herald: si tienes fuerzas, tu deber es ayudar y la cumbre pasa a ser muy secundaria); Hillary dibujado con cara; sin «diez años»; comentario sin cebo de bando.
+**Voz (para ElevenLabs, ~41 s):**
+1. Te estás muriendo, sentado bajo una roca. Y más de treinta personas pasan por delante.
+2. Le pasó a David Sharp, en el Everest, en dos mil seis. Se cree que algunos pensaron que era un cadáver más: el de Green Boots.
+3. Pero no era un cadáver. Horas después, al bajar, seguía vivo.
+4. Un grupo se paró e intentó ayudarle, sin éxito. Estaba sentado, abrazándose las piernas, junto al cuerpo de Green Boots. Murió allí.
+5. Edmund Hillary dijo que, si tienes fuerzas, tu deber es ayudar y la cumbre pasa a segundo plano. Otros defienden que, a esa altura, bajar a alguien que no camina es casi imposible. ¿Quién tiene razón?
+6. Años y miles de euros… y quizá ni puedes bajarlo. ¿Paras?
+**Visual:** escena 1 = cara con escarcha + hombre gris sentado (gancho A) con «EVEREST 2006» y «¿PARAS?» a los 0,5 s; 2 = fila + «30+»; 3 = reloj 01:00→bajada, «SEGUÍA VIVO»; 4 = grupo con mascarilla, «INTENTARON AYUDARLE»; 5 = Hillary caricatura con cara a un lado, la cuesta de roca al otro; 6 = vuelve al fotograma 0.
+**Comentario fijado:** ¿Alguna vez has dado la vuelta por otra persona? ¿Qué te costó?
+**Envío:** «No pasaron de largo todos. Mira lo que dicen del final.»
+**Fuera:** madre, orden por radio, radio de Brice/Inglis, 50.000 $, traje rojo, «exactamente cuarenta».
