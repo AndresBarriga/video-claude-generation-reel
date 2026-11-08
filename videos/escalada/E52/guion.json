@@ -15,12 +15,12 @@
   {
    "tipo": "gancho",
    "visual": "whip",
-   "texto": "Esto pasa por un pie mal puesto. Mira dónde estaba la cuerda."
+   "texto": "Caes. Y en vez de frenarte, la cuerda te da la vuelta. ¿Por qué? Mira tu pie."
   },
   {
    "tipo": "texto",
    "visual": "gancho",
-   "texto": "Un segundo antes: la cuerda, por detrás de la pantorrilla. Caes, te engancha la pierna y te da la vuelta por debajo de la cinta."
+   "texto": "La cuerda pasaba por detrás de tu pantorrilla. Al caer, te engancha la pierna y te voltea por debajo de la cinta."
   },
   {
    "tipo": "texto",
