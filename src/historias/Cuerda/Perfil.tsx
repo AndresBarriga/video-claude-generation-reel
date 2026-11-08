@@ -30,10 +30,10 @@ export const PlanoPerfil: React.FC<{ f: number; v: number; giro: number; cara: C
   const aspecto = casco ? TU : { ...TU, casco: null };
   const escena = (
     <>
-      <Pared x0={X0} />
+      <Pared x0={X0} y1={4200} />
       <Tu px={PX} py={PY} s={S3} x0={X0} soloRoca />
       <Chapa x={CHX} y={CHY} s={1.4} t={v > 0 ? 0 : tr * 10} />
-      <Cuerda d={`M${ch[0]} ${ch[1]} Q${ch[0] - 40} ${ch[1] + 400} ${ch[0] - 20} 2400`} w={10} />
+      <Cuerda d={`M${ch[0]} ${ch[1]} Q${ch[0] - 40} ${ch[1] + 400} ${ch[0] - 20} 4200`} w={10} />
       <Escalador x={g.hx} y={g.hy} quien="joe" aspecto={aspecto} s={S3} angulos={ang} cara={cara} rot={giro} />
       {quemadura > 0 && <path d={`M${g.pant[0] - 30} ${g.pant[1] - 18} Q${g.pant[0]} ${g.pant[1] + 4} ${g.pant[0] + 30} ${g.pant[1] - 14}`} stroke="#E0442E" strokeWidth={14} strokeLinecap="round" fill="none" opacity={0.85 * quemadura} />}
       <Cuerda d={cuerda} w={10} />
@@ -42,8 +42,8 @@ export const PlanoPerfil: React.FC<{ f: number; v: number; giro: number; cara: C
   return (
     <g>
       <Cielo id="pf" />
-      <Montanas y={1240} />
-      <Valle y={1640} />
+      <Montanas y={1500} />
+      <Valle y={2050} />
       {zoom ? <Zoom {...zoom}>{escena}</Zoom> : escena}
     </g>
   );
