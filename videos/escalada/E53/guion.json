@@ -10,7 +10,7 @@
  "escenas": [
   {
    "tipo": "texto",
-   "visual": "perfil",
+   "visual": "cuerpo",
    "dur": 6,
    "texto": ""
   }
