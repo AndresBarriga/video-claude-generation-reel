@@ -80,3 +80,10 @@ La cuerda por detrás de la pierna puede voltearte en una caída. Pasa el pie po
 | 6 | 27–31 | Escalador sacando la cinta, paso atrás; casco puesto | «Y como no siempre te vas a ver el pie, lleva casco.» |
 | 7 | 31–34 | Corte al primer plano de f0 con la cuerda por delante. Rótulo «MÁNDASELO A QUIEN TE ASEGURA» | «¿Quién te mira el pie cuando clipeas?» |
 **Sin fuente (fuera de la voz):** que el casco evite el volteo, frecuencia, qué ve el asegurador.
+
+---
+## v4 (8-nov, vigente) = v2 + casco en el cierre
+Tras la crítica a v3 (5/10): se quita la quemadura (frase sin fuente suficiente y rebaja el volteo) y el plan B del casco por separado. Se mantiene el rótulo «SIN CASCO» porque el título del informe del AAC es «Fall on Rock: Poor Position, No Helmet». No se dice que el casco evite el volteo, solo que protege la cabeza.
+Escenas 1–5 como en v2. **Escena 6 (cierre ≤3 s, 30–33 s):** corte al primer plano del pie de f0 con la cuerda por delante; rótulo «MÁNDASELO A QUIEN TE ASEGURA»; voz: «¿Quién te mira el pie? ¿Y llevas casco?»
+En la escena 3, plano de un casco en el suelo con el rótulo «SIN CASCO» tras «perdió el conocimiento».
+**Fuera por decisión:** quemadura de cuerda como escalón; colocación detallada del pie (vídeo aparte).
