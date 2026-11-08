@@ -1,0 +1,18 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "viento", "inicio": { "escena": 0 }, "volumen": 0.16, "bucle": true, "fundido": [0.1, 0.6] },
+    { "nombre": "latido", "inicio": { "escena": 0 }, "fin": { "escena": "caida", "mas": 0.4 }, "volumen": 0.7, "bucle": true, "bajoVoz": 0.2, "fundido": [0.05, 0.05] },
+    { "nombre": "tintineo", "inicio": { "escena": 0 }, "fin": { "escena": "caida", "mas": 0.3 }, "volumen": 0.45, "bucle": true, "bajoVoz": 0.3 },
+    { "nombre": "suela", "inicio": { "escena": 0, "mas": 0.27 }, "duracion": 0.4, "volumen": 0.8 },
+    { "nombre": "zas", "inicio": { "escena": "caida", "mas": 0.33 }, "duracion": 0.5, "volumen": 0.7 },
+    { "nombre": "roce", "inicio": { "escena": "caida", "mas": 0.5 }, "duracion": 0.6, "volumen": 0.7 },
+    { "nombre": "golpe", "inicio": { "escena": "caida", "mas": 1.2 }, "duracion": 0.6, "volumen": 0.7 },
+    { "silencio": true, "inicio": { "escena": "caida", "final": true, "mas": -0.3 }, "duracion": 0.5 },
+    { "nombre": "roce", "inicio": { "escena": "consecuencias", "mas": 0.1 }, "duracion": 0.8, "volumen": 0.6 },
+    { "nombre": "golpe", "inicio": { "escena": "consecuencias", "palabra": "peor", "mas": 0.1 }, "duracion": 0.6, "volumen": 0.8, "ignoraSilencio": true },
+    { "nombre": "roce", "inicio": { "escena": "regla", "palabra": "encima", "mas": -0.3 }, "duracion": 0.7, "volumen": 0.5 },
+    { "nombre": "palmada", "inicio": { "escena": "palabra", "mas": 0.4 }, "duracion": 0.4, "volumen": 0.6 },
+    { "nombre": "pajaros", "inicio": { "escena": "palabra" }, "fin": { "escena": "palabra", "final": true }, "volumen": 0.25, "bucle": true, "fundido": [0.2, 0.2] }
+  ]
+}

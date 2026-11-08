@@ -1,24 +1,46 @@
 {
  "id": "E52",
- "titulo": "Cuerda detrás de la pierna (boceto)",
+ "titulo": "La cuerda detrás de la pierna",
  "nicho": "escalada",
  "plantilla": "Cuerda",
- "mudo": true,
- "verificado": false,
- "fuentes": [],
- "nota": "Solo bocetos",
+ "verificado": true,
+ "fuentes": [
+  "Petzl: cuerda pasada por detrás de la pierna (errores a evitar)",
+  "REI How to Fall: keep the rope between you and the wall; step out and over",
+  "Gripped: step over and around the rope, not behind it",
+  "AAC Accidents in North American Climbing: Fall on Rock, Poor Position, No Helmet (asegurador no recordaba la cuerda)",
+  "Climbing School AU: el asegurador avisa «watch your leg»"
+ ],
  "escenas": [
   {
-   "tipo": "texto",
+   "tipo": "gancho",
    "visual": "gancho",
-   "dur": 3,
-   "texto": ""
+   "texto": "Tu asegurador grita «pierna». Mira tu pie. Ya."
   },
   {
    "tipo": "texto",
+   "visual": "caida",
+   "texto": "Si caes así, la cuerda puede voltearte."
+  },
+  {
+   "tipo": "texto",
+   "visual": "consecuencias",
+   "texto": "A veces, una quemadura. Puede ser peor: te golpeas la cabeza y pierdes el conocimiento. Y quien te asegura no siempre la ve."
+  },
+  {
+   "tipo": "texto",
+   "visual": "regla",
+   "texto": "Si la cuerda queda detrás de tu pierna, pasa el pie por encima. Nunca por detrás."
+  },
+  {
+   "tipo": "texto",
+   "visual": "palabra",
+   "texto": "Y antes de subir, pactad una palabra. Si ve la cuerda detrás de tu pierna, que la grite."
+  },
+  {
+   "tipo": "cierre",
    "visual": "cierre",
-   "dur": 3,
-   "texto": ""
+   "texto": "¿Cuál es la vuestra?"
   }
  ]
 }

@@ -63,3 +63,5 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-11-06 · Priorizar ideas solo porque «tienen titular en internet»: es una vía válida, no el patrón único (E11/E43 no tenían titular).
 - 2026-11-06: Miedo 2 tipo cronómetro/«agarre de miedo»: «lo veo flojo, no hay tensión». Quiere miedo centrado en el miedo (qué hace tu cerebro), no datos sueltos de estudios.
 - 2026-11-06: E49 — le gustó el vídeo; pidió gancho con más movimiento (los 3 primeros s eran la misma imagen), público que se entienda sorprendido, que nadie «flote», subida de ella menos brusca y un final con besitos y corazones.
+- 2026-11-08 · **No:** dibujos nuevos hechos desde cero que no llegan al nivel del canal (Everest: cuerpo como mancha; E52 v1–v3: proporciones sin sentido, asegurador diminuto/tumbado). **Sí:** la calidad de E11 (la escaladora de la pierna de Elvis): reutilizar ese reparto y sistema antes que inventar estilo.
+- 2026-11-08 · **No:** ilustración generada con IA de un cuerpo en el Everest (tono de niño dormido).

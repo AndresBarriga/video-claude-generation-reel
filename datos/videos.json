@@ -94,5 +94,8 @@
   "E50": {
     "corto": "No pasa nada (chat)",
     "desc": "Test de formato sin voz, 15,5 s: te dicen «no puedo, tengo planes», respondes «no pasa nada» y al deslizar entre apps (tiempo, ruta, mapa, música, foto) tienes todo listo para ir a escalar igualmente. Réplica del mecanismo de un reel ajeno, con interfaz genérica y escenario propio."
+  },
+  "E52": {
+    "desc": "Cuerda detrás de la pierna: el asegurador grita «¡PIERNA!», caída que te voltea, pie por encima y palabra pactada."
   }
 }

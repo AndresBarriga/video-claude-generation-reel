@@ -1,20 +1,15 @@
-// Escena 6 · Cierre: primer plano del pie con la cuerda por delante y la cara del escalador aliviada.
+// 6 · Cierre (≤3 s): el mismo plano del gancho, ahora con la cuerda bien. Vuelve al principio (bucle).
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
-import { Asegurador } from "./Asegurador";
-import { Trepador } from "./Trepador";
-import { GYM, Pared, Svg, Rotulo, type P } from "./comun";
+import { useCurrentFrame } from "remotion";
+import { Camara, Etiqueta, type P } from "./comun";
+import { CaraAseg } from "./CaraAseg";
 
-export const Cierre: React.FC<P> = () => {
+export const Cierre: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame();
   return (
-    <AbsoluteFill style={{ background: GYM.paredA }}>
-      <Svg>
-        <Pared f={f} />
-        <g><Trepador f={f} detras={false} /></g>
-        <Asegurador grita={false} f={f} />
-        <Rotulo f={f} ini={4} t="MÁNDASELO A QUIEN TE ASEGURA" y={300} tam={52} col={GYM.cuerda} />
-      </Svg>
-    </AbsoluteFill>
+    <Camara d={d} empuje={0.06}>
+      <CaraAseg f={f} grita={false} />
+      <Etiqueta texto="MÁNDASELO A QUIEN TE ASEGURA" top={230} tam={84} desde={2} />
+    </Camara>
   );
 };
