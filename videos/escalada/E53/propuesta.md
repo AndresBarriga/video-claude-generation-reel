@@ -67,3 +67,27 @@ La noche en que cuarenta escaladores pasaron junto a David Sharp, en el Everest,
 **Envío:** «Subía solo y nadie paró a tiempo. Dime que tú habrías parado.» **Comentario fijado:** Si fueras el escalador número treinta y uno, ¿qué habrías hecho?
 **Fuera:** madre, Hillary, versiones de Inglis y Brice (polémica abierta y personas vivas), oxígeno de Sharp.
 **Viralidad (honesta): 10/14.** Falta un giro de mitad más fuerte (4).
+
+---
+## v3 (8-nov) más morbo y debate, dos borradores de voz
+**Ideas que entran:** el coste del espectador dentro del dilema («llevas años preparándote»); la imagen de Sharp sentado abrazándose las piernas junto a otro cadáver (Wikipedia/Surf: murió bajo el saliente, sentado con los brazos alrededor de las piernas, junto a Green Boots); el debate visible con sus dos bandos (Hillary: la cumbre pasa a segundo plano; los que estaban: a esa altura casi no se puede bajar a nadie). **Fuera:** «foto en la cumbre valía más que su vida», «exactamente cuarenta», orden por radio, traje rojo, 50.000 $, «déjamelo en los comentarios».
+**Debate honesto:** dos atribuciones (Hillary y «los que estaban allí»); es el precio de enseñar los dos bandos. Sin veredicto del narrador.
+**Rehook:** «seguía vivo» (13-19 s) y el choque Hillary vs. «casi imposible» a mitad.
+
+### Borrador A «¿Paras?» (~40 s)
+1 (0–6) «Llevas años preparándote. Ocho mil quinientos metros. Arriba, la cumbre. Y bajo una roca, un hombre sentado que no se mueve.» [cara con escarcha, hombre gris, rótulos «¿PARAS?» + «EVEREST 2006»]
+2 (6–13) «Se llamaba David Sharp. Esa noche pasaron junto a él más de treinta escaladores. Algunos creyeron que era otro cuerpo: el de Green Boots.» [fila + «30+»]
+3 (13–19) «Pero no era un cuerpo. Un grupo lo vio al subir. Horas después, al bajar, seguía vivo.» [reloj 01:00 → bajada; «SEGUÍA VIVO»]
+4 (19–26) «Le dieron oxígeno y avisaron por radio. Murió allí, sentado, abrazándose las piernas, junto a otro cadáver.» [«SÍ PARARON»]
+5 (26–36) «Edmund Hillary dijo que la cumbre debía pasar a segundo plano. Los que estaban allí dicen que a esa altura no se puede bajar a nadie.» [Hillary: palabras a un lado; roca y cuesta al otro; «¿QUIÉN TIENE RAZÓN?»]
+6 (36–40) «Tú llevas años y miles de euros en esta subida. ¿Paras?» [vuelve al fotograma 0]
+
+### Borrador B «Imagina» (~41 s)
+1 (0–5) «Imagina que te estás muriendo, sentado en una cueva, y más de treinta personas pasan por delante.» [fila de luces, una quieta]
+2 (5–12) «Le pasó a David Sharp en el Everest, en 2006. Algunos creyeron que era otro cuerpo: el de Green Boots, que llevaba allí diez años.» [rótulos «EVEREST 2006» + «GREEN BOOTS»]
+3 (12–16) «Horas después, al bajar, seguía vivo.» [reloj, «SEGUÍA VIVO»]
+4 (16–23) «Un grupo se paró, le dio oxígeno y avisó por radio. No pudieron bajarlo. Murió allí.» [«SÍ PARARON»]
+5 (23–35) «Hillary lo tenía claro: la cumbre pasa a segundo plano. Pero a ocho mil quinientos metros, bajar a alguien que no camina es casi imposible. ¿Quién tiene razón?» [dos planos enfrentados]
+6 (35–41) «Ahora piensa que eres tú, sin fuerzas, con años de preparación. ¿Paras?» [vuelve al primer plano]
+**Comentario fijado:** Equipo parar o equipo seguir: ¿qué habrías hecho tú, y por qué?
+**Envío:** «Dime que tú habrías parado.»
