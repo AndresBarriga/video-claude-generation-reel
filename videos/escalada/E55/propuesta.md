@@ -49,3 +49,17 @@ Críticas aceptadas: gancho adivinable y bucle cerrado en s3 (la respuesta «no�
 | 6 | Cumbre; salta; canopy se abre; valle | «Porque aquí la cumbre no es la meta. Es el trampolín: arriba, salta. Y lo que tardó horas en subir, lo baja volando.» |
 | 7 | Vuelta al plano 1; «¿SUBIRÍAS?» | «Subir sin cuerda ya es una locura. ¿Subirías tú por esto?» |
 **Envío:** «Suben sin cuerda para saltar desde arriba. ¿Lo harías?». Sin asegurador.
+
+---
+## v3 (9-nov, vigente) — CORRECCIÓN DE HECHOS sobre la v2
+**Error mío en v2:** «si se cae, no le salva» es falso/absoluto. Verificado (Alpinist, UKC, Climbing.com, NatGeo): el free BASE es subir sin cuerda con un paracaídas BASE **como protección ante una caída**; solo funciona con altura. En la ascensión de referencia (Deep Blue Sea, cara norte del Eiger, 6-ago-2008, ~300 m, 5.12+/7b+; Gripped dice 2006, el resto 2008) evitó las secciones bajas porque no habría tiempo de abrir (Alpinist, climbing.de). Sin nombre propio (decisión de Andrés), pero con ruta y año concretos.
+**Gancho:** «Sube una pared de cientos de metros sin cuerda. Pero lleva un paracaídas a la espalda. ¿Para qué?» · «¿PARA QUÉ?»
+| # | Se ve | Voz |
+|---|---|---|
+| 1 | Personaje con cara en pared enorme, sin cuerda, paracaídas a la espalda. «¿PARA QUÉ?» | «Sube una pared de cientos de metros sin cuerda. Pero lleva un paracaídas a la espalda. ¿Para qué?» |
+| 2 | «FREE BASE · EIGER · 2008» | «Se llama free BASE. En 2008 un escalador lo hizo en la cara norte del Eiger.» |
+| 3 | Caída simulada: se suelta, gira, despliega con espacio y se frena antes del suelo | «Si caía, tenía que darse la vuelta y abrirlo antes de llegar abajo.» |
+| 4 | **Rehook.** Franja baja en rojo «SIN TIEMPO»; él empieza más arriba | «Pero necesita altura. Por eso se saltó la parte baja: ahí no le daba tiempo.» |
+| 5 | Arriba; salto; vuelo [VERIFICAR que saltó desde lo alto] | «Y arriba, la escalada no terminó: saltó y bajó volando.» |
+| 6 | Cara en primer plano. «¿SEGURIDAD?» | «¿Eso es seguridad… o una segunda oportunidad que no existe?» |
+Pendiente: crítico sobre v3; 2–3 bocetos fijos (gancho, caída con despliegue, franja roja) antes de producir.
