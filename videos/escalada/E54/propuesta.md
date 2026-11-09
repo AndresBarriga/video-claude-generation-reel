@@ -42,3 +42,22 @@ Cambios: gancho con detalle concreto (ciego); «esa noche» → «lo que pasó d
 | 9 | Ella viva; arriba la tormenta; «¿SUBEN O BAJAN?» | «Era ella. Pero Tomek seguía arriba y venía una tormenta. Ahora les tocaba a ellos: subir a por él, o bajarla a ella.» |
 | 10 | Bajan; arriba, la grieta se cubre de nieve | «La bajaron. A Tomek no se le volvió a ver.» |
 | 11 | Vuelta al plano 1 (la cuerda entre dos); «MÁNDASELO» | «¿Tu compañero subiría a por ti?» |
+
+---
+## v3 (9-nov, vigente) — revisión externa (ChatGPT) contrastada con el AAC
+**Aceptado:** «sin cuerdas fijas» era falso (AAC: «aided by finding many useful fixed ropes»); 1.100 m en menos de 9 h, contacto por voz a las 2:00 a ~6.100 m (AAC); −35 °C y rachas de 80 km/h en el C2 (AAC; −40 de Asia Times fuera); «morís los dos» → «puede que no salgáis ninguno»; no presentar la bajada de Revol como abandono; el grito en la oscuridad con silencio y luz lejana; oscuridad real, cifra «1.100 m» como elemento recurrente; publicar E53 otro día y comparar mecanismos.
+**No aceptado:** quitar el cierre enviable (E15, el mejor vídeo, termina igual: la pregunta al compañero es el mecanismo de envío); hook POV para E53 (rechazado en E46); «Lo que encontraron arriba cambió todo» (gancho vacío).
+**Gancho:** mezcla tú + frase real: «Acabas de hacer cumbre con tu compañero. Y te dice: “No te veo”.»
+| # | Se ve | Voz |
+|---|---|---|
+| 1 | Negro → se enciende una frontal → cumbre de noche, dos con cara unidos por la cuerda; él mira a la nada. «NO TE VEO» | «Acabas de hacer cumbre con tu compañero. Y te dice: “No te veo. No veo nada”.» |
+| 2 | Él agarrado a su hombro; abajo, el vacío; «¿LO DEJAS?» | «Está ciego, y ya casi no puede andar. Si te quedas con él, puede que no salgáis ninguno.» |
+| 3 | «NANGA PARBAT · 2018» | «Le pasó a Elisabeth Revol. Y lo que pasó después parece imposible.» |
+| 4 | Grieta; amanece; él no se mueve; altímetro «7.280 m» | «Pasaron la noche en una grieta a siete mil metros. Por la mañana, él ya no podía moverse.» |
+| 5 | Ella lo asegura y talla escalones | «Ella lo dejó asegurado, le talló escalones para que pudiera salir… y bajó sola a buscar ayuda.» |
+| 6 | **Rehook.** Mapa K2 → Nanga; helicóptero; cuatro siluetas | «En el K2, cuatro alpinistas dejaron su expedición y se subieron a un helicóptero.» |
+| 7 | Dos frontales diminutas en una pared enorme; contador «0 → 1.100 m»; reloj de noche | «Dos de ellos subieron mil cien metros, de noche, en menos de nueve horas.» |
+| 8 | Silencio 0,4 s; primer plano gritando; negro; una luz lejana se enciende | «A las dos de la madrugada, gritaron su nombre. Y alguien contestó.» |
+| 9 | Ella viva; arriba, la tormenta cerrando la montaña; «¿SUBEN O BAJAN?» | «Estaba viva. Pero Tomek seguía arriba, y venía una tormenta. Ahora les tocaba elegir a ellos.» |
+| 10 | Tres frontales bajando; la cuarta luz no aparece | «La bajaron. A Tomek no se le volvió a ver.» |
+| 11 | Vuelta a la cuerda entre dos; «MÁNDASELO» | «¿Tu compañero subiría a por ti?» |
