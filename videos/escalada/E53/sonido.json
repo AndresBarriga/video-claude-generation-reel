@@ -1,0 +1,10 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "viento", "inicio": { "escena": 0 }, "volumen": 0.22, "bucle": true, "fundido": [0.05, 0.8] },
+    { "nombre": "latido", "inicio": { "escena": 0 }, "fin": { "escena": "noche" }, "volumen": 0.55, "bucle": true, "bajoVoz": 0.25, "fundido": [0.1, 0.2] },
+    { "nombre": "nieve", "inicio": { "escena": "renuncia" }, "fin": { "escena": "cueva" }, "volumen": 0.3, "bucle": true },
+    { "nombre": "latido", "inicio": { "escena": "frontales" }, "fin": { "escena": "espejo", "palabra": "otro" }, "volumen": 0.55, "bucle": true, "bajoVoz": 0.25 },
+    { "silencio": true, "inicio": { "escena": "espejo", "palabra": "otro", "mas": -0.2 }, "duracion": 0.5 }
+  ]
+}

@@ -1,18 +1,57 @@
 {
  "id": "E53",
- "titulo": "Sharp / Everest (boceto)",
+ "titulo": "Hall y Sharp, Everest 2006",
  "nicho": "escalada",
  "plantilla": "Everest",
- "mudo": true,
- "verificado": false,
- "fuentes": [],
- "nota": "Solo bocetos de estilo (gancho A y fila de luces). La voz y el guion final siguen en propuesta.md (v4).",
+ "verificado": true,
+ "fuentes": [
+  "AAC: Everest, deaths during the spring 2006 (E. Hawley); relato de Dan Mazur",
+  "NBC/AP 2006 («I imagine you are surprised to see me here», a dos horas de la cima)",
+  "Irish Times 2006 (sentado al borde de la cara Kangshung, sin gorro)",
+  "People/AOL (intentaron reanimarlo durante horas)",
+  "The Australian 29-may-2006 (declarado muerto)",
+  "Wikipedia: Green Boots, Lincoln Hall, Mark Inglis"
+ ],
  "escenas": [
   {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "texto": "Estás a dos horas de la cima del Everest. Y un hombre al que dieron por muerto anoche te mira y te dice: «Imagino que os sorprende verme aquí»."
+  },
+  {
    "tipo": "texto",
-   "visual": "cuerpoimg",
-   "dur": 6,
-   "texto": ""
+   "visual": "noche",
+   "texto": "Mayo de dos mil seis. Era Lincoln Hall. Su equipo intentó reanimarlo durante horas, lo dio por muerto y avisó a su familia. Pasó la noche solo, sin oxígeno."
+  },
+  {
+   "tipo": "texto",
+   "visual": "alba",
+   "texto": "Por la mañana estaba sentado al borde de un precipicio, sin guantes, sin gorro y con el traje abierto."
+  },
+  {
+   "tipo": "texto",
+   "visual": "renuncia",
+   "texto": "Los cuatro que lo encontraron iban a la cumbre. Se quedaron con él. «La cumbre seguirá ahí. Él solo tiene una vida»."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cueva",
+   "texto": "Once días antes, en esa misma arista, otro hombre estaba sentado en una cueva de roca. Era David Sharp. Y seguía vivo."
+  },
+  {
+   "tipo": "texto",
+   "visual": "frontales",
+   "texto": "Pasaron decenas de escaladores. Unos no lo vieron. Otros lo creyeron muerto. Algunos intentaron ayudarle, sin conseguirlo."
+  },
+  {
+   "tipo": "texto",
+   "visual": "espejo",
+   "texto": "A los dos los creyeron muertos. Uno volvió a casa. El otro no."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "¿Tú te habrías parado a comprobarlo?"
   }
  ]
 }
