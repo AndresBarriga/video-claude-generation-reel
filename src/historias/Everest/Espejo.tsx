@@ -21,15 +21,19 @@ export const Espejo: React.FC<P> = ({ d, pal }) => {
     );
   }
   if (f < tO) { // Hall baja entre dos
-    const g = f - tU, x = CADERA.x + 20 + g * 7;
+    const g = f - tU, x = CADERA.x + 450 + g * 5, S = 2.3;
+    const andar = (k: number) => { const p = Math.sin(g / 3.2 + k); return { piernaA: [p * 18, Math.max(0, p) * 16] as [number, number], piernaB: [-p * 18, Math.max(0, -p) * 16] as [number, number] }; };
+    const xs = [x + 230, x, x - 230]; // guía delante, Hall en medio (encordado), otro detrás
     return (
       <Camara d={tO - tU} empuje={0.03} entrada={false}>
         <Svg>
-          <Zoom s={1.0} cx={CADERA.x + 140} cy={CADERA.y - 220} tx={540} ty={1000}>
+          <Zoom s={0.95} cx={x - 20} cy={suelo(x) - 200} tx={540} ty={1000}>
             <Arista luz={1} f={f} />
-            <Escalador x={x - 120} y={suelo(x - 120) - 130 * 2.4} quien="joe" aspecto={MAZUR[0]} s={2.4} pose="pie" cara="serio" mira={1} angulos={{ brazoA: [80, 70], piernaA: [Math.sin(g / 3) * 16, 0], piernaB: [-Math.sin(g / 3) * 16, 0] }} />
-            <Escalador x={x} y={suelo(x) - 130 * 2.4} quien="joe" aspecto={HALL} s={2.4} pose="pie" cara="cerrados" mira={1} angulos={{ torso: 10, cabeza: 18, piernaA: [Math.sin(g / 3 + 1) * 12, 0], piernaB: [-Math.sin(g / 3 + 1) * 12, 0] }} />
-            <Escalador x={x + 120} y={suelo(x + 120) - 130 * 2.4} quien="simon" aspecto={MAZUR[2]} s={2.4} pose="pie" cara="serio" mira={-1} angulos={{ brazoA: [80, 70], piernaA: [Math.sin(g / 3 + 2) * 16, 0], piernaB: [-Math.sin(g / 3 + 2) * 16, 0] }} />
+            <path d={`M${xs[0] - 10} ${suelo(xs[0]) - 128 * S} Q${(xs[0] + xs[1]) / 2} ${suelo((xs[0] + xs[1]) / 2) - 70 * S} ${xs[1] + 10} ${suelo(xs[1]) - 128 * S}`} stroke="#FF6A1F" strokeWidth={7} fill="none" />
+            <path d={`M${xs[2] + 10} ${suelo(xs[2]) - 128 * S} Q${(xs[1] + xs[2]) / 2} ${suelo((xs[1] + xs[2]) / 2) - 70 * S} ${xs[1] - 10} ${suelo(xs[1]) - 128 * S}`} stroke="#FF6A1F" strokeWidth={7} fill="none" />
+            <Escalador x={xs[2]} y={suelo(xs[2]) - 130 * S} quien="simon" aspecto={MAZUR[2]} s={S} pose="pie" cara="serio" mira={1} angulos={{ cabeza: 10, brazoA: [40, 30], ...andar(2) }} />
+            <Escalador x={xs[1]} y={suelo(xs[1]) - 130 * S} quien="joe" aspecto={HALL} s={S} pose="pie" cara="cerrados" mira={1} angulos={{ torso: 12, cabeza: 22, brazoA: [20, 10], brazoB: [-10, 0], ...andar(1) }} />
+            <Escalador x={xs[0]} y={suelo(xs[0]) - 130 * S} quien="joe" aspecto={MAZUR[0]} s={S} pose="pie" cara="serio" mira={1} angulos={{ cabeza: -4, brazoB: [-50, -20], ...andar(0) }} />
             <Nieve f={f} n={16} op={0.4} />
           </Zoom>
         </Svg>

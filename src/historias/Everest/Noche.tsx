@@ -12,19 +12,20 @@ export const Noche: React.FC<P> = ({ d, pal }) => {
   const va = sube(f, tM + 6, tS);
   const horas = interpolate(f, [tS, d], [19.5, 31.5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const hh = Math.floor(horas) % 24, mm = Math.floor((horas % 1) * 60);
-  const sherpa = (i: number) => {
-    const kneel = f < tM;
-    const x = CADERA.x + 250 + i * 170 + va * (420 + i * 80), y = CADERA.y - 0.16 * (x - CADERA.x - 40);
-    return <Escalador key={i} x={x} y={kneel ? y - 60 * 2.2 : y - 130 * 2.2} quien="joe" aspecto={SHERPAS[i]} s={2.2} pose={kneel ? "agachado" : "pie"} cara="serio" frontal mira={-1} angulos={kneel ? { brazoA: [70, 100] } : { cabeza: va > 0.1 ? -6 : 12 }} />;
+  const sherpa = (i: number) => { // de rodillas a su espalda; luego se levantan y se van arista arriba, con los frontales por delante
+    const kneel = f < tM, x = CADERA.x + 330 + i * 200 + va * (520 + i * 90), y = CADERA.y - 0.16 * (x - CADERA.x);
+    const p = Math.sin(f / 3 + i * 2);
+    return <Escalador key={i} x={x} y={kneel ? y - 62 * 2.2 : y - 130 * 2.2} quien="joe" aspecto={SHERPAS[i]} s={2.2} pose={kneel ? "agachado" : "pie"} cara="serio" frontal mira={kneel ? -1 : 1}
+      angulos={kneel ? { torso: 26, brazoA: [74, 96] } : { cabeza: 6, piernaA: [p * 20, Math.max(0, p) * 18], piernaB: [-p * 20, Math.max(0, -p) * 18], brazoA: [-p * 16, 10], brazoB: [p * 16, 10] }} />;
   };
   return (
     <Camara d={d} empuje={0.05} entrada={false}>
       <Svg>
         <Zoom s={1.0} cx={CADERA.x + 100} cy={CADERA.y - 180} tx={540} ty={1000}>
           <Arista luz={0} f={f} />
+          {va < 0.98 && [1, 0].map(sherpa)}
           <Sentado aspecto={HALL} cabeza={34} cara="cerrados" />
           {f >= tS && <Vaho f={f} x={CABEZA.x - 30} y={CABEZA.y + 30} on={0.6} />}
-          {va < 0.98 && [0, 1].map(sherpa)}
           <Nieve f={f} n={40} op={0.6} />
         </Zoom>
         <Hueco x={480} y={900} r={900 - 300 * sube(f, tS, d)} id="no" base={0.75} />

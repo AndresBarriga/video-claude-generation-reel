@@ -4,7 +4,7 @@ import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
 import { Camara, Etiqueta, Nieve, SHARP, Svg, Zoom, sube, type P } from "./comun";
-import { Arista } from "./Arista";
+import { Arista, ruta } from "./Arista";
 import { CABEZA, CADERA, Hueco, Sentado, Vaho } from "./Piezas";
 
 const suelo = (x: number) => CADERA.y - 0.16 * (x - CADERA.x);
@@ -33,29 +33,46 @@ export const Cueva: React.FC<P> = ({ d, pal }) => {
   );
 };
 
-/** Un escalador que pasa por la arista de derecha a izquierda entre t0 y t1; se detiene (para) o se agacha (ayuda). */
-const Pasa: React.FC<{ f: number; t0: number; t1: number; i: number; para?: [number, number]; ayuda?: [number, number] }> = ({ f, t0, t1, i, para, ayuda }) => {
+const pasos = (f: number, k = 0) => ({ piernaA: [Math.sin(f / 3 + k) * 20, Math.max(0, Math.sin(f / 3 + k)) * 18] as [number, number], piernaB: [-Math.sin(f / 3 + k) * 20, Math.max(0, -Math.sin(f / 3 + k)) * 18] as [number, number], brazoA: [-Math.sin(f / 3 + k) * 18, 10] as [number, number], brazoB: [Math.sin(f / 3 + k) * 18, 10] as [number, number] });
+const ASP = (i: number) => ({ ...ROPA[i % 4], pantalon: "#1E2633", casco: null, gorro: "#1E2633", manos: "guante" as const });
+const S = 1.7; // por la ruta, un poco más lejos que Sharp
+
+/** Escalador que pasa por la ruta (encima de la cueva) de derecha a izquierda. «para»: se detiene y le enfoca con el frontal. */
+const Pasa: React.FC<{ f: number; t0: number; t1: number; i: number; para?: [number, number] }> = ({ f, t0, t1, i, para }) => {
   if (f < t0 || f > t1) return null;
-  const xs = interpolate(f, para ?? ayuda ? [t0, (para ?? ayuda)![0], (para ?? ayuda)![1], t1] : [t0, t1], para ?? ayuda ? [1250, CADERA.x + 280, CADERA.x + 280, CADERA.x + 40] : [1250, CADERA.x + 40]);
-  const quieto = (para ?? ayuda) && f >= (para ?? ayuda)![0] && f <= (para ?? ayuda)![1];
-  const agacha = ayuda && quieto;
-  const x = xs, y = suelo(x) - (agacha ? 0 : 60);
-  return <Escalador x={x} y={agacha ? y - 60 * 2.1 : y - 130 * 2.1} quien={i % 2 ? "simon" : "joe"} aspecto={{ ...ROPA[i % 4], pantalon: "#1E2633", casco: null, gorro: "#1E2633", manos: "guante" }} s={2.1}
-    pose={agacha ? "agachado" : "pie"} cara="serio" frontal mira={-1} angulos={agacha ? { brazoA: [96, 108] } : { cabeza: para && quieto ? 26 : -4, piernaA: [Math.sin(f / 3) * 18, 0], piernaB: [-Math.sin(f / 3) * 18, 0] }} />;
+  const x = para ? interpolate(f, [t0, para[0], para[1], t1], [1250, CADERA.x + 120, CADERA.x + 120, -200], { extrapolateRight: "clamp" }) : interpolate(f, [t0, t1], [1250, -200]);
+  const quieto = !!para && f >= para[0] && f <= para[1];
+  const mira = quieto ? sube(f, para![0], para![0] + 8) * 46 : -4;
+  return <Escalador x={x} y={ruta(x) - 130 * S} quien={i % 2 ? "simon" : "joe"} aspecto={ASP(i)} s={S} pose="pie" cara="serio" frontal mira={-1}
+    angulos={quieto ? { cabeza: mira, torso: mira * 0.3 } : { cabeza: -4, ...pasos(f, i) }} />;
+};
+
+/** El que baja a su repisa, se arrodilla a su lado e intenta ayudarle; al final se levanta y se va. */
+const Ayuda: React.FC<{ f: number; t0: number; tK: number; tF: number; d: number }> = ({ f, t0, tK, tF, d }) => {
+  if (f < t0) return null;
+  const X = CADERA.x + 330;
+  const x = f < tK ? interpolate(f, [t0, tK], [1260, X]) : f < tF ? X : interpolate(f, [tF, d], [X, X + 500]);
+  const agacha = f >= tK && f < tF, vuelve = f >= tF;
+  const yS = suelo(x);
+  return <Escalador x={x} y={agacha ? yS - 62 * 2.4 : yS - 130 * 2.4} quien="joe" aspecto={{ ...ASP(0), chaqueta: "#E9892A", chaquetaSombra: "#A85E17", gorro: "#E8EEF4" }} s={2.4} pose={agacha ? "agachado" : "pie"} cara="serio" frontal mira={vuelve ? 1 : -1}
+    angulos={agacha ? { torso: 30, cabeza: 20, brazoA: [84, 70] } : { cabeza: vuelve ? 8 : 4, ...pasos(f, 2) }} />;
 };
 
 export const Frontales: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
   const t1 = (pal("unos") ?? Math.round(d * 0.2)) - 2, t2 = (pal("otros") ?? Math.round(d * 0.4)) - 2, t3 = (pal("algunos") ?? Math.round(d * 0.6)) - 2, t4 = (pal("sin") ?? Math.round(d * 0.85)) - 2;
-  const lejos = Array.from({ length: 12 }).map((_, k) => { const x = ((k * 130 + f * 7) % 1600) - 250; const y = CADERA.y - 140 - 0.16 * (x - CADERA.x); return <g key={k}><circle cx={x} cy={y} r={30} fill="#FFF3C4" opacity={0.25} /><circle cx={x} cy={y} r={10} fill="#FFF8DD" /><rect x={x - 9} y={y + 8} width={18} height={60} rx={8} fill="#0B0F17" /></g>; });
+  // «decenas»: una fila de frontales que sube por la ruta hacia la cumbre
+  const fila = Array.from({ length: 16 }).map((_, k) => { const u = ((k / 16 + f / 400) % 1), x = 1300 - u * 520, y = ruta(Math.min(x, 1300)) - u * 560 - 20; const r = 1 - u * 0.5;
+    return <g key={k} opacity={0.4 + 0.6 * (1 - u)}><circle cx={x} cy={y} r={34 * r} fill="#FFF3C4" opacity={0.22} /><circle cx={x} cy={y} r={9 * r} fill="#FFF8DD" /><rect x={x - 7 * r} y={y + 8 * r} width={14 * r} height={44 * r} rx={6} fill="#0B0F17" /></g>; });
   return (
     <Camara d={d} empuje={0.04} entrada={false}>
       <Svg>
-        <EscenaSharp f={f} alza={0.3} vivo={1 - sube(f, t4, d)} oscuro={sube(f, t4, d) * 0.6}>
-          <g opacity={f < t2 ? 1 : 0.45}>{lejos}</g>
-          <Pasa f={f} t0={t1 - 6} t1={t2} i={0} />
-          <Pasa f={f} t0={t2 - 6} t1={t3} i={1} para={[t2 + 6, t2 + 22]} />
-          <Pasa f={f} t0={t3 - 8} t1={d} i={2} ayuda={[t3 + 4, t4 + 6]} />
+        <EscenaSharp f={f} alza={0.3} vivo={1 - sube(f, t4 + 10, d)} oscuro={sube(f, t4, d) * 0.6}>
+          <g opacity={f < t2 ? 1 : 0.5}>{fila}</g>
+          <Pasa f={f} t0={t1 - 8} t1={t1 + 70} i={0} />
+          <Pasa f={f} t0={t1 + 14} t1={t2 + 70} i={3} />
+          <Pasa f={f} t0={t2 - 14} t1={t3 + 30} i={1} para={[t2 + 4, t2 + 30]} />
+          <Ayuda f={f} t0={t3 - 14} tK={t3 + 6} tF={t4 + 22} d={d} />
         </EscenaSharp>
       </Svg>
       {f < t1 && <Etiqueta texto="PASARON DECENAS" top={230} tam={100} desde={2} />}
