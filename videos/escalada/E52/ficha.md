@@ -11,3 +11,7 @@
 **Descripción:** Si la cuerda queda detrás de tu pierna y caes, te puede voltear: quemadura en el mejor caso, la cabeza contra la pared en el peor. Pasa el pie por encima, nunca por detrás. Y el hábito es tuyo: cada vez que chapas, mira dónde queda la cuerda. Lleva casco. #escalada #escaladadeportiva #seguridadescalada #asegurar
 **Comentario fijado:** ¿Te ha pasado alguna vez? ¿Volteo, quemadura o te diste cuenta a tiempo?
 **Fuentes:** Petzl (errores a evitar), REI How to Fall, Gripped, AAC Accidents in North American Climbing («Poor Position, No Helmet»), Climbing School AU.
+
+## Resultado (9-nov, ~15 h)
+6.481 vistas · 4.605 espectadores · 17 s de media (de 31,8) · skip 29,6 % (más alto que lo típico) · envíos 0,8 % (~52, más alto) · 132 likes · 24 guardados (0,5 %, más bajo) · 1 comentario · 2 reposts · 8 seguidores (1,2/1k). Reels 78 %, Explorar 11 %. Cuenta: 831 seguidores.
+**Curva:** cae de 100 % a ~70 % en los 3 primeros segundos (el whip no frena a todos), baja hasta ~50 % hacia el s 11 (consecuencias), luego casi plana (~45 %) y acaba en ~37 %. El problema es la entrada (skip), no la mitad: quien pasa del s 3 se queda. Seguidores/1k entre historia (0,4–0,9) e identidad (2,6–5,1). Mucho envío y poco guardado: se manda, no se guarda.
