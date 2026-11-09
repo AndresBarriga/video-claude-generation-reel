@@ -87,3 +87,5 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-08 | E52 v11 | final con voz | 5 | La causa (cuerda detrás de la pantorrilla) y la corrección (pie por encima) se apoyan en la animación; volteo y pose de espaldas repetidos ~10 s; pantalón corto solo en la quemadura; «con suerte» → «lo mínimo» |
 | 2026-11-09 | E53 v5 cadáver como reloj | propuesta | 5,5 | Gancho de objeto suelto sin cara; «hay» y «todos los que suben» falsos; bucle de la luz tardía sin cerrar. Aplicado en v5b |
 | 2026-11-09 | Selección de caso (Revol, Hall, Weathers, Kurz, K2) | propuesta | 7 (Revol) | Revol: dilema binario en tú con respuesta no obvia, como E15; atribuir «le dijeron que bajara» a ella; rótulo distinto de E35. Hall: giro enorme pero dilema obvio y se pisa con Sharp |
+| 2026-11-09 | E53 v6 Sharp vs Hall | propuesta | 5,5 (9/14) | «pidió ayuda por radio y siguió» discutido y acusa a vivos; «¿paras?» obvio; Hall enterrado a mitad |
+| 2026-11-09 | E54 Revol v1 | propuesta | 6,5 (11/14; 7,5 con cambios) | «esa noche» falso; eran cuatro; cierre «¿te dejaría?» juzga a Revol → «¿subiría a por ti?». Aplicado en v2 |
