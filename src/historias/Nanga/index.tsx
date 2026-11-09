@@ -49,9 +49,11 @@ export const Nanga: React.FC<{ datos: Datos }> = ({ datos }) => {
 const Alti: React.FC<{ datos: Datos }> = ({ datos }) => {
   const f = useCurrentFrame(), { fps } = useVideoConfig(), s = f / fps;
   const ini = (v: string) => datos.escenas.find((e) => e.visual === v)?.inicio ?? 0;
-  const [g, es, k, di, gr, vi] = ["grieta", "escalones", "k2", "diamir", "grito", "viva"].map(ini);
-  if (s < g || s >= vi) return null;
-  const tramo = { t: [g, es, k, di, gr, vi], ella: [7280, 7280, 6700, 6400, 6100, 6100], ellos: [4800, 4800, 4800, 4800, 6100, 6100] };
-  const horas = Math.round(interpolate(s, [g, gr], [6, 56], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  const [g, es, k, di, gr, vi, fi, ci] = ["grieta", "escalones", "k2", "diamir", "grito", "viva", "final", "cierre"].map(ini);
+  if (s < g || s >= ci) return null;
+  const pY = datos.palabras.find((w) => w.start >= gr && w.w.toLowerCase().startsWith("contest"))?.start ?? gr + 2.5;
+  const t = [g, es + 3, es + 5, k, di, pY, vi, fi, ci], ella = [7280, 7280, 6700, 6650, 6400, 6100, 6100, 6000, 5500];
+  const tramo = s < k ? { t, ella } : { t, ella, ellos: [4800, 4800, 4800, 4800, 4800, 6100, 6100, 6000, 5500], tomek: s >= vi, destello: pY };
+  const horas = Math.round(interpolate(s, [g, pY], [6, 56], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   return <AbsoluteFill><Svg><Altimetro s={s} tramo={s < k ? { t: tramo.t, ella: tramo.ella } : tramo} horas={horas} /></Svg></AbsoluteFill>;
 };

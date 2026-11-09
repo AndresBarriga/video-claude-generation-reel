@@ -27,10 +27,11 @@ export const Ojos: React.FC<P> = ({ d, pal }) => {
           {/* ojos velados: blancos, sin pupila, borde enrojecido */}
           {[320, 760].map((x) => (
             <g key={x}>
-              <ellipse cx={x} cy={1000} rx={120} ry={80} fill="#C9535A" opacity={0.55} />
-              <ellipse cx={x} cy={1000} rx={104} ry={66} fill="#EEF2F6" />
-              <circle cx={x + 6} cy={1004} r={34} fill="#D5DDE6" />
-              <circle cx={x + 6} cy={1004} r={16} fill="#C3CDD8" />
+              <ellipse cx={x} cy={1000} rx={128} ry={92} fill="#C23A43" opacity={0.75} />
+              <ellipse cx={x} cy={1000} rx={110} ry={78} fill="#F3F6F8" />
+              <ellipse cx={x + 4} cy={1002} rx={60} ry={52} fill="#E3E9EE" opacity={0.9} />
+              <ellipse cx={x - 30} cy={985} rx={26} ry={14} fill="#fff" opacity={0.9} />
+              <path d={`M${x + 70} 1070 q10 60 -6 120`} stroke="#DDEFFC" strokeWidth={12} strokeLinecap="round" fill="none" opacity={0.8} />
               <path d={`M${x - 104} 994 Q${x} 930 ${x + 104} 994`} stroke={BARBA} strokeWidth={12} fill="none" />
               {Array.from({ length: 9 }).map((_, i) => <path key={i} d={`M${x - 88 + i * 22} ${975 - Math.sin(i / 2.6) * 30} l${-4 + i} -26`} stroke="#F4FAFF" strokeWidth={6} strokeLinecap="round" />)}
             </g>
@@ -46,7 +47,7 @@ export const Ojos: React.FC<P> = ({ d, pal }) => {
         <rect width={1080} height={1920} fill="url(#ojLuz)" />
         <Ventisca f={f} n={50} />
       </Svg>
-      <Bocadillo texto="No te veo." x={640} y={560} ancho={480} desde={tV} tam={84} />
+      <Bocadillo texto="No te veo." x={640} y={560} ancho={480} desde={0} tam={84} />
     </Camara>
   );
 };

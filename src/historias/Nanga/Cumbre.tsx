@@ -29,8 +29,8 @@ export const Cumbre: React.FC<P & { cierre?: boolean }> = ({ d, pal, cierre }) =
         </Zoom>
         <Oscuridad x={560} y={980} r={260 + 900 * luz} id="cu" base={0.94} />
       </Svg>
-      {cierre && <Etiqueta texto="¿SUBIRÍA A POR TI?" top={230} tam={110} desde={2} />}
-      {!cierre && f > tD && <Etiqueta texto="¿SIGUES CON ÉL?" top={230} tam={120} desde={tD + 2} />}
+      {cierre && <Etiqueta texto="MÁNDASELO A TU COMPAÑERO" top={230} tam={78} desde={2} />}
+      {!cierre && f > tD && <Etiqueta texto="¿SIGUES CON ÉL?" top={230} tam={96} desde={tD + 2} />}
     </Camara>
   );
 };
