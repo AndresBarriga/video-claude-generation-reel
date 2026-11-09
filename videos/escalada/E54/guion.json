@@ -1,0 +1,35 @@
+{
+ "id": "E54",
+ "titulo": "Revol y Mackiewicz (bocetos)",
+ "nicho": "escalada",
+ "plantilla": "Nanga",
+ "mudo": true,
+ "verificado": false,
+ "fuentes": [],
+ "escenas": [
+  {
+   "tipo": "texto",
+   "visual": "cumbre",
+   "dur": 4,
+   "texto": ""
+  },
+  {
+   "tipo": "texto",
+   "visual": "grieta",
+   "dur": 4,
+   "texto": ""
+  },
+  {
+   "tipo": "texto",
+   "visual": "diamir",
+   "dur": 4,
+   "texto": ""
+  },
+  {
+   "tipo": "texto",
+   "visual": "grito",
+   "dur": 4,
+   "texto": ""
+  }
+ ]
+}
