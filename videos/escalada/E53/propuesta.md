@@ -166,3 +166,17 @@ Aplicado: sin «avisaron por radio» ni «no pudieron bajarlo» como hecho (qued
 | 11 | Hall bajando | «Lincoln Hall volvió vivo.» |
 | 12 | Pantalla partida: cueva / amanecer; rótulo «¿TÚ PARAS?» | «Misma montaña, diez días de diferencia. ¿Tú habrías parado?» |
 **Fuentes:** Wikipedia «Green Boots» (≈3 docenas; lo confundieron con Green Boots; Inglis pidió consejo por radio y siguió), Spokesman/Outside (≈40), Taipei Times; Lincoln Hall: Wikipedia, NBC/AP («a dos horas de la cumbre», «I imagine you are surprised to see me here»), Irish Times (sin gorro, sentado al borde de la cara Kangshung), The Australian (declarado muerto), Mazur («the summit is still there… Lincoln only has one life»). **Ojo:** Mazur no lo bajó solo: lo bajaron con sherpas de la expedición de Hall; decimos «se quedaron con él».
+
+---
+## v7 (9-nov, vigente) — los 3 cambios del crítico: abre con Hall, Sharp como giro, cierre «cumbre de tu vida»
+1 Amanecer; hombre sentado al borde de un precipicio, sin guantes, traje abierto; «LO DIERON POR MUERTO» — «Lo dieron por muerto cerca de la cima del Everest. A la mañana siguiente, le dijo a quien lo encontró: “Imagino que os sorprende verme aquí”.»
+2 «LINCOLN HALL · 2006»; su equipo se aleja — «Su equipo lo había dejado allí, y avisaron a su familia de que había muerto.»
+3 Cuatro frontales llegan; él al borde — «Un equipo que subía se lo encontró así: sin guantes, sin gorro, con el traje abierto.»
+4 La cima arriba, el hombre abajo; «¿CUMBRE O ÉL?» — «Estaban a dos horas de la cumbre de su vida. ¿Seguir, o quedarse con un desconocido?»
+5 Se dan la vuelta — «Se quedaron. “La cumbre seguirá ahí. Él solo tiene una vida.”»
+6 Bajan con él — «Lincoln Hall volvió vivo.»
+7 **Rehook.** Calendario −10 días — «Pero diez días antes, en esa misma ruta, pasó lo contrario.»
+8 Cueva de noche; hombre sentado junto a unas botas; fila de frontales; contador «≈40» — «David Sharp estaba sentado en una cueva, junto a un cadáver conocido. Unas cuarenta personas pasaron por su lado.»
+9 Pasan y miran; un grupo se agacha y se va — «Muchos creyeron que era otro muerto más. Algunos intentaron ayudarle, sin éxito.»
+10 Frontal que se apaga — «Murió ese día.»
+11 Pantalla partida: amanecer / cueva; corte al plano 1 — «Misma montaña. Diez días. ¿Tú dejarías la cumbre de tu vida por un desconocido?»
