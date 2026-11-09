@@ -147,3 +147,22 @@ Aplicado: sin «avisaron por radio» ni «no pudieron bajarlo» como hecho (qued
 - Barra con los tres datos: 56 % bajando de la cima · 17 % tras darse la vuelta · 10 % subiendo («darse la vuelta tarde tampoco salva»).
 - La luz que llega tarde = ella: sigue, hace cumbre tarde, y la barra del 56 % cae sobre su bajada (cierra el bucle).
 - Final: «La cumbre es la mitad. ¿A qué hora te das tú la vuelta?» + corte al plano inicial.
+
+---
+## v6 (9-nov, vigente) — Sharp contra Hall: mismo mes, misma ruta, dos decisiones
+**Mensaje:** en la zona de la muerte, parar o seguir es una decisión; diez días separaron la peor y la mejor. **Problema:** todos creen que pararían. **Valor:** debate moral con dos casos reales opuestos. **Identificación:** ir a por tu objetivo y encontrarte a alguien que te necesita.
+| # | Se ve (sistema E11, caras; noche, frontales) | Voz |
+|---|---|---|
+| 1 | Hombre sentado en una cueva, frontal sobre su cara, ojos que se mueven; rótulo «ESTÁ VIVO» | «Estás a dos horas de la cima del Everest y hay un hombre sentado en la nieve. Está vivo. ¿Paras?» |
+| 2 | Fila de frontales pasando; contador hasta «≈40» | «En dos mil seis, unas cuarenta personas pasaron por su lado.» |
+| 3 | La cueva con otro cuerpo dentro; los que pasan miran y siguen | «Estaba en una cueva junto a un cadáver conocido, y muchos pensaron que él era otro más.» |
+| 4 | Un grupo se para, radio, y sigue | «Un equipo se paró y pidió ayuda por radio. Luego siguió.» |
+| 5 | Frontal se apaga | «David Sharp murió ese día.» |
+| 6 | **Rehook.** Calendario: +10 días | «Diez días después, en la misma ruta, pasó lo contrario.» |
+| 7 | Otro hombre tumbado; su equipo se aleja; rótulo «DADO POR MUERTO» | «A Lincoln Hall lo dieron por muerto cerca de la cima. Avisaron a su familia.» |
+| 8 | Amanecer: un equipo lo encuentra sentado al borde de un precipicio, sin guantes ni gorro | «A la mañana siguiente, un equipo que subía se lo encontró sentado al borde del precipicio, sin guantes y con el traje abierto.» |
+| 9 | Primer plano de Hall, sonrisa | «Y les dijo: “Imagino que os sorprende verme aquí”.» |
+| 10 | El equipo mira la cima y se da la vuelta | «Estaban a dos horas de la cumbre. Se quedaron con él. “La cumbre seguirá ahí; él solo tiene una vida.”» |
+| 11 | Hall bajando | «Lincoln Hall volvió vivo.» |
+| 12 | Pantalla partida: cueva / amanecer; rótulo «¿TÚ PARAS?» | «Misma montaña, diez días de diferencia. ¿Tú habrías parado?» |
+**Fuentes:** Wikipedia «Green Boots» (≈3 docenas; lo confundieron con Green Boots; Inglis pidió consejo por radio y siguió), Spokesman/Outside (≈40), Taipei Times; Lincoln Hall: Wikipedia, NBC/AP («a dos horas de la cumbre», «I imagine you are surprised to see me here»), Irish Times (sin gorro, sentado al borde de la cara Kangshung), The Australian (declarado muerto), Mazur («the summit is still there… Lincoln only has one life»). **Ojo:** Mazur no lo bajó solo: lo bajaron con sherpas de la expedición de Hall; decimos «se quedaron con él».
