@@ -1,35 +1,67 @@
 {
  "id": "E54",
- "titulo": "Revol y Mackiewicz (bocetos)",
+ "titulo": "Revol y Mackiewicz, Nanga Parbat",
  "nicho": "escalada",
  "plantilla": "Nanga",
- "mudo": true,
- "verificado": false,
- "fuentes": [],
+ "verificado": true,
+ "fuentes": [
+  "AAC, Griffin 2018: Nanga Parbat second winter ascent and rescue",
+  "Irish Times 30-ene-2018",
+  "Dawn/AFP 8-mar-2018",
+  "Gripped 2018",
+  "Himalayan Club Journal 74 (B. McDonald)",
+  "Euronews 2-feb-2018"
+ ],
  "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "ojos",
+   "texto": "Acabas de hacer cumbre con tu compañero. Y te dice: «No te veo. No veo nada»."
+  },
   {
    "tipo": "texto",
    "visual": "cumbre",
-   "dur": 4,
-   "texto": ""
+   "texto": "Está ciego y apenas puede andar. Si sigues con él, podéis morir los dos. Si bajas a buscar ayuda, puede morir solo."
   },
   {
    "tipo": "texto",
    "visual": "grieta",
-   "dur": 4,
-   "texto": ""
+   "texto": "Le pasó a Elisabeth Revol. Y lo que pasó después parece imposible. Pasaron la noche en una grieta a siete mil doscientos ochenta metros. Por la mañana, él ya no podía moverse."
+  },
+  {
+   "tipo": "texto",
+   "visual": "escalones",
+   "texto": "Lo ancló dentro de la grieta, talló escalones hasta la entrada… y bajó sola a buscar ayuda. Pasó otra noche sola, en otra grieta."
+  },
+  {
+   "tipo": "texto",
+   "visual": "k2",
+   "texto": "Cuatro alpinistas abandonaron su expedición al K2 y volaron hasta allí para rescatarla."
   },
   {
    "tipo": "texto",
    "visual": "diamir",
-   "dur": 4,
-   "texto": ""
+   "texto": "Dos de ellos subieron mil cien metros, de noche, en menos de nueve horas."
   },
   {
    "tipo": "texto",
    "visual": "grito",
-   "dur": 4,
-   "texto": ""
+   "texto": "A las dos de la madrugada, gritaron su nombre. Y alguien contestó."
+  },
+  {
+   "tipo": "texto",
+   "visual": "viva",
+   "texto": "Estaba viva. Pero Tomek seguía arriba. Y se acercaba una tormenta. ¿Subían a por él o bajaban con ella?"
+  },
+  {
+   "tipo": "texto",
+   "visual": "final",
+   "texto": "La bajaron. Tomek murió en la montaña."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "¿Tu compañero subiría a por ti?"
   }
  ]
 }

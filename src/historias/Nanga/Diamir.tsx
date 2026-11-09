@@ -9,7 +9,7 @@ const en = (t: number): [number, number] => { const s = t * (RUTA.length - 1), k
 export const Diamir: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame();
   const t = interpolate(f, [0, d], [0.02, 0.92]);
-  const m = Math.round(1100 * t / 0.92 / 10) * 10, h = 18 + Math.floor(8 * t / 0.92);
+  const m = 4800 + Math.round(1300 * t / 0.92 / 10) * 10, h = 18 + Math.floor(8 * t / 0.92);
   const [x1, y1] = en(t), [x2a, y2] = en(Math.max(0, t - 0.06)); const x2 = x2a - 40;
   return (
     <Camara d={d} empuje={0.08} entrada={false}>
@@ -27,11 +27,8 @@ export const Diamir: React.FC<P> = ({ d }) => {
         <path d={"M" + Array.from({ length: 40 }).map((_, k) => en(t * k / 39).join(" ")).join(" L")} stroke={INV.luz} strokeWidth={4} strokeDasharray="2 14" fill="none" opacity={0.6} />
         {[[x1, y1], [x2, y2]].map(([x, y], i) => <g key={i}><circle cx={x} cy={y} r={70} fill={INV.luz} opacity={0.18} /><circle cx={x} cy={y} r={30} fill={INV.luz} opacity={0.35} /><circle cx={x} cy={y} r={13} fill="#FFF8DD" /></g>)}
         <Ventisca f={f} n={40} fuerza={0.8} />
-        {/* contador y reloj */}
-        <g transform="translate(80 1200)">
-          <text x={0} y={0} fontFamily="Bricolage Grotesque, sans-serif" fontWeight={800} fontSize={170} fill="#FF6A1F" stroke="#05040C" strokeWidth={22} paintOrder="stroke">{m.toLocaleString("es-ES")} m</text>
-          <text x={6} y={80} fontFamily="Bricolage Grotesque, sans-serif" fontWeight={800} fontSize={64} fill="#fff" stroke="#05040C" strokeWidth={12} paintOrder="stroke">{`${String(h % 24).padStart(2, "0")}:${String(Math.floor((f * 7) % 60)).padStart(2, "0")} · DE NOCHE`}</text>
-        </g>
+        <text x={1010} y={420} textAnchor="end" fontFamily="Bricolage Grotesque, sans-serif" fontWeight={800} fontSize={72} fill="#fff" stroke="#05040C" strokeWidth={12} paintOrder="stroke">{`${String(h % 24).padStart(2, "0")}:${String(Math.floor((f * 7) % 60)).padStart(2, "0")}`}</text>
+        <text x={1010} y={470} textAnchor="end" fontFamily="Bricolage Grotesque, sans-serif" fontWeight={800} fontSize={38} fill="#FF8A3D" stroke="#05040C" strokeWidth={8} paintOrder="stroke">{`+${(m - 4800).toLocaleString("es-ES")} m DE NOCHE`}</text>
       </Svg>
     </Camara>
   );

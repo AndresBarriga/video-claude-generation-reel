@@ -1,0 +1,14 @@
+{
+  "bajoVoz": 0.45,
+  "efectos": [
+    { "nombre": "viento", "inicio": { "escena": 0 }, "volumen": 0.28, "bucle": true, "fundido": [0.05, 0.8] },
+    { "nombre": "latido", "inicio": { "escena": 0 }, "fin": { "escena": "grieta" }, "volumen": 0.6, "bucle": true, "bajoVoz": 0.25, "fundido": [0.1, 0.2] },
+    { "nombre": "golpe", "inicio": { "escena": "escalones", "mas": 0.33 }, "duracion": 0.3, "volumen": 0.5 },
+    { "nombre": "golpe", "inicio": { "escena": "escalones", "mas": 0.73 }, "duracion": 0.3, "volumen": 0.5 },
+    { "nombre": "golpe", "inicio": { "escena": "escalones", "mas": 1.13 }, "duracion": 0.3, "volumen": 0.5 },
+    { "nombre": "golpe", "inicio": { "escena": "escalones", "mas": 1.53 }, "duracion": 0.3, "volumen": 0.5 },
+    { "nombre": "zas", "inicio": { "escena": "k2", "mas": 0.3 }, "duracion": 0.8, "volumen": 0.5 },
+    { "nombre": "latido", "inicio": { "escena": "diamir" }, "fin": { "escena": "grito", "palabra": "Y", "mas": -0.2 }, "volumen": 0.6, "bucle": true, "bajoVoz": 0.25 },
+    { "silencio": true, "inicio": { "escena": "grito", "palabra": "Y", "mas": -0.45 }, "duracion": 0.45 }
+  ]
+}
