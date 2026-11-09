@@ -6,8 +6,8 @@ import { Bocadillo, Camara, Etiqueta, HALL, MAZUR, Nieve, Svg, Zoom, sube, type 
 import { Arista } from "./Arista";
 import { CABEZA, CADERA, Sentado, Vaho } from "./Piezas";
 
-export const EscenaHall: React.FC<{ f: number; alza: number; zoom: number; conGrupo?: boolean }> = ({ f, alza, zoom, conGrupo = true }) => (
-  <Zoom s={zoom} cx={CADERA.x + 20} cy={CADERA.y - 120} tx={540} ty={1000}>
+export const EscenaHall: React.FC<{ f: number; alza: number; zoom: number; conGrupo?: boolean; foco?: number }> = ({ f, alza, zoom, conGrupo = true, foco = 0 }) => (
+  <Zoom s={zoom} cx={CADERA.x + 20 - 120 * foco} cy={CADERA.y - 120 - 230 * foco} tx={540} ty={1000}>
     <Arista luz={1} f={f} />
     <Sentado aspecto={HALL} cabeza={34 - 44 * alza} cara={alza > 0.5 ? "normal" : "cerrados"} />
     {alza > 0.5 && <Vaho f={f} x={CABEZA.x - 30} y={CABEZA.y + 30} />}
@@ -23,11 +23,12 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
   const tM = (pal("mira") ?? Math.round(d * 0.5)) - 2, tI = (pal("imagino") ?? Math.round(d * 0.62)) - 2;
   const alza = sube(f, tM, tM + 14);
+  const foco = 1 - sube(f, tI + 30, d);
   return (
     <Camara d={d} empuje={0.07} entrada={false}>
-      <Svg><EscenaHall f={f} alza={alza} zoom={0.98 + 0.14 * (f / d)} /></Svg>
-      <Etiqueta texto="LO DIERON POR MUERTO" top={230} tam={90} desde={3} />
-      {f >= tI && <Bocadillo texto="Imagino que os sorprende verme aquí." x={420} y={720} ancho={620} desde={tI} tam={60} />}
+      <Svg><EscenaHall f={f} alza={alza} zoom={1.0 + 1.0 * foco} foco={foco} /></Svg>
+      <Etiqueta texto="LO DIERON POR MUERTO ANOCHE" top={230} tam={78} desde={3} />
+      {f >= tI && <Bocadillo texto="Imagino que os sorprende verme aquí." x={520} y={700} ancho={640} desde={tI} tam={60} />}
     </Camara>
   );
 };

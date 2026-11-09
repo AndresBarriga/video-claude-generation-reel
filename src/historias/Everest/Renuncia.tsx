@@ -27,8 +27,7 @@ export const Renuncia: React.FC<P> = ({ d, pal }) => {
           <Nieve f={f} n={20} op={0.4} />
         </Zoom>
       </Svg>
-      {f < tC && <Etiqueta texto={f < tQ ? "A 2 HORAS DE LA CUMBRE" : "SE QUEDARON"} top={230} tam={84} desde={f < tQ ? 2 : tQ} />}
-      {f >= tC && <Etiqueta texto="«ÉL SOLO TIENE UNA VIDA»" top={230} tam={76} desde={tC} />}
+      {<Etiqueta texto={f < tQ ? "A 2 HORAS DE LA CUMBRE" : "SE QUEDARON"} top={230} tam={f < tQ ? 84 : 120} desde={f < tQ ? 2 : tQ} />}
     </Camara>
   );
 };

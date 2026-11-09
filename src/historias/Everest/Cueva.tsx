@@ -47,12 +47,12 @@ const Pasa: React.FC<{ f: number; t0: number; t1: number; i: number; para?: [num
 export const Frontales: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
   const t1 = (pal("unos") ?? Math.round(d * 0.2)) - 2, t2 = (pal("otros") ?? Math.round(d * 0.4)) - 2, t3 = (pal("algunos") ?? Math.round(d * 0.6)) - 2, t4 = (pal("sin") ?? Math.round(d * 0.85)) - 2;
-  const lejos = Array.from({ length: 9 }).map((_, k) => { const x = ((k * 160 + f * 6) % 1500) - 200; return <circle key={k} cx={x} cy={360 + 0.18 * (1300 - x)} r={8} fill="#FFF3C4" opacity={0.8} />; });
+  const lejos = Array.from({ length: 12 }).map((_, k) => { const x = ((k * 130 + f * 7) % 1600) - 250; const y = CADERA.y - 140 - 0.16 * (x - CADERA.x); return <g key={k}><circle cx={x} cy={y} r={30} fill="#FFF3C4" opacity={0.25} /><circle cx={x} cy={y} r={10} fill="#FFF8DD" /><rect x={x - 9} y={y + 8} width={18} height={60} rx={8} fill="#0B0F17" /></g>; });
   return (
     <Camara d={d} empuje={0.04} entrada={false}>
       <Svg>
         <EscenaSharp f={f} alza={0.3} vivo={1 - sube(f, t4, d)} oscuro={sube(f, t4, d) * 0.6}>
-          <g opacity={f < t1 + 10 ? 1 : 0.5}>{lejos}</g>
+          <g opacity={f < t2 ? 1 : 0.45}>{lejos}</g>
           <Pasa f={f} t0={t1 - 6} t1={t2} i={0} />
           <Pasa f={f} t0={t2 - 6} t1={t3} i={1} para={[t2 + 6, t2 + 22]} />
           <Pasa f={f} t0={t3 - 8} t1={d} i={2} ayuda={[t3 + 4, t4 + 6]} />

@@ -16,8 +16,7 @@ export const Espejo: React.FC<P> = ({ d, pal }) => {
     const hall = Math.floor(f / 12) % 2 === 0;
     return (
       <Camara d={tU} empuje={0.04} entrada={false}>
-        <Svg>{hall ? <EscenaHall f={f} alza={0} zoom={1.0} conGrupo={false} /> : <EscenaSharp f={f} alza={0} vivo={0.4} />}</Svg>
-        <Etiqueta texto="A LOS DOS LOS CREYERON MUERTOS" top={230} tam={70} desde={2} />
+        <Svg>{hall ? <EscenaHall f={f} alza={0} zoom={1.0} conGrupo={false} /> : <EscenaSharp f={f} alza={0} vivo={1} />}</Svg>
       </Camara>
     );
   }
@@ -40,7 +39,7 @@ export const Espejo: React.FC<P> = ({ d, pal }) => {
   }
   return (
     <Camara d={d - tO} empuje={0.05} entrada={false}>
-      <Svg><EscenaSharp f={f} alza={0} vivo={0} oscuro={0.4 + 0.6 * sube(f, tO, d)} /></Svg>
+      <Svg><EscenaSharp f={f} alza={0} vivo={1 - sube(f, tO, tO + 20)} oscuro={0.15 + 0.35 * sube(f, tO, d)} /></Svg>
       <Etiqueta texto="EL OTRO NO" top={230} tam={110} desde={tO} />
     </Camara>
   );
