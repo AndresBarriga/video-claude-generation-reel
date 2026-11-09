@@ -140,3 +140,10 @@ Aplicado: sin «avisaron por radio» ni «no pudieron bajarlo» como hecho (qued
 - Smithsonian: Green Boots como señal de cuánto falta; movido en 2014.
 **No decir:** el nombre (identidad discutida); que sigue ahí hoy (movido en 2014; recuperación anunciada); «doscientos» como dato exacto (estimación).
 **4 preguntas:** 1) Gancho: cadáver + reloj, contradicción que frena. 2) Rehook: 56 % bajando. 3) Hasta el final: ¿qué pasa con la luz que llega tarde? 4) Lo que ya sabe la gente: «Green Boots», «cuerpos en el Everest», «zona de la muerte» → descripción.
+
+### v5b tras el crítico (5,5/10), aplicado
+- f0 con persona y cara (reparto E11): escaladora escarchada pasa junto a las botas y mira su reloj; rótulo «LLEGAS TARDE». Voz: «Si a esta hora no has llegado a este cadáver, te das la vuelta.»
+- «había» / «usaban» (movido en 2014, recuperación anunciada); «todos los que suben **por el norte**»; «**algunos** guías».
+- Barra con los tres datos: 56 % bajando de la cima · 17 % tras darse la vuelta · 10 % subiendo («darse la vuelta tarde tampoco salva»).
+- La luz que llega tarde = ella: sigue, hace cumbre tarde, y la barra del 56 % cae sobre su bajada (cierra el bucle).
+- Final: «La cumbre es la mitad. ¿A qué hora te das tú la vuelta?» + corte al plano inicial.
