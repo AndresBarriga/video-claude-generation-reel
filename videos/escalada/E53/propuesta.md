@@ -106,3 +106,37 @@ Aplicado: sin «avisaron por radio» ni «no pudieron bajarlo» como hecho (qued
 **Comentario fijado:** ¿Alguna vez has dado la vuelta por otra persona? ¿Qué te costó?
 **Envío:** «No pasaron de largo todos. Mira lo que dicen del final.»
 **Fuera:** madre, orden por radio, radio de Brice/Inglis, 50.000 $, traje rojo, «exactamente cuarenta».
+
+---
+## v5 (9-nov, vigente) — «El cadáver que funciona como reloj» (infográfico + morbo + utilidad)
+**Por qué cambia:** Andrés descartó los bocetos de dilema (se parecían a E35) y la ilustración del cuerpo. Pide morbo y algo útil; ve bien el formato infográfico. Hilo: en el Everest hay un cuerpo que los guías usan como **hora límite**; y los datos dicen que la mayoría muere **bajando**. Lección para cualquier escalador: la cumbre es la mitad; pon tu hora de darte la vuelta antes de salir.
+**Mensaje:** la cumbre es la mitad del camino; decide antes cuándo te das la vuelta.
+**Problema del espectador:** cree que lo peligroso es subir; empuja «un poco más» cuando ya va tarde.
+**Valor:** el dato que da la vuelta a la intuición (56 % muere bajando de la cima) y una regla aplicable a cualquier vía o ruta.
+**Cómo ayuda:** hora límite fijada antes de empezar, no decidida arriba con hipoxia o cansancio.
+**Identificación:** «solo quedan diez minutos a la cima, ya que estamos…».
+
+## 5 aperturas (elijo la 1)
+1. Botas verdes con crampones asomando de una cueva + reloj: «En el Everest hay un cadáver que funciona como reloj.»
+2. «Si a esta hora no has llegado a este cuerpo, te das la vuelta.»
+3. «Más de la mitad muere bajando, no subiendo.»
+4. «Hay unos doscientos cuerpos en el Everest. Uno marca la hora.»
+5. «Este hombre lleva casi treinta años sirviendo de señal.»
+
+## Guion (~38 s)
+| # | Se ve (infográfico: perfil de montaña con altímetro, cuerda naranja como ruta, sin personajes grandes; el cuerpo = solo las botas con crampones en la cueva) | Se dice |
+|---|---|---|
+| 1 | Primer plano de dos botas con crampones saliendo de una cueva de roca, nieve; aparece un reloj sobre ellas | «En el Everest hay un cadáver que funciona como reloj.» |
+| 2 | Zoom out al perfil: la cueva marcada a 8.500 m en la ruta norte; las luces de la fila subiendo y pasando por su lado | «Está a ocho mil quinientos metros, junto a la ruta. Todos los que suben pasan a su lado.» |
+| 3 | El reloj gira; línea roja: hora límite. Una luz llega tarde y se da la vuelta | «Y los guías lo usaban de referencia: si a cierta hora no has llegado a él, te das la vuelta.» |
+| 4 | **Rehook.** Barra que crece: 56 % «BAJANDO DE LA CIMA» vs 10 % «SUBIENDO» | «¿Por qué tanta prisa? Porque de los que murieron por encima de ocho mil metros, más de la mitad murió bajando de la cima. Solo uno de cada diez, subiendo.» |
+| 5 | La luz que sigue tarde: el contador de oxígeno/tiempo baja; la ruta de bajada se alarga | «Llegas arriba agotado y tarde, y aún te queda la mitad.» |
+| 6 | Vuelve a las botas; la cueva vacía con una cinta: «RETIRADO» (si se confirma) / o solo las botas | «La cumbre es la mitad. Tu hora de darte la vuelta se decide abajo, no arriba.» |
+| 7 | Rótulo + pregunta | «¿Tú te la pones?» |
+
+## Fuentes
+- Firth et al., BMJ 2008, *Mortality on Mount Everest 1921–2006*: de 94 muertos por encima de 8.000 m, 53 (56 %) bajando de la cima, 16 (17 %) tras darse la vuelta, 9 (10 %) subiendo; fatiga y llegar tarde a la cumbre, señales previas.
+- Spectator (Billi Bierling, jul-2026): botas verdes en una cueva a ~8.500 m; «si no has llegado a Green Boots a cierta hora, date la vuelta»; ~200 cuerpos; anuncian su recuperación.
+- Smithsonian: Green Boots como señal de cuánto falta; movido en 2014.
+**No decir:** el nombre (identidad discutida); que sigue ahí hoy (movido en 2014; recuperación anunciada); «doscientos» como dato exacto (estimación).
+**4 preguntas:** 1) Gancho: cadáver + reloj, contradicción que frena. 2) Rehook: 56 % bajando. 3) Hasta el final: ¿qué pasa con la luz que llega tarde? 4) Lo que ya sabe la gente: «Green Boots», «cuerpos en el Everest», «zona de la muerte» → descripción.
