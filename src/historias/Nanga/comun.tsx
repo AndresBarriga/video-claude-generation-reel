@@ -7,7 +7,7 @@ export { Bocadillo, sube, temblor } from "../Pierna/comun";
 export const INV = { cielo0: "#05040C", cielo1: "#151236", cielo2: "#2B2160", nieve: "#DCE3F2", nieveS: "#9AA5C8", nieveSS: "#5D6693", roca: "#262640", hielo0: "#0E3B5E", hielo1: "#1C6E9E", hielo2: "#56B4D8", hielo3: "#BFEAF7", luz: "#FFE7B0" };
 
 // Reparto (aspecto de Escalador)
-export const ELI = { chaqueta: "#6B3FA0", chaquetaSombra: "#4A2A73", pantalon: "#1E2233", casco: "#F2F2F2", peinado: "coleta" as const, pelo: "#5A3A22", manos: "guante" as const };
+export const ELI = { chaqueta: "#6B3FA0", chaquetaSombra: "#4A2A73", pantalon: "#1E2233", casco: "#F2F2F2", peinado: "melena" as const, pelo: "#4A2E1C", manos: "guante" as const };
 export const TOMEK = { chaqueta: "#C8402E", chaquetaSombra: "#8E2A1F", pantalon: "#1E2233", casco: null, gorro: "#2E5E8C", barba: "#4A3426", pelo: "#3B2A20", manos: "guante" as const };
 export const DENIS = { chaqueta: "#E2742B", chaquetaSombra: "#A9501A", pantalon: "#1E2233", casco: "#F2C230", barba: "#6B4A2E", manos: "guante" as const };
 export const ADAM = { chaqueta: "#E6C030", chaquetaSombra: "#A88A1C", pantalon: "#1E2233", casco: "#3A7BD5", manos: "guante" as const };

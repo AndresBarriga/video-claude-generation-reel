@@ -6,7 +6,7 @@ import React, { useId } from "react";
 import { Gafas, ObjetoMano, Tocado, type Aspecto, type Objeto } from "./Rasgos";
 
 export type Quien = "joe" | "simon";
-export type Cara = "normal" | "miedo" | "dolor" | "esfuerzo" | "alivio" | "cerrados" | "sopla" | "serio";
+export type Cara = "normal" | "miedo" | "dolor" | "esfuerzo" | "alivio" | "cerrados" | "sopla" | "serio" | "ciego";
 
 export const PERSONAJES: Record<Quien, { chaqueta: string; chaquetaSombra: string; pantalon: string; casco: string; pelo: string }> = {
   joe: { chaqueta: "#C8402E", chaquetaSombra: "#8E2A1F", pantalon: "#2B3442", casco: "#F2C230", pelo: "#3B2A20" },
@@ -93,6 +93,13 @@ const Ojos: React.FC<{ cara: Cara }> = ({ cara }) => {
     case "serio": // ceño fruncido, boca recta
       return (<g><path d="M0 -13 L12 -8 M30 -13 L18 -8" {...st} />
         <circle cx={7} cy={-2} r={3.8} fill={TINTA} /><circle cx={23} cy={-2} r={3.8} fill={TINTA} /><path d="M10 13 L24 12" {...st} /></g>);
+    case "ciego": // ceguera de la nieve: ojos velados sin pupila, enrojecidos, cejas de angustia, boca entreabierta
+      return (<g>
+        <ellipse cx={6} cy={-3} rx={7} ry={6} fill="#E9EEF4" stroke="#D9706A" strokeWidth={2.5} /><ellipse cx={22} cy={-3} rx={7} ry={6} fill="#E9EEF4" stroke="#D9706A" strokeWidth={2.5} />
+        <circle cx={6} cy={-2} r={3} fill="#C9D3DD" /><circle cx={22} cy={-2} r={3} fill="#C9D3DD" />
+        <path d="M0 -12 L12 -16 M18 -16 L30 -12" {...st} />
+        <ellipse cx={17} cy={14} rx={4} ry={3.5} fill={TINTA} />
+      </g>);
     case "cerrados":
       return (<g><path d="M2 -3 L12 -3 M19 -3 L29 -3" {...st} /><path d="M10 12 L24 12" {...st} /></g>);
     default:
@@ -163,6 +170,7 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
         {/* cabeza */}
         <g transform={`translate(${cab[0]} ${cab[1]}) rotate(${a.torso * 0.6 + a.cabeza})`}>
           {Cabeza ? <Cabeza cara={cara} /> : <>
+          {aspecto.peinado === "melena" && <path d={`M${-L.cabeza + 4} -14 Q${-L.cabeza - 16} 20 ${-L.cabeza - 6} 70 Q-6 82 8 58 Q4 30 6 6 Z`} fill={aspecto.pelo ?? "#5A3A22"} />}
           <circle r={L.cabeza} fill={piel} />
           <path d={`M${-L.cabeza} 2 A${L.cabeza} ${L.cabeza} 0 0 0 ${-L.cabeza * 0.2} ${L.cabeza}`} fill={pielS} opacity={0.6} />
           {/* capas: barba → ojos y gafas (recortados a la cara) → pelo/gorro/casco encima */}

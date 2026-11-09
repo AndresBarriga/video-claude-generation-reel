@@ -23,7 +23,7 @@ export const Cumbre: React.FC<P> = ({ d, pal }) => {
           <Cuerda d="M420 1160 Q520 1290 630 1170" w={9} />
           <Escalador x={400} y={1190 - 130 * 2.1} quien="joe" aspecto={ELI} s={2.1} pose="pie" cara={f > tD ? "miedo" : "serio"} frontal mira={1} angulos={{ cabeza: 8, brazoA: [40, 60] }} />
           <g transform={`translate(${tr} 0)`}>
-            <Escalador x={640} y={1200 - 130 * 2.1} quien="simon" aspecto={TOMEK} s={2.1} pose="pie" cara="serio" mira={1} angulos={{ torso: -12, cabeza: -26, brazoA: [-70, -40], brazoB: [-20, -10], piernaA: [10, -6], piernaB: [-10, 4] }} />
+            <Escalador x={640} y={1200 - 130 * 2.1} quien="simon" aspecto={TOMEK} s={2.1} pose="pie" cara="ciego" mira={1} angulos={{ torso: -12, cabeza: -26, brazoA: [-70, -40], brazoB: [-20, -10], piernaA: [10, -6], piernaB: [-10, 4] }} />
           </g>
           <Ventisca f={f} n={60} />
         </Zoom>

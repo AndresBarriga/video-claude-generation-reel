@@ -5,7 +5,7 @@ import React from "react";
 export type Aspecto = {
   chaqueta?: string; chaquetaSombra?: string; pantalon?: string; piel?: string; pielSombra?: string;
   /** null = sin casco (bloque) */ casco?: string | null;
-  gorro?: string; pelo?: string; peinado?: "corto" | "rizado" | "coleta" | "trenzas" | "rapado";
+  gorro?: string; pelo?: string; peinado?: "corto" | "rizado" | "coleta" | "trenzas" | "rapado" | "melena";
   barba?: string; gafas?: boolean; arnes?: boolean; manos?: "guante" | "piel";
 };
 export type Objeto = "movil" | "movilLuz" | "cepillo" | "lija" | "crema" | "platano" | "nueces" | "movilNegro" | "cepilloDientes";
