@@ -4,9 +4,9 @@ import { useCurrentFrame } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
 import { Camara, CieloNoche, DENIS, Etiqueta, INV, Oscuridad, Svg, Ventisca, sube, temblor, type P } from "./comun";
 
-export const Grito: React.FC<P> = ({ d, pal }) => {
+export const Grito: React.FC<P & { soloNegro?: boolean }> = ({ d, soloNegro }) => {
   const f = useCurrentFrame();
-  const tN = (pal("y") ?? Math.round(d * 0.55)) - 2; // «Y alguien contestó» → negro y luz lejana
+  const tN = soloNegro ? 0 : d; // «Y alguien contestó» → negro y luz lejana
   if (f < tN) return (
     <Camara d={tN} empuje={0.1} sacudida={f > 6 ? 3 : 0} entrada={false}>
       <Svg>
@@ -19,7 +19,7 @@ export const Grito: React.FC<P> = ({ d, pal }) => {
       <Etiqueta texto="¡ELISABETH!" top={230} tam={140} desde={6} />
     </Camara>
   );
-  const g = f - tN, luz = sube(g, 8, 20);
+  const g = f - tN, luz = sube(g, d - 30, d - 18);
   return (
     <Camara d={d - tN} empuje={0.02} entrada={false}>
       <Svg>

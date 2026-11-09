@@ -46,7 +46,14 @@
   {
    "tipo": "texto",
    "visual": "grito",
-   "texto": "A las dos de la madrugada, gritaron su nombre. Y alguien contestó."
+   "texto": "A las dos de la madrugada, gritaron su nombre.",
+   "pausa": 1.4
+  },
+  {
+   "tipo": "texto",
+   "visual": "respuesta",
+   "texto": "Y alguien contestó.",
+   "pausa": 0.9
   },
   {
    "tipo": "texto",
