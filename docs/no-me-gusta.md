@@ -67,3 +67,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-11-08 · **No:** ilustración generada con IA de un cuerpo en el Everest (tono de niño dormido).
 - 2026-11-08 · **No:** el tintineo de la chapa/mosquetones como ambiente (molesta).
 - 2026-11-09 · **No:** muñecos flotando o sentados con los pies hacia atrás / piernas cruzadas con otro; chica sin pelo largo; un ciego que no se nota; montaña que parece una torre. **Sí:** pies apoyados, sentados en un banco de nieve, melena visible bajo el casco, ojos velados para ceguera, macizo ancho con varias cimas.
+- 2026-11-09 · Rigidez de la fórmula: optimizar cada vídeo para cumplir la plantilla de viralidad, recortar información o cambiar el enfoque en lugar de preguntarse qué historia merece la pena contar. Lo importante es el mensaje, lo interesante de la historia y lo que ofrece; hook/rehook se buscan respetándolo.
