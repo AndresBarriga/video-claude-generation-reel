@@ -61,3 +61,11 @@ Cambios: gancho con detalle concreto (ciego); «esa noche» → «lo que pasó d
 | 9 | Ella viva; arriba, la tormenta cerrando la montaña; «¿SUBEN O BAJAN?» | «Estaba viva. Pero Tomek seguía arriba, y venía una tormenta. Ahora les tocaba elegir a ellos.» |
 | 10 | Tres frontales bajando; la cuarta luz no aparece | «La bajaron. A Tomek no se le volvió a ver.» |
 | 11 | Vuelta a la cuerda entre dos; «MÁNDASELO» | «¿Tu compañero subiría a por ti?» |
+
+---
+## v4 (9-nov, vigente) — última pasada de ritmo y precisión (revisión externa)
+- Gancho con la decisión definida: «Si bajas con él, podéis morir los dos. Si lo dejas, puede morir solo.» Rótulo «¿LO DEJAS?».
+- «Lo ancló dentro de la grieta, talló escalones hasta la entrada… y bajó sola a buscar ayuda» (fiel al AAC; no sugiere que él pudiera salir solo).
+- «Cuatro alpinistas abandonaron su expedición al K2 y volaron hasta allí para rescatarla.»
+- Se mantiene «Y lo que pasó después parece imposible»: es la frase-bisagra de E15 (el mejor vídeo, 260K). Si sobra tiempo, se puede probar sin ella.
+**Texto ElevenLabs:** Acabas de hacer cumbre con tu compañero. Y te dice: "No te veo. No veo nada." Está ciego y apenas puede andar. Si bajas con él, podéis morir los dos. Si lo dejas, puede morir solo. Le pasó a Elisabeth Revol. Y lo que pasó después parece imposible. Pasaron la noche en una grieta a siete mil metros. Por la mañana, él ya no podía moverse. Lo ancló dentro de la grieta, talló escalones hasta la entrada… y bajó sola a buscar ayuda. Cuatro alpinistas abandonaron su expedición al K2 y volaron hasta allí para rescatarla. Dos de ellos subieron mil cien metros, de noche, en menos de nueve horas. A las dos de la madrugada, gritaron su nombre. Y alguien contestó. Estaba viva. Pero Tomek seguía arriba, y venía una tormenta. Ahora les tocaba elegir a ellos. La bajaron. A Tomek no se le volvió a ver. ¿Tu compañero subiría a por ti?

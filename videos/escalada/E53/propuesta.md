@@ -180,3 +180,8 @@ Aplicado: sin «avisaron por radio» ni «no pudieron bajarlo» como hecho (qued
 9 Pasan y miran; un grupo se agacha y se va — «Muchos creyeron que era otro muerto más. Algunos intentaron ayudarle, sin éxito.»
 10 Frontal que se apaga — «Murió ese día.»
 11 Pantalla partida: amanecer / cueva; corte al plano 1 — «Misma montaña. Diez días. ¿Tú dejarías la cumbre de tu vida por un desconocido?»
+
+---
+## v8 (9-nov, pendiente, para otro día) — revisión externa
+Gancho A (decisión en tú): «Estás a dos horas de la cima del Everest. Encuentras a un desconocido que se está muriendo. Si te quedas, renuncias a la cumbre. ¿Qué haces?» · «¿CUMBRE O ÉL?» (probar contra B: «Lo dieron por muerto… “Imagino que os sorprende verme aquí”»).
+Correcciones: Hall encontrado ~7:30 del 26-may a ~8.550 m; Mazur y tres más se quedaron ~4 h hasta que llegaron otros (AAC); su equipo lo intentó durante horas antes de darlo por muerto (no «lo dejaron» a secas); Sharp: «decenas» en vez de contador de 40; unos no lo vieron, otros lo creyeron muerto, algunos intentaron ayudarle (AAC: oscuridad, máscaras, cavidad); fuera «cumbre de su vida» (Mazur ya había hecho cima). Transición Hall → Sharp en el mismo encuadre de montaña (sin pantalla partida). Cierre: «Misma montaña. Once días de diferencia. En un caso, cuatro personas renunciaron a la cima. En el otro, David Sharp murió. ¿Tú te habrías detenido?»
