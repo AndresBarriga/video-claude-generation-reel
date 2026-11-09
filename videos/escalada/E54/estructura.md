@@ -37,3 +37,11 @@
 - Sonido: viento, piolet, rotor, silencio antes del grito; sin tintineo.
 - Riesgo: ~48 s y ~130 palabras (en el límite).
 **Fuentes:** AAC (Griffin 2018), Irish Times, Dawn/AFP, Gripped, Himalayan Club, Euronews.
+
+## Tras el crítico (7/10 · 12/14)
+- Escena 3 sin mapa: rótulo «NANGA PARBAT · 2018» sobre el plano de la grieta (escenario nuevo desde el s9).
+- Añadir la segunda noche: «…y bajó sola a buscar ayuda. Pasó otra noche sola, en otra grieta.» (AAC: bajó a 6.700 m y pasó la noche en otra grieta).
+- Fuera el rótulo «¿SUBEN O BAJAN?» (un solo dilema rotulado: «¿LO DEJAS?»).
+- Helicóptero solo como silueta con rotor en el mapa (sin plano propio).
+- Poses nuevas a construir: acurrucados, agarrado al hombro, piolet, grito. Caras con luz de relleno suave (no solo la máscara de frontal).
+- «Lo ancló… talló escalones hasta la entrada» SÍ está en el AAC (Griffin 2018): se queda.

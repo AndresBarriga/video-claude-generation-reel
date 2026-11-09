@@ -31,3 +31,8 @@
 - Sin cadáveres visibles: Sharp vivo y sentado; Green Boots ni se dibuja.
 - Riesgo: «¿qué haces?» puede tener una respuesta obvia («me quedo»); por eso el contraste de Sharp es imprescindible.
 **Fuentes:** AAC (relato de Mazur; «Everest, deaths during the spring»), NBC/AP, Irish Times, Wikipedia «Green Boots».
+
+## Tras el crítico (6/10 · 10/14)
+- Gancho: «Estás a dos horas de la cima del Everest. El hombre al que dieron por muerto anoche te mira y te dice: “Imagino que os sorprende verme aquí”.» Abre ya en Hall al borde levantando la cabeza (cara grande).
+- Fuera la escena 2 (contexto).
+- «cueva de roca» en vez de «banda amarilla».

@@ -128,14 +128,14 @@
     "hist": "8-nov 6 → 5 → 5 → 5,5 (v10 aplicada); vídeo 5 (aplicado); v11 5"
   },
   "E53": {
-    "nota": 5.5,
+    "nota": 6,
     "orig": 5.5,
-    "fase": "propuesta v6 Sharp vs Hall",
+    "fase": "estructura v8",
     "hist": "8-nov 5,5 → 6,5; v5 5,5"
   },
   "E54": {
-    "nota": 7.5,
-    "fase": "propuesta v2 (cambios aplicados)",
+    "nota": 7,
+    "fase": "estructura v4",
     "hist": "9-nov 6,5 → 7,5 con cambios"
   }
 }

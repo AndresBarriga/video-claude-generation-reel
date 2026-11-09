@@ -89,3 +89,5 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-09 | Selección de caso (Revol, Hall, Weathers, Kurz, K2) | propuesta | 7 (Revol) | Revol: dilema binario en tú con respuesta no obvia, como E15; atribuir «le dijeron que bajara» a ella; rótulo distinto de E35. Hall: giro enorme pero dilema obvio y se pisa con Sharp |
 | 2026-11-09 | E53 v6 Sharp vs Hall | propuesta | 5,5 (9/14) | «pidió ayuda por radio y siguió» discutido y acusa a vivos; «¿paras?» obvio; Hall enterrado a mitad |
 | 2026-11-09 | E54 Revol v1 | propuesta | 6,5 (11/14; 7,5 con cambios) | «esa noche» falso; eran cuatro; cierre «¿te dejaría?» juzga a Revol → «¿subiría a por ti?». Aplicado en v2 |
+| 2026-11-09 | E54 Revol v4 | estructura | 7 (12/14) | Mapa en s9 sobra; tres dilemas (quitar rótulo «¿SUBEN O BAJAN?»); falta la segunda noche sola; poses nuevas y helicóptero. «Anclaje/escalones sin fuente»: falso, está en el AAC |
+| 2026-11-09 | E53 v8 | estructura | 6 (10/14) | Dilema obvio; frase de Hall enterrada en s15; «banda amarilla» dudosa → «cueva de roca»; s1 sin caras |
