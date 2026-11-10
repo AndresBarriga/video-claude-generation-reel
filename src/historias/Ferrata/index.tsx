@@ -8,8 +8,12 @@ import { Sonidos } from "../../Sonidos";
 import { C, type P } from "./comun";
 import { EscaleraCielo } from "./Escalera";
 import { Disipador } from "./Disipador";
+import { Embalse } from "./Embalse";
+import { Cresta } from "./Cresta";
+import { Caida } from "./Caida";
+const Final: React.FC<P> = (p) => <EscaleraCielo {...p} final />;
 
-const ESCENAS: Record<string, React.FC<P>> = { escalera: EscaleraCielo, disipador: Disipador };
+const ESCENAS: Record<string, React.FC<P>> = { escalera: EscaleraCielo, embalse: Embalse, cresta: Cresta, caida: Caida, disipador: Disipador, final: Final };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Ferrata: React.FC<{ datos: Datos }> = ({ datos }) => {

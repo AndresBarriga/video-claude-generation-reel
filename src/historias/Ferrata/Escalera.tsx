@@ -1,86 +1,85 @@
-// Escena 1 (gancho): escalera colgada en el cielo. Dani a mitad, Marta en lo alto del pilar. La cámara baja y enseña el vacío.
-// Al decir «resbalas», a Dani se le va un pie y la cámara empuja hacia la bolsa del disipador (bucle abierto).
+// Escalera colgada en el cielo (gancho y cierre). Mundo a escala real: 1 m = PM px con zoom 1 (plano general épico).
+// Gancho: empieza muy cerca de la cara de Dani mirando al vacío y se abre hasta el plano general (la escalera, 37 m,
+// cruza entre dos agujas; Marta espera arriba). Al «resbalas», empuje a la funda del disipador. `final`: ocaso, Dani arriba.
 import React from "react";
-import { Easing, interpolate, random, useCurrentFrame } from "remotion";
+import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
-import { FE, DANI, MARTA, Cielo, Montes, Nube, Cable, Mosqueton, Elastico, anilla, Etiqueta, Svg, clamp, type P } from "./comun";
+import { DANI, MARTA, Etiqueta, Svg, clamp, type P } from "./comun";
+import { Cielo, Cordillera, Bosque, Bruma, NubeE, CIELO, type Hora } from "./paisaje";
+import { Roca, CableE, MosqE, BrazoE, FundaE, pieMosq, sPersona, M } from "./roca";
 
-const A: [number, number] = [-60, 1400], B: [number, number] = [800, 520]; // largueros: de abajo-izq. al pilar
-const k = (B[1] - A[1]) / (B[0] - A[0]);
-const riel = (x: number) => A[1] + (x - A[0]) * k;
-const PASA = 150; // pasamanos: cable por encima de la escalera
+const PM = 31, SP = sPersona(PM);
+const A: [number, number] = [60, 1310], B: [number, number] = [962, 640];
+const ux = (B[0] - A[0]) / Math.hypot(B[0] - A[0], B[1] - A[1]), uy = (B[1] - A[1]) / Math.hypot(B[0] - A[0], B[1] - A[1]);
+const enRiel = (m: number): [number, number] => [A[0] + ux * m * PM, A[1] + uy * m * PM]; // m metros desde el inicio
+const PASA = 1.0 * PM; // pasamanos 1 m por encima de los peldaños
 
-const Pilar: React.FC = () => (
+const Fondo: React.FC<{ h: Hora }> = ({ h }) => (
   <g>
-    <path d="M790 505 L835 468 L905 452 L985 470 L1060 438 L1220 456 L1220 2900 L760 2900 L735 2100 L772 1500 L742 980 Z" fill={FE.caliza} />
-    <path d="M790 505 L742 980 L772 1500 L735 2100 L760 2900 L850 2900 L830 2100 L860 1500 L820 980 L842 520 Z" fill={FE.calizaS} />
-    {Array.from({ length: 16 }).map((_, i) => { const x = 820 + random(`gx${i}`) * 360, y = 560 + random(`gy${i}`) * 2200; return <path key={i} d={`M${x} ${y} q${-14 + random(`gq${i}`) * 28} ${90} ${4} ${150 + random(`gl${i}`) * 160}`} stroke={FE.calizaSS} strokeWidth={5} fill="none" opacity={0.55} />; })}
-    {[[900, 452], [1000, 466], [1120, 448]].map(([x, y], i) => <ellipse key={i} cx={x} cy={y + 4} rx={40} ry={12} fill={FE.medio} />)}
-    <path d="M790 505 L835 468 L905 452 L985 470 L1060 438 L1220 456" stroke="#E6E1D8" strokeWidth={6} fill="none" opacity={0.8} />
+    <Cielo h={h} id={`es${h}`} sol={[230, 1120]} r={60} />
+    {[[160, 420, 1.0], [880, 300, 0.7]].map(([x, y, s], i) => <NubeE key={i} x={x} y={y} s={s} h={h} o={0.85} />)}
+    <Cordillera id="eA" y={1520} amp={820} color="#6C7BA6" h={h} lejos={0.55} nieve={0.32} picos={3} />
+    <Cordillera id="eB" y={1690} amp={430} color="#45637A" h={h} lejos={0.3} nieve={0.22} picos={4} />
+    <Bruma y={1600} alto={200} color={CIELO[h].bruma} id={`eb${h}`} o={0.55} />
+    <Cordillera id="eC" y={1810} amp={190} color="#3E6B4E" h={h} lejos={0.15} picos={5} />
+    <Bosque id="eD" x0={-200} x1={1300} y={1815} t={22} color="#2E5240" n={90} />
+    <path d="M-400 1860 Q300 1830 700 1870 T1500 1855 L1500 3000 L-400 3000 Z" fill="#6E9A5A" />
+    <path d="M90 1890 Q400 1868 640 1900 Q520 1930 230 1925 Z" fill="#5FC3CC" opacity={0.95} />
+    {Array.from({ length: 16 }).map((_, i) => <rect key={i} x={690 + (i % 6) * 13 + (i % 3) * 3} y={1880 + Math.floor(i / 6) * 9} width={7} height={5} fill={i % 4 ? "#F2ECE2" : "#C8573C"} />)}
+    <g>{[[-60, 1640, 1.3], [1020, 1600, 1.5]].map(([x, y, s], i) => <NubeE key={i} x={x} y={y} s={s} h={h} o={0.75} />)}</g>
   </g>
 );
 
-const Escalera: React.FC<{ v: number }> = ({ v }) => {
-  const rielD = `M${A[0]} ${A[1]} L${B[0]} ${B[1]}`, bajo = `M${A[0]} ${A[1] + 38} L${B[0]} ${B[1] + 38}`;
-  const pasa = `M${A[0]} ${A[1] - PASA} L${B[0] + 10} ${B[1] - PASA}`;
-  const peldanos = Array.from({ length: 22 }, (_, i) => A[0] + 30 + i * 40);
+const Escalera: React.FC<{ z: number }> = ({ z }) => {
+  const largo = Math.hypot(B[0] - A[0], B[1] - A[1]) / PM, n = Math.floor(largo / 0.3);
+  const lejos = `M${A[0]} ${A[1] - 5} L${B[0]} ${B[1] - 5}`, cerca = `M${A[0]} ${A[1]} L${B[0]} ${B[1]}`;
+  const pasa = `M${A[0]} ${A[1] - PASA} L${B[0] + 6} ${B[1] - PASA}`;
   return (
-    <g transform={`rotate(${v} ${B[0]} ${B[1]})`}>
-      <Cable d={pasa} w={7} />
-      {peldanos.map((x) => <path key={x} d={`M${x} ${riel(x)} L${x + 8} ${riel(x) + 38}`} stroke={FE.aceroS} strokeWidth={9} strokeLinecap="round" />)}
-      <Cable d={bajo} w={8} /><Cable d={rielD} w={10} />
-      {peldanos.map((x) => <path key={`l${x}`} d={`M${x} ${riel(x)} L${x + 8} ${riel(x) + 38}`} stroke={FE.aceroL} strokeWidth={3} strokeLinecap="round" />)}
-      {[[B[0] + 10, B[1] - PASA], [B[0], B[1]]].map(([x, y], i) => <g key={i}><rect x={x - 6} y={y - 14} width={34} height={28} rx={6} fill={FE.aceroS} /><circle cx={x + 11} cy={y} r={6} fill={FE.aceroL} /></g>)}
+    <g>
+      <CableE d={pasa} pm={PM} z={z} />
+      <CableE d={lejos} pm={PM * 1.3} z={z} />
+      {Array.from({ length: n }).map((_, i) => { const [x, y] = enRiel(0.15 + i * 0.3); return <path key={i} d={`M${x} ${y - 5} L${x + 1.2} ${y}`} stroke="#59636F" strokeWidth={Math.max(0.6, 0.025 * PM)} />; })}
+      <CableE d={cerca} pm={PM * 1.3} z={z} />
     </g>
   );
 };
 
-export const EscaleraCielo: React.FC<P> = ({ d, pal }) => {
-  const f = useCurrentFrame();
-  const fR = pal("resbalas") ?? Math.round(d * 0.62);
-  const pan = 0;
-  const emp = interpolate(f, [fR, fR + 18], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
-  const resb = interpolate(f, [fR - 2, fR + 6], [0, 1], { ...clamp, easing: Easing.out(Easing.back(2)) });
-  const v = Math.sin(f / 22) * 0.25 + resb * Math.sin((f - fR) / 3) * 0.4 * Math.max(0, 1 - (f - fR) / 30);
-  const hx = 360, hy = 856 + resb * 26; // cadera de Dani
-  const giro = 35 + resb * 8, ring = anilla(hx, hy, 1.25, giro);
-  const m1: [number, number] = [470, riel(470) - PASA], m2: [number, number] = [545, riel(545) - PASA];
-  const bolsa: [number, number] = [ring[0] + 6, ring[1] - 10];
-  // de cerca (cara de Dani y el vacío debajo) → se abre hasta ver la escalera entera → empuje a la bolsa al «resbalas»
-  const abre = interpolate(f, [0, Math.max(20, fR - 12)], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
-  const z = interpolate(abre, [0, 1], [2.2, 1]) + emp * 1.2;
-  const cx = interpolate(emp, [0, 1], [hx + 40, bolsa[0]]), cy = interpolate(emp, [0, 1], [hy - 110, bolsa[1]]);
-  const tx = interpolate(abre, [0, 1], [540, cx]) , ty = interpolate(abre, [0, 1], [900, cy + 170]) - emp * 170;
-  const capa = (par: number) => `translate(0 ${-pan * par})`;
+export const EscaleraCielo: React.FC<P & { final?: boolean }> = ({ d, pal, final }) => {
+  const f = useCurrentFrame(), h: Hora = final ? "ocaso" : "tarde";
+  const fR = final ? 9999 : pal("resbalas") ?? Math.round(d * 0.62);
+  const abre = interpolate(f, [4, Math.max(30, fR - 10)], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const emp = interpolate(f, [fR, fR + 16], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const resb = interpolate(f, [fR - 2, fR + 5], [0, 1], { ...clamp, easing: Easing.out(Easing.back(2)) });
+  const pos = final ? 36.2 : 20.5, pie = enRiel(pos), hip: [number, number] = [pie[0] - 2, pie[1] - 21 + resb * 3];
+  const giro = 18 + resb * 10, ring: [number, number] = [hip[0] + 4, hip[1] - 3];
+  const m1 = enRiel(pos + 0.5), m2 = enRiel(pos + 0.85);
+  const c1: [number, number] = [m1[0], m1[1] - PASA], c2: [number, number] = [m2[0], m2[1] - PASA];
+  const zF = final ? interpolate(f, [0, d], [1.6, 1.15], clamp) : interpolate(abre, [0, 1], [9, 1]) * (1 + emp * 1.6);
+  const foco: [number, number] = final ? [900, 700] : [interpolate(abre, [0, 1], [hip[0] + 6, 540]) + emp * (ring[0] - 540), interpolate(abre, [0, 1], [hip[1] - 22, 960]) + emp * (ring[1] - 960)];
+  const zB = Math.pow(zF, 0.12), cam = (z: number) => `translate(540 ${final ? 980 : 960}) scale(${z}) translate(${-foco[0]} ${-foco[1]})`;
   return (
     <>
       <Svg>
-        <g transform={`translate(${tx} ${ty}) scale(${z}) translate(${-cx} ${-cy})`}>
-          <Cielo id="esc" />
-          <g transform={capa(0.15)}>{[[160, 260, 1], [760, 160, 0.8], [520, 420, 0.6]].map(([x, y, s], i) => <Nube key={i} x={x + f * (0.4 + i * 0.2)} y={y} s={s} o={0.9} />)}</g>
-          <g transform={capa(0.3)}><Montes y={1500} seed="esca" /></g>
-          <g transform={capa(0.45)}>
-            <Montes y={1820} seed="escm" color={FE.medio} nieve={false} amp={180} />
-            <path d="M-300 1930 Q300 1880 700 1940 T1400 1920 L1400 2700 L-300 2700 Z" fill={FE.valle} />
-            <path d="M120 2010 Q420 1975 640 2030 Q560 2080 260 2070 Z" fill={FE.agua} />
-            {Array.from({ length: 14 }).map((_, i) => <rect key={i} x={640 + random(`cx${i}`) * 260} y={1990 + random(`cy${i}`) * 70} width={10} height={8} fill={i % 3 ? "#F4EFE6" : "#C8573C"} />)}
-          </g>
-          <g transform={capa(0.75)}><Nube x={300 - f * 0.9} y={1700} s={1.6} o={0.85} /><Nube x={900 - f * 0.6} y={1820} s={1.2} o={0.75} /></g>
-          <g transform={capa(1)}>
-            <Pilar />
-            <Escalador x={905} y={378} quien="simon" pose="senalando" mira={-1} s={0.95} cara={emp > 0.3 ? "miedo" : "alivio"} aspecto={MARTA} />
-            <Escalera v={v} />
-            <g transform={`rotate(${v} ${B[0]} ${B[1]})`}>
-              <Elastico a={bolsa} b={[m1[0], m1[1] + 104]} w={12} tension={resb} />
-              <Elastico a={bolsa} b={[m2[0], m2[1] + 104]} w={12} tension={resb} />
-              <Mosqueton x={m1[0]} y={m1[1]} s={0.85} ang={8} /><Mosqueton x={m2[0]} y={m2[1]} s={0.85} ang={8} />
-              <Escalador x={hx} y={hy} quien="joe" mochila s={1.25} cara="miedo" aspecto={DANI} angulos={{ torso: giro, cabeza: 40 - resb * 20, brazoA: [140, 150], brazoB: [120, 140], piernaA: [80, -30], piernaB: [-10 - resb * 60, -20 - resb * 40] }} />
-              <rect x={bolsa[0] - 14} y={bolsa[1] - 6} width={28} height={40} rx={9} fill={FE.funda} stroke={emp > 0 ? "#FFE7A8" : FE.fundaS} strokeWidth={2 + emp * 3} />
-            </g>
-          </g>
+        <g transform={cam(zB)}><Fondo h={h} /></g>
+        <g transform={cam(zF)}>
+          <Roca id="agujaD" h={h} pm={PM} d="M930 628 L948 602 L985 590 L1020 598 L1046 584 L1080 600 L1110 640 L1150 900 L1190 1500 L1260 4200 L860 4200 L880 3000 L850 2200 L905 1500 L880 1050 Z" />
+          <Roca id="agujaI" h={h} pm={PM} d="M-500 1330 L-200 1290 L-60 1270 L20 1296 L80 1316 L130 1420 L100 1760 L180 2400 L160 4200 L-500 4200 Z" />
+          <Escalera z={zF} />
+          {[[A[0], A[1] - PASA], [B[0] + 6, B[1] - PASA], A, B].map(([x, y], i) => <rect key={i} x={x - 3} y={y - 3} width={6} height={6} rx={1.5} fill="#4E5864" />)}
+          <Escalador x={final ? 1012 : 1010} y={566} quien="simon" pose={final ? "celebrando" : "senalando"} mira={-1} s={SP} cara={emp > 0.3 ? "miedo" : "alivio"} aspecto={MARTA} />
+          {!final && <g>
+            <BrazoE a={[ring[0], ring[1] + 2]} b={pieMosq(c1[0], c1[1], PM)} pm={PM} tension={resb} />
+            <BrazoE a={[ring[0], ring[1] + 2]} b={pieMosq(c2[0], c2[1], PM)} pm={PM} tension={resb} />
+            <MosqE x={c1[0]} y={c1[1]} pm={PM} /><MosqE x={c2[0]} y={c2[1]} pm={PM} />
+          </g>}
+          <Escalador x={final ? 990 : hip[0]} y={final ? 566 : hip[1]} quien="joe" mochila s={SP} cara={final ? "alivio" : "miedo"} aspecto={DANI}
+            pose={final ? "celebrando" : undefined} mira={final ? 1 : 1}
+            angulos={final ? undefined : { torso: giro, cabeza: 34 - resb * 14, brazoA: [96, 104], brazoB: [84, 96], piernaA: [70, -24], piernaB: [-8 - resb * 70, -14 - resb * 40] }} />
+          {!final && <FundaE x={ring[0] - 1} y={ring[1]} pm={PM} />}
+          {!final && emp > 0 && <circle cx={ring[0] - 1} cy={ring[1] + M.fundaL * PM * 0.5} r={M.fundaL * PM * 0.9} fill="none" stroke="#FFE7A8" strokeWidth={0.35} opacity={emp} />}
         </g>
       </Svg>
-      <Etiqueta texto={f < fR ? "¿TE ATREVES?" : "¿Y SI RESBALAS?"} desde={f < fR ? 15 : fR} top={300} tam={104} />
+      {!final && <Etiqueta texto={f < fR ? "¿TE ATREVES?" : "¿Y SI RESBALAS?"} desde={f < fR ? 15 : fR} top={300} tam={104} />}
     </>
   );
 };

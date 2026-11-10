@@ -12,8 +12,28 @@
   },
   {
    "tipo": "texto",
+   "visual": "embalse",
+   "texto": "Son vías ferratas: caminos de hierro y cable por paredes con vistas así."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cresta",
+   "texto": "Y en España hay muchísimas. Vas con dos mosquetones al cable, siempre uno enganchado."
+  },
+  {
+   "tipo": "texto",
+   "visual": "caida",
+   "texto": "Si resbalas, caes por el cable hasta el anclaje de abajo. Y ahí…"
+  },
+  {
+   "tipo": "texto",
    "visual": "disipador",
-   "texto": "Esta cinta se descose costura a costura. Se alarga y alarga la frenada, para que el tirón sea mucho menor."
+   "texto": "esta cinta se descose costura a costura. Se alarga y alarga la frenada, para que el tirón sea mucho menor."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "final",
+   "texto": "¿A quién te llevarías?"
   }
  ]
 }

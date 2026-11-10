@@ -69,14 +69,14 @@ export const Mosqueton: React.FC<{ x: number; y: number; ang?: number; s?: numbe
 
 /** Muelle elástico naranja entre dos puntos (brazos del disipador): una onda con pliegues. */
 export const Elastico: React.FC<{ a: [number, number]; b: [number, number]; w?: number; tension?: number }> = ({ a, b, w = 22, tension = 0 }) => {
-  const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy), n = Math.max(6, Math.round(L / 16));
-  const nx = -dy / L, ny = dx / L, amp = 5 * (1 - tension);
+  const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy), n = Math.max(6, Math.round(L / (w * 0.7)));
+  const nx = -dy / L, ny = dx / L, amp = w * 0.28 * (1 - tension * 0.85);
   const pts = Array.from({ length: n + 1 }, (_, i) => { const t = i / n, o = (i % 2 ? 1 : -1) * amp; return `${a[0] + dx * t + nx * o} ${a[1] + dy * t + ny * o}`; });
   return (
     <g>
-      <path d={`M${pts.join(" L")}`} stroke="#B8460E" strokeWidth={w + 5} fill="none" strokeLinejoin="round" strokeLinecap="round" />
+      <path d={`M${pts.join(" L")}`} stroke="#B8460E" strokeWidth={w * 1.25} fill="none" strokeLinejoin="round" strokeLinecap="round" />
       <path d={`M${pts.join(" L")}`} stroke="#FF6A1F" strokeWidth={w} fill="none" strokeLinejoin="round" strokeLinecap="round" />
-      {Array.from({ length: n }).map((_, i) => { const t = (i + 0.5) / n; return <path key={i} d={`M${a[0] + dx * t - nx * w * 0.45} ${a[1] + dy * t - ny * w * 0.45} L${a[0] + dx * t + nx * w * 0.45} ${a[1] + dy * t + ny * w * 0.45}`} stroke="#C9500F" strokeWidth={2.5} opacity={0.8} />; })}
+      {Array.from({ length: n }).map((_, i) => { const t = (i + 0.5) / n; return <path key={i} d={`M${a[0] + dx * t - nx * w * 0.45} ${a[1] + dy * t - ny * w * 0.45} L${a[0] + dx * t + nx * w * 0.45} ${a[1] + dy * t + ny * w * 0.45}`} stroke="#C9500F" strokeWidth={w * 0.12} opacity={0.8} />; })}
     </g>
   );
 };
