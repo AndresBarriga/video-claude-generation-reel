@@ -8,13 +8,16 @@ import { Sonidos } from "../../Sonidos";
 import { type P } from "./comun";
 import { C } from "../Pegue/comun";
 import { Pared } from "./Pared";
+import { Resbala } from "./Resbala";
+import { CaidaG } from "./CaidaG";
 import { Mochila } from "./Mochila";
 import { Arriba } from "./Arriba";
 import { Franja } from "./Franja";
 import { Foto } from "./Foto";
 import { Repisa } from "./Repisa";
 const Cierre: React.FC<P> = (p) => <Pared {...p} cierre />;
-const ESCENAS: Record<string, React.FC<P>> = { pared: Pared, mochila: Mochila, arriba: Arriba, franja: Franja, foto: Foto, repisa: Repisa, cierre: Cierre };
+const LupaE: React.FC<P> = (p) => <Resbala {...p} lupa />;
+const ESCENAS: Record<string, React.FC<P>> = { resbala: Resbala, lupa: LupaE, caida: CaidaG, fotos: Foto, pared: Pared, mochila: Mochila, arriba: Arriba, franja: Franja, foto: Foto, repisa: Repisa, cierre: Cierre };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const FreeBase: React.FC<{ datos: Datos }> = ({ datos }) => {

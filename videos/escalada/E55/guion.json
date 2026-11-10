@@ -14,39 +14,39 @@
  "escenas": [
   {
    "tipo": "gancho",
-   "visual": "pared",
-   "texto": "Sin cuerda y con unos seiscientos metros de vacío debajo. Y ese vacío es lo único que le puede salvar."
+   "visual": "resbala",
+   "texto": "Se le escapa la mano. Sin cuerda. Y seiscientos metros de vacío debajo."
   },
   {
    "tipo": "texto",
-   "visual": "mochila",
-   "texto": "Se llama free BASE: escalar solo, sin cuerda, con un paracaídas de salto a la espalda. Si se cae, lo abre."
+   "visual": "lupa",
+   "texto": "Lo único que lleva es esto: un paracaídas. Se llama free BASE."
   },
   {
    "tipo": "texto",
-   "visual": "arriba",
-   "texto": "Pero necesita unos segundos de caída, lejos de la pared. Y si todo sale bien, vuela."
+   "visual": "caida",
+   "texto": "Para abrirlo necesita unos segundos de caída, lejos de la pared… y si los tiene, vuela."
   },
   {
    "tipo": "texto",
    "visual": "franja",
-   "texto": "Por eso hay una franja en la pared: demasiado alta para sobrevivir a la caída… y demasiado baja para abrir el paracaídas.",
+   "texto": "Pero hay una franja: demasiado alta para sobrevivir… y demasiado baja para abrir el paracaídas.",
    "pausa": 0.3
   },
   {
    "tipo": "texto",
-   "visual": "foto",
-   "texto": "Y esto existe. En dos mil ocho, Dean Potter, escalador y saltador BASE, el que inventó el free BASE, lo hizo en la cara norte del Eiger."
+   "visual": "fotos",
+   "texto": "Y esto existe. Dean Potter, escalador, saltador BASE y el que inventó el free BASE, lo hizo en dos mil ocho en la cara norte del Eiger."
   },
   {
    "tipo": "texto",
    "visual": "repisa",
-   "texto": "Y no empezó desde abajo: entró por una repisa a mitad de pared, por encima de esa franja, con seiscientos metros de vacío debajo."
+   "texto": "Y no empezó desde abajo: entró por una repisa, por encima de esa franja."
   },
   {
    "tipo": "cierre",
    "visual": "cierre",
-   "texto": "Y no se cayó. Pero, por si acaso, eligió desde dónde podía caerse. ¿Tú te atreverías?"
+   "texto": "No se cayó. Pero eligió desde dónde podía caerse. ¿Tú te atreverías?"
   }
  ]
 }

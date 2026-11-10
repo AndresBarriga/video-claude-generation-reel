@@ -1,25 +1,35 @@
-// «Y esto existe.» Corte a la foto real del Eiger 2008 (la aporta Andrés), a pantalla completa con zoom lento.
-// En «saltador», destello rápido (0,6 s) de la foto con traje de alas, sin rótulo de lugar. Rótulos: nombre y «EIGER · 2008».
+// «Y esto existe.» Montaje de 4 fotos reales de Dean Potter (las aporta Andrés), cada una en su palabra:
+// arranque → techo en B/N · «escalador» → escalando en granito · «saltador» → traje de alas · «inventó» → Eiger en vertical · «Eiger» → fotograma del Eiger.
+// Corte con destello blanco y zoom lento en cada una. Rótulos: «DEAN POTTER» y, al final, «EIGER · 2008».
 import React from "react";
-import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Etiqueta, clamp, type P } from "./comun";
+
+const FOTOS = [
+  { src: "fotos/E55/techo-bn.png", pos: "75% 40%" },
+  { src: "fotos/E55/granito-1.png", pos: "56% 40%" },
+  { src: "fotos/E55/wingsuit-raetikon.webp", pos: "55% 30%" },
+  { src: "fotos/E55/eiger-vertical.webp", pos: "62% 35%" },
+  { src: "fotos/E55/eiger-video.webp", pos: "60% 40%" },
+];
 
 export const Foto: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fS = pal("saltador") ?? Math.round(d * 0.35), fE = pal("eiger") ?? Math.round(d * 0.8), fN = pal("potter") ?? Math.round(d * 0.25);
-  const ala = f >= fS && f < fS + 18;
-  const kb = interpolate(f, [0, d], [1.08, 1.22], clamp);
-  const flash = Math.max(interpolate(f, [0, 3], [1, 0], clamp), interpolate(f, [fS - 1, fS + 2, fS + 5], [0, 0.9, 0], clamp), interpolate(f, [fS + 17, fS + 19, fS + 22], [0, 0.9, 0], clamp));
-  const entra = interpolate(f, [0, 8], [1.12, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const cortes = [0, pal("escalador") ?? Math.round(d * 0.2), pal("saltador") ?? Math.round(d * 0.35), pal("invento") ?? Math.round(d * 0.5), pal("eiger") ?? Math.round(d * 0.82)];
+  let k = 0; cortes.forEach((c, i) => { if (f >= c) k = i; });
+  const ini = cortes[k], fin = cortes[k + 1] ?? d, t = interpolate(f, [ini, fin], [0, 1], clamp);
+  const flash = interpolate(f - ini, [0, 4], [k === 0 ? 1 : 0.85, 0], clamp);
+  const zoom = 1.06 + t * 0.12 + interpolate(f - ini, [0, 6], [0.06, 0], clamp);
+  const nombre = pal("dean") ?? Math.round(d * 0.12);
   return (
     <AbsoluteFill style={{ background: "#000" }}>
-      <AbsoluteFill style={{ transform: `scale(${kb * entra})`, transformOrigin: "62% 40%" }}>
-        <Img src={staticFile(ala ? "fotos/E55/wingsuit-raetikon.webp" : "fotos/E55/eiger-vertical.webp")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: ala ? "55% 30%" : "62% 45%" }} />
+      <AbsoluteFill style={{ transform: `scale(${zoom}) translateX(${(k % 2 ? -1 : 1) * t * 12}px)`, transformOrigin: FOTOS[k].pos }}>
+        <Img src={staticFile(FOTOS[k].src)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: FOTOS[k].pos }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 55% 45%, transparent 55%, rgba(0,0,0,0.55) 100%)" }} />
       <AbsoluteFill style={{ background: "#fff", opacity: flash }} />
-      {f >= fN && f < fE && !ala && <Etiqueta texto="DEAN POTTER" desde={fN} top={300} tam={100} />}
-      {f >= fE && <Etiqueta texto="EIGER · 2008" desde={fE} top={300} tam={110} />}
+      {f >= nombre && k < 4 && <Etiqueta texto="DEAN POTTER" desde={nombre} top={300} tam={104} />}
+      {k === 4 && <Etiqueta texto="EIGER · 2008" desde={cortes[4]} top={300} tam={110} />}
     </AbsoluteFill>
   );
 };

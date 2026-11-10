@@ -113,3 +113,6 @@ Pendiente: crítico sobre v3; 2–3 bocetos fijos (gancho, caída con despliegue
 **Cierre cambiado (Andrés, 10-nov 13:57):** «Él eligió dónde caerse» sonaba a que se tiró (no se cayó ni saltó en esa ascensión). Nuevo: «Y no se cayó. Pero, por si acaso, eligió desde dónde podía caerse. ¿Tú te atreverías?»
 
 **Andrés (13:58):** sonaba a que es el único. Fuentes: él lo inventó y lo bautizó; BMC dice que «prácticamente era el único que lo practicaba»; Reel Rock llama a su Rostrum (Yosemite, 2008) «uno de los primeros freeBASE». No hay fuente clara de quién más lo ha hecho → la voz dice «el que inventó el free BASE, lo hizo en la cara norte del Eiger» (ni «único» ni «primero de la historia»). Escena 3 pasa a ser una ilustración genérica: el escalador se separa de la pared de un salto y abre el paracaídas (no es Potter ni esa ascensión).
+
+## v5 (10-nov 14:08, aprobada por Andrés) — la caída como columna
+Gancho = se le escapa la mano en el s1 + congelado con cronómetro «¿LE DA TIEMPO?»; la lupa explica la mochila sobre el congelado; la caída a toda velocidad y en grande (cronómetro, latido, la vela llena la pantalla y vuela); franja; montaje de 4 fotos (Andrés confirma que es él en todas: techo en B/N, traje de alas, Eiger vertical, fotograma del Eiger); repisa; cierre en las manos. Guion en `guion.json`.
