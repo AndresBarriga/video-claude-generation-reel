@@ -63,3 +63,47 @@ Críticas aceptadas: gancho adivinable y bucle cerrado en s3 (la respuesta «no�
 | 5 | Arriba; salto; vuelo [VERIFICAR que saltó desde lo alto] | «Y arriba, la escalada no terminó: saltó y bajó volando.» |
 | 6 | Cara en primer plano. «¿SEGURIDAD?» | «¿Eso es seguridad… o una segunda oportunidad que no existe?» |
 Pendiente: crítico sobre v3; 2–3 bocetos fijos (gancho, caída con despliegue, franja roja) antes de producir.
+
+---
+## v4 (10-nov, vigente) — con nombre en el rehook y fotos reales del Eiger (Andrés)
+**Decisiones:** disciplina protagonista; el nombre entra a mitad como prueba de que es real; fotos reales del Eiger 2008 (las aporta Andrés: `fotos/eiger-vertical.webp`, `fotos/eiger-video.webp`; derechos: decisión suya). La foto de wingsuit (`wingsuit-raetikon.webp`) **no se usa**: no es free BASE y empuja a leer su muerte en el vídeo. Muerte solo en el comentario fijado. Nivel visual de E56 (escala real, luz, paralaje).
+**Hechos verificados:** primer FreeBASE de la historia, 6-ago-2008, Deep Blue Sea (7b+/5.12+, 300 m) en la cara norte del Eiger (Wikipedia, Climbing, Planet Mountain, UKC, Outside: «the first FreeBASE ever»). Desde la arista noroeste cruzó una repisa hasta la base del muro final de ~600 pies (~180 m) (Alpinist). Bajo la repisa la pared cae ~2.000 pies más (~600 m) (UKC). Murió el 16-may-2015 en un vuelo de proximidad con traje de alas desde Taft Point, Yosemite (Wikipedia). Descartado: «saltó desde arriba al terminar» (sin fuente).
+
+**Mensaje (5 líneas)**
+1. **Mensaje:** en free BASE el paracaídas solo te salva si te caes con altura debajo; por eso el primero que lo hizo no empezó desde abajo.
+2. **Problema/curiosidad:** «¿cómo que escalar con paracaídas?»: parece un truco que lo hace seguro.
+3. **Valor:** entiendes la lógica al revés de este deporte (arriba es mejor que abajo) y una historia real poco conocida.
+4. **Cómo ayuda:** te llevas un dato que sorprende y que puedes contar.
+5. **Se identifica:** quien ha mirado hacia abajo en una vía y ha pensado «si me caigo aquí…».
+
+**5 aperturas (elijo la 1; A/B con la 2)**
+1. «Este escalador prefiere caerse arriba que abajo.» · «SIN CUERDA»
+2. «Sube sin cuerda. Pero lleva un paracaídas a la espalda. ¿Para qué?» (v3)
+3. «Escala sin cuerda. Si se cae, su única opción es abrir un paracaídas.» (reseña externa)
+4. «¿Y si en vez de cuerda llevaras un paracaídas?»
+5. «Seiscientos metros de vacío debajo. Y eso es lo que le hace ir tranquilo.»
+
+**Guion (~43 s)**
+| # | s | Se ve | Voz |
+|---|---|---|---|
+| 1 | 0–4 | f0: manos con magnesio en la caliza gris, sin cuerda; la cámara se abre: mochila azul a la espalda y el valle de Grindelwald 2 km abajo. «SIN CUERDA» | «Este escalador prefiere caerse arriba que abajo. No lleva cuerda: lleva un paracaídas.» |
+| 2 | 4–9 | Corte de la mochila: contenedor → extractor → vela plegada. «FREE BASE» | «Se llama free BASE: escalar solo, sin cuerda, con un paracaídas de salto a la espalda. Si se cae, lo abre.» |
+| 3 | 9–16 | Simulación arriba: se suelta, se separa de la pared, lanza el extractor, se abre la vela con espacio y vuela | «Pero para abrirlo necesita unos segundos de caída, lejos de la pared.» |
+| 4 | 16–21 | **Rehook.** Misma caída desde abajo: franja roja «SIN TIEMPO»; corte a negro antes del suelo | «Cerca del suelo no da tiempo. Ahí el paracaídas no sirve de nada.» |
+| 5 | 21–27 | **Foto real** (eiger-vertical, zoom lento) + rótulo «EIGER · 2008» | «Y esto existe. En dos mil ocho, Dean Potter hizo el primer free BASE de la historia, en la cara norte del Eiger.» |
+| 6 | 27–37 | Pared de perfil: vía de 300 m, tramo bajo en rojo; él entra andando por la repisa desde la arista y empieza en el muro final; debajo, 600 m de vacío marcados | «Y no empezó desde abajo. Llegó por una repisa a mitad de pared, con seiscientos metros de vacío debajo: justo lo que necesitaba el paracaídas.» |
+| 7 | 37–43 | Escala el muro final; primer plano de la cara; vuelta al plano 1 | «¿Tú a eso lo llamarías seguridad… o solo otra forma de jugártela?» |
+
+**Reparto e idea visual:** un escalador (sin casco, pelo corto oscuro, pantalón corto, mochila-contenedor azul, como en las fotos; caricatura del estilo de la cuenta, no retrato). Hilo visual: la **franja de altura** (verde arriba = da tiempo, roja abajo = no da) que aparece en 3–4 y vuelve en 6 sobre la pared real. Escenario: cara norte del Eiger (caliza gris), valle verde de Grindelwald, Wetterhorn al fondo, verano por la tarde. Foto real en el 5 (2 s, sin texto encima salvo el rótulo).
+
+**Las 4 preguntas**
+1. **Gancho:** frase al revés («prefiere caerse arriba») + persona sin cuerda sobre 2 km de vacío; la mochila es la pista.
+2. **Rehook:** s16 («cerca del suelo no da tiempo») y s21 (es real, foto).
+3. **Hasta el final:** ¿por qué empezó a mitad? Se cierra en 6.
+4. **Qué sabe ya la gente:** «Dean Potter», «Eiger», «free solo» (Honnold); lo aprovechamos con el nombre en el 5 y en la descripción.
+
+**Viralidad (mía): 12/14.** Falta: «dentro» (3.ª persona; el cierre vuelve a ti).
+**Comentario fijado:** «Dean Potter murió en 2015 volando con traje de alas en Yosemite (no fue un free BASE). ¿Dónde pondrías tú el límite?»
+
+**Crítico (10-nov): 6/10 → aplicado.** Gancho nuevo (el anterior sonaba a «quiere caerse» y vendía que con altura te salvas): **«Sin cuerda y con unos seiscientos metros de vacío debajo. Y ese vacío es lo único que le puede salvar.»** (la 1 anterior pasa a A/B). Escena 1 sin «2 km». Escena 3: «si todo sale bien» + 1 s de la vela abriéndose torcida hacia la pared. Escena 4 recortada a ~3 s. Cierre: **«Y no se cayó. Él eligió dónde caerse. ¿Tú dónde lo habrías elegido?»** → corte al plano 1. «Primer free BASE de la historia» se mantiene (Outside lo cita en sus palabras: «the first FreeBASE ever»). Salto desde la cumbre en 2008: **no se usa** (solo un rumor de blog y Vice mezclándolo con el récord de wingsuit de 2009; Alpinist no lo menciona). «No se cayó»: confirmado (Alpinist: completó la vía).
+**Envío:** «Escalan sin cuerda con paracaídas, y abajo no les sirve de nada. Mira por dónde empezó.»

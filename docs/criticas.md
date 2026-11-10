@@ -99,3 +99,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-09 | E53 Hall/Sharp | vídeo terminado | 7 | El espejo no se veía (Sharp oscuro en «El otro no»); f0 sin la cara de Hall; «decenas» sin frontales; rótulos repetidos. Aplicado (sin pantalla partida) |
 | 2026-11-10 | E56 v3 (vía ferrata) | propuesta | 6,5 | Seguridad solo en rótulo y «frenando suave» sobrepromete; «siguiente anclaje» → «anclaje de abajo»; «se descose» solo para cinta cosida. Aplicado |
 | 2026-11-10 | E56 v4 vía ferrata (vistas+amigos, disipador estrella) | propuesta+bocetos | 6,5 | guion.json sin «se cambia» ni «con alguien que sepa» (escenas aún sin hacer); caída poco visible; «cientos de metros» → «sobre el vacío»; «alarga la frenada» repetido |
+| 2026-11-10 | E55 v4 Free BASE | propuesta | 6 | Gancho insinuaba que el paracaídas salva; sin desenlace («no se cayó»); 2 km vs 600 m; salto desde la cumbre sin fuente (descartado). Aplicado |
