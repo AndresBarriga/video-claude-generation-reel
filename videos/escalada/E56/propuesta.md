@@ -97,3 +97,20 @@ Decidido con Andrés: **una sola promesa**; amigos que no escalan; **caída ante
 
 **Crítico (10-nov): 6,5/10.** Aplicado: «anclaje de abajo»; «baja frenando» con gesto de dolor (no «suave»); «este disipador» (cinta cosida; los de fricción funcionan distinto); la seguridad pasa de rótulo a voz («primera vez: con alguien que sepa») y al cierre; Marta ajusta el casco a Dani. No aplicado: acortar s3 a 2 s (lo hará el montaje) y «la mitad de fuerza» (sin dato verificado). «Acceso libre» queda como «la mayoría» de Andrés con [VERIFICAR]. Gancho: se mantiene la apertura 1; la 2 solo en reel de prueba A/B.
 **Nota de envío:** «Mira lo que te frena si resbalas en una ferrata. Se lo mando al que dice que no escala.»
+
+---
+## v4 (10-nov, en marcha) — Andrés: vistas y amigos; disipador que se alarga
+Cambios de Andrés: no abrir con la caída (vende miedo, no ganas de probarlo); **escenarios bonitos con amigos en planos distintos**; el disipador se ve **alargarse mucho más que su tamaño original**; caída como escena estrella con congelado; calidad de animación sin recortes. Gancho de Andrés (aceptado): pregunta + visual de vértigo; «romperse» → **«rasgarse»** (la cinta se descose, no se rompe; ya lo marcó el crítico).
+
+| # | s | Escenario / se ve | Voz |
+|---|---|---|---|
+| 1 | 0–5 | **Escalera colgada en el cielo** entre dos pilares; Dani a mitad, Marta al final; cámara baja y enseña el vacío. «¿TE ATREVES?» | «¿Te atreverías a cruzar una escalera colgada a cientos de metros del suelo? Y si resbalas, hay algo en tu equipo hecho para rasgarse.» |
+| 2 | 5–11 | Tres planos de 2 s: pared desplomada sobre el valle; cresta en grupo; embalse turquesa | «Son vías ferratas: caminos de hierro y cable por paredes con vistas así. Y en España hay muchísimas.» |
+| 3 | 11–14 | Primer plano: dos mosquetones al cable, uno siempre enganchado al pasar el anclaje | «Vas con dos mosquetones al cable, y siempre uno enganchado.» |
+| 4 | 14–18 | Dani pierde un pie; los mosquetones deslizan por el cable hasta el anclaje de abajo; **congelado** justo antes del tirón | «Si resbalas, caes por el cable hasta el anclaje de abajo. Y ahí…» |
+| 5 | 18–26 | **Escena estrella:** zoom a la bolsa; la funda se abre, las costuras saltan una a una y la cinta blanca sale hasta ser mucho más larga que la bolsa | «…esta cinta se descose costura a costura. Se alarga y alarga la frenada, para que el tirón sea mucho menor.» |
+| 6 | 26–29 | La cinta abierta en la mano. «SE CAMBIA» | «Cuando se ha abierto, ya hizo su trabajo: se cambia.» |
+| 7 | 29–36 | Bosque de otoño / cumbre con el grupo; kit en un mostrador | «La mayoría son de acceso libre y cerca suelen alquilarte el material. La primera vez, con alguien que sepa.» |
+| 8 | 36–39 | Vuelta a la escalera: Dani ya al final, sonríe | «¿A quién te llevarías?» |
+
+**Paleta:** excepción a la guía visual solo para este vídeo (cielo azul, verdes, turquesa, otoño); el naranja sigue siendo el hilo (los brazos elásticos del disipador). **Referencias de Andrés (10-nov):** esquema Edelrid (bolsa + 2 brazos elásticos), secuencia de apertura de 4 fases (imagen probablemente generada: no se usa el «+30 cm»), anclajes que frenan el mosquetón, Petzl (forma correcta de engancharse), escalera en el cielo, desplome, cresta, embalse, puente sobre pueblo, otoño. Primero 2 bocetos (escalera y disipador) para validar el nivel.

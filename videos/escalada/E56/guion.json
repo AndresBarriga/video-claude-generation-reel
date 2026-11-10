@@ -1,0 +1,19 @@
+{
+ "id": "E56",
+ "titulo": "Vía ferrata: lo que te frena",
+ "nicho": "escalada",
+ "plantilla": "Ferrata",
+ "verificado": false,
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "escalera",
+   "texto": "¿Te atreverías a cruzar una escalera colgada a cientos de metros del suelo? Y si resbalas, hay algo en tu equipo hecho para rasgarse."
+  },
+  {
+   "tipo": "texto",
+   "visual": "disipador",
+   "texto": "Esta cinta se descose costura a costura. Se alarga y alarga la frenada, para que el tirón sea mucho menor."
+  }
+ ]
+}
