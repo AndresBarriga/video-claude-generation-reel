@@ -9,7 +9,8 @@
   "UKC 2008: bajo la repisa la pared cae ~2.000 pies más",
   "Outside: «the first FreeBASE ever»",
   "Planet Mountain: Deep Blue Sea 300 m, 7b+/5.12+",
-  "Wikipedia/Outside: murió el 16-may-2015 en vuelo de proximidad con traje de alas desde Taft Point (Yosemite)"
+  "Wikipedia/Outside: murió el 16-may-2015 en vuelo de proximidad con traje de alas desde Taft Point (Yosemite)",
+  "UKC 2008: evitó los largos inferiores porque no habría tiempo de abrir antes de chocar con una repisa de ~50 pies que sobresale al pie de la vía"
  ],
  "escenas": [
   {
@@ -30,7 +31,7 @@
   {
    "tipo": "texto",
    "visual": "franja",
-   "texto": "Pero hay una franja: demasiado alta para sobrevivir… y demasiado baja para abrir el paracaídas.",
+   "texto": "Pero hay una franja donde la caída ya mata… y todavía no da tiempo a abrirlo.",
    "pausa": 0.3
   },
   {
@@ -41,7 +42,7 @@
   {
    "tipo": "texto",
    "visual": "repisa",
-   "texto": "Y no empezó desde abajo: entró por una repisa, por encima de esa franja."
+   "texto": "Y no empezó desde abajo: entró por una repisa y evitó la parte baja. Si caía allí, chocaría contra otra repisa antes de abrir el paracaídas."
   },
   {
    "tipo": "cierre",
