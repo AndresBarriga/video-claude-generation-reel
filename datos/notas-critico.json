@@ -137,5 +137,11 @@
     "nota": 6.5,
     "fase": "vídeo terminado (aplicado)",
     "hist": "9-nov 6,5 → 7,5 con cambios"
+  },
+  "E56": {
+    "nota": 6.5,
+    "orig": 4.5,
+    "fase": "propuesta v3 (v1 4,5)",
+    "hist": "9-nov v1 4,5 · 10-nov v3 6,5"
   }
 }
