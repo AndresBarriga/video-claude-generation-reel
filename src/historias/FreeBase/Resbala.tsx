@@ -14,12 +14,12 @@ const SUELTA = { torso: -26, cabeza: 26, brazoA: [118, 150] as [number, number],
 const mezcla = (t: number) => Object.fromEntries(Object.entries(AGARRE).map(([k, v]) => [k, Array.isArray(v) ? (v as number[]).map((x, i) => x + ((SUELTA as any)[k][i] - x) * t) : (v as number) + ((SUELTA as any)[k] - v) * t])) as typeof AGARRE;
 
 const Lupa: React.FC<{ x: number; y: number; o: number; f: number }> = ({ x, y, o, f }) => {
-  const R = 230, W = 150, Hh = 190, t = (s: string, yy: number) => <text x={x} y={yy} textAnchor="middle" fontFamily={fuenteTitulo} fontWeight={800} fontSize={50} fill="#fff" stroke="#0B1624" strokeWidth={10} paintOrder="stroke">{s}</text>;
+  const R = 175, W = 116, Hh = 148, t = (s: string, yy: number) => <text x={x} y={yy} textAnchor="middle" fontFamily={fuenteTitulo} fontWeight={800} fontSize={50} fill="#fff" stroke="#0B1624" strokeWidth={10} paintOrder="stroke">{s}</text>;
   return (
     <g opacity={o} transform={`translate(${x} ${y}) scale(${0.6 + 0.4 * o}) translate(${-x} ${-y})`}>
       <circle cx={x} cy={y} r={R} fill="#16263C" stroke="#fff" strokeWidth={10} />
       <rect x={x - W / 2} y={y - Hh / 2} width={W} height={Hh} rx={28} fill={AZUL} opacity={0.35} stroke="#9CC0FF" strokeWidth={5} />
-      {Array.from({ length: 7 }).map((_, i) => <rect key={i} x={x - W / 2 + 16} y={y - Hh / 2 + 16 + i * 20} width={W - 32} height={15} rx={5} fill={i % 2 ? "#C93E22" : "#E04A2A"} />)}
+      {Array.from({ length: 6 }).map((_, i) => <rect key={i} x={x - W / 2 + 14} y={y - Hh / 2 + 14 + i * 17} width={W - 28} height={12} rx={5} fill={i % 2 ? "#C93E22" : "#E04A2A"} />)}
       <rect x={x - 38} y={y + Hh / 2 - 34} width={76} height={34} rx={12} fill="#163A78" /><circle cx={x} cy={y + Hh / 2 - 17} r={20} fill="#F2C230" />
       {t("VELA PLEGADA", y - R - 26)}{t("EXTRACTOR", y + R + 62)}
       <path d={`M${x + 60} ${y + Hh / 2 - 17} l70 0`} stroke="#fff" strokeWidth={4} opacity={0.6 + 0.4 * Math.sin(f / 5)} />
