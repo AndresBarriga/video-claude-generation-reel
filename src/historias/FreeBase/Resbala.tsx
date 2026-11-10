@@ -29,7 +29,7 @@ const Lupa: React.FC<{ x: number; y: number; o: number; f: number }> = ({ x, y, 
 
 export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
   const f = useCurrentFrame();
-  const fS = lupa ? -99 : 8, fC = lupa ? -99 : 20; // se le escapa la mano · congelado
+  const fS = lupa ? -99 : Math.max(4, (pal("escapa") ?? 8) - 2), fC = lupa ? -99 : fS + 12; // se le escapa la mano · congelado
   const s = lupa ? 1 : interpolate(f, [fS, fC], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
   const ang = mezcla(s), hip: [number, number] = [BORDE + 70 - s * 0.35 * PM, 1130 + s * 0.15 * PM], rot = -s * 16;
   const mano = manoA(BORDE + 70, 1130, SP, AGARRE.torso, AGARRE.brazoA), espalda = ((): [number, number] => { const a = ((ang.torso + rot) * Math.PI) / 180, vx = -34 * SP, vy = -66 * SP; return [hip[0] + vx * Math.cos(a) - vy * Math.sin(a), hip[1] + vx * Math.sin(a) + vy * Math.cos(a)]; })();
