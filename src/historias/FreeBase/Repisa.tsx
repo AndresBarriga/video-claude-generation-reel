@@ -35,6 +35,10 @@ export const Repisa: React.FC<P> = ({ d, pal }) => {
       <g transform={`translate(540 960) scale(${z}) translate(-540 -960)`}>
         {/* macizo: arista NO bajando a la izquierda, repisa, muro final desplomado, pilar que cae ~600 m */}
         <Roca id="reM" h="tarde" pm={14} tono={CALIZA} d={`M-300 ${REP + 280} L0 ${REP + 120} L130 ${REP + 6} L${XM} ${REP + 6} L${XM - 20} ${MURO + 20} L${XM - 4} ${MURO} L${XM + 60} ${MURO - 160} L${XM + 200} ${MURO - 420} L1400 ${MURO - 600} L1400 2400 L${XM + 120} 2400 L${XM + 60} ${PIE} L${XM + 30} ${REP + 300} L${XM + 10} ${REP + 30} L130 ${REP + 40} L0 ${REP + 160} L-300 ${REP + 330} Z`} />
+        {/* la arista es maciza hasta el suelo y abajo está el fondo del valle (sin huecos) */}
+        <Roca id="reA" h="tarde" pm={14} tono="#8E9497" d={`M-300 ${REP + 280} L0 ${REP + 120} L130 ${REP + 30} L230 ${REP + 260} L300 ${REP + 620} L360 ${PIE + 10} L-300 ${PIE + 10} Z`} />
+        <path d={`M-300 ${PIE} Q200 ${PIE - 30} ${XM + 60} ${PIE - 6} L1400 ${PIE} L1400 2600 L-300 2600 Z`} fill="#6E9A55" />
+        <path d={`M300 ${PIE + 4} L${XM + 60} ${PIE - 120} L${XM + 160} ${PIE + 4} Z`} fill="#A7A9A5" opacity={0.9} />
         <path d={`M-300 ${REP + 280} L0 ${REP + 120} L130 ${REP + 6} L${XM} ${REP + 6}`} stroke="#E3E6E8" strokeWidth={7} fill="none" />
         <T x={40} y={REP + 250} t="ARISTA" o={rojo} tam={44} ancla="start" />
         {/* tramo bajo de la vía, que no hizo */}
