@@ -6,16 +6,16 @@ import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "rem
 import { Etiqueta, clamp, type P } from "./comun";
 
 const FOTOS = [
-  { src: "fotos/E55/techo-bn.png", pos: "97% 40%" },
-  { src: "fotos/E55/granito-1.png", pos: "56% 40%" },
+  { src: "fotos/E55/eiger-vertical.webp", pos: "62% 45%" },
   { src: "fotos/E55/wingsuit-raetikon.webp", pos: "55% 30%" },
-  { src: "fotos/E55/eiger-vertical.webp", pos: "62% 35%" },
+  { src: "fotos/E55/techo-bn.png", pos: "97% 40%" },
+  { src: "fotos/E55/eiger-vertical.webp", pos: "66% 30%" },
   { src: "fotos/E55/eiger-video.webp", pos: "68% 40%" },
 ];
 
 export const Foto: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const cortes = [0, pal("escalador") ?? Math.round(d * 0.2), pal("saltador") ?? Math.round(d * 0.35), pal("invento") ?? Math.round(d * 0.5), pal("eiger") ?? Math.round(d * 0.82)];
+  const cortes = [0, pal("dean") ?? Math.round(d * 0.25), pal("invento") ?? Math.round(d * 0.4), pal("hizo") ?? Math.round(d * 0.6), pal("eiger") ?? Math.round(d * 0.85)];
   let k = 0; cortes.forEach((c, i) => { if (f >= c) k = i; });
   const ini = cortes[k], fin = cortes[k + 1] ?? d, t = interpolate(f, [ini, fin], [0, 1], clamp);
   const flash = interpolate(f - ini, [0, 4], [k === 0 ? 1 : 0.85, 0], clamp);

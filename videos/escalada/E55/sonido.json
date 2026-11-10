@@ -27,7 +27,7 @@
    "nombre": "latido",
    "inicio": {
     "escena": "resbala",
-    "palabra": "cuerda"
+    "palabra": "escapa"
    },
    "fin": {
     "escena": "caida",

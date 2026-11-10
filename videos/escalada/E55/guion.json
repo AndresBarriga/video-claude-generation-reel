@@ -15,18 +15,23 @@
  "escenas": [
   {
    "tipo": "gancho",
+   "visual": "real",
+   "texto": "Esto es real: sin cuerda… y con un paracaídas a la espalda."
+  },
+  {
+   "tipo": "texto",
    "visual": "resbala",
-   "texto": "Se le escapa la mano. Sin cuerda. Y seiscientos metros de vacío debajo."
+   "texto": "Ahora imagina que se te escapa la mano. ¿Te da tiempo a abrirlo?"
   },
   {
    "tipo": "texto",
    "visual": "lupa",
-   "texto": "Lo único que lleva es esto: un paracaídas. Se llama free BASE."
+   "texto": "Escalar así se llama free BASE."
   },
   {
    "tipo": "texto",
    "visual": "caida",
-   "texto": "Para abrirlo necesita unos segundos de caída, lejos de la pared… y si los tiene, vuela."
+   "texto": "Necesitas unos segundos de caída, lejos de la pared… y si los tienes, vuelas."
   },
   {
    "tipo": "texto",
@@ -36,7 +41,7 @@
   {
    "tipo": "texto",
    "visual": "fotos",
-   "texto": "Y esto existe. Dean Potter, escalador, saltador BASE y el que inventó el free BASE, lo hizo en dos mil ocho en la cara norte del Eiger."
+   "texto": "El de la foto es Dean Potter. Inventó el free BASE y lo hizo en dos mil ocho, en la cara norte del Eiger."
   },
   {
    "tipo": "texto",
@@ -46,29 +51,25 @@
   {
    "tipo": "cierre",
    "visual": "cierre",
-   "texto": "No se cayó. Pero eligió desde dónde podía caerse. ¿Tú te atreverías?"
+   "texto": "No se cayó. Pero eligió desde dónde podía caerse. ¿Y tú, desde qué metro empezarías?"
   }
  ],
  "frases": [
-  5,
-  2,
-  6,
-  4,
-  2,
-  2,
-  2,
+  3,
   2,
   7,
+  8,
+  5,
+  6,
+  1,
+  4,
   4,
   4,
   1,
   9,
   7,
-  3,
-  2,
-  1,
-  2,
-  13,
+  7,
+  11,
   6,
   5,
   9,
@@ -76,10 +77,7 @@
   9,
   3,
   6,
-  3
- ],
- "frasesManual": true,
- "cortes": [
-  17.86
+  2,
+  4
  ]
 }

@@ -31,7 +31,7 @@ export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
   const f = useCurrentFrame(), { fps } = useVideoConfig();
   // Tiempo bala: tras soltarse, la caída sigue a 1/10 de velocidad (sin congelar). tl = segundos reales de caída.
   const fS = lupa ? -99 : Math.max(4, (pal("escapa") ?? 8) - 2), fC = lupa ? -99 : fS + 12;
-  const LENTO = 0.1, T0 = lupa ? 0.45 : 0; // la escena de la lupa sigue donde acabó el gancho (~4,5 s × 0,1)
+  const LENTO = 0.1, T0 = lupa ? 0.2 : 0; // la escena de la lupa sigue donde acabó el gancho (~4,5 s × 0,1)
   const tl = T0 + Math.max(0, (f - (lupa ? 0 : fC)) / fps) * LENTO;
   const s = lupa ? 1 : interpolate(f, [fS, fC], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
   const ang = mezcla(s);
@@ -40,7 +40,7 @@ export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
   const mano = manoA(BORDE + 70, 1130, SP, AGARRE.torso, AGARRE.brazoA);
   const espalda = ((): [number, number] => { const a = ((ang.torso + rot) * Math.PI) / 180, vx = -34 * SP, vy = -66 * SP; return [hip[0] + vx * Math.cos(a) - vy * Math.sin(a), hip[1] + vx * Math.sin(a) + vy * Math.cos(a)]; })();
   const lenta = f >= fC || !!lupa;
-  const fL = pal("esto") ?? pal("paracaidas") ?? Math.round(d * 0.3), oL = lupa ? interpolate(f, [fL - 6, fL + 6], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.4)) }) : 0;
+  const fL = pal("escalar") ?? 4, oL = lupa ? interpolate(f, [fL - 6, fL + 6], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.4)) }) : 0;
   const fF = pal("free") ?? d - 30;
   const z = lupa ? 1.5 + f / d * 0.15 : interpolate(f, [0, fC, d], [1.9, 1.55, 1.75], clamp);
   const foco = lupa ? [espalda[0] - 160, espalda[1] - 40] : [interpolate(s, [0, 1], [mano[0] - 40, hip[0]]), interpolate(s, [0, 1], [mano[1] + 120, hip[1] - 160])];
@@ -59,7 +59,8 @@ export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
         </g>
         {lenta && <rect x={0} y={0} width={1080} height={1920} fill="#14233A" opacity={0.16} />}
       </Svg>
-      {lenta && <Etiqueta texto={lupa && f >= fF ? "FREE BASE" : "¿LE DA TIEMPO?"} desde={lupa ? (f >= fF ? fF : 0) : fC} top={300} tam={110} />}
+      {!lenta && !lupa && <Etiqueta texto="¿Y SI SE TE ESCAPA?" desde={0} top={300} tam={100} />}
+      {lenta && <Etiqueta texto={lupa && f >= fF ? "FREE BASE" : "¿TE DA TIEMPO?"} desde={lupa ? (f >= fF ? fF : 0) : fC} top={300} tam={110} />}
       {lenta && !(lupa && oL > 0.2) && <Etiqueta texto={`${tl.toFixed(1).replace(".", ",")} s`} desde={lupa ? 0 : fC + 4} top={440} tam={86} />}
     </>
   );

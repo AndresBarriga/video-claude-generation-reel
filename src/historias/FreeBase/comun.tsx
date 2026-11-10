@@ -8,8 +8,8 @@ export { Roca, sPersona } from "../Ferrata/roca";
 export { CIELO, mix };
 
 export const H: Hora = "tarde";
-/** El escalador: sin casco, pelo corto oscuro, sin camiseta, pantalón corto azul, pies de gato claros, contenedor azul. */
-export const ESC = { chaqueta: "#D9A37A", chaquetaSombra: "#B8845E", pantalon: "#5D7FA8", casco: null, peinado: "corto" as const, pelo: "#2A1E16", manos: "piel" as const, arnes: false };
+/** El escalador animado («tú», no es Potter): sin casco, camiseta mostaza, barba, contenedor azul. */
+export const ESC = { chaqueta: "#E0A526", chaquetaSombra: "#A97A16", pantalon: "#2E3A4E", casco: null, peinado: "corto" as const, pelo: "#5A3E2B", barba: "#5A3E2B", manos: "piel" as const, arnes: false }; // «tú»: camiseta mostaza y barba (no es Potter)
 export const AZUL = "#2F6FD0", PIES = "#E6DCC8", MAGNESIO = "#F4F6F8";
 export const CALIZA = "#9EA3A6";
 
