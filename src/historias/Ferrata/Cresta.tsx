@@ -4,7 +4,7 @@ import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
 import { DANI, MARTA, Svg, clamp, type P } from "./comun";
-import { Cielo, Cordillera, Bosque, Bruma, NubeE, CIELO } from "./paisaje";
+import { Cielo, Cordillera, Bosque, Bruma, NubeE, Aves, Rayos, CIELO } from "./paisaje";
 import { Roca, CableE, MosqE, BrazoE, FundaE, Anclaje, pieMosq, sPersona } from "./roca";
 
 const PM = 110, SP = sPersona(PM), h = "dia" as const;
@@ -36,6 +36,8 @@ export const Cresta: React.FC<P> = ({ d }) => {
     <Svg>
       <g transform={cam(0.15)}>
         <Cielo h={h} id="cre" sol={[160, 300]} r={46} />
+        <Rayos x={160} y={300} h={h} f={f} id="crr" o={0.16} />
+        <Aves f={f} x={500} y={620} seed="ca" n={5} s={1.1} v={-1.6} />
         <NubeE x={620} y={330} s={1.1} h={h} o={0.9} /><NubeE x={150} y={520} s={0.7} h={h} o={0.8} />
         <Cordillera id="crA" y={1180} amp={720} color="#6E7FAE" h={h} lejos={0.5} nieve={0.35} picos={3} x1={1900} />
       </g>

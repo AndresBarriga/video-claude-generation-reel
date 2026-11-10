@@ -48,7 +48,7 @@ export const Plan: React.FC<P> = ({ d, pal }) => {
         <Roca id="plC" h={h} pm={60} tono="#D6A777" d="M-200 1250 L120 1150 L380 1180 L560 1080 L820 1120 L1100 1060 L1400 1110 L1800 1080 L2000 1250 Z" />
         {Array.from({ length: 34 }).map((_, i) => <Arbol key={i} x={-200 + random(`fa${i}`) * 2200} y={1260 + random(`fb${i}`) * 60} t={90 + random(`fc${i}`) * 40} i={i} />)}
       </g>
-      <g transform={capa(1)}>
+      <g transform={`translate(540 1250) scale(${interpolate(f, [0, d], [1.45, 1.6], clamp)}) translate(${-(240 + pan * 1.75)} -1360)`}>
         <path d={`M-300 ${SUELO} Q500 ${SUELO - 20} 1000 ${SUELO + 6} T2000 ${SUELO} L2000 2400 L-300 2400 Z`} fill="#7A8A3A" />
         {Array.from({ length: 60 }).map((_, i) => <ellipse key={i} cx={-200 + random(`hx${i}`) * 2200} cy={SUELO + 30 + random(`hy${i}`) * 500} rx={8} ry={4} fill={OTONO[i % OTONO.length]} opacity={0.85} />)}
         <Roca id="plR" h={h} pm={PM} luzIzq tono="#D2B48C" d="M1240 -300 L1290 600 L1250 1100 L1300 1520 L2000 1520 L2000 -300 Z" />

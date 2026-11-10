@@ -212,6 +212,28 @@ const RECETAS = {
     }
     return nivelar(bucle(out, 0.6), 0.1, 0.7);
   },
+  /** Desgarro de costuras: ráfagas cortas de tela que se rasga, cada vez más espaciadas (el disipador frenando). */
+  desgarro() {
+    const seg = 2.8, out = buf(seg), r = prng(161);
+    let t = 0.01, k = 0;
+    while (t < seg - 0.12) {
+      const d = 0.03 + Math.abs(r()) * 0.035, f = 1500 + Math.abs(r()) * 2600;
+      mezclar(out, env(biquad(ruido(Math.round(d * SR), 162 + k), "bp", f, 1.3), (s) => Math.sin(Math.PI * Math.min(1, s / d)) ** 0.7), t, 0.55 + Math.abs(r()) * 0.45);
+      mezclar(out, env(biquad(ruido(Math.round(0.012 * SR), 400 + k), "hp", 5000), (s) => Math.exp(-s * 300)), t + d * 0.6, 0.35);
+      t += 0.04 + (t / seg) ** 1.6 * 0.16 + Math.abs(r()) * 0.025; k++;
+    }
+    return normalizar(out, 0.85);
+  },
+  /** Mosquetones deslizando por el cable de acero (chirrido metálico que sube) y golpe seco contra el anclaje. */
+  cable() {
+    const out = buf(1.2), d = 0.55;
+    const b = biquad(ruido(Math.round(d * SR), 171), "bp", (t) => 2200 + 2600 * (t / d), 6);
+    env(b, (s) => Math.min(1, s / 0.05) * (0.6 + 0.4 * s / d));
+    mezclar(out, b, 0, 0.8);
+    for (const [f, g] of [[2400, 0.5], [3650, 0.35], [5200, 0.2]]) mezclar(out, env(seno(0.5, f), (s) => Math.exp(-s * 14)), d, g);
+    mezclar(out, env(biquad(ruido(Math.round(0.04 * SR), 172), "lp", 600), (s) => Math.exp(-s * 60)), d, 1);
+    return normalizar(out, 0.9);
+  },
   /** Rotor de helicóptero: golpes graves de aire ~9 por segundo (bucle 2 s). */
   rotor() {
     const seg = 2, out = buf(seg);

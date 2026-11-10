@@ -1,0 +1,157 @@
+{
+ "bajoVoz": 0.45,
+ "efectos": [
+  {
+   "nombre": "viento",
+   "inicio": {
+    "escena": 0
+   },
+   "volumen": 0.3,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "escalera",
+    "palabra": "resbalas",
+    "mas": -0.05
+   },
+   "duracion": 0.7,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "escalera",
+    "palabra": "rasgarse",
+    "mas": -0.1
+   },
+   "duracion": 0.6,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "pajaros",
+   "inicio": {
+    "escena": "embalse"
+   },
+   "fin": {
+    "escena": "caida"
+   },
+   "volumen": 0.35,
+   "bucle": true,
+   "fundido": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cresta",
+    "palabra": "mosquetones"
+   },
+   "duracion": 0.6,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cresta",
+    "palabra": "enganchado"
+   },
+   "duracion": 0.6,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "caida",
+   "inicio": {
+    "escena": "caida",
+    "palabra": "ahí",
+    "mas": -0.6
+   },
+   "duracion": 1.2,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "cable",
+   "inicio": {
+    "escena": "caida",
+    "palabra": "ahí",
+    "mas": -0.55
+   },
+   "duracion": 1.2,
+   "volumen": 0.9,
+   "ignoraSilencio": true
+  },
+  {
+   "silencio": true,
+   "inicio": {
+    "escena": "caida",
+    "palabra": "ahí",
+    "mas": 0.1
+   },
+   "duracion": 0.8
+  },
+  {
+   "nombre": "desgarro",
+   "inicio": {
+    "escena": "disipador",
+    "mas": 0.5
+   },
+   "duracion": 2.8,
+   "volumen": 0.95,
+   "bajoVoz": 0.15,
+   "ignoraSilencio": true
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "disipador",
+    "mas": 0.48
+   },
+   "duracion": 0.5,
+   "volumen": 0.45,
+   "ignoraSilencio": true
+  },
+  {
+   "nombre": "tintineo",
+   "inicio": {
+    "escena": "cambia"
+   },
+   "duracion": 1.6,
+   "volumen": 0.35,
+   "fundido": [
+    0.1,
+    0.4
+   ]
+  },
+  {
+   "nombre": "pajaros",
+   "inicio": {
+    "escena": "plan"
+   },
+   "fin": {
+    "escena": "final"
+   },
+   "volumen": 0.4,
+   "bucle": true,
+   "fundido": [
+    0.3,
+    0.5
+   ]
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "plan",
+    "palabra": "alguien"
+   },
+   "duracion": 0.6,
+   "volumen": 0.6
+  }
+ ]
+}

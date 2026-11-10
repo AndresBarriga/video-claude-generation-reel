@@ -5,7 +5,7 @@ import React from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
 import { DANI, MARTA, Etiqueta, Svg, clamp, type P } from "./comun";
-import { Cielo, Cordillera, Bosque, Bruma, NubeE, CIELO, type Hora } from "./paisaje";
+import { Cielo, Cordillera, Bosque, Bruma, NubeE, Aves, Rayos, CIELO, type Hora } from "./paisaje";
 import { Roca, CableE, MosqE, BrazoE, FundaE, pieMosq, sPersona, M } from "./roca";
 
 const PM = 31, SP = sPersona(PM);
@@ -14,9 +14,11 @@ const ux = (B[0] - A[0]) / Math.hypot(B[0] - A[0], B[1] - A[1]), uy = (B[1] - A[
 const enRiel = (m: number): [number, number] => [A[0] + ux * m * PM, A[1] + uy * m * PM]; // m metros desde el inicio
 const PASA = 1.0 * PM; // pasamanos 1 m por encima de los peldaños
 
-const Fondo: React.FC<{ h: Hora }> = ({ h }) => (
+const Fondo: React.FC<{ h: Hora; f: number }> = ({ h, f }) => (
   <g>
     <Cielo h={h} id={`es${h}`} sol={[230, 1120]} r={60} />
+    <Rayos x={230} y={1120} h={h} f={f} id={`ry${h}`} />
+    <Aves f={f} x={420} y={760} seed="ea" s={0.9} v={1.1} />
     {[[160, 420, 1.0], [880, 300, 0.7]].map(([x, y, s], i) => <NubeE key={i} x={x} y={y} s={s} h={h} o={0.85} />)}
     <Cordillera id="eA" y={1520} amp={820} color="#6C7BA6" h={h} lejos={0.55} nieve={0.32} picos={3} />
     <Cordillera id="eB" y={1690} amp={430} color="#45637A" h={h} lejos={0.3} nieve={0.22} picos={4} />
@@ -60,7 +62,7 @@ export const EscaleraCielo: React.FC<P & { final?: boolean }> = ({ d, pal, final
   return (
     <>
       <Svg>
-        <g transform={final ? `translate(540 960) scale(${zB}) translate(-640 -1180)` : cam(zB)}><Fondo h={h} /></g>
+        <g transform={final ? `translate(540 960) scale(${zB}) translate(-640 -1180)` : cam(zB)}><Fondo h={h} f={f} /></g>
         <g transform={cam(zF)}>
           <Roca id="agujaD" h={h} pm={PM} d="M930 628 L948 602 L985 590 L1020 598 L1046 584 L1080 600 L1110 640 L1150 900 L1190 1500 L1260 4200 L860 4200 L880 3000 L850 2200 L905 1500 L880 1050 Z" />
           <Roca id="agujaI" h={h} pm={PM} d="M-500 1330 L-200 1290 L-60 1270 L20 1296 L80 1316 L130 1420 L100 1760 L180 2400 L160 4200 L-500 4200 Z" />

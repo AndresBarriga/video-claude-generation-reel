@@ -94,3 +94,24 @@ export const NubeE: React.FC<{ x: number; y: number; s?: number; h: Hora; o?: nu
     </g>
   );
 };
+
+/** Bandada de aves (siluetas que aletean) cruzando el cielo. f = fotograma; v = px por fotograma. */
+export const Aves: React.FC<{ f: number; x: number; y: number; n?: number; s?: number; v?: number; seed: string }> = ({ f, x, y, n = 7, s = 1, v = 1.4, seed }) => (
+  <g>{Array.from({ length: n }).map((_, i) => {
+    const ox = x + f * v + (i % 2 ? 1 : -1) * Math.ceil(i / 2) * 34 * s + random(`${seed}ax${i}`) * 10, oy = y + Math.ceil(i / 2) * 18 * s + Math.sin(f / 12 + i) * 4 * s;
+    const a = Math.sin(f / 3 + i * 1.7) * 9 * s, w = 14 * s;
+    return <path key={i} d={`M${ox - w} ${oy - a} Q${ox - w / 2} ${oy - a * 0.3 - 3 * s} ${ox} ${oy} Q${ox + w / 2} ${oy - a * 0.3 - 3 * s} ${ox + w} ${oy - a}`} stroke="#2A2F3E" strokeWidth={2.4 * s} fill="none" strokeLinecap="round" opacity={0.75} />;
+  })}</g>
+);
+
+/** Rayos de sol que salen del disco (haces suaves que giran muy despacio). */
+export const Rayos: React.FC<{ x: number; y: number; h: Hora; f: number; id: string; o?: number }> = ({ x, y, h, f, id, o = 0.22 }) => {
+  const c = CIELO[h];
+  return (
+    <g style={{ mixBlendMode: "screen" }}>
+      <defs><radialGradient id={`ry${id}`} cx={x} cy={y} r={1600} gradientUnits="userSpaceOnUse"><stop offset="0" stopColor={c.luz} stopOpacity={o} /><stop offset="1" stopColor={c.luz} stopOpacity="0" /></radialGradient></defs>
+      {Array.from({ length: 9 }).map((_, i) => { const a = ((i * 40 + f * 0.05 + random(`${id}r${i}`) * 14) * Math.PI) / 180, w = 0.05 + random(`${id}w${i}`) * 0.05;
+        return <path key={i} d={`M${x} ${y} L${x + Math.cos(a - w) * 2200} ${y + Math.sin(a - w) * 2200} L${x + Math.cos(a + w) * 2200} ${y + Math.sin(a + w) * 2200} Z`} fill={`url(#ry${id})`} />; })}
+    </g>
+  );
+};

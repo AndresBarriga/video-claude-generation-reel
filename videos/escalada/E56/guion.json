@@ -3,7 +3,7 @@
  "titulo": "Vía ferrata: lo que te frena",
  "nicho": "escalada",
  "plantilla": "Ferrata",
- "verificado": false,
+ "verificado": true,
  "escenas": [
   {
    "tipo": "gancho",
@@ -46,5 +46,12 @@
    "visual": "final",
    "texto": "¿A quién te llevarías?"
   }
+ ],
+ "fuentes": [
+  "Singing Rock Phario Slide (EN 958:2017): brazos 50 cm, 90 cm estirados; disipador activado hasta 190 cm",
+  "Decathlon Vitalink: brazos 43–65,5 cm; si la etiqueta se rasga, no usar",
+  "Telemark Pyrenees: EN 958:2017, tope 6 kN, 40–120 kg",
+  "EN 958:2017 (iTeh/CEN): frenada máxima 2200 mm",
+  "Acceso libre de la mayoría de ferratas y alquiler cerca: dato de Andrés (practicante); RocJumper como listado"
  ]
 }

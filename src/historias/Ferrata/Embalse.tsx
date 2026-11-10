@@ -4,17 +4,19 @@ import React from "react";
 import { Easing, interpolate, random, useCurrentFrame } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
 import { DANI, MARTA, Svg, clamp, type P } from "./comun";
-import { Cielo, Cordillera, Bruma, NubeE, CIELO, mix } from "./paisaje";
+import { Cielo, Cordillera, Bruma, NubeE, Aves, Rayos, CIELO, mix } from "./paisaje";
 import { Roca, CableE, MosqE, BrazoE, FundaE, Grapa, Anclaje, pieMosq, sPersona } from "./roca";
 
 const PM = 170, SP = sPersona(PM), h = "alba" as const;
 const CX = 250; // cable vertical junto a la cara de la pared
 
-const Valle: React.FC = () => {
+const Valle: React.FC<{ f: number }> = ({ f }) => {
   const c = CIELO[h];
   return (
     <g>
       <Cielo h={h} id="emb" sol={[880, 420]} r={52} />
+      <Rayos x={880} y={420} h={h} f={f} id="emr" o={0.2} />
+      <Aves f={f} x={420} y={560} seed="eb" n={6} s={0.8} v={1.2} />
       <NubeE x={260} y={300} s={0.9} h={h} o={0.7} /><NubeE x={760} y={230} s={0.6} h={h} o={0.6} />
       <Cordillera id="emA" y={760} amp={260} color="#7C86A8" h={h} lejos={0.7} picos={5} solIzq={false} />
       <Cordillera id="emB" y={880} amp={210} color="#6B7F78" h={h} lejos={0.45} picos={4} solIzq={false} />
@@ -42,7 +44,7 @@ export const Embalse: React.FC<P> = ({ d }) => {
   const cam = (z: number, k: number) => `translate(${-t * 30 * k} ${-t * 90 * k}) scale(${z})`;
   return (
     <Svg>
-      <g transform={cam(1 + t * 0.03, 0.3)}><Valle /></g>
+      <g transform={cam(1 + t * 0.03, 0.3)}><Valle f={f} /></g>
       <g transform={cam(1.02 + t * 0.06, 1)}>
         <Roca id="embR" h={h} pm={PM} luzIzq={false} tono="#D3C6B2" d="M-300 -200 L330 -200 L360 300 L330 700 L380 1100 L350 1500 L400 2000 L-300 2000 Z" />
         <CableE d={`M${CX} -200 L${CX} 2000`} pm={PM} />
