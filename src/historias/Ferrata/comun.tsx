@@ -87,3 +87,10 @@ export const anilla = (x: number, y: number, s: number, torso: number, rot = 0, 
   const ax = (20 * Math.cos(t) + 22 * Math.sin(t)) * s * mira, ay = (20 * Math.sin(t) - 22 * Math.cos(t)) * s;
   return [x + ax * Math.cos(r) - ay * Math.sin(r), y + ax * Math.sin(r) + ay * Math.cos(r)];
 };
+
+/** Mano delantera (brazoA) en coordenadas de mundo, con la misma geometría que Escalador (sin `rot`). */
+export const manoA = (x: number, y: number, s: number, torso: number, brazoA: [number, number], mira: 1 | -1 = 1, kb = 1): [number, number] => {
+  const e = (px: number, py: number, ang: number, L: number): [number, number] => [px + Math.sin((ang * Math.PI) / 180) * L, py + Math.cos((ang * Math.PI) / 180) * L];
+  const hombro = e(0, 0, 180 - torso, 104 - 16), codo = e(hombro[0], hombro[1], brazoA[0], 52 * kb), m = e(codo[0], codo[1], brazoA[1], 50 * kb);
+  return [x + m[0] * s * mira, y + m[1] * s];
+};

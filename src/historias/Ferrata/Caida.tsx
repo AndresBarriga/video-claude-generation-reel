@@ -49,6 +49,11 @@ export const Caida: React.FC<P> = ({ d, pal }) => {
           <Escalador x={hip[0]} y={hip[1]} quien="simon" s={SP} cara={cara} aspecto={MARTA} mochila
             angulos={f < fS ? { torso: -8, cabeza: -4, brazoA: [160, 172], brazoB: [120, 150], piernaA: [80, -10], piernaB: [40, -30] } : { torso: -14, cabeza: -18, brazoA: [150 - g * 20, 160], brazoB: [-150, -120], piernaA: [40 - g * 30, -20], piernaB: [-20, 10] }} />
           <FundaE x={ring[0] - 1} y={ring[1] + 2} pm={PM} />
+          {(() => { const o = interpolate(f, [fS - 20, fS - 8, fI, fI + 10], [0, 1, 1, 0.6], clamp), y0 = ANC - CAIDA - 0.13 * PM; return o > 0 && <g opacity={o}>
+            <circle cx={CX} cy={ANC} r={0.16 * PM} fill="none" stroke="#FFE7A8" strokeWidth={5} />
+            <path d={`M${CX + 0.32 * PM} ${y0} L${CX + 0.32 * PM} ${ANC - 0.2 * PM}`} stroke="#fff" strokeWidth={6} strokeDasharray="14 10" />
+            <path d={`M${CX + 0.32 * PM - 16} ${ANC - 0.3 * PM} l16 22 l16 -22`} stroke="#fff" strokeWidth={6} fill="none" strokeLinecap="round" />
+          </g>; })()}
           {congela && <circle cx={ring[0]} cy={ring[1] + M.fundaL * PM * 0.6} r={0.17 * PM} fill="none" stroke="#FFE7A8" strokeWidth={4} />}
         </g>
         {congela && <rect x={0} y={0} width={1080} height={1920} fill="#14233A" opacity={0.32} />}

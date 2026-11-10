@@ -8,7 +8,7 @@
   {
    "tipo": "gancho",
    "visual": "escalera",
-   "texto": "¿Te atreverías a cruzar una escalera colgada a cientos de metros del suelo? Y si resbalas, hay algo en tu equipo hecho para rasgarse."
+   "texto": "¿Te atreverías a cruzar una escalera colgada sobre el vacío? Y si resbalas, hay algo en tu equipo hecho para rasgarse."
   },
   {
    "tipo": "texto",
@@ -23,12 +23,23 @@
   {
    "tipo": "texto",
    "visual": "caida",
-   "texto": "Si resbalas, caes por el cable hasta el anclaje de abajo. Y ahí…"
+   "texto": "Si resbalas, caes por el cable hasta el anclaje de abajo. Y ahí…",
+   "pausa": 0.6
   },
   {
    "tipo": "texto",
    "visual": "disipador",
-   "texto": "esta cinta se descose costura a costura. Se alarga y alarga la frenada, para que el tirón sea mucho menor."
+   "texto": "esta cinta se descose costura a costura. Se alarga y estira la frenada, para que el tirón sea mucho menor."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cambia",
+   "texto": "Cuando se ha abierto, ya hizo su trabajo: se cambia."
+  },
+  {
+   "tipo": "texto",
+   "visual": "plan",
+   "texto": "La mayoría son de acceso libre y cerca suelen alquilarte el material. La primera vez, con alguien que sepa."
   },
   {
    "tipo": "cierre",

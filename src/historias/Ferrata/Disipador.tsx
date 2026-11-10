@@ -4,7 +4,7 @@
 import React from "react";
 import { Easing, interpolate, random, useCurrentFrame } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
-import { MARTA, Svg, clamp, golpe, anilla, type P } from "./comun";
+import { MARTA, Svg, Etiqueta, clamp, golpe, anilla, type P } from "./comun";
 import { Cielo, Cordillera, Bruma, CIELO } from "./paisaje";
 import { Roca, CableE, MosqE, BrazoE, Anclaje, pieMosq, sPersona, M } from "./roca";
 
@@ -55,10 +55,11 @@ export const Disipador: React.FC<P> = ({ d }) => {
   const sw = f > F1 ? Math.sin((f - F1) / 8) * 3 * Math.exp(-(f - F1) / 35) : 0;
   const o = anilla(0, 0, SP, -26), hip: [number, number] = [ring[0] - o[0] + sw * 4, ring[1] - o[1]];
   const cara = f < F0 ? "miedo" : p < 0.92 ? "dolor" : "serio";
-  const z = interpolate(f, [0, F0, F1], [1.25, 1.25, 0.82], { ...clamp, easing: Easing.inOut(Easing.cubic) });
-  const fy = interpolate(f, [0, F0, F1], [GIRO[1] + 60, GIRO[1] + 60, 860], { ...clamp, easing: Easing.inOut(Easing.cubic) }), sy = golpe(f, F0, 8);
-  const fantasma = interpolate(f, [F1 - 6, F1 + 12], [0, 1], clamp), y0 = GIRO[1] + 14;
+  const z = interpolate(f, [0, F0, F0 + 14], [1.25, 1.25, 1.0], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const fy = interpolate(f, [0, F0, F0 + 14], [GIRO[1] + 60, GIRO[1] + 60, 820], { ...clamp, easing: Easing.inOut(Easing.cubic) }), sy = golpe(f, F0, 8);
+  const fantasma = interpolate(f, [F0 + 4, F0 + 14], [0, 1], clamp), y0 = GIRO[1] + 14;
   return (
+    <>
     <Svg>
       <g transform={`translate(540 ${960 + sy}) scale(${1 + (z - 1) * 0.1}) translate(-540 ${-(960 + (fy - 960) * 0.1)})`}>
         <Cielo h={h} id="dis" sol={[120, 360]} r={44} />
@@ -75,7 +76,7 @@ export const Disipador: React.FC<P> = ({ d }) => {
         <Escalador x={hip[0]} y={hip[1]} quien="simon" s={SP} cara={cara} aspecto={MARTA} mochila
           angulos={{ torso: -26, cabeza: -14, brazoA: [150, 176], brazoB: [-60, -30], piernaA: [40, -10], piernaB: [10, -20] }} />
         {fantasma > 0 && <g opacity={fantasma}>
-          <rect x={GIRO[0] - FA / 2 - 10} y={y0 - 4} width={FA + 20} height={FL + 8} rx={14} fill="none" stroke="#fff" strokeWidth={4} strokeDasharray="12 10" />
+          <rect x={GIRO[0] - FA / 2 - 10} y={y0 - 4} width={FA + 20} height={FL + 8} rx={14} fill="none" stroke="#fff" strokeWidth={7} strokeDasharray="16 12" />
           <path d={`M${GIRO[0] + FA / 2 + 30} ${y0} l12 0 L${GIRO[0] + FA / 2 + 42} ${top} l-12 0`} stroke="#fff" strokeWidth={5} fill="none" />
         </g>}
         <Cinta x={GIRO[0]} y0={GIRO[1] + 8} y1={top + 6} />
@@ -85,5 +86,7 @@ export const Disipador: React.FC<P> = ({ d }) => {
       </g>
       {f < F0 && <rect x={0} y={0} width={1080} height={1920} fill="#14233A" opacity={0.32} />}
     </Svg>
+    {f >= F0 + 6 && <Etiqueta texto="SE DESCOSE" desde={F0 + 6} top={300} tam={110} />}
+    </>
   );
 };

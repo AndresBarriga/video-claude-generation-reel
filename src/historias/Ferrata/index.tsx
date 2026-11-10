@@ -11,9 +11,11 @@ import { Disipador } from "./Disipador";
 import { Embalse } from "./Embalse";
 import { Cresta } from "./Cresta";
 import { Caida } from "./Caida";
+import { Cambia } from "./Cambia";
+import { Plan } from "./Plan";
 const Final: React.FC<P> = (p) => <EscaleraCielo {...p} final />;
 
-const ESCENAS: Record<string, React.FC<P>> = { escalera: EscaleraCielo, embalse: Embalse, cresta: Cresta, caida: Caida, disipador: Disipador, final: Final };
+const ESCENAS: Record<string, React.FC<P>> = { escalera: EscaleraCielo, embalse: Embalse, cresta: Cresta, caida: Caida, disipador: Disipador, cambia: Cambia, plan: Plan, final: Final };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Ferrata: React.FC<{ datos: Datos }> = ({ datos }) => {

@@ -54,27 +54,27 @@ export const EscaleraCielo: React.FC<P & { final?: boolean }> = ({ d, pal, final
   const giro = 18 + resb * 10, ring: [number, number] = [hip[0] + 4, hip[1] - 3];
   const m1 = enRiel(pos + 0.5), m2 = enRiel(pos + 0.85);
   const c1: [number, number] = [m1[0], m1[1] - PASA], c2: [number, number] = [m2[0], m2[1] - PASA];
-  const zF = final ? interpolate(f, [0, d], [1.6, 1.15], clamp) : interpolate(abre, [0, 1], [9, 1]) * (1 + emp * 1.6);
-  const foco: [number, number] = final ? [900, 700] : [interpolate(abre, [0, 1], [hip[0] + 6, 540]) + emp * (ring[0] - 540), interpolate(abre, [0, 1], [hip[1] - 22, 960]) + emp * (ring[1] - 960)];
+  const zF = final ? interpolate(f, [0, d], [4.5, 10], { ...clamp, easing: Easing.inOut(Easing.cubic) }) : interpolate(abre, [0, 1], [9, 1]) * (1 + emp * 1.6);
+  const foco: [number, number] = final ? [1005, 530] : [interpolate(abre, [0, 1], [hip[0] + 6, 540]) + emp * (ring[0] - 540), interpolate(abre, [0, 1], [hip[1] - 22, 960]) + emp * (ring[1] - 960)];
   const zB = Math.pow(zF, 0.12), cam = (z: number) => `translate(540 ${final ? 980 : 960}) scale(${z}) translate(${-foco[0]} ${-foco[1]})`;
   return (
     <>
       <Svg>
-        <g transform={cam(zB)}><Fondo h={h} /></g>
+        <g transform={final ? `translate(540 960) scale(${zB}) translate(-640 -1180)` : cam(zB)}><Fondo h={h} /></g>
         <g transform={cam(zF)}>
           <Roca id="agujaD" h={h} pm={PM} d="M930 628 L948 602 L985 590 L1020 598 L1046 584 L1080 600 L1110 640 L1150 900 L1190 1500 L1260 4200 L860 4200 L880 3000 L850 2200 L905 1500 L880 1050 Z" />
           <Roca id="agujaI" h={h} pm={PM} d="M-500 1330 L-200 1290 L-60 1270 L20 1296 L80 1316 L130 1420 L100 1760 L180 2400 L160 4200 L-500 4200 Z" />
           <Escalera z={zF} />
           {[[A[0], A[1] - PASA], [B[0] + 6, B[1] - PASA], A, B].map(([x, y], i) => <rect key={i} x={x - 3} y={y - 3} width={6} height={6} rx={1.5} fill="#4E5864" />)}
-          <Escalador x={final ? 1012 : 1010} y={566} quien="simon" pose={final ? "celebrando" : "senalando"} mira={-1} s={SP} cara={emp > 0.3 ? "miedo" : "alivio"} aspecto={MARTA} />
+          <Escalador x={final ? 1030 : 1010} y={566} quien="simon" pose={final ? "pie" : "senalando"} mira={-1} s={SP} cara={emp > 0.3 ? "miedo" : "alivio"} aspecto={MARTA} angulos={final ? { brazoB: [-165, -178], cabeza: -6 } : undefined} />
           {!final && <g>
             <BrazoE a={[ring[0], ring[1] + 2]} b={pieMosq(c1[0], c1[1], PM)} pm={PM} tension={resb} />
             <BrazoE a={[ring[0], ring[1] + 2]} b={pieMosq(c2[0], c2[1], PM)} pm={PM} tension={resb} />
             <MosqE x={c1[0]} y={c1[1]} pm={PM} /><MosqE x={c2[0]} y={c2[1]} pm={PM} />
           </g>}
           <Escalador x={final ? 990 : hip[0]} y={final ? 566 : hip[1]} quien="joe" mochila s={SP} cara={final ? "alivio" : "miedo"} aspecto={DANI}
-            pose={final ? "celebrando" : undefined} mira={final ? 1 : 1}
-            angulos={final ? undefined : { torso: giro, cabeza: 34 - resb * 14, brazoA: [96, 104], brazoB: [84, 96], piernaA: [70, -24], piernaB: [-8 - resb * 70, -14 - resb * 40] }} />
+            pose={final ? "pie" : undefined} mira={final ? -1 : 1}
+            angulos={final ? { brazoB: [-160, -176], cabeza: -8 } : { torso: giro, cabeza: 34 - resb * 14, brazoA: [96, 104], brazoB: [84, 96], piernaA: [70, -24], piernaB: [-8 - resb * 70, -14 - resb * 40] }} />
           {!final && <FundaE x={ring[0] - 1} y={ring[1]} pm={PM} />}
           {!final && emp > 0 && <circle cx={ring[0] - 1} cy={ring[1] + M.fundaL * PM * 0.5} r={M.fundaL * PM * 0.9} fill="none" stroke="#FFE7A8" strokeWidth={0.35} opacity={emp} />}
         </g>
