@@ -118,3 +118,6 @@ Pendiente: crítico sobre v3; 2–3 bocetos fijos (gancho, caída con despliegue
 Gancho = se le escapa la mano en el s1 + congelado con cronómetro «¿LE DA TIEMPO?»; la lupa explica la mochila sobre el congelado; la caída a toda velocidad y en grande (cronómetro, latido, la vela llena la pantalla y vuela); franja; montaje de 4 fotos (Andrés confirma que es él en todas: techo en B/N, traje de alas, Eiger vertical, fotograma del Eiger); repisa; cierre en las manos. Guion en `guion.json`.
 
 **Revisión externa (14:17–14:18):** aceptado: vela en 4 fases, foto del Eiger fundida con la pared dibujada, lupa pequeña, motivo concreto de la repisa (UKC: repisa de ~15 m que sobresale al pie de la vía), franja sin ambigüedad («donde la caída ya mata… y todavía no da tiempo a abrirlo») con dos caídas visibles (verde abre / roja no). Rechazado: esquema invertido de la franja, «uno de sus pioneros», «cientos de metros», «no podía permitirse resbalar».
+
+## v6 (10-nov 20:03) — Andrés: «Se llama free BASE» suena a que el paracaídas se llama así; aún poco gancho
+Gancho con foto real en el s0 («SIN CUERDA · CON PARACAÍDAS»), corte seco a nuestro escalador animado (otro aspecto) y «imagina que se te escapa la mano»; «Escalar así se llama free BASE»; «El de la foto es Dean Potter»; cierre «¿desde qué metro empezarías?». Crítico 6,5→7.
