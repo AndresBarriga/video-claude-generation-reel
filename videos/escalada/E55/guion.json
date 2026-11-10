@@ -31,8 +31,7 @@
   {
    "tipo": "texto",
    "visual": "franja",
-   "texto": "Pero hay una franja donde la caída ya mata… y todavía no da tiempo a abrirlo.",
-   "pausa": 0.3
+   "texto": "Pero hay una franja donde la caída ya mata… y todavía no da tiempo a abrirlo."
   },
   {
    "tipo": "texto",
@@ -59,14 +58,15 @@
   2,
   2,
   2,
-  11,
+  7,
+  4,
   4,
   1,
-  1,
-  8,
+  9,
   7,
   3,
-  3,
+  2,
+  1,
   2,
   13,
   6,
@@ -78,5 +78,8 @@
   6,
   3
  ],
- "frasesManual": true
+ "frasesManual": true,
+ "cortes": [
+  17.86
+ ]
 }
