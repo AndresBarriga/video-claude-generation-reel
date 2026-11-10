@@ -2,7 +2,7 @@
 // cronómetro a 0,0 s: «¿LE DA TIEMPO?». Con `lupa`: el mismo congelado, la cámara se acerca a la espalda y una lupa abre
 // el contenedor (vela plegada + extractor). 1 m = 235 px.
 import React from "react";
-import { Easing, interpolate, random, useCurrentFrame } from "remotion";
+import { Easing, interpolate, random, useCurrentFrame, useVideoConfig } from "remotion";
 import { Escalador } from "../../piezas/Escalador";
 import { manoA } from "../Ferrata/comun";
 import { ESC, AZUL, PIES, Abismo, ParedEiger, Etiqueta, Svg, clamp, golpe, sPersona, type P } from "./comun";
@@ -28,32 +28,39 @@ const Lupa: React.FC<{ x: number; y: number; o: number; f: number }> = ({ x, y, 
 };
 
 export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
-  const f = useCurrentFrame();
-  const fS = lupa ? -99 : Math.max(4, (pal("escapa") ?? 8) - 2), fC = lupa ? -99 : fS + 12; // se le escapa la mano · congelado
+  const f = useCurrentFrame(), { fps } = useVideoConfig();
+  // Tiempo bala: tras soltarse, la caída sigue a 1/10 de velocidad (sin congelar). tl = segundos reales de caída.
+  const fS = lupa ? -99 : Math.max(4, (pal("escapa") ?? 8) - 2), fC = lupa ? -99 : fS + 12;
+  const LENTO = 0.1, T0 = lupa ? 0.45 : 0; // la escena de la lupa sigue donde acabó el gancho (~4,5 s × 0,1)
+  const tl = T0 + Math.max(0, (f - (lupa ? 0 : fC)) / fps) * LENTO;
   const s = lupa ? 1 : interpolate(f, [fS, fC], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
-  const ang = mezcla(s), hip: [number, number] = [BORDE + 70 - s * 0.35 * PM, 1130 + s * 0.15 * PM], rot = -s * 16;
-  const mano = manoA(BORDE + 70, 1130, SP, AGARRE.torso, AGARRE.brazoA), espalda = ((): [number, number] => { const a = ((ang.torso + rot) * Math.PI) / 180, vx = -34 * SP, vy = -66 * SP; return [hip[0] + vx * Math.cos(a) - vy * Math.sin(a), hip[1] + vx * Math.sin(a) + vy * Math.cos(a)]; })();
-  const congel = f >= fC;
-  const fL = pal("paracaidas") ?? Math.round(d * 0.45), oL = lupa ? interpolate(f, [fL - 12, fL + 2], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.4)) }) : 0;
-  const z = lupa ? interpolate(f, [0, 20], [1.15, 1.45], { ...clamp, easing: Easing.inOut(Easing.cubic) }) : interpolate(f, [0, fC], [1.9, 1.5], clamp);
-  const foco = lupa ? [espalda[0] - 140, espalda[1] - 60] : [interpolate(s, [0, 1], [mano[0] - 40, hip[0]]), interpolate(s, [0, 1], [mano[1] + 120, hip[1] - 180])];
-  const sh = golpe(f, fS + 2, 18);
+  const ang = mezcla(s);
+  const hip: [number, number] = [BORDE + 70 - s * 0.35 * PM - tl * 1.6 * PM, 1130 + s * 0.15 * PM + 0.5 * 9.8 * tl * tl * PM];
+  const rot = -s * 16 - tl * 40;
+  const mano = manoA(BORDE + 70, 1130, SP, AGARRE.torso, AGARRE.brazoA);
+  const espalda = ((): [number, number] => { const a = ((ang.torso + rot) * Math.PI) / 180, vx = -34 * SP, vy = -66 * SP; return [hip[0] + vx * Math.cos(a) - vy * Math.sin(a), hip[1] + vx * Math.sin(a) + vy * Math.cos(a)]; })();
+  const lenta = f >= fC || !!lupa;
+  const fL = pal("esto") ?? pal("paracaidas") ?? Math.round(d * 0.3), oL = lupa ? interpolate(f, [fL - 6, fL + 6], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.4)) }) : 0;
+  const fF = pal("free") ?? d - 30;
+  const z = lupa ? 1.5 + f / d * 0.15 : interpolate(f, [0, fC, d], [1.9, 1.55, 1.75], clamp);
+  const foco = lupa ? [espalda[0] - 160, espalda[1] - 40] : [interpolate(s, [0, 1], [mano[0] - 40, hip[0]]), interpolate(s, [0, 1], [mano[1] + 120, hip[1] - 160])];
+  const sh = golpe(f, fS + 2, 18), giro = lenta ? Math.sin(f / 40) * 2 - (lupa ? 4 : f / d * 4) : 0;
   return (
     <>
       <Svg>
-        <g transform={`translate(0 ${-s * 30})`}><Abismo f={congel || lupa ? fC : f} id="rs" hz={410} /></g>
-        <g transform={`translate(${540 + sh} 900) scale(${z}) translate(${-foco[0]} ${-foco[1]})`}>
+        <g transform={`translate(0 ${-s * 30 - tl * 60})`}><Abismo f={fC + f * LENTO} id="rs" hz={410} /></g>
+        <g transform={`translate(${540 + sh} 900) rotate(${giro}) scale(${z}) translate(${-foco[0]} ${-foco[1]})`}>
           <ParedEiger x={BORDE} pm={PM} id="rsp" y1={2600} />
-          {!lupa && f >= fS && Array.from({ length: 14 }).map((_, i) => { const a = Math.min(1, (f - fS) / 14), ang2 = random(`mg${i}`) * Math.PI * 2;
-            return <circle key={i} cx={mano[0] + Math.cos(ang2) * a * 70} cy={mano[1] + Math.sin(ang2) * a * 50 + a * 30} r={6 + random(`mr${i}`) * 8} fill="#F4F6F8" opacity={(1 - a) * 0.8} />; })}
+          {(f >= fS || lupa) && Array.from({ length: 14 }).map((_, i) => { const a = lupa ? 1 : Math.min(1, (f - fS) / 14) * 0.35 + tl * 1.5, ang2 = random(`mg${i}`) * Math.PI * 2;
+            return <circle key={i} cx={mano[0] + Math.cos(ang2) * a * 90} cy={mano[1] + Math.sin(ang2) * a * 60 + a * 40} r={6 + random(`mr${i}`) * 8} fill="#F4F6F8" opacity={Math.max(0, 0.8 - a * 0.5)} />; })}
           <Escalador x={hip[0]} y={hip[1]} rot={rot} quien="joe" s={SP} cara={s > 0.3 ? "miedo" : "esfuerzo"} aspecto={ESC} mochila={AZUL} pies={PIES} angulos={ang} />
           {lupa && <Lupa x={espalda[0] - 300} y={espalda[1] - 120} o={oL} f={f} />}
           {lupa && oL > 0 && <path d={`M${espalda[0] - 40} ${espalda[1] - 100} L${espalda[0] - 180} ${espalda[1] - 200}`} stroke="#fff" strokeWidth={5} strokeDasharray="10 8" opacity={oL} />}
         </g>
-        {(congel || lupa) && <rect x={0} y={0} width={1080} height={1920} fill="#14233A" opacity={0.3} />}
+        {lenta && <rect x={0} y={0} width={1080} height={1920} fill="#14233A" opacity={0.16} />}
       </Svg>
-      {(congel || lupa) && <Etiqueta texto={lupa && f >= (pal("free") ?? d - 30) ? "FREE BASE" : "¿LE DA TIEMPO?"} desde={lupa ? (f >= (pal("free") ?? d - 30) ? (pal("free") ?? d - 30) : 0) : fC} top={300} tam={110} />}
-      {congel && !lupa && <Etiqueta texto="0,0 s" desde={lupa ? 0 : fC + 4} top={440} tam={86} />}
+      {lenta && <Etiqueta texto={lupa && f >= fF ? "FREE BASE" : "¿LE DA TIEMPO?"} desde={lupa ? (f >= fF ? fF : 0) : fC} top={300} tam={110} />}
+      {lenta && !(lupa && oL > 0.2) && <Etiqueta texto={`${tl.toFixed(1).replace(".", ",")} s`} desde={lupa ? 0 : fC + 4} top={440} tam={86} />}
     </>
   );
 };

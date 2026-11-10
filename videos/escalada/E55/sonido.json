@@ -24,15 +24,6 @@
    "volumen": 0.8
   },
   {
-   "silencio": true,
-   "inicio": {
-    "escena": "resbala",
-    "palabra": "mano",
-    "mas": 0.25
-   },
-   "duracion": 0.6
-  },
-  {
    "nombre": "latido",
    "inicio": {
     "escena": "resbala",

@@ -10,12 +10,12 @@ const PM = 160, SP = sPersona(PM), G = 9.8 * PM, BORDE = 640, TA = 2.3;
 
 export const CaidaG: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame(), { fps } = useVideoConfig();
-  const f0 = 3, fA = f0 + Math.round(TA * fps);
-  const tc = Math.max(0, (Math.min(f, fA) - f0) / fps), ta = Math.max(0, (f - fA) / fps);
-  const yb = 1000 + 0.5 * G * tc * tc + (f > fA ? (G * TA * 0.25 + 4 * PM) * ta * Math.exp(-ta * 0.4) : 0);
-  const sep = interpolate(tc, [0, 0.9], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const T0 = 0.85, f0 = 0, fA = f0 + Math.round((TA - T0) * fps); // sigue la caída lenta del gancho (≈0,85 s ya caídos)
+  const tc = T0 + Math.max(0, (Math.min(f, fA) - f0) / fps), ta = Math.max(0, (f - fA) / fps);
+  const yb = 1000 + 0.5 * G * (tc * tc - T0 * T0) + (f > fA ? (G * TA * 0.25 + 4 * PM) * ta * Math.exp(-ta * 0.4) : 0);
+  const sep = interpolate(tc, [T0, 1.4], [0.4, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
   const xb = BORDE - 40 - sep * 2.2 * PM - ta * 1.6 * PM;
-  const tt = Math.max(0, (f - f0) / fps); // tiempo total desde que suelta
+  const tt = T0 + Math.max(0, (f - f0) / fps); // tiempo total desde que suelta
   const a = interpolate(tt, [2.15, 2.7], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.2)) });
   const pcY = interpolate(tt, [1.6, 1.95], [0, 3.6], clamp) * PM, bolsa = interpolate(tt, [1.95, 2.15], [0, 2.4], clamp) * PM;
   const lanza = tc > 1.6;
