@@ -112,7 +112,7 @@ const Ojos: React.FC<{ cara: Cara }> = ({ cara }) => {
 
 export type PropsEscalador = {
   x: number; y: number; quien: Quien; pose?: NombrePose; poseB?: NombrePose; t?: number; angulos?: Partial<Angulos>;
-  cara?: Cara; s?: number; rot?: number; mira?: 1 | -1; sombra?: number; mochila?: boolean; navaja?: boolean;
+  cara?: Cara; s?: number; rot?: number; mira?: 1 | -1; sombra?: number; mochila?: boolean | string; navaja?: boolean;
   /** Frontal encendido en el casco (luz hacia donde mira) */ frontal?: boolean;
   /** Reparto variado: colores, pelo, gorro, gafas, barba, sin casco/arnés (ver Rasgos.tsx) */ aspecto?: Aspecto;
   /** Objeto en la mano delantera */ objeto?: Objeto;
@@ -152,7 +152,7 @@ export const Escalador: React.FC<PropsEscalador> = ({ x, y, quien, pose = "pie",
         {bota(pB, "#0F141C")}
         <path d={lin([hombro, bB.e, bB.m])} {...st(24 * GR, c.chaquetaSombra)} />
         <circle cx={bB.m[0]} cy={bB.m[1]} r={RM - 1} fill={aspecto.manos === "piel" ? pielS : "#0F141C"} />
-        {mochila && <rect x={-50} y={-100} width={36} height={74} rx={12} fill="#3A4656" transform={`rotate(${a.torso})`} />}
+        {mochila && <rect x={-50} y={-100} width={36} height={74} rx={12} fill={typeof mochila === "string" ? mochila : "#3A4656"} transform={`rotate(${a.torso})`} />}
         {/* torso: chaqueta, pantalón y arnés en un mismo bloque girado */}
         <g transform={`rotate(${a.torso})`}>
           {cuerpo.torso ? <><path d={`M${-TW / 2 - 9} ${-L.torso + 4} Q${-TW / 2 - 6} ${-L.torso - 8} 0 ${-L.torso - 8} Q${TW / 2 + 6} ${-L.torso - 8} ${TW / 2 + 9} ${-L.torso + 4} L${TW / 2 - 2} -40 L${TW / 2} 10 L${-TW / 2} 10 L${-TW / 2 + 2} -40 Z`} fill={c.chaqueta} />
