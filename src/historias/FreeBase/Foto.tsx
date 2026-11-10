@@ -6,11 +6,11 @@ import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "rem
 import { Etiqueta, clamp, type P } from "./comun";
 
 const FOTOS = [
-  { src: "fotos/E55/techo-bn.png", pos: "75% 40%" },
+  { src: "fotos/E55/techo-bn.png", pos: "97% 40%" },
   { src: "fotos/E55/granito-1.png", pos: "56% 40%" },
   { src: "fotos/E55/wingsuit-raetikon.webp", pos: "55% 30%" },
   { src: "fotos/E55/eiger-vertical.webp", pos: "62% 35%" },
-  { src: "fotos/E55/eiger-video.webp", pos: "60% 40%" },
+  { src: "fotos/E55/eiger-video.webp", pos: "68% 40%" },
 ];
 
 export const Foto: React.FC<P> = ({ d, pal }) => {
@@ -23,7 +23,7 @@ export const Foto: React.FC<P> = ({ d, pal }) => {
   const nombre = pal("dean") ?? Math.round(d * 0.12);
   return (
     <AbsoluteFill style={{ background: "#000" }}>
-      <AbsoluteFill style={{ transform: `scale(${zoom}) translateX(${(k % 2 ? -1 : 1) * t * 12}px)`, transformOrigin: FOTOS[k].pos }}>
+      <AbsoluteFill style={{ transform: `scale(${zoom}) translateX(0px)`, transformOrigin: FOTOS[k].pos }}>
         <Img src={staticFile(FOTOS[k].src)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: FOTOS[k].pos }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 55% 45%, transparent 55%, rgba(0,0,0,0.55) 100%)" }} />
