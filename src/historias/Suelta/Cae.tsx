@@ -16,6 +16,7 @@ export const Cae: React.FC<P> = ({ d, pal }) => {
   const sh = golpe(f, fFreno, 12);
   const cx = cayendo ? p.x + 40 : ARRIBA.x + 40, cy = cayendo ? interpolate(f, [fC, fFreno + 6], [700, 1200], { ...clamp, easing: Easing.inOut(Easing.cubic) }) : 700;
   const z = cayendo ? interpolate(f, [fC, fFreno + 6], [1.45, 1.05], { ...clamp, easing: Easing.out(Easing.cubic) }) : interpolate(f, [0, fC], [1.35, 1.5], clamp);
+  const dyA = f >= fFreno ? -24 * Math.exp(-(f - fFreno) / 8) : 0;
   const miedo = interpolate(f, [fFreno, fFreno + 12], [0.95, 0.8], clamp);
   return (
     <AbsoluteFill style={{ transform: `translate(${sh}px, ${Math.abs(sh)}px)` }}>
@@ -23,8 +24,8 @@ export const Cae: React.FC<P> = ({ d, pal }) => {
         <Fondo cx={cx} cy={cy} z={z} />
         <g transform={cam(cx, cy, z)}>
           <Cueva />
-          <CuerdaSL arnes={p} floja={p.floja} tension={f >= fFreno ? 1 : 0} />
-          <Asegura dy={f >= fFreno ? -24 * Math.exp(-(f - fFreno) / 8) : 0} cara={f >= fFreno ? "esfuerzo" : "normal"} />
+          <CuerdaSL arnes={p} floja={p.floja} tension={f >= fFreno ? 1 : 0} dy={dyA} />
+          <Asegura dy={dyA} cara={f >= fFreno ? "esfuerzo" : "normal"} />
           <Tu x={p.x} y={p.y} ang={p.ang} cara={cayendo ? (f >= fFreno + 8 ? "alivio" : "miedo") : "miedo"} tiembla={cayendo ? 0 : Math.sin(f * 1.9) * 3} />
         </g>
       </Svg>

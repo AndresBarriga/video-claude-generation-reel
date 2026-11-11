@@ -74,3 +74,5 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - **10-nov, E55 Free BASE bocetos (no le convencen):** poca tensión; quiere 3–4 fotos reales distintas y un salto que se vea. Diagnóstico: el gancho es un plano tranquilo, la explicación de la mochila para el vídeo en el s7–14 y la caída sale lejos y pequeña.
 - **10-nov, E55:** el esquema de la repisa con cotas «no se entiende» → sustituido por escena animada (camina por la repisa; fantasma rojo que choca con la repisa de abajo). Fotos apaisadas: encuadrar al protagonista, no el centro.
 - **10-nov, E55 (Andrés):** «hasta el segundo 8 casi no hace nada, misma imagen» → el congelado + lupa sobre la imagen fija mataba la tensión. Regla: nada de imagen fija >1 s en el gancho; usar cámara lenta (tiempo bala) en vez de congelar.
+
+- 2026-11-11 (E47): quien asegura tiene que tener SIEMPRE la mano de freno (derecha) en la cuerda, y el resto de la cuerda cae al suelo enroscada (madeja). Error gordo si falta. La mano en primer plano tiene que verse dibujada con cuidado (arqueo, nudillos, uñas), no como salchichas.

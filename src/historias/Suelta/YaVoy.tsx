@@ -19,7 +19,7 @@ export const YaVoy: React.FC<P> = ({ d, pal }) => {
         <g transform={cam(cx, cy, z)}>
           <Cueva />
           <CuerdaSL arnes={ARRIBA} />
-          <Asegura cara="normal" brazo={arriba ? 0 : Math.sin(f / 5) * 0.3} />
+          <Asegura cara="normal" />
           <Tu x={ARRIBA.x} y={ARRIBA.y} ang={ANG_AGARRE} tiembla={Math.sin(f * 1.9) * 3} cara={f >= fNo ? "esfuerzo" : "miedo"} />
         </g>
       </Svg>

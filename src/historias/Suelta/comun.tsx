@@ -28,7 +28,7 @@ export const CHAPA = { x: xF(980) - 6, y: 1022 }; // mosquetón de la última ch
 export const ARRIBA = { x: xF(745) - 78, y: 745 }; // cadera del escalador agarrado (por encima de la chapa)
 export const COLGADO = { x: CHAPA.x - 34, y: 1335 }; // cadera colgando tras la caída (al aire, bajo el desplome)
 export const ASE = { x: 735, y: SUELO - 136 }; // cadera de quien asegura
-export const FRENO = { x: ASE.x + 34, y: ASE.y - 10 };
+export const APARATO = (dy = 0) => ({ x: ASE.x + 22, y: ASE.y - 14 + dy }); // aparato de freno en el arnés
 
 /** Cámara: (cx, cy) del mundo al centro de pantalla con zoom z. Paralaje del fondo aparte. */
 export const cam = (cx: number, cy: number, z: number) => `translate(540 960) scale(${z}) translate(${-cx} ${-cy})`;
@@ -116,8 +116,8 @@ export const Expres: React.FC<{ y: number }> = ({ y }) => {
 };
 
 /** Cuerda: de quien asegura, por las chapas, hasta el arnés. `idea` 0–1 = se vuelve gris discontinua. `floja` = comba (caída). */
-export const CuerdaSL: React.FC<{ arnes: { x: number; y: number }; idea?: number; floja?: number; tension?: number }> = ({ arnes, idea = 0, floja = 0, tension = 0 }) => {
-  const pts = [FRENO, ...CHAPAS.map((y) => ({ x: xF(y) - 6, y: y + 54 }))];
+export const CuerdaSL: React.FC<{ arnes: { x: number; y: number }; idea?: number; floja?: number; tension?: number; dy?: number }> = ({ arnes, idea = 0, floja = 0, tension = 0, dy = 0 }) => {
+  const pts = [APARATO(dy), ...CHAPAS.map((y) => ({ x: xF(y) - 6, y: y + 54 }))];
   const base = pts.map((p) => `${p.x} ${p.y}`).join(" L");
   const mx = (CHAPA.x + arnes.x) / 2 - floja * 120, my = (CHAPA.y + arnes.y) / 2 + floja * 160;
   const d = `M${base} Q${mx} ${my} ${arnes.x + 18} ${arnes.y - 6}`;
@@ -152,9 +152,42 @@ export const posCaida = (t: number) => {
 export const Tu: React.FC<{ x: number; y: number; ang: Angulos; cara?: Cara; rot?: number; tiembla?: number }> = ({ x, y, ang, cara = "miedo", rot = 0, tiembla = 0 }) => (
   <Escalador x={x + tiembla} y={y} quien="joe" angulos={ang} cara={cara} aspecto={TU} rot={rot} mira={1} />
 );
-export const Asegura: React.FC<{ dy?: number; cara?: Cara; brazo?: number }> = ({ dy = 0, cara = "normal", brazo = 0 }) => (
-  <Escalador x={ASE.x} y={ASE.y + dy} quien="simon" angulos={{ torso: -6, cabeza: -30, brazoA: [150 - brazo * 20, 172], brazoB: [40, 100], piernaA: [10, 0], piernaB: [-12, 0] }} cara={cara} aspecto={ASEG} mira={-1} sombra={SUELO} />
-);
+/** Cinemática inversa de un brazo de Escalador (s = 1, mira = 1): ángulos [hombro→codo, codo→mano] para llevar la mano a (tx, ty). */
+const ik = (sh: [number, number], tx: number, ty: number, codo: 1 | -1): [number, number] => {
+  const L1 = 52, L2 = 50, dx = tx - sh[0], dy = ty - sh[1], d = Math.min(L1 + L2 - 0.5, Math.hypot(dx, dy));
+  const base = Math.atan2(dx, dy), al = Math.acos(Math.max(-1, Math.min(1, (L1 * L1 + d * d - L2 * L2) / (2 * L1 * d))));
+  const a1 = base + codo * al, e = [sh[0] + Math.sin(a1) * L1, sh[1] + Math.cos(a1) * L1];
+  return [(a1 * 180) / Math.PI, (Math.atan2(tx - e[0], ty - e[1]) * 180) / Math.PI];
+};
+const TORSO_A = -6;
+/** Quien asegura: mira a la pared; mano guía (izquierda, detrás) en la cuerda que sube; mano de FRENO (derecha, delante) SIEMPRE
+ *  en la cuerda por debajo del aparato; el resto de la cuerda cae a una madeja enroscada en el suelo. `dy` = la levanta la frenada. */
+export const Asegura: React.FC<{ dy?: number; cara?: Cara }> = ({ dy = 0, cara = "normal" }) => {
+  const hip = { x: ASE.x, y: ASE.y + dy }, ap = APARATO(dy);
+  const sh: [number, number] = [Math.sin(((180 - TORSO_A) * Math.PI) / 180) * 88, Math.cos(((180 - TORSO_A) * Math.PI) / 180) * 88];
+  const sube = { x: xF(CHAPAS[0]) - 6, y: CHAPAS[0] + 54 }, k = 70 / Math.hypot(sube.x - ap.x, sube.y - ap.y);
+  const guia = { x: ap.x + (sube.x - ap.x) * k, y: ap.y + (sube.y - ap.y) * k };
+  const freno = { x: ap.x + 10, y: ap.y + 14 };
+  const brazoB = ik(sh, guia.x - hip.x, guia.y - hip.y, -1), brazoA = ik(sh, freno.x - hip.x, freno.y - hip.y, 1);
+  const pila = { x: ASE.x + 120, y: SUELO - 8 };
+  const sale = `M${freno.x} ${freno.y} C${freno.x + 30} ${freno.y + 70} ${pila.x - 40} ${pila.y - 90} ${pila.x - 10} ${pila.y - 14}`;
+  const rizos = Array.from({ length: 7 }, (_, i) => ({ cx: pila.x + (random(`rz${i}`) - 0.5) * 50, cy: pila.y - i * 5, rx: 62 - i * 3 + random(`rw${i}`) * 10, ry: 16 + random(`rh${i}`) * 4, r: (random(`rr${i}`) - 0.5) * 16 }));
+  const cuerda = (d: string, w = 10) => <><path d={d} stroke={C.cuerdaS} strokeWidth={w + 4} fill="none" strokeLinecap="round" /><path d={d} stroke={C.cuerda} strokeWidth={w} fill="none" strokeLinecap="round" /></>;
+  return (
+    <g>
+      {/* madeja enroscada en el suelo */}
+      <ellipse cx={pila.x} cy={pila.y + 8} rx={80} ry={16} fill="#1F2328" opacity={0.6} />
+      {rizos.map((z, i) => <g key={i} transform={`rotate(${z.r} ${z.cx} ${z.cy})`}><ellipse cx={z.cx} cy={z.cy} rx={z.rx} ry={z.ry} fill="none" stroke={C.cuerdaS} strokeWidth={13} /><ellipse cx={z.cx} cy={z.cy} rx={z.rx} ry={z.ry} fill="none" stroke={C.cuerda} strokeWidth={9} /></g>)}
+      <Escalador x={hip.x} y={hip.y} quien="simon" angulos={{ torso: TORSO_A, cabeza: -32, brazoA, brazoB, piernaA: [12, 0], piernaB: [-10, 0] }} cara={cara} aspecto={ASEG} mira={1} sombra={SUELO} />
+      {/* cuerda de freno: del aparato, por dentro del puño derecho, hasta la madeja (encima del brazo para que se vea agarrada) */}
+      {cuerda(`M${ap.x} ${ap.y} L${freno.x} ${freno.y}`, 9)}
+      {cuerda(sale, 9)}
+      <rect x={ap.x - 12} y={ap.y - 10} width={22} height={26} rx={6} fill="#B8C0C8" stroke={PC.tinta} strokeWidth={4} />
+      <circle cx={freno.x} cy={freno.y} r={13} fill={ASEG.piel} stroke={PC.tinta} strokeWidth={4} />
+      <circle cx={guia.x} cy={guia.y} r={12} fill={ASEG.piel} stroke={PC.tinta} strokeWidth={4} />
+    </g>
+  );
+};
 
 /** Medidor de MIEDO (dato en pantalla, arriba). v 0–1. */
 export const Medidor: React.FC<{ v: number; o?: number }> = ({ v, o = 1 }) => (

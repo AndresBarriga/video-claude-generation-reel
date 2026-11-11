@@ -18,3 +18,5 @@ Llevas cuerda, pero para tu cerebro la cuerda es solo una idea; el vacío, en ca
 #escalada #miedoacaer #escaladadeportiva #rocodromo #climbing
 **Comentario fijado:** ¿Cuánto tardaste en soltarte la primera vez? ¿Y quién te aseguraba?
 **Envío (rótulo final):** «MÁNDASELO AL DEL "YA VOY"».
+
+- **v2 (11-nov, Andrés):** fallo gordo corregido: quien asegura lleva SIEMPRE la mano de freno (derecha) en la cuerda por debajo del aparato y la mano guía en la cuerda que sube (brazos por cinemática inversa, siguen la cuerda cuando la frenada la levanta); el resto de la cuerda cae a una madeja enroscada en el suelo. Mano del primer plano redibujada desde cero (`ManoCerca.tsx`): arqueo con nudillos en tienda, yemas con magnesio sobre el canto, pulgar bloqueando, uñas, tendones, vena y antebrazo. qa-final OK (-14,4 LUFS, pico -2,1 dBTP), 32,6 s.
