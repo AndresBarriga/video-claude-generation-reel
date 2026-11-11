@@ -24,3 +24,11 @@
 **Fuentes:** Petzl, «Fall factor and impact force – theory» (la severidad no depende de lo que caes; factor 0–2; caso 2: 2 m de cuerda, 4 m de caída = 2) y «Forces at work in a real fall» (rocódromo ≈ 0,3; factor 1 al salir de la reunión; el primer punto tras la reunión debe ser sólido; el desplazamiento del asegurador disipa energía).
 - https://www.petzl.com/INT/en/Sport/Fall-factor-and-impact-force---theory
 - https://www.petzl.com/INT/en/Operators/Forces-at-work-in-a-real-fall
+
+---
+## v4 (11-nov) — revisión propia del texto v3 con `viralidad.md`
+Fallos de v3: 3.ª persona («ella/él»: palanca 2 = 0; H12); el bucle se cerraba a los 4 s («no importa cuánto caes…» justo después de la pregunta); la «una cosa más» era una cautela plana; el cierre «¿cuánta cuerda tenías?» no se puede contestar (nadie lo sabe) → pocos comentarios; el caso de vía larga deja fuera al público de rocódromo.
+Cambios: «tú» en vía larga y «tu compañero» en deportiva; la respuesta se retrasa al s ~10; nuevo «una cosa más» para el rocódromo (Petzl: allí el peligro principal es el suelo); cierre con pregunta que invita a contar una historia; envío solo en rótulo.
+**Texto v4:**
+Te caes dos metros y la cuerda te para en seco. Tu compañero cae diez y le para suave. ¿Cómo puede ser? / Tú acabas de salir de la reunión de una vía larga, sin chapar nada todavía. Él va por la mitad de una deportiva. / La diferencia no es lo que caes: es la cuerda que tienes para frenarte. Tú, un metro. Él, veinte. / La cuerda es un muelle: cuanta más hay, más se estira y más suave te para. / Divide lo que caes entre esa cuerda. Tú: dos. Él: medio. Y dos es lo peor que existe en escalada. / Por eso, al salir de una reunión, el primer seguro importa tanto. / ¿Y en el rocódromo? Ahí el factor suele ser bajo: lo que pega es el suelo. / ¿Cuál ha sido la caída más seca que te has llevado?
+**Viralidad (mía): 13/14.** Falta: bucle adivinable para quien ya conoce el factor de caída.
