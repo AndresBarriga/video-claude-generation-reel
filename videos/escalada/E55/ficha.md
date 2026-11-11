@@ -18,3 +18,5 @@ Esto es free BASE: escalar en solo integral con un paracaídas de salto BASE por
 **Comentario fijado:** Dean Potter murió en 2015 volando con traje de alas en Yosemite (no fue haciendo free BASE). ¿Dónde pones tú el límite?
 
 - **v6 (10-nov 20:06):** abre con la foto real («SIN CUERDA · CON PARACAÍDAS»), corte a un escalador animado distinto («¿Y SI SE TE ESCAPA?»), tiempo bala con lupa, «Escalar así se llama free BASE», «El de la foto es Dean Potter», cierre «¿desde qué metro empezarías?». Montaje: mientras se dice «lo hizo en 2008… Eiger» solo salen fotos del Eiger.
+
+- **v7 (11-nov):** Andrés: el gancho con foto estática (v5/v6) no retiene. Se quita a Potter del s0 y se abre con la caída: primer plano de la mano → tirón y plano abierto cayendo (0,4 s) → anillo en la mochila + «CON PARACAÍDAS» → «¿TE DA TIEMPO?» + cronómetro. Voz: recorte del audio v6 (`voz-v6.mp3` = original): «Sin cuerda… y con un paracaídas a la espalda. ¿Te da tiempo a abrirlo?» (se quitan «Esto es real» y «Ahora imagina que se te escapa la mano»). 36,7 s. Pendiente: crítico y publicar.

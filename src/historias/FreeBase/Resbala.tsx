@@ -27,11 +27,12 @@ const Lupa: React.FC<{ x: number; y: number; o: number; f: number }> = ({ x, y, 
   );
 };
 
-export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
+export const Resbala: React.FC<P & { lupa?: boolean; gancho?: boolean }> = ({ d, pal, lupa, gancho }) => {
   const f = useCurrentFrame(), { fps } = useVideoConfig();
   // Tiempo bala: tras soltarse, la caída sigue a 1/10 de velocidad (sin congelar). tl = segundos reales de caída.
-  const fS = lupa ? -99 : Math.max(4, (pal("escapa") ?? 8) - 2), fC = lupa ? -99 : fS + 12;
-  const LENTO = 0.1, T0 = lupa ? 0.2 : 0; // la escena de la lupa sigue donde acabó el gancho (~4,5 s × 0,1)
+  const fS = lupa ? -99 : gancho ? 3 : Math.max(4, (pal("escapa") ?? 8) - 2), fC = lupa ? -99 : fS + 12;
+  const fPar = pal("paracaidas") ?? 40, fTi = pal("tiempo") ?? 85; // solo gancho
+  const LENTO = 0.1, T0 = lupa ? 0.35 : 0; // la escena de la lupa sigue donde acabó el gancho (~4,5 s × 0,1)
   const tl = T0 + Math.max(0, (f - (lupa ? 0 : fC)) / fps) * LENTO;
   const s = lupa ? 1 : interpolate(f, [fS, fC], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
   const ang = mezcla(s);
@@ -42,8 +43,10 @@ export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
   const lenta = f >= fC || !!lupa;
   const fL = pal("escalar") ?? 4, oL = lupa ? interpolate(f, [fL - 6, fL + 6], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.4)) }) : 0;
   const fF = pal("free") ?? d - 30;
-  const z = lupa ? 1.5 + f / d * 0.15 : interpolate(f, [0, fC, d], [1.9, 1.55, 1.75], clamp);
-  const foco = lupa ? [espalda[0] - 160, espalda[1] - 40] : [interpolate(s, [0, 1], [mano[0] - 40, hip[0]]), interpolate(s, [0, 1], [mano[1] + 120, hip[1] - 160])];
+  const z = lupa ? 1.5 + f / d * 0.15 : gancho ? interpolate(f, [0, fS, fC, fPar - 8, fPar + 10, d], [2.1, 2.1, 1.15, 1.2, 1.5, 1.56], { ...clamp, easing: Easing.inOut(Easing.cubic) }) : interpolate(f, [0, fC, d], [1.9, 1.55, 1.75], clamp);
+  const foco0 = [interpolate(s, [0, 1], [mano[0] - 40, hip[0]]), interpolate(s, [0, 1], [mano[1] + 120, hip[1] - 160])];
+  const kP = gancho ? interpolate(f, [fPar - 8, fPar + 10], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) }) : 0;
+  const foco = lupa ? [espalda[0] - 160, espalda[1] - 40] : [foco0[0] + (espalda[0] - 160 - foco0[0]) * kP, foco0[1] + (espalda[1] - 40 - foco0[1]) * kP];
   const sh = golpe(f, fS + 2, 18), giro = lenta ? Math.sin(f / 40) * 2 - (lupa ? 4 : f / d * 4) : 0;
   return (
     <>
@@ -54,14 +57,19 @@ export const Resbala: React.FC<P & { lupa?: boolean }> = ({ d, pal, lupa }) => {
           {(f >= fS || lupa) && Array.from({ length: 14 }).map((_, i) => { const a = lupa ? 1 : Math.min(1, (f - fS) / 14) * 0.35 + tl * 1.5, ang2 = random(`mg${i}`) * Math.PI * 2;
             return <circle key={i} cx={mano[0] + Math.cos(ang2) * a * 90} cy={mano[1] + Math.sin(ang2) * a * 60 + a * 40} r={6 + random(`mr${i}`) * 8} fill="#F4F6F8" opacity={Math.max(0, 0.8 - a * 0.5)} />; })}
           <Escalador x={hip[0]} y={hip[1]} rot={rot} quien="joe" s={SP} cara={s > 0.3 ? "miedo" : "esfuerzo"} aspecto={ESC} mochila={AZUL} pies={PIES} angulos={ang} />
+          {gancho && f >= fPar - 4 && <circle cx={espalda[0] - 30} cy={espalda[1]} r={125 + Math.sin(f / 3) * 6} fill="none" stroke="#F2C230" strokeWidth={9} opacity={Math.min(1, (f - fPar + 4) / 6)} />}
           {lupa && <Lupa x={espalda[0] - 300} y={espalda[1] - 120} o={oL} f={f} />}
           {lupa && oL > 0 && <path d={`M${espalda[0] - 40} ${espalda[1] - 100} L${espalda[0] - 180} ${espalda[1] - 200}`} stroke="#fff" strokeWidth={5} strokeDasharray="10 8" opacity={oL} />}
         </g>
         {lenta && <rect x={0} y={0} width={1080} height={1920} fill="#14233A" opacity={0.16} />}
       </Svg>
-      {!lenta && !lupa && <Etiqueta texto="¿Y SI SE TE ESCAPA?" desde={0} top={300} tam={100} />}
-      {lenta && <Etiqueta texto={lupa && f >= fF ? "FREE BASE" : "¿TE DA TIEMPO?"} desde={lupa ? (f >= fF ? fF : 0) : fC} top={300} tam={110} />}
-      {lenta && !(lupa && oL > 0.2) && <Etiqueta texto={`${tl.toFixed(1).replace(".", ",")} s`} desde={lupa ? 0 : fC + 4} top={440} tam={86} />}
+      {gancho && f < fTi && <Etiqueta texto="SIN CUERDA" desde={0} top={300} tam={112} />}
+      {gancho && f >= fPar - 4 && f < fTi && <Etiqueta texto="CON PARACAÍDAS" desde={fPar - 4} top={440} tam={96} />}
+      {gancho && f >= fTi && <Etiqueta texto="¿TE DA TIEMPO?" desde={fTi} top={300} tam={110} />}
+      {gancho && f >= fTi && <Etiqueta texto={`${tl.toFixed(1).replace(".", ",")} s`} desde={fTi + 4} top={440} tam={86} />}
+      {!gancho && !lenta && !lupa && <Etiqueta texto="¿Y SI SE TE ESCAPA?" desde={0} top={300} tam={100} />}
+      {!gancho && lenta && <Etiqueta texto={lupa && f >= fF ? "FREE BASE" : "¿TE DA TIEMPO?"} desde={lupa ? (f >= fF ? fF : 0) : fC} top={300} tam={110} />}
+      {!gancho && lenta && !(lupa && oL > 0.2) && <Etiqueta texto={`${tl.toFixed(1).replace(".", ",")} s`} desde={lupa ? 0 : fC + 4} top={440} tam={86} />}
     </>
   );
 };

@@ -18,7 +18,8 @@ import { Foto } from "./Foto";
 import { Repisa } from "./Repisa";
 const Cierre: React.FC<P> = (p) => <Pared {...p} cierre />;
 const LupaE: React.FC<P> = (p) => <Resbala {...p} lupa />;
-const ESCENAS: Record<string, React.FC<P>> = { real: Real, resbala: Resbala, lupa: LupaE, caida: CaidaG, fotos: Foto, pared: Pared, mochila: Mochila, arriba: Arriba, franja: Franja, foto: Foto, repisa: Repisa, cierre: Cierre };
+const GanchoE: React.FC<P> = (p) => <Resbala {...p} gancho />;
+const ESCENAS: Record<string, React.FC<P>> = { real: Real, resbala: GanchoE, lupa: LupaE, caida: CaidaG, fotos: Foto, pared: Pared, mochila: Mochila, arriba: Arriba, franja: Franja, foto: Foto, repisa: Repisa, cierre: Cierre };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const FreeBase: React.FC<{ datos: Datos }> = ({ datos }) => {
