@@ -25,8 +25,9 @@ import { Cuerda } from "./historias/Cuerda";
 import { Nanga } from "./historias/Nanga";
 import { Ferrata } from "./historias/Ferrata";
 import { FreeBase } from "./historias/FreeBase";
+import { Suelta } from "./historias/Suelta";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { ChatRechazo, Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Puerta, Pump, Rapel, Asegurador, Poleas, Everest, Cuerda, Nanga, Ferrata, FreeBase, Descanso, Grossglockner, Honnold, Poses: Poses as any };
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { ChatRechazo, Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Puerta, Pump, Rapel, Asegurador, Poleas, Everest, Cuerda, Nanga, Ferrata, FreeBase, Suelta, Descanso, Grossglockner, Honnold, Poses: Poses as any };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;

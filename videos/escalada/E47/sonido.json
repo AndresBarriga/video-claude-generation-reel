@@ -1,0 +1,17 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {"nombre": "viento", "inicio": {"escena": 0}, "volumen": 0.22, "bucle": true, "fundido": [0.05, 0.8]},
+  {"nombre": "grillos", "inicio": {"escena": 0}, "volumen": 0.16, "bucle": true, "fundido": [0.3, 0.8]},
+  {"nombre": "latido", "inicio": {"escena": 0}, "fin": {"escena": "cae", "palabra": "cayendo", "mas": 0.4}, "volumen": 0.5, "bucle": true, "bajoVoz": 0.2, "fundido": [0.1, 0.2]},
+  {"nombre": "zas", "inicio": {"escena": "cae", "palabra": "cayendo", "mas": 0.05}, "duracion": 0.7, "volumen": 0.85},
+  {"nombre": "crujido", "inicio": {"escena": "cae", "palabra": "cayendo", "mas": 0.5}, "duracion": 0.8, "volumen": 0.8, "ignoraSilencio": true},
+  {"silencio": true, "inicio": {"escena": "cae", "palabra": "cayendo", "mas": 0.6}, "duracion": 0.6},
+  {"nombre": "zas", "inicio": {"escena": "otra", "palabra": "una", "mas": -0.12}, "duracion": 0.5, "volumen": 0.6},
+  {"nombre": "crujido", "inicio": {"escena": "otra", "palabra": "una", "mas": 0.18}, "duracion": 0.5, "volumen": 0.6},
+  {"nombre": "zas", "inicio": {"escena": "otra", "palabra": "otra", "mas": -0.12}, "duracion": 0.5, "volumen": 0.6},
+  {"nombre": "crujido", "inicio": {"escena": "otra", "palabra": "otra", "mas": 0.18}, "duracion": 0.5, "volumen": 0.6},
+  {"nombre": "zas", "inicio": {"escena": "cierre", "palabra": "sueltas", "mas": 0.45}, "duracion": 0.6, "volumen": 0.5},
+  {"nombre": "pajaros", "inicio": {"escena": "cierre"}, "volumen": 0.2, "bucle": true, "fundido": [0.4, 0.6]}
+ ]
+}
