@@ -1,0 +1,85 @@
+{
+ "id": "E41",
+ "titulo": "Factor de caída: la caída corta que pega más",
+ "nicho": "escalada",
+ "plantilla": "Factor",
+ "verificado": true,
+ "fuentes": [
+  "https://www.petzl.com/INT/en/Sport/Fall-factor-and-impact-force---theory (la severidad no depende de lo que caes sino del factor; factor entre 0 y 2 en escalada; caso 2 m de cuerda y 4 m de caída = 2)",
+  "https://www.petzl.com/INT/en/Operators/Forces-at-work-in-a-real-fall (rocódromo ≈ 0,3 y allí el peligro principal es el suelo; factor 1 al salir de la reunión; el primer punto tras la reunión debe ser sólido)"
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "texto": "Te caes dos metros y la cuerda te para en seco. Tu compañero cae diez y le para suave. ¿Cómo puede ser?"
+  },
+  {
+   "tipo": "texto",
+   "visual": "donde",
+   "texto": "Tú acabas de salir de la reunión de una vía larga, sin chapar nada todavía. Él va por la mitad de una deportiva."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cuerda",
+   "texto": "La diferencia no es lo que caes: es la cuerda que tienes para frenarte. Tú, un metro. Él, veinte."
+  },
+  {
+   "tipo": "texto",
+   "visual": "muelle",
+   "texto": "La cuerda es un muelle: cuanta más hay, más se estira y más suave te para."
+  },
+  {
+   "tipo": "texto",
+   "visual": "factor",
+   "texto": "Divide lo que caes entre esa cuerda. Tú: dos. Él: medio. Y dos es lo peor que existe en escalada."
+  },
+  {
+   "tipo": "texto",
+   "visual": "seguro",
+   "texto": "Por eso, al salir de una reunión, el primer seguro importa tanto."
+  },
+  {
+   "tipo": "texto",
+   "visual": "rocodromo",
+   "texto": "¿Y en el rocódromo? Ahí el factor suele ser bajo: lo que pega es el suelo."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "¿Cuál ha sido la caída más seca que te has llevado?"
+  }
+ ],
+ "frases": [
+  4,
+  7,
+  4,
+  4,
+  3,
+  11,
+  4,
+  8,
+  7,
+  7,
+  1,
+  2,
+  1,
+  1,
+  5,
+  3,
+  8,
+  7,
+  1,
+  1,
+  1,
+  1,
+  9,
+  7,
+  5,
+  4,
+  6,
+  3,
+  3,
+  11
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {"nombre": "viento", "inicio": {"escena": 0}, "volumen": 0.26, "bucle": true, "fundido": [0.05, 0.8]},
+  {"nombre": "zas", "inicio": {"escena": "gancho", "palabra": "seco", "mas": -0.65}, "duracion": 0.6, "volumen": 0.8},
+  {"nombre": "golpe", "inicio": {"escena": "gancho", "palabra": "seco", "mas": -0.02}, "duracion": 0.5, "volumen": 0.9, "ignoraSilencio": true},
+  {"silencio": true, "inicio": {"escena": "gancho", "palabra": "seco", "mas": 0.1}, "duracion": 0.4},
+  {"nombre": "zas", "inicio": {"escena": "gancho", "palabra": "suave", "mas": -1.47}, "duracion": 1.2, "volumen": 0.7},
+  {"nombre": "crujido", "inicio": {"escena": "gancho", "palabra": "suave", "mas": -0.1}, "duracion": 1.0, "volumen": 0.6},
+  {"nombre": "golpe", "inicio": {"escena": "muelle", "palabra": "estira", "mas": 0.2}, "duracion": 0.4, "volumen": 0.7},
+  {"nombre": "crujido", "inicio": {"escena": "muelle", "palabra": "estira", "mas": 0.1}, "duracion": 1.2, "volumen": 0.55},
+  {"nombre": "clic", "inicio": {"escena": "factor", "palabra": "tu"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "factor", "palabra": "medio"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "seguro", "palabra": "primer", "mas": 0.05}, "duracion": 0.4, "volumen": 0.8},
+  {"nombre": "zas", "inicio": {"escena": "rocodromo", "palabra": "suelo", "mas": -0.85}, "duracion": 0.5, "volumen": 0.6},
+  {"nombre": "golpe", "inicio": {"escena": "rocodromo", "palabra": "suelo", "mas": -0.3}, "duracion": 0.4, "volumen": 0.5}
+ ]
+}
