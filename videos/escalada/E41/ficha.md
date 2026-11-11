@@ -12,8 +12,13 @@
 **Descripción:**
 Te caes dos metros y te para en seco. Tu compañero cae diez y le para suave. 🤯
 
-No depende de cuánto caes, sino de cuánta cuerda tienes para frenarte: es el factor de caída (lo que caes ÷ la cuerda que hay entre tú y quien te asegura). En escalada va de 0 a 2, y el 2 aparece al salir de una reunión sin chapar nada. En el rocódromo suele ser bajo: allí lo peligroso es el suelo. Apréndelo con alguien que sepa.
+No depende de cuánto caes, sino de cuánta cuerda tienes para frenarte: es el factor de caída (lo que caes ÷ la cuerda que hay entre tú y quien te asegura). En escalada va de 0 a 2, y el 2 aparece al salir de una reunión sin chapar nada. En el rocódromo suele ser bajo: allí lo peligroso es el suelo.
+
+Y sí: también cuenta mucho cuánta cuerda floja te dejan y si quien asegura dinamiza (ese saltito que acompaña el tirón). En una reunión, quien asegura está anclado y casi no puede. Apréndelo con alguien que sepa.
 
 #escalada #factordecaida #vialarga #escaladadeportiva #rocodromo
-**Comentario fijado:** ¿Cuál ha sido la caída más seca que te has llevado? ¿Dónde fue?
+**Comentario fijado:** ¿Tu asegurador salta con el tirón o te para en seco? Y la caída más seca que te has llevado, ¿dónde fue?
+**Respuesta preparada (a «falta la cuerda floja / el asegurador dinámico»):** «Totalmente: el saltito de quien asegura disipa energía y la frenada es más suave (Petzl lo mide). En la reunión está anclado y casi no puede: por eso pega tanto. ¿Hacemos un vídeo solo de asegurar dinámico?»
 **Envío (rótulo final):** «MÁNDASELO A TU CORDADA».
+
+- **v2 (11-nov, Andrés):** en los comentarios saldrá «cuánta cuerda te dejan» y «si el asegurador dinamiza». No se mete en voz (un mensaje); en la cueva, la aseguradora da un saltito visible al frenar con rótulo «DINAMIZA ↑» y la cámara se abre para verla; en la reunión, la tuya está anclada (contraste). Descripción y comentario fijado lo recogen; respuesta preparada. Posible vídeo siguiente: asegurar dinámico (enlaza con E49).
