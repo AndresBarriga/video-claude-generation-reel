@@ -1,5 +1,5 @@
 # E47 — ficha · Miedo 2 «Llevas cuerda. Tu cerebro no lo sabe»
-- **Estado:** producido con voz (Danny, 11-nov), 31,8 s, qa-final OK (-15,x LUFS tras loudnorm). Andrés no estará disponible los próximos días: publicar programado (sáb 14-nov ~21:30 propuesto).
+- **Estado:** producido con voz (Danny, 11-nov), 31,8 s, qa-final OK (-15,4 LUFS, pico -1,8 dBTP). Andrés no estará disponible los próximos días: publicar programado (sáb 14-nov ~21:30 propuesto).
 - **Formato:** cuerpo-por-dentro (secuela de E11 «Miedo»), el espectador dentro («tú»). Plantilla nueva `Suelta`, una escena por archivo.
 - **Escenario nuevo (pedido de Andrés: «que no sea igual que todos»):** cueva desplomada de caliza al anochecer tipo Rodellar: techo de roca, chorreras ocres, boca abierta a un cañón con río, cielo azul de última hora; caídas al aire. Reparto nuevo: él (camiseta petróleo, casco crema, pelo rizado pelirrojo); ella asegura (chaqueta teja, gorro mostaza, coleta, gafas).
 - **Idea visual:** la cuerda naranja es lo único cálido; en el primer plano está desenfocada al fondo; en «es una idea» se vuelve gris discontinua; el medidor de MIEDO solo baja cayendo (95 → 80 → 58 → 36 → casi 0).
