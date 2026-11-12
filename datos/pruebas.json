@@ -250,5 +250,32 @@
   "calidad": 3,
   "coste": 1,
   "limites": "n=1. Mezcla tema, gancho y comparación del mismo paso; E43/E44 y el nudo la afinan (un cambio por vídeo)."
+ },
+ "H14": {
+  "texto": "Seguridad/cuerpo con cuerda y situación reconocible: ≥ 1,5 seg./1k y ≥ 8K vistas a 7 d",
+  "videos": [
+   "E41",
+   "E47"
+  ],
+  "ventana": 168,
+  "refuta_si": [
+   {
+    "m": "segk",
+    "op": "<",
+    "v": 1.5
+   },
+   {
+    "m": "vistas",
+    "op": "<",
+    "v": 8000
+   }
+  ],
+  "modo": "todos",
+  "importa": "Decide si el pilar principal de la cuenta es seguridad/cuerpo con cuerda para nivel medio (lo que pide la audiencia en historias).",
+  "decide": "Reparto de producción: cuánto pilar seguridad/cuerpo frente a dilemas",
+  "impacto": 5,
+  "calidad": 3,
+  "coste": 1,
+  "limites": "n pequeño; E46 puede ser un caso aislado; el gancho mezcla efecto de tema y de apertura."
  }
 }

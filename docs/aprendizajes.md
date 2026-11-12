@@ -17,6 +17,7 @@ Solo una reforzada puede pasar a `docs/viralidad.md` (y Andrés lo aprueba). Dat
 | H6 | La nota del crítico no predice el rendimiento; sirve para encontrar fallos | E6 (7/10 → plano) | — (E15 sin nota) | Correlación clara nota ↔ seguidores con ≥ 8 vídeos | abierta |
 | H12 | Rinde más lo que le pasa al espectador (su decisión, su cuerpo) que lo que le pasó a otro | E15 (decisión propia, 203K), E11 (su cuerpo, 66K, 2,03 seg./1k), E35 («tú», 34,6K a 39 h; frente a E35B en 3.ª persona: skip 20,3 vs 22,7 %, meseta 55 vs 47 %) | E14 (historia ajena, 5K), E36 (historia ajena, 6K) | Un vídeo «tuyo» (E35 o el próximo cuerpo) < 10K vistas a 48 h, o una historia ajena sin «tú» > 30K | no refutada (E35 > 10K); falta el próximo cuerpo |
 | H13 | La información/técnica limpia con comparación del mismo paso se retiene y se envía | Referencia @escaladatips (580 «me gusta», 229 envíos); Pierna de Elvis (cuerpo + truco, 66K) | Honnold (5K) y Hippies y avión (6K) eran información con gancho flojo | La puerta (E42): skip ≤ 25 %, ≥ 5 envíos/1k y ≥ 1 seg./1k a 48 h | a 17 h va a refutarse: skip 27,2 %, 0,55 env./1k, 0,55 seg./1k, 1,8K plano; gancho flojo (cierra a 48 h) |
+| H14 | Seguridad/cuerpo **con cuerda** y situación reconocible o caso real (nivel medio) es el formato que más seguidores trae en bruto: alcance medio-alto y ≥ 2,5 seg./1k | E46 (73K, 229 seg., 3,1/1k), E11 (77K, 199, 2,6), E43 (27,5K, 141, 5,1), E52 (3,2/1k) | E49 (1,6/1k), E39/E42 (poco alcance) | E41 y E47 < 1,5 seg./1k o < 8K vistas a 7 d | abierta (prueban E41, E47) |
 
 ## Cómo se actualiza
 Tras cada medición a 7 días: añadir el vídeo a «a favor»/«en contra» de las hipótesis que toque, cambiar estado si procede y anotar hipótesis nuevas. Proponer el cambio a Andrés antes de tocar `viralidad.md`.
@@ -35,3 +36,10 @@ Seguidores/1k vistas: Pump 5,1 · Beta 3,5 · Poleas 3,2 · Descansos 2,9 · Mie
 - **H12:** matiz. «Tuyo» no basta: Poleas y Descansos son del cuerpo del espectador y se quedan en 2–5k. Decide el gancho/momento reconocible.
 - **Correlación (Spearman, n=11):** vistas ↔ visto medio/duración **+0,75** (la única que aguanta con n=11); vistas ↔ skip −0,53; el resto |ρ|<0,4 (ruido). Seguidores/1k baja cuando sube el alcance (−0,39: H3). Comentarios: solo Grossglockner pasa de 0,1 % (0,3 %).
 - Cautelas: Insights de IG pueden estar sin actualizar; envíos/likes/guardados convertidos de % (aprox.); «Bandera» asumida = La puerta; «19m» de Último pegue leído como 19 seguidores.
+
+## 2026-11-12 · Medición 2.ª tanda + historias del hito 1.000
+- **H1 reforzada:** E15 250K, E35 38,5K, E54 38K (≥ 20K) → 3 a favor. Los dilemas dan alcance.
+- **H3 reforzada (otra vez):** dilema/historia ajena convierte poco: E15 0,4, E35 0,5, E55 0,5 seg./1k; E54 algo mejor (1,7) por ser del mundo escalador. **Fuera de nicho no** (E55 free BASE: 6 seg. en 12K; E36, E14).
+- **H7 → amplía a H14:** cuerpo y seguridad con cuerda son lo que más hace crecer la cuenta (E46, E11, E43 = 569 de los seguidores medidos). La info/consejo sin gancho fuerte convierte (≈3/1k) pero alcanza poco (E52, E44, E39, E42): el gancho decide el alcance.
+- **Audiencia (historias, n≈70):** 79 % cuerda, 75 % hasta 6b+; en la caja de preguntas ≈9/13 piden miedo a caer / confianza en la cuerda. Encaja con H14.
+- Sin datos nuevos: H2, H4, H5, H8, H9, H11, H6. Falta la medición de E56 (ferrata) y confirmar hora de subida de E49.
