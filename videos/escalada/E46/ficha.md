@@ -31,3 +31,6 @@ Apertura con zoom al extremo de la cuerda; caída de 15 m grande con cámara que
 11.913 vistas, 8.255 espectadores, 31 s de media sobre 45 (≈69%), skip 20,6% (el mejor de la cuenta), 34 seguidores, 44 guardados, 249 me gusta, 13 reposts, 1 comentario. ≈3x un reel típico y subiendo. 81% llega por la pestaña Reels (público frío).
 **Lectura de la curva:** 100→≈83% a 3 s (gancho de la cuenta atrás funciona), meseta ≈72% de 0:10 a 0:18 (el caso retiene sin pérdida), bajada suave a ≈60% en 0:26 y ≈50% en 0:43 (zona Gobright→regla), caída final solo en los últimos 2 s. Picos de me gusta: gancho, 0:19 («en directo por TikTok» = el dato que la gente ya conoce) y el cierre del nudo.
 **Lo débil:** comentarios 0,0% y guardados/me gusta por espectador por debajo de lo típico; seguidores 0,29% de las vistas. Falta un mecanismo de envío hablado o en pantalla («mándaselo a quien baja contigo»).
+
+## Resultado (12-nov 11:15, ~6,5 d)
+73K vistas, 52K espectadores, visto medio 31 s de 45, **229 seguidores (3,1/1k)**, 1,3K likes, 245 guardados, 67 reposts, 26 comentarios. El mejor de la 2.ª tanda en seguidores: caso real + seguridad útil convierte.

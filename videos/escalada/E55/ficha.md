@@ -21,3 +21,7 @@ Esto es free BASE: escalar en solo integral con un paracaídas de salto BASE por
 
 - **v7 (11-nov):** Andrés: el gancho con foto estática (v5/v6) no retiene. Se quita a Potter del s0 y se abre con la caída: primer plano de la mano → tirón y plano abierto cayendo (0,4 s) → anillo en la mochila + «CON PARACAÍDAS» → «¿TE DA TIEMPO?» + cronómetro. Voz: recorte del audio v6 (`voz-v6.mp3` = original): «Sin cuerda… y con un paracaídas a la espalda. ¿Te da tiempo a abrirlo?» (se quitan «Esto es real» y «Ahora imagina que se te escapa la mano»). 36,7 s. Pendiente: crítico y publicar.
 - **v7b (11-nov):** montaje de fotos sin repetidas: highline (Taft Point) → escalando con su perro → traje de alas → techo B/N → granito → Eiger vertical solo en «hizo… dos mil ocho… Eiger» (fuera el fotograma del Eiger, casi igual a la vertical). Las dos fotos nuevas las aporta Andrés; las apaisadas van a lo ancho sobre fondo desenfocado. 36,8 s, -15,3 LUFS, qa-final OK. **Aprobado por Andrés: publicar hoy.**
+
+## Resultado (12-nov 11:15, ~14 h; subida aprox. 11-nov 21:15)
+12,4K vistas, 9K espectadores, visto medio 23 s de 36, **6 seguidores (0,5/1k)**, 306 likes, 23 guardados, 6 reposts, 2 comentarios. Todas las tasas por debajo de lo típico (like 3,3 %, envíos 0,3 %, guardados 0,2 %, comentarios 0,0 %); skip 23,8 % (lower = bien). Vistas en línea con el típico a 14 h.
+**Curva (0:36):** ≈85 % a 3 s, ≈63 % a 9 s, meseta ≈51-53 % de 20 a 33 s, caída final a ≈30 %. Retiene, pero no convierte: el free BASE atrae público que no escala.

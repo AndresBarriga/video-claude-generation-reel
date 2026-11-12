@@ -31,5 +31,42 @@
   "seguidores": 704,
   "seguidores_netos": 547,
   "nota": "Pestaña Home de Insights. Visualizaciones 284K→491K frente al 2-nov; seguidores 297→704. La curva muestra el pico del 28-oct y una subida al final. Herramienta Monetización visible en el panel (sin comprobar elegibilidad)."
+ },
+ "historias_2026-11-11": {
+  "contexto": "Hito de 1.000 seguidores (11-nov tarde). 4 historias; datos a 12-nov 11:15.",
+  "vistas": {
+   "1_hito_foto": 376,
+   "2_encuesta_grado": 325,
+   "3_encuesta_disciplina": 302,
+   "4_caja_preguntas": 286
+  },
+  "grado": {
+   "Hasta 5+": 16,
+   "6a-6b+": 38,
+   "6c-7a+": 12,
+   "7b o más": 6,
+   "total": 72
+  },
+  "disciplina": {
+   "Bloque": 14,
+   "Cuerda": 54,
+   "total": 68
+  },
+  "caja_preguntas": [
+   "Por dónde empiezo",
+   "No sé caer (se ha caído 1-2 veces, de lado)",
+   "La confianza en la cuerda",
+   "Superar el miedo",
+   "La ciencia detrás de la técnica: cómo reacciona el cerebro a caídas, lesiones",
+   "Gestión del miedo",
+   "Aumentar la confianza con grados que no maneja",
+   "Trabajar la mente después de un mal vuelo",
+   "Volar",
+   "Gestionar miedos y ver por dónde va la vía; historia, evolución y curiosidades de la escalada",
+   "Estructurarse para ir perdiendo el miedo en deportiva",
+   "Escalar desplomes (cuerda y bulder)",
+   "Técnica"
+  ],
+  "lectura": "~22 % de quien ve la historia vota. 79 % cuerda; 75 % hasta 6b+ (nivel iniciación-medio). En la caja domina el miedo a caer/confianza en la cuerda (≈9 de 13)."
  }
 }

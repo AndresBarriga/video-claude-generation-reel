@@ -16,3 +16,7 @@ Nanga Parbat, invierno de 2018. Elisabeth Revol baja sola a buscar ayuda y dos a
 ## Resultado (10-nov ~10:30, ≈13 h; hora de subida supuesta)
 13K vistas, 8,5K espectadores, visto medio 37 s de 58 (64 %), skip 24,6 %, 23 seguidores (1,8/1k), envíos 1 % (≈10/1k), me gusta 6,7 %, guardados 0,9 %, reposts 0,2 %, comentarios 0,1 %.
 **Curva:** 80 % a los 3 s, 67 % a los 10 s, 56 % desde el s 20 y plana hasta el final. Se pierde casi todo en los primeros 20 s (gancho + escenas 2–4, de 7–10 s sin cambio visual según `npm run qa`); quien pasa el s 20 se queda hasta el cierre. Comentarios bajos (0,1 %).
+
+## Resultado (12-nov 11:15, ~2,6 d)
+38K vistas, 24,5K espectadores, visto medio 38 s de 58, 64 seguidores (1,7/1k), 1,7K likes, 196 guardados, 34 reposts, 28 comentarios. Tasas: skip 24,1 % (lower = bien), like 7,1 %, guardados 0,8 %, reposts y comentarios 0,1 % (higher); envíos 0,8 % (lower). Vistas ~2x un reel típico y subiendo.
+**Curva (0:58):** caída inicial moderada (≈75 % a 4 s), ≈62 % a 15 s y **meseta ≈52 % de 25 a 55 s** (la historia retiene hasta el final); caída final a ≈38 %. Muy buena retención de historia larga; el punto débil es que se comparte poco.

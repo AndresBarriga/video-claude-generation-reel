@@ -20,3 +20,6 @@ Mándaselo a quien escala contigo.
 
 **Comentario fijado**
 ¿Cuál es la mayor diferencia de peso con la que has asegurado? 👇
+
+## Resultado (12-nov 11:15; subida supuesta 10-nov 21:30)
+25,6K vistas, 18,7K espectadores, visto medio 17 s de 25 (68 %), 42 seguidores (1,6/1k), 494 likes, 111 guardados (0,6 %, altos), 5 reposts, 3 comentarios. Corto y útil: se guarda, pero convierte poco a seguidor. Sin curva en la captura.

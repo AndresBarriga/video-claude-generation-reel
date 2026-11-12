@@ -37,3 +37,17 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 - 284 K visualizaciones, 186,9 K espectadores, +78 seguidores netos (231 en total, +51 %), 17 K interacciones, 510 visitas al perfil, 0 toques al enlace. 99,4 % de lo que se ve es de no seguidores: el crecimiento es 100 % algoritmo.
 - Audiencia (seguidores): hombres 93,9 %; 25–34 años 53 %, 35–44 22,7 %, 18–24 16,7 %. Países: España 34,6 %, Chile 21,8 %, México 11,5 %, Colombia 7,7 %, Ecuador 5,1 % (≈46 % Latinoamérica). Seguidores más activos de tarde-noche (pico ~21 h CET).
 - Ratio de envíos: E11 1,3 % · E15 0,55 % · E14 0,56 % · E36 0,45 % · E30 0,25 % · E6 0,14 %.
+
+## Medición 12-nov 11:15 (2.ª tanda)
+| Vídeo | Edad | Vistas | Visto | Seg. | Seg./1k | Guard. | Nota |
+|---|---|---|---|---|---|---|---|
+| E46 ¿Llega tu cuerda? | 6,5 d | 73K | 31/45 s | 229 | 3,1 | 245 | el que más crece la cuenta |
+| E54 Revol y Mackiewicz | 2,6 d | 38K | 38/58 s | 64 | 1,7 | 196 | meseta 52 % hasta el final; se comparte poco |
+| E49 OHM (24 kg) | ~1,6 d* | 25,6K | 17/25 s | 42 | 1,6 | 111 | *subida supuesta |
+| E52 Cuerda detrás de la pierna | 3,6 d | 14,3K | 17/32 s | 45 | 3,2 | 65 | convierte bien, poco alcance |
+| E55 Free BASE | 14 h | 12,4K | 23/36 s | 6 | 0,5 | 23 | público no escalador |
+
+## Historias del hito 1.000 (11-nov) · datos en `datos/cuenta.json`
+- Vistas 376 → 325 → 302 → 286. Votan ~22 % de quienes ven.
+- **Disciplina:** cuerda 79 % (54), bloque 21 % (14). **Grado:** hasta 5+ 22 %, 6a–6b+ 53 %, 6c–7a+ 17 %, 7b+ 8 % (n=72).
+- **Caja (13 respuestas):** domina el miedo a caer y la confianza en la cuerda (≈9/13); también desplomes, técnica, por dónde empezar, historia de la escalada.
