@@ -3,6 +3,11 @@ Todas las ideas de antes siguen aquí, sin borrar nada (el original íntegro est
 
 Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea · Descartada) y la **hipótesis** de `docs/aprendizajes.md` que prueba o con la que encaja. Vistas = última medición de `datos/publicados.csv`.
 
+## 12-nov · Filtro tras la 2.ª tanda (ver `docs/decisiones.md`)
+- **Matadas:** historias de cultura (Lynn Hill, Güllich, Sharma, rocódromos, campus board) · serie «La mano por dentro» como serie (lo útil va a «tendón vs músculo») · técnica limpia sin situación (drop knee, talón, carga, pisar, tensión, Kilter, trucos; salvo desplomes desde «me revientan») · micro · Aron Ralston · E34 · humor salvo «el ocho apretado» · público que no escala (BASE, ferrata).
+- **Aparcadas:** dinero (según pies de gato) · E3 · España · cuenta en inglés.
+- **Prioridad:** miedo/caídas (caja de preguntas) · seguridad con cuerda y caso · cuerpo con situación · dilemas de escalada/montaña.
+
 ## Mapa (estado + hipótesis)
 | Zona | Idea | Estado | Hipótesis |
 |---|---|---|---|

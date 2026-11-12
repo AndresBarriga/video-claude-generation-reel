@@ -29,3 +29,11 @@ Contexto: E15 189K vistas / 134K espectadores → 62 seguidores (0,05 %). Llega 
 - **Cierre de cada vídeo de la serie** anuncia el siguiente («En la próxima: …») → motivo para seguir.
 - **Comentarios (regla en cada publicación)**: pie de foto con pregunta que obligue a elegir bando (nunca «¿qué opináis?»); Andrés responde a todos en la primera hora, preferiblemente con otra pregunta; fijar el comentario más polémico; dejar en el vídeo un detalle discutible que invite a opinar o corregir. Ojo: según Instagram pesan más tasa de saltos y envíos; los comentarios son consecuencia del dilema, no sustituto.
 - **Reels de prueba / versiones**: solo de vídeos con ≥3× la media de la cuenta (hoy solo E15). Cada versión cambia de verdad los primeros 3 s (escena de apertura + rótulo + música; mejor si cambia la primera frase), no solo el rótulo, por la detección de duplicados. Primero 1 versión de E15 cuando el original baje de ~5K vistas/día; si se distribuye bien, 1 por semana. En vídeos nuevos: 2–3 aperturas como prueba, gana la de menor tasa de saltos y mayor % visto a 48 h.
+
+## Plan de contenido 12-nov → ~3-dic (vigente)
+Base: H14 (seguridad/cuerpo con cuerda = más seguidores), H1/H3 (dilemas = alcance, convierten poco), historias del hito 1.000 (79 % cuerda, 75 % ≤6b+, piden miedo a caer). Reparto ≈60 % seguridad/miedo · 25 % dilema de escalada/montaña · 15 % prueba. Fuera de nicho, no (E55 0,5/1k; E56 archivado, ~2,6K).
+- **Semana 1 (ya producidos):** sáb 14 E47 Miedo 2 · lun 16 E41 Factor de caída · mié 18 E53 Hall y Sharp · vie 20 Pies de gato (prueba zona dinero).
+- **Producir ya para semana 2:** «No sé caer» (cómo caer bien; de la caja) · Kalymnos, la segunda cinta (caso real con fuente, ver ideas) · ¿Cuánto aguanta tu cuerda/cinta/mosquetón? · Ochoa de Olza (dilema, español).
+- **Semana 3:** Volver a escalar tras un mal vuelo · Desconocido sin nudo (dilema social) · Tendón vs músculo · Por qué encadenas dentro y no fuera · El ocho apretado.
+- Cada vídeo que responda a la caja de preguntas → historia con la respuesta original + el reel.
+- **Revisión** tras medir E47 y E41 a 7 d: si ambos < 1,5 seg./1k o < 8K vistas, H14 cae y se reequilibra hacia dilemas.
