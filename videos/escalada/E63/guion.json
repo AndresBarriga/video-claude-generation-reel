@@ -1,0 +1,97 @@
+{
+ "id": "E63",
+ "titulo": "Pies de gato: 180 € para sufrir",
+ "nicho": "escalada",
+ "plantilla": "Gatos",
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "compra",
+   "texto": "Te gastas ciento ochenta euros en unos zapatos que sabes que te van a hacer daño."
+  },
+  {
+   "tipo": "texto",
+   "visual": "pone",
+   "texto": "Te los pones… y ya sabes que te has equivocado.",
+   "pausa": 0.4
+  },
+  {
+   "tipo": "texto",
+   "visual": "porque",
+   "texto": "¿Por qué lo hacemos? Porque escalas sobre cantos minúsculos,"
+  },
+  {
+   "tipo": "texto",
+   "visual": "hueco",
+   "texto": "y para pisarlos no puede quedar hueco dentro del gato.",
+   "pausa": 0.4
+  },
+  {
+   "tipo": "texto",
+   "visual": "machacado",
+   "texto": "Pero ajustado no es machacado."
+  },
+  {
+   "tipo": "cifra",
+   "visual": "estudio",
+   "texto": "En un estudio, nueve de cada diez escaladores escalaban con dolor de pies.",
+   "fuente": "McHenry et al., The Foot (2015) · 56 escaladores",
+   "cifra": "9 de 10",
+   "etiqueta": "con dolor de pies al escalar"
+  },
+  {
+   "tipo": "texto",
+   "visual": "nadie",
+   "texto": "Y no hace falta: nadie ha demostrado que sufrir más pise mejor."
+  },
+  {
+   "tipo": "texto",
+   "visual": "peor",
+   "texto": "Si te duelen tanto que no quieres pisar, escalas peor."
+  },
+  {
+   "tipo": "texto",
+   "visual": "largas",
+   "texto": "Así que justos, sí. Y para vías largas, cómodos."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "Y tú, con tus ciento ochenta euros… quitándotelos nada más bajar."
+  }
+ ],
+ "frases": [
+  16,
+  3,
+  7,
+  4,
+  5,
+  10,
+  2,
+  3,
+  3,
+  10,
+  4,
+  6,
+  2,
+  8,
+  2,
+  2,
+  1,
+  1,
+  4,
+  1,
+  2,
+  5,
+  4
+ ],
+ "frasesManual": true,
+ "verificado": true,
+ "fuentes": [
+  "McHenry RD, Arnold GP, Wang W, Abboud RJ. Footwear in rock climbing: Current practice. The Foot 25(3):152-158, 2015 (56 escaladores; 55 con calzado mal ajustado; dolor de pies al escalar en el 91 %; ~4 tallas UK menos). https://www.pubmed.gov/26261058/",
+  "Univ. de Dundee, nota de prensa 2015: https://app.dundee.ac.uk/news/2015/rock-climbers-consistently-risking-injury-and-pain-to-maximise-performance.php",
+  "BMC, «Climbing shoes: is pain insane?»: no hay estudios conocidos que demuestren que forzar los dedos mejore el rendimiento; lo necesario es que no quede espacio muerto. https://thebmc.co.uk/en/climbing-shoes-is-pain-insane",
+  "Climbing.com (How to choose, fit and break in): si aprietan demasiado, apenas cargas los pies por el dolor. REI: gatos demasiado apretados impiden pisar cantos pequeños.",
+  "Moneda de 1 €: 2,33 mm de grosor, 23,25 mm de diámetro (BCE)."
+ ]
+}

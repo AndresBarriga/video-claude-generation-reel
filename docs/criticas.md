@@ -18,3 +18,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 
 | 2026-11-16 | E60 v3 «No agarres nada» | propuesta | 7,5 | escena de la pared enfriaba tras el dedo (reordenado cinta→pared→cuerda); «manos delante» podía leerse como brazos rígidos; cierre «manos quietas» ambiguo — aplicado |
 | 2026-11-17 | E62 «Tu grigri frena solo… si le dejas» | propuesta | 6,5 (7,5 con cambios) | la escena 2 contradecía la tesis (frena solo al soltar el pulgar); el fallo es la mano fuera de la cuerda con la leva bloqueada, no el pulgar; la escena de bajar era otro tema y falsa con antipánico — aplicado |
+| 2026-11-11 | E58 Pies de gato «180 € para sufrir» v3 | propuesta | 6,5 (pauta del crítico pasada por Claude, no independiente) | Riesgo de explicador de material (H13); v1 con la madre y demasiada biomecánica → v3: eje 180 € + arrepentimiento, explicación en una frase, estudio antes de «escalas peor» (cambios de Andrés) |

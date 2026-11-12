@@ -74,7 +74,7 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 | G | E36 Stonemasters/hippies (+E36B) | Hecha, 8k | H10 (pendiente), H12 en contra |
 | G | Lynn Hill · Güllich · vía más difícil · Sharma · Caldwell (historia) · campus board/Frankenjura · auge de rocódromos | Ideas | H3, H10 |
 | H España | Naranjo de Bulnes · Cataluña · Riglos · Siurana · sitios para escalar | Ideas | sin hipótesis |
-| I Dinero | Pies de gato «Explícaselo a tu madre» · 180 € · cuánto cuesta empezar · cuánto gana un pro · lo que gana un rocódromo | Ideas | sin hipótesis |
+| I Dinero | **E58 Pies de gato «180 € para sufrir» (producida 11-nov; une el porqué y los 180 €, sin la madre)** · antes: «Explícaselo a tu madre» · 180 € · cuánto cuesta empezar · cuánto gana un pro · lo que gana un rocódromo | Ideas | sin hipótesis |
 | J Micro | E31/E31B Cepillar (2,6k/2,2k) · E32 (descartada) · otras | Pruebas | sin hipótesis |
 | K Meta | Cuenta en inglés (~8-nov) · experimento plano vs estructurado | Plan | — |
 
@@ -329,3 +329,5 @@ _Origen: Resumen de estado (30-oct) — mantener al día; el detalle de cada ide
 - **Vía ferrata** — Idea. Secuela natural de E41 (factor de caída): por qué un cable no se trata como una cuerda → absorbedor de energía. Necesita caso real. Seguridad: estricto, sin instrucciones, «aprende con un instructor». Audiencia más amplia pero fuera del gym; sin caso, techo bajo (H13).
 
 - **(10-nov, Andrés) Contenido útil de verdad — «Errores en la reunión» (multilargo).** No tutorial paso a paso (riesgo de seguridad): 3 errores que parecen bien hechos, cada uno fallando en animación; mejor con un caso real verificado; fuentes Petzl/FEDME/UIAA. Posible serie «Tu primera multilargo». Ritmo: 1 de cada 5–6 vídeos. Sin prisa: idea aparcada.
+
+- **(11-nov) «Te sudan las manos solo de verlo»** — Idea de Claude, sin verificar. Cuerpo 🌍: por qué sudan justo manos y pies con los nervios, y el magnesio. Encaja con H7 (E11). No sacar la misma semana que E47 (miedo). Riesgo: manos en primer plano.

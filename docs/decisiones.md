@@ -50,3 +50,4 @@ Lo vigente está resumido en `docs/estrategia.md`.
 | 2026-11-16 | Kit de cuerda reutilizable (`src/piezas/kit`, `docs/kit.md`, `npm run catalogo`); E59 migrado sin cambios de imagen (10 fotogramas idénticos). Decorado nuevo «sala» y personaje «nueva» |
 | 2026-11-16 | Kit ampliado: primeros planos (mano, aparato, ocho, mosquetón de seguro), acciones (escalar, chapar, caída del sistema seca/dinámica, descolgar), montaje (Pregunta, Partida, Lupa, Envio) y decorado «roca» de día |
 - 2026-11-17 · Andrés: E60 y E53 publicados; E62 se sube hoy. Dice que hay producidos un vídeo de pie de gato y otro de dirección de las cintas, pero no están en el repo (ni en ramas): falta subirlos.
+- 2026-11-11 · E58 pies de gato: Andrés descarta el enfoque «Explícaselo a tu madre» (explicativo) y fija el eje «180 € para sufrir» + arrepentimiento inmediato; la explicación va dentro, en una frase. Matiz propio: ajustar sí, pasarse es contraproducente; para largos, cómodos.
