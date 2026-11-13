@@ -51,3 +51,5 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 - Vistas 376 → 325 → 302 → 286. Votan ~22 % de quienes ven.
 - **Disciplina:** cuerda 79 % (54), bloque 21 % (14). **Grado:** hasta 5+ 22 %, 6a–6b+ 53 %, 6c–7a+ 17 %, 7b+ 8 % (n=72).
 - **Caja (13 respuestas):** domina el miedo a caer y la confianza en la cuerda (≈9/13); también desplomes, técnica, por dónde empezar, historia de la escalada.
+
+- **DM 13-nov (chechu_te):** lo más útil = tips y el porqué de situaciones al escalar: material, cuerpo y mente. Coincide con H14 y la caja de preguntas.
