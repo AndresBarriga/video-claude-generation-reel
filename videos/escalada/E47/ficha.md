@@ -20,3 +20,8 @@ Llevas cuerda, pero para tu cerebro la cuerda es solo una idea; el vacío, en ca
 **Envío (rótulo final):** «MÁNDASELO AL DEL "YA VOY"».
 
 - **v2 (11-nov, Andrés):** fallo gordo corregido: quien asegura lleva SIEMPRE la mano de freno (derecha) en la cuerda por debajo del aparato y la mano guía en la cuerda que sube (brazos por cinemática inversa, siguen la cuerda cuando la frenada la levanta); el resto de la cuerda cae a una madeja enroscada en el suelo. Mano del primer plano redibujada desde cero (`ManoCerca.tsx`): arqueo con nudillos en tienda, yemas con magnesio sobre el canto, pulgar bloqueando, uñas, tendones, vena y antebrazo. qa-final OK (-14,4 LUFS, pico -2,1 dBTP), 32,6 s.
+
+## Resultado (13-nov 18:47, ~21 h)
+1,6K vistas, 939 espectadores, visto medio 19 s de 32, 1 seguidor. **Skip 32,7 % (de los peores de la cuenta)**, pero envíos 2,1 % (el más alto de la cuenta), guardados 1,6 %, like 6,2 %, comentarios 0,2 %. Vistas planas desde la hora 2; 64 % del feed (seguidores) y solo 29 % de Reels: Instagram no lo sacó a no seguidores.
+**Curva (0:32):** ≈75 % a 3 s, ≈65 % a 5 s, caída lenta sin meseta hasta ≈45 %, final ≈25 %.
+**Lectura:** falla el gancho, no el tema: quien lo ve lo comparte y lo guarda como nada antes. La apertura (primer plano de una mano que no se abre, frase abstracta) no tiene peligro ni decisión visibles. Candidato a reel de prueba con apertura nueva (caída/«¡Suéltate!» en el segundo 1).
