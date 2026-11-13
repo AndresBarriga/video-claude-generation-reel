@@ -15,6 +15,7 @@ export const Gancho: React.FC<P> = ({ pal }) => {
       <Pildora x={810} texto="TU COMPAÑERO" />
       {f >= sL && <Dato x={270} y={470} texto="2 M" s={a} />}
       {f >= sR && <Dato x={810} y={470} texto="10 M" s={b} />}
+      {f < (pal("como") ?? 160) && <Etiqueta texto="¿CUÁL DUELE MÁS?" desde={-15} top={300} tam={96} />}
       {f >= (pal("como") ?? 160) && <Etiqueta texto="¿CÓMO PUEDE SER?" desde={pal("como") ?? 160} top={300} tam={96} />}
     </AbsoluteFill>
   );

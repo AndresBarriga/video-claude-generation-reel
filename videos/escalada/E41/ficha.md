@@ -22,3 +22,4 @@ Y sí: también cuenta mucho cuánta cuerda floja te dejan y si quien asegura di
 **Envío (rótulo final):** «MÁNDASELO A TU CORDADA».
 
 - **v2 (11-nov, Andrés):** en los comentarios saldrá «cuánta cuerda te dejan» y «si el asegurador dinamiza». No se mete en voz (un mensaje); en la cueva, la aseguradora da un saltito visible al frenar con rótulo «DINAMIZA ↑» y la cámara se abre para verla; en la reunión, la tuya está anclada (contraste). Descripción y comentario fijado lo recogen; respuesta preparada. Posible vídeo siguiente: asegurar dinámico (enlaza con E49).
+- **v3 (13-nov, tras E47 con skip 32,7 %):** rótulo «¿CUÁL DUELE MÁS?» desde el frame 0 hasta «¿Cómo puede ser?» para que el primer fotograma ya plantee la pregunta (antes, los 2-3 primeros segundos eran dos escaladores quietos y sin texto). Mismo audio. qa-final OK (-15 LUFS, pico -1,3 dBTP).
