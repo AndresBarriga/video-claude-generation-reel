@@ -1,0 +1,73 @@
+{
+ "id": "E47B",
+ "titulo": "Miedo 2: llevas cuerda, tu cerebro no lo sabe (reel de prueba: apertura «Ya voy»)",
+ "nicho": "escalada",
+ "plantilla": "Suelta",
+ "escenas": [
+  {
+   "tipo": "texto",
+   "visual": "yavoy",
+   "texto": "Te dice: «Suéltate, te tengo». Y tú: «¡Ya voy!»… Y no vas.",
+   "abre": true
+  },
+  {
+   "tipo": "texto",
+   "visual": "idea",
+   "texto": "Para tu cerebro, la cuerda es una idea. El vacío lo está viendo."
+  },
+  {
+   "tipo": "texto",
+   "visual": "carrera",
+   "texto": "Y el miedo no espera a que pienses: salta primero, y tu cabeza llega tarde."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cae",
+   "texto": "Por eso no lo convences pensando. Lo convences cayendo."
+  },
+  {
+   "tipo": "texto",
+   "visual": "otra",
+   "texto": "Caídas pequeñas, en un sitio seguro y con alguien que sepa asegurarlas. Una. Y otra."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "Hasta que un día te sueltas sin pensarlo. ¿Y tú, cuánto llevas diciendo «ya voy»?"
+  }
+ ],
+ "frases": [
+  2,
+  1,
+  2,
+  2,
+  2,
+  3,
+  3,
+  5,
+  5,
+  8,
+  2,
+  5,
+  6,
+  3,
+  2,
+  4,
+  6,
+  1,
+  2,
+  4,
+  4,
+  2,
+  3,
+  2
+ ],
+ "verificado": true,
+ "fuentes": [
+  "https://webarchive.library.unt.edu/eot2008/20090115223828/http:/nihrecord.od.nih.gov/newsletters/06_03_97/story04.htm (NIH/LeDoux: el cerebro responde con miedo antes de pensarlo; la «vía rápida» al amígdala)",
+  "https://www.frontiersin.org/articles/10.3389/fnsys.2015.00101/pdf (vía rápida y vía cortical; hay debate sobre lo inconsciente: en voz se dice como metáfora, sin cifras)",
+  "https://nicros.com/?p=1579 (Hörst: el miedo a caer se maneja con experiencia cayendo; desplome sin presas salientes, asegurador con experiencia)",
+  "https://latticetraining.com/blog/fear-of-falling (empezar en pared ligeramente desplomada para caer al aire; progresivo)",
+  "https://www.lacrux.com/en/training/so-ueberwindest-du-deine-sturzangst-beim-klettern/ (escalar no quita el miedo; solo caer con regularidad en situación segura)"
+ ]
+}

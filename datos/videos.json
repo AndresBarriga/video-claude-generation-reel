@@ -107,5 +107,9 @@
  "E55": {
   "desc": "Free BASE: se le escapa la mano y la imagen se congela (¿le da tiempo?); caída a escala real con la vela en 4 fases; la franja mortal; fotos reales de Dean Potter en el Eiger 2008 y la repisa que eligió."
  },
- "E47": "Miedo 2: «¡Suéltate, te tengo!» — «¡Ya voy!»… y no vas. La cuerda es una idea para tu cerebro; el miedo solo baja cayendo. Cueva desplomada al anochecer."
+ "E47": "Miedo 2: «¡Suéltate, te tengo!» — «¡Ya voy!»… y no vas. La cuerda es una idea para tu cerebro; el miedo solo baja cayendo. Cueva desplomada al anochecer.",
+ "E47B": {
+  "corto": "Miedo 2 (apertura «Ya voy»)",
+  "desc": "Reel de prueba de E47 sin la escena de la mano: abre en el escalador agarrado con «¿Por qué no te sueltas?»."
+ }
 }
