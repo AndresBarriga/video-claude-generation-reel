@@ -8,6 +8,15 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 - **Aparcadas:** dinero (según pies de gato) · E3 · España · cuenta en inglés.
 - **Prioridad:** miedo/caídas (caja de preguntas) · seguridad con cuerda y caso · cuerpo con situación · dilemas de escalada/montaña.
 
+
+## 14-nov · Ideas de Andrés (chapar, caídas, confianza) — prioridad alta (encajan con H14 y la caja)
+- **Dónde chapar** (gancho: chapas con la cuerda por encima de la cabeza… y se te va el pie: caes el doble).
+- **Trucos para chapar más rápido** (gancho: dos escaladores, misma chapa; uno tarda 1 s, otro 4: el pump decide).
+- **Cómo se orienta la cinta según hacia dónde vas** (gancho: la cinta mal puesta y la cuerda que se sale sola del mosquetón; ojo, verificar).
+- **El miedo y la exposición progresiva** (gancho: escalera de caídas; ya en lista como «caídas por escalones»).
+- **Cómo dinamizar una caída** (gancho: misma caída, asegurador «muro» vs. asegurador que salta; responde a E41).
+- **Confianza en el equipo** (gancho: «¿cuánto aguanta tu cinta?»: un trozo de tela que aguanta un coche).
+
 ## Mapa (estado + hipótesis)
 | Zona | Idea | Estado | Hipótesis |
 |---|---|---|---|
