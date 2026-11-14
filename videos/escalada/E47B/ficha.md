@@ -6,3 +6,8 @@
 
 ## Publicación
 Misma descripción y comentario fijado que E47 (ver su ficha).
+
+## Resultado (14-nov 08:35, ~11 h, reel de prueba)
+1,9K vistas, 1,4K espectadores, visto medio 16 s de 28, 0 seguidores. **Skip 24,2 % (E47: 32,7 %) → la apertura arregla el skip.** Pero like 1,7 %, envíos 0,3 %, guardados 0,1 % (E47 entre seguidores: 6,2 / 2,1 / 1,6 %). 92 % desde Reels.
+**Curva (0:27):** ≈85 % a 3 s, ≈67 % a 9 s, meseta ≈48 % de 18 a 24 s, final ≈32 %.
+**Lectura:** el tema enamora a la comunidad pero no a desconocidos; lo que E47 tenía de bueno (envíos, guardados) venía de seguidores. Los reels de prueba además tienen distribución limitada: las vistas no son comparables.

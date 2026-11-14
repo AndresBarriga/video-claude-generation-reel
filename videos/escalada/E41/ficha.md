@@ -23,3 +23,8 @@ Y sí: también cuenta mucho cuánta cuerda floja te dejan y si quien asegura di
 
 - **v2 (11-nov, Andrés):** en los comentarios saldrá «cuánta cuerda te dejan» y «si el asegurador dinamiza». No se mete en voz (un mensaje); en la cueva, la aseguradora da un saltito visible al frenar con rótulo «DINAMIZA ↑» y la cámara se abre para verla; en la reunión, la tuya está anclada (contraste). Descripción y comentario fijado lo recogen; respuesta preparada. Posible vídeo siguiente: asegurar dinámico (enlaza con E49).
 - **v3 (13-nov, tras E47 con skip 32,7 %):** rótulo «¿CUÁL DUELE MÁS?» desde el frame 0 hasta «¿Cómo puede ser?» para que el primer fotograma ya plantee la pregunta (antes, los 2-3 primeros segundos eran dos escaladores quietos y sin texto). Mismo audio. qa-final OK (-15 LUFS, pico -1,3 dBTP).
+
+## Resultado (14-nov 08:35, ~11 h)
+22,1K vistas, 18,3K espectadores, visto medio 23 s de 43, **55 seguidores (2,5/1k)**, 525 likes, 106 guardados, 9 reposts, 1 comentario. Skip 23,4 % (lower); envíos 0,7 %, like 2,9 %, guardados 0,6 %, comentarios 0,0 % (lower). Vistas ~2x un reel típico a 11 h, ya frenando.
+**Curva (0:42):** ≈80 % a 3 s, ≈75 % a 6 s; **caída de 6 a 12 s hasta ≈62 %** (explicar dónde está cada uno y la cuerda: el tramo más lento); ≈53 % a 22 s, ≈42 % de 33 a 39 s, final ≈25 %.
+**Lectura:** el gancho con rótulo funciona (skip bajo, alcance) y convierte bien a seguidor (H14 a favor). Pierde gente en la explicación del montaje (6-12 s) y casi no genera conversación: el comentario fijado no provoca.
