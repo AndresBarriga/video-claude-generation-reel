@@ -8,3 +8,4 @@
 **Comentario fijado:** ¿Te habrías parado? 🧗 Sí, siempre · 🏔️ Depende · 😶 Sinceramente, no
 
 - **v2 (14-nov, aprendizajes E41/E47):** rótulo de gancho visible desde el frame 0 y más fuerte: «LO DIERON POR MUERTO… Y TE HABLA» (antes «…ANOCHE», entraba al frame 3). Comentario fijado con opciones para que contestar cueste una palabra. **Falta volver a renderizar: el audio no está en el repo** (`videos/escalada/E53/voz.mp3`).
+- v2 renderizada 14-nov: vídeo nuevo a 1080p con el audio mezclado del final original (sincronía comprobada en 5 puntos); loudnorm.
