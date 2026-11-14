@@ -27,7 +27,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
   return (
     <Camara d={d} empuje={0.07} entrada={false}>
       <Svg><EscenaHall f={f} alza={alza} zoom={1.0 + 1.0 * foco} foco={foco} /></Svg>
-      <Etiqueta texto="LO DIERON POR MUERTO ANOCHE" top={230} tam={78} desde={3} />
+      <Etiqueta texto="LO DIERON POR MUERTO… Y TE HABLA" top={230} tam={78} desde={-15} />
       {f >= tI && <Bocadillo texto="Imagino que os sorprende verme aquí." x={520} y={700} ancho={640} desde={tI} tam={60} />}
     </Camara>
   );
