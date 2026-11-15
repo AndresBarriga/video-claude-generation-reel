@@ -19,6 +19,28 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 
 - **15-nov, elegidas por Andrés:** E59 «La segunda chapa» (propuesta) y **«Cuando caes, tu mano hace esto»** (no agarrar la cinta al caer) → la siguiente.
 
+
+## 15-nov · Banco de ideas (formato que convierte: seguridad/cuerpo con cuerda + paradoja o peligro visible desde el frame 0)
+**Caídas y asegurar**
+- ¿Por qué salta tu asegurador? (dinamizar) — «Te caes… y tu asegurador salta. A propósito.» → propuesta E58.
+- El asegurador que pesa la mitad que tú — «sale volando hacia la primera chapa» (cuidado: solapa E49; enfocar en qué hacer).
+- La comba que te lleva al suelo — «te caes en la tercera… y tocas el suelo».
+- La segunda chapa / caer con la cuerda en la mano / cuerda en la boca → propuesta E59.
+**Material y confianza**
+- ¿Cuánto aguanta tu cinta? — «un trozo de tela de 2 cm que aguanta un coche»; giro: mosquetón abierto.
+- La cinta al revés — la cuerda que se sale sola (verificar).
+- ¿Por qué no se rompe la cuerda? — desgaste, cuándo jubilarla.
+- El ocho mal hecho que aguanta — «¿lo ves?» (reto).
+**Cuerpo**
+- Cuando caes, tu mano hace esto → propuesta E60.
+- El miedo te funde los antebrazos — medidor de fuerza con y sin miedo.
+- Caer en desplome vs. en placa — tobillos.
+- Tendón vs. músculo — «tus brazos pueden, tus dedos no».
+**Rocódromo → roca**
+- Por qué encadenas dentro y no fuera — chapas más lejos.
+- El primer día de roca — «en el roco la chapa está a un metro; aquí, a tres».
+**Cabeza** (lista larga del 12-nov): caídas por escalones, diálogo interno, respirar, siguiente movimiento, decidir antes de subir, ego, después de un mal vuelo, visión de túnel, tiempo que se estira al caer (E37), adrenalina después, destrepar, la palabra pactada, chequeo cruzado.
+
 ## Mapa (estado + hipótesis)
 | Zona | Idea | Estado | Hipótesis |
 |---|---|---|---|

@@ -103,3 +103,5 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-10 | E55 v6 Free BASE (foto real en el s0) | propuesta | 6,5 (7 con cambios) | Fundido foto→animado en la misma postura haría creer que Potter se cayó → corte seco a otro escalador + «imagina que se te escapa»; «el de la foto es Dean Potter»; cierre «¿te atreverías?» obvio → «¿desde qué metro empezarías?» |
 | 15-nov | E58 «¿Por qué salta tu asegurador?» | propuesta | 7 | «Salta» sin momento; dinamizar ≠ comba; 1 de cada 3 sin atribuir causa; no confundir con E49; «primeras chapas» — aplicado |
 | 15-nov | E59 «La segunda chapa» | propuesta | 6,5 | Esc. 3 contradecía esc. 4; suelo/no suelo como certeza; «cuerda justa» incompleto; falta «si no estás estable, no saques cuerda» — aplicado |
+| 15-nov | E59 v2 «La segunda chapa» | propuesta | 6,5 (7,5 con cambios) | Caso AAC era en la reunión, con comba y asegurador separado; «tocas el suelo» como certeza; «no te protege antes» falso una vez chapada — aplicado |
+| 15-nov | E60 «Tu mano hace esto» | propuesta | 7 | Verificar mecanismo del pulgar (se le enrolló, no consta que la agarrara); dónde poner las manos — aplicado |

@@ -1,16 +1,14 @@
-# E59 — «La segunda chapa» (propuesta, 15-nov)
-Fuentes: Will Gadd (willgadd.com: la caída al fallar un chapaje ≈ 2× la distancia entre chapas, chapes alto o a la cintura; al chapar alto empiezas más abajo y es más probable tocar el suelo; en las primeras, mejor arnés a la altura de la chapa) · Codidact/Mountain Project (chapar alto saca 1-1,5 m de cuerda; segunda chapa a la cintura).
-Idea original de Andrés: «caer con la cuerda en la mano». Corregido: no dobla la caída; la empieza más abajo.
-- Mensaje: chapar antes no te protege antes: la caída es la misma, pero empieza más abajo.
-- Problema: susto o suelo en la 2.ª/3.ª. Valor: primeras chapas a la cintura. Identificación: estirado chapando la segunda, cuerda en la mano.
+# E59 v2 — «La segunda chapa» (propuesta, 15-nov)
+Fuentes: Will Gadd (willgadd.com: fallar un chapaje ≈ 2× distancia entre chapas, chapes alto o a la cintura; chapando alto empiezas más abajo, más probable el suelo) · Codidact/Mountain Project (chapar alto saca 1-1,5 m) · AAC Accidents 2017 «Leader Fall – Lost Tooth» (2016, Summersville Lake, WV: chapando la reunión, cuerda entre los dientes, comba y asegurador separado de la pared; ≈35 pies de caída, paró a ≈4 pies del suelo, perdió un diente).
+- Mensaje: si fallas al chapar alto caes lo mismo, pero empiezas más abajo; en las primeras chapas, a la cintura y nunca con la cuerda en la boca.
+- Identificación: estirado chapando la segunda con la cuerda en la boca.
 
-## Guion (~33 s)
-1. (0-3 s) «Estás chapando la segunda. Si te caes ahora… tocas el suelo.» — frame 0: brazos estirados, cuerda sacada por encima de la cabeza, pie que resbala; rótulo «¿TOCAS EL SUELO?».
-2. (3-9 s) «Y eso que la primera está chapada. Crees que estás protegido antes de tiempo.» — zoom a la comba; medidor CUERDA FUERA.
-3. (9-15 s) «Para chapar por encima de la cabeza sacas metro y medio de cuerda. Lo que ganas al chapar antes, lo pierdes en tu mano.»
-4. (15-23 s) «Chapar antes no te protege antes: la caída es la misma que si esperas a tenerla en la cintura… pero empieza un metro más abajo.» — regla de altura grande igual en los dos; el de la cintura acaba muy cerca del suelo sin tocarlo, el otro lo toca.
-5. (23-30 s) «Por eso, en las primeras chapas, sube hasta tenerla a la cintura. Y quien asegura: sin comba de más, pero da cuerda rápido cuando chapes.» — rótulo «Si no estás estable, no saques cuerda».
-6. (30-33 s) «Mírate en la próxima vía: ¿dónde tienes la mano?» → corte al brazo estirado (bucle).
-Descripción: «Mándaselo a quien chapa con los brazos estirados». Comentario fijado: «¿Chapas la segunda por encima de la cabeza o esperas a la cintura? ¿Algún susto?»
-Asegurador siempre con la mano de freno en la cuerda.
-Puntuación 13/14 · Crítico 6,5 (aplicados sus cambios; su objeción de que el punto final sale «parecido» no se aplica: empieza más alto = acaba más alto, Gadd).
+## Guion (~40 s)
+1. (0-3) «Estás chapando la segunda con la cuerda en la boca. Si fallas ahora… puedes llegar al suelo.» — frame 0: brazos estirados, cuerda entre los dientes, pie que resbala; rótulo «¿TOCAS EL SUELO?».
+2. (3-8) «Y eso que la primera está chapada. Para chapar por encima de la cabeza sacas metro y medio de cuerda.»
+3. (8-17) «Un escalador en Estados Unidos sacó cuerda para chapar la reunión y se la puso entre los dientes. Con comba y su asegurador lejos de la pared, cayó unos diez metros. Paró a poco más de un metro del suelo… y perdió un diente.»
+4. (17-25) «Si fallas al chapar alto, caes lo mismo que si esperas a tenerla en la cintura… pero empiezas más abajo.» — línea SUELO y dos flechas de igual longitud; el de la cintura acaba cerca sin tocar, el otro toca.
+5. (25-35) «En las primeras chapas, sube hasta tenerla a la cintura. Y quien asegura: cerca de la pared, sin comba de más, pero da cuerda rápido cuando chapes.» — rótulo «Si no estás estable, no saques cuerda».
+6. (35-38) «La próxima vez que tengas la cuerda en la boca, acuérdate del diente.» → corte al frame 0.
+Comentario fijado: «¿Chapas la segunda por encima de la cabeza o a la cintura? ¿Y la cuerda en la boca… confiesa?»
+Crítico: 6,5 → 7,5 con cambios (aplicados).
