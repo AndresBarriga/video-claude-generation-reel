@@ -17,6 +17,8 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 - **Cómo dinamizar una caída** (gancho: misma caída, asegurador «muro» vs. asegurador que salta; responde a E41).
 - **Confianza en el equipo** (gancho: «¿cuánto aguanta tu cinta?»: un trozo de tela que aguanta un coche).
 
+- **15-nov, elegidas por Andrés:** E59 «La segunda chapa» (propuesta) y **«Cuando caes, tu mano hace esto»** (no agarrar la cinta al caer) → la siguiente.
+
 ## Mapa (estado + hipótesis)
 | Zona | Idea | Estado | Hipótesis |
 |---|---|---|---|
