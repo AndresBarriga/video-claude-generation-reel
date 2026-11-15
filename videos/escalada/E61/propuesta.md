@@ -5,3 +5,5 @@
 4. (16-23) «Si para chapar necesitas la boca, estás sacando demasiada cuerda: sube un poco más y chapa con la chapa a la cintura.»
 5. (23-26) «Confiesa: ¿tú también la muerdes?» → corte al frame 0.
 Comentario fijado: «Confiesa: ¿la muerdes para chapar?» · Descripción: «Mándaselo al que chapa con la cuerda en la boca».
+
+**15-nov: fusionado en E59 como rehook (no da para vídeo propio).**
