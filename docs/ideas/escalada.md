@@ -26,6 +26,7 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 - El asegurador que pesa la mitad que tú — «sale volando hacia la primera chapa» (cuidado: solapa E49; enfocar en qué hacer).
 - La comba que te lleva al suelo — «te caes en la tercera… y tocas el suelo».
 - La segunda chapa / caer con la cuerda en la mano / cuerda en la boca → propuesta E59.
+- **Chapa a la cintura (idea de Andrés, 15-nov):** por miedo chapas en cuanto ves la chapa arriba → posición peor, más cuerda fuera, más pump; a menudo hay mejor presa para chapar más arriba. Ojo: una vez chapada alta, la caída siguiente es más corta; el riesgo está *mientras* chapas. Gancho: «La ves arriba… y estiras el brazo. Error.»
 **Material y confianza**
 - ¿Cuánto aguanta tu cinta? — «un trozo de tela de 2 cm que aguanta un coche»; giro: mosquetón abierto.
 - La cinta al revés — la cuerda que se sale sola (verificar).
