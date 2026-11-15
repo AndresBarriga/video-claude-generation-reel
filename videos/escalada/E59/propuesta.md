@@ -8,3 +8,8 @@ Base: Will Gadd (fallar un chapaje ≈ 2× distancia entre chapas, alto o a la c
 5. (29-36) «Si necesitas la boca, estás sacando demasiada cuerda: sube hasta tenerla a la cintura. Si no estás estable, no saques cuerda. Y quien asegura: cerca de la pared, sin comba de más y dando cuerda rápido cuando chapas.»
 6. (36-39) «Mírate en la próxima vía: ¿dónde tienes la mano?» → corte al frame 0.
 Comentario fijado: «¿Chapas la segunda por encima de la cabeza o esperas a la cintura?» · Descripción: «Mándaselo a quien chapa con los brazos estirados».
+
+## Decisiones de producción (15-nov, Andrés)
+- Dientes: flashback corto (≈1,5 s) estilo dibujo, sin sangre: muerde la cuerda, se le va el pie, la cuerda se tensa de golpe y un diente sale volando («¡tic!»); vuelta a la escena. Rótulo «¿Y TUS DIENTES?».
+- Cierre: voz «Así que cuidado al chapar la segunda.» (empalma con el frame 0) + rótulo final «Mándaselo a quien te asegura».
+- Asegurador: rótulo «CORTO» que cambia a «¡CUERDA!» al chapar.
