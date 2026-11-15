@@ -6,8 +6,8 @@ Fuentes: AAC Accidents 2017 «Thumb Amputated By Rope in Fall» (2016, New River
 ## Guion (~33 s)
 1. (0-4) «Te caes. Y tu mano, sola, va a por la cinta.» — frame 0: cámara lenta, mano estirándose hacia la cinta; rótulo «¿LA AGARRAS?».
 2. (4-10) «Es un reflejo: el cuerpo busca algo a lo que agarrarse. Pero esa cinta está a punto de recibir todo tu peso.»
-3. (10-17) «Al caer, la cuerda se te puede enrollar en un dedo… y al tensarse, arrancártelo.» — sin sangre: la cuerda se tensa sobre la silueta de la mano; rótulo «PULGAR».
-4. (17-23) «Y si agarras la cinta, el mosquetón se te puede clavar en la mano con todo tu peso detrás.»
+3. (10-16) «Si la agarras, el mosquetón se te puede clavar en la mano con todo tu peso detrás.»
+4. (16-23) «Y si vas a por la cuerda, se te puede enrollar en un dedo… y al tensarse, arrancártelo.» — sin sangre: la cuerda se tensa sobre la silueta de la mano; rótulo «TU DEDO».
 5. (23-30) «Para caer bien: manos fuera de la cuerda y de la cinta, delante, listas para la pared. Piernas flexionadas y pies por delante.»
 6. (30-33) «La próxima vez que caigas, mírate las manos.» → bucle al frame 0.
 Comentario fijado: «En tu primera caída, ¿qué agarraste?» · Descripción: «Mándaselo al que siempre se agarra a la cinta».
