@@ -76,3 +76,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - **10-nov, E55 (Andrés):** «hasta el segundo 8 casi no hace nada, misma imagen» → el congelado + lupa sobre la imagen fija mataba la tensión. Regla: nada de imagen fija >1 s en el gancho; usar cámara lenta (tiempo bala) en vez de congelar.
 
 - 2026-11-11 (E47): quien asegura tiene que tener SIEMPRE la mano de freno (derecha) en la cuerda, y el resto de la cuerda cae al suelo enroscada (madeja). Error gordo si falta. La mano en primer plano tiene que verse dibujada con cuidado (arqueo, nudillos, uñas), no como salchichas.
+- 2026-11-15 · En vídeos de consejo/seguridad **no citar casos concretos** («en Estados Unidos…», informes): contar el riesgo en general («puede pasar»). Los casos, solo en vídeos de historia. Y **un tema por vídeo**: cuerda en la boca (dientes) y chapar alto (suelo) son dos vídeos.
