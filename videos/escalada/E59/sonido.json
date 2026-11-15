@@ -1,0 +1,219 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "viento",
+   "inicio": {
+    "escena": 0
+   },
+   "volumen": 0.2,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "fallas",
+    "mas": 0.0
+   },
+   "duracion": 0.5,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "suelo",
+    "mas": -0.62
+   },
+   "duracion": 0.7,
+   "volumen": 0.75
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "suelo",
+    "mas": 0.05
+   },
+   "duracion": 0.5,
+   "volumen": 0.95,
+   "ignoraSilencio": true
+  },
+  {
+   "silencio": true,
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "suelo",
+    "mas": 0.15
+   },
+   "duracion": 0.3
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cuerda",
+    "palabra": "primera",
+    "mas": -0.3
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "cuerda",
+    "palabra": "encima",
+    "mas": -0.1
+   },
+   "duracion": 0.9,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "igual",
+    "palabra": "lo",
+    "mas": 0.1
+   },
+   "duracion": 0.3,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "igual",
+    "palabra": "suelo",
+    "mas": -0.9
+   },
+   "duracion": 0.75,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "igual",
+    "palabra": "suelo",
+    "mas": -0.2
+   },
+   "duracion": 0.5,
+   "volumen": 0.9,
+   "ignoraSilencio": true
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "igual",
+    "palabra": "suelo",
+    "mas": -0.12
+   },
+   "duracion": 0.9,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "peligrosa",
+    "palabra": "peligrosa",
+    "mas": 0.0
+   },
+   "duracion": 0.3,
+   "volumen": 0.55
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "peligrosa",
+    "palabra": "bajo",
+    "mas": 0.05
+   },
+   "duracion": 0.4,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "boca",
+    "palabra": "sacar",
+    "mas": 0.2
+   },
+   "duracion": 0.5,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "boca",
+    "palabra": "caer",
+    "mas": 0.0
+   },
+   "duracion": 0.6,
+   "volumen": 0.55
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "boca",
+    "palabra": "tensa",
+    "mas": -0.05
+   },
+   "duracion": 0.5,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "chasquido",
+   "inicio": {
+    "escena": "boca",
+    "palabra": "tensa",
+    "mas": 0.17
+   },
+   "duracion": 0.4,
+   "volumen": 0.95,
+   "ignoraSilencio": true
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "cintura",
+    "palabra": "sacas",
+    "mas": 0.0
+   },
+   "duracion": 0.5,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cintura",
+    "palabra": "cintura",
+    "mas": 0.07
+   },
+   "duracion": 0.4,
+   "volumen": 0.85
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "asegura",
+    "palabra": "corto",
+    "mas": 0.0
+   },
+   "duracion": 0.5,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "asegura",
+    "palabra": "chapas",
+    "mas": 0.07
+   },
+   "duracion": 0.4,
+   "volumen": 0.85
+  }
+ ]
+}
