@@ -40,7 +40,7 @@ export const Igual: React.FC<P> = ({ pal }) => {
           <Flecha x={ax} y={pies} g={g} />
           <Aseg x={470} pilaDx={92} pilaR={0.55} comba={0.12} dy={e.j >= 0 ? (alto ? -14 * Math.exp(-e.j / 5) : -e.est * 0.55) : 0} cara={e.k > 4 ? "miedo" : "normal"} alza={1} />
           <Ella p={e.p} ang={e.ang} rot={e.rot} cara={e.j >= 0 ? (alto ? "dolor" : e.j > 10 ? "alivio" : "miedo") : "miedo"} sombra={e.k > 0} />
-          <Chapa1 /><Soga pts={tramo(e.p, H, Math.max(e.bt, e.k > 0 ? 1 : 0), alto ? 440 : 300, e.j >= 0)} />
+          <Chapa1 /><Soga pts={tramo(e.p, H, Math.min(1, Math.max(0, e.k) / 6), alto ? 440 : 300, e.j >= 0)} />
           {alto && <Polvo x={XS} k={e.j} />}
           {alto && e.j >= 0 && <rect x={300} y={SUELO - 3} width={700} height={9} fill={PC.miedo} opacity={0.9 * Math.exp(-e.j / 14)} />}
         </Mundo>
