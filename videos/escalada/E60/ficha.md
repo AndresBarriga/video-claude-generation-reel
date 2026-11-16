@@ -12,3 +12,4 @@ Mándaselo a quien siempre agarra la cinta 👇
 
 **Comentario fijado:** ¿Qué agarraste tú: cinta, cuerda o pared?
 - **v2 (16-nov, feedback de Andrés):** brazo de goma solo <1 s y unido al hombro; «DEDOS × 5 → 4» como marcador de videojuego con guante (el índice salta); última toma rotulada «LA BUENA · ASÍ SE CAE» y la caída empieza en «No agarres nada».
+- **v3:** la caída buena ya no baja recta: se separa de la pared, la cuerda la trae en péndulo, recibe con los pies, las rodillas ceden y rebota.

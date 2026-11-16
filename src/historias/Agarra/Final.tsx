@@ -1,7 +1,7 @@
 // «Pasa pocas veces. Con una basta.» (negro + contador de dedos) · TOMA buena · «deja que la cuerda haga su trabajo» · cierre con bucle al fotograma 0.
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
-import { Persona, Asegurador, Soga, sistemaCaida, POSE, Chip, Lupa, Agarre, Envio, Pregunta, Etiqueta, bucle, suave } from "../../piezas/kit";
+import { Persona, Asegurador, Soga, sistemaCaida, POSE, mix, Chip, Lupa, Agarre, Envio, Pregunta, Etiqueta, bucle, suave } from "../../piezas/kit";
 import { VIA, I, P0, XA, TU, ASE, Mundo, Rebobina, Toma, N_REB, clamp, type P } from "./comun";
 import { Lenta } from "./Gancho";
 
@@ -34,15 +34,20 @@ export const Dedo: React.FC<P> = ({ pal }) => {
 const estado = (k: number) => sistemaCaida(VIA, k, P0, POSE.agarre, { i: I, xAseg: XA, dina: 1, aire: POSE.caeBien, comba: 0.5 });
 const OK: React.FC<{ t: string; top: number; k: number }> = ({ t, top, k }) => <Chip texto={`✓  ${t}`} top={top} tam={52} k={Math.min(1, Math.max(0, k) / 5)} color="#2E8B57" />;
 export const Bien: React.FC<P> = ({ d, pal }) => {
-  const f = useCurrentFrame(), f0 = pal("no") ?? 26, fP = (pal("pies") ?? d - 60) + 2, fL = fP + 20;
+  const f = useCurrentFrame(), f0 = pal("no") ?? 26, fP = (pal("pies") ?? d - 60) + 2, fL = fP + 30;
   const k = f < f0 ? 0 : f < fP ? (f - f0) * (11 / Math.max(1, fP - f0)) : 11 + (f - fP), s = estado(k), reb = f < N_REB ? 1 - f / N_REB : 0;
-  const p = reb ? { x: P0.x - 30 * reb, y: P0.y + 300 * reb } : s.p, saluda = interpolate(f, [fL, fL + 6], [0, 1], clamp);
+  // realista y con rebote: se separa de la pared al caer, la cuerda lo trae en péndulo, recibe con los pies, las rodillas ceden y rebota
+  const j = s.j, osc = j < 0 ? 0 : -52 * Math.exp(-j / 15) * Math.cos(j / 4.4), fuera = j < 0 ? -52 * suave(k / 17) : osc - 74 * Math.min(1, j / 7) + 52 * Math.min(1, j / 7) * 0, cede = Math.max(0, osc) / 14, bote = j < 0 ? 0 : -20 * Math.exp(-j / 11) * Math.abs(Math.sin(j / 4.4));
+  const pies = { ...POSE.recibe, torso: -16, brazoA: [56 + 6 * Math.sin(f / 3), 98] as [number, number], brazoB: [38, 86 + 6 * Math.sin(f / 3)] as [number, number] };
+  const ang = j < 0 ? s.ang : mix(mix(POSE.caeBien, pies, Math.min(1, j / 7)), { ...pies, torso: -4, piernaA: [108, 18], piernaB: [92, 4] }, Math.min(1, cede));
+  const p = reb ? { x: P0.x - 30 * reb, y: P0.y + 300 * reb } : { x: s.p.x + fuera, y: s.p.y + bote }, saluda = interpolate(f, [fL, fL + 6], [0, 1], clamp);
   return (
     <>
-      <Mundo cx={500} cy={p.y + 30} z={1.6} sh={s.sh * 0.5}>
+      <Mundo cx={500} cy={p.y - 70} z={1.6} sh={s.sh * 0.5}>
         <Asegurador via={VIA} aspecto={ASE} alza={1} {...s.aseg} />
-        <Soga pts={s.pts} />
-        <Persona p={p} ang={reb ? POSE.colgado : s.ang} aspecto={TU} cara={s.j >= 0 ? "alivio" : f > f0 ? "esfuerzo" : "normal"} rot={s.rot} />
+        <Soga pts={reb ? s.pts : [...s.pts.slice(0, -1), { ...s.pts[s.pts.length - 1], x: s.pts[s.pts.length - 1].x + fuera, y: s.pts[s.pts.length - 1].y + bote }]} />
+        <Persona p={p} ang={reb ? POSE.colgado : ang} aspecto={TU} cara={j >= 0 ? (cede > 0.3 ? "esfuerzo" : "alivio") : f > f0 ? "esfuerzo" : "normal"} rot={j < 0 ? -4 * suave(k / 17) : -4 - 6 * (1 - Math.exp(-j / 8))} />
+        {j >= 0 && cede > 0.2 && [0, 1, 2].map((i) => <path key={i} d={`M${p.x + 96} ${p.y + 20 + i * 22} h${14 + i * 4}`} stroke="#fff" strokeWidth={6} strokeLinecap="round" opacity={0.8} />)}
       </Mundo>
       <Rebobina k={f} /><Toma n="LA BUENA" k={f - N_REB} />
       <Etiqueta texto="ASÍ SE CAE" top={262} tam={100} desde={N_REB + 2} />
