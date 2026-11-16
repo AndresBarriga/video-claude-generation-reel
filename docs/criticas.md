@@ -15,3 +15,5 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 15-nov | E59 «La segunda chapa» | propuesta | 6,5 | Esc. 3 contradecía esc. 4; suelo/no suelo como certeza; «cuerda justa» incompleto; falta «si no estás estable, no saques cuerda» — aplicado |
 | 15-nov | E59 v2 «La segunda chapa» | propuesta | 6,5 (7,5 con cambios) | Caso AAC era en la reunión, con comba y asegurador separado; «tocas el suelo» como certeza; «no te protege antes» falso una vez chapada — aplicado |
 | 15-nov | E60 «Tu mano hace esto» | propuesta | 7 | Verificar mecanismo del pulgar (se le enrolló, no consta que la agarrara); dónde poner las manos — aplicado |
+
+| 2026-11-16 | E60 v3 «No agarres nada» | propuesta | 7,5 | escena de la pared enfriaba tras el dedo (reordenado cinta→pared→cuerda); «manos delante» podía leerse como brazos rígidos; cierre «manos quietas» ambiguo — aplicado |
