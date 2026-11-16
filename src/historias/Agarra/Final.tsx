@@ -1,24 +1,40 @@
 // «Pasa pocas veces. Con una basta.» (negro + contador de dedos) · TOMA buena · «deja que la cuerda haga su trabajo» · cierre con bucle al fotograma 0.
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
-import { Persona, Asegurador, Soga, sistemaCaida, POSE, Chip, Lupa, Agarre, Envio, Pregunta, bucle, suave } from "../../piezas/kit";
+import { Persona, Asegurador, Soga, sistemaCaida, POSE, Chip, Lupa, Agarre, Envio, Pregunta, Etiqueta, bucle, suave } from "../../piezas/kit";
 import { VIA, I, P0, XA, TU, ASE, Mundo, Rebobina, Toma, N_REB, clamp, type P } from "./comun";
 import { Lenta } from "./Gancho";
 
+/** «Pasa pocas veces. Con una basta.»: marcador de videojuego. Mano de guante con sus 5 dedos; el índice salta (como el diente) y el contador baja a 4. */
 export const Dedo: React.FC<P> = ({ pal }) => {
-  const f = useCurrentFrame(), fB = pal("basta") ?? 50, cuatro = f >= 16, punch = cuatro ? 1 + 0.5 * Math.exp(-(f - 16) / 4) : 1;
+  const f = useCurrentFrame(), F = 16, k = f - F, fB = pal("basta") ?? 50, cuatro = k >= 0, punch = cuatro ? 1 + 0.6 * Math.exp(-k / 4) : 1;
+  const D = [[-150, -40, -34, 150], [-70, -150, -10, 200], [10, -170, 0, 220], [90, -150, 10, 200], [165, -90, 22, 160]]; // x, y, giro, largo
+  const dedo = (i: number, extra = "") => { const [x, y, r, l] = D[i]; return <g key={i + extra} transform={`translate(${x} ${y}) rotate(${r})`}><rect x={-34} y={-l} width={68} height={l + 40} rx={34} fill="#F4F1EA" stroke="#050B14" strokeWidth={12} /></g>; };
+  const sh = cuatro && k < 8 ? Math.sin(k * 2.4) * 14 * (1 - k / 8) : 0;
   return (
-    <AbsoluteFill style={{ background: "#050B14", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ position: "absolute", top: 560, fontFamily: "Figtree", fontWeight: 700, fontSize: 90, letterSpacing: 10, color: "#C9D1D8" }}>DEDOS</div>
-      <div style={{ position: "absolute", top: 660, fontFamily: "Bricolage Grotesque", fontWeight: 800, fontSize: 420, lineHeight: 1, color: cuatro ? "#E2533F" : "#fff", transform: `scale(${punch}) rotate(${cuatro ? -4 * Math.exp(-(f - 16) / 6) : 0}deg)` }}>{cuatro ? 4 : 5}</div>
-      {f >= fB - 2 && <div style={{ position: "absolute", top: 1120, width: 360, height: 12, borderRadius: 6, background: "#E2533F", transform: `scaleX(${Math.min(1, (f - fB + 2) / 6)})` }} />}
+    <AbsoluteFill style={{ background: "#0B1422" }}>
+      <svg viewBox="0 0 1080 1920" style={{ position: "absolute", inset: 0, transform: `translate(${sh}px, 0)` }}>
+        <g transform={`translate(540 1010) scale(${1 + 0.04 * Math.sin(f / 5)})`}>
+          {[0, 2, 3, 4].map((i) => dedo(i))}
+          {!cuatro && dedo(1)}
+          {cuatro && <g transform={`translate(${D[1][0]} ${D[1][1]}) rotate(${D[1][2]})`}><rect x={-34} y={-200} width={68} height={240} rx={34} fill="none" stroke="#E2533F" strokeWidth={8} strokeDasharray="16 14" opacity={0.9} /></g>}
+          <rect x={-190} y={-150} width={380} height={330} rx={110} fill="#F4F1EA" stroke="#050B14" strokeWidth={12} />
+          <rect x={-150} y={170} width={300} height={90} rx={30} fill="#3F7F86" stroke="#050B14" strokeWidth={12} />
+          {cuatro && <g transform={`translate(${-70 - 16 * k} ${-260 - 30 * k + 1.5 * k * k}) rotate(${-10 - k * 31})`}><rect x={-34} y={-100} width={68} height={200} rx={34} fill="#F4F1EA" stroke="#050B14" strokeWidth={12} /></g>}
+          {cuatro && k < 9 && <g transform={`translate(-70 -250) rotate(${k * 12}) scale(${1.4 + k * 0.45})`} opacity={1 - k / 9}><path d="M0 -26 L5 -5 L26 0 L5 5 L0 26 L-5 5 L-26 0 L-5 -5 Z" fill="#fff" /></g>}
+        </g>
+      </svg>
+      <div style={{ position: "absolute", top: 330, left: 0, right: 0, textAlign: "center", fontFamily: "Bricolage Grotesque", fontWeight: 800, fontSize: 130, color: "#fff" }}>
+        DEDOS <span style={{ display: "inline-block", color: cuatro ? "#E2533F" : "#fff", transform: `scale(${punch}) rotate(${cuatro ? -6 * Math.exp(-k / 6) : 0}deg)` }}>× {cuatro ? 4 : 5}</span>
+      </div>
+      {f >= fB - 2 && <div style={{ position: "absolute", top: 500, left: 360, width: 360, height: 12, borderRadius: 6, background: "#E2533F", transform: `scaleX(${Math.min(1, (f - fB + 2) / 6)})` }} />}
     </AbsoluteFill>
   );
 };
 const estado = (k: number) => sistemaCaida(VIA, k, P0, POSE.agarre, { i: I, xAseg: XA, dina: 1, aire: POSE.caeBien, comba: 0.5 });
 const OK: React.FC<{ t: string; top: number; k: number }> = ({ t, top, k }) => <Chip texto={`✓  ${t}`} top={top} tam={52} k={Math.min(1, Math.max(0, k) / 5)} color="#2E8B57" />;
 export const Bien: React.FC<P> = ({ d, pal }) => {
-  const f = useCurrentFrame(), f0 = pal("agarres") ?? 34, fP = (pal("pies") ?? d - 60) + 2, fL = fP + 20;
+  const f = useCurrentFrame(), f0 = pal("no") ?? 26, fP = (pal("pies") ?? d - 60) + 2, fL = fP + 20;
   const k = f < f0 ? 0 : f < fP ? (f - f0) * (11 / Math.max(1, fP - f0)) : 11 + (f - fP), s = estado(k), reb = f < N_REB ? 1 - f / N_REB : 0;
   const p = reb ? { x: P0.x - 30 * reb, y: P0.y + 300 * reb } : s.p, saluda = interpolate(f, [fL, fL + 6], [0, 1], clamp);
   return (
@@ -28,9 +44,10 @@ export const Bien: React.FC<P> = ({ d, pal }) => {
         <Soga pts={s.pts} />
         <Persona p={p} ang={reb ? POSE.colgado : s.ang} aspecto={TU} cara={s.j >= 0 ? "alivio" : f > f0 ? "esfuerzo" : "normal"} rot={s.rot} />
       </Mundo>
-      <Rebobina k={f} /><Toma n="ÚLTIMA TOMA" k={f - N_REB} />
-      <OK t="MANOS DELANTE" top={300} k={f - (pal("manos") ?? 60)} /><OK t="BRAZOS BLANDOS" top={396} k={f - (pal("brazos") ?? 80)} /><OK t="PIES A LA PARED" top={492} k={f - (pal("pies") ?? 100)} />
-      <Lupa x={290} y={1010} r={210} k={saluda} fondo="#7FB7D9">
+      <Rebobina k={f} /><Toma n="LA BUENA" k={f - N_REB} />
+      <Etiqueta texto="ASÍ SE CAE" top={262} tam={100} desde={N_REB + 2} />
+      <OK t="MANOS DELANTE" top={452} k={f - (pal("manos") ?? 60)} /><OK t="BRAZOS BLANDOS" top={548} k={f - (pal("brazos") ?? 80)} /><OK t="PIES A LA PARED" top={644} k={f - (pal("pies") ?? 100)} />
+      <Lupa x={290} y={1120} r={210} k={saluda} fondo="#7FB7D9">
         <Agarre x={-20} y={60} s={0.62} rot={-90 + Math.sin(f / 3) * 12} cierra={0} piel="#B9825A" pielS="#94613E" manga="#3F7F86" />
         <text x={120} y={-70} textAnchor="middle" fontFamily="Bricolage Grotesque" fontWeight={800} fontSize={150} fill="#fff" stroke="#050B14" strokeWidth={16} paintOrder="stroke">5</text>
       </Lupa>

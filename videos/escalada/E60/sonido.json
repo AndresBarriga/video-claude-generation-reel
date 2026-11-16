@@ -144,7 +144,7 @@
    "nombre": "roce",
    "inicio": {
     "escena": "bien",
-    "palabra": "agarres",
+    "palabra": "no",
     "mas": 0
    },
    "duracion": 0.5,
@@ -168,6 +168,16 @@
     "mas": 0
    },
    "duracion": 0.4,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "presa",
+    "palabra": "giras",
+    "mas": 0
+   },
+   "duracion": 0.5,
    "volumen": 0.7
   }
  ]

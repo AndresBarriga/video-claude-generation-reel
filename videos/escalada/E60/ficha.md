@@ -11,3 +11,4 @@ Mándaselo a quien siempre agarra la cinta 👇
 #escalada #escaladadeportiva #miedoacaer #seguridadenescalada
 
 **Comentario fijado:** ¿Qué agarraste tú: cinta, cuerda o pared?
+- **v2 (16-nov, feedback de Andrés):** brazo de goma solo <1 s y unido al hombro; «DEDOS × 5 → 4» como marcador de videojuego con guante (el índice salta); última toma rotulada «LA BUENA · ASÍ SE CAE» y la caída empieza en «No agarres nada».
