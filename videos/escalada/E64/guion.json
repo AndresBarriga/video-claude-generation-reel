@@ -1,0 +1,90 @@
+{
+ "id": "E64",
+ "titulo": "La puerta de la cinta",
+ "nicho": "escalada",
+ "plantilla": "Cinta",
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "texto": "Te caes. Y la cinta que te tenía que parar… se sale de la chapa.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "texto",
+   "visual": "bien",
+   "texto": "Estaba bien chapada. Solo había una cosa mal: la puerta miraba hacia donde escalabas."
+  },
+  {
+   "tipo": "texto",
+   "visual": "gira",
+   "texto": "Si escalas hacia la derecha y la puerta mira a la derecha, al caer la cinta gira, la puerta choca con la chapa… y se abre."
+  },
+  {
+   "tipo": "texto",
+   "visual": "abajo",
+   "texto": "Y abajo, igual: la cuerda pasa por encima de la puerta y se sale sola.",
+   "pausa": 0.3
+  },
+  {
+   "tipo": "texto",
+   "visual": "regla",
+   "texto": "La regla: las puertas, al lado contrario de hacia donde vas. ¿Vas a la derecha? Puertas a la izquierda."
+  },
+  {
+   "tipo": "texto",
+   "visual": "rebabas",
+   "texto": "Y ojo: tu cinta tiene un arriba y un abajo. El mosquetón de la goma es el de la cuerda. El otro roza la chapa, coge rebabas… y si lo pones abajo, te lija la cuerda."
+  },
+  {
+   "tipo": "texto",
+   "visual": "canto",
+   "texto": "Y si el mosquetón queda apoyado en un canto, pon una cinta más larga: ahí aguanta mucho menos."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "Antes de chapar la cuerda, mira la puerta."
+  }
+ ],
+ "frases": [
+  2,
+  8,
+  5,
+  3,
+  5,
+  6,
+  5,
+  7,
+  5,
+  6,
+  3,
+  2,
+  1,
+  8,
+  4,
+  2,
+  2,
+  7,
+  4,
+  4,
+  2,
+  8,
+  10,
+  5,
+  2,
+  5,
+  4,
+  9,
+  5,
+  4,
+  5,
+  3
+ ],
+ "verificado": true,
+ "fuentes": [
+  "Petzl, Tech Tips «Positioning the quickdraw and clipping the rope»: la puerta del mosquetón siempre al lado contrario del sentido de la escalada; la cuerda entra por el lado de la pared y sale hacia fuera; una mala colocación puede hacer que la cuerda se salga, por el movimiento de la cuerda o porque el mosquetón gira sobre la chapa en una caída; mosquetón de chapa móvil (sin goma), el de la cuerda fijo (con goma).",
+  "REI Expert Advice «How to clip quickdraws»: el mosquetón recto va a la chapa y el curvo a la cuerda, siempre así, para que el de la cuerda no coja los bordes afilados que deja la chapa; evitar que el mosquetón de abajo quede a medias sobre un canto: usar una cinta más larga.",
+  "Wikipedia «Quickdraw» (cita Petzl y Metolius): las dos puertas hacia el mismo lado, contrario al sentido de la escalada."
+ ]
+}

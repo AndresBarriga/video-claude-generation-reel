@@ -1,4 +1,6 @@
-# E58 · Pies de gato «180 € para sufrir» — ficha
+# E63 · Pies de gato «180 € para sufrir» — ficha
+
+> Hecho por el amigo de Andrés (llegó como E58 por parche; renumerado al integrarlo el 19-nov porque esos IDs ya estaban usados).
 - **Estado:** producido con voz (36,6 s, Danny; sincronía por pausas con `frases` + `tools/ajustar-tiempos.py`, sin Whisper). Pendiente de revisión de Andrés y de subir.
 - **Formato:** identidad + cuerpo por dentro (un «por qué» para dos públicos). Público: quien escala; se lo manda al de los gatos pequeños o a quien le pregunta por qué le duelen.
 - **Mensaje:** pagas 180 € por unos zapatos que sabes que te van a doler. Tienen que ir sin hueco (cantos minúsculos), pero ajustado no es machacado: si duelen tanto que no pisas, escalas peor; para vías largas, cómodos.

@@ -74,7 +74,7 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 | G | E36 Stonemasters/hippies (+E36B) | Hecha, 8k | H10 (pendiente), H12 en contra |
 | G | Lynn Hill · Güllich · vía más difícil · Sharma · Caldwell (historia) · campus board/Frankenjura · auge de rocódromos | Ideas | H3, H10 |
 | H España | Naranjo de Bulnes · Cataluña · Riglos · Siurana · sitios para escalar | Ideas | sin hipótesis |
-| I Dinero | **E58 Pies de gato «180 € para sufrir» (producida 11-nov; une el porqué y los 180 €, sin la madre)** · antes: «Explícaselo a tu madre» · 180 € · cuánto cuesta empezar · cuánto gana un pro · lo que gana un rocódromo | Ideas | sin hipótesis |
+| I Dinero | **E63 (era E58 del amigo) Pies de gato «180 € para sufrir» (producida 11-nov; une el porqué y los 180 €, sin la madre)** · antes: «Explícaselo a tu madre» · 180 € · cuánto cuesta empezar · cuánto gana un pro · lo que gana un rocódromo | Ideas | sin hipótesis |
 | J Micro | E31/E31B Cepillar (2,6k/2,2k) · E32 (descartada) · otras | Pruebas | sin hipótesis |
 | K Meta | Cuenta en inglés (~8-nov) · experimento plano vs estructurado | Plan | — |
 
@@ -331,3 +331,8 @@ _Origen: Resumen de estado (30-oct) — mantener al día; el detalle de cada ide
 - **(10-nov, Andrés) Contenido útil de verdad — «Errores en la reunión» (multilargo).** No tutorial paso a paso (riesgo de seguridad): 3 errores que parecen bien hechos, cada uno fallando en animación; mejor con un caso real verificado; fuentes Petzl/FEDME/UIAA. Posible serie «Tu primera multilargo». Ritmo: 1 de cada 5–6 vídeos. Sin prisa: idea aparcada.
 
 - **(11-nov) «Te sudan las manos solo de verlo»** — Idea de Claude, sin verificar. Cuerpo 🌍: por qué sudan justo manos y pies con los nervios, y el magnesio. Encaja con H7 (E11). No sacar la misma semana que E47 (miedo). Riesgo: manos en primer plano.
+## Apuntadas 16-nov (Andrés: «todas me gustan»)
+- **Placa contra desplome: por qué duelen los pies al caer** (Andrés). Gancho: «Te caes en un desplome y no pasa nada. Te caes en una placa y te rompes el tobillo.» Compara la misma caída en los dos terrenos. Responde a la caja de preguntas (miedo a caer). Puede absorber la **frenada en seco** (asegurador clavado → péndulo contra la pared; fuentes: Touchstone «Dynamic belaying», Climbing «The art of the soft catch»; límite: dinamizar solo con el escalador alto y sin suelo ni repisas debajo). Cuidado: E41 ya usa «te para en seco».
+- **Mini-serie de asegurar** (Andrés pide cosas importantes y útiles: cómo asegurar, cómo coger el grigri, cómo dar cuerda). Sin verificar: (1) «El grigri no es automático»: dar cuerda bloqueando la leva con toda la mano o soltando la cuerda de freno; (2) la comba: cuánta cuerda dejar; (3) dónde te pones para asegurar (lejos de la pared, la caída te arrastra y tu compañero cae más). Envío claro: «mándaselo a quien te asegura».
+- **E64 «La puerta de la cinta»** (Andrés): producida 16-nov. Quedan para otro vídeo: chapa al revés (E51) y cuánto aguanta el material (E57).
+- Descartadas por Andrés 16-nov: «¡Piedra!» (mirar arriba asegurando): «no es un problema tan común».

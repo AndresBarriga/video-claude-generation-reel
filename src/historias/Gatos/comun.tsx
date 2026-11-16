@@ -1,4 +1,4 @@
-// E58 «180 € para sufrir» (pies de gato). Piezas comunes: reparto, cámara, luz del día, rótulos.
+// E63 «180 € para sufrir» (pies de gato). Piezas comunes: reparto, cámara, luz del día, rótulos.
 // Idea visual: el CORTE del gato (se ve el pie por dentro: huesos, dedos en garra, hueco en amarillo, dolor en rojo).
 // Escenarios nuevos: tienda de escalada (Tienda.tsx) y placa de granito con la hora del día avanzando (Placa.tsx).
 import React from "react";

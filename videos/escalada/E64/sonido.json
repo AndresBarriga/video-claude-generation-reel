@@ -1,0 +1,267 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "pajaros",
+   "inicio": {
+    "escena": 0
+   },
+   "volumen": 0.16,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "viento",
+   "inicio": {
+    "escena": 0
+   },
+   "volumen": 0.14,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.05
+   },
+   "duracion": 0.5,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.2
+   },
+   "duracion": 0.7,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "chasquido",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "se",
+    "mas": -0.26
+   },
+   "duracion": 0.5,
+   "volumen": 0.85
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "sale",
+    "mas": 0.13
+   },
+   "duracion": 0.6,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "sale",
+    "mas": 0.15
+   },
+   "duracion": 0.5,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "bien",
+    "palabra": "puerta",
+    "mas": 0
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gira",
+    "palabra": "caer",
+    "mas": 0
+   },
+   "duracion": 0.6,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "chirrido",
+   "inicio": {
+    "escena": "gira",
+    "palabra": "choca",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "chasquido",
+   "inicio": {
+    "escena": "gira",
+    "palabra": "abre",
+    "mas": 0.08
+   },
+   "duracion": 0.5,
+   "volumen": 0.9,
+   "ignoraSilencio": true
+  },
+  {
+   "silencio": true,
+   "inicio": {
+    "escena": "gira",
+    "palabra": "abre",
+    "mas": 0.4
+   },
+   "duracion": 0.4
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "abajo",
+    "palabra": "pasa",
+    "mas": 0
+   },
+   "duracion": 0.7,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "chasquido",
+   "inicio": {
+    "escena": "abajo",
+    "palabra": "sale",
+    "mas": -0.05
+   },
+   "duracion": 0.5,
+   "volumen": 0.85
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "regla",
+    "palabra": "contrario",
+    "mas": 0
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "regla",
+    "palabra": "contrario",
+    "mas": 0.3
+   },
+   "duracion": 0.3,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "regla",
+    "palabra": "izquierda",
+    "mas": 0.4
+   },
+   "duracion": 0.6,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "chirrido",
+   "inicio": {
+    "escena": "rebabas",
+    "palabra": "roza",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.55
+  },
+  {
+   "nombre": "chirrido",
+   "inicio": {
+    "escena": "rebabas",
+    "palabra": "rebabas",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.55
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "rebabas",
+    "palabra": "si",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "desgarro",
+   "inicio": {
+    "escena": "rebabas",
+    "palabra": "lija",
+    "mas": 0
+   },
+   "duracion": 0.8,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "canto",
+    "palabra": "canto",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "canto",
+    "palabra": "larga",
+    "mas": 0.2
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "chasquido",
+   "inicio": {
+    "escena": "canto",
+    "palabra": "mucho",
+    "mas": -0.07
+   },
+   "duracion": 0.5,
+   "volumen": 0.95
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "canto",
+    "palabra": "mucho",
+    "mas": -0.05
+   },
+   "duracion": 0.5,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cierre",
+    "palabra": "puerta",
+    "mas": 0
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  }
+ ]
+}

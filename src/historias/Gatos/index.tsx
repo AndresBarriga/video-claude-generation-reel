@@ -1,4 +1,4 @@
-// E58 «180 € para sufrir» (pies de gato). Una escena por archivo; aquí solo se encadenan.
+// E63 «180 € para sufrir» (pies de gato). Una escena por archivo; aquí solo se encadenan.
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from "remotion";
 import type { Datos } from "../../tipos";
