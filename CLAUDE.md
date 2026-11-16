@@ -13,7 +13,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
   2. 5 aperturas y la que eliges.
   3. Guion puntuado (`docs/viralidad.md`), escena por escena: qué se ve / qué se dice.
   4. Reparto y la idea visual que recorre el vídeo, y como mucho 2–3 bocetos (fotogramas fijos rápidos) si ayudan.
-  **Antes de enseñarla, pásala por el subagente `critico`** (Agent con `subagent_type: critico`): aplica lo que tenga razón y añade a la propuesta su veredicto y su nota de envío en una línea, **y añade la línea a `docs/criticas.md`**. Haz lo mismo con el vídeo terminado (hoja de escenas + guion).
+  **Antes de enseñarla, pásala por el subagente `critico` (modelo ligero, una sola pasada por vídeo)** (Agent con `subagent_type: critico`): aplica lo que tenga razón y añade a la propuesta su veredicto y su nota de envío en una línea, **y añade la línea a `docs/criticas.md`**. El vídeo terminado NO pasa por el crítico (decisión 16-nov): bastan `npm run qa`, `qa-final` y la hoja; el crítico solo si Andrés lo pide.
   Espera su OK o sus cambios. Después produce sin interrumpir.
 - **Todo lo demás (correcciones, cambios concretos, tareas claras): haz, no pidas permiso.** No termines con "¿arranco?" ni ofrezcas opciones que no ha pedido.
 - **Andrés decide ritmo, orden y fechas.** Calendario y test son orientativos: no frenes la producción por ellos ni le sermonees sobre "romper el test". Si ves un riesgo real, dilo en una línea y sigue trabajando.
@@ -37,7 +37,7 @@ Cuenta anónima de reels animados en español de España (Instagram + TikTok), p
 - **Un formato y un público por vídeo** (vía *o* bloque; historia *o* consejo).
 - Si Andrés ya ha aprobado un guion pero ves que puntúa bajo, dilo y propón la versión mejorada; no lo produzcas tal cual.
 - 35–55 s según historia (identidad ~35 s, historia ~50 s). Escribir como se habla (cifras en palabras).
-- Rigor: ver `docs/proceso.md` (suficiente, no paralizante; estricto en salud/seguridad).
+- Rigor: ver `docs/proceso.md` (suficiente, no paralizante). Sin casos reales ni estudios citados no hay que comprobar datos; estricto solo en mecánica de seguridad.
 
 ## Estructura
 - `videos/<nicho>/<id>/guion.json` (escenas con `texto` hablado, `visual` = escena a medida, `titulo` = rótulo de dato, `pausa` = silencio en s) · `sonido.json` · `ficha.md` (estado, formato, resultado, aprendizajes y la descripción para publicar) · `final.mp4` (no se sube a git).
