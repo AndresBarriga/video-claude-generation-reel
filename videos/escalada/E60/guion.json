@@ -1,0 +1,87 @@
+{
+ "id": "E60",
+ "titulo": "Tu mano quiere salvarte (no agarres nada al caer)",
+ "nicho": "escalada",
+ "plantilla": "Agarra",
+ "verificado": true,
+ "fuentes": [
+  "AAC Accidents 2017, «Thumb Amputated By Rope in Fall» (la cuerda se enrolla en un dedo al caer; agarrar la cuerda al caer debe evitarse)",
+  "Mecánica general: agarrar la cinta (mosquetón en la mano), agarrar una presa (giro), quemadura de cuerda"
+ ],
+ "frases": [
+  5,
+  3,
+  1,
+  5,
+  2,
+  8,
+  1,
+  6,
+  2,
+  1,
+  3,
+  3,
+  3,
+  1,
+  7,
+  1,
+  3,
+  2,
+  8,
+  8,
+  3,
+  3,
+  1,
+  3,
+  2,
+  2,
+  4,
+  8,
+  4,
+  3
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "texto": "Se te va el pie. Y tu mano, sola, va a por la cinta."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cinta",
+   "texto": "Mala idea: el mosquetón se te engancha en la mano… y todo tu peso tira de ella.",
+   "pausa": 0.5
+  },
+  {
+   "tipo": "texto",
+   "visual": "presa",
+   "texto": "Otra vez. Ahora, a una presa. Tu mano para. Tu cuerpo no: giras… y vas de lado contra la pared."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cuerda",
+   "texto": "Otra. A la cuerda. Primero quema: corre por tu mano hasta que se tensa. Y si se te enrolla en un dedo…"
+  },
+  {
+   "tipo": "texto",
+   "visual": "dedo",
+   "texto": "Pasa pocas veces. Con una basta."
+  },
+  {
+   "tipo": "texto",
+   "visual": "bien",
+   "texto": "Última. No agarres nada. Manos delante, brazos blandos, pies a la pared.",
+   "pausa": 1.1
+  },
+  {
+   "tipo": "texto",
+   "visual": "confia",
+   "texto": "Y deja que la cuerda haga su trabajo."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "Tu mano quiere salvarte. No la dejes."
+  }
+ ]
+}

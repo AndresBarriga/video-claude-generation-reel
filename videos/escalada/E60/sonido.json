@@ -1,0 +1,174 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "viento",
+   "inicio": {
+    "escena": 0
+   },
+   "volumen": 0.16,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "mano",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cinta",
+    "palabra": "engancha",
+    "mas": 0.05
+   },
+   "duracion": 0.4,
+   "volumen": 0.9
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "cinta",
+    "palabra": "peso",
+    "mas": 0
+   },
+   "duracion": 0.8,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "presa",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "presa",
+    "palabra": "para",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "presa",
+    "palabra": "no",
+    "mas": 0
+   },
+   "duracion": 1.2,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "presa",
+    "palabra": "pared",
+    "mas": 0
+   },
+   "duracion": 0.9,
+   "volumen": 0.95
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "cuerda",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "cuerda",
+    "palabra": "quema",
+    "mas": 0
+   },
+   "duracion": 1.8,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "cuerda",
+    "palabra": "tensa",
+    "mas": 0
+   },
+   "duracion": 0.6,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "cuerda",
+    "palabra": "enrolla",
+    "mas": 0.2
+   },
+   "duracion": 1.3,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "chasquido",
+   "inicio": {
+    "escena": "dedo",
+    "mas": 0.5
+   },
+   "duracion": 0.8,
+   "volumen": 0.9,
+   "ignoraSilencio": true
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "bien",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "bien",
+    "palabra": "agarres",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "bien",
+    "palabra": "pared",
+    "mas": 0.75
+   },
+   "duracion": 0.6,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cierre",
+    "palabra": "no",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.7
+  }
+ ]
+}
