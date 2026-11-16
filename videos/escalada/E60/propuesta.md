@@ -62,3 +62,18 @@ Así que no agarres nada. Manos delante, abiertas, y los brazos blandos. Piernas
 Te caes. Y esta vez… tu mano no va a ninguna parte.
 
 Rótulos: «¿LA AGARRAS?» (fotograma 0) · «TU DEDO» · ASÍ NO / ASÍ · «Mándaselo a quien siempre agarra la cinta». Comentario fijado: «¿Qué agarraste tú: cinta, cuerda o pared?»
+
+---
+# v4 (16-nov, tarde) — «Tu mano quiere salvarte» · tomas repetidas + gags (feedback de Andrés: más gráfico, guiño tipo diente)
+Paradoja central: la mano intenta salvarte y es lo que te lesiona. Misma caída 4 veces con contador TOMA 1-4. Gags sin sangre: mosquetón-cepo y mano hinchada (cinta) · brazo de goma y latigazo (presa) · palma humeante + negro y contador «DEDOS: 5 → 4» (cuerda) · toma buena: cuenta cinco dedos y saluda. ~40 s; las pausas de los gags se dan en montaje (`pausa`), no en la voz.
+
+**Texto de voz (~100 palabras):**
+Te caes. Y tu mano, sola, va a por la cinta.
+Mala idea: el mosquetón se te engancha en la mano… y todo tu peso tira de ella.
+Otra vez. Ahora, a una presa. Tu mano para. Tu cuerpo no: el tirón se lo lleva el hombro.
+Otra. A la cuerda. Primero quema: corre por tu mano hasta que se tensa. Y si se te enrolla en un dedo…
+Pasa pocas veces. Con una basta.
+Última. No agarres nada. Manos delante, brazos blandos, pies a la pared. Y deja que la cuerda haga su trabajo.
+Tu mano quiere salvarte. No la dejes.
+
+Rótulos: «¿LA AGARRAS?» (fotograma 0) · TOMA 1-4 · «DEDOS: 5 → 4» · «Mándaselo a quien siempre agarra la cinta». Comentario fijado: «¿Qué agarraste tú: cinta, cuerda o pared?»
