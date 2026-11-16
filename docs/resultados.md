@@ -53,3 +53,6 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 - **Caja (13 respuestas):** domina el miedo a caer y la confianza en la cuerda (≈9/13); también desplomes, técnica, por dónde empezar, historia de la escalada.
 
 - **DM 13-nov (chechu_te):** lo más útil = tips y el porqué de situaciones al escalar: material, cuerpo y mente. Coincide con H14 y la caja de preguntas.
+
+## E59 La segunda chapa · 16-nov 21:10 (~24 h)
+- 177K vistas, **875 seg. (4,9/1k)**, ≈2.800 envíos (2,3 %), 1,1K guard., visita→seguir 87 %, visto 27/44 s, skip 25,9 %. Sigue en pico. Mejor vídeo de la cuenta en seguidores (E15: 62 a 36 h con 189K). Pendiente: 48 h y 7 d, con curva.

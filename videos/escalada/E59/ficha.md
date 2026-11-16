@@ -10,5 +10,8 @@
 #escalada #escaladadeportiva #rocodromo #seguridadenescalada #climbing
 **Comentario fijado:** ¿Chapas la segunda por encima de la cabeza o esperas a la cintura?
 
+## Resultado (16-nov 21:10, ~24 h)
+177.213 vistas (134K espectadores), **875 seg. (4,9/1k)**, ≈2.800 envíos (tasa 2,3 %), 1,1K guardados, 7,1K likes, 30 com., 197 reposts, 1K visitas al perfil → **87 % sigue**. Visto medio 27 s, skip 25,9 % (estable). Vistas aún en subida casi lineal, muy por encima del típico: sigue en pico. Lectura: mejor vídeo de la cuenta en seguidores y conversión; las tasas bajan un poco al ampliar público (like 6,2→5,2 %, envíos 2,8→2,3 %), normal. Curva de retención no enviada: pedir captura a 48 h.
+
 ## Resultado (16-nov, 10 h)
 63.571 vistas, 334 seg. (5,3/1k), envíos 2,8 %, guardados 1,0 %, like 6,2 %, skip 25,9 %, visto medio 28 s. Reels 80,5 %. Curva: ≈80 % a 3 s, meseta ≈55-50 % de 15 a 40 s, final ≈25 %; repunte de likes al final. Lectura: la pregunta del segundo 0 y la paradoja retienen; el skip alto indica que el 1.º segundo aún pierde ~1 de cada 4.
