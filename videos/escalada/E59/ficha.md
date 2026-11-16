@@ -9,3 +9,6 @@
 **Descripción:** ¿Chapas la segunda con los brazos estirados? 👀 Si fallas ahí, caes lo mismo que chapando a la cintura… pero empiezas más abajo, y en la segunda más abajo es el suelo. Y si encima llevas la cuerda en la boca, te juegas los dientes. En las primeras chapas: sube hasta tenerla a la cintura. Y quien asegura, cerca de la pared, corto y atento. Mándaselo a quien te asegura 🦷
 #escalada #escaladadeportiva #rocodromo #seguridadenescalada #climbing
 **Comentario fijado:** ¿Chapas la segunda por encima de la cabeza o esperas a la cintura?
+
+## Resultado (16-nov, 10 h)
+63.571 vistas, 334 seg. (5,3/1k), envíos 2,8 %, guardados 1,0 %, like 6,2 %, skip 25,9 %, visto medio 28 s. Reels 80,5 %. Curva: ≈80 % a 3 s, meseta ≈55-50 % de 15 a 40 s, final ≈25 %; repunte de likes al final. Lectura: la pregunta del segundo 0 y la paradoja retienen; el skip alto indica que el 1.º segundo aún pierde ~1 de cada 4.

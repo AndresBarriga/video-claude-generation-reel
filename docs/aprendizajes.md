@@ -17,7 +17,7 @@ Solo una reforzada puede pasar a `docs/viralidad.md` (y Andrés lo aprueba). Dat
 | H6 | La nota del crítico no predice el rendimiento; sirve para encontrar fallos | E6 (7/10 → plano) | — (E15 sin nota) | Correlación clara nota ↔ seguidores con ≥ 8 vídeos | abierta |
 | H12 | Rinde más lo que le pasa al espectador (su decisión, su cuerpo) que lo que le pasó a otro | E15 (decisión propia, 203K), E11 (su cuerpo, 66K, 2,03 seg./1k), E35 («tú», 34,6K a 39 h; frente a E35B en 3.ª persona: skip 20,3 vs 22,7 %, meseta 55 vs 47 %) | E14 (historia ajena, 5K), E36 (historia ajena, 6K) | Un vídeo «tuyo» (E35 o el próximo cuerpo) < 10K vistas a 48 h, o una historia ajena sin «tú» > 30K | no refutada (E35 > 10K); falta el próximo cuerpo |
 | H13 | La información/técnica limpia con comparación del mismo paso se retiene y se envía | Referencia @escaladatips (580 «me gusta», 229 envíos); Pierna de Elvis (cuerpo + truco, 66K) | Honnold (5K) y Hippies y avión (6K) eran información con gancho flojo | La puerta (E42): skip ≤ 25 %, ≥ 5 envíos/1k y ≥ 1 seg./1k a 48 h | a 17 h va a refutarse: skip 27,2 %, 0,55 env./1k, 0,55 seg./1k, 1,8K plano; gancho flojo (cierra a 48 h) |
-| H14 | Seguridad/cuerpo **con cuerda** y situación reconocible o caso real (nivel medio) es el formato que más seguidores trae en bruto: alcance medio-alto y ≥ 2,5 seg./1k | E46 (73K, 229 seg., 3,1/1k), E11 (77K, 199, 2,6), E43 (27,5K, 141, 5,1), E52 (3,2/1k) | E49 (1,6/1k), E39/E42 (poco alcance) | E41 y E47 < 1,5 seg./1k o < 8K vistas a 7 d | abierta (prueban E41, E47) |
+| H14 | Seguridad/cuerpo **con cuerda** y situación reconocible o caso real (nivel medio) es el formato que más seguidores trae en bruto: alcance medio-alto y ≥ 2,5 seg./1k | E46 (73K, 229 seg., 3,1/1k), E11 (77K, 199, 2,6), E43 (27,5K, 141, 5,1), E52 (3,2/1k), **E59 (63,6K y 334 seg. a 10 h, 5,3/1k, envíos 2,8 %)** | E49 (1,6/1k), E39/E42 (poco alcance) | E41 y E47 < 1,5 seg./1k o < 8K vistas a 7 d | abierta (prueban E41, E47) |
 
 ## Cómo se actualiza
 Tras cada medición a 7 días: añadir el vídeo a «a favor»/«en contra» de las hipótesis que toque, cambiar estado si procede y anotar hipótesis nuevas. Proponer el cambio a Andrés antes de tocar `viralidad.md`.
@@ -43,3 +43,8 @@ Seguidores/1k vistas: Pump 5,1 · Beta 3,5 · Poleas 3,2 · Descansos 2,9 · Mie
 - **H7 → amplía a H14:** cuerpo y seguridad con cuerda son lo que más hace crecer la cuenta (E46, E11, E43 = 569 de los seguidores medidos). La info/consejo sin gancho fuerte convierte (≈3/1k) pero alcanza poco (E52, E44, E39, E42): el gancho decide el alcance.
 - **Audiencia (historias, n≈70):** 79 % cuerda, 75 % hasta 6b+; en la caja de preguntas ≈9/13 piden miedo a caer / confianza en la cuerda. Encaja con H14.
 - Sin datos nuevos: H2, H4, H5, H8, H9, H11, H6. Falta la medición de E56 (ferrata) y confirmar hora de subida de E49.
+
+## 2026-11-16 · E59 «La segunda chapa» (10 h)
+- **H14 reforzada:** 63,6K vistas, 334 seguidores (5,3 seg./1k, el mejor de la cuenta), envíos 2,8 %, guardados 1,0 %. Seguridad con cuerda + paradoja física visible + rehook (dientes) + cierre «mándaselo». Falta confirmar a 7 d; E47 y E41 siguen siendo el contraste (E47 1,6K).
+- **Pregunta-rótulo desde el fotograma 0: a favor, n=3 con matices.** E47B bajó skip 32,7→24,2 % sin más vistas; E59 skip 25,9 % (higher) pero alcance 5× el típico. Ayuda a retener, no explica por sí sola el alcance.
+- **Curva E59:** ≈80 % a 3 s, meseta ≈55-50 % de 15 a 40 s, caída final a ≈25 % (el cierre/bucle no retiene los últimos 4 s). Likes concentrados al final (pico ≈19 %).
