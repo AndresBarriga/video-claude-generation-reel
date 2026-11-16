@@ -119,16 +119,55 @@ export const Sala: React.FC<{ xF?: Perfil; suelo?: number; cintas?: number[]; co
   );
 };
 
-/** Plano con cámara. `decorado`: "cueva" | "sala". Los hijos se dibujan en coordenadas de mundo, por delante del decorado.
+/** Fondo de DÍA: cielo claro, sierra y pinar (paralaje suave). */
+export const FondoDia: React.FC<{ cx: number; cy: number; z: number }> = ({ cx, cy, z }) => {
+  const px = (cx - 600) * 0.25, py = (cy - 1300) * 0.18, s = 1 + (z - 1) * 0.25;
+  return (
+    <g>
+      <defs><linearGradient id="kit-dia" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#5FA8D8" /><stop offset="0.7" stopColor="#BFE0EE" /><stop offset="1" stopColor="#F3E7C8" /></linearGradient></defs>
+      <rect x={-200} y={-200} width={1480} height={2400} fill="url(#kit-dia)" />
+      <g transform={`translate(540 960) scale(${s}) translate(${-540 - px} ${-960 - py})`}>
+        <circle cx={210} cy={520} r={90} fill="#FFF3C4" opacity={0.9} />
+        {[[90, 760, 1], [420, 640, 1.3], [700, 820, 0.9]].map(([x, y, k], i) => <g key={i} opacity={0.85}><ellipse cx={x} cy={y} rx={120 * k} ry={34 * k} fill="#fff" /><ellipse cx={x + 60 * k} cy={y - 24 * k} rx={70 * k} ry={30 * k} fill="#fff" /></g>)}
+        <path d="M-200 1180 L40 1040 L170 1120 L330 980 L470 1090 L600 1020 L760 1140 L760 2200 L-200 2200 Z" fill="#8FB2C4" />
+        <path d="M-200 1330 Q120 1240 330 1310 T760 1330 L760 2200 L-200 2200 Z" fill="#6E9A7C" />
+        {Array.from({ length: 30 }).map((_, i) => { const x = -180 + random(`dx${i}`) * 900, y = 1380 + random(`dy${i}`) * 420, h = 60 + random(`dh${i}`) * 50; return <path key={i} d={`M${x} ${y - h} L${x + 26} ${y} H${x - 26} Z`} fill={i % 3 ? "#3F6B52" : "#4E7D5E"} />; })}
+      </g>
+    </g>
+  );
+};
+/** Decorado ROCA de día: caliza clara al sol con vetas y agujeros, suelo de tierra con hierba. */
+export const Roca: React.FC<{ xF?: Perfil; suelo?: number; cintas?: number[]; magnesio?: number[] }> = ({ xF = PERFILES.vertical, suelo = 2650, cintas = [], magnesio = [] }) => {
+  const ys = Array.from({ length: 60 }, (_, i) => -300 + i * 52), cara = ys.map((y) => `${xF(y)} ${y}`).join(" L");
+  return (
+    <g>
+      <defs><linearGradient id="kit-roca" x1="0" y1="0" x2="1" y2="0.1"><stop offset="0" stopColor="#EFE3CC" /><stop offset="0.2" stopColor="#D9C8AC" /><stop offset="0.7" stopColor="#B7A58A" /><stop offset="1" stopColor="#9A8A72" /></linearGradient></defs>
+      <path d={`M${cara} L1600 ${suelo + 400} L1600 -300 Z`} fill="url(#kit-roca)" />
+      {Array.from({ length: 10 }).map((_, i) => { const y = 120 + i * 270 + random(`ry${i}`) * 90; return <path key={i} d={`M${xF(y) + 8} ${y} q240 ${-24 - random(`rq${i}`) * 40} 560 ${24 + random(`rw${i}`) * 40} t500 -16`} stroke="#8E7E66" strokeWidth={4 + random(`rs${i}`) * 5} fill="none" opacity={0.5} />; })}
+      {Array.from({ length: 8 }).map((_, i) => { const y0 = random(`vy${i}`) * 2300, x0 = xF(y0) + 90 + random(`vx${i}`) * 500, l = 300 + random(`vl${i}`) * 500; return <path key={i} d={`M${x0} ${y0} q${-20 + random(`vq${i}`) * 40} ${l / 2} ${-10} ${l}`} stroke={i % 2 ? "#6F7A86" : "#C98B5A"} strokeWidth={22 + random(`vw${i}`) * 26} fill="none" opacity={0.22} strokeLinecap="round" />; })}
+      {Array.from({ length: 40 }).map((_, i) => { const y = random(`ay${i}`) * 2700, x = xF(y) + 60 + random(`ax${i}`) * 760, r = 7 + random(`ar${i}`) * 12; return <g key={i}><ellipse cx={x} cy={y} rx={r} ry={r * 0.6} fill="#6B5D4B" opacity={0.75} /><path d={`M${x - r} ${y + 2} Q${x} ${y + r * 0.9} ${x + r} ${y + 2}`} stroke="#F6EEDC" strokeWidth={3} fill="none" opacity={0.6} /></g>; })}
+      <path d={`M${cara}`} stroke="#FFF8E6" strokeWidth={10} fill="none" opacity={0.7} />
+      <path d={`M${cara}`} stroke={PC.tinta} strokeWidth={4} fill="none" opacity={0.55} />
+      {magnesio.map((y, i) => <g key={i}><ellipse cx={xF(y) + 12} cy={y} rx={22} ry={9} fill="#8E7E66" /><ellipse cx={xF(y) + 12} cy={y - 4} rx={18} ry={6} fill="#fff" opacity={0.75} /></g>)}
+      <path d={`M-400 ${suelo + 14} Q300 ${suelo - 12} 900 ${suelo} L1600 ${suelo} L1600 3200 L-400 3200 Z`} fill="#8A6E4E" />
+      <path d={`M-400 ${suelo + 14} Q300 ${suelo - 12} 900 ${suelo}`} stroke="#6E9A5C" strokeWidth={16} fill="none" />
+      {Array.from({ length: 22 }).map((_, i) => { const x = -350 + i * 62 + random(`gx${i}`) * 30; return <path key={i} d={`M${x} ${suelo + 6} l-8 -30 M${x + 8} ${suelo + 6} l6 -36 M${x + 16} ${suelo + 6} l12 -26`} stroke="#5E8A4E" strokeWidth={6} strokeLinecap="round" />; })}
+      {[[-140, 50, 80], [260, 40, 46], [1000, 20, 110]].map(([x, dy, r], i) => <ellipse key={i} cx={x} cy={suelo + dy} rx={r} ry={r * 0.45} fill="#A8997F" stroke="#6B5D4B" strokeWidth={5} />)}
+      {cintas.map((y, i) => <Expres key={i} x={xF(y)} y={y} color="#D4533F" />)}
+    </g>
+  );
+};
+
+/** Plano con cámara. `decorado`: "cueva" (anochecer) | "sala" (rocódromo) | "roca" (exterior de día). Los hijos se dibujan en coordenadas de mundo, por delante del decorado.
  *  `sh` = sacudida (px). Para un decorado propio, pasa `fondo` y `mundo`. */
-export const Plano: React.FC<{ via: Via; cx: number; cy: number; z: number; sh?: number; decorado?: "cueva" | "sala"; cintas?: boolean; calido?: number; fondo?: React.ReactNode; mundo?: React.ReactNode; children?: React.ReactNode }> = ({ via, cx, cy, z, sh = 0, decorado = "cueva", cintas = true, calido, fondo, mundo, children }) => {
+export const Plano: React.FC<{ via: Via; cx: number; cy: number; z: number; sh?: number; decorado?: "cueva" | "sala" | "roca"; cintas?: boolean; calido?: number; fondo?: React.ReactNode; mundo?: React.ReactNode; children?: React.ReactNode }> = ({ via, cx, cy, z, sh = 0, decorado = "cueva", cintas = true, calido, fondo, mundo, children }) => {
   const ch = cintas ? via.chapas : [];
   return (
     <AbsoluteFill style={{ transform: `translate(${sh}px, ${Math.abs(sh) * 0.7}px)` }}>
       <Svg>
-        {fondo ?? (decorado === "sala" ? <FondoSala cx={cx} cy={cy} z={z} /> : <Fondo cx={cx} cy={cy} z={z} calido={calido} />)}
+        {fondo ?? (decorado === "sala" ? <FondoSala cx={cx} cy={cy} z={z} /> : decorado === "roca" ? <FondoDia cx={cx} cy={cy} z={z} /> : <Fondo cx={cx} cy={cy} z={z} calido={calido} />)}
         <g transform={cam(cx, cy, z)}>
-          {mundo ?? (decorado === "sala" ? <Sala xF={via.xF} suelo={via.suelo} cintas={ch} /> : <Cueva xF={via.xF} suelo={via.suelo} cintas={ch} magnesio={via.presas.map((y) => [y, 0.55])} />)}
+          {mundo ?? (decorado === "sala" ? <Sala xF={via.xF} suelo={via.suelo} cintas={ch} /> : decorado === "roca" ? <Roca xF={via.xF} suelo={via.suelo} cintas={ch} magnesio={via.presas} /> : <Cueva xF={via.xF} suelo={via.suelo} cintas={ch} magnesio={via.presas.map((y) => [y, 0.55])} />)}
           {children}
         </g>
       </Svg>

@@ -41,7 +41,8 @@ export const Presas: React.FC<{ via: Via; ys?: number[]; color?: string }> = ({ 
   <g>{ys.map((y, i) => <g key={i}><ellipse cx={via.xF(y) + 12} cy={y} rx={22} ry={9} fill={color} /><ellipse cx={via.xF(y) + 12} cy={y - 4} rx={18} ry={6} fill="#F1F3F5" opacity={0.35 + random(`pm${i}`) * 0.4} /></g>)}</g>
 );
 
-const mosq = (abre: number, gatillo: "izq" | "der") => {
+/** Forma de mosquetón en D (120 × 200, origen en el centro). `rosca` 0–1 = seguro de rosca subido (undefined = sin seguro). */
+export const formaMosq = (abre: number, gatillo: "izq" | "der", rosca?: number) => {
   // Mosquetón en D, 120 × 200, origen en su centro. El gatillo gira hacia dentro desde su bisagra inferior.
   const s = gatillo === "izq" ? -1 : 1, T = PC.tinta;
   return (
@@ -54,6 +55,7 @@ const mosq = (abre: number, gatillo: "izq" | "der") => {
       <g transform={`translate(${s * 46} 56) rotate(${-s * abre * 34})`}>
         <path d="M0 0 L2 -116" stroke={T} strokeWidth={24} strokeLinecap="round" /><path d="M0 0 L2 -116" stroke="#8FA0B2" strokeWidth={13} strokeLinecap="round" />
         <circle cx={0} cy={0} r={7} fill={T} />
+        {rosca !== undefined && <g transform={`translate(1 ${-40 - 52 * rosca})`}><rect x={-17} y={-30} width={34} height={60} rx={8} fill={rosca > 0.9 ? "#3E6FB0" : "#E2533F"} stroke={T} strokeWidth={6} />{[-14, 0, 14].map((y) => <path key={y} d={`M-11 ${y} h22`} stroke={T} strokeWidth={3} opacity={0.5} />)}</g>}
       </g>
     </g>
   );
@@ -64,12 +66,20 @@ export const ExpresGrande: React.FC<{ x: number; y: number; s?: number; abre?: n
   <g transform={`translate(${x} ${y}) scale(${s})`}>
     <g transform={`rotate(${gira} 0 -560)`}>
       {pared && <g transform="translate(18 -590)"><rect x={-46} y={-40} width={92} height={96} rx={18} fill="#B8C0C8" stroke={PC.tinta} strokeWidth={10} /><circle cx={0} cy={-8} r={20} fill="#6E7782" stroke={PC.tinta} strokeWidth={8} /><circle cx={0} cy={30} r={15} fill="#2B3039" /></g>}
-      <g transform="translate(8 -470) scale(0.9)">{mosq(0, gatillo === "izq" ? "der" : "izq")}</g>
+      <g transform="translate(8 -470) scale(0.9)">{formaMosq(0, gatillo === "izq" ? "der" : "izq")}</g>
       <path d="M2 -392 L-2 -92" stroke={PC.tinta} strokeWidth={74} strokeLinecap="round" />
       <path d="M2 -392 L-2 -92" stroke={color} strokeWidth={56} strokeLinecap="round" />
       {[-360, -330, -150, -120].map((yy) => <path key={yy} d={`M-22 ${yy} L22 ${yy}`} stroke="#fff" strokeWidth={5} strokeDasharray="7 7" opacity={0.6} />)}
       {cuerda && <g><path d="M-250 150 Q-70 40 -8 30 Q60 20 230 -260" stroke={C.cuerdaS} strokeWidth={46} fill="none" strokeLinecap="round" /><path d="M-250 150 Q-70 40 -8 30 Q60 20 230 -260" stroke={C.cuerda} strokeWidth={36} fill="none" strokeLinecap="round" /><path d="M-250 150 Q-70 40 -8 30 Q60 20 230 -260" stroke="#FFB27F" strokeWidth={7} fill="none" strokeDasharray="26 30" opacity={0.7} /></g>}
-      {mosq(abre, gatillo)}
+      {formaMosq(abre, gatillo)}
     </g>
+  </g>
+);
+
+/** Reunión: dos químicos, cadena y anilla. (x, y) = la anilla (por donde pasa la cuerda al descolgar). */
+export const Reunion: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+  <g>
+    {[[-6, -150], [44, -96]].map(([dx, dy], i) => <g key={i}><path d={`M${x + dx} ${y + dy} L${x} ${y - 14}`} stroke={PC.tinta} strokeWidth={13} strokeLinecap="round" /><path d={`M${x + dx} ${y + dy} L${x} ${y - 14}`} stroke="#AEB6C0" strokeWidth={7} strokeDasharray="12 7" strokeLinecap="round" /><circle cx={x + dx} cy={y + dy} r={12} fill="#B8C0C8" stroke={PC.tinta} strokeWidth={4} /></g>)}
+    <ellipse cx={x} cy={y} rx={13} ry={17} fill="none" stroke={PC.tinta} strokeWidth={13} /><ellipse cx={x} cy={y} rx={13} ry={17} fill="none" stroke="#D5DBE1" strokeWidth={6} />
   </g>
 );

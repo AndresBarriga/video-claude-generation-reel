@@ -74,6 +74,7 @@ const Asegura: React.FC = () => {
     </Hoja>
   );
 };
-const PAGINAS = [Poses, Reparto, () => <General />, () => <General sala />, () => <Caidas />, () => <Caidas suelo />, Material, Asegura];
+import { Primeros, Acciones, Comparar, Montaje } from "./mas";
+const PAGINAS = [Poses, Reparto, () => <General />, () => <General sala />, () => <Caidas />, () => <Caidas suelo />, Material, Asegura, Primeros, Acciones, Comparar, Montaje];
 export const N_CATALOGO = PAGINAS.length;
 export const Catalogo: React.FC = () => { const Pg = PAGINAS[Math.min(PAGINAS.length - 1, Math.floor(useCurrentFrame() / 30))]; return <Pg />; };

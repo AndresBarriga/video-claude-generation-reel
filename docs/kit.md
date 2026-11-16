@@ -19,8 +19,11 @@ const p = VIA.cadera(VIA.mos(1).y + 150);                    // cadera de quien 
 | `rig.ts` | `POSE.*` (agarre, agarreMira, reposo, cae, caeRecogida, caeBien, recibe, colgado, sentado, pie) · `pNudo`, `pChapa(p, m, t, j)`, `pAgarra(p, m)`, `resbala` · `conMano`/`conManoB` (IK), `mix`, `mano`, `cabeza`, `boca` |
 | `fisica.ts` | `caida(via, k, p0, pose, { i, comba, sacada, aire })` decide sola cuerda o suelo · `caeCuerda`, `caeSuelo`, `distCaida`, `tocaSuelo`, `saltoAseg(est, j, dina)` |
 | `Personas.tsx` | `REPARTO` (ella, el, tu, ase, nueva, fantasma) · `Persona` · `Asegurador` (comba, feed, paso, alza, dy, vuelo; mano de freno siempre en la cuerda) |
-| `Cuerda.tsx` | `Soga` (sag, brillo, fantasma, idea) · `porChapas` · `Expres`, `Cintas`, `Presas` · `ExpresGrande` (primer plano: abre, gira, cuerda, gatillo) |
-| `Decorado.tsx` | `Plano` (cámara + decorado `"cueva"` \| `"sala"`; `fondo`/`mundo` para uno propio) · `Cueva`, `Fondo`, `Sala`, `FondoSala` |
+| `Cuerda.tsx` | `Soga` (sag, brillo, fantasma, idea) · `porChapas` · `Expres`, `Cintas`, `Presas`, `Reunion` · `ExpresGrande` (primer plano: abre, gira, cuerda, gatillo) |
+| `Decorado.tsx` | `Plano` (cámara + decorado `"cueva"` \| `"sala"` \| `"roca"` de día; `fondo`/`mundo` para uno propio) · `Cueva`, `Sala`, `Roca` y sus fondos |
+| `Primeros.tsx` | Primeros planos: `Agarre` (mano que agarra lo que le pases como hijo; `cierra`), `AparatoGrande` (`bloquea`, `rosca`), `OchoGrande` (`repaso` < 1 = nudo a medias), `MosquetonGrande` (`rosca`), `CuerdaGrande` |
+| `acciones.ts` | Acciones completas: `accEscalar`, `accChapar` + `sogaChapar`, `sistemaCaida` (quien cae + quien asegura + cuerda + sacudida; `dina` 0 seca / 1 dinámica), `accDescolgar`, `accAseg("dar" \| "recoger" \| "atento")`, `lento` (cámara lenta), `bucle` (fundido al fotograma 0) |
+| `Montaje.tsx` | Gancho y cierre: `Pregunta` (rótulo desde el fotograma 0), `Partida` (así no / así, con `Sello`), `Lupa` (detalle ampliado), `Foco`, `Chip`, `Envio` («Mándaselo a…») |
 | `Efectos.tsx` | `Cota` (flecha de medida con «3 m»), `Polvo`, `Destello`, `Diente`, `Mordida`, `Medidor`, `Bocadillo` |
 
 ## Reglas
@@ -29,3 +32,4 @@ const p = VIA.cadera(VIA.mos(1).y + 150);                    // cadera de quien 
 - Mismo **reparto** entre vídeos (se reconocen). Personaje nuevo → `REPARTO`.
 - Caídas con `k` = fotogramas desde que se suelta (física real); `c.est` sacude la cámara y levanta a quien asegura (`saltoAseg`).
 - Al tocar el kit: comprobar que E59 no cambia (`npm run fotograma -- E59 11` y `28` antes y después).
+- **Estructura tipo de un vídeo de cuerda:** `Pregunta` en el fotograma 0 sobre la acción ya en marcha → `sistemaCaida`/`accChapar` para la mecánica → `Lupa` o primer plano para el detalle (rehook) → `Partida` para «así no / así» → `Envio` + `bucle` al fotograma 0.

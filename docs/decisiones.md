@@ -48,3 +48,4 @@ Lo vigente está resumido en `docs/estrategia.md`.
 | 2026-11-16 | H14 reforzada con E59 (5,3 seg./1k, 63,6K); pregunta-rótulo en fotograma 0 se mantiene |
 | 2026-11-16 | Crítico: modelo sonnet, una pasada (solo propuesta), sin pasada sobre vídeo terminado; sin verificación de estudios salvo mecánica de seguridad. Animaciones a medida se mantienen (no hay nivel «ligero») |
 | 2026-11-16 | Kit de cuerda reutilizable (`src/piezas/kit`, `docs/kit.md`, `npm run catalogo`); E59 migrado sin cambios de imagen (10 fotogramas idénticos). Decorado nuevo «sala» y personaje «nueva» |
+| 2026-11-16 | Kit ampliado: primeros planos (mano, aparato, ocho, mosquetón de seguro), acciones (escalar, chapar, caída del sistema seca/dinámica, descolgar), montaje (Pregunta, Partida, Lupa, Envio) y decorado «roca» de día |

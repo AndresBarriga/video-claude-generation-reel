@@ -7,3 +7,6 @@ export * from "./Cuerda";
 export * from "./Personas";
 export * from "./Efectos";
 export * from "./Decorado";
+export * from "./Primeros";
+export * from "./acciones";
+export * from "./Montaje";

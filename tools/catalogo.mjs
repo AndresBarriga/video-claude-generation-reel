@@ -3,7 +3,7 @@
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-const raiz = path.resolve(import.meta.dirname, ".."), N = 8, solo = process.argv[2];
+const raiz = path.resolve(import.meta.dirname, ".."), N = 12, solo = process.argv[2];
 fs.mkdirSync(path.join(raiz, "out"), { recursive: true });
 const extra = process.env.BROWSER_EXE ? ["--browser-executable", process.env.BROWSER_EXE] : [];
 const pags = solo !== undefined ? [Number(solo)] : Array.from({ length: N }, (_, i) => i);
@@ -12,6 +12,6 @@ for (const i of pags) {
   if (r.status) process.exit(r.status);
 }
 if (solo === undefined) {
-  spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-start_number", "0", "-i", "out/catalogo-%d.png", "-vf", "scale=540:-1,tile=4x2:padding=8:color=0x0B111A", "-frames:v", "1", "out/catalogo.png"], { cwd: raiz, stdio: "inherit" });
+  spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-start_number", "0", "-i", "out/catalogo-%d.png", "-vf", "scale=540:-1,tile=4x3:padding=8:color=0x0B111A", "-frames:v", "1", "out/catalogo.png"], { cwd: raiz, stdio: "inherit" });
   console.log("out/catalogo.png");
 }

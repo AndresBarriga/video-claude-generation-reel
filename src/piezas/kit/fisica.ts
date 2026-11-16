@@ -36,4 +36,4 @@ export const caida = (via: Via, k: number, p0: Pt, a0: Angulos, o: { i: number; 
   return tocaSuelo(via, p0, d) ? caeSuelo(via, k, p0, a0, p0.x - 24) : caeCuerda(k, p0, a0, { d, ancla: via.mos(o.i), dy: o.dy, aire: o.aire });
 };
 /** Cuánto levanta la frenada a quien asegura (px, negativo = sube), a partir del `est` de caeCuerda. `dina` 0–1 = cuánto acompaña (dinamiza). */
-export const saltoAseg = (est: number, j: number, dina = 0.5) => (j < 0 ? 0 : -est * (0.5 + dina));
+export const saltoAseg = (est: number, j: number, dina = 0.5) => (j < 0 ? 0 : -est * (0.8 + 1.6 * dina));
