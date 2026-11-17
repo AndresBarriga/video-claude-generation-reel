@@ -19,8 +19,8 @@ export const AP = { x: 0, y: 0, s: 1 };
 /** Punto donde aprieta el pulgar (esquina de la leva), en coordenadas de pantalla. */
 const TAB0 = { x: 446, y: 912 }, ZX = 520, ZY = 1000, ZS = 1.32;
 export const TAB = { x: 540 + (TAB0.x - ZX) * ZS, y: 990 + (TAB0.y - ZY) * ZS };
-const T = "#14181F", PIEL = "#FFF8F1", NAR = "#FF7A45", GR = "#9AA3AD", GRO = "#5E6670";
-const ln = { stroke: T, strokeWidth: 6, strokeLinejoin: "round" as const, strokeLinecap: "round" as const };
+const T = "#050B14", PIEL = "#E3B48E", NAR = "#FF7A45", GR = "#5C7FA8", GRO = "#C9D1D8", MANGA = "#8E7CC3";
+const ln = { stroke: T, strokeWidth: 9, strokeLinejoin: "round" as const, strokeLinecap: "round" as const };
 const cuerda = (d: string, off = 0, w = 30) => <g><path d={d} stroke={T} strokeWidth={w + 10} fill="none" strokeLinecap="round" strokeLinejoin="round" /><path d={d} stroke={C.cuerda} strokeWidth={w} fill="none" strokeLinecap="round" strokeLinejoin="round" /><path d={d} stroke="#FFD0A8" strokeWidth={5} fill="none" strokeDasharray="24 28" strokeDashoffset={off} opacity={0.85} /></g>;
 const ESC = "M380 120 L452 905", FRE = "M488 905 C500 812 572 806 578 900 L590 1700";
 /** Dedo de línea (cápsula con uña opcional). */
@@ -40,7 +40,7 @@ const flecha = (x: number, y: number, rot: number, o: number, col = NAR) => <g t
 const Aparato: React.FC<{ pisa: number; bloquea: number; leva?: string }> = ({ pisa, bloquea, leva }) => (
   <g>
     {/* arnés: cinturón y anillo de aseguramiento (como en la lámina oficial) */}
-    <path d="M-60 1160 Q260 1150 520 1250" fill="none" {...ln} strokeWidth={5} /><path d="M-60 1200 Q240 1196 470 1290" fill="none" {...ln} strokeWidth={5} />
+    <path d="M-60 1160 Q260 1150 520 1250 L470 1290 Q240 1196 -60 1200 Z" fill="#3A4556" stroke="#6B7787" strokeWidth={5} />
     <path d="M430 1180 Q470 1230 440 1290 Q420 1320 404 1288" fill="#D9DDE2" {...ln} />
     {/* mosquetón de seguro */}
     <path d="M452 1048 Q490 1060 488 1110 L470 1196 Q462 1222 438 1214 Q418 1206 420 1180 L438 1080 Q442 1050 452 1048 Z" fill="none" stroke={T} strokeWidth={16} /><path d="M452 1048 Q490 1060 488 1110 L470 1196 Q462 1222 438 1214 Q418 1206 420 1180 L438 1080 Q442 1050 452 1048 Z" fill="none" stroke="#C7CDD4" strokeWidth={7} />
@@ -62,7 +62,7 @@ const ManoFreno: React.FC<{ modo: "rapido" | "freno"; pisa?: number; marca?: num
     const y = 1330 - dy;
     return (
       <g>
-        <path d={`M640 ${y + 40} L900 ${y + 360} L800 ${y + 430} L600 ${y + 110} Z`} fill={PIEL} {...ln} />
+        <path d={`M640 ${y + 40} L900 ${y + 360} L800 ${y + 430} L600 ${y + 110} Z`} fill={MANGA} {...ln} />
         <rect x={588} y={y - 70} width={110} height={150} rx={46} fill={PIEL} {...ln} />
         {[-38, -4, 30].map((d, i) => dedo(640, y + d, 562, y + d + 4, 30, PIEL, false, i))}
         {dedo(612, y - 60, 578, y - 112, 30, PIEL, true)}
@@ -72,7 +72,7 @@ const ManoFreno: React.FC<{ modo: "rapido" | "freno"; pisa?: number; marca?: num
   const tx = 600 - (600 - (TAB0.x + 6)) * pisa, ty = 870 + (TAB0.y - 6 - 870) * pisa;
   return (
     <g>
-      <path d="M680 1110 L960 1500 L860 1580 L620 1190 Z" fill={PIEL} {...ln} />
+      <path d="M680 1110 L960 1500 L860 1580 L620 1190 Z" fill={MANGA} {...ln} />
       <path d="M600 980 Q700 960 720 1060 Q736 1170 650 1190 Q590 1196 580 1120 Z" fill={PIEL} {...ln} />
       {dedo(626, 1010, 506, 1032, 30, marca === 2 ? NAR : PIEL, true)}
       {[1072, 1110, 1148].map((y, i) => dedo(640, y, 560, y + 4, 31, marca === 1 ? NAR : PIEL, false, i))}
@@ -85,7 +85,7 @@ const ManoFreno: React.FC<{ modo: "rapido" | "freno"; pisa?: number; marca?: num
 /** Mano MAL: el puño envuelve el aparato entero (pulgar fijo sobre la leva) y nadie sujeta la cuerda de freno. */
 const ManoMal: React.FC<{ f: number }> = ({ f }) => (
   <g transform={`translate(${Math.sin(f * 1.3) * 2} 0)`}>
-    <path d="M700 1060 L980 1440 L880 1520 L640 1140 Z" fill={PIEL} {...ln} />
+    <path d="M700 1060 L980 1440 L880 1520 L640 1140 Z" fill={MANGA} {...ln} />
     <path d="M540 900 Q700 880 720 1000 Q736 1120 630 1140 Q540 1146 530 1060 Z" fill={PIEL} {...ln} />
     {[930, 972, 1014, 1056].map((y, i) => dedo(600, y, 430, y + 6, 32, PIEL, false, i))}
     {dedo(560, 900, TAB0.x + 8, TAB0.y - 8, 34, NAR, true)}
@@ -96,7 +96,7 @@ const ManoArriba: React.FC<{ dy?: number }> = ({ dy = 0 }) => {
   const y = 560 - dy, x = 380 + (452 - 380) * ((y - 120) / 785);
   return (
     <g>
-      <path d={`M${x - 40} ${y - 30} L${x - 380} ${y - 280} L${x - 440} ${y - 180} L${x - 70} ${y + 50} Z`} fill={PIEL} {...ln} />
+      <path d={`M${x - 40} ${y - 30} L${x - 380} ${y - 280} L${x - 440} ${y - 180} L${x - 70} ${y + 50} Z`} fill={MANGA} {...ln} />
       <rect x={x - 70} y={y - 70} width={110} height={140} rx={44} fill={PIEL} {...ln} />
       {[-36, -2, 32].map((d, i) => dedo(x - 20, y + d, x + 58, y + d + 2, 30, PIEL, false, i))}
       {dedo(x - 30, y - 60, x + 30, y - 92, 30, PIEL, true)}
@@ -115,11 +115,11 @@ export const Puesto: React.FC<{ modo: "mal" | "normal" | "rapido" | "solo"; corr
       {modo === "normal" && <>{!sinArriba && <ManoArriba dy={80 * da} />}<ManoFreno modo="freno" dy={160 * da} />{flechas > 0 && <>{flecha(240, 470, 0, flechas)}{flecha(700, 1170, 0, flechas)}</>}</>}
       {modo === "rapido" && <><ManoArriba dy={50 * pisa} /><ManoFreno modo="rapido" pisa={pisa} marca={marca} /></>}
       {modo === "mal" && <><ManoMal f={f} /><g opacity={0.6 + 0.4 * Math.sin(f / 4)}><ellipse cx={590} cy={1330} rx={86} ry={96} fill="none" stroke={ROJO} strokeWidth={11} strokeDasharray="22 16" /></g></>}
-      {etiqueta > 0 && <g opacity={Math.min(1, etiqueta)}><path d={`M300 860 L${TAB0.x - 14} ${TAB0.y - 6}`} stroke={T} strokeWidth={6} strokeLinecap="round" /><rect x={130} y={812} width={180} height={70} rx={20} fill={T} /><text x={220} y={862} textAnchor="middle" fontFamily="Figtree" fontWeight={700} fontSize={46} fill="#fff">LEVA</text></g>}
+      {etiqueta > 0 && <g opacity={Math.min(1, etiqueta)}><path d={`M300 860 L${TAB0.x - 14} ${TAB0.y - 6}`} stroke="#fff" strokeWidth={6} strokeLinecap="round" /><rect x={130} y={812} width={180} height={70} rx={20} fill={T} /><text x={220} y={862} textAnchor="middle" fontFamily="Figtree" fontWeight={700} fontSize={46} fill="#fff">LEVA</text></g>}
     </g>
   );
 };
 /** Fondo de los primeros planos (sala desenfocada). */
-export const PP: React.FC<{ sh?: number; tinte?: string; children: React.ReactNode }> = ({ sh = 0, tinte, children }) => (
-  <AbsoluteFill style={{ background: tinte === "#5A3B3B" ? "#F6DDD5" : "#F3EFE8", transform: `translate(${sh}px, ${Math.abs(sh) * 0.6}px)` }}><Svg>{children}</Svg></AbsoluteFill>
+export const PP: React.FC<{ sh?: number; tinte?: string; children: React.ReactNode }> = ({ sh = 0, tinte = "#3B4757", children }) => (
+  <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 48%, ${tinte} 0%, #1C2430 85%)`, transform: `translate(${sh}px, ${Math.abs(sh) * 0.6}px)` }}><Svg>{children}</Svg></AbsoluteFill>
 );

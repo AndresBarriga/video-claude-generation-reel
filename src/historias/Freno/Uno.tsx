@@ -60,7 +60,7 @@ export const Corre: React.FC<P> = ({ d, pal }) => {
       <PP sh={Math.sin(f * 2.3) * 7} tinte="#5A3B3B">
         <Puesto modo="mal" corre={f * 70} leva={ROJO} f={f} />
         <Foco x={LEVA.x} y={LEVA.y} r={70} color={ROJO} />
-        {[0, 1, 2, 3].map((i) => <path key={i} d={`M${250 + i * 44} ${330 + ((f * 50 + i * 90) % 300)} v80`} stroke="#B9786A" strokeWidth={8} strokeLinecap="round" opacity={0.5} />)}
+        {[0, 1, 2, 3].map((i) => <path key={i} d={`M${250 + i * 44} ${330 + ((f * 50 + i * 90) % 300)} v80`} stroke="#fff" strokeWidth={8} strokeLinecap="round" opacity={0.5} />)}
       </PP>
       <Chip texto="LEVA APRETADA: NO PUEDE CERRAR" top={170} tam={48} color={ROJO} k={Math.min(1, f / 5)} />
       <Chip texto="LA CUERDA CORRE SIN FRENO" top={262} tam={48} color={ROJO} k={(f - 26) / 5} />

@@ -18,3 +18,4 @@ Mándaselo a quien te asegura 👇
 - **v3:** el primer segundo muestra el final de la caída antes del golpe; recuadro de contexto (quien asegura de cuerpo entero) en las escenas técnicas; arreglo de rótulos que se salían por arriba. No se incrusta la captura de Petzl (material suyo): se cita en la descripción.
 - **v4:** casi un segundo de caída antes del golpe; aparato redibujado con la leva como pieza gris lateral y el punto donde se aprieta abajo a la izquierda (corrección de Andrés: ahí es donde se desbloquea); rótulos «LEVA APRETADA: NO PUEDE CERRAR / LA CUERDA CORRE SIN FRENO»; rótulos del gesto rápido antes y con más tiempo.
 - **v5:** primeros planos rehechos como lámina de manual (dibujo de línea sobre fondo claro, aparato de canto, mano a su derecha), siguiendo la composición de la técnica oficial de Petzl sin calcar su ilustración.
+- **v6:** composición de la lámina de manual (v5) con el color y el fondo oscuro de v4 (preferencia de Andrés).
