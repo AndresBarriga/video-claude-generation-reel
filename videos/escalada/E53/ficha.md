@@ -1,5 +1,5 @@
 # E53 — ficha
-- **Estado:** producido con voz (Danny), 52 s, qa-final OK. Pendiente: publicar (otro día que E54, para comparar).
+- **Estado:** publicado (Instagram; confirmado por Andrés 17-nov, fecha exacta por apuntar). 52 s, voz Danny.
 - **Formato:** dilema moral con dos historias reales en espejo. Plantilla `Everest` (arista NE al amanecer / de noche, cueva de roca; vaho = sigue vivo).
 - **Crítico:** texto 6,5 → 7,5; vídeo 7 → aplicado.
 - **v2 (9-nov, Andrés):** más nieve y textura (cornisa, ondas, rocas, picos entre nubes, penacho en la cima, lomo nevado sobre la cueva); los que pasan van por la ruta encima de la cueva, con los pies en el suelo; los sherpas se van mirando adelante; Hall baja encordado entre dos.

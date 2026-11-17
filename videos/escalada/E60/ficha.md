@@ -1,5 +1,5 @@
 # E60 — «Tu mano quiere salvarte» (no agarres nada al caer)
-- **Estado:** vídeo terminado (16-nov), pendiente de publicar. 34,8 s. Plantilla `Agarra`, hecha sobre el kit (`src/piezas/kit`), decorado «roca» de día.
+- **Estado:** publicado (Instagram; confirmado por Andrés 17-nov, fecha exacta por apuntar). 34,8 s. Plantilla `Agarra`, hecha sobre el kit (`src/piezas/kit`), decorado «roca» de día.
 - **Formato:** info-seguridad-cuerpo (H14). Misma caída en 4 tomas (cinta, presa, cuerda, nada) con rebobinado y contador; gags sin sangre (¡AY!, brazo de goma, humo, «DEDOS: 5 → 4»).
 - **Gancho:** «Se te va el pie. Y tu mano, sola, va a por la cinta.» + rótulo «¿LA AGARRAS?» desde el fotograma 0. **Rehook:** la cuerda (quema → dedo). **Cierre:** «Tu mano quiere salvarte. No la dejes.» + bucle + rótulo de envío.
 - **Crítico:** 7,5 (propuesta v3); la v4 (tomas y gags) no pasó por el crítico.
