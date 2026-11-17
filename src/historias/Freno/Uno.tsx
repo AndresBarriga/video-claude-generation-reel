@@ -3,9 +3,9 @@ import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Persona, Asegurador, Soga, Sala, Polvo, porChapas, aparato, accChapar, sogaChapar, POSE, mix, G, Lupa, Etiqueta, Chip, Foco, suave, type Angulos } from "../../piezas/kit";
 import { Rebobina, N_REB } from "../Agarra/comun";
-import { VIA, P0, XA, EL, ELLA, VERDE, ROJO, AP, Mundo, PP, Puesto, golpe, type P } from "./comun";
+import { VIA, P0, XA, EL, ELLA, VERDE, ROJO, TAB, Mundo, PP, Puesto, golpe, type P } from "./comun";
 
-const LEVA = { x: AP.x - 62 * AP.s, y: AP.y + 34 * AP.s };
+const LEVA = TAB;
 const TIRADO: Angulos = { torso: 4, cabeza: 10, brazoA: [150, 120], brazoB: [-140, -110], piernaA: [34, 10], piernaB: [-22, -34] };
 const XS = VIA.hipX(VIA.pie) + 14, YS = VIA.suelo - 36;
 /** Fotogramas de caída que se ven antes del golpe al abrir el vídeo. */
@@ -45,7 +45,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
     <>
       <PP sh={golpe(f, fS, 18) + golpe(f, fA, 10)} tinte={k > 0 ? "#5A3B3B" : "#3B4757"}>
         <Puesto modo="mal" corre={g * 9 + (k > 0 ? k * k * 5 : 0)} leva={k > 0 ? ROJO : undefined} f={f} etiqueta={(f - fP) / 5} />
-        {f >= fP && <Foco x={LEVA.x} y={LEVA.y} r={96} color={k > 0 ? ROJO : "#FFE3A0"} k={(f - fP) / 5} />}
+        {f >= fP && <Foco x={LEVA.x} y={LEVA.y} r={70} color={k > 0 ? ROJO : "#FFE3A0"} k={(f - fP) / 5} />}
       </PP>
       <Lupa x={822} y={470} r={196} fondo="#2E3948" k={g / 5}><Mini t={0.3 + 0.36 * Math.min(1, g / Math.max(1, fS - fA))} cae={k > 0 ? k * 0.6 : -1} /></Lupa>
       <Chip texto="5 SEGUNDOS ANTES" top={150} tam={48} k={Math.min(1, g / 4) * (g < 34 ? 1 : Math.max(0, 1 - (g - 34) / 6))} />
@@ -59,8 +59,8 @@ export const Corre: React.FC<P> = ({ d, pal }) => {
     <>
       <PP sh={Math.sin(f * 2.3) * 7} tinte="#5A3B3B">
         <Puesto modo="mal" corre={f * 70} leva={ROJO} f={f} />
-        <Foco x={LEVA.x} y={LEVA.y} r={96} color={ROJO} />
-        {[0, 1, 2, 3].map((i) => <path key={i} d={`M${250 + i * 44} ${330 + ((f * 50 + i * 90) % 300)} v80`} stroke="#fff" strokeWidth={8} strokeLinecap="round" opacity={0.5} />)}
+        <Foco x={LEVA.x} y={LEVA.y} r={70} color={ROJO} />
+        {[0, 1, 2, 3].map((i) => <path key={i} d={`M${250 + i * 44} ${330 + ((f * 50 + i * 90) % 300)} v80`} stroke="#B9786A" strokeWidth={8} strokeLinecap="round" opacity={0.5} />)}
       </PP>
       <Chip texto="LEVA APRETADA: NO PUEDE CERRAR" top={170} tam={48} color={ROJO} k={Math.min(1, f / 5)} />
       <Chip texto="LA CUERDA CORRE SIN FRENO" top={262} tam={48} color={ROJO} k={(f - 26) / 5} />
@@ -98,7 +98,7 @@ export const Dos: React.FC<P> = ({ pal }) => {
     <>
       <PP>
         <Puesto modo={mano ? "normal" : "solo"} bloquea={gira} leva={gira > 0.5 ? VERDE : undefined} brilloFreno={mano ? 0.6 + 0.4 * Math.sin(f / 4) : 0} f={f} etiqueta={mano ? 0 : (f - fL + 10) / 5} />
-        {f >= fL - 4 && !mano && <Foco x={LEVA.x} y={LEVA.y} r={96} color="#8FE0AE" k={(f - fL + 4) / 5} />}
+        {f >= fL - 4 && !mano && <Foco x={LEVA.x} y={LEVA.y} r={70} color="#8FE0AE" k={(f - fL + 4) / 5} />}
       </PP>
       <Contexto k={f / 5} />
       <Chip texto="1 · LEVA LIBRE" top={150} tam={58} color={VERDE} k={(f - fL) / 5} />

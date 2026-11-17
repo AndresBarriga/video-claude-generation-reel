@@ -46,7 +46,7 @@ export const Cierre: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame(), b = bucle(f, d, 8), fF = pal("frena") ?? 30;
   return (
     <>
-      <PP><Puesto modo="normal" brilloFreno={0.6 + 0.4 * Math.sin(f / 4)} bloquea={suave(f / 10)} leva={VERDE} f={f} /></PP>
+      <PP><Puesto modo="normal" sinArriba brilloFreno={0.6 + 0.4 * Math.sin(f / 4)} bloquea={suave(f / 10)} leva={VERDE} f={f} /></PP>
       <div style={{ opacity: 1 - b }}><Etiqueta texto="¿DÓNDE ESTÁ LA TUYA?" top={180} tam={92} desde={fF} /></div>
       <Envio a="quien te asegura" top={1330} k={Math.min(1, Math.max(0, f - fF - 8) / 6) * (1 - b)} />
       {b > 0 && <AbsoluteFill style={{ opacity: b }}><Ko j={-CAE} rotulo /></AbsoluteFill>}
