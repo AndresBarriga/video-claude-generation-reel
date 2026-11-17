@@ -17,3 +17,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 15-nov | E60 «Tu mano hace esto» | propuesta | 7 | Verificar mecanismo del pulgar (se le enrolló, no consta que la agarrara); dónde poner las manos — aplicado |
 
 | 2026-11-16 | E60 v3 «No agarres nada» | propuesta | 7,5 | escena de la pared enfriaba tras el dedo (reordenado cinta→pared→cuerda); «manos delante» podía leerse como brazos rígidos; cierre «manos quietas» ambiguo — aplicado |
+| 2026-11-17 | E62 «Tu grigri frena solo… si le dejas» | propuesta | 6,5 (7,5 con cambios) | la escena 2 contradecía la tesis (frena solo al soltar el pulgar); el fallo es la mano fuera de la cuerda con la leva bloqueada, no el pulgar; la escena de bajar era otro tema y falsa con antipánico — aplicado |
