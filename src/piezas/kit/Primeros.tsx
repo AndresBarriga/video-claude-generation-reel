@@ -35,8 +35,8 @@ export const Agarre: React.FC<{ x: number; y: number; s?: number; rot?: number; 
   );
 };
 /** APARATO de asegurar de frenado asistido en primer plano, colgado del anillo del arnés con su mosquetón de seguro.
- *  La cuerda entra por arriba (hacia quien escala) y sale abajo a la izquierda (lado de FRENO: ahí va la mano). `bloquea` 0–1 = la leva pellizca. */
-export const AparatoGrande: React.FC<{ x: number; y: number; s?: number; bloquea?: number; rosca?: number; corre?: number; color?: string }> = ({ x, y, s = 1, bloquea = 0, rosca = 1, corre = 0, color = "#5C7FA8" }) => (
+ *  La cuerda entra por arriba (hacia quien escala) y sale abajo a la izquierda (lado de FRENO: ahí va la mano). `bloquea` 0–1 = la leva gira y pellizca · `leva` = color de la leva (verde frena / rojo retenida) · `corre` = desplazamiento de la cuerda (px). */
+export const AparatoGrande: React.FC<{ x: number; y: number; s?: number; bloquea?: number; rosca?: number; corre?: number; color?: string; leva?: string }> = ({ x, y, s = 1, bloquea = 0, rosca = 1, corre = 0, color = "#5C7FA8", leva }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`}>
     <path d="M-10 330 Q0 250 0 200" stroke={T} strokeWidth={70} strokeLinecap="round" /><path d="M-10 330 Q0 250 0 200" stroke="#B4553C" strokeWidth={54} strokeLinecap="round" />
     <g transform="translate(0 150) scale(0.95)">{formaMosq(0, "der", rosca)}</g>
@@ -47,7 +47,7 @@ export const AparatoGrande: React.FC<{ x: number; y: number; s?: number; bloquea
     </g>
     <rect x={-92} y={-120} width={184} height={200} rx={46} fill={color} stroke={T} strokeWidth={14} />
     <path d="M-60 -84 Q0 -104 60 -84" stroke="#fff" strokeWidth={8} fill="none" opacity={0.35} strokeLinecap="round" />
-    <g transform={`translate(22 -24) rotate(${-34 * bloquea})`}><ellipse cx={-14} cy={0} rx={50} ry={34} fill={bloquea > 0.5 ? PC.miedo : "#2B3039"} stroke={T} strokeWidth={10} /><circle cx={10} cy={0} r={10} fill="#C9D1D8" /></g>
+    <g transform={`translate(22 -24) rotate(${-34 * bloquea})`}><ellipse cx={-14} cy={0} rx={50} ry={34} fill={leva ?? (bloquea > 0.5 ? PC.miedo : "#2B3039")} stroke={T} strokeWidth={10} /><circle cx={10} cy={0} r={10} fill="#C9D1D8" /></g>
     {barra(-70, 60, -150 - 20 * bloquea, 20 - 60 * bloquea, 22, "#2B3039")}
     <circle cx={0} cy={62} r={16} fill="#2B3039" />
   </g>
