@@ -2,15 +2,6 @@
  "bajoVoz": 0.4,
  "efectos": [
   {
-   "nombre": "roce",
-   "inicio": {
-    "escena": "gancho",
-    "mas": 0.1
-   },
-   "duracion": 0.6,
-   "volumen": 0.4
-  },
-  {
    "nombre": "clic",
    "inicio": {
     "escena": "gancho",
@@ -48,16 +39,6 @@
    },
    "duracion": 0.6,
    "volumen": 0.7
-  },
-  {
-   "nombre": "golpe",
-   "inicio": {
-    "escena": "corre",
-    "palabra": "cuerda",
-    "mas": 1.5
-   },
-   "duracion": 0.8,
-   "volumen": 0.9
   },
   {
    "nombre": "clic",
@@ -156,6 +137,35 @@
    },
    "duracion": 0.4,
    "volumen": 0.7
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.0
+   },
+   "duracion": 0.9,
+   "volumen": 1.0
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "aparato",
+    "mas": -0.3
+   },
+   "duracion": 0.4,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "corre",
+    "palabra": "cuerda",
+    "mas": 1.62
+   },
+   "duracion": 0.9,
+   "volumen": 1.0
   }
  ]
 }

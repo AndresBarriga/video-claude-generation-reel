@@ -14,3 +14,4 @@ Mándaselo a quien te asegura 👇
 #escalada #escaladadeportiva #asegurar #grigri #rocodromo #seguridadenescalada #aprenderaescalar #climbing
 
 **Comentario fijado:** ¿Cómo das tú cuerda rápido, y con qué aparato?
+- **v2 (17-nov, feedback de Andrés):** abre con la consecuencia (en la colchoneta, ojos en X, «¿QUÉ HA PASADO?») y rebobina; la caída mala ya llega al suelo; primeros planos rehechos con la vista de la técnica oficial (cuerda de freno en arco a la derecha, mano junto al aparato, leva rotulada, flechas al dar cuerda); chip «Y NUDO EN LA PUNTA» en la caída buena.

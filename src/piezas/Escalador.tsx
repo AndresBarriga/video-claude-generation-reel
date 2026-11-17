@@ -6,7 +6,7 @@ import React, { useId } from "react";
 import { Gafas, ObjetoMano, Tocado, type Aspecto, type Objeto } from "./Rasgos";
 
 export type Quien = "joe" | "simon";
-export type Cara = "normal" | "miedo" | "dolor" | "esfuerzo" | "alivio" | "cerrados" | "sopla" | "serio" | "ciego";
+export type Cara = "normal" | "miedo" | "dolor" | "esfuerzo" | "alivio" | "cerrados" | "sopla" | "serio" | "ciego" | "ko";
 
 export const PERSONAJES: Record<Quien, { chaqueta: string; chaquetaSombra: string; pantalon: string; casco: string; pelo: string }> = {
   joe: { chaqueta: "#C8402E", chaquetaSombra: "#8E2A1F", pantalon: "#2B3442", casco: "#F2C230", pelo: "#3B2A20" },
@@ -100,6 +100,8 @@ const Ojos: React.FC<{ cara: Cara }> = ({ cara }) => {
         <path d="M0 -12 L12 -16 M18 -16 L30 -12" {...st} />
         <ellipse cx={17} cy={14} rx={4} ry={3.5} fill={TINTA} />
       </g>);
+    case "ko": // fuera de combate (dibujos): ojos en X y lengua fuera
+      return (<g><path d="M2 -8 L12 2 M12 -8 L2 2 M18 -8 L28 2 M28 -8 L18 2" {...st} strokeWidth={4.5} /><path d="M9 12 Q17 16 25 12" {...st} /><path d="M15 13 q3 9 7 0" fill="#E2533F" stroke={TINTA} strokeWidth={2.5} /></g>);
     case "cerrados":
       return (<g><path d="M2 -3 L12 -3 M19 -3 L29 -3" {...st} /><path d="M10 12 L24 12" {...st} /></g>);
     default:
