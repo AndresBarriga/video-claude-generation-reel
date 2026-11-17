@@ -23,12 +23,12 @@ const flecha = (x: number, y: number, rot: number, o: number) => <g transform={`
 /** Mano de freno junto al aparato para DAR RÁPIDO: tres dedos en la cuerda de freno, índice apoyando bajo el aparato, pulgar sobre la leva (`pisa` 0–1). `marca`: 1 dedos · 2 índice · 3 pulgar. */
 const ManoRapida: React.FC<{ pisa: number; marca: number }> = ({ pisa, marca }) => (
   <g>
-    {cap(340, 430, 250, 190, 86, MANGA)}
-    <ellipse cx={204} cy={64} rx={60} ry={84} fill={PIEL} stroke={T} strokeWidth={11} transform="rotate(-14 204 64)" />
-    {cap(176, 34, 100, 78, 28, marca === 2 ? NAR : PIEL)}
-    {cap(176, -2, 112 - 46 * pisa, -84 + 18 * pisa, 32, marca === 3 || pisa > 0.5 ? NAR : PIEL)}
-    {[74, 108, 142].map((y, i) => cap(214, y, 146, y + 4, 28, marca === 1 ? NAR : PIEL, i))}
-    <path d="M232 20 q22 40 6 100" stroke={PIELS} strokeWidth={7} fill="none" strokeLinecap="round" />
+    {cap(330, 440, 226, 196, 86, MANGA)}
+    <ellipse cx={156} cy={62} rx={62} ry={90} fill={PIEL} stroke={T} strokeWidth={11} transform="rotate(-10 156 62)" />
+    {cap(150, 108, 82, 116, 28, marca === 2 ? NAR : PIEL)}
+    {[62, 96, 130].map((y, i) => cap(204, y, 140, y + 4, 28, marca === 1 ? NAR : PIEL, i))}
+    {cap(112, 6, 34 - 92 * pisa, -46 + 86 * pisa, 32, marca === 3 || pisa > 0.5 ? NAR : PIEL)}
+    <path d="M196 10 q22 40 8 104" stroke={PIELS} strokeWidth={7} fill="none" strokeLinecap="round" />
   </g>
 );
 /** MAL: la mano envuelve el aparato entero con el pulgar fijo en la leva. */
@@ -36,9 +36,9 @@ const ManoMal: React.FC<{ f: number }> = ({ f }) => (
   <g transform={`translate(${Math.sin(f * 1.3) * 2} 0)`}>
     {cap(360, 400, 250, 150, 86, MANGA)}
     <ellipse cx={150} cy={10} rx={66} ry={104} fill={PIEL} stroke={T} strokeWidth={11} />
-    {[-36, 4, 44, 82].map((y, i) => cap(150, y, -72 + i * 6, y + 6, 34, PIEL, i))}
-    {cap(150, -66, 8, -82, 36, NAR)}
-    {[-36, 4, 44, 82].map((y, i) => <path key={i} d={`M30 ${y - 12} v24`} stroke={PIELS} strokeWidth={5} strokeLinecap="round" />)}
+    {[-74, 66, 100].map((y, i) => cap(150, y, -66 + i * 6, y + 6, 34, PIEL, i))}
+    {cap(150, -30, -62, 34, 36, NAR)}
+    
   </g>
 );
 /** Puesto de aseguramiento en primer plano. `modo`: "mal" · "normal" (una mano tira arriba, la de freno abajo) · "rapido" · "solo".
@@ -51,17 +51,15 @@ export const Puesto: React.FC<{ modo: "mal" | "normal" | "rapido" | "solo"; corr
       <path d="M-6 330 Q0 260 0 214" stroke={T} strokeWidth={66} strokeLinecap="round" /><path d="M-6 330 Q0 260 0 214" stroke="#B4553C" strokeWidth={50} strokeLinecap="round" />
       <g transform="translate(0 168) scale(0.8)">{formaMosq(0, "der", 1)}</g>
       {cuerda(ESC, corre)}{cuerda(FRE, -corre)}{cuerda(cola, -corre)}
-      {/* cuerpo del aparato, con su pestaña (donde apoya el índice) y la empuñadura plegada */}
-      {cap(-84, -10, -112, 74, 20, "#2B3039")}
-      <path d="M-66 -104 Q-92 -110 -84 -40 L-70 70 Q-64 102 -22 102 L52 102 Q104 104 96 64 L84 52 L88 -52 Q90 -112 30 -114 Z" fill="#5C7FA8" stroke={T} strokeWidth={12} strokeLinejoin="round" />
-      <path d="M-56 -78 Q-20 -92 20 -90" stroke="#fff" strokeWidth={7} fill="none" opacity={0.35} strokeLinecap="round" />
-      <circle cx={0} cy={66} r={15} fill="#2B3039" />
-      {/* LEVA: gira y pellizca la cuerda contra el cuerpo */}
-      <g transform={`translate(24 -56) rotate(${-30 * bloquea + 14 * pisa})`}>
-        <path d="M-52 4 Q-50 -34 0 -34 Q50 -34 44 4 Q36 34 -10 30 Q-50 28 -52 4 Z" fill={leva ?? (pisa > 0.5 ? NAR : "#2B3039")} stroke={T} strokeWidth={10} strokeLinejoin="round" />
-        <circle cx={14} cy={0} r={9} fill="#C9D1D8" />
+      {/* aparato: placa trasera, LEVA (pieza gris que recorre el borde y asoma abajo a la izquierda: ahí se pisa) y placa delantera */}
+      <path d="M-4 -124 Q84 -120 90 -20 L84 76 Q76 116 22 116 L-26 116 Q-70 112 -66 62 L-58 -44 Q-52 -116 -4 -124 Z" fill="#3A404A" stroke={T} strokeWidth={12} strokeLinejoin="round" />
+      <g transform={`rotate(${-9 * bloquea + 7 * pisa} 0 -70)`}>
+        <path d="M-2 -112 Q-74 -96 -76 -10 L-92 46 Q-96 74 -66 68 L-50 22 Q-50 -62 -2 -86 Z" fill={leva ?? (pisa > 0.5 ? NAR : "#C9D1D8")} stroke={T} strokeWidth={10} strokeLinejoin="round" />
       </g>
-      {etiqueta > 0 && <g opacity={Math.min(1, etiqueta)}><path d="M-60 -150 L-4 -84" stroke="#fff" strokeWidth={7} strokeLinecap="round" /><rect x={-230} y={-212} width={178} height={66} rx={20} fill={T} /><text x={-141} y={-165} textAnchor="middle" fontFamily="Figtree" fontWeight={700} fontSize={44} fill="#fff">LEVA</text></g>}
+      <path d="M4 -112 Q72 -108 78 -20 L72 66 L92 84 L70 98 Q60 106 22 104 L-16 104 Q-50 100 -46 60 L-40 -40 Q-36 -100 4 -112 Z" fill="#5C7FA8" stroke={T} strokeWidth={12} strokeLinejoin="round" />
+      <path d="M-18 -84 Q10 -98 44 -84" stroke="#fff" strokeWidth={7} fill="none" opacity={0.35} strokeLinecap="round" />
+      <circle cx={6} cy={-66} r={13} fill="#C9D1D8" stroke={T} strokeWidth={6} /><circle cx={14} cy={60} r={22} fill="#1B2028" stroke={T} strokeWidth={8} />
+      {etiqueta > 0 && <g opacity={Math.min(1, etiqueta)}><path d="M-176 92 L-92 56" stroke="#fff" strokeWidth={7} strokeLinecap="round" /><rect x={-330} y={62} width={160} height={64} rx={20} fill={T} /><text x={-250} y={108} textAnchor="middle" fontFamily="Figtree" fontWeight={700} fontSize={44} fill="#fff">LEVA</text></g>}
       {modo === "normal" && <>
         <Agarre x={171} y={250 - 150 * da} s={0.78} espejo cierra={1} piel={PIEL} pielS={PIELS} manga={MANGA} />
         <Agarre x={-56} y={-400 - 90 * (1 - da)} s={0.78} rot={-4} cierra={1} piel={PIEL} pielS={PIELS} manga={MANGA} />

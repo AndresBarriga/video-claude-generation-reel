@@ -142,7 +142,7 @@
    "nombre": "golpe",
    "inicio": {
     "escena": "gancho",
-    "mas": 0.36
+    "mas": 0.86
    },
    "duracion": 0.9,
    "volumen": 1.0
@@ -152,7 +152,7 @@
    "inicio": {
     "escena": "gancho",
     "palabra": "aparato",
-    "mas": -0.3
+    "mas": 0.2
    },
    "duracion": 0.4,
    "volumen": 0.7
@@ -175,6 +175,15 @@
    },
    "duracion": 0.4,
    "volumen": 0.8
+  },
+  {
+   "nombre": "viento",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.0
+   },
+   "duracion": 0.85,
+   "volumen": 0.5
   }
  ]
 }

@@ -17,14 +17,13 @@ export const Normal: React.FC<P> = ({ pal }) => {
 };
 export const Rapido: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame(), fP = pal("pulgar") ?? Math.round(d * 0.45), fI = (pal("instante") ?? fP + 24) + 8, fS = pal("soltar") ?? fI + 10, fV = pal("vuelves") ?? d - 14;
-  const pisa = interpolate(f, [fP, fP + 4, fI, fI + 4], [0, 1, 1, 0], clamp), rap = f >= fP - 8 && f < fV, corre = interpolate(f, [fP, fI], [0, 900], clamp);
+  const pisa = interpolate(f, [fP, fP + 4, fI, fI + 4], [0, 1, 1, 0], clamp), rap = f >= fP - 36 && f < fV + 4, corre = interpolate(f, [fP, fI], [0, 900], clamp);
   return (
     <>
-      <PP><Puesto modo={rap ? "rapido" : "normal"} pisa={pisa} marca={pisa > 0.5 ? 3 : f >= fS - 2 && f < fV ? 1 : rap && f < fP ? 2 : 0} corre={corre} f={f} etiqueta={rap ? 1 : 0} /></PP>
+      <PP><Puesto modo={rap ? "rapido" : "normal"} pisa={pisa} marca={pisa > 0.5 ? 3 : rap && f < fP ? 1 : f >= fS - 2 ? 1 : 0} corre={corre} f={f} etiqueta={rap ? 1 : 0} /></PP>
       <Lupa x={822} y={520} r={190} fondo="#2E3948"><Mini t={interpolate(f, [0, fI + 10, d], [0.2, 0.7, 0.95], clamp)} /></Lupa>
-      <Chip texto="PULGAR: SOLO UN INSTANTE" top={130} tam={46} color="#C2603A" k={(f - fP) / 5} />
-      <Chip texto="TRES DEDOS EN LA CUERDA" top={212} tam={46} color={VERDE} k={(f - fS) / 5} />
-      <Chip texto="Y LA MANO VUELVE" top={294} tam={46} color={VERDE} k={(f - fV) / 5} />
+      <Chip texto="TRES DEDOS EN LA CUERDA" top={130} tam={50} color={VERDE} k={(f - (fP - 34)) / 5} />
+      <Chip texto="PULGAR EN LA LEVA: UN INSTANTE" top={222} tam={46} color="#C2603A" k={(f - fP) / 5} />
     </>
   );
 };
