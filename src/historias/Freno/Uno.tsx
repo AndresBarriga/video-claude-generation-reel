@@ -32,7 +32,7 @@ export const Inicio: React.FC<{ f: number; fS: number }> = ({ f, fS }) => {
 export const Gancho: React.FC<P> = ({ d, pal }) => <Inicio f={useCurrentFrame()} fS={pal("cae") ?? d - 12} />;
 
 export const Corre: React.FC<P> = ({ d, pal }) => {
-  const f = useCurrentFrame(), fB = (pal("correr") ?? Math.round(d * 0.5)) + 4;
+  const f = useCurrentFrame(), fB = pal("cuerda") ?? Math.round(d * 0.4);
   if (f < fB) return (
     <>
       <PP sh={Math.sin(f * 2.3) * 7} tinte="#5A3B3B">

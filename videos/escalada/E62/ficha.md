@@ -1,0 +1,16 @@
+# E62 — «La que frena es tu mano» (dar cuerda bien con el grigri)
+- **Estado:** vídeo terminado (17-nov), pendiente de publicar. 35,8 s. Plantilla `Freno` sobre el kit, decorado «sala» (rocódromo).
+- **Formato:** info-seguridad con cuerda (H14). Un fallo (aparato agarrado, leva apretada, freno suelto) → consecuencia → por qué → cómo se da cuerda normal y rápido → misma caída bien asegurada.
+- **Gancho:** «Le estás dando cuerda. Aparato agarrado, pulgar en la leva. Y justo ahora… se cae.» + rótulo «¿FRENA?» desde el fotograma 0. **Rehook:** «necesita dos cosas». **Cierre:** «La que frena es tu mano» + «¿DÓNDE ESTÁ LA TUYA?» + envío + bucle.
+- **Mecánica:** contrastada con Petzl (texto y capturas del vídeo oficial que mandó Andrés). «Frena solo» se quitó: es frenado asistido. Consecuencias con «puede».
+- **Crítico:** 6,5 → 7,5 (propuesta v2); la v3 la corrigió Andrés y no volvió a pasar.
+- **Sin revisar a fondo:** hoja del borrador y 12 capturas del final; `qa-final` correcto (-14,7 LUFS, pico -1,2 dBTP).
+
+## Descripción
+Tu aparato ayuda a frenar, pero necesita dos cosas: la leva libre y tu mano en la cuerda de freno.
+Lo normal: dar cuerda sin tocar la leva. Si hay que dar rápido: pulgar en la leva solo un instante, sin soltar la cuerda de freno, y la mano vuelve a su sitio.
+Cada aparato tiene su técnica: mira el manual del tuyo.
+Mándaselo a quien te asegura 👇
+#escalada #escaladadeportiva #asegurar #grigri #rocodromo #seguridadenescalada #aprenderaescalar #climbing
+
+**Comentario fijado:** ¿Cómo das tú cuerda rápido, y con qué aparato?

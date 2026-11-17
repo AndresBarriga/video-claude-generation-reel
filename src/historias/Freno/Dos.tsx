@@ -21,9 +21,9 @@ export const Rapido: React.FC<P> = ({ d, pal }) => {
     <>
       <PP><Puesto modo={rap ? "rapido" : "normal"} pisa={pisa} marca={pisa > 0.5 ? 3 : f >= fS - 2 && f < fV ? 1 : 0} corre={corre} f={f} /></PP>
       <Lupa x={270} y={590} r={215} fondo="#2E3948"><Mini t={interpolate(f, [0, fI + 10, d], [0.2, 0.7, 0.95], clamp)} /></Lupa>
-      <Chip texto="PULGAR: SOLO UN INSTANTE" top={220} tam={50} color="#C2603A" k={(f - fP) / 5} />
-      <Chip texto="TRES DEDOS EN LA CUERDA" top={312} tam={50} color={VERDE} k={(f - fS) / 5} />
-      <Chip texto="Y LA MANO VUELVE" top={404} tam={50} color={VERDE} k={(f - fV) / 5} />
+      <Chip texto="PULGAR: SOLO UN INSTANTE" top={130} tam={46} color="#C2603A" k={(f - fP) / 5} />
+      <Chip texto="TRES DEDOS EN LA CUERDA" top={212} tam={46} color={VERDE} k={(f - fS) / 5} />
+      <Chip texto="Y LA MANO VUELVE" top={294} tam={46} color={VERDE} k={(f - fV) / 5} />
     </>
   );
 };
