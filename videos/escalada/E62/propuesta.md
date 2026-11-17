@@ -55,3 +55,16 @@ La mano de freno no suelta la cuerda. Con ningún aparato.
 | 6 cierre | Primer plano de la mano de freno en la cuerda. Rótulo «¿DÓNDE ESTÁ LA TUYA?» + «Mándaselo a quien te asegura» → bucle al fotograma 0 |
 
 Comentario fijado: «¿Cómo das tú cuerda rápido, y con qué aparato?»
+
+---
+## v3 (17-nov, tras la objeción de Andrés y una revisión externa): «frena solo» fuera
+Andrés: el grigri no frena solo según Petzl; lo normal es dar cuerda SIN tocar la leva y el gesto rápido es la excepción. Correcto: es frenado *asistido* y Petzl exige sujetar siempre la cuerda lado frenado. Tesis nueva: «Tu grigri ayuda a frenar. Pero tú puedes impedírselo.» La consecuencia se cuenta con «puede», no como inevitable. No se dice qué mano hace el gesto. Pendiente: Andrés comprueba el gesto rápido contra el vídeo oficial de Petzl (no se pudo leer; solo el texto).
+
+**Texto de voz v3 (~100 palabras):**
+Le estás dando cuerda. Aparato agarrado, pulgar en la leva. Y justo ahora… se cae.
+Puede que no frene. Con la leva apretada, la cuerda puede correr… y él, bajar con ella.
+Tu grigri ayuda a frenar. Pero necesita dos cosas: la leva libre… y tu mano en la cuerda de freno.
+Lo normal es dar cuerda sin tocar la leva: empujas cuerda hacia el aparato y tiras del otro lado.
+¿Y si va a chapar y hay que dar rápido? Pulgar en la leva solo un instante, sin soltar la cuerda de freno… y vuelves.
+Misma caída. Leva libre, mano en la cuerda.
+El aparato ayuda. La que frena es tu mano.
