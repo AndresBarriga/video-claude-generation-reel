@@ -142,7 +142,7 @@
    "nombre": "golpe",
    "inicio": {
     "escena": "gancho",
-    "mas": 0.0
+    "mas": 0.36
    },
    "duracion": 0.9,
    "volumen": 1.0
@@ -166,6 +166,15 @@
    },
    "duracion": 0.9,
    "volumen": 1.0
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.0
+   },
+   "duracion": 0.4,
+   "volumen": 0.8
   }
  ]
 }

@@ -3,14 +3,15 @@ import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Persona, Asegurador, Soga, sistemaCaida, POSE, Lupa, Chip, Etiqueta, Envio, bucle, suave } from "../../piezas/kit";
 import { VIA, I, P0, XA, EL, ELLA, VERDE, PP, Puesto, Mundo, clamp, type P } from "./comun";
-import { Mini, Ko } from "./Uno";
+import { Mini, Ko, Contexto, CAE } from "./Uno";
 
 export const Normal: React.FC<P> = ({ pal }) => {
   const f = useCurrentFrame(), fE = pal("empujas") ?? 50, t = Math.max(0, f - fE), da = t > 0 ? 0.5 - 0.5 * Math.cos(t / 5.5) : 0;
   return (
     <>
       <PP><Puesto modo="normal" da={da} corre={t > 0 ? t * 9 + 40 * Math.sin(t / 5.5) : 0} f={f} flechas={t > 0 ? 0.6 + 0.4 * Math.sin(t / 2.75) : 0} /></PP>
-      <Chip texto="SIN TOCAR LA LEVA" top={190} tam={60} color={VERDE} k={(f - (pal("leva") ?? 30)) / 5} />
+      <Contexto feed={da} />
+      <Chip texto="SIN TOCAR LA LEVA" top={150} tam={56} color={VERDE} k={(f - (pal("leva") ?? 30)) / 5} />
     </>
   );
 };
@@ -49,7 +50,7 @@ export const Cierre: React.FC<P> = ({ d, pal }) => {
       <PP><Puesto modo="normal" brilloFreno={0.6 + 0.4 * Math.sin(f / 4)} bloquea={suave(f / 10)} leva={VERDE} f={f} /></PP>
       <div style={{ opacity: 1 - b }}><Etiqueta texto="¿DÓNDE ESTÁ LA TUYA?" top={180} tam={92} desde={fF} /></div>
       <Envio a="quien te asegura" top={1330} k={Math.min(1, Math.max(0, f - fF - 8) / 6) * (1 - b)} />
-      {b > 0 && <AbsoluteFill style={{ opacity: b }}><Ko j={1} rotulo /></AbsoluteFill>}
+      {b > 0 && <AbsoluteFill style={{ opacity: b }}><Ko j={-CAE} rotulo /></AbsoluteFill>}
     </>
   );
 };

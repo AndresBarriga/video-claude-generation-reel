@@ -8,15 +8,18 @@ import { VIA, P0, XA, EL, ELLA, VERDE, ROJO, AP, Mundo, PP, Puesto, golpe, type 
 const LEVA = { x: AP.x + 24 * AP.s, y: AP.y - 56 * AP.s };
 const TIRADO: Angulos = { torso: 4, cabeza: 10, brazoA: [150, 120], brazoB: [-140, -110], piernaA: [34, 10], piernaB: [-22, -34] };
 const XS = VIA.hipX(VIA.pie) + 14, YS = VIA.suelo - 36;
+/** Fotogramas de caída que se ven antes del golpe al abrir el vídeo. */
+export const CAE = 11;
 /** En la colchoneta, fuera de combate. j = fotogramas desde el golpe. */
 export const Ko: React.FC<{ j: number; rotulo?: boolean }> = ({ j, rotulo }) => {
-  const e = Math.min(1, Math.max(0, j) / 5), bote = j < 12 ? -26 * Math.abs(Math.sin(j / 3.8)) * (1 - j / 12) : 0, hx = XS - 150, hy = YS - 66;
+  const aire = j < 0, e = Math.min(1, Math.max(0, j) / 5), bote = aire ? 36 * j + 0.3 * j * j : j < 12 ? -26 * Math.abs(Math.sin(j / 3.8)) * (1 - j / 12) : 0, hx = XS - 150, hy = YS - 66;
   return (
     <>
       <Mundo cx={470} cy={VIA.suelo - 330} z={1.42} sh={golpe(j, 0, 28)}>
         <Asegurador via={VIA} x={XA - 60} cuerda={false} aspecto={ELLA} quien="joe" cara="miedo" comba={0.5} />
-        <Soga pts={porChapas(VIA, aparato(VIA, XA - 60), 5, { x: XS, y: YS - 10 }, { floja: 120, sx: 60 })} />
-        <Persona p={{ x: XS, y: YS + bote }} ang={TIRADO} aspecto={EL} cara="ko" rot={-90 * e} />
+        <Soga pts={porChapas(VIA, aparato(VIA, XA - 60), 5, { x: XS, y: YS - 10 + (aire ? bote : 0) }, { floja: aire ? 30 : 120, sx: aire ? 0 : 60 })} />
+        <Persona p={{ x: XS + (aire ? -j * 2 : 0), y: YS + bote }} ang={aire ? POSE.cae : TIRADO} aspecto={EL} cara={aire ? "miedo" : "ko"} rot={aire ? -38 : -38 - 52 * e} />
+        {aire && [0, 1, 2, 3].map((i) => <path key={i} d={`M${XS - 90 + i * 56} ${YS + bote - 250 - (i % 2) * 40} v-150`} stroke="#fff" strokeWidth={9} strokeLinecap="round" opacity={0.65} />)}
         <Polvo x={XS - 60} k={j} suelo={VIA.suelo} />
         {j > 6 && [0, 1, 2].map((i) => { const a = j / 5 + (i * Math.PI * 2) / 3; return <g key={i} transform={`translate(${hx + Math.cos(a) * 58} ${hy + Math.sin(a) * 18}) rotate(${j * 6}) scale(${0.8 + 0.2 * Math.sin(a)})`}><path d="M0 -20 L5 -6 L20 -6 L8 3 L12 18 L0 9 L-12 18 L-8 3 L-20 -6 L-5 -6 Z" fill="#FFD24A" stroke="#050B14" strokeWidth={4} strokeLinejoin="round" /></g>; })}
       </Mundo>
@@ -37,7 +40,7 @@ export const Mini: React.FC<{ t: number; cae?: number }> = ({ t, cae = -1 }) => 
 };
 export const Gancho: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame(), fA = pal("aparato") ?? 42, fP = pal("pulgar") ?? fA + 34, fS = pal("cae") ?? d - 12, g = f - fA, k = f - fS;
-  if (f < fA) return <><Ko j={f + 1} rotulo />{f >= fA - N_REB && <Rebobina k={f - (fA - N_REB)} />}</>;
+  if (f < fA) return <><Ko j={f - CAE} rotulo />{f >= fA - N_REB && <Rebobina k={f - (fA - N_REB)} />}</>;
   return (
     <>
       <PP sh={golpe(f, fS, 18) + golpe(f, fA, 10)} tinte={k > 0 ? "#5A3B3B" : "#3B4757"}>
@@ -75,6 +78,19 @@ export const Corre: React.FC<P> = ({ d, pal }) => {
     </Mundo>
   );
 };
+/** Recuadro de contexto (arriba a la derecha): quien asegura de cuerpo entero, con un anillo sobre el aparato. `feed` 0–1 = da cuerda. */
+export const Contexto: React.FC<{ feed?: number; k?: number }> = ({ feed = 0, k = 1 }) => {
+  const via = VIA, x = 0, ap = aparato(via, x);
+  return (
+    <Lupa x={832} y={470} r={186} fondo="#2E3948" k={k}>
+      <g transform={`scale(1.5) translate(${-x - 40} ${-via.pie + 40})`}>
+        <path d={`M-400 ${via.suelo} H600 V${via.suelo + 400} H-400 Z`} fill="#27456B" />
+        <Asegurador via={via} x={x} hacia={{ x: x + 190, y: via.pie - 330 }} aspecto={ELLA} quien="joe" alza={1} feed={feed} comba={0.1 + 0.2 * feed} />
+        <circle cx={ap.x} cy={ap.y + 2} r={34} fill="none" stroke="#FFE3A0" strokeWidth={7} strokeDasharray="14 9" />
+      </g>
+    </Lupa>
+  );
+};
 export const Dos: React.FC<P> = ({ pal }) => {
   const f = useCurrentFrame(), fL = pal("leva") ?? 60, fM = pal("mano") ?? 100, gira = suave((f - fL) / 8), mano = f >= fM - 4;
   return (
@@ -83,8 +99,9 @@ export const Dos: React.FC<P> = ({ pal }) => {
         <Puesto modo={mano ? "normal" : "solo"} bloquea={gira} leva={gira > 0.5 ? VERDE : undefined} brilloFreno={mano ? 0.6 + 0.4 * Math.sin(f / 4) : 0} f={f} etiqueta={mano ? 0 : (f - fL + 10) / 5} />
         {f >= fL - 4 && !mano && <Foco x={LEVA.x} y={LEVA.y} r={100} color="#8FE0AE" k={(f - fL + 4) / 5} />}
       </PP>
-      <Chip texto="1 · LEVA LIBRE" top={190} tam={58} color={VERDE} k={(f - fL) / 5} />
-      <Chip texto="2 · MANO EN LA CUERDA DE FRENO" top={290} tam={48} color={VERDE} k={(f - fM) / 5} />
+      <Contexto k={f / 5} />
+      <Chip texto="1 · LEVA LIBRE" top={150} tam={58} color={VERDE} k={(f - fL) / 5} />
+      <Chip texto="2 · MANO EN LA CUERDA DE FRENO" top={1330} tam={46} color={VERDE} k={(f - fM) / 5} />
     </>
   );
 };

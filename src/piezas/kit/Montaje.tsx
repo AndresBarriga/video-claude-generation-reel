@@ -10,7 +10,7 @@ export const Pregunta: React.FC<{ texto: string; top?: number; tam?: number; has
 };
 /** Píldora de texto (dato, «CÁMARA LENTA», envío). `abajo` la coloca sobre los subtítulos. k 0–1 = aparición. */
 export const Chip: React.FC<{ texto: string; top?: number; k?: number; color?: string; tam?: number }> = ({ texto, top = 1500, k = 1, color = "rgba(5,11,20,.82)", tam = 50 }) => (
-  <div style={{ position: "absolute", top, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: Math.min(1, k * 1.5), transform: `translateY(${(1 - k) * 24}px)` }}>
+  <div style={{ position: "absolute", top, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: Math.max(0, Math.min(1, k * 1.5)), transform: `translateY(${(1 - Math.max(0, Math.min(1, k))) * 24}px)` }}>
     <div style={{ fontFamily: "Figtree", fontWeight: 700, fontSize: tam, color: "#fff", background: color, borderRadius: 44, padding: "14px 36px", whiteSpace: "nowrap" }}>{texto}</div>
   </div>
 );
