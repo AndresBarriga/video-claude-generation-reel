@@ -7,9 +7,10 @@
 - **Sin revisar a fondo:** hoja del borrador y 12 capturas del final; `qa-final` correcto (-14,7 LUFS, pico -1,2 dBTP).
 
 ## Descripción
-Tu aparato ayuda a frenar, pero necesita dos cosas: la leva libre y tu mano en la cuerda de freno.
+Tu grigri ayuda a frenar, pero necesita dos cosas: la leva libre y tu mano en la cuerda de freno.
 Lo normal: dar cuerda sin tocar la leva. Si hay que dar rápido: pulgar en la leva solo un instante, sin soltar la cuerda de freno, y la mano vuelve a su sitio.
-Cada aparato tiene su técnica: mira el manual del tuyo.
+Cada asegurador tiene su técnica: mira el manual del tuyo.
+Y siempre, nudo en la punta de la cuerda.
 Mándaselo a quien te asegura 👇
 #escalada #escaladadeportiva #asegurar #grigri #rocodromo #seguridadenescalada #aprenderaescalar #climbing
 
@@ -19,3 +20,4 @@ Mándaselo a quien te asegura 👇
 - **v4:** casi un segundo de caída antes del golpe; aparato redibujado con la leva como pieza gris lateral y el punto donde se aprieta abajo a la izquierda (corrección de Andrés: ahí es donde se desbloquea); rótulos «LEVA APRETADA: NO PUEDE CERRAR / LA CUERDA CORRE SIN FRENO»; rótulos del gesto rápido antes y con más tiempo.
 - **v5:** primeros planos rehechos como lámina de manual (dibujo de línea sobre fondo claro, aparato de canto, mano a su derecha), siguiendo la composición de la técnica oficial de Petzl sin calcar su ilustración.
 - **v6:** composición de la lámina de manual (v5) con el color y el fondo oscuro de v4 (preferencia de Andrés).
+- **v7 (18-nov):** grigri de cara y reconocible (placa naranja en gota, remaches, empuñadura gris, agujero), más grande; manos según las fotos de referencia (puño sobre la cuerda, índice bajo el grigri, pulgar cruzando la cara hasta la leva); rótulos uno a uno; momento propio para «Y NUDO EN LA PUNTA». Audio antiguo («aparato» en la voz).

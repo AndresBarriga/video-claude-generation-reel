@@ -49,6 +49,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
       </PP>
       <Lupa x={822} y={470} r={196} fondo="#2E3948" k={g / 5}><Mini t={0.3 + 0.36 * Math.min(1, g / Math.max(1, fS - fA))} cae={k > 0 ? k * 0.6 : -1} /></Lupa>
       <Chip texto="5 SEGUNDOS ANTES" top={150} tam={48} k={Math.min(1, g / 4) * (g < 34 ? 1 : Math.max(0, 1 - (g - 34) / 6))} />
+      <Chip texto="✗  GRIGRI AGARRADO ENTERO" top={150} tam={52} color={ROJO} k={Math.min((g - 40) / 5, (fS - 18 - f) / 4)} />
       <Etiqueta texto="¿FRENA?" top={170} tam={128} desde={fS - 16} />
     </>
   );
