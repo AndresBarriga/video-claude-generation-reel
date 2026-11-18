@@ -3,6 +3,10 @@ import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Etiqueta, clamp, golpe, type P, ALTO, B1, HOOK, LEJOS, nudo, mano, pAlto, resbala, caeSuelo, kSuelo, suave } from "./comun";
 import { Plano, Soga, Aseg, Ella, Polvo, Chapa1 } from "./piezas";
+import { Rebobina, N_REB } from "../Agarra/comun";
+
+/** E59B: abre con el final de la caída (ya en el suelo), «¿QUÉ HA PASADO?», y rebobina. Fotogramas de esa intro. */
+const INTRO = 34;
 
 const BT = 26, L = 440; // px que baja a cámara lenta · cuerda libre desde la 1.ª chapa
 /** Cuerda desde la 1.ª chapa: por la mano (suelta = 0) o colgando en bucle (suelta = 1). */
@@ -13,9 +17,10 @@ export const tramo = (p: { x: number; y: number }, h: { x: number; y: number }, 
   return [B1, { ...m, sx: -34 }, { ...n, sag: 30 * (1 - suelta) + 0.25 * off * suelta, sx: -84 * (1 - suelta) - 24 * suelta }];
 };
 
-export const Gancho: React.FC<P> = ({ d, pal }) => {
-  const f = useCurrentFrame();
+export const Gancho: React.FC<P> = ({ e, d, pal }) => {
+  const fr = useCurrentFrame(), abre = !!(e as { abre?: boolean }).abre, intro = abre && fr < INTRO;
   const fF = pal("fallas") ?? 60, fS = Math.min(d - 12, (pal("suelo") ?? 115) + 2);
+  const f = intro ? fS - 16 + Math.min(fr, INTRO - N_REB) * 1.0 : fr;
   const p0 = { x: ALTO.x - 6, y: ALTO.y + BT }, f0 = fS - Math.round(kSuelo(p0.y));
   const bt = interpolate(f, [fF, f0], [0, 1], clamp), micro = interpolate(f, [4, 8, 14], [0, 1, 0], clamp);
   const aR = resbala(pAlto(f), Math.max(bt, micro * 0.3)), k = f - f0, c = caeSuelo(k, p0, aR, 700);
@@ -32,7 +37,8 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
         <Soga pts={tramo(p, H, Math.max(bt, k > 0 ? 1 : 0), L, j >= 0)} brillo={0.8 * (1 - bt)} desde={1} />
         <Polvo x={700} k={j} />
       </Plano>
-      <Etiqueta texto="¿TOCAS EL SUELO?" desde={-15} top={300} tam={96} />
+      {intro ? <Etiqueta texto="¿QUÉ HA PASADO?" desde={-15} top={300} tam={104} /> : <Etiqueta texto="¿TOCAS EL SUELO?" desde={abre ? INTRO : -15} top={300} tam={96} />}
+      {intro && <Rebobina k={fr - (INTRO - N_REB)} />}
     </>
   );
 };

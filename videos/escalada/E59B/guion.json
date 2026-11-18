@@ -1,0 +1,82 @@
+{
+ "id": "E59B",
+ "titulo": "La segunda chapa: la más peligrosa",
+ "nicho": "escalada",
+ "plantilla": "Chapa",
+ "verificado": true,
+ "fuentes": [
+  "https://willgadd.com/film-festival-ice-book-correction/ (fallar un chapaje: misma caída chapando alto o a la cintura; chapando alto empiezas más abajo y es más probable el suelo; primeras chapas, a la cintura)",
+  "https://publications.americanalpineclub.org/articles/13201214420 (caída con la cuerda entre los dientes: diente perdido)"
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "texto": "Estás chapando la segunda. Si fallas ahora… puedes llegar al suelo.",
+   "abre": true
+  },
+  {
+   "tipo": "texto",
+   "visual": "cuerda",
+   "texto": "Y eso que la primera está chapada. Pero para chapar por encima de la cabeza, sacas metro y medio de cuerda."
+  },
+  {
+   "tipo": "texto",
+   "visual": "igual",
+   "texto": "Si fallas, caes lo mismo que si la chapas en la cintura… pero empiezas más abajo. Y en la segunda, más abajo es el suelo."
+  },
+  {
+   "tipo": "texto",
+   "visual": "peligrosa",
+   "texto": "Por eso la segunda es la chapa más peligrosa: alto para hacerte daño, bajo para que la cuerda te pare."
+  },
+  {
+   "tipo": "texto",
+   "visual": "boca",
+   "texto": "Y si te la pones en la boca para sacar más, ya no te juegas solo el suelo: al caer, se tensa entre tus dientes."
+  },
+  {
+   "tipo": "texto",
+   "visual": "cintura",
+   "texto": "Si necesitas la boca, sacas demasiada cuerda. Sube hasta tenerla en la cintura."
+  },
+  {
+   "tipo": "texto",
+   "visual": "asegura",
+   "texto": "Y quien asegura: en esta chapa, cerca de la pared, llevándote corto y muy pendiente… y dando cuerda rápido cuando chapas."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "Así que cuidado al chapar la segunda."
+  }
+ ],
+ "frases": [
+  4,
+  3,
+  4,
+  7,
+  14,
+  2,
+  10,
+  4,
+  4,
+  5,
+  9,
+  4,
+  7,
+  11,
+  7,
+  2,
+  5,
+  4,
+  3,
+  6,
+  3,
+  7,
+  5,
+  6,
+  2,
+  5
+ ]
+}
