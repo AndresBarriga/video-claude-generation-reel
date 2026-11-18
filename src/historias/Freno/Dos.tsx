@@ -16,15 +16,16 @@ export const Normal: React.FC<P> = ({ pal }) => {
   );
 };
 export const Rapido: React.FC<P> = ({ d, pal }) => {
-  const f = useCurrentFrame(), fP = pal("pulgar") ?? Math.round(d * 0.45), fI = (pal("instante") ?? fP + 24) + 8, fS = pal("soltar") ?? fI + 10, fV = pal("vuelves") ?? d - 14;
-  const pisa = interpolate(f, [fP, fP + 4, fI, fI + 4], [0, 1, 1, 0], clamp), rap = f >= fP - 36 && f < fV + 4, corre = interpolate(f, [fP, fI], [0, 900], clamp);
+  // 1) agarre: dedos en la pestaña (se queda ≥1,5 s) · 2) pulgar aprieta un instante y la otra mano tira · 3) la mano vuelve
+  const f = useCurrentFrame(), fP = pal("pulgar") ?? Math.round(d * 0.4), fV = pal("vuelves") ?? d - 16, fR = Math.min(fV - 10, fP + 40);
+  const pisa = interpolate(f, [fP + 4, fP + 9, fR, fR + 6], [0, 1, 1, 0], clamp), rap = f < fV, corre = interpolate(f, [fP + 9, fR], [0, 700], clamp);
+  const dedos = Math.min((f - 6) / 6, (fP - f) / 5), pul = Math.min((f - fP) / 5, (fV - 4 - f) / 5);
   return (
     <>
-      <PP><Puesto modo={rap ? "rapido" : "normal"} pisa={pisa} marca={pisa > 0.5 ? 3 : rap && f < fP ? 1 : f >= fS - 2 ? 1 : 0} corre={corre} f={f} etiqueta={rap ? 1 : 0} /></PP>
-      <Lupa x={822} y={520} r={190} fondo="#2E3948"><Mini t={interpolate(f, [0, fI + 10, d], [0.2, 0.7, 0.95], clamp)} /></Lupa>
-      <Chip texto="TRES DEDOS EN LA CUERDA" top={150} tam={56} color={VERDE} k={Math.min((f - (fP - 34)) / 5, (fP - 2 - f) / 4)} />
-      <Chip texto="PULGAR EN LA LEVA: UN INSTANTE" top={150} tam={52} color="#C2603A" k={Math.min((f - fP) / 5, (fV - 2 - f) / 4)} />
-      <Chip texto="Y LA MANO VUELVE" top={150} tam={56} color={VERDE} k={(f - fV) / 5} />
+      <PP><Puesto modo={rap ? "rapido" : "normal"} pisa={pisa} marca={f < fP ? 1 : 0} corre={corre} f={f} dedos={dedos} etiqueta={pul} /></PP>
+      <Chip texto="ÍNDICE Y MEDIO EN LA PESTAÑA" top={150} tam={50} color={VERDE} k={dedos} />
+      <Chip texto="PULGAR: SOLO UN INSTANTE" top={150} tam={54} color="#C2603A" k={pul} />
+      <Chip texto="Y LA MANO VUELVE A SU SITIO" top={150} tam={52} color={VERDE} k={(f - fV) / 5} />
     </>
   );
 };
