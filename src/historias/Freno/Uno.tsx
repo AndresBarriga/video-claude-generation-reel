@@ -41,15 +41,32 @@ export const Mini: React.FC<{ t: number; cae?: number }> = ({ t, cae = -1 }) => 
 export const Gancho: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame(), fA = (pal("aparato") ?? 42) + 16, fP = pal("pulgar") ?? fA + 34, fS = pal("cae") ?? d - 12, g = f - fA, k = f - fS;
   if (f < fA) return <><Ko j={f - CAE} rotulo />{f >= fA - N_REB && <Rebobina k={f - (fA - N_REB)} />}</>;
+  // 1 s de contexto: plano de la aseguradora y zoom al grigri; después «gira» a la vista de lado del primer plano
+  const ZM = 30, fZ = fA + ZM;
+  if (f < fZ) {
+    const t = suave((f - fA) / ZM), ap = aparato(VIA, XA), giro = f > fZ - 6 ? (fZ - f) / 6 : 1;
+    return (
+      <>
+        <div style={{ position: "absolute", inset: 0, transform: `scaleX(${Math.max(0.05, giro)})` }}>
+          <Mundo cx={ap.x + 10 * t} cy={ap.y + 10 - 300 * (1 - t)} z={1.1 + 4.6 * t}>
+            <Asegurador via={VIA} x={XA} cuerda={false} aspecto={ELLA} quien="joe" alza={1} comba={0.3} />
+            <Soga pts={porChapas(VIA, ap, 5, P0, { floja: 50 })} />
+            <Persona p={P0} ang={accChapar(VIA, P0, 5, 0.3).ang} aspecto={EL} cara="esfuerzo" />
+          </Mundo>
+        </div>
+        <Chip texto="5 SEGUNDOS ANTES" top={150} tam={48} k={Math.min(1, (f - fA) / 4)} />
+      </>
+    );
+  }
   return (
     <>
-      <PP sh={golpe(f, fS, 18) + golpe(f, fA, 10)} tinte={k > 0 ? "#5A3B3B" : "#3B4757"}>
-        <Puesto modo="mal" corre={g * 9 + (k > 0 ? k * k * 5 : 0)} leva={k > 0 ? ROJO : undefined} f={f} etiqueta={(f - fP) / 5} />
+      <PP sh={golpe(f, fS, 18)} tinte={k > 0 ? "#5A3B3B" : "#3B4757"}>
+        <Puesto giro={Math.min(1, 0.05 + (f - fZ) / 6)} modo="mal" corre={g * 9 + (k > 0 ? k * k * 5 : 0)} leva={k > 0 ? ROJO : undefined} f={f} etiqueta={(f - fP) / 5} />
         {f >= fP && <Foco x={LEVA.x} y={LEVA.y} r={70} color={k > 0 ? ROJO : "#FFE3A0"} k={(f - fP) / 5} />}
       </PP>
-      <Lupa x={822} y={470} r={196} fondo="#2E3948" k={g / 5}><Mini t={0.3 + 0.36 * Math.min(1, g / Math.max(1, fS - fA))} cae={k > 0 ? k * 0.6 : -1} /></Lupa>
-      <Chip texto="5 SEGUNDOS ANTES" top={150} tam={48} k={Math.min(1, g / 4) * (g < 34 ? 1 : Math.max(0, 1 - (g - 34) / 6))} />
-      <Chip texto="✗  GRIGRI AGARRADO ENTERO" top={150} tam={52} color={ROJO} k={Math.min((g - 40) / 5, (fS - 18 - f) / 4)} />
+      <Lupa x={190} y={380} r={165} fondo="#2E3948" k={(f - fZ - 6) / 5}><Mini t={0.3 + 0.36 * Math.min(1, g / Math.max(1, fS - fA))} cae={k > 0 ? k * 0.6 : -1} /></Lupa>
+      <Chip texto="5 SEGUNDOS ANTES" top={150} tam={48} k={g < 40 ? 1 : Math.max(0, 1 - (g - 40) / 6)} />
+      <Chip texto="✗  GRIGRI AGARRADO ENTERO" top={150} tam={52} color={ROJO} k={Math.min((g - 46) / 5, (fS - 18 - f) / 4)} />
       <Etiqueta texto="¿FRENA?" top={170} tam={128} desde={fS - 16} />
     </>
   );
@@ -84,7 +101,7 @@ export const Corre: React.FC<P> = ({ d, pal }) => {
 export const Contexto: React.FC<{ feed?: number; k?: number }> = ({ feed = 0, k = 1 }) => {
   const via = VIA, x = 0, ap = aparato(via, x);
   return (
-    <Lupa x={832} y={470} r={186} fondo="#2E3948" k={k}>
+    <Lupa x={190} y={380} r={165} fondo="#2E3948" k={k}>
       <g transform={`scale(1.5) translate(${-x - 40} ${-via.pie + 40})`}>
         <path d={`M-400 ${via.suelo} H600 V${via.suelo + 400} H-400 Z`} fill="#27456B" />
         <Asegurador via={via} x={x} hacia={{ x: x + 190, y: via.pie - 330 }} aspecto={ELLA} quien="joe" alza={1} feed={feed} comba={0.1 + 0.2 * feed} />
