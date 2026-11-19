@@ -1,7 +1,7 @@
 # E64 · «La puerta de la cinta» — ficha
 
 > Hecho por el amigo de Andrés (llegó como E62 por parche; renumerado al integrarlo el 19-nov porque esos IDs ya estaban usados).
-- **Estado:** v2 (19-nov) recortada a 32,6 s y entregada a Andrés para publicar. Fuera las escenas «rebabas» y «canto» (audio cortado en 29,13 s y 42,6 s, sin voz nueva); lupa desde el fotograma 0; errata «ESCALABAS» → «ESCALAS». qa-final OK (-14,9 LUFS, pico -1,3 dBTP). Rebabas y canto quedan para otro vídeo.
+- **Estado:** v1b (19-nov, recorte rápido; no confundir con la propuesta v2 «La cuerda se sale» de otro chat) recortada a 32,6 s y entregada a Andrés para publicar. Fuera las escenas «rebabas» y «canto» (audio cortado en 29,13 s y 42,6 s, sin voz nueva); lupa desde el fotograma 0; errata «ESCALABAS» → «ESCALAS». qa-final OK (-14,9 LUFS, pico -1,3 dBTP). Rebabas y canto quedan para otro vídeo.
 - **Formato:** seguridad con cuerda + paradoja física visible (H14, molde de E59). Público: quien escala de primero en deportiva.
 - **Mensaje:** una cinta «bien chapada» puede soltarte si las puertas miran hacia donde escalas: arriba se sale de la chapa, abajo se sale la cuerda. Regla: puertas al lado contrario de hacia donde vas. Además: el mosquetón de la goma es el de la cuerda (el otro coge rebabas y lija la cuerda) y, si queda apoyado en un canto, cinta más larga.
 - **Idea de Andrés (16-nov):** cómo colocar las cintas según hacia dónde escalas; todo con consecuencias (cinta que se desclipa, cuerda que se desgarra, alguien que cae mucho), no una clase.
