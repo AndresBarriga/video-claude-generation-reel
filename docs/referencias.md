@@ -37,3 +37,12 @@ Lemo-opuscar, rea-video, reels-af, OpenMontage, hypit, anything2explainer, tikto
 - **Cierre con mecanismo:** «Guárdalo para tu próxima compra y mándaselo a ese amigo que dice que las zapatillas deben doler». Anima el icono de guardar y **la hoja de enviar de Instagram**. El envío va a una persona definida por **una frase que dice**.
 - **Estética:** fondo oscuro, radiografías que brillan, un objeto por plano, sin personajes.
 - **Para nosotros:** (1) la lista con candados y progreso como bucle de retención; (2) el envío a «ese amigo que dice X»; (3) cadencia de ~1 s (más rápida que nuestra regla de 1,5–2 s); (4) una analogía universal; (5) la paradoja conocida vale como gancho sin persona. Ojo: **es el mismo tema y contenido que nuestro E63**, y mejor hecho; E63 tal cual llegaría tarde y peor.
+
+## @diariodeescalada_ (5 publicaciones, 2.430 seguidores, vídeos de 57K–182K; grabación de Andrés, 19-nov)
+Tres vídeos: **poleas** (7,8K «me gusta», 799 comentarios, 3,8K envíos), **antebrazos/pump** (2,6K, 436, 843) y **escalar contra la depresión** (4,6K, 29, 4,9K envíos). Poleas y pump son **los mismos temas que nuestros E39 (1,9K vistas) y E43 (27K)**: no es el tema, es la ejecución.
+- **Gancho:** pregunta en segunda persona sobre algo que **siente o hace**, con el cuerpo haciéndolo en el fotograma 0. «¿Qué le pasa a tu dedo cuando te cuelgas de una regleta?» · «¿Por qué se te cargan los antebrazos a mitad de vía?» · «¿Sabías que escalar funciona contra la depresión… mejor que ir a terapia?». Curiosidad sobre su propio cuerpo, no miedo.
+- **Reencuadre a los 3–6 s:** «No es que te falte fuerza: es que tu músculo se está ahogando».
+- **Por dentro + analogía:** vista de rayos X o anatomía brillante y una analogía de la vida diaria en cada vídeo: caña de pescar (poleas), cuerda de arco, manguera pisada (pump).
+- **Cifras animadas, 2–4 por vídeo:** ×3, ÷36, barra de fuerza 2/3, «1 de 5», cronómetros 2:17 frente a 6:57, «156 personas», «140.000 personas», manómetro.
+- **Qué hacer + CTA fijo:** «Comenta DEDOS / ANTEBRAZOS» (palabra clave → guía por DM; el perfil vende una guía) → cientos de comentarios. Envío: «Envíaselo a ese que siempre dice que va a escalar».
+- **Siempre igual (formato reconocible):** subtítulo arriba, 2–4 palabras, palabra clave en un recuadro; fondo oscuro; luz sobre la pieza importante; algo nuevo cada ~1 s; 50–70 s. Sin personajes: una mano o un músculo.
