@@ -173,5 +173,11 @@
   "orig": 6.5,
   "fase": "propuesta (6,5; 7,5 con cambios)",
   "hist": "19-nov 6,5 (7,5)"
+ },
+ "E64": {
+  "nota": 7,
+  "orig": 6,
+  "fase": "propuesta v2 (cambios del crítico aplicados)",
+  "hist": "19-nov 6 → 7"
  }
 }
