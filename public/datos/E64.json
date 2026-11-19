@@ -5,7 +5,7 @@
   "plantilla": "Cinta",
   "fps": 30,
   "voz": "voz/E64.mp3",
-  "duracion": 31.99,
+  "duracion": 30.02,
   "palabras": [
     {
       "w": "Te",
@@ -285,212 +285,212 @@
     {
       "w": "Y",
       "start": 16.788,
-      "end": 17.012
+      "end": 16.907
     },
     {
       "w": "abajo,",
-      "start": 17.032,
-      "end": 17.742
+      "start": 16.927,
+      "end": 17.324
     },
     {
       "w": "igual:",
-      "start": 17.963,
-      "end": 20.113
+      "start": 17.344,
+      "end": 17.742
     },
     {
       "w": "la",
-      "start": 20.333,
-      "end": 20.358
+      "start": 17.963,
+      "end": 18.091
     },
     {
       "w": "cuerda",
-      "start": 20.378,
-      "end": 20.463
+      "start": 18.111,
+      "end": 18.436
     },
     {
       "w": "pasa",
-      "start": 20.483,
-      "end": 20.538
+      "start": 18.456,
+      "end": 18.682
     },
     {
       "w": "por",
-      "start": 20.558,
-      "end": 20.598
+      "start": 18.702,
+      "end": 18.88
     },
     {
       "w": "encima",
-      "start": 20.618,
-      "end": 20.703
+      "start": 18.9,
+      "end": 19.225
     },
     {
       "w": "de",
-      "start": 20.723,
-      "end": 20.748
+      "start": 19.245,
+      "end": 19.373
     },
     {
       "w": "la",
-      "start": 20.768,
-      "end": 20.793
+      "start": 19.393,
+      "end": 19.521
     },
     {
       "w": "puerta",
-      "start": 20.813,
-      "end": 20.899
+      "start": 19.541,
+      "end": 19.866
     },
     {
       "w": "y",
-      "start": 21.139,
-      "end": 21.186
+      "start": 19.886,
+      "end": 19.965
     },
     {
       "w": "se",
-      "start": 21.206,
-      "end": 21.287
+      "start": 19.985,
+      "end": 20.113
     },
     {
       "w": "sale",
-      "start": 21.307,
-      "end": 21.454
+      "start": 20.333,
+      "end": 20.606
     },
     {
       "w": "sola.",
-      "start": 21.474,
-      "end": 21.622
+      "start": 20.626,
+      "end": 20.899
     },
     {
       "w": "La",
+      "start": 21.139,
+      "end": 21.287
+    },
+    {
+      "w": "regla:",
+      "start": 21.307,
+      "end": 21.622
+    },
+    {
+      "w": "las",
       "start": 21.855,
       "end": 22.078
     },
     {
-      "w": "regla:",
+      "w": "puertas,",
       "start": 22.098,
       "end": 22.563
     },
     {
-      "w": "las",
-      "start": 22.777,
-      "end": 23.375
-    },
-    {
-      "w": "puertas,",
-      "start": 23.395,
-      "end": 24.611
-    },
-    {
       "w": "al",
-      "start": 24.838,
-      "end": 24.882
+      "start": 22.777,
+      "end": 22.907
     },
     {
       "w": "lado",
-      "start": 24.902,
-      "end": 24.989
+      "start": 22.927,
+      "end": 23.158
     },
     {
       "w": "contrario",
-      "start": 25.009,
-      "end": 25.203
+      "start": 23.178,
+      "end": 23.659
     },
     {
       "w": "de",
-      "start": 25.223,
-      "end": 25.267
+      "start": 23.679,
+      "end": 23.809
     },
     {
       "w": "hacia",
-      "start": 25.287,
-      "end": 25.396
+      "start": 23.829,
+      "end": 24.11
     },
     {
       "w": "donde",
-      "start": 25.416,
-      "end": 25.524
+      "start": 24.13,
+      "end": 24.411
     },
     {
       "w": "vas.",
-      "start": 25.544,
-      "end": 25.609
+      "start": 24.431,
+      "end": 24.611
     },
     {
       "w": "¿Vas",
-      "start": 25.834,
-      "end": 26.051
+      "start": 24.838,
+      "end": 25.004
     },
     {
       "w": "a",
-      "start": 26.071,
-      "end": 26.169
+      "start": 25.024,
+      "end": 25.097
     },
     {
       "w": "la",
-      "start": 26.189,
-      "end": 26.346
+      "start": 25.117,
+      "end": 25.237
     },
     {
       "w": "derecha?",
-      "start": 26.366,
-      "end": 26.819
+      "start": 25.257,
+      "end": 25.609
     },
     {
       "w": "Puertas",
-      "start": 27.06,
-      "end": 27.431
+      "start": 25.834,
+      "end": 26.164
     },
     {
       "w": "a",
-      "start": 27.665,
-      "end": 27.817
+      "start": 26.184,
+      "end": 26.251
     },
     {
       "w": "la",
-      "start": 27.837,
-      "end": 28.075
+      "start": 26.271,
+      "end": 26.382
     },
     {
       "w": "izquierda.",
-      "start": 28.095,
-      "end": 28.937
+      "start": 26.402,
+      "end": 26.819
     },
     {
       "w": "Antes",
-      "start": 29.162,
-      "end": 29.423
+      "start": 27.033,
+      "end": 27.294
     },
     {
       "w": "de",
-      "start": 29.443,
-      "end": 29.563
+      "start": 27.314,
+      "end": 27.434
     },
     {
       "w": "chapar",
-      "start": 29.583,
-      "end": 29.891
+      "start": 27.454,
+      "end": 27.762
     },
     {
       "w": "la",
-      "start": 29.911,
-      "end": 30.032
+      "start": 27.782,
+      "end": 27.903
     },
     {
       "w": "cuerda,",
-      "start": 30.052,
-      "end": 30.36
+      "start": 27.923,
+      "end": 28.231
     },
     {
       "w": "mira",
-      "start": 30.56,
-      "end": 30.824
+      "start": 28.431,
+      "end": 28.749
     },
     {
       "w": "la",
-      "start": 30.844,
-      "end": 30.994
+      "start": 28.769,
+      "end": 28.952
     },
     {
       "w": "puerta.",
-      "start": 31.014,
-      "end": 31.391
+      "start": 28.972,
+      "end": 29.424
     }
   ],
   "escenas": [
@@ -522,21 +522,21 @@
       "texto": "Y abajo, igual: la cuerda pasa por encima de la puerta y se sale sola.",
       "pausa": 0.3,
       "inicio": 16.788,
-      "fin": 21.622
+      "fin": 20.899
     },
     {
       "tipo": "texto",
       "visual": "regla",
       "texto": "La regla: las puertas, al lado contrario de hacia donde vas. ¿Vas a la derecha? Puertas a la izquierda.",
-      "inicio": 21.855,
-      "fin": 28.937
+      "inicio": 21.139,
+      "fin": 26.819
     },
     {
       "tipo": "cierre",
       "visual": "cierre",
       "texto": "Antes de chapar la cuerda, mira la puerta.",
-      "inicio": 29.162,
-      "fin": 31.391
+      "inicio": 27.033,
+      "fin": 29.424
     }
   ],
   "sonido": {

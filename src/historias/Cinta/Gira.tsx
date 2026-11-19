@@ -10,8 +10,9 @@ import { Flecha, Rot } from "./Bien";
 export const Gira: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
   const fD1 = pal("derecha") ?? 29, fPu = pal("puerta") ?? 54, fC = pal("caer") ?? 103, fG = pal("gira") ?? 127, fCh = pal("choca") ?? 158, fA = pal("abre") ?? 203;
-  const cae = suave((f - fC) / 16), g = suave((f - fG) / 22), corre = suave((f - (fG + 10)) / 20), abre = suave((f - fA + 4) / 8), ido = f - (fA + 6);
-  const giro = -10 - 16 * cae * (1 - g) - 58 * g + (f > fCh && ido < 0 ? Math.sin(f * 1.6) * 2 : 0);
+  const cae = suave((f - fC) / 16), g = suave((f - fG) / 22), corre = 0.5 * suave((f - (fA - 10)) / 8), abre = suave((f - fA + 4) / 8), ido = f - (fA + 6);
+  const g2 = suave((f - fCh) / Math.max(1, fA - fCh - 2));
+  const giro = -10 - 16 * cae * (1 - g) - 58 * g - 92 * g2 + (f > fA - 6 && ido < 0 ? Math.sin(f * 1.6) * 2 : 0);
   const cinta = { x: 430, y: 430, puerta: "der" as const, giro, corre, abreArriba: abre, haloArriba: f >= fPu ? ROJO : undefined, haloAbajo: f >= fPu && f < fCh ? ROJO : undefined, suelta: ido > 0 ? { dx: ido * 20, dy: ido * ido * 3.2, rot: ido * 6 } : undefined };
   const ab = abajoDe(cinta), zc = interpolate(f, [fCh - 10, fCh + 8, fA + 6, fA + 16], [0, 1, 1, 0], clamp), z = 1.05 + 0.85 * zc, cx = 540 + (470 - 540) * zc, cy = 880 + (520 - 880) * zc;
   // extremo de la cuerda hacia él: sube a la derecha mientras escala; al caer baja a plomo por la derecha
@@ -28,6 +29,7 @@ export const Gira: React.FC<P> = ({ d, pal }) => {
       </g></Svg>
       <Rot x={800} y={430} texto="ESCALAS" k={interpolate(f, [fD1 - 6, fD1 + 2, fC - 4, fC + 2], [0, 1, 1, 0], clamp)} tam={66} />
       <Rot x={770} y={1180} texto="PUERTAS →" color="#FF8E7E" k={interpolate(f, [fPu - 2, fPu + 6, fC - 4, fC + 2], [0, 1, 1, 0], clamp)} tam={78} />
+      <Rot x={210} y={300} texto={ido > 0 ? "✗ FALLO 1/2" : "FALLO 1/2"} color={ido > 0 ? "#FF8E7E" : "#fff"} k={interpolate(f, [fC - 4, fC + 4], [0, 1], clamp)} tam={64} />
       <Chip texto="CÁMARA LENTA" top={1310} k={interpolate(f, [fC, fC + 8, d - 8, d], [0, 1, 1, 0], clamp)} tam={40} />
       <Rot x={540} y={1150} texto="¡FUERA!" color="#FF8E7E" k={ido > 0 ? Math.min(1, ido / 5) : 0} tam={120} />
     </AbsoluteFill>

@@ -46,7 +46,7 @@ export const CintaF: React.FC<CintaP> = (p) => {
         <path d={`M2 ${yT + 78} L-2 -92`} stroke={PC.tinta} strokeWidth={74} strokeLinecap="round" /><path d={`M2 ${yT + 78} L-2 -92`} stroke={color} strokeWidth={56} strokeLinecap="round" />
         {[yT + 110, yT + 140, -150, -120].map((yy) => <path key={yy} d={`M-22 ${yy} L22 ${yy}`} stroke="#fff" strokeWidth={5} strokeDasharray="7 7" opacity={0.6} />)}
         {haloAbajo && halo(haloAbajo)}
-        {!sinAbajo && formaMosq(abreAbajo, puerta)}
+        {!sinAbajo && <g transform="scale(1 -1)">{formaMosq(abreAbajo, puerta)}</g>}
         {alReves ? <g transform="rotate(180)"><Rebabas k={Math.max(rebabas, 0.01)} /></g> : <g><rect x={-36} y={-128} width={72} height={46} rx={9} fill="#15181E" stroke={PC.tinta} strokeWidth={6} />{goma > 0 && <rect x={-48} y={-140} width={96} height={70} rx={16} fill="none" stroke="#FFE3A0" strokeWidth={10} opacity={goma} />}</g>}
       </g>
     </g>

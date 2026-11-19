@@ -3,7 +3,7 @@
 import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Plano, Persona, Asegurador, Soga, porChapas, aparato, caeCuerda, resbala, saltoAseg, lento, Destello, Pregunta, Lupa, Chip, Expres, nudo, POSE } from "../../piezas/kit";
-import { clamp, golpe, suave, lerp, type P, VIA, TU, ASE, TOP, B6, B5, P0, D_MAL, K1, K2, XASE, AG } from "./comun";
+import { Svg, clamp, golpe, suave, lerp, type P, VIA, TU, ASE, TOP, B6, B5, P0, D_MAL, K1, K2, XASE, AG } from "./comun";
 import { CintaF, ParedCerca, CuerdaM, abajoDe } from "./Macro";
 
 const F0 = 5, LENTO = 62, FACTOR = 0.07;
@@ -15,6 +15,21 @@ export const estadoGancho = (f: number) => {
   const fCatch = F0 + kS + LENTO + (K2 - kS - LENTO * FACTOR);
   return { c, k, pop, fPop, fCatch, enLento: f - F0 > kS && f < fPop + 8, tens: interpolate(f, [F0 + kS - 2, F0 + kS + 4], [0, 1], clamp) };
 };
+/** Barra de «metros de caída» (capa informativa H15): sube mientras cae; marca dónde le habría parado la cinta buena. */
+const Medidor: React.FC<{ m: number; k: number }> = ({ m, k }) => {
+  if (k <= 0) return null;
+  const X = 985, Y0 = 1180, H = 620, yM = (v: number) => Y0 - (v / 7) * H, y27 = yM(2.7);
+  return (
+    <Svg><g opacity={k}>
+      <rect x={X - 26} y={Y0 - H} width={52} height={H} rx={26} fill="rgba(5,11,20,.55)" stroke="#fff" strokeWidth={5} />
+      <rect x={X - 18} y={yM(m)} width={36} height={Y0 - yM(m) - 8} rx={18} fill={m > 2.7 ? "#E2533F" : "#FFC24B"} />
+      <path d={`M${X - 44} ${y27} H${X + 44}`} stroke="#3FA76A" strokeWidth={8} strokeLinecap="round" />
+      <text x={X - 54} y={y27 + 12} textAnchor="end" fontFamily="Bricolage Grotesque" fontWeight={900} fontSize={34} fill="#fff" stroke="#081120" strokeWidth={8} paintOrder="stroke">2,7 m</text>
+      <text x={X} y={Y0 + 62} textAnchor="middle" fontFamily="Bricolage Grotesque" fontWeight={900} fontSize={46} fill="#fff" stroke="#081120" strokeWidth={10} paintOrder="stroke">{m.toFixed(1).replace(".", ",")} m</text>
+      <text x={X} y={Y0 - H - 24} textAnchor="middle" fontFamily="Bricolage Grotesque" fontWeight={900} fontSize={34} fill="#fff" stroke="#081120" strokeWidth={8} paintOrder="stroke">CAÍDA</text>
+    </g></Svg>
+  );
+};
 export const PlanoGancho: React.FC<{ f: number; pregunta?: boolean }> = ({ f, pregunta = true }) => {
   const e = estadoGancho(f), { c, pop } = e, p = { x: c.x, y: c.y }, suelta = pop >= 0;
   const z = interpolate(f, [0, 22, e.fPop, e.fPop + 16, e.fCatch + 6], [0.95, 1.25, 1.55, 0.7, 0.62], clamp);
@@ -25,7 +40,7 @@ export const PlanoGancho: React.FC<{ f: number; pregunta?: boolean }> = ({ f, pr
   // la cinta suelta baja por la cuerda hacia él
   const t = suelta ? Math.min(1, pop / 14) : 0, n = nudo(p), cs = { x: lerp(B6.x, n.x - 30, t), y: lerp(B6.y - 54, n.y - 150, t) };
   const lupa = interpolate(f, [e.fPop + 10, e.fPop + 16], [1, 0], clamp), g = suave((f - (F0 + K1 + 6)) / (e.fPop - (F0 + K1 + 6)));
-  const cinta = { x: -70, y: -235, s: 0.6, puerta: "der" as const, giro: -62 * Math.min(1, g * 1.5), corre: suave((g - 0.45) / 0.3), abreArriba: suave((g - 0.62) / 0.3), suelta: suelta ? { dx: pop * 14, dy: pop * pop * 2.2, rot: pop * 7 } : undefined };
+  const cinta = { x: -70, y: -235, s: 0.6, puerta: "der" as const, giro: -62 * Math.min(1, g * 1.5) - 90 * suave((g - 0.5) / 0.35), corre: 0.5 * suave((g - 0.8) / 0.12), abreArriba: suave((g - 0.82) / 0.14), suelta: suelta ? { dx: pop * 14, dy: pop * pop * 2.2, rot: pop * 7 } : undefined };
   const ab = abajoDe(cinta);
   return (
     <>
@@ -43,6 +58,7 @@ export const PlanoGancho: React.FC<{ f: number; pregunta?: boolean }> = ({ f, pr
         <g transform="scale(0.9)"><ParedCerca seed="lg" /><CuerdaM d={`M-330 420 Q-160 300 ${ab.x} ${ab.y + 40} Q${ab.x + 120} ${ab.y - 60} 380 ${ab.y + 380}`} w={30} /><CintaF {...cinta} /></g>
       </Lupa>
       {e.enLento && <Chip texto="CÁMARA LENTA" top={1330} k={lupa} tam={40} />}
+      <Medidor m={6.3 * Math.max(0, Math.min(1, (f - F0) / Math.max(1, e.fCatch - F0)))} k={pregunta ? interpolate(f, [F0, F0 + 6], [0, 1], clamp) : 0} />
       {pregunta && <Pregunta texto="¿SE SUELTA?" tam={112} />}
     </>
   );
