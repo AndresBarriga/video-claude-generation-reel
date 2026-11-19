@@ -21,3 +21,10 @@
 **Descripción:** ¿Hacia dónde miran las puertas de tus cintas? Si miran hacia donde escalas, en una caída la cinta puede salirse de la chapa, o la cuerda del mosquetón. La regla: puertas al lado contrario de hacia donde vas. Y dos más: el mosquetón de la goma es siempre el de la cuerda, y si queda apoyado en un canto, cinta más larga. Guárdalo y mándaselo a tu cordada.
 #escalada #escaladadeportiva #seguridadenescalada #cintaexpres #rocodromo
 **Comentario fijado:** ¿Te fijas en hacia dónde miran las puertas o chapas como caiga?
+
+## Revisión (Claude, 19-nov)
+- Técnica OK (qa-final: 46,1 s, -15,3 LUFS, pico -1,3). Sigue la línea vigente: pregunta «¿SE SUELTA?» en el fotograma 0, consecuencia, regla y bucle al final.
+- **Demasiado largo para un consejo:** 46 s con tres ideas (puerta, arriba/abajo, canto). Recortar el canto (y quizá rebabas) → ~32 s; las dos últimas valen para otro vídeo.
+- En el fotograma 0 el escalador es diminuto y la lupa no entra hasta ~1,3 s: abrir ya con la lupa sobre la cinta.
+- Errata: un rótulo dice «ESCALABAS» y el siguiente «ESCALAS».
+- Hechos: los mecanismos (la puerta contra la chapa, la cuerda que sale por la puerta, el mosquetón con rebabas, la palanca en un canto) son correctos en lo esencial.

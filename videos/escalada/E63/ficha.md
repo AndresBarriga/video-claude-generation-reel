@@ -23,3 +23,11 @@
 Fuente: McHenry et al., The Foot (2015); BMC.
 #escalada #piesdegato #rocodromo #escaladadeportiva #boulder
 **Comentario fijado:** ¿Cuántos números bajas tú respecto a tu zapatilla de calle? ¿Y aguantas una vía entera sin quitártelos?
+
+## Revisión (Claude, 19-nov)
+- Técnica OK (qa-final: 37,2 s, -15,5 LUFS, pico -2,3). La imagen está bien hecha.
+- **Gancho flojo para lo que sabemos:** no hay pregunta en el fotograma 0 (el «180 €» entra a ~0,5 s) y la primera imagen es un pie en una tienda, sin nada en juego. Propuesta: rótulo en el fotograma 0 «¿TE APRIETAN?» o «¿3 NÚMEROS MENOS?».
+- Mezcla identidad (arrepentirse de 180 €) con consejo (ajustado ≠ machacado, vías largas): son dos formatos.
+- Lleva dos fuentes en pantalla (McHenry 2015 y BMC); la norma es una atribución como máximo. Quitar la del BMC.
+- El plano «¿Por qué lo hacemos?» con el escalador diminuto en la pared no aporta: cambiarlo por el canto en primer plano.
+- Fuera de la línea actual (cuerda y seguridad); el riesgo es que pase como E39 y E42 (explicaciones de material: poco alcance).
