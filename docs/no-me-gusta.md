@@ -86,3 +86,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 
 - 2026-11-19 · (E64) Material dibujado poco real: mosquetón de la cuerda con la nariz hacia arriba (debe mirar abajo); cinta que se desclipa de la chapa sin girar (en la realidad sigue girando casi dando la vuelta y se abre contra la chapa); cuerda que «se sale sola» sin un movimiento que lo cause. Toda consecuencia necesita su causa visible.
 - 2026-11-19 · (E64) Un corte de audio que deja media frase colgando («tu cinta tiene un arriba…»): revisar siempre la frase en cada corte.
+- 2026-11-19 · E62B: el A/B partido en el fotograma 0 «no se entiende nada»: dos primeros planos sin persona ni situación no se leen. Sí: un plano con la persona en su situación y una lupa sobre el detalle.

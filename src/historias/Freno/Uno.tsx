@@ -3,7 +3,7 @@ import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Persona, Asegurador, Soga, Sala, Polvo, porChapas, aparato, accChapar, sogaChapar, POSE, mix, G, Lupa, Etiqueta, Chip, Foco, suave, type Angulos } from "../../piezas/kit";
 import { Rebobina, N_REB } from "../Agarra/comun";
-import { AbreAB } from "./Ab";
+import { AbreClaro } from "./Ab";
 import { VIA, P0, XA, EL, ELLA, VERDE, ROJO, TAB, Mundo, PP, Puesto, golpe, type P } from "./comun";
 
 const LEVA = TAB;
@@ -42,7 +42,7 @@ export const Mini: React.FC<{ t: number; cae?: number }> = ({ t, cae = -1 }) => 
 export const Gancho: React.FC<P> = ({ e, d, pal }) => {
   const ab = (e as { abre?: string })?.abre === "ab";
   const f = useCurrentFrame(), fA = (pal("aparato") ?? 42) + 16, fP = pal("pulgar") ?? fA + 34, fS = pal("cae") ?? d - 12, g = f - fA, k = f - fS;
-  if (f < fA && ab) return <AbreAB />;
+  if (ab) return <AbreClaro e={e} d={d} pal={pal} />;
   if (f < fA) return <><Ko j={f - CAE} rotulo />{f >= fA - N_REB && <Rebobina k={f - (fA - N_REB)} />}</>;
   // 1 s de contexto: plano de la aseguradora y zoom al grigri; después «gira» a la vista de lado del primer plano
   const ZM = 30, fZ = fA + ZM;
