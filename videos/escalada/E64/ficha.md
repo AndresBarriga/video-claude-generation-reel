@@ -8,6 +8,7 @@
   1️⃣ Nada de back-clip: el tramo que va a tu arnés sale por delante.
   2️⃣ La puerta del mosquetón de la cuerda, al lado contrario de hacia donde vas.
   3️⃣ Sin goma a la chapa, con goma a la cuerda. No los cambies.
+  ¿Por qué la goma va abajo? Sujeta el mosquetón de la cuerda para que no gire y la cuerda no cargue sobre el gatillo, y ayuda a chapar. Ojo: la goma no es un elemento de seguridad ni impide del todo que gire. Y no los cambies: el de la chapa se marca con el acero y esas marcas desgastan la cuerda.
   Guárdalo y mándaselo a quien te asegura: desde abajo se ve.
   #escalada #escaladadeportiva #backclip #seguridad #climbing
 - **Comentario fijado:** «¿Cuál de los tres te han tenido que corregir alguna vez? 👇»

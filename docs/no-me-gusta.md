@@ -88,3 +88,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-11-19 · (E64) Un corte de audio que deja media frase colgando («tu cinta tiene un arriba…»): revisar siempre la frase en cada corte.
 - 2026-11-19 · E62B: el A/B partido en el fotograma 0 «no se entiende nada»: dos primeros planos sin persona ni situación no se leen. Sí: un plano con la persona en su situación y una lupa sobre el detalle.
 - 2026-11-19 · E63 v5 (primer vídeo con el formato de las referencias): «bastante bien», «el formato nuevo funciona». Gusta: subtítulos arriba con recuadro, capa infográfica, medidor de dolor. Mejorar: dibujos sueltos demasiado básicos (la chancla v1); los rótulos que no se explican en voz (PIEL +½ · SINTÉTICO ≈ 0) no se entienden: escribirlos completos.
+- 2026-11-19 · (E64 v4, formato de las referencias) «Está muy bien… estos vídeos son mucho más engaging que los otros»: primer plano en movimiento, candados 1-2-3, tarjetas y subtítulos arriba.
