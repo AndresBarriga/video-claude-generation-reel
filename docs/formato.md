@@ -1,4 +1,4 @@
-# Formato fijo (propuesta v1, 19-nov, pendiente de OK de Andrés)
+# Formato fijo (19-nov, Andrés: «adoptar todo»)
 
 Sale del análisis de las referencias de @pin_v1ew (pies de gato) y @diariodeescalada_ (poleas, antebrazos, depresión), apuntadas en `docs/referencias.md`. Son los mismos temas que nuestros E39 y E43 y tienen 10–100× más vistas: **la diferencia es de ejecución y formato, no de tema**.
 
@@ -65,7 +65,7 @@ Cada vídeo se cuenta con estos bloques.
 - Las portadas llevan el título grande.
 - Pocos vídeos y todos con el mismo formato.
 
-## 2. Qué adoptamos (manteniendo la cuenta)
+## 2. Qué adoptamos: TODO (manteniendo personajes y humor)
 Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **formato**.
 
 **A. Plantilla obligatoria para vídeos de información** (45–60 s). Los bloques 1–9 de arriba, con la pregunta o paradoja en la primera frase. Los personajes salen en el bloque 1 como contexto (la acción en primer plano) y en los chistes; el resto es «por dentro» y gráficos.
@@ -103,3 +103,31 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 - Duración 45–60 s en información.
 
 **F. Más adelante:** guía gratuita o de pago y «Comenta X» con DM automático. Es la vía de monetización que encaja con lo que hacen las referencias.
+
+## 3. Números (métricas de las referencias)
+| Vídeo | «Me gusta» | Coment. | Envíos | Envíos/«me gusta» | CTA |
+|---|---|---|---|---|---|
+| pin_v1ew pies de gato | 6.656 | 56 | 3.155 | 0,47 | guardar + mandar a «ese amigo que dice…» |
+| diario poleas | 7.839 | 799 | 3.805 | 0,49 | «Comenta DEDOS» |
+| diario antebrazos | 2.602 | 436 | 843 | 0,32 | «Comenta ANTEBRAZOS» |
+| diario depresión | 4.591 | 29 | 4.917 | 1,07 | «Envíaselo a ese que siempre dice que va a escalar» |
+| nuestro E59 | 2.900 | 15 | ≈1.800 | ≈0,6 | mándaselo a quien te asegura |
+| nuestro E43 | 935 | 0 | 330 | 0,35 | — |
+- **El CTA decide qué cifra sube:** palabra clave → comentarios = 10–17 % de los «me gusta»; mandar a una persona concreta → envíos ≈ «me gusta» o más.
+- **Nuestra proporción envíos/«me gusta» ya es como la suya.** Lo que nos falta es **alcance** (gancho, retención, formato), no que guste.
+- Ellos también fallan: en su perfil hay vídeos de 2,7K y 15K junto a los de 57K–182K.
+- **Números dentro del vídeo:** cifras precisas e «impares» (156, 140.000, 53 %, ×3, ÷36, 2:17), nunca redondas; siempre comparadas; cada una con su gráfico y una etiqueta en versalitas.
+
+## 4. Monetización (diariodeescalada.com, 19-nov)
+- Ebook PDF «Escalada desde cero», 38 páginas ilustradas, 9,95 €, descarga inmediata, Shopify, vol. 1 de una colección.
+- Para principiantes de rocódromo (sobre todo búlder); plan de 4 semanas, «semáforo del dolor», glosario.
+- Sin reseñas, sin imán de clientes (lead magnet) gratis, sin packs; formulario de aviso del próximo volumen.
+- **Para nosotros:** nuestro público es de cuerda y seguridad, de nivel medio (no compite con su vol. 1). Embudo: «Comenta CUERDA» → DM automático con una checklist gratis (imán) → correo → guía de pago («De rocódromo a roca: cuerda sin miedo»). Falta: herramienta de DM automático, la checklist y la guía.
+
+## 5. Plan de implantación
+1. **Normas:** CLAUDE.md («Cada guion»), `docs/viralidad.md` (tabla nueva con los mínimos), `docs/guia-visual.md`, el crítico y `npm run qa` (que compruebe los mínimos medibles).
+2. **Herramientas:** subtítulos arriba con karaoke y recuadro; kit infográfico; filtro de rayos X; música de fondo continua por defecto; CTA con la hoja de enviar animada; plantilla de estructura (escenas 1–9 con nombres fijos en `guion.json`).
+3. **Contenido:** banco de analogías y de estudios verificados por tema; las ideas de la cola se reescriben al formato.
+4. **Cuenta:** bio con promesa, portadas con título, plantilla de descripción (1.ª línea = gancho personal).
+5. **Primer vídeo:** pies de gato, con otro ángulo distinto del de pin_v1ew.
+6. **Monetización:** checklist gratis + DM automático cuando el formato funcione (umbral: 3 vídeos ≥ 20K).
