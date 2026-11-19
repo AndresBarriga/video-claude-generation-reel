@@ -277,5 +277,26 @@
   "calidad": 3,
   "coste": 1,
   "limites": "n pequeño; E46 puede ser un caso aislado; el gancho mezcla efecto de tema y de apertura."
+ },
+ "H15": {
+  "texto": "Capa infográfica (algo con información nueva cada ~1,5–2 s): skip ≤ 27 % y retención ≥ 50 % a 10 s",
+  "videos": [
+   "E64"
+  ],
+  "ventana": 24,
+  "refuta_si": [
+   {
+    "m": "skip",
+    "op": ">",
+    "v": 27
+   }
+  ],
+  "modo": "todos",
+  "importa": "Decide si toda la producción lleva una capa de contadores, datos e indicadores además de la ilustración.",
+  "decide": "Estilo de montaje por defecto (guía visual)",
+  "impacto": 4,
+  "calidad": 2,
+  "coste": 2,
+  "limites": "Un solo vídeo; el tema y el gancho también cambian. Habría que probar el mismo vídeo con y sin la capa (reel de prueba)."
  }
 }

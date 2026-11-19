@@ -123,7 +123,19 @@
   "desc": "Pies de gato: pagas 180 € por unos zapatos tres números más pequeños. Gato en corte a escala real (dedos en garra, hueco, dolor), canto del grosor de una moneda, 9 de 10 con dolor (The Foot, 2015), ajustado no es machacado; vías largas, cómodos; cierre quitándotelos nada más bajar."
  },
  "E64": {
-  "corto": "La puerta de la cinta",
-  "desc": "Cintas según hacia dónde escalas: con las puertas hacia donde vas, la cinta puede salirse de la chapa (gancho: cae 6 m desde muy alto) o la cuerda del mosquetón; regla de las puertas al lado contrario; el mosquetón de la goma es el de la cuerda (rebabas que lijan); cinta larga si queda en un canto."
+  "corto": "La cuerda se sale",
+  "desc": "Dos formas de que la cuerda salga de una cinta bien puesta: back-clip (entra por delante) y puerta mirando hacia donde vas."
+ },
+ "E62B": {
+  "corto": "Grigri (reel de prueba, gancho nuevo)",
+  "desc": "E62 con apertura «¿CUÁL FRENA?»: dos manos A/B sobre el grigri; la caída da la respuesta."
+ },
+ "E66": {
+  "corto": "Tu cinta tiene arriba y abajo",
+  "desc": "Goma = mosquetón de la cuerda; el de arriba coge rebabas de la chapa y, si lo cambias, lija la cuerda; una cinta desgastada puede cortarla."
+ },
+ "E67": {
+  "corto": "¿Cinta larga o corta?",
+  "desc": "Cuándo alargar (travesía, techo, chapa desplazada, arista) y el precio: más caída y péndulo."
  }
 }

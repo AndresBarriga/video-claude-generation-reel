@@ -35,7 +35,7 @@ const hipotesis = read('docs/aprendizajes.md').split('\n').filter((l) => /^\|\s*
 // Cola de producción e ideas (docs/ideas/escalada.md)
 const resumen = (read('docs/ideas/escalada.md').match(/## Resumen de estado[^\n]*\n([\s\S]*?)\n## /) || [])[1] || '';
 const bloques = [...resumen.matchAll(/\*\*(.+?):\*\*\s*(.+)/g)].map((m) => ({ k: m[1], v: m[2] }));
-const cola = (bloques.find((b) => /Cola/i.test(b.k))?.v || '').split(/\s·\s(?=\d\)\s)/).map((s) => s.replace(/^\d\)\s*/, '').trim()).filter(Boolean);
+const cola = (bloques.find((b) => /Cola/i.test(b.k))?.v || '').split(/\s·\s(?=\d+\)\s)/).map((s) => s.replace(/^\d+\)\s*/, '').trim()).filter(Boolean);
 
 // Archivos de vídeo disponibles (relativos a docs/)
 const archivos = {};
