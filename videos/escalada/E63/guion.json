@@ -1,97 +1,119 @@
 {
  "id": "E63",
- "titulo": "Pies de gato: 180 € para sufrir",
+ "titulo": "180 € para sufrir (pies de gato, formato fijo)",
  "nicho": "escalada",
- "plantilla": "Gatos",
- "escenas": [
-  {
-   "tipo": "gancho",
-   "visual": "compra",
-   "texto": "Te gastas ciento ochenta euros en unos zapatos que sabes que te van a hacer daño."
-  },
-  {
-   "tipo": "texto",
-   "visual": "pone",
-   "texto": "Te los pones… y ya sabes que te has equivocado.",
-   "pausa": 0.4
-  },
-  {
-   "tipo": "texto",
-   "visual": "porque",
-   "texto": "¿Por qué lo hacemos? Porque escalas sobre cantos minúsculos,"
-  },
-  {
-   "tipo": "texto",
-   "visual": "hueco",
-   "texto": "y para pisarlos no puede quedar hueco dentro del gato.",
-   "pausa": 0.4
-  },
-  {
-   "tipo": "texto",
-   "visual": "machacado",
-   "texto": "Pero ajustado no es machacado."
-  },
-  {
-   "tipo": "cifra",
-   "visual": "estudio",
-   "texto": "En un estudio, nueve de cada diez escaladores escalaban con dolor de pies.",
-   "fuente": "McHenry et al., The Foot (2015) · 56 escaladores",
-   "cifra": "9 de 10",
-   "etiqueta": "con dolor de pies al escalar"
-  },
-  {
-   "tipo": "texto",
-   "visual": "nadie",
-   "texto": "Y no hace falta: nadie ha demostrado que sufrir más pise mejor."
-  },
-  {
-   "tipo": "texto",
-   "visual": "peor",
-   "texto": "Si te duelen tanto que no quieres pisar, escalas peor."
-  },
-  {
-   "tipo": "texto",
-   "visual": "largas",
-   "texto": "Así que justos, sí. Y para vías largas, cómodos."
-  },
-  {
-   "tipo": "cierre",
-   "visual": "cierre",
-   "texto": "Y tú, con tus ciento ochenta euros… quitándotelos nada más bajar."
-  }
- ],
- "frases": [
-  16,
-  3,
-  7,
-  4,
-  5,
-  10,
-  2,
-  3,
-  3,
-  10,
-  4,
-  6,
-  2,
-  8,
-  2,
-  2,
-  1,
-  1,
-  4,
-  1,
-  2,
-  5,
-  4
- ],
- "frasesManual": true,
+ "plantilla": "GatosV2",
+ "formato": "fijo",
  "verificado": true,
  "fuentes": [
-  "McHenry RD, Arnold GP, Wang W, Abboud RJ. Footwear in rock climbing: Current practice. The Foot 25(3):152-158, 2015 (56 escaladores; 55 con calzado mal ajustado; dolor de pies al escalar en el 91 %; ~4 tallas UK menos). https://www.pubmed.gov/26261058/",
-  "Univ. de Dundee, nota de prensa 2015: https://app.dundee.ac.uk/news/2015/rock-climbers-consistently-risking-injury-and-pain-to-maximise-performance.php",
-  "BMC, «Climbing shoes: is pain insane?»: no hay estudios conocidos que demuestren que forzar los dedos mejore el rendimiento; lo necesario es que no quede espacio muerto. https://thebmc.co.uk/en/climbing-shoes-is-pain-insane",
-  "Climbing.com (How to choose, fit and break in): si aprietan demasiado, apenas cargas los pies por el dolor. REI: gatos demasiado apretados impiden pisar cantos pequeños.",
-  "Moneda de 1 €: 2,33 mm de grosor, 23,25 mm de diámetro (BCE)."
+  "McHenry et al., The Foot 2015 (Dundee, 56 escaladores): 55/56 calzado mal ajustado y excesivamente apretado; dolor en el 91 %; más nivel, más ajustado (p<0,001)",
+  "Gatos de piel ceden algo; sintéticos bastante menos (rótulo PIEL +½ · SINTÉTICO ≈ 0 solo en pantalla)"
+ ],
+ "escenas": [
+  {
+   "tipo": "texto",
+   "visual": "gancho",
+   "bloque": "gancho",
+   "texto": "Te gastas ciento ochenta euros en unos zapatos que sabes que te van a doler.",
+   "claves": [
+    "euros",
+    "doler"
+   ],
+   "cifras": [
+    "180 €"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "reencuadre",
+   "bloque": "reencuadre",
+   "texto": "No es masoquismo… aunque lo parezca. Es para que no quede ni un milímetro de aire.",
+   "claves": [
+    "masoquismo",
+    "aire"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "dentro",
+   "bloque": "dentro",
+   "texto": "Con aire, al pisar un canto, el pie se dobla dentro y pierdes fuerza. Apretado, pie y gato son una sola pieza.",
+   "claves": [
+    "fuerza",
+    "pieza"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "analogia",
+   "bloque": "analogia",
+   "texto": "Como subir un bordillo con unas chanclas cinco números más grandes.",
+   "claves": [
+    "chanclas"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "pisar",
+   "bloque": "pisar",
+   "texto": "Pero solo funciona si pisas bien: con la punta del dedo gordo, mirando el pie.",
+   "claves": [
+    "punta",
+    "mirando"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "cifras",
+   "bloque": "cifras",
+   "texto": "Y nos pasamos. En un estudio, cincuenta y cinco de cincuenta y seis escaladores los llevaban demasiado apretados. Y nueve de cada diez tenían dolor de pies al escalar.",
+   "claves": [
+    "estudio",
+    "dolor"
+   ],
+   "cifras": [
+    "55/56",
+    "91 %"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "giro",
+   "bloque": "giro",
+   "texto": "Y con dolor te cuesta confiar en el pie: apoyas rápido, apoyas mal… y a la segunda vía te los quitas.",
+   "claves": [
+    "confiar",
+    "quitas"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "pasos",
+   "bloque": "pasos",
+   "texto": "Tres reglas. Una: dedos un poco doblados, no en puño. Dos: talón sin aire. Tres: diez minutos de pie en la tienda. Si estás deseando quitártelos, son pequeños.",
+   "claves": [
+    "doblados",
+    "talón",
+    "minutos"
+   ],
+   "cifras": [
+    "10 min"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "cta",
+   "bloque": "cta",
+   "texto": "Guárdalo para tu próxima compra… y mándaselo al que siempre dice que ya darán de sí.",
+   "claves": [
+    "guárdalo"
+   ],
+   "cifras": []
+  }
  ]
 }
