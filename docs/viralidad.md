@@ -65,8 +65,8 @@ Al enseñar un guion, pon la puntuación en una línea («Viralidad 13/14: falta
 
 ## Añadido 2026-10-28 (caso de 300k vs 16M, mismo día, misma cuenta; muestra pequeña, hipótesis)
 - **Amplitud del tema:** ¿el espectador lo está viviendo/tocando ahora mismo? Un tema que usa todo el mundo supera a uno de nicho. En escalada, tirar de experiencias universales (último intento, excusas, el colega que graba) y no del deporte en sí.
-- **Primer fotograma = acción física, nunca un rótulo/título.** El rótulo entra tras ~0,5 s. (E6 v2 corregido el 28-oct: abre con la palmada de magnesio.)
+- **Primer fotograma = acción física, nunca un rótulo/título.** *(19-nov: el gancho es el subtítulo desde el fotograma 0, sin rótulo aparte; ver `docs/formato.md`.)* (E6 v2 corregido el 28-oct: abre con la palmada de magnesio.)
 - **Mostrar, no decir:** un número o cambio visible que se mueva (100→71, 23→9) como causa visible.
 
 ## Añadido 2026-10-29 (curva de E15)
-- La mayor caída de E15 está en el cierre de envío. Es normal (la historia ya se ha resuelto), pero resta visto medio y bucle. Regla: **cierre ≤3 s**, la pregunta va pegada al último dato y con la imagen todavía en movimiento; «mándaselo» va en rótulo/descripción, no en la voz. Ej.: «¿Y el tuyo? ¿Te cortaría?» → corte al primer plano.
+- La mayor caída de E15 está en el cierre de envío. Es normal (la historia ya se ha resuelto), pero resta visto medio y bucle. Regla: **cierre ≤3 s**, la pregunta va pegada al último dato y con la imagen todavía en movimiento; «mándaselo» va en rótulo/descripción, no en la voz *(19-nov: en información el CTA fijo sí va en la voz, ≤4 s; ver `docs/formato.md`)*. Ej.: «¿Y el tuyo? ¿Te cortaría?» → corte al primer plano.

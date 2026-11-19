@@ -286,7 +286,7 @@
   "ventana": 24,
   "refuta_si": [
    {
-    "m": "skip",
+    "m": "skip_pct",
     "op": ">",
     "v": 27
    }
@@ -298,5 +298,32 @@
   "calidad": 2,
   "coste": 2,
   "limites": "Un solo vídeo; el tema y el gancho también cambian. Habría que probar el mismo vídeo con y sin la capa (reel de prueba)."
+ },
+ "H16": {
+  "texto": "Formato fijo (9 bloques, subtítulos arriba, capa info, CTA mandar): ≥ 20K vistas a 7 d y ≥ 1,5 seg./1k",
+  "videos": [
+   "E63",
+   "E64"
+  ],
+  "ventana": 168,
+  "refuta_si": [
+   {
+    "m": "vistas",
+    "op": "<",
+    "v": 20000
+   },
+   {
+    "m": "segk",
+    "op": "<",
+    "v": 1.5
+   }
+  ],
+  "modo": "todos",
+  "importa": "Es la norma de producción adoptada el 19-nov sin datos propios; decide si todos los vídeos de información se hacen así.",
+  "decide": "Plantilla obligatoria de información (docs/formato.md) y umbral de monetización",
+  "impacto": 5,
+  "calidad": 2,
+  "coste": 2,
+  "limites": "Cambia todo a la vez (gancho, subtítulos, ritmo, CTA): si funciona no sabremos qué pieza lo hizo. Comparar con E59 (63,6K, 5,3 seg./1k)."
  }
 }
