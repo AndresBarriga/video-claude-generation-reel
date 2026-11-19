@@ -1,0 +1,1093 @@
+{
+  "id": "E64",
+  "titulo": "La puerta de la cinta",
+  "nicho": "escalada",
+  "plantilla": "Cinta",
+  "fps": 30,
+  "voz": "voz/E64.mp3",
+  "duracion": 45.67,
+  "palabras": [
+    {
+      "w": "Te",
+      "start": 0.05,
+      "end": 0.264
+    },
+    {
+      "w": "caes.",
+      "start": 0.284,
+      "end": 0.655
+    },
+    {
+      "w": "Y",
+      "start": 0.908,
+      "end": 0.992
+    },
+    {
+      "w": "la",
+      "start": 1.012,
+      "end": 1.147
+    },
+    {
+      "w": "cinta",
+      "start": 1.167,
+      "end": 1.458
+    },
+    {
+      "w": "que",
+      "start": 1.478,
+      "end": 1.666
+    },
+    {
+      "w": "te",
+      "start": 1.686,
+      "end": 1.821
+    },
+    {
+      "w": "tenía",
+      "start": 1.841,
+      "end": 2.132
+    },
+    {
+      "w": "que",
+      "start": 2.152,
+      "end": 2.339
+    },
+    {
+      "w": "parar…",
+      "start": 2.359,
+      "end": 2.65
+    },
+    {
+      "w": "se",
+      "start": 2.879,
+      "end": 3.018
+    },
+    {
+      "w": "sale",
+      "start": 3.038,
+      "end": 3.284
+    },
+    {
+      "w": "de",
+      "start": 3.304,
+      "end": 3.444
+    },
+    {
+      "w": "la",
+      "start": 3.464,
+      "end": 3.604
+    },
+    {
+      "w": "chapa.",
+      "start": 3.624,
+      "end": 3.923
+    },
+    {
+      "w": "Estaba",
+      "start": 4.174,
+      "end": 4.614
+    },
+    {
+      "w": "bien",
+      "start": 4.634,
+      "end": 4.942
+    },
+    {
+      "w": "chapada.",
+      "start": 4.962,
+      "end": 5.468
+    },
+    {
+      "w": "Solo",
+      "start": 5.703,
+      "end": 5.958
+    },
+    {
+      "w": "había",
+      "start": 5.978,
+      "end": 6.288
+    },
+    {
+      "w": "una",
+      "start": 6.308,
+      "end": 6.508
+    },
+    {
+      "w": "cosa",
+      "start": 6.528,
+      "end": 6.783
+    },
+    {
+      "w": "mal:",
+      "start": 6.803,
+      "end": 7.004
+    },
+    {
+      "w": "la",
+      "start": 7.245,
+      "end": 7.388
+    },
+    {
+      "w": "puerta",
+      "start": 7.408,
+      "end": 7.768
+    },
+    {
+      "w": "miraba",
+      "start": 7.788,
+      "end": 8.147
+    },
+    {
+      "w": "hacia",
+      "start": 8.167,
+      "end": 8.473
+    },
+    {
+      "w": "donde",
+      "start": 8.493,
+      "end": 8.798
+    },
+    {
+      "w": "escalabas.",
+      "start": 8.818,
+      "end": 9.34
+    },
+    {
+      "w": "Si",
+      "start": 9.565,
+      "end": 9.687
+    },
+    {
+      "w": "escalas",
+      "start": 9.707,
+      "end": 10.067
+    },
+    {
+      "w": "hacia",
+      "start": 10.087,
+      "end": 10.351
+    },
+    {
+      "w": "la",
+      "start": 10.371,
+      "end": 10.494
+    },
+    {
+      "w": "derecha",
+      "start": 10.514,
+      "end": 10.873
+    },
+    {
+      "w": "y",
+      "start": 11.056,
+      "end": 11.139
+    },
+    {
+      "w": "la",
+      "start": 11.159,
+      "end": 11.294
+    },
+    {
+      "w": "puerta",
+      "start": 11.314,
+      "end": 11.657
+    },
+    {
+      "w": "mira",
+      "start": 11.677,
+      "end": 11.915
+    },
+    {
+      "w": "a",
+      "start": 11.935,
+      "end": 12.019
+    },
+    {
+      "w": "la",
+      "start": 12.039,
+      "end": 12.174
+    },
+    {
+      "w": "derecha,",
+      "start": 12.194,
+      "end": 12.588
+    },
+    {
+      "w": "al",
+      "start": 12.814,
+      "end": 12.968
+    },
+    {
+      "w": "caer",
+      "start": 12.988,
+      "end": 13.26
+    },
+    {
+      "w": "la",
+      "start": 13.28,
+      "end": 13.435
+    },
+    {
+      "w": "cinta",
+      "start": 13.455,
+      "end": 13.784
+    },
+    {
+      "w": "gira,",
+      "start": 13.804,
+      "end": 14.076
+    },
+    {
+      "w": "la",
+      "start": 14.316,
+      "end": 14.453
+    },
+    {
+      "w": "puerta",
+      "start": 14.473,
+      "end": 14.82
+    },
+    {
+      "w": "choca",
+      "start": 14.84,
+      "end": 15.134
+    },
+    {
+      "w": "con",
+      "start": 15.154,
+      "end": 15.344
+    },
+    {
+      "w": "la",
+      "start": 15.364,
+      "end": 15.501
+    },
+    {
+      "w": "chapa…",
+      "start": 15.521,
+      "end": 15.815
+    },
+    {
+      "w": "y",
+      "start": 16.036,
+      "end": 16.125
+    },
+    {
+      "w": "se",
+      "start": 16.145,
+      "end": 16.288
+    },
+    {
+      "w": "abre.",
+      "start": 16.308,
+      "end": 16.559
+    },
+    {
+      "w": "Y",
+      "start": 16.788,
+      "end": 17.011
+    },
+    {
+      "w": "abajo,",
+      "start": 17.031,
+      "end": 17.742
+    },
+    {
+      "w": "igual:",
+      "start": 17.963,
+      "end": 20.113
+    },
+    {
+      "w": "la",
+      "start": 20.333,
+      "end": 20.358
+    },
+    {
+      "w": "cuerda",
+      "start": 20.378,
+      "end": 20.465
+    },
+    {
+      "w": "pasa",
+      "start": 20.485,
+      "end": 20.541
+    },
+    {
+      "w": "por",
+      "start": 20.561,
+      "end": 20.602
+    },
+    {
+      "w": "encima",
+      "start": 20.622,
+      "end": 20.709
+    },
+    {
+      "w": "de",
+      "start": 20.729,
+      "end": 20.754
+    },
+    {
+      "w": "la",
+      "start": 20.774,
+      "end": 20.8
+    },
+    {
+      "w": "puerta",
+      "start": 20.82,
+      "end": 20.907
+    },
+    {
+      "w": "y",
+      "start": 21.139,
+      "end": 21.186
+    },
+    {
+      "w": "se",
+      "start": 21.206,
+      "end": 21.287
+    },
+    {
+      "w": "sale",
+      "start": 21.307,
+      "end": 21.454
+    },
+    {
+      "w": "sola.",
+      "start": 21.474,
+      "end": 21.622
+    },
+    {
+      "w": "La",
+      "start": 21.855,
+      "end": 22.077
+    },
+    {
+      "w": "regla:",
+      "start": 22.097,
+      "end": 22.561
+    },
+    {
+      "w": "las",
+      "start": 22.777,
+      "end": 23.375
+    },
+    {
+      "w": "puertas,",
+      "start": 23.395,
+      "end": 24.611
+    },
+    {
+      "w": "al",
+      "start": 24.838,
+      "end": 24.882
+    },
+    {
+      "w": "lado",
+      "start": 24.902,
+      "end": 24.989
+    },
+    {
+      "w": "contrario",
+      "start": 25.009,
+      "end": 25.203
+    },
+    {
+      "w": "de",
+      "start": 25.223,
+      "end": 25.267
+    },
+    {
+      "w": "hacia",
+      "start": 25.287,
+      "end": 25.396
+    },
+    {
+      "w": "donde",
+      "start": 25.416,
+      "end": 25.524
+    },
+    {
+      "w": "vas.",
+      "start": 25.544,
+      "end": 25.61
+    },
+    {
+      "w": "¿Vas",
+      "start": 25.834,
+      "end": 26.053
+    },
+    {
+      "w": "a",
+      "start": 26.073,
+      "end": 26.172
+    },
+    {
+      "w": "la",
+      "start": 26.192,
+      "end": 26.351
+    },
+    {
+      "w": "derecha?",
+      "start": 26.371,
+      "end": 26.828
+    },
+    {
+      "w": "Puertas",
+      "start": 27.06,
+      "end": 27.176
+    },
+    {
+      "w": "a",
+      "start": 27.196,
+      "end": 27.21
+    },
+    {
+      "w": "la",
+      "start": 27.23,
+      "end": 27.261
+    },
+    {
+      "w": "izquierda.",
+      "start": 27.281,
+      "end": 27.431
+    },
+    {
+      "w": "Y",
+      "start": 27.665,
+      "end": 28.321
+    },
+    {
+      "w": "ojo:",
+      "start": 28.341,
+      "end": 29.673
+    },
+    {
+      "w": "tu",
+      "start": 29.895,
+      "end": 30.046
+    },
+    {
+      "w": "cinta",
+      "start": 30.066,
+      "end": 30.389
+    },
+    {
+      "w": "tiene",
+      "start": 30.409,
+      "end": 30.733
+    },
+    {
+      "w": "un",
+      "start": 30.753,
+      "end": 30.904
+    },
+    {
+      "w": "arriba",
+      "start": 30.924,
+      "end": 31.305
+    },
+    {
+      "w": "y",
+      "start": 31.325,
+      "end": 31.419
+    },
+    {
+      "w": "un",
+      "start": 31.439,
+      "end": 31.591
+    },
+    {
+      "w": "abajo.",
+      "start": 31.611,
+      "end": 31.934
+    },
+    {
+      "w": "El",
+      "start": 32.16,
+      "end": 32.229
+    },
+    {
+      "w": "mosquetón",
+      "start": 32.249,
+      "end": 32.528
+    },
+    {
+      "w": "de",
+      "start": 32.548,
+      "end": 32.617
+    },
+    {
+      "w": "la",
+      "start": 32.637,
+      "end": 32.707
+    },
+    {
+      "w": "goma",
+      "start": 32.727,
+      "end": 32.856
+    },
+    {
+      "w": "es",
+      "start": 32.876,
+      "end": 32.946
+    },
+    {
+      "w": "el",
+      "start": 32.966,
+      "end": 33.036
+    },
+    {
+      "w": "de",
+      "start": 33.056,
+      "end": 33.125
+    },
+    {
+      "w": "la",
+      "start": 33.145,
+      "end": 33.215
+    },
+    {
+      "w": "cuerda.",
+      "start": 33.235,
+      "end": 33.424
+    },
+    {
+      "w": "El",
+      "start": 33.652,
+      "end": 33.739
+    },
+    {
+      "w": "otro",
+      "start": 33.759,
+      "end": 33.917
+    },
+    {
+      "w": "roza",
+      "start": 33.937,
+      "end": 34.095
+    },
+    {
+      "w": "la",
+      "start": 34.115,
+      "end": 34.202
+    },
+    {
+      "w": "chapa,",
+      "start": 34.222,
+      "end": 34.416
+    },
+    {
+      "w": "coge",
+      "start": 34.637,
+      "end": 35.031
+    },
+    {
+      "w": "rebabas…",
+      "start": 35.051,
+      "end": 35.693
+    },
+    {
+      "w": "y",
+      "start": 35.873,
+      "end": 35.94
+    },
+    {
+      "w": "si",
+      "start": 35.96,
+      "end": 36.07
+    },
+    {
+      "w": "lo",
+      "start": 36.09,
+      "end": 36.2
+    },
+    {
+      "w": "pones",
+      "start": 36.22,
+      "end": 36.46
+    },
+    {
+      "w": "abajo,",
+      "start": 36.48,
+      "end": 36.72
+    },
+    {
+      "w": "te",
+      "start": 36.948,
+      "end": 37.29
+    },
+    {
+      "w": "lija",
+      "start": 37.31,
+      "end": 37.892
+    },
+    {
+      "w": "la",
+      "start": 37.912,
+      "end": 38.254
+    },
+    {
+      "w": "cuerda.",
+      "start": 38.274,
+      "end": 39.097
+    },
+    {
+      "w": "Y",
+      "start": 39.329,
+      "end": 39.366
+    },
+    {
+      "w": "si",
+      "start": 39.386,
+      "end": 39.451
+    },
+    {
+      "w": "el",
+      "start": 39.471,
+      "end": 39.536
+    },
+    {
+      "w": "mosquetón",
+      "start": 39.556,
+      "end": 39.82
+    },
+    {
+      "w": "queda",
+      "start": 39.84,
+      "end": 39.99
+    },
+    {
+      "w": "apoyado",
+      "start": 40.01,
+      "end": 40.218
+    },
+    {
+      "w": "en",
+      "start": 40.238,
+      "end": 40.303
+    },
+    {
+      "w": "un",
+      "start": 40.323,
+      "end": 40.388
+    },
+    {
+      "w": "canto,",
+      "start": 40.408,
+      "end": 40.558
+    },
+    {
+      "w": "pon",
+      "start": 40.78,
+      "end": 41.018
+    },
+    {
+      "w": "una",
+      "start": 41.038,
+      "end": 41.276
+    },
+    {
+      "w": "cinta",
+      "start": 41.296,
+      "end": 41.663
+    },
+    {
+      "w": "más",
+      "start": 41.683,
+      "end": 41.921
+    },
+    {
+      "w": "larga:",
+      "start": 41.941,
+      "end": 42.308
+    },
+    {
+      "w": "ahí",
+      "start": 42.533,
+      "end": 42.716
+    },
+    {
+      "w": "aguanta",
+      "start": 42.736,
+      "end": 43.122
+    },
+    {
+      "w": "mucho",
+      "start": 43.142,
+      "end": 43.426
+    },
+    {
+      "w": "menos.",
+      "start": 43.446,
+      "end": 43.731
+    },
+    {
+      "w": "Antes",
+      "start": 43.931,
+      "end": 44.108
+    },
+    {
+      "w": "de",
+      "start": 44.128,
+      "end": 44.206
+    },
+    {
+      "w": "chapar",
+      "start": 44.226,
+      "end": 44.435
+    },
+    {
+      "w": "la",
+      "start": 44.455,
+      "end": 44.533
+    },
+    {
+      "w": "cuerda,",
+      "start": 44.553,
+      "end": 44.762
+    },
+    {
+      "w": "mira",
+      "start": 45.041,
+      "end": 45.038
+    },
+    {
+      "w": "la",
+      "start": 45.058,
+      "end": 45.048
+    },
+    {
+      "w": "puerta.",
+      "start": 45.068,
+      "end": 45.072
+    }
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "gancho",
+      "texto": "Te caes. Y la cinta que te tenía que parar… se sale de la chapa.",
+      "pausa": 0.3,
+      "inicio": 0,
+      "fin": 3.923
+    },
+    {
+      "tipo": "texto",
+      "visual": "bien",
+      "texto": "Estaba bien chapada. Solo había una cosa mal: la puerta miraba hacia donde escalabas.",
+      "inicio": 4.174,
+      "fin": 9.34
+    },
+    {
+      "tipo": "texto",
+      "visual": "gira",
+      "texto": "Si escalas hacia la derecha y la puerta mira a la derecha, al caer la cinta gira, la puerta choca con la chapa… y se abre.",
+      "inicio": 9.565,
+      "fin": 16.559
+    },
+    {
+      "tipo": "texto",
+      "visual": "abajo",
+      "texto": "Y abajo, igual: la cuerda pasa por encima de la puerta y se sale sola.",
+      "pausa": 0.3,
+      "inicio": 16.788,
+      "fin": 21.622
+    },
+    {
+      "tipo": "texto",
+      "visual": "regla",
+      "texto": "La regla: las puertas, al lado contrario de hacia donde vas. ¿Vas a la derecha? Puertas a la izquierda.",
+      "inicio": 21.855,
+      "fin": 27.431
+    },
+    {
+      "tipo": "texto",
+      "visual": "rebabas",
+      "texto": "Y ojo: tu cinta tiene un arriba y un abajo. El mosquetón de la goma es el de la cuerda. El otro roza la chapa, coge rebabas… y si lo pones abajo, te lija la cuerda.",
+      "inicio": 27.665,
+      "fin": 39.097
+    },
+    {
+      "tipo": "texto",
+      "visual": "canto",
+      "texto": "Y si el mosquetón queda apoyado en un canto, pon una cinta más larga: ahí aguanta mucho menos.",
+      "inicio": 39.329,
+      "fin": 43.731
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cierre",
+      "texto": "Antes de chapar la cuerda, mira la puerta.",
+      "inicio": 43.931,
+      "fin": 45.072
+    }
+  ],
+  "sonido": {
+    "bajoVoz": 0.4,
+    "efectos": [
+      {
+        "nombre": "pajaros",
+        "inicio": {
+          "escena": 0
+        },
+        "volumen": 0.16,
+        "bucle": true,
+        "fundido": [
+          0.05,
+          0.8
+        ]
+      },
+      {
+        "nombre": "viento",
+        "inicio": {
+          "escena": 0
+        },
+        "volumen": 0.14,
+        "bucle": true,
+        "fundido": [
+          0.05,
+          0.8
+        ]
+      },
+      {
+        "nombre": "roce",
+        "inicio": {
+          "escena": "gancho",
+          "mas": 0.05
+        },
+        "duracion": 0.5,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "zas",
+        "inicio": {
+          "escena": "gancho",
+          "mas": 0.2
+        },
+        "duracion": 0.7,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "chasquido",
+        "inicio": {
+          "escena": "gancho",
+          "palabra": "se",
+          "mas": -0.26
+        },
+        "duracion": 0.5,
+        "volumen": 0.85
+      },
+      {
+        "nombre": "crujido",
+        "inicio": {
+          "escena": "gancho",
+          "palabra": "sale",
+          "mas": 0.13
+        },
+        "duracion": 0.6,
+        "volumen": 0.8
+      },
+      {
+        "nombre": "golpe",
+        "inicio": {
+          "escena": "gancho",
+          "palabra": "sale",
+          "mas": 0.15
+        },
+        "duracion": 0.5,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "bien",
+          "palabra": "puerta",
+          "mas": 0
+        },
+        "duracion": 0.3,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "zas",
+        "inicio": {
+          "escena": "gira",
+          "palabra": "caer",
+          "mas": 0
+        },
+        "duracion": 0.6,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "chirrido",
+        "inicio": {
+          "escena": "gira",
+          "palabra": "choca",
+          "mas": 0
+        },
+        "duracion": 0.5,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "chasquido",
+        "inicio": {
+          "escena": "gira",
+          "palabra": "abre",
+          "mas": 0.08
+        },
+        "duracion": 0.5,
+        "volumen": 0.9,
+        "ignoraSilencio": true
+      },
+      {
+        "silencio": true,
+        "inicio": {
+          "escena": "gira",
+          "palabra": "abre",
+          "mas": 0.4
+        },
+        "duracion": 0.4
+      },
+      {
+        "nombre": "roce",
+        "inicio": {
+          "escena": "abajo",
+          "palabra": "pasa",
+          "mas": 0
+        },
+        "duracion": 0.7,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "chasquido",
+        "inicio": {
+          "escena": "abajo",
+          "palabra": "sale",
+          "mas": -0.05
+        },
+        "duracion": 0.5,
+        "volumen": 0.85
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "regla",
+          "palabra": "contrario",
+          "mas": 0
+        },
+        "duracion": 0.3,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "regla",
+          "palabra": "contrario",
+          "mas": 0.3
+        },
+        "duracion": 0.3,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "crujido",
+        "inicio": {
+          "escena": "regla",
+          "palabra": "izquierda",
+          "mas": 0.4
+        },
+        "duracion": 0.6,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "chirrido",
+        "inicio": {
+          "escena": "rebabas",
+          "palabra": "roza",
+          "mas": 0
+        },
+        "duracion": 0.5,
+        "volumen": 0.55
+      },
+      {
+        "nombre": "chirrido",
+        "inicio": {
+          "escena": "rebabas",
+          "palabra": "rebabas",
+          "mas": 0
+        },
+        "duracion": 0.5,
+        "volumen": 0.55
+      },
+      {
+        "nombre": "zas",
+        "inicio": {
+          "escena": "rebabas",
+          "palabra": "si",
+          "mas": 0
+        },
+        "duracion": 0.5,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "desgarro",
+        "inicio": {
+          "escena": "rebabas",
+          "palabra": "lija",
+          "mas": 0
+        },
+        "duracion": 0.8,
+        "volumen": 0.8
+      },
+      {
+        "nombre": "crujido",
+        "inicio": {
+          "escena": "canto",
+          "palabra": "canto",
+          "mas": 0
+        },
+        "duracion": 0.5,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "canto",
+          "palabra": "larga",
+          "mas": 0.2
+        },
+        "duracion": 0.3,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "chasquido",
+        "inicio": {
+          "escena": "canto",
+          "palabra": "mucho",
+          "mas": -0.07
+        },
+        "duracion": 0.5,
+        "volumen": 0.95
+      },
+      {
+        "nombre": "golpe",
+        "inicio": {
+          "escena": "canto",
+          "palabra": "mucho",
+          "mas": -0.05
+        },
+        "duracion": 0.5,
+        "volumen": 0.8
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "cierre",
+          "palabra": "puerta",
+          "mas": 0
+        },
+        "duracion": 0.3,
+        "volumen": 0.5
+      }
+    ]
+  }
+}
