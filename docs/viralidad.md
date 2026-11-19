@@ -1,5 +1,7 @@
 # Manual de viralidad (obligatorio antes de enseñar cualquier guion)
 
+> **19-nov: en vídeos de información manda `docs/formato.md`** (formato fijo sacado de las referencias). Esta tabla sigue valiendo para historias y humor; en información se puntúa con la tabla de `formato.md`.
+
 > **Congelado desde el 30-oct hasta acabar el test humor vs historias.** No se añade nada aquí: lo nuevo va como hipótesis a `docs/aprendizajes.md`. Solo entra lo que esté «reforzado» y Andrés apruebe.
 
 Sale del análisis de las cuentas de referencia (numerosdepareja, dasdingo, resultaaquee, beaniesurvives, porquetuperro…) y de lo aprendido con E15. **Ningún guion se enseña a Andrés sin pasar la puntuación del final.** Las palancas son herramientas, no una plantilla: lo de E15 (dilema de vida o muerte) es una hipótesis con n=1 y no debe convertir todos los vídeos en lo mismo. Si no llega, reescríbelo tú antes; no le hagas detectar lo que este documento ya dice.

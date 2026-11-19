@@ -29,7 +29,7 @@ Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumpl
 3. **Causa visible.** Si la voz dice "porque…", la imagen muestra el porqué (ej.: Simon resbalando hacia el borde antes de cortar). Si no se entiende sin audio, la escena falla.
 4. **Movimiento con intención:** cada escena tiene cámara (empuje, paneo o caída), una acción principal y una reacción. Nada estático >1,5 s.
 5. **Ritmo:** cambio visual cada 2–4 s; los cortes caen en las palabras clave de la voz.
-6. **Capa infográfica (19-nov, Andrés; H15):** cada ~1,5–2 s entra algo que **informa**: contador, dato con cifra, flecha, ✓/✗, barra de riesgo, checklist que se marca. Nunca decoración. Máximo **dos** elementos a la vez además del subtítulo, y cada rótulo ≥0,8 s en pantalla.
+6. **Capa infográfica (19-nov, Andrés; H15):** cada ~1 s (referencias) entra algo que **informa**: contador, dato con cifra, flecha, ✓/✗, barra de riesgo, checklist que se marca. Nunca decoración. Máximo **dos** elementos a la vez además del subtítulo, y cada rótulo ≥0,8 s en pantalla.
 
 ## Personajes
 - Nada de palitos ni puntos de color para heridas. Personajes con **silueta reconocible**: cabeza con casco o pelo, torso con chaqueta de color, extremidades con grosor, manos/pies con forma.
@@ -48,6 +48,7 @@ Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumpl
 - Escalada: fríos de montaña + acento naranja. Mascotas: cálidos de casa + acento verde.
 
 ## Texto en pantalla
+- **Desde el 19-nov (formato fijo):** subtítulo **arriba**, 2–5 palabras, karaoke (dicho = gris, sonando = blanco), **palabra clave en recuadro**. Los datos van dentro de su gráfico, con etiqueta en versalitas; nada de rótulos grandes compitiendo con el subtítulo. Composición en la franja media (libre de botones de IG y descripción). Detalle en `docs/formato.md`.
 - Subtítulos palabra a palabra, contorno oscuro, palabra activa en color-hilo. Máx. 4 palabras por bloque.
 - Rótulo superior solo para **datos** (cifra, lugar, tiempo). Nunca repite lo que dice la voz.
 - Cifras animadas (contadores) cuando una cifra es el clímax.

@@ -70,16 +70,36 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 
 **A. Plantilla obligatoria para vídeos de información** (45–60 s). Los bloques 1–9 de arriba, con la pregunta o paradoja en la primera frase. Los personajes salen en el bloque 1 como contexto (la acción en primer plano) y en los chistes; el resto es «por dentro» y gráficos.
 
-**B. Mínimos de cada vídeo (lo comprueba la propuesta y `npm run qa`)**
-- Primera frase = gancho, con la acción en primer plano desde el fotograma 0.
-- Reencuadre antes de los 6 s.
-- Al menos 1 vista por dentro o del mecanismo.
-- Al menos 1 analogía cotidiana.
-- Al menos 2 cifras en gráfico, una de ellas comparada.
-- Al menos 1 estudio o dato verificado (fuente en la ficha, no en pantalla).
-- Lista con progreso si hay consejos.
+**B. Siempre (obligatorio):**
+- La 1.ª frase es el gancho (pregunta en «tú», paradoja conocida o afirmación con dato), con la acción en primer plano y en movimiento desde el fotograma 0.
+- Reencuadre «No es X: es Y» antes de los 6 s.
+- El mecanismo (el porqué) se ve.
+- ≥ 2 cifras en gráfico, al menos una comparada.
+- Giro «Pero / Además» a mitad.
 - Algo nuevo cada ~1 s; máximo 2 elementos a la vez además del subtítulo.
-- CTA fijo: guardar + «mándaselo a ese que dice "…"» con la hoja de enviar animada.
+- Subtítulos del formato.
+- CTA fijo: guardar + «mándaselo a ese que dice "…"».
+- Música de fondo continua.
+
+**Cuando encaje (herramientas, no obligación):**
+- Rayos X o vista por dentro.
+- Analogía cotidiana (casi siempre ayuda).
+- Estudio con cifra.
+- Lista 1-2-3 con candados.
+- Pantalla partida tú/escalador.
+- Personajes y humor (la parte nuestra).
+- Hoja de enviar animada.
+
+**Puntuación (información; mínimo 12/14):**
+| Bloque | 0 | 1 | 2 |
+|---|---|---|---|
+| Gancho | contexto | pregunta genérica | pregunta en «tú», paradoja o dato, con la acción en primer plano |
+| Reencuadre | no | después de 6 s | «No es X: es Y» antes de 6 s |
+| Mecanismo | no se ve | se cuenta | se ve (por dentro o analogía) |
+| Cifras | ninguna | una o sin gráfico | ≥ 2 en gráfico, una comparada |
+| Giro | no | flojo | «Pero…» que cambia lo que creías |
+| Ritmo | huecos > 2 s | cada ~2 s | algo nuevo cada ~1 s |
+| CTA | genérico | guardar o mandar | mandar a «ese que dice…» + guardar |
 
 **C. Subtítulos nuevos para todos los vídeos:** arriba, karaoke en gris y blanco, palabra clave en recuadro. Es un cambio en `src/Subtitulos.tsx` y sirve para todo.
 
