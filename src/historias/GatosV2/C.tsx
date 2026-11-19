@@ -38,7 +38,7 @@ export const Cta: React.FC<P> = (p) => {
       <Cierre {...p} e={{ ...p.e, v2: true } as P["e"]} pal={(w) => (w === "quitándotelos" ? 20 : w === "bajar" ? 46 : p.pal(w))} />
       <div style={{ opacity: interpolate(f, [fM - 4, fM + 2], [1, 0], cl) }}><Guardar k={(f - fG) / 8} y={420} /></div>
       <HojaEnviar k={(f - fM) / 40} para="Al que dice «ya darán de sí»" />
-      <Chip texto="PIEL +½ TALLA · SINTÉTICO ≈ 0" top={420} tam={44} k={(f - (d - 40)) / 8} />
+      <Chip texto="¿DARÁN DE SÍ? PIEL: UN POCO · SINTÉTICO: CASI NADA" top={420} tam={38} k={(f - (d - 40)) / 8} />
     </AbsoluteFill>
   );
 };

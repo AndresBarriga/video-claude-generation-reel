@@ -48,26 +48,38 @@ export const Dentro: React.FC<P> = (p) => {
   );
 };
 
-/** Chancla enorme subiendo un bordillo: el pie resbala dentro. */
+/** Chancla cinco números más grande subiendo a un bordillo: la punta sobra, se dobla en el borde y el pie resbala dentro. */
 export const Analogia: React.FC<P> = ({ pal }) => {
-  const f = useCurrentFrame(), fC = pal("chanclas") ?? 20, sube = interpolate(f, [4, 22], [0, 1], cl), resbala = interpolate(f, [fC, fC + 14], [0, 1], cl);
-  const x = 180 + sube * 200, y = 1150 - sube * 90;
+  const f = useCurrentFrame(), fC = pal("chanclas") ?? 20;
+  const sube = interpolate(f, [2, 20], [0, 1], cl), dobla = interpolate(f, [fC, fC + 8], [0, 1], cl), resbala = interpolate(f, [fC + 4, fC + 16], [0, 1], cl);
+  const BX = 600, BY = 1150; // borde del bordillo
+  const x = -120 + sube * 270, y = BY + 150 - sube * 172; // talón: de la calle al borde del bordillo
+  const T = "#06101C", PIEL = G.piel;
   return (
     <AbsoluteFill>
       <FondoInfo tinte="#24324D" />
       <Svg>
-        <rect x={0} y={1250} width={1080} height={700} fill="#3A4558" /><rect x={560} y={1060} width={560} height={900} fill="#9AA3AF" stroke="#06101C" strokeWidth={10} /><rect x={560} y={1060} width={560} height={40} fill="#C9D1DC" />
-        <g transform={`translate(${x} ${y}) scale(1.5) rotate(${-sube * 18 + resbala * 10})`}>
-          <path d="M-260 40 Q-280 -30 -200 -40 L240 -40 Q330 -30 320 30 Q300 70 220 70 L-200 70 Q-260 70 -260 40 Z" fill="#F5A524" stroke="#06101C" strokeWidth={10} />
-          <path d="M-40 -40 Q20 -110 80 -40" stroke="#E5484D" strokeWidth={18} fill="none" />
-          <g transform={`translate(${-60 + resbala * 150} ${-60 - resbala * 10})`}>
-            <path d="M-160 20 Q-170 -40 -110 -50 L80 -50 Q150 -48 160 0 Q150 30 90 30 L-130 30 Z" fill={G.piel} stroke="#06101C" strokeWidth={8} />
-            <rect x={-150} y={-240} width={90} height={200} rx={30} fill="#2E3440" stroke="#06101C" strokeWidth={8} />
+        {/* acera y bordillo */}
+        <rect x={0} y={BY + 170} width={1080} height={700} fill="#2B3445" />
+        <path d={`M${BX} ${BY} H1080 V1920 H${BX} Z`} fill="#8C96A6" stroke={T} strokeWidth={10} />
+        <rect x={BX} y={BY} width={480} height={26} fill="#C2CAD6" />
+        <g transform={`rotate(${-dobla * 16} ${BX} ${BY}) translate(${x} ${y})`}>
+          {/* suela enorme: sobra por delante y se dobla en el borde */}
+          <path d={`M-40 0 Q-60 -26 -10 -30 L520 -30 Q600 -28 600 0 Q596 22 500 22 L-10 22 Q-60 22 -40 0 Z`} fill="#F5A524" stroke={T} strokeWidth={10} strokeLinejoin="round" />
+          {/* pie: resbala hacia delante dentro de la chancla */}
+          <g transform={`translate(${resbala * 120} ${-34 + resbala * 6}) rotate(${resbala * 6})`}>
+            <path d="M0 0 Q-40 -10 -30 -70 Q-20 -120 30 -130 L60 -140 Q120 -120 200 -80 Q280 -50 330 -40 Q360 -36 358 -14 Q356 4 330 4 Z" fill={PIEL} stroke={T} strokeWidth={9} strokeLinejoin="round" />
+            {[0, 1, 2, 3].map((i) => <circle key={i} cx={300 - i * 26} cy={-6 - i * 4} r={13 - i} fill={PIEL} stroke={T} strokeWidth={6} />)}
+            <rect x={-10} y={-470} width={120} height={350} rx={40} fill="#2E3440" stroke={T} strokeWidth={9} />
           </g>
+          {/* tira de la chancla (entre los dedos) */}
+          <path d={`M${120 + resbala * 40} -34 Q${200 + resbala * 60} -120 ${300 + resbala * 40} -40`} stroke="#E5484D" strokeWidth={20} fill="none" strokeLinecap="round" />
         </g>
+        
       </Svg>
-      <Cifra texto="+5" etiqueta="números de más" y={440} k={(f - 6) / 10} color={INFO.naranja} tam={170} />
-      {resbala > 0.5 && <Sello x={880} y={860} ok={false} k={(resbala - 0.5) * 2} />}
+      <Cifra texto="+5" etiqueta="números de más" y={420} k={(f - 4) / 10} color={INFO.naranja} tam={170} />
+      {resbala > 0.3 && <div style={{ position: "absolute", left: 0, right: 0, top: 1500, textAlign: "center", fontFamily: "Figtree", fontWeight: 800, fontSize: 46, letterSpacing: 3, color: "#fff", opacity: Math.min(1, resbala * 2) }}>EL PIE RESBALA DENTRO</div>}
+      {resbala > 0.5 && <Sello x={880} y={900} ok={false} k={(resbala - 0.5) * 2} />}
     </AbsoluteFill>
   );
 };
