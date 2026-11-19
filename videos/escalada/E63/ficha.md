@@ -31,3 +31,21 @@ Fuente: McHenry et al., The Foot (2015); BMC.
 - Lleva dos fuentes en pantalla (McHenry 2015 y BMC); la norma es una atribución como máximo. Quitar la del BMC.
 - El plano «¿Por qué lo hacemos?» con el escalador diminuto en la pared no aporta: cambiarlo por el canto en primer plano.
 - Fuera de la línea actual (cuerda y seguridad); el riesgo es que pase como E39 y E42 (explicaciones de material: poco alcance).
+
+## v5 «180 € para sufrir» con el formato fijo (19-nov) — producido
+- Primer vídeo con `docs/formato.md`: plantilla `GatosV2` (reutiliza Compra, Hueco, Puntera, Peor y Cierre de `Gatos`) + kit info + subtítulos arriba + música de fondo propia (`sonido/musica.wav`). 55,6 s, voz Danny. qa-final OK (-14,9 LUFS, pico -1,3).
+- Fuentes: McHenry et al., *The Foot* 2015 (55/56 excesivamente apretados, 91 % dolor).
+
+**Descripción**
+Te gastas 180 € en unos zapatos que sabes que te van a doler 🥲
+
+Los gatos van ajustados para que no quede aire: así el pie y el gato son una sola pieza y la punta no se dobla en cantos de milímetros. Pero nos pasamos: en un estudio, 55 de 56 escaladores los llevaban demasiado apretados y 9 de cada 10 tenían dolor de pies al escalar. Y con dolor no confías en el pie.
+
+Tres reglas para tu próxima compra:
+1️⃣ Dedos un poco doblados, no en puño
+2️⃣ Talón sin aire
+3️⃣ Diez minutos de pie en la tienda: si estás deseando quitártelos, son pequeños
+
+#escalada #piesdegato #pies #rocódromo #escaladadeportiva
+
+**Comentario fijado:** ¿Cuántos números menos usas tú? 👇

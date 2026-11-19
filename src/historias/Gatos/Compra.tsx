@@ -53,14 +53,15 @@ export const Macro: React.FC<{ f: number; golpes: number[]; fDolor: number }> = 
   );
 };
 
-export const Compra: React.FC<P> = ({ pal }) => {
+export const Compra: React.FC<P> = ({ e, pal }) => {
+  const v2 = (e as { v2?: boolean })?.v2;
   const f = useCurrentFrame();
   const golpes = [5, 21, (pal("euros") ?? 38) + 1, (pal("zapatos") ?? 63) + 4], fDolor = (pal("daño") ?? 123) + 2;
   const talla = [43, 42, 42, 41, 40][golpes.filter((g) => f >= g).length];
   return (
     <AbsoluteFill>
       <Macro f={f} golpes={golpes} fDolor={fDolor} />
-      <Rotulo texto="180 €" desde={14} top={236} tam={170} sub={<>TU PIE <b style={{ color: "#fff" }}>43</b> · EL GATO <b style={{ color: talla === 40 ? "#FF6A1F" : "#fff" }}>{talla}</b></>} />
+      <Rotulo texto="180 €" desde={14} top={v2 ? 430 : 236} tam={170} sub={<>TU PIE <b style={{ color: "#fff" }}>43</b> · EL GATO <b style={{ color: talla === 40 ? "#FF6A1F" : "#fff" }}>{talla}</b></>} />
     </AbsoluteFill>
   );
 };

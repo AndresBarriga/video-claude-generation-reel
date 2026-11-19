@@ -28,7 +28,8 @@ const Vuela: React.FC<{ de: { x: number; y: number }; a: { x: number; y: number 
   );
 };
 
-export const Cierre: React.FC<P> = ({ d, pal }) => {
+export const Cierre: React.FC<P> = ({ e, d, pal }) => {
+  const v2 = (e as { v2?: boolean })?.v2; // E63 v5: sin rótulos propios (los pone GatosV2)
   const f = useCurrentFrame(), { fps } = useVideoConfig();
   const fC = pal("ciento") ?? 32, fQ = pal("quitándotelos") ?? 77, fB = pal("bajar") ?? 118;
   const f1 = fQ + 10, f2 = fB - 2, lazo = d - 9, L = luz(1);
@@ -78,8 +79,8 @@ export const Cierre: React.FC<P> = ({ d, pal }) => {
         <path d="M1140 1920 L1140 1620 Q1040 1560 930 1640 Q840 1700 800 1920 Z" fill="#0A121C" /><path d="M1130 1626 Q1040 1570 936 1644" stroke="#5A6C8A" strokeWidth={7} fill="none" strokeLinecap="round" opacity={0.7} />
         {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <path key={i} d={`M${330 + i * 62} 1920 l-8 -${70 + (i % 3) * 30} l14 ${60 + (i % 2) * 20} l8 -${80 + (i % 4) * 16} l6 90`} stroke="#0A121C" strokeWidth={9} fill="none" strokeLinejoin="round" />)}
       </Svg>
-      <Rotulo texto="180 €" desde={fC} top={236} tam={170} />
-      <Pildora x={540} y={452} texto="MÁNDASELO AL DE LOS GATOS PEQUEÑOS" color="#fff" desde={f1 + 14} tam={40} />
+      {!v2 && <Rotulo texto="180 €" desde={fC} top={236} tam={170} />}
+      {!v2 && <Pildora x={540} y={452} texto="MÁNDASELO AL DE LOS GATOS PEQUEÑOS" color="#fff" desde={f1 + 14} tam={40} />}
     </AbsoluteFill>
   );
 };

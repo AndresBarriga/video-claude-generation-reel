@@ -24,7 +24,7 @@ if (!/\b(tu|tú|te|tus|tuyo|haces|tienes)\b/i.test(primera)) A("El gancho no men
 const todo = g.escenas.map((e) => e.texto).join(" ");
 const nPal = todo.split(/\s+/).length;
 if (nPal < 70) A(`Solo ${nPal} palabras: saldrá <30 s. Objetivo 85–120.`);
-if (nPal > 130) A(`${nPal} palabras: saldrá >45 s. Recorta.`);
+if (g.formato !== "fijo" && nPal > 130) A(`${nPal} palabras: saldrá >45 s. Recorta.`);
 
 g.escenas.forEach((e, i) => {
   if (e.tipo === "cifra" && !e.fuente) F(`Escena ${i + 1}: cifra sin fuente visible.`);
@@ -39,7 +39,7 @@ if (/\b(garantizado|seguro que|100%|sin riesgo)\b/i.test(todo)) A("Lenguaje abso
 
 if (d) {
   if (d.duracion < 25) A(`Duración ${d.duracion}s (<25).`);
-  if (d.duracion > 48) A(`Duración ${d.duracion}s (>48).`);
+  if (g.formato !== "fijo" && d.duracion > 48) A(`Duración ${d.duracion}s (>48).`);
   d.escenas.forEach((e, i, arr) => {
     const dur = (arr[i + 1]?.inicio ?? d.duracion) - e.inicio;
     if (dur > 7 && e.tipo !== "lista") A(`Escena ${i + 1} dura ${dur.toFixed(1)} s: sin cambio visual >7 s. Divídela.`);

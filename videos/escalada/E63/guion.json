@@ -11,7 +11,7 @@
  ],
  "escenas": [
   {
-   "tipo": "texto",
+   "tipo": "gancho",
    "visual": "gancho",
    "bloque": "gancho",
    "texto": "Te gastas ciento ochenta euros en unos zapatos que sabes que te van a doler.",
@@ -106,7 +106,7 @@
    ]
   },
   {
-   "tipo": "texto",
+   "tipo": "cierre",
    "visual": "cta",
    "bloque": "cta",
    "texto": "Guárdalo para tu próxima compra… y mándaselo al que siempre dice que ya darán de sí.",

@@ -1,0 +1,1159 @@
+{
+  "id": "E63",
+  "titulo": "180 € para sufrir (pies de gato, formato fijo)",
+  "nicho": "escalada",
+  "plantilla": "GatosV2",
+  "fps": 30,
+  "voz": "voz/E63.mp3",
+  "duracion": 55.04,
+  "palabras": [
+    {
+      "w": "Te",
+      "start": 0.05,
+      "end": 0.188
+    },
+    {
+      "w": "gastas",
+      "start": 0.208,
+      "end": 0.556
+    },
+    {
+      "w": "ciento",
+      "start": 0.576,
+      "end": 0.924
+    },
+    {
+      "w": "ochenta",
+      "start": 0.944,
+      "end": 1.344
+    },
+    {
+      "w": "euros",
+      "start": 1.364,
+      "end": 1.659
+    },
+    {
+      "w": "en",
+      "start": 1.679,
+      "end": 1.817
+    },
+    {
+      "w": "unos",
+      "start": 1.837,
+      "end": 2.08
+    },
+    {
+      "w": "zapatos",
+      "start": 2.1,
+      "end": 2.5
+    },
+    {
+      "w": "que",
+      "start": 2.52,
+      "end": 2.711
+    },
+    {
+      "w": "sabes",
+      "start": 2.731,
+      "end": 3.026
+    },
+    {
+      "w": "que",
+      "start": 3.046,
+      "end": 3.236
+    },
+    {
+      "w": "te",
+      "start": 3.256,
+      "end": 3.394
+    },
+    {
+      "w": "van",
+      "start": 3.414,
+      "end": 3.604
+    },
+    {
+      "w": "a",
+      "start": 3.624,
+      "end": 3.709
+    },
+    {
+      "w": "doler.",
+      "start": 3.729,
+      "end": 4.025
+    },
+    {
+      "w": "No",
+      "start": 4.276,
+      "end": 4.341
+    },
+    {
+      "w": "es",
+      "start": 4.361,
+      "end": 4.426
+    },
+    {
+      "w": "masoquismo…",
+      "start": 4.446,
+      "end": 4.736
+    },
+    {
+      "w": "aunque",
+      "start": 4.756,
+      "end": 4.933
+    },
+    {
+      "w": "lo",
+      "start": 4.953,
+      "end": 5.017
+    },
+    {
+      "w": "parezca.",
+      "start": 5.037,
+      "end": 5.243
+    },
+    {
+      "w": "Es",
+      "start": 5.479,
+      "end": 5.696
+    },
+    {
+      "w": "para",
+      "start": 5.716,
+      "end": 6.093
+    },
+    {
+      "w": "que",
+      "start": 6.113,
+      "end": 6.401
+    },
+    {
+      "w": "no",
+      "start": 6.401,
+      "end": 6.401
+    },
+    {
+      "w": "quede",
+      "start": 6.401,
+      "end": 6.803
+    },
+    {
+      "w": "ni",
+      "start": 6.823,
+      "end": 7.041
+    },
+    {
+      "w": "un",
+      "start": 7.061,
+      "end": 7.279
+    },
+    {
+      "w": "milímetro",
+      "start": 7.299,
+      "end": 8.071
+    },
+    {
+      "w": "de",
+      "start": 8.091,
+      "end": 8.308
+    },
+    {
+      "w": "aire.",
+      "start": 8.328,
+      "end": 8.705
+    },
+    {
+      "w": "Con",
+      "start": 8.933,
+      "end": 9.126
+    },
+    {
+      "w": "aire,",
+      "start": 9.146,
+      "end": 9.392
+    },
+    {
+      "w": "al",
+      "start": 9.617,
+      "end": 9.754
+    },
+    {
+      "w": "pisar",
+      "start": 9.774,
+      "end": 10.069
+    },
+    {
+      "w": "un",
+      "start": 10.089,
+      "end": 10.226
+    },
+    {
+      "w": "canto,",
+      "start": 10.246,
+      "end": 10.541
+    },
+    {
+      "w": "el",
+      "start": 10.762,
+      "end": 10.893
+    },
+    {
+      "w": "pie",
+      "start": 10.913,
+      "end": 11.095
+    },
+    {
+      "w": "se",
+      "start": 11.115,
+      "end": 11.246
+    },
+    {
+      "w": "dobla",
+      "start": 11.266,
+      "end": 11.548
+    },
+    {
+      "w": "dentro",
+      "start": 11.568,
+      "end": 11.901
+    },
+    {
+      "w": "y",
+      "start": 11.921,
+      "end": 12.002
+    },
+    {
+      "w": "pierdes",
+      "start": 12.022,
+      "end": 12.406
+    },
+    {
+      "w": "fuerza.",
+      "start": 12.426,
+      "end": 12.759
+    },
+    {
+      "w": "Apretado,",
+      "start": 12.987,
+      "end": 13.563
+    },
+    {
+      "w": "pie",
+      "start": 13.788,
+      "end": 14
+    },
+    {
+      "w": "y",
+      "start": 14.02,
+      "end": 14.117
+    },
+    {
+      "w": "gato",
+      "start": 14.137,
+      "end": 14.407
+    },
+    {
+      "w": "son",
+      "start": 14.427,
+      "end": 14.64
+    },
+    {
+      "w": "una",
+      "start": 14.66,
+      "end": 14.873
+    },
+    {
+      "w": "sola",
+      "start": 14.893,
+      "end": 15.164
+    },
+    {
+      "w": "pieza.",
+      "start": 15.184,
+      "end": 15.513
+    },
+    {
+      "w": "Como",
+      "start": 15.734,
+      "end": 15.942
+    },
+    {
+      "w": "subir",
+      "start": 15.962,
+      "end": 16.215
+    },
+    {
+      "w": "un",
+      "start": 16.235,
+      "end": 16.352
+    },
+    {
+      "w": "bordillo",
+      "start": 16.372,
+      "end": 16.762
+    },
+    {
+      "w": "con",
+      "start": 16.782,
+      "end": 16.945
+    },
+    {
+      "w": "unas",
+      "start": 16.965,
+      "end": 17.173
+    },
+    {
+      "w": "chanclas",
+      "start": 17.193,
+      "end": 17.583
+    },
+    {
+      "w": "cinco",
+      "start": 17.603,
+      "end": 17.856
+    },
+    {
+      "w": "números",
+      "start": 17.876,
+      "end": 18.221
+    },
+    {
+      "w": "más",
+      "start": 18.241,
+      "end": 18.403
+    },
+    {
+      "w": "grandes.",
+      "start": 18.423,
+      "end": 18.768
+    },
+    {
+      "w": "Pero",
+      "start": 18.993,
+      "end": 19.254
+    },
+    {
+      "w": "solo",
+      "start": 19.274,
+      "end": 19.535
+    },
+    {
+      "w": "funciona",
+      "start": 19.555,
+      "end": 20.04
+    },
+    {
+      "w": "si",
+      "start": 20.06,
+      "end": 20.208
+    },
+    {
+      "w": "pisas",
+      "start": 20.228,
+      "end": 20.545
+    },
+    {
+      "w": "bien:",
+      "start": 20.565,
+      "end": 20.825
+    },
+    {
+      "w": "con",
+      "start": 21.053,
+      "end": 21.234
+    },
+    {
+      "w": "la",
+      "start": 21.254,
+      "end": 21.384
+    },
+    {
+      "w": "punta",
+      "start": 21.404,
+      "end": 21.684
+    },
+    {
+      "w": "del",
+      "start": 21.704,
+      "end": 21.884
+    },
+    {
+      "w": "dedo",
+      "start": 21.904,
+      "end": 22.135
+    },
+    {
+      "w": "gordo,",
+      "start": 22.155,
+      "end": 22.435
+    },
+    {
+      "w": "mirando",
+      "start": 22.704,
+      "end": 23.166
+    },
+    {
+      "w": "el",
+      "start": 23.186,
+      "end": 23.346
+    },
+    {
+      "w": "pie.",
+      "start": 23.366,
+      "end": 23.587
+    },
+    {
+      "w": "Y",
+      "start": 23.818,
+      "end": 23.934
+    },
+    {
+      "w": "nos",
+      "start": 23.954,
+      "end": 24.206
+    },
+    {
+      "w": "pasamos.",
+      "start": 24.226,
+      "end": 24.749
+    },
+    {
+      "w": "En",
+      "start": 24.971,
+      "end": 25.109
+    },
+    {
+      "w": "un",
+      "start": 25.129,
+      "end": 25.266
+    },
+    {
+      "w": "estudio,",
+      "start": 25.286,
+      "end": 25.687
+    },
+    {
+      "w": "cincuenta",
+      "start": 25.875,
+      "end": 26.372
+    },
+    {
+      "w": "y",
+      "start": 26.392,
+      "end": 26.476
+    },
+    {
+      "w": "cinco",
+      "start": 26.496,
+      "end": 26.786
+    },
+    {
+      "w": "de",
+      "start": 26.806,
+      "end": 26.941
+    },
+    {
+      "w": "cincuenta",
+      "start": 26.961,
+      "end": 27.459
+    },
+    {
+      "w": "y",
+      "start": 27.479,
+      "end": 27.562
+    },
+    {
+      "w": "seis",
+      "start": 27.582,
+      "end": 27.821
+    },
+    {
+      "w": "escaladores",
+      "start": 27.841,
+      "end": 28.441
+    },
+    {
+      "w": "los",
+      "start": 28.461,
+      "end": 28.648
+    },
+    {
+      "w": "llevaban",
+      "start": 28.668,
+      "end": 29.114
+    },
+    {
+      "w": "demasiado",
+      "start": 29.134,
+      "end": 29.631
+    },
+    {
+      "w": "apretados.",
+      "start": 29.651,
+      "end": 30.149
+    },
+    {
+      "w": "Y",
+      "start": 30.369,
+      "end": 30.454
+    },
+    {
+      "w": "nueve",
+      "start": 30.474,
+      "end": 30.771
+    },
+    {
+      "w": "de",
+      "start": 30.791,
+      "end": 30.929
+    },
+    {
+      "w": "cada",
+      "start": 30.949,
+      "end": 31.192
+    },
+    {
+      "w": "diez",
+      "start": 31.212,
+      "end": 31.456
+    },
+    {
+      "w": "tenían",
+      "start": 31.476,
+      "end": 31.825
+    },
+    {
+      "w": "dolor",
+      "start": 31.845,
+      "end": 32.141
+    },
+    {
+      "w": "de",
+      "start": 32.161,
+      "end": 32.299
+    },
+    {
+      "w": "pies",
+      "start": 32.319,
+      "end": 32.563
+    },
+    {
+      "w": "al",
+      "start": 32.583,
+      "end": 32.721
+    },
+    {
+      "w": "escalar.",
+      "start": 32.741,
+      "end": 33.143
+    },
+    {
+      "w": "Y",
+      "start": 33.364,
+      "end": 33.443
+    },
+    {
+      "w": "con",
+      "start": 33.463,
+      "end": 33.64
+    },
+    {
+      "w": "dolor",
+      "start": 33.66,
+      "end": 33.936
+    },
+    {
+      "w": "te",
+      "start": 33.956,
+      "end": 34.084
+    },
+    {
+      "w": "cuesta",
+      "start": 34.104,
+      "end": 34.429
+    },
+    {
+      "w": "confiar",
+      "start": 34.449,
+      "end": 34.824
+    },
+    {
+      "w": "en",
+      "start": 34.844,
+      "end": 34.972
+    },
+    {
+      "w": "el",
+      "start": 34.992,
+      "end": 35.12
+    },
+    {
+      "w": "pie:",
+      "start": 35.14,
+      "end": 35.317
+    },
+    {
+      "w": "apoyas",
+      "start": 35.539,
+      "end": 35.983
+    },
+    {
+      "w": "rápido,",
+      "start": 36.003,
+      "end": 36.448
+    },
+    {
+      "w": "apoyas",
+      "start": 36.468,
+      "end": 36.912
+    },
+    {
+      "w": "mal…",
+      "start": 36.932,
+      "end": 37.177
+    },
+    {
+      "w": "y",
+      "start": 37.197,
+      "end": 37.31
+    },
+    {
+      "w": "a",
+      "start": 37.33,
+      "end": 37.443
+    },
+    {
+      "w": "la",
+      "start": 37.463,
+      "end": 37.562
+    },
+    {
+      "w": "segunda",
+      "start": 37.562,
+      "end": 37.993
+    },
+    {
+      "w": "vía",
+      "start": 38.013,
+      "end": 38.258
+    },
+    {
+      "w": "te",
+      "start": 38.278,
+      "end": 38.457
+    },
+    {
+      "w": "los",
+      "start": 38.477,
+      "end": 38.723
+    },
+    {
+      "w": "quitas.",
+      "start": 38.743,
+      "end": 39.187
+    },
+    {
+      "w": "Tres",
+      "start": 39.414,
+      "end": 39.694
+    },
+    {
+      "w": "reglas.",
+      "start": 39.714,
+      "end": 40.114
+    },
+    {
+      "w": "Una:",
+      "start": 40.334,
+      "end": 40.591
+    },
+    {
+      "w": "dedos",
+      "start": 40.811,
+      "end": 41.154
+    },
+    {
+      "w": "un",
+      "start": 41.174,
+      "end": 41.335
+    },
+    {
+      "w": "poco",
+      "start": 41.355,
+      "end": 41.638
+    },
+    {
+      "w": "doblados,",
+      "start": 41.658,
+      "end": 42.182
+    },
+    {
+      "w": "no",
+      "start": 42.398,
+      "end": 42.578
+    },
+    {
+      "w": "en",
+      "start": 42.598,
+      "end": 42.778
+    },
+    {
+      "w": "puño.",
+      "start": 42.798,
+      "end": 43.11
+    },
+    {
+      "w": "Dos:",
+      "start": 43.34,
+      "end": 43.741
+    },
+    {
+      "w": "talón",
+      "start": 43.961,
+      "end": 44.294
+    },
+    {
+      "w": "sin",
+      "start": 44.314,
+      "end": 44.529
+    },
+    {
+      "w": "aire.",
+      "start": 44.549,
+      "end": 44.822
+    },
+    {
+      "w": "Tres:",
+      "start": 45.043,
+      "end": 45.381
+    },
+    {
+      "w": "diez",
+      "start": 45.605,
+      "end": 45.836
+    },
+    {
+      "w": "minutos",
+      "start": 45.856,
+      "end": 46.239
+    },
+    {
+      "w": "de",
+      "start": 46.259,
+      "end": 46.39
+    },
+    {
+      "w": "pie",
+      "start": 46.41,
+      "end": 46.591
+    },
+    {
+      "w": "en",
+      "start": 46.611,
+      "end": 46.742
+    },
+    {
+      "w": "la",
+      "start": 46.762,
+      "end": 46.893
+    },
+    {
+      "w": "tienda.",
+      "start": 46.913,
+      "end": 47.246
+    },
+    {
+      "w": "Si",
+      "start": 47.468,
+      "end": 47.601
+    },
+    {
+      "w": "estás",
+      "start": 47.621,
+      "end": 47.907
+    },
+    {
+      "w": "deseando",
+      "start": 47.927,
+      "end": 48.367
+    },
+    {
+      "w": "quitártelos,",
+      "start": 48.387,
+      "end": 48.979
+    },
+    {
+      "w": "son",
+      "start": 49.206,
+      "end": 49.439
+    },
+    {
+      "w": "pequeños.",
+      "start": 49.459,
+      "end": 50.008
+    },
+    {
+      "w": "Guárdalo",
+      "start": 50.234,
+      "end": 50.701
+    },
+    {
+      "w": "para",
+      "start": 50.721,
+      "end": 50.971
+    },
+    {
+      "w": "tu",
+      "start": 50.991,
+      "end": 51.133
+    },
+    {
+      "w": "próxima",
+      "start": 51.153,
+      "end": 51.566
+    },
+    {
+      "w": "compra…",
+      "start": 51.586,
+      "end": 51.857
+    },
+    {
+      "w": "y",
+      "start": 51.857,
+      "end": 51.857
+    },
+    {
+      "w": "mándaselo",
+      "start": 51.857,
+      "end": 52.329
+    },
+    {
+      "w": "al",
+      "start": 52.349,
+      "end": 52.491
+    },
+    {
+      "w": "que",
+      "start": 52.511,
+      "end": 52.707
+    },
+    {
+      "w": "siempre",
+      "start": 52.727,
+      "end": 53.14
+    },
+    {
+      "w": "dice",
+      "start": 53.16,
+      "end": 53.41
+    },
+    {
+      "w": "que",
+      "start": 53.43,
+      "end": 53.627
+    },
+    {
+      "w": "ya",
+      "start": 53.647,
+      "end": 53.789
+    },
+    {
+      "w": "darán",
+      "start": 53.809,
+      "end": 54.113
+    },
+    {
+      "w": "de",
+      "start": 54.133,
+      "end": 54.276
+    },
+    {
+      "w": "sí.",
+      "start": 54.296,
+      "end": 54.438
+    }
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "visual": "gancho",
+      "bloque": "gancho",
+      "texto": "Te gastas ciento ochenta euros en unos zapatos que sabes que te van a doler.",
+      "claves": [
+        "euros",
+        "doler"
+      ],
+      "cifras": [
+        "180 €"
+      ],
+      "inicio": 0,
+      "fin": 4.025
+    },
+    {
+      "tipo": "texto",
+      "visual": "reencuadre",
+      "bloque": "reencuadre",
+      "texto": "No es masoquismo… aunque lo parezca. Es para que no quede ni un milímetro de aire.",
+      "claves": [
+        "masoquismo",
+        "aire"
+      ],
+      "cifras": [],
+      "inicio": 4.276,
+      "fin": 8.705
+    },
+    {
+      "tipo": "texto",
+      "visual": "dentro",
+      "bloque": "dentro",
+      "texto": "Con aire, al pisar un canto, el pie se dobla dentro y pierdes fuerza. Apretado, pie y gato son una sola pieza.",
+      "claves": [
+        "fuerza",
+        "pieza"
+      ],
+      "cifras": [],
+      "inicio": 8.933,
+      "fin": 15.513
+    },
+    {
+      "tipo": "texto",
+      "visual": "analogia",
+      "bloque": "analogia",
+      "texto": "Como subir un bordillo con unas chanclas cinco números más grandes.",
+      "claves": [
+        "chanclas"
+      ],
+      "cifras": [],
+      "inicio": 15.734,
+      "fin": 18.768
+    },
+    {
+      "tipo": "texto",
+      "visual": "pisar",
+      "bloque": "pisar",
+      "texto": "Pero solo funciona si pisas bien: con la punta del dedo gordo, mirando el pie.",
+      "claves": [
+        "punta",
+        "mirando"
+      ],
+      "cifras": [],
+      "inicio": 18.993,
+      "fin": 23.587
+    },
+    {
+      "tipo": "texto",
+      "visual": "cifras",
+      "bloque": "cifras",
+      "texto": "Y nos pasamos. En un estudio, cincuenta y cinco de cincuenta y seis escaladores los llevaban demasiado apretados. Y nueve de cada diez tenían dolor de pies al escalar.",
+      "claves": [
+        "estudio",
+        "dolor"
+      ],
+      "cifras": [
+        "55/56",
+        "91 %"
+      ],
+      "inicio": 23.818,
+      "fin": 33.143
+    },
+    {
+      "tipo": "texto",
+      "visual": "giro",
+      "bloque": "giro",
+      "texto": "Y con dolor te cuesta confiar en el pie: apoyas rápido, apoyas mal… y a la segunda vía te los quitas.",
+      "claves": [
+        "confiar",
+        "quitas"
+      ],
+      "cifras": [],
+      "inicio": 33.364,
+      "fin": 39.187
+    },
+    {
+      "tipo": "texto",
+      "visual": "pasos",
+      "bloque": "pasos",
+      "texto": "Tres reglas. Una: dedos un poco doblados, no en puño. Dos: talón sin aire. Tres: diez minutos de pie en la tienda. Si estás deseando quitártelos, son pequeños.",
+      "claves": [
+        "doblados",
+        "talón",
+        "minutos"
+      ],
+      "cifras": [
+        "10 min"
+      ],
+      "inicio": 39.414,
+      "fin": 50.008
+    },
+    {
+      "tipo": "cierre",
+      "visual": "cta",
+      "bloque": "cta",
+      "texto": "Guárdalo para tu próxima compra… y mándaselo al que siempre dice que ya darán de sí.",
+      "claves": [
+        "guárdalo"
+      ],
+      "cifras": [],
+      "inicio": 50.234,
+      "fin": 54.438
+    }
+  ],
+  "sonido": {
+    "bajoVoz": 0.4,
+    "efectos": [
+      {
+        "nombre": "musica",
+        "inicio": {
+          "escena": 0
+        },
+        "fin": {
+          "escena": "cta",
+          "final": true
+        },
+        "volumen": 0.16,
+        "bucle": true,
+        "fundido": [
+          0.05,
+          0.8
+        ]
+      },
+      {
+        "nombre": "golpe",
+        "inicio": {
+          "escena": "gancho",
+          "palabra": "euros"
+        },
+        "duracion": 0.5,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "chirrido",
+        "inicio": {
+          "escena": "gancho",
+          "palabra": "doler",
+          "mas": 0.03
+        },
+        "duracion": 0.5,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "zas",
+        "inicio": {
+          "escena": "reencuadre",
+          "palabra": "parezca"
+        },
+        "duracion": 0.5,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "roce",
+        "inicio": {
+          "escena": "dentro",
+          "palabra": "dobla",
+          "mas": -0.1
+        },
+        "duracion": 0.7,
+        "volumen": 0.7
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "dentro",
+          "palabra": "pieza"
+        },
+        "duracion": 0.3,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "roce",
+        "inicio": {
+          "escena": "analogia",
+          "palabra": "chanclas"
+        },
+        "duracion": 0.6,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "pisar",
+          "palabra": "punta"
+        },
+        "duracion": 0.3,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "cifras",
+          "palabra": "estudio"
+        },
+        "duracion": 0.3,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "golpe",
+        "inicio": {
+          "escena": "cifras",
+          "palabra": "nueve"
+        },
+        "duracion": 0.5,
+        "volumen": 0.7
+      },
+      {
+        "nombre": "crujido",
+        "inicio": {
+          "escena": "giro",
+          "palabra": "mal"
+        },
+        "duracion": 0.6,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "pasos",
+          "palabra": "una"
+        },
+        "duracion": 0.3,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "pasos",
+          "palabra": "dos"
+        },
+        "duracion": 0.3,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "clic",
+        "inicio": {
+          "escena": "pasos",
+          "palabra": "tres"
+        },
+        "duracion": 0.3,
+        "volumen": 0.6
+      },
+      {
+        "nombre": "desgarro",
+        "inicio": {
+          "escena": "cta",
+          "mas": 0.6
+        },
+        "duracion": 0.3,
+        "volumen": 0.5
+      },
+      {
+        "nombre": "zas",
+        "inicio": {
+          "escena": "cta",
+          "palabra": "mándaselo"
+        },
+        "duracion": 0.5,
+        "volumen": 0.5
+      }
+    ]
+  }
+}
