@@ -23,3 +23,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-19 | E65 «Se dio la vuelta… y la cuerda estaba bien» | propuesta | 6,5 (7,5 con cambios) | Bisagra y golpe contados como hechos; cuerda entre las piernas sugerida como correcta; casco como protección sin constar; dilema resuelto en el s4; frame 0 estático — aplicado |
 | 2026-11-19 | E64 v2 «La cuerda se sale» | propuesta | 6 (7 con cambios) | gancho «así» ilegible; «arriba pasa igual» falso (fuera); «perfecta» contradecía el error 2; cierre de 7 s — aplicado salvo rótulo a 0,5 s (H14) |
 | 2026-11-19 | E63 v4 «Tres números menos» | propuesta | 6,5 (7 con cambios) | «Apenas cargas el pie» y «la punta se dobla» sin verificar; «justo» sin criterio; frame 0 sin persona ni movimiento — aplicado |
+| 2026-11-19 | E63 v2 «¿Cuántos números menos?» | propuesta | 6,5 (7,5 con cambios) | tallas UK→números, «<5 %» sin grupo de edad, regla 1 vaga, CTA sin frase — aplicado |
