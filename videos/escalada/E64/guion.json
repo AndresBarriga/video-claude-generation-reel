@@ -1,69 +1,118 @@
 {
  "id": "E64",
- "titulo": "La puerta de la cinta",
+ "titulo": "Cómo chapar: 3 errores (formato referencias)",
  "nicho": "escalada",
- "plantilla": "Cinta",
+ "plantilla": "CintaV2",
+ "formato": "fijo",
+ "verificado": true,
+ "fuentes": [
+  "Petzl, Tech Tips «Positioning the quickdraw and clipping the rope»: la cuerda entra por el lado de la pared y sale hacia fuera; la puerta del mosquetón, al lado contrario de la progresión; una mala colocación puede hacer que la cuerda se salga; mosquetón de la chapa móvil (sin goma), el de la cuerda fijo (con goma).",
+  "REI Expert Advice «How to clip quickdraws»: la puerta del mosquetón de la cuerda siempre al lado contrario de hacia donde vas; el recto a la chapa y el de la cuerda siempre en su sitio por los bordes que deja la chapa.",
+  "Back-clip: el tramo del asegurador sale por detrás y el que va al escalador por delante (climbinghouse.com).",
+  "Caída 2,7 m → 6,3 m: cálculo con la vía a escala de la v1c (cinta que se suelta = caes hasta la de abajo); en pantalla «en esta vía»."
+ ],
  "escenas": [
   {
    "tipo": "gancho",
    "visual": "gancho",
-   "texto": "Te caes. Y la cinta que te tenía que parar… se sale de la chapa.",
-   "pausa": 0.3
+   "bloque": "gancho",
+   "texto": "Tu cinta está chapada… y la cuerda se sale igual.",
+   "claves": [
+    "chapada",
+    "sale"
+   ],
+   "cifras": []
   },
   {
    "tipo": "texto",
-   "visual": "bien",
-   "texto": "Estaba bien chapada. Solo había una cosa mal: la puerta miraba hacia donde escalabas."
+   "visual": "promesa",
+   "bloque": "gancho",
+   "texto": "Tres errores al chapar que lo provocan.",
+   "claves": [
+    "Tres",
+    "errores"
+   ],
+   "cifras": [
+    "2,7 m",
+    "6,3 m"
+   ]
   },
   {
    "tipo": "texto",
-   "visual": "gira",
-   "texto": "Si escalas hacia la derecha y la puerta mira a la derecha, al caer la cinta gira, la puerta choca con la chapa… y se abre."
+   "visual": "reencuadre",
+   "bloque": "reencuadre",
+   "texto": "No falla la cinta: falla cómo se coloca.",
+   "claves": [
+    "coloca"
+   ],
+   "cifras": []
   },
   {
    "tipo": "texto",
-   "visual": "abajo",
-   "texto": "Y abajo, igual: la cuerda pasa por encima de la puerta y se sale sola.",
-   "pausa": 0.3
+   "visual": "backclip",
+   "bloque": "pasos",
+   "texto": "Uno: nada de back-clip. El tramo que va a tu arnés sale por delante, hacia ti. Al revés, al caer puede pasar por encima de la puerta… y salirse.",
+   "claves": [
+    "back-clip",
+    "hacia ti"
+   ],
+   "cifras": []
   },
   {
    "tipo": "texto",
-   "visual": "regla",
-   "texto": "La regla: las puertas, al lado contrario de hacia donde vas. ¿Vas a la derecha? Puertas a la izquierda."
+   "visual": "giro",
+   "bloque": "giro",
+   "texto": "Pero aunque entre bien… se puede salir.",
+   "claves": [
+    "salir"
+   ],
+   "cifras": []
   },
   {
-   "tipo": "cierre",
-   "visual": "cierre",
-   "texto": "Antes de chapar la cuerda, mira la puerta."
+   "tipo": "texto",
+   "visual": "puerta",
+   "bloque": "pasos",
+   "texto": "Dos: la puerta del mosquetón de la cuerda, al lado contrario de hacia donde vas. ¿Vas a la derecha? Puerta a la izquierda. Si no, al caer la cuerda puede abrirla.",
+   "claves": [
+    "puerta",
+    "izquierda"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "goma",
+   "bloque": "pasos",
+   "texto": "Tres: esta cinta parece perfecta. Y está mal. El mosquetón sin goma, a la chapa; el de la goma, a la cuerda. No los cambies: la chapa marca el mosquetón… y esas marcas desgastan tu cuerda.",
+   "claves": [
+    "perfecta",
+    "goma",
+    "cambies"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "repaso",
+   "bloque": "porEso",
+   "texto": "Por eso: cuerda hacia ti, puerta al otro lado, y la goma, siempre a la cuerda.",
+   "claves": [
+    "hacia ti",
+    "otro lado",
+    "goma"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "cta",
+   "bloque": "cta",
+   "texto": "Guárdalo. Y mándaselo a ese que dice «si está chapada, está chapada».",
+   "claves": [
+    "Guárdalo",
+    "chapada"
+   ],
+   "cifras": []
   }
- ],
- "frases": [
-  2,
-  8,
-  5,
-  3,
-  5,
-  6,
-  5,
-  7,
-  5,
-  6,
-  3,
-  3,
-  10,
-  2,
-  2,
-  2,
-  7,
-  4,
-  4,
-  5,
-  3
- ],
- "verificado": true,
- "fuentes": [
-  "Petzl, Tech Tips «Positioning the quickdraw and clipping the rope»: la puerta del mosquetón siempre al lado contrario del sentido de la escalada; la cuerda entra por el lado de la pared y sale hacia fuera; una mala colocación puede hacer que la cuerda se salga, por el movimiento de la cuerda o porque el mosquetón gira sobre la chapa en una caída; mosquetón de chapa móvil (sin goma), el de la cuerda fijo (con goma).",
-  "REI Expert Advice «How to clip quickdraws»: el mosquetón recto va a la chapa y el curvo a la cuerda, siempre así, para que el de la cuerda no coja los bordes afilados que deja la chapa; evitar que el mosquetón de abajo quede a medias sobre un canto: usar una cinta más larga.",
-  "Wikipedia «Quickdraw» (cita Petzl y Metolius): las dos puertas hacia el mismo lado, contrario al sentido de la escalada."
  ]
 }

@@ -25,7 +25,7 @@ Fuentes: Petzl, «Positioning the quickdraw and clipping the rope» (cuerda de l
 | # | Bloque | Se ve | Se dice |
 |---|---|---|---|
 | 1 | gancho 0–2,5 | Primer plano en movimiento: al caer, la cinta gira y la cuerda cruza por encima de la puerta y sale (mosquetón de la cuerda con la nariz abajo; causa visible, nada de lupa quieta). | Tu cinta está chapada… y la cuerda se sale igual. |
-| 2 | cifra 2,5–4,5 | Sigue cayendo; barra CAÍDA 2,7 → 6,3 m en esta vía, silueta roja donde le habría parado. | Y puedes caer el doble. |
+| 2 | cifra 2,5–4,5 | Sigue cayendo; barra CAÍDA 2,7 → 6,3 m en esta vía, silueta roja donde le habría parado. | Tres errores al chapar que lo provocan. |
 | 3 | reencuadre 4,5–6,5 | Tarjeta ✗ MATERIAL → ✓ CÓMO SE COLOCA; aparece la lista 🔒1 🔒2 🔒3. | No falla la cinta: falla cómo se coloca. Tres cosas. |
 | 4 | dentro 6,5–14 | Cinta de perfil contra la pared (nuevo). Etiqueta BACK-CLIP ✗: el tramo que va a tu arnés sale por detrás; al caer pasa por encima de la puerta y sale. Luego ✓: sale por delante. Candado 1. | Uno: nada de back-clip. El tramo que va a tu arnés sale por delante, hacia ti. Al revés, al caer puede pasar por encima de la puerta… y salirse. |
 | 5 | giro 14–16 | Cuerda bien pasada ✓… y se sale igual. Tiembla el candado 2. | Pero aunque entre bien… se puede salir. |
@@ -52,3 +52,6 @@ Plantilla `Cinta`: Gancho, Macro, Abajo, Regla, Rebabas. Nuevo: perfil del back-
 
 ## Crítico (19-nov, sonnet)
 7/10 (envío 7). Aplicado: «nada de back-clip» con el tramo que va al arnés; «mosquetón de la cuerda» y «puede abrirla»; «sin goma / con goma» y «no los cambies», «desgastan» en vez de «lijan»; repaso en el mismo orden 1-2-3; causa visible en el gancho; rehook en el punto 3; «puedes caer el doble» (en esta vía); «falla cómo se coloca»; CTA «ese que dice "si está chapada, está chapada"». No aplicado: nota de que en vía recta casi no importa (alarga el punto 2; la escena ya es una travesía).
+
+## Decisión (19-nov, 17:46)
+Andrés pide que elija: paradoja primero + «Tres errores al chapar que lo provocan» como 2.ª frase (sustituye a «puedes caer el doble»; la barra 2,7 → 6,3 m sigue en pantalla). Sin prueba A/B de aperturas (serían dos voces). Punto 1 contrastado con Petzl («from the cliff side to the outside») y con la definición de back-clip (el tramo al escalador sale por delante). Producción en plantilla `CintaV2`; los archivos de la v1c quedan como `guion-v1c.json`, `voz-v1c.mp3`, `sonido-v1c.json`.
