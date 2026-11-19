@@ -1,0 +1,77 @@
+{
+ "id": "E62B",
+ "titulo": "La que frena es tu mano (dar cuerda bien con el grigri) · apertura ¿CUÁL FRENA?",
+ "nicho": "escalada",
+ "plantilla": "Freno",
+ "verificado": true,
+ "fuentes": [
+  "Petzl, «Asegurar con el GRIGRI» (texto y vídeo oficial): sujetar siempre la cuerda lado frenado; no sujetar el aparato con toda la mano ni dejar el pulgar permanentemente en la leva; dar rápido = tres dedos en la cuerda, índice apoya el aparato, pulgar en la leva, y la mano vuelve a la posición principal",
+  "DAV/KLEVER, estadísticas de rocódromos 2024-2025 (manejo del aparato como causa principal de caídas al suelo; no se cita en voz)"
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "texto": "Le estás dando cuerda. Aparato agarrado, pulgar en la leva. Y justo ahora… se cae.",
+   "abre": "ab"
+  },
+  {
+   "tipo": "texto",
+   "visual": "corre",
+   "texto": "Puede que no frene. Con la leva apretada, la cuerda puede correr… y él, bajar con ella."
+  },
+  {
+   "tipo": "texto",
+   "visual": "dos",
+   "texto": "Tu grigri ayuda a frenar. Pero necesita dos cosas: la leva libre… y tu mano en la cuerda de freno."
+  },
+  {
+   "tipo": "texto",
+   "visual": "normal",
+   "texto": "Lo normal es dar cuerda sin tocar la leva: empujas cuerda hacia el aparato y tiras del otro lado."
+  },
+  {
+   "tipo": "texto",
+   "visual": "rapido",
+   "texto": "¿Y si va a chapar y hay que dar rápido? Pulgar en la leva solo un instante, sin soltar la cuerda de freno… y vuelves."
+  },
+  {
+   "tipo": "texto",
+   "visual": "misma",
+   "texto": "Misma caída. Leva libre, mano en la cuerda."
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cierre",
+   "texto": "El aparato ayuda. La que frena es tu mano."
+  }
+ ],
+ "frases": [
+  4,
+  2,
+  4,
+  3,
+  2,
+  4,
+  8,
+  2,
+  3,
+  5,
+  4,
+  3,
+  8,
+  9,
+  5,
+  5,
+  10,
+  7,
+  6,
+  2,
+  2,
+  2,
+  4,
+  3,
+  3,
+  3
+ ]
+}

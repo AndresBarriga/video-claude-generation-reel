@@ -1,0 +1,189 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "leva",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "cae",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "corre",
+    "mas": 0.1
+   },
+   "duracion": 2.0,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "corre",
+    "palabra": "cuerda",
+    "mas": 0
+   },
+   "duracion": 0.6,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "dos",
+    "palabra": "leva",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.9
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "dos",
+    "palabra": "mano",
+    "mas": 0
+   },
+   "duracion": 0.5,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "normal",
+    "palabra": "empujas",
+    "mas": 0
+   },
+   "duracion": 0.6,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "normal",
+    "palabra": "tiras",
+    "mas": 0
+   },
+   "duracion": 0.6,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "rapido",
+    "palabra": "pulgar",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "crujido",
+   "inicio": {
+    "escena": "rapido",
+    "palabra": "pulgar",
+    "mas": 0.15
+   },
+   "duracion": 0.9,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "rapido",
+    "palabra": "vuelves",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "misma",
+    "mas": 0.25
+   },
+   "duracion": 0.5,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "misma",
+    "mas": 0.95
+   },
+   "duracion": 0.6,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cierre",
+    "palabra": "frena",
+    "mas": 0
+   },
+   "duracion": 0.4,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.86
+   },
+   "duracion": 0.9,
+   "volumen": 1.0
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "aparato",
+    "mas": 0.2
+   },
+   "duracion": 0.4,
+   "volumen": 0.7
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "corre",
+    "palabra": "cuerda",
+    "mas": 1.62
+   },
+   "duracion": 0.9,
+   "volumen": 1.0
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.0
+   },
+   "duracion": 0.4,
+   "volumen": 0.8
+  },
+  {
+   "nombre": "viento",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.0
+   },
+   "duracion": 0.85,
+   "volumen": 0.5
+  }
+ ]
+}

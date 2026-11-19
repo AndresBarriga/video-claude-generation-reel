@@ -3,6 +3,7 @@ import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Persona, Asegurador, Soga, Sala, Polvo, porChapas, aparato, accChapar, sogaChapar, POSE, mix, G, Lupa, Etiqueta, Chip, Foco, suave, type Angulos } from "../../piezas/kit";
 import { Rebobina, N_REB } from "../Agarra/comun";
+import { AbreAB } from "./Ab";
 import { VIA, P0, XA, EL, ELLA, VERDE, ROJO, TAB, Mundo, PP, Puesto, golpe, type P } from "./comun";
 
 const LEVA = TAB;
@@ -38,8 +39,10 @@ export const Mini: React.FC<{ t: number; cae?: number }> = ({ t, cae = -1 }) => 
     </g>
   );
 };
-export const Gancho: React.FC<P> = ({ d, pal }) => {
+export const Gancho: React.FC<P> = ({ e, d, pal }) => {
+  const ab = (e as { abre?: string })?.abre === "ab";
   const f = useCurrentFrame(), fA = (pal("aparato") ?? 42) + 16, fP = pal("pulgar") ?? fA + 34, fS = pal("cae") ?? d - 12, g = f - fA, k = f - fS;
+  if (f < fA && ab) return <AbreAB />;
   if (f < fA) return <><Ko j={f - CAE} rotulo />{f >= fA - N_REB && <Rebobina k={f - (fA - N_REB)} />}</>;
   // 1 s de contexto: plano de la aseguradora y zoom al grigri; después «gira» a la vista de lado del primer plano
   const ZM = 30, fZ = fA + ZM;
@@ -54,7 +57,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
             <Persona p={P0} ang={accChapar(VIA, P0, 5, 0.3).ang} aspecto={EL} cara="esfuerzo" />
           </Mundo>
         </div>
-        <Chip texto="5 SEGUNDOS ANTES" top={150} tam={48} k={Math.min(1, (f - fA) / 4)} />
+        <Chip texto={ab ? "ASÍ ES LA B" : "5 SEGUNDOS ANTES"} top={150} tam={48} k={Math.min(1, (f - fA) / 4)} />
       </>
     );
   }
@@ -65,8 +68,8 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
         {f >= fP && <Foco x={LEVA.x} y={LEVA.y} r={70} color={k > 0 ? ROJO : "#FFE3A0"} k={(f - fP) / 5} />}
       </PP>
       <Lupa x={190} y={380} r={165} fondo="#2E3948" k={(f - fZ - 6) / 5}><Mini t={0.3 + 0.36 * Math.min(1, g / Math.max(1, fS - fA))} cae={k > 0 ? k * 0.6 : -1} /></Lupa>
-      <Chip texto="5 SEGUNDOS ANTES" top={150} tam={48} k={g < 40 ? 1 : Math.max(0, 1 - (g - 40) / 6)} />
-      <Chip texto="✗  GRIGRI AGARRADO ENTERO" top={150} tam={52} color={ROJO} k={Math.min((g - 46) / 5, (fS - 18 - f) / 4)} />
+      <Chip texto={ab ? "ASÍ ES LA B" : "5 SEGUNDOS ANTES"} top={150} tam={48} k={g < 40 ? 1 : Math.max(0, 1 - (g - 40) / 6)} />
+      <Chip texto={ab ? "B · GRIGRI AGARRADO ENTERO" : "✗  GRIGRI AGARRADO ENTERO"} top={150} tam={52} color={ROJO} k={Math.min((g - 46) / 5, (fS - 18 - f) / 4)} />
       <Etiqueta texto="¿FRENA?" top={170} tam={128} desde={fS - 16} />
     </>
   );
