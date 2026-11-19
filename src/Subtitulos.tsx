@@ -26,7 +26,7 @@ const Arriba: React.FC<{ palabras: Palabra[]; claves: string[]; t: number }> = (
       {dichas.map((p, i) => {
         const clave = cl.has(norm(p.w)), viva = p === ultima, e = Math.min(1, (t - p.start + 0.03) / 0.12);
         return (
-          <span key={i} style={{ position: "relative", fontFamily: fuenteTexto, fontWeight: 700, fontSize: 64, lineHeight: 1.25, color: viva || clave ? "#fff" : "#8D95A3", textShadow: "0 3px 14px rgba(0,0,0,.55)", opacity: e, transform: `translateY(${(1 - e) * 10}px)`, display: "inline-block", padding: clave ? "0 12px" : 0, background: clave ? "rgba(18,32,70,.72)" : "transparent", outline: clave ? "3px solid #5B8DEF" : "none" }}>
+          <span key={i} style={{ position: "relative", fontFamily: fuenteTexto, fontWeight: 700, fontSize: 64, lineHeight: 1.25, color: viva || clave ? "#fff" : "#8D95A3", textShadow: "0 3px 14px rgba(0,0,0,.55)", WebkitTextStroke: "9px #0B1220", paintOrder: "stroke fill", opacity: e, transform: `translateY(${(1 - e) * 10}px)`, display: "inline-block", padding: clave ? "0 12px" : 0, background: clave ? "rgba(18,32,70,.72)" : "transparent", outline: clave ? "3px solid #5B8DEF" : "none" }}>
             {p.w}
             {clave && [[-7, -7], [-7, null], [null, -7], [null, null]].map(([l, tp], j) => <i key={j} style={{ position: "absolute", width: 11, height: 11, borderRadius: 6, background: "#fff", border: "2px solid #5B8DEF", left: l ?? undefined, right: l === null ? -7 : undefined, top: tp ?? undefined, bottom: tp === null ? -7 : undefined }} />)}
           </span>

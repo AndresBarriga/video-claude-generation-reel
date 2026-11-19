@@ -1,4 +1,19 @@
-# E64 · «La puerta de la cinta» — ficha
+# E64 · «Cómo chapar: 3 errores» — ficha
+
+- **Estado (19-nov):** v4 producida con la voz de Andrés (ElevenLabs, Danny). 51,0 s, -14,9 LUFS, pico -1,1 dBTP (qa-final OK). Plantilla `CintaV2` (reutiliza la vía, la caída, los primeros planos, la regla y las marcas de `Cinta`; nuevo: back-clip de frente con delante/detrás, candados 1-2-3, tarjetas, repaso, CTA con hoja de enviar). Subtítulos arriba (añadido contorno oscuro para fondos claros, afecta a todos los vídeos con `estilo="arriba"`). Música de E63 reutilizada. Sincronía sin Whisper: `frases` (41 tramos) + `tools/ajustar-tiempos.py` (5–8 síl/s en todos los tramos); repetir tras cada `npm run voz`.
+- **Formato:** información, formato de las referencias (H16) + seguridad con cuerda (H14). Herramienta: lista 1-2-3 con candados.
+- **Guion y crítico:** `propuesta-v4.md` (crítico 7).
+- **Descripción para publicar:**
+  Tres errores al chapar que hacen que la cuerda se salga (el tercero casi nadie lo mira) 👀
+  1️⃣ Nada de back-clip: el tramo que va a tu arnés sale por delante.
+  2️⃣ La puerta del mosquetón de la cuerda, al lado contrario de hacia donde vas.
+  3️⃣ Sin goma a la chapa, con goma a la cuerda. No los cambies.
+  Guárdalo y mándaselo a quien te asegura: desde abajo se ve.
+  #escalada #escaladadeportiva #backclip #seguridad #climbing
+- **Comentario fijado:** «¿Cuál de los tres te han tenido que corregir alguna vez? 👇»
+
+---
+## Versión anterior (v1c, del amigo; archivada: guion-v1c.json, voz-v1c.mp3, sonido-v1c.json)
 
 > Hecho por el amigo de Andrés (llegó como E62 por parche; renumerado al integrarlo el 19-nov porque esos IDs ya estaban usados).
 - **Estado:** v1b (19-nov, recorte rápido; no confundir con la propuesta v2 «La cuerda se sale» de otro chat) recortada a 32,6 s y entregada a Andrés para publicar. Fuera las escenas «rebabas» y «canto» (audio cortado en 29,13 s y 42,6 s, sin voz nueva); lupa desde el fotograma 0; errata «ESCALABAS» → «ESCALAS». qa-final OK (-14,9 LUFS, pico -1,3 dBTP). Rebabas y canto quedan para otro vídeo.

@@ -33,11 +33,12 @@ import { Freno } from "./historias/Freno";
 import { Catalogo } from "./historias/Catalogo";
 import { InfoDemo } from "./historias/InfoDemo";
 import { GatosV2 } from "./historias/GatosV2";
+import { CintaV2 } from "./historias/CintaV2";
 
 import { Gatos } from "./historias/Gatos";
 import { Cinta } from "./historias/Cinta";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { ChatRechazo, Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Puerta, Pump, Rapel, Asegurador, Poleas, Everest, Cuerda, Nanga, Ferrata, FreeBase, Suelta, Factor, Chapa, Descanso, Grossglockner, Honnold, Poses: Poses as any, Catalogo: Catalogo as any, Agarra, Freno, Gatos, Cinta, InfoDemo: InfoDemo as any, GatosV2 };
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { ChatRechazo, Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Puerta, Pump, Rapel, Asegurador, Poleas, Everest, Cuerda, Nanga, Ferrata, FreeBase, Suelta, Factor, Chapa, Descanso, Grossglockner, Honnold, Poses: Poses as any, Catalogo: Catalogo as any, Agarra, Freno, Gatos, Cinta, InfoDemo: InfoDemo as any, GatosV2, CintaV2 };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;

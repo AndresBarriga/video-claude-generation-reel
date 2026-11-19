@@ -1,0 +1,15 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {"nombre": "musica", "inicio": {"escena": 0}, "fin": {"escena": "cta", "final": true}, "volumen": 0.16, "bucle": true, "fundido": [0.05, 0.8]},
+  {"nombre": "golpe", "inicio": {"escena": "gancho", "palabra": "sale"}, "duracion": 0.5, "volumen": 0.6},
+  {"nombre": "zas", "inicio": {"escena": "reencuadre", "palabra": "coloca"}, "duracion": 0.5, "volumen": 0.5},
+  {"nombre": "golpe", "inicio": {"escena": "backclip", "palabra": "salirse"}, "duracion": 0.5, "volumen": 0.55},
+  {"nombre": "golpe", "inicio": {"escena": "giro", "palabra": "salir"}, "duracion": 0.5, "volumen": 0.55},
+  {"nombre": "golpe", "inicio": {"escena": "puerta", "palabra": "abrirla"}, "duracion": 0.5, "volumen": 0.55},
+  {"nombre": "roce", "inicio": {"escena": "goma", "palabra": "desgastan"}, "duracion": 0.7, "volumen": 0.6},
+  {"nombre": "clic", "inicio": {"escena": "repaso", "palabra": "cuerda"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "repaso", "palabra": "puerta"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "repaso", "palabra": "goma"}, "duracion": 0.3, "volumen": 0.5}
+ ]
+}
