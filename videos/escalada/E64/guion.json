@@ -32,16 +32,6 @@
    "texto": "La regla: las puertas, al lado contrario de hacia donde vas. ¿Vas a la derecha? Puertas a la izquierda."
   },
   {
-   "tipo": "texto",
-   "visual": "rebabas",
-   "texto": "Y ojo: tu cinta tiene un arriba y un abajo. El mosquetón de la goma es el de la cuerda. El otro roza la chapa, coge rebabas… y si lo pones abajo, te lija la cuerda."
-  },
-  {
-   "tipo": "texto",
-   "visual": "canto",
-   "texto": "Y si el mosquetón queda apoyado en un canto, pon una cinta más larga: ahí aguanta mucho menos."
-  },
-  {
    "tipo": "cierre",
    "visual": "cierre",
    "texto": "Antes de chapar la cuerda, mira la puerta."
@@ -67,17 +57,8 @@
   2,
   7,
   4,
-  4,
-  2,
-  8,
-  10,
-  5,
-  2,
-  5,
-  4,
-  9,
-  5,
-  4,
+  1,
+  3,
   5,
   3
  ],

@@ -49,7 +49,7 @@ export const Bien: React.FC<P> = ({ d, pal }) => {
         <CuerdaM d={`M${ab.x - 6} ${ab.y + 46} Q${ab.x + 150} ${ab.y - 40} 1150 ${ab.y - 520}`} />
         <Flecha x1={640} y1={760} x2={930} y2={520} k={kH} />
       </g></Svg>
-      <Rot x={800} y={430} texto="ESCALABAS" k={kH} tam={66} />
+      <Rot x={800} y={430} texto="ESCALAS" k={kH} tam={66} />
       <Rot x={770} y={1180} texto="PUERTAS →" color="#FF8E7E" k={kP} tam={78} />
     </AbsoluteFill>
   );

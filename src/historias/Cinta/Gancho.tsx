@@ -24,7 +24,7 @@ export const PlanoGancho: React.FC<{ f: number; pregunta?: boolean }> = ({ f, pr
   const pts = suelta ? porChapas(VIA, ap, TOP, p, { comba: 20, floja: c.j >= 0 ? 0 : 30 }) : [...porChapas(VIA, ap, TOP, p).slice(0, -1), { x: B6.x + 20 * e.tens, y: B6.y - 26 * e.tens }, { ...nudo(p), sag: (1 - e.tens) * 40 }];
   // la cinta suelta baja por la cuerda hacia él
   const t = suelta ? Math.min(1, pop / 14) : 0, n = nudo(p), cs = { x: lerp(B6.x, n.x - 30, t), y: lerp(B6.y - 54, n.y - 150, t) };
-  const lupa = interpolate(f, [F0 + K1 + 2, F0 + K1 + 9, e.fPop + 10, e.fPop + 16], [0, 1, 1, 0], clamp), g = suave((f - (F0 + K1 + 6)) / (e.fPop - (F0 + K1 + 6)));
+  const lupa = interpolate(f, [e.fPop + 10, e.fPop + 16], [1, 0], clamp), g = suave((f - (F0 + K1 + 6)) / (e.fPop - (F0 + K1 + 6)));
   const cinta = { x: -70, y: -235, s: 0.6, puerta: "der" as const, giro: -62 * Math.min(1, g * 1.5), corre: suave((g - 0.45) / 0.3), abreArriba: suave((g - 0.62) / 0.3), suelta: suelta ? { dx: pop * 14, dy: pop * pop * 2.2, rot: pop * 7 } : undefined };
   const ab = abajoDe(cinta);
   return (
