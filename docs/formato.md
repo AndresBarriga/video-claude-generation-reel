@@ -65,7 +65,8 @@ Cada vídeo se cuenta con estos bloques.
 - Las portadas llevan el título grande.
 - Pocos vídeos y todos con el mismo formato.
 
-## 2. Qué adoptamos: TODO (manteniendo personajes y humor)
+## 2. Qué adoptamos (manteniendo personajes y humor)
+> **Matiz de Andrés (19-nov, 17:13):** no es estricto ni para todos los vídeos. Seguimos con distintos tipos de idea; se adopta sobre todo lo visual y el gancho. Los 9 bloques son una guía; rayos X, analogía, estudio y lista con progreso solo cuando encajan (elegir la que más encaje). Se mide y se ajusta (H16). Donde abajo diga «obligatorio», léase «por defecto».
 Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **formato**.
 
 **A. Plantilla obligatoria para vídeos de información** (45–60 s). Los bloques 1–9 de arriba, con la pregunta o paradoja en la primera frase. Los personajes salen en el bloque 1 como contexto (la acción en primer plano) y en los chistes; el resto es «por dentro» y gráficos.
