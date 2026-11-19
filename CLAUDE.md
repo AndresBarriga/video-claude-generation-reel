@@ -3,7 +3,7 @@
 Cuenta anónima de reels animados en español de España (Instagram + TikTok), probando escalada y mascotas. Este repo es la memoria compartida de todos los chats del proyecto: lo que no está aquí no existe.
 
 ## Al empezar un chat
-1. Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote), `docs/estrategia.md` (lo vigente), `docs/aprendizajes.md` (hipótesis con datos) y **`docs/viralidad.md` (obligatorio para cualquier guion)**. Historial de decisiones en `docs/decisiones.md`; docs antiguos en `archivo/` (no hace falta leerlos).
+1. **Mapa de todo: `docs/mapa.md`.** Lee `docs/proceso.md` (qué chat hace qué y el ciclo por lote), `docs/estrategia.md` (lo vigente), `docs/aprendizajes.md` (hipótesis con datos) y **`docs/viralidad.md` (obligatorio para cualquier guion)**. Historial de decisiones en `docs/decisiones.md`; docs antiguos en `archivo/` (no hace falta leerlos).
 2. Si vas a producir: lee `docs/guia-visual.md` (estándar obligatorio), `docs/no-me-gusta.md` y la lista de ideas de tu nicho en `docs/ideas/`.
 3. `npm install` si no hay `node_modules`. Chromium para renderizar: si existe `/opt/pw-browsers`, exporta `BROWSER_EXE=$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome | head -1)`.
 
