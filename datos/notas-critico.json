@@ -175,10 +175,10 @@
   "hist": "19-nov 6,5 (7,5)"
  },
  "E64": {
-  "nota": 7,
-  "orig": 6,
-  "fase": "propuesta v2 (cambios del crítico aplicados)",
-  "hist": "19-nov 6 → 7"
+  "nota": 7.5,
+  "orig": 6.5,
+  "fase": "propuesta v3 formato referencias (cambios aplicados)",
+  "hist": "19-nov v2 6 → 7 · 19-nov v3 6,5 → 7,5"
  },
  "E63": {
   "nota": 7.5,
