@@ -151,3 +151,8 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 4. **Cuenta:** bio con promesa, portadas con título, plantilla de descripción (1.ª línea = gancho personal).
 5. **Primer vídeo:** pies de gato, con otro ángulo distinto del de pin_v1ew.
 6. **Monetización:** checklist gratis + DM automático cuando el formato funcione (umbral: 3 vídeos ≥ 20K).
+
+## 6. Cómo se monta (herramientas)
+- `guion.json`: `"formato": "fijo"`; cada escena con `"bloque"` (gancho · reencuadre · dentro · analogia · cifras · porEso · giro · pasos · cta), `"claves"` (palabras en recuadro) y `"cifras"` (lista de las cifras que salen en pantalla). `npm run qa` comprueba los obligatorios.
+- Subtítulos: `<Subtitulos estilo="arriba" claves={…} />`.
+- Kit info (`src/piezas/kit/Info.tsx`, `InfoCta.tsx`): `FondoInfo`, `Cifra`, `Personitas`, `Barra`, `Manometro`, `Nota`, `Pasos`, `Tarjeta`, `Cronos`, `RayosX`, `Guardar`, `HojaEnviar`. Muestrario: `npm run fotograma -- _info <s>` (plantilla `InfoDemo`, una pieza cada 2 s).

@@ -99,6 +99,17 @@ if (fs.existsSync(sonPath)) {
   }
 }
 
+// Formato fijo (docs/formato.md): guion con "formato": "fijo" y cada escena con "bloque".
+if (g.formato === "fijo") {
+  const esc = (d?.escenas ?? g.escenas), bl = (b) => esc.find((e) => e.bloque === b);
+  for (const b of ["gancho", "reencuadre", "cifras", "giro", "cta"]) if (!bl(b)) F(`formato fijo: falta el bloque «${b}».`);
+  const re = bl("reencuadre"); if (re && re.inicio !== undefined && re.inicio > 6) F(`formato fijo: el reencuadre empieza en ${re.inicio.toFixed(1)} s (debe ser antes de 6 s).`);
+  if (!bl("dentro") && !bl("analogia")) A("formato fijo: no hay bloque «dentro» ni «analogia»: ¿se ve el mecanismo?");
+  if (esc.filter((e) => e.cifras?.length).reduce((n, e) => n + e.cifras.length, 0) < 2) F("formato fijo: menos de 2 cifras declaradas (campo «cifras» en las escenas).");
+  if (!esc.some((e) => e.claves?.length)) A("formato fijo: ninguna palabra clave en recuadro (campo «claves»).");
+  const dur = d?.duracion; if (dur && (dur < 45 || dur > 62)) A(`formato fijo: dura ${dur.toFixed(1)} s (objetivo 45–60 s).`);
+}
+
 console.log(`QA ${id}: ${nPal} palabras`);
 fallos.forEach((m) => console.log("  ✗ FALLO:", m));
 avisos.forEach((m) => console.log("  ! aviso:", m));

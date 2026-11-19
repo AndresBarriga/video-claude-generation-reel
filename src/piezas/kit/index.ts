@@ -10,3 +10,5 @@ export * from "./Decorado";
 export * from "./Primeros";
 export * from "./acciones";
 export * from "./Montaje";
+export * from "./Info";
+export * from "./InfoCta";

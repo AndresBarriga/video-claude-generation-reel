@@ -17,6 +17,8 @@ export type Escena = {
   icono?: string;
   /** Escena visual a medida (plantillas de historia) */
   visual?: string;
+  /** Formato fijo: palabras que van en recuadro en los subtítulos «arriba» */
+  claves?: string[];
   /** Silencio (s) después de la escena */
   pausa?: number;
   /** Rellenado por tools/voz.mjs */
