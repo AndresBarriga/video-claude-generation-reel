@@ -20,3 +20,12 @@ Fuentes: Fryer et al. 2015 · Baláš et al. 2016 · Pijpers et al. 2003.
 #escalada #escaladadeportiva #pump #antebrazos #rocódromo
 
 **Comentario fijado:** ¿Cuál de las tres no haces? 1, 2 o 3 👇
+
+## Respaldo de cada dato (para contestar comentarios)
+| En el vídeo | Fuente | Qué midieron exactamente | Límite honesto |
+|---|---|---|---|
+| «La élite recuperaba la mitad del oxígeno perdido en 8 s; nivel intermedio, 47» | Fryer y otros, *J Strength Cond Res* 29(6):1633-1639, 2015 | 44 hombres (control, intermedios, avanzados, élite) colgados de una regleta al 40 % de su fuerza máxima hasta no poder; con NIRS midieron el oxígeno del músculo flexor de los dedos y cuánto tardaba en recuperar la mitad de lo perdido al soltar: élite 8 s, intermedios 47 s, no escaladores 95 s | Es oxígeno en el músculo en laboratorio, no «quitarse el pump» en una vía; estudio transversal (no prueba que entrenar lo cambie); solo hombres |
+| «Brazo abajo y sacude: aguantaron un 22 % más que dejando la mano en la presa» | Baláš y otros, *Eur J Sport Sci* 16(7), 2016 | 22 escaladores; agarres de 8 s al 60 % con 2 s de descanso hasta fallar; en esos 2 s, mano al lado del cuerpo sacudiendo frente a mano relajada sobre la presa: +22 % de tiempo, +32 % de reoxigenación | Dinamómetro en laboratorio, sentados y con descansos de 2 s; no es una vía real |
+| «Con miedo agarras cada presa más tiempo y te mueves más lento: la misma travesía, más alta» | Pijpers y otros, *Q J Exp Psychol A* 58(3), 2005 (exp. 2, 17 novatos) | Misma travesía a 0,3 m y a 3,7 m: arriba, más tiempo total, más movimientos de tanteo, agarres más largos y movimientos más lentos | Novatos; no midieron el pump directamente |
+| «Recuperar la mitad lleva casi un minuto» | Extrapolado de los 47 s de Fryer | — | **Dato más débil:** es el grupo intermedio en ese test; «casi un minuto» redondea al alza |
+| Mecanismo (el músculo aprieta sus vasos, entra menos sangre, se acumula lo que quema) | Fisiología general del ejercicio isométrico | — | Simplificado; «lo que quema» = metabolitos, no «toxinas» |

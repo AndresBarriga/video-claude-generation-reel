@@ -167,3 +167,4 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 - **Repaso + CTA pierden la mitad de lo que queda.** Repaso ≤ 3 s o sustituido por un último dato/giro; CTA corto.
 - **Comentarios 0 %:** meter una pregunta en la voz o en pantalla («¿cuál de los tres te han corregido?»), no solo en el comentario fijado.
 - **Skip 29 % (E59 26 %):** el skip mide los primeros segundos; puede deberse a que llega a gente que no escala (Reels 80 %, Explorar 11 %, igual que E59). La pérdida de 3–9 s es otra cosa (después del skip) y sí depende de nosotros.
+- **Cada cifra con respaldo en la ficha** (20-nov, tras comentarios «pésima información» en E63): tabla «Respaldo» con fuente, qué midieron exactamente (n, protocolo) y el límite honesto. Si un dato es una extrapolación nuestra, no va en voz.
