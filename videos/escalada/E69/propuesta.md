@@ -37,12 +37,12 @@ Elijo la 1: paradoja que todos han sentido, sobre su cuerpo, con la mano abrién
 | 3 | dentro 4,5–12 | Corte: el músculo se hincha y estrecha la arteria; la sangre entra a gotas; los residuos se amontonan (brillo rojo). Barras AGARRE ↑ · SANGRE ↓. | Al apretar, el músculo se hincha y aprieta sus propios vasos. Entra menos sangre, no sale lo que quema… y la mano se abre. |
 | 4 | rehook/cifras 12–19 | Dos cronómetros: ÉLITE se para en 8 s; INTERMEDIO sigue… 47 s. | ¿Y por qué otros aguantan más? En un estudio, la élite recuperaba la mitad del oxígeno perdido en ocho segundos. Nivel intermedio: cuarenta y siete. |
 | 5 | lista 19–21 | Aparecen 🔒1 🔒2 🔒3 sobre el antebrazo. | Eso va con los años. Pero hoy puedes hacer tres cosas. |
-| 6 | paso 1 21–27 | Split de E43 (mismo paso): codo doblado → barra PUMP sube rápido ✗; brazo estirado ✓. Candado 1. | Uno: brazos estirados. Con el codo doblado trabaja el músculo; estirado, cuelgas del hueso. |
-| 7 | paso 2 + giro 27–35 | Reposo: mano relajada sobre la presa ✗ vs brazo abajo sacudiendo ✓; cifra +22 %. Candado 2. | Dos: no basta con sacudir. Suelta la presa y sacude con el brazo abajo. En un estudio, así aguantaron un veintidós por ciento más que dejando la mano en la presa. |
-| 8 | paso 3 35–43 | Escalador lejos de la chapa, mirada abajo; rótulo TENSIÓN sube (sin dato de agarre); respira, baja. Candado 3. | Tres: afloja, y esta está en la cabeza. Con miedo el cuerpo se tensa: la misma ruta, más alta, cansaba más y subía el lactato. Respira… y agarra lo justo. |
+| 6 | paso 1 21–28 | Analogía: alguien con bolsas de la compra, brazos doblados (tiembla, barra PUMP sube) ✗ → brazos estirados ✓; corte a Split de E43 (mismo paso en la pared). Candado 1. | Uno: brazos estirados. Como con las bolsas de la compra: dobladas, no llegas al coche; estiradas, las llevas sin pensar. |
+| 7 | paso 2 28–37 | Reposo: mano relajada sobre la presa ✗ vs brazo abajo sacudiendo ✓; cifra +22 %; vuelve el cronómetro INTERMEDIO 47 s. Candado 2. | Dos: en el reposo, brazo abajo y sacude. Así aguantaron un veintidós por ciento más que dejando la mano en la presa. Y sin prisa: recuperar la mitad lleva casi un minuto. |
+| 8 | paso 3 37–44 | Misma travesía abajo y arriba (pantalla partida): arriba la mano se queda más tiempo en cada presa (cronómetro por presa) y se mueve más lento. Respira, suelta. Candado 3. | Tres: escala suave. Con miedo, agarras cada presa más tiempo y te mueves más lento: en un estudio, la misma travesía, más alta. Respira, agarra lo justo y sigue. |
 | 9 | cta 43–49 | Vuelve el primer plano del inicio, la mano aguanta. Guardar + hoja de enviar. | Guárdalo y mándaselo a ese que siempre llega reventado a la cadena. ¿Cuál de las tres no haces? |
 
-Claves: MANO, FLOJO, AHOGANDO, VASOS, OCHO, CUARENTA Y SIETE, ESTIRADOS, ABAJO, CABEZA, CADENA.
+Claves: MANO, FLOJO, AHOGANDO, VASOS, OCHO, CUARENTA Y SIETE, ESTIRADOS, BOLSAS, ABAJO, PRISA, SUAVE, CADENA.
 Cifras: 8 s vs 47 s (comparada) · +22 %.
 
 ## Las 4 preguntas
@@ -59,3 +59,9 @@ Brazo (bomba/abre/calor/corte), Corte (vasos y flujo), Split (codos), Evita (sac
 
 ## Crítico (20-nov, sonnet)
 7/10 (envío 7). Aplicado: paso 2 fiel a Baláš (sacudir abajo frente a mano relajada en la presa, no «sacudir en la presa»); paso 3 sin «aprietas de más» ni dato de agarre (rótulo TENSIÓN; «cansaba más y subía el lactato»); «nivel intermedio»; «la mitad del oxígeno perdido»; «eso va con los años» en vez de «se entrena»; giro en el paso 2 («no basta con sacudir»); gancho «No estás flojo»; CTA con la pregunta al final; menos elementos en la escena 7. No aplicado: tercera barra de 95 s (sobra en 7 s).
+
+## Cambios de Andrés (20-nov, 12:22) — v1.2
+- Paso 1 con la analogía de las **bolsas de la compra** (propia; no es la manguera de la referencia). Herramienta: analogía además de la vista por dentro.
+- Paso 2: «no basta con sacudir… suelta y sacude» se contradecía. Ahora: brazo abajo y sacude (Baláš) + **sin prisa**, enlazado con el dato de 47 s (recuperar la mitad lleva casi un minuto).
+- Paso 3: **escala suave**. Dato: Pijpers 2003, exp. 2 (17 novatos, misma travesía alta frente a baja): más tiempo agarrando cada presa, movimientos más lentos y más exploratorios. Ya no se cita el lactato.
+- **Pies** (no perder pies, pies primero, baby steps, mirar abajo en roca): fuera de este vídeo (sería un 4.º punto y otro público: técnica) → idea E71 propia.
