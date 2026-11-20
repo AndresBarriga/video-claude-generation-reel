@@ -37,10 +37,10 @@ export const Rx: React.FC<{ pump?: number; aprieta?: number; flujo?: number; res
           {/* huesos: radio y cúbito */}
           <path d={`M${X - 70} ${Y0} Q${X - 20} 1100 ${X - 52} ${Y1}`} stroke="#DCE8F5" strokeWidth={34} strokeLinecap="round" fill="none" opacity={0.22} />
           <path d={`M${X + 74} ${Y0} Q${X + 40} 1100 ${X + 50} ${Y1}`} stroke="#DCE8F5" strokeWidth={28} strokeLinecap="round" fill="none" opacity={0.22} />
-          {/* fascículos musculares */}
-          {[-95, -30, 35, 95].map((o, i) => (
-            <ellipse key={i} cx={X + o * (1 + 0.25 * b)} cy={1180 - i * 30} rx={44 + 20 * b} ry={420 - i * 20} fill={mus} opacity={0.42 + 0.25 * pump} stroke={glow} strokeWidth={4} />
-          ))}
+          {/* vientre muscular: uno solo, con fibras; se hincha y cambia de color */}
+          <ellipse cx={X + 6} cy={1130} rx={120 + 55 * b} ry={400} fill={mus} opacity={0.5 + 0.25 * pump} filter="url(#rxBrillo)" />
+          <ellipse cx={X + 6} cy={1130} rx={110 + 50 * b} ry={380} fill={mus} opacity={0.55 + 0.2 * pump} stroke={glow} strokeWidth={5} />
+          {[-0.7, -0.35, 0, 0.35, 0.7].map((t, i) => <path key={i} d={`M${X + 6 + t * 40} 770 Q${X + 6 + t * (110 + 50 * b)} 1130 ${X + 6 + t * 40} 1490`} stroke={glow} strokeWidth={3} opacity={0.5} fill="none" />)}
           {/* vena */}
           <path d={`M${X + 60} ${Y0} Q${X + 20} 1080 ${X + 44} ${Y1}`} stroke="#5B8DEF" strokeWidth={18} fill="none" opacity={0.8} />
           {/* arteria con su estrechamiento */}
