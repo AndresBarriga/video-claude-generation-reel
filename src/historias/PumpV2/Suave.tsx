@@ -42,8 +42,8 @@ export const Suave: React.FC<P> = ({ d, pal }) => {
         <Chip x={270} y={620} t="ABAJO" col="#fff" o={sp} />
         <Chip x={810} y={620} t="ARRIBA · CON MIEDO" col="#FF8E7E" o={sp * (1 - calma)} />
         <Chip x={810} y={620} t="✓ RESPIRA, LO JUSTO" col="#8FE0AE" o={sp * calma} />
-        <Chip x={270} y={1490} t="PIES A 30 CM" col="#fff" o={sp} />
-        <Chip x={810} y={1490} t="PIES A 3,7 M" col="#FF8E7E" o={sp} />
+        <Chip x={270} y={1490} t="CERCA DEL SUELO" col="#fff" o={sp} />
+        <Chip x={810} y={1490} t="MISMA TRAVESÍA, ARRIBA" col="#FF8E7E" o={sp} />
         <Tiempo x={270} v={0.35 * barras} col="#3FB56B" o={sp} />
         <Tiempo x={810} v={(0.35 + 0.5 * barras) * (1 - 0.5 * calma)} col={calma > 0.5 ? "#3FB56B" : "#E5484D"} o={sp} />
       </Svg>
