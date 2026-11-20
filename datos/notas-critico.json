@@ -185,5 +185,11 @@
   "orig": 7,
   "fase": "propuesta v5 formato fijo",
   "hist": "19-nov v2 6,5→7,5 · v5 7→7,5"
+ },
+ "E69": {
+  "nota": 7,
+  "orig": 7,
+  "fase": "propuesta v1.1 (cambios aplicados)",
+  "hist": "20-nov v1 7"
  }
 }

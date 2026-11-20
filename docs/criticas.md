@@ -27,3 +27,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-19 | E63 v5 «180 € para sufrir» | propuesta | 7 | dolor «al escalar», consejo «no confía» como opinión, sintéticos «bastante menos», recorte a ~50 s — aplicado (55/56 «demasiado apretados» se mantiene: lo midieron) |
 | 2026-11-19 | E64 v3 «La cuerda se sale» (formato referencias) | propuesta | 6,5 (7,5 con cambios) | escena de la cinta que gira abría un tercer fallo y contradecía el reencuadre; «puertas» en plural; «hacia ti» ambiguo; reencuadre pasaba de 6 s — aplicado |
 | 2026-11-19 | E64 v4 «Cómo chapar: 3 cosas» | propuesta | 7 | punto 1 sin nombre ni tramo; repaso en otro orden; sin rehook en el punto 3; causa del gancho no visible — aplicado |
+| 2026-11-20 | E69 pump (formato referencias) | propuesta v1 | 7 | pasos 2 y 3 decían más que sus estudios; «escalador medio»; densidad en 4, 7 y 9 — aplicado |
