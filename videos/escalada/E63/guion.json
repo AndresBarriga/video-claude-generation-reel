@@ -14,13 +14,13 @@
    "tipo": "gancho",
    "visual": "gancho",
    "bloque": "gancho",
-   "texto": "Te gastas ciento ochenta euros en unos zapatos que sabes que te van a doler.",
+   "texto": "Te gastas ciento cincuenta euros en unos zapatos que sabes que te van a doler.",
    "claves": [
     "euros",
     "doler"
    ],
    "cifras": [
-    "180 €"
+    "150 €"
    ]
   },
   {

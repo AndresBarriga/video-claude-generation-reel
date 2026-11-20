@@ -88,7 +88,7 @@ export const Gato: React.FC<{ L: number; g: number; children?: React.ReactNode; 
       {precio !== null && <g transform={`translate(0.9 -11.7) rotate(${precio + 10})`}>
         <path d="M0 0 L0.3 3.2" stroke="#E9E2D0" strokeWidth={0.14} />
         <g transform="translate(0.3 3.2)"><rect x={-3.3} y={0} width={6.6} height={4} rx={0.5} fill="#F3ECDA" stroke={T} strokeWidth={0.3} /><circle cx={0} cy={0.6} r={0.3} fill={T} />
-          <text x={0} y={3.2} textAnchor="middle" fontFamily="Bricolage Grotesque" fontWeight={800} fontSize={2.3} fill={T}>180 €</text></g>
+          <text x={0} y={3.2} textAnchor="middle" fontFamily="Bricolage Grotesque" fontWeight={800} fontSize={2.3} fill={T}>150 €</text></g>
       </g>}
     </g>
   );

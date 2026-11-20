@@ -1,4 +1,4 @@
-// E63 v5 — bloques 1-4: gancho (tienda, 180 €), reencuadre (MASOQUISMO tachado → 0 mm de aire), por dentro (con aire / una sola pieza), analogía (chanclas en el bordillo).
+// E63 v5 — bloques 1-4: gancho (tienda, 150 €), reencuadre (MASOQUISMO tachado → 0 mm de aire), por dentro (con aire / una sola pieza), analogía (chanclas en el bordillo).
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { FondoInfo, Cifra, Barra, Nota, Sello, INFO } from "../../piezas/kit";
@@ -12,7 +12,17 @@ const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const GJ = garraPara(26);
 const remap = (pal: P["pal"], m: Record<string, string>) => (w: string) => pal(m[w] ?? w);
 
-export const Gancho: React.FC<P> = (p) => <Compra {...p} e={{ ...p.e, v2: true } as P["e"]} pal={remap(p.pal, { daño: "doler" })} />;
+export const Gancho: React.FC<P> = (p) => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill>
+      <Compra {...p} e={{ ...p.e, v2: true } as P["e"]} pal={remap(p.pal, { daño: "doler" })} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 770, textAlign: "center", opacity: interpolate(f, [62, 70], [0, 1], cl) }}>
+        <span style={{ fontFamily: "Figtree", fontWeight: 800, fontSize: 40, color: "#fff", background: "rgba(5,11,20,.8)", borderRadius: 24, padding: "8px 22px" }}>(o 60 en rebajas 😅)</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
 
 export const Reencuadre: React.FC<P> = ({ pal }) => {
   const f = useCurrentFrame(), fM = pal("masoquismo") ?? 2, fA = (pal("milímetro") ?? 80) + 20, fP = pal("parezca") ?? 40;

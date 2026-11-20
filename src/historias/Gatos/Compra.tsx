@@ -61,7 +61,7 @@ export const Compra: React.FC<P> = ({ e, pal }) => {
   return (
     <AbsoluteFill>
       <Macro f={f} golpes={golpes} fDolor={fDolor} />
-      <Rotulo texto="180 €" desde={14} top={v2 ? 430 : 236} tam={170} sub={<>TU PIE <b style={{ color: "#fff" }}>43</b> · EL GATO <b style={{ color: talla === 40 ? "#FF6A1F" : "#fff" }}>{talla}</b></>} />
+      <Rotulo texto={v2 ? "150 €" : "180 €"} desde={14} top={v2 ? 430 : 236} tam={170} sub={<>TU PIE <b style={{ color: "#fff" }}>43</b> · EL GATO <b style={{ color: talla === 40 ? "#FF6A1F" : "#fff" }}>{talla}</b></>} />
     </AbsoluteFill>
   );
 };
