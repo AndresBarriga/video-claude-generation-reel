@@ -14,6 +14,7 @@
 - Reparto orientativo ~60 % explotar (decisión límite / historia universal) ~40 % explorar (humor, cuerpo, micro, series). Pruebas de formato pueden ir como reels de prueba.
 
 ## Contenido
+- **(20-nov) Línea que funciona:** seguridad con cuerda + valor estructurado («haz estas tres cosas») con el formato de las referencias (E64: 42,8K a 14 h, guardados récord). Reglas aprendidas en `docs/formato.md` §7.
 - Prioridad absoluta a viralidad. Límites que se mantienen: no inventar hechos sobre personas reales y nada de gore explícito.
 - Ideas desde `docs/ideas/escalada.md`. Cada vídeo: propuesta → crítico → OK de Andrés → producción.
 - Rigor: comprobación rápida en historias; fuente solo para cifras en pantalla; estricto en salud/seguridad.

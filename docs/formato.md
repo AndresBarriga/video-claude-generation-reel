@@ -157,3 +157,13 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 - `guion.json`: `"formato": "fijo"`; cada escena con `"bloque"` (gancho · reencuadre · dentro · analogia · cifras · porEso · giro · pasos · cta), `"claves"` (palabras en recuadro) y `"cifras"` (lista de las cifras que salen en pantalla). `npm run qa` comprueba los obligatorios.
 - Subtítulos: `<Subtitulos estilo="arriba" claves={…} />`.
 - Kit info (`src/piezas/kit/Info.tsx`, `InfoCta.tsx`): `FondoInfo`, `Cifra`, `Personitas`, `Barra`, `Manometro`, `Nota`, `Pasos`, `Tarjeta`, `Cronos`, `RayosX`, `Guardar`, `HojaEnviar`. Muestrario: `npm run fotograma -- _info <s>` (plantilla `InfoDemo`, una pieza cada 2 s).
+
+## 7. Lo aprendido con datos propios (aplicar en cada vídeo con este formato)
+**E64 «Cómo chapar: 3 errores» (20-nov, 14 h): 42,8K, 185 seg., 631 guardados (récord).**
+- **Valor estructurado = guardados.** Una lista útil y ordenada («haz estas tres cosas»), con un problema que el escalador reconoce, es lo que más se guarda de toda la cuenta. Priorizar temas que se puedan cerrar con 2–3 pasos concretos.
+- **El gancho con el objeto en primer plano y en movimiento aguanta** (≈75 % a 3 s, igual que E59). No hace falta persona en el fotograma 0 si la causa se ve.
+- **No cortar a fondo oscuro entre los 3 y los 9 s.** El paso del plano al fondo de «clase» (promesa + tarjeta ✗/✓) perdió un cuarto de la audiencia. El reencuadre va **sobre el mismo plano** (rótulo ✗/✓ encima de la acción) o dura ≤ 1,5 s; el fondo oscuro, más tarde y breve.
+- **El cuerpo retiene si cada paso tiene su fallo visible** (meseta casi plana 46 → 34 % en los tres errores): mantener «paso → se ve fallar → se ve bien».
+- **Repaso + CTA pierden la mitad de lo que queda.** Repaso ≤ 3 s o sustituido por un último dato/giro; CTA corto.
+- **Comentarios 0 %:** meter una pregunta en la voz o en pantalla («¿cuál de los tres te han corregido?»), no solo en el comentario fijado.
+- **Skip 29 % (E59 26 %):** el skip mide los primeros segundos; puede deberse a que llega a gente que no escala (Reels 80 %, Explorar 11 %, igual que E59). La pérdida de 3–9 s es otra cosa (después del skip) y sí depende de nosotros.
