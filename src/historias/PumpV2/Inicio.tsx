@@ -130,9 +130,9 @@ export const GanchoB: React.FC<P> = ({ d, pal }) => {
   const cuelga = ei(f, fCae + 12, fCae + 24, 0, 1), sac = k >= -2 && k < 10 ? Math.sin((k + 2) * 3) * 12 * (1 - (k + 2) / 12) : 0;
   const tiembla = f < fCae ? Math.sin(f * 2.2) * 5 * ei(f, 0, fCae, 0.4, 1) : 0;
   // plano cerrado sobre brazos y torso antes de soltarse; se abre al caer para que se lea la caída
-  const z = interpolate(f, [0, fCae, fCae + 20], [1.95, 2.05, 1.3], clamp), oy = interpolate(f, [0, fCae, fCae + 20], [700, 700, 980], clamp);
+  const z = interpolate(f, [0, fCae, fCae + 20], [1.6, 1.7, 1.3], clamp), oy = interpolate(f, [0, fCae, fCae + 20], [700, 700, 980], clamp);
   const MA = agarre(600), MB = agarre(668, -8), g = geomPerfil({ hip: q0.hip, torso: q0.torso, s: S0, manoA: MA, manoB: MB });
-  const late = 0.6 + 0.4 * Math.sin(f * 0.55) ** 2, bajar = interpolate(f, [0, fCae, fCae + 20], [420, 420, 0], clamp); // antebrazos por debajo del rótulo
+  const late = 0.6 + 0.4 * Math.sin(f * 0.55) ** 2, bajar = interpolate(f, [0, fCae, fCae + 20], [330, 330, 0], clamp); // antebrazos por debajo del rótulo
   return (
     <AbsoluteFill style={{ background: SALA_CLARA }}>
       <Svg>

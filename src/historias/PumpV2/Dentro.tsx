@@ -7,16 +7,16 @@ import { Chip, Svg, ei, type P } from "./comun";
 import { Rx } from "./Rx";
 import { Vaso, Pajita } from "./Vaso";
 
-export const Dentro: React.FC<P> = ({ d, pal }) => {
+export const Dentro: React.FC<P & { claro?: boolean }> = ({ d, pal, claro }) => {
   const f = useCurrentFrame();
   const fH = pal("hincha") ?? 40, fV = pal("vasos") ?? 90, fPj = pal("pajita") ?? 110, fB = pal("bebes") ?? 125, fS = pal("sangre") ?? 120, fQ = pal("quema") ?? 170, fA = pal("abre") ?? 205;
-  const entra = ei(f, fH - 10, fH + 10, 0, 1), sale = ei(f, fA - 8, fA + 4, 0, 1);
+  const entra = claro ? ei(f, 0, 14, 0, 1) : ei(f, fH - 10, fH + 10, 0, 1), sale = ei(f, fA - 8, fA + 4, 0, 1);
   const zoomRx = 1.1 + 2.4 * entra, dentro = entra * (1 - sale);
   const pinch = ei(f, fH, fV + 6, 0, 1), atasco = ei(f, fS - 6, fQ, 0, 1);
   const o = (a: number, b: number) => ei(f, a, a + 6, 0, 1) * (1 - ei(f, b, b + 6, 0, 1));
   return (
     <AbsoluteFill>
-      <FondoInfo />
+      {claro ? <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#F6F3EE, #DCE5EC)" }} /> : <FondoInfo />}
       <div style={{ position: "absolute", inset: 0, opacity: 1 - dentro }}><Rx pump={0.5 + 0.5 * pinch} aprieta={pinch} flujo={1 - 0.8 * atasco} residuos={atasco} z={sale > 0 ? 1.1 : zoomRx} tiembla={sale} /></div>
       <div style={{ position: "absolute", inset: 0, opacity: dentro, transform: `scale(${0.6 + 0.4 * entra + 0.05 * ei(f, fH, fA, 0, 1)})` }}>
         <Vaso pinch={Math.max(pinch, atasco)} flujo={1 - 0.85 * atasco} residuos={ei(f, fQ - 8, fA, 0, 1)} />
@@ -32,3 +32,6 @@ export const Dentro: React.FC<P> = ({ d, pal }) => {
     </AbsoluteFill>
   );
 };
+
+/** E69B: fondo claro y entrada directa en la arteria (sin el tramo del brazo sobre oscuro). */
+export const DentroB: React.FC<P> = (p) => <Dentro {...p} claro />;
