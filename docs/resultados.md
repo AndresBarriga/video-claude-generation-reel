@@ -61,3 +61,8 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 - 42,8K vistas, **185 seg. (4,3/1k)**, ≈500 envíos (1,4 %), **631 guard. (14,7/1k, récord: E43 8/1k, E59 6/1k)**, 1,4K likes (4,2 %), 8 comentarios (0,0 %), visto 23/51 s, skip 29,4 %. Reels 80 %, Explorar 11 %. ≈4× el reel típico a 14 h; por debajo de E59 a la misma edad (≈63K a 10 h).
 - **Curva:** ≈75 % a 3 s (como E59) → **≈48 % a 9 s**: se pierde un cuarto en la promesa (plano general) y la tarjeta de reencuadre sobre fondo oscuro (5–8,5 s). Después, **meseta casi plana** 46 → 34 % durante los tres errores (9–42 s). Caída final en el repaso/CTA (44–51 s) a ≈12 %.
 - Lectura: el formato sube mucho el guardado y retiene en el cuerpo; lo que falla es el tramo 3–9 s (el paso a «clase» sobre fondo oscuro) y el comentario (sin pregunta en la voz).
+
+## E63 180 € para sufrir (pies de gato) · 20-nov 22:07 (~8,5 h)
+- 75,9K vistas en ~8,5 h (**mejor arranque de la cuenta**, ≈7× el típico; E59 63,5K a 10 h), **skip 16,9 % (récord)**, visto 29/55 s, like 4,0 %, ≈720 envíos (1,2 %), 312 guard. (0,5 %), 9 comentarios, **68 seg. (1,1/1k: E59 5,3, E64 4,3)**.
+- **Curva:** ≈90 % a 2 s, ≈75 % a 7 s, ≈70 % a 10 s, bajada suave a ≈50 % a 29 s, meseta lenta ≈47→38 % de 36 a 52 s, caída final a ≈12 %. Sin agujeros: gancho de precio + dolor engancha y la explicación retiene.
+- Lectura: **alcance sin cuenta.** La identidad («te gastas 150 € en algo que te duele») frena el dedo y retiene, pero no convierte: guardado y seguidores muy por debajo de E59/E64 pese al CTA «guárdalo». Contra H8 (identidad → seguir). Hipótesis: el material es un tema de curiosidad general, no de seguridad; no promete «más como esto». Medir a 24 h.

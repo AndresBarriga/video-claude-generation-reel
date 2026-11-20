@@ -1,7 +1,8 @@
 # E63 · Pies de gato «180 € para sufrir» — ficha
 
 > Hecho por el amigo de Andrés (llegó como E58 por parche; renumerado al integrarlo el 19-nov porque esos IDs ya estaban usados).
-- **Estado:** producido con voz (36,6 s, Danny; sincronía por pausas con `frases` + `tools/ajustar-tiempos.py`, sin Whisper). Pendiente de revisión de Andrés y de subir.
+- **Resultado (20-nov 22:07, ~8,5 h):** 75,9K vistas, skip 16,9 % (récord), visto 29/55 s, like 4,0 %, envíos 1,2 %, guard. 0,5 %, 68 seg. (1,1/1k). Alcance récord, conversión baja. Detalle en `docs/resultados.md`.
+- **Estado:** publicado. Antes: producido con voz (36,6 s, Danny; sincronía por pausas con `frases` + `tools/ajustar-tiempos.py`, sin Whisper). Pendiente de revisión de Andrés y de subir.
 - **Formato:** identidad + cuerpo por dentro (un «por qué» para dos públicos). Público: quien escala; se lo manda al de los gatos pequeños o a quien le pregunta por qué le duelen.
 - **Mensaje:** pagas 180 € por unos zapatos que sabes que te van a doler. Tienen que ir sin hueco (cantos minúsculos), pero ajustado no es machacado: si duelen tanto que no pisas, escalas peor; para vías largas, cómodos.
 - **Hipótesis que prueba:** H8 (identidad → seguir) y una nueva: curiosidad de identidad pensada para enviarse (lo contrario de H2). Riesgo: H13 (info limpia 2–5k) si se lee como explicador de material.
