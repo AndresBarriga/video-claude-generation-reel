@@ -37,9 +37,10 @@
    "tipo": "texto",
    "visual": "dentro",
    "bloque": "dentro",
-   "texto": "Al apretar, el músculo se hincha y aprieta sus propios vasos. Entra menos sangre, no sale lo que quema… y la mano se abre.",
+   "texto": "Al apretar, el músculo se hincha y aprieta sus propios vasos: como pisar una pajita mientras bebes. Entra menos sangre, no sale lo que quema… y la mano se abre.",
    "claves": [
     "vasos",
+    "pajita",
     "quema"
    ],
    "cifras": []
@@ -62,7 +63,7 @@
    "tipo": "texto",
    "visual": "lista",
    "bloque": "pasos",
-   "texto": "Eso va con los años. Pero hoy puedes hacer tres cosas.",
+   "texto": "Pero hoy puedes hacer tres cosas.",
    "claves": [
     "tres"
    ],
@@ -116,47 +117,5 @@
    ],
    "cifras": []
   }
- ],
- "frases": [
-  9,
-  3,
-  5,
-  2,
-  9,
-  3,
-  5,
-  5,
-  6,
-  3,
-  11,
-  2,
-  3,
-  5,
-  6,
-  3,
-  4,
-  3,
-  5,
-  5,
-  6,
-  2,
-  4,
-  3,
-  3,
-  3,
-  10,
-  10,
-  1,
-  7,
-  2,
-  5,
-  8,
-  6,
-  1,
-  2,
-  4,
-  1,
-  4,
-  6
  ]
 }

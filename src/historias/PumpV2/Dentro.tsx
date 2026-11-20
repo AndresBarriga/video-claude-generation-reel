@@ -9,7 +9,7 @@ import { Vaso, Pajita } from "./Vaso";
 
 export const Dentro: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
-  const fH = pal("hincha") ?? 40, fV = pal("vasos") ?? 90, fS = pal("sangre") ?? 120, fQ = pal("quema") ?? 170, fA = pal("abre") ?? 205;
+  const fH = pal("hincha") ?? 40, fV = pal("vasos") ?? 90, fPj = pal("pajita") ?? 110, fB = pal("bebes") ?? 125, fS = pal("sangre") ?? 120, fQ = pal("quema") ?? 170, fA = pal("abre") ?? 205;
   const entra = ei(f, fH - 10, fH + 10, 0, 1), sale = ei(f, fA - 8, fA + 4, 0, 1);
   const zoomRx = 1.1 + 2.4 * entra, dentro = entra * (1 - sale);
   const pinch = ei(f, fH, fV + 6, 0, 1), atasco = ei(f, fS - 6, fQ, 0, 1);
@@ -21,7 +21,7 @@ export const Dentro: React.FC<P> = ({ d, pal }) => {
       <div style={{ position: "absolute", inset: 0, opacity: dentro, transform: `scale(${0.6 + 0.4 * entra + 0.05 * ei(f, fH, fA, 0, 1)})` }}>
         <Vaso pinch={Math.max(pinch, atasco)} flujo={1 - 0.85 * atasco} residuos={ei(f, fQ - 8, fA, 0, 1)} />
       </div>
-      <Pajita k={o(fV - 24, fS) * 1} p={ei(f, fV - 16, fV, 0, 1)} />
+      <Pajita k={o(fPj - 12, fS - 2)} p={ei(f, fPj, fB + 6, 0, 1)} x={240} y={1180} tam={600} />
       <Svg>
         <Chip x={540} y={600} t="EL MÚSCULO SE HINCHA" col="#FF9A3C" o={o(fH - 8, fV - 20)} />
         <Chip x={540} y={600} t="PISA LA ARTERIA" col="#FF9A3C" o={o(fV - 20, fS - 2)} />

@@ -50,8 +50,8 @@ export const Vaso: React.FC<{ pinch?: number; flujo?: number; residuos?: number;
 };
 
 /** Analogía visual (sin voz): una pajita pisada; el líquido no sube. k = aparición, p = cuánto se pisa. */
-export const Pajita: React.FC<{ k: number; p: number }> = ({ k, p }) => k <= 0 ? null : (
-  <svg viewBox="0 0 400 400" width={420} height={420} style={{ position: "absolute", left: 40, top: 1250, opacity: Math.min(1, k) }}>
+export const Pajita: React.FC<{ k: number; p: number; x?: number; y?: number; tam?: number }> = ({ k, p, x = 40, y = 1250, tam = 420 }) => k <= 0 ? null : (
+  <svg viewBox="0 0 400 400" width={tam} height={tam} style={{ position: "absolute", left: x, top: y, opacity: Math.min(1, k), transform: `scale(${0.7 + 0.3 * Math.min(1, k)})` }}>
     <circle cx={200} cy={200} r={190} fill="#0B1220" stroke="#fff" strokeWidth={8} />
     <path d="M130 170 L150 330 L250 330 L270 170 Z" fill="#9EC5FF" opacity={0.25} stroke="#DCE8F5" strokeWidth={5} />
     <path d="M136 220 L146 324 L254 324 L264 220 Z" fill="#F5A524" opacity={0.8} />
