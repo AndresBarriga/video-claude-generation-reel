@@ -7,14 +7,16 @@ import { random, useCurrentFrame } from "remotion";
 const H = 400; // alto del vaso
 export const Vaso: React.FC<{ pinch?: number; flujo?: number; residuos?: number; verde?: number; cy?: number }> = ({ pinch = 0, flujo = 1, residuos = 0, verde = 0, cy = 1040 }) => {
   const f = useCurrentFrame();
-  const media = (x: number) => (H / 2) * (1 - 0.72 * pinch * Math.exp(-(((x - 640) / 170) ** 2)));
+  const media = (x: number) => (H / 2) * (1 - 0.5 * pinch * Math.exp(-(((x - 600) / 300) ** 2)));
   const pared = (s: 1 | -1) => Array.from({ length: 41 }, (_, i) => { const x = -40 + i * 29; return `${x} ${cy + s * media(x)}`; }).join(" L");
   const atasco = Math.max(0, Math.min(1, (pinch - 0.35) / 0.4));
   const N = 22, v = 2 + 10 * flujo * (1 - 0.9 * atasco);
   const celulas = Array.from({ length: N }, (_, i) => {
     const libre = ((i * 151 + f * v) % 1300) - 110;
-    const cola = 640 - 150 - (i % 11) * 62 - (i > 10 ? 30 : 0); // fila apelotonada antes del estrechamiento
-    const x = libre * (1 - atasco) + Math.min(libre, cola) * atasco;
+    const cola = 600 - 300 - (i % 11) * 50 - (i > 10 ? 30 : 0); // fila apelotonada antes del estrechamiento
+    const pasa = i % 4 === 0; // algunos glóbulos siguen pasando, despacio
+    const lento = ((i * 151 + f * (2 + 10 * flujo) * 0.35) % 1300) - 110;
+    const x = pasa ? lento : libre * (1 - atasco) + Math.min(libre, cola) * atasco;
     const y = cy + (random(`y${i}`) - 0.5) * (media(x) * 1.4 - 60) + Math.sin(f * 0.1 + i) * 6;
     return { x, y, r: 0.9 + random(`r${i}`) * 0.25, g: random(`g${i}`) * 60 - 30 };
   });
@@ -34,8 +36,8 @@ export const Vaso: React.FC<{ pinch?: number; flujo?: number; residuos?: number;
       <path d={`M${pared(-1)} L${pared(1).split(" L").reverse().join(" L")} Z`} fill="#9E2F3A" />
       <path d={`M${pared(-1)}`} stroke="#F2B8B5" strokeWidth={22} fill="none" />
       <path d={`M${pared(1)}`} stroke="#F2B8B5" strokeWidth={22} fill="none" />
-      {pinch > 0.2 && [-1, 1].map((s) => <path key={s} d={`M640 ${cy + s * (media(640) + 150)} L640 ${cy + s * (media(640) + 40)}`} stroke="#FF9A3C" strokeWidth={14} strokeLinecap="round" opacity={Math.min(1, (pinch - 0.2) * 3)} markerEnd="" />)}
-      {pinch > 0.2 && [-1, 1].map((s) => <path key={`p${s}`} d={`M610 ${cy + s * (media(640) + 70)} L640 ${cy + s * (media(640) + 40)} L670 ${cy + s * (media(640) + 70)}`} stroke="#FF9A3C" strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" fill="none" opacity={Math.min(1, (pinch - 0.2) * 3)} />)}
+      {pinch > 0.2 && [-1, 1].map((s) => <path key={s} d={`M600 ${cy + s * (media(600) + 150)} L600 ${cy + s * (media(600) + 40)}`} stroke="#FF9A3C" strokeWidth={14} strokeLinecap="round" opacity={Math.min(1, (pinch - 0.2) * 3)} markerEnd="" />)}
+      {pinch > 0.2 && [-1, 1].map((s) => <path key={`p${s}`} d={`M570 ${cy + s * (media(600) + 70)} L600 ${cy + s * (media(600) + 40)} L630 ${cy + s * (media(600) + 70)}`} stroke="#FF9A3C" strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" fill="none" opacity={Math.min(1, (pinch - 0.2) * 3)} />)}
       {celulas.map((c, i) => (
         <g key={i} transform={`translate(${c.x} ${c.y}) rotate(${c.g}) scale(${c.r})`}>
           <ellipse rx={46} ry={38} fill={rojo} stroke="#7A1F24" strokeWidth={5} />

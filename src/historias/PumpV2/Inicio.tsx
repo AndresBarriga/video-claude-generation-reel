@@ -1,12 +1,12 @@
 // Gancho (v4): el escalador colgado en la vía, su antebrazo en radiografía brillando en rojo encima del dibujo (persona + causa en el
 // segundo 1); la mano de abajo se suelta. Reencuadre: la cámara entra en ese antebrazo y pasa al antebrazo en radiografía grande.
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import { Pasos } from "../../piezas/kit";
-import { type V } from "../Pump/Perfil";
+import { CuerdaP, Colgado, MuroPerfil, Perfil, S0, posColg, type V } from "../Pump/Perfil";
 import { ESC, Esc, FondoGym, MANOS, cyDoblado } from "../Pump/Gym";
 import { Macro } from "./Macro";
-import { Chip, Svg, Vig, ei, type P } from "./comun";
+import { Chip, Svg, Vig, Zoom, clamp, ei, type P } from "./comun";
 
 // Escalador de frente (el de E43 en el rocódromo), colgado de dos presas con los codos doblados.
 const S = ESC, CX = 540, CY = cyDoblado;
@@ -37,20 +37,29 @@ const RxBrazo: React.FC<{ a: V; b: V; pump: number; f: number }> = ({ a, b, pump
 };
 
 export const Gancho: React.FC<P> = ({ d, pal }) => {
-  const f = useCurrentFrame(), fF = pal("flojo") ?? 60;
-  const pump = ei(f, 0, 24, 0.3, 1), suelta = ei(f, 26, 40, 0, 1), sh = ei(f, 26, 40, 0, 1) * Math.sin(f * 2.4) * 6;
-  const mL: V = [MANOS.L[0] - 30 * suelta, MANOS.L[1] + 150 * suelta];
-  const z = 1.3 + 0.35 * ei(f, 0, d, 0, 1), c = ANTEBRAZO, cx = (c.a[0] + c.b[0]) / 2, cy = (c.a[1] + c.b[1]) / 2 + 150;
+  // De perfil en el desplome (lo que mejor se lee): brazos rojos de pump, la mano se abre, cae y la cuerda le frena.
+  const f = useCurrentFrame(), fF = pal("flojo") ?? 60, fCae = Math.max(16, (pal("mitad") ?? 30) - 2);
+  const caida = interpolate(f, [fCae, fCae + 18], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });
+  const k = f - (fCae + 18), rebote = k > 0 ? 34 * Math.sin(k * 0.4) * Math.exp(-k / 13) : 0;
+  const q0 = posColg(0), hip: V = [q0.hip[0] - 40 * caida, q0.hip[1] + 440 * caida + rebote];
+  const cuelga = ei(f, fCae + 12, fCae + 24, 0, 1), sac = k >= -2 && k < 10 ? Math.sin((k + 2) * 3) * 12 * (1 - (k + 2) / 12) : 0;
+  const tiembla = f < fCae ? Math.sin(f * 2.2) * 4 * ei(f, 0, fCae, 0, 1) : 0;
   return (
     <AbsoluteFill style={{ background: "#0E1A27" }}>
       <Svg>
-        <defs><filter id="rxB" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12" /></filter></defs>
-        <g transform={`translate(${540 + sh} 1000) scale(${z}) translate(${-cx} ${-cy})`}>
-          <Escena manoL={mL} f={f} />
-          <RxBrazo a={c.a} b={c.b} pump={pump} f={f} />
+        <g transform={`translate(${sac + tiembla} ${Math.abs(sac) * 0.35})`}>
+          <Zoom z={1.15 + 0.1 * ei(f, 0, d, 0, 1)} ox={560} oy={900}><g transform="translate(230 60)">
+            <MuroPerfil presas={[600, 668]} otras={[380, 470, 790, 1180, 1280]} />
+            {f < fCae ? <Colgado est={0} cara="esfuerzo" halo={ei(f, 0, 20, 0.4, 1)} nud={0.6} codos={{ col: "#FF4A3A", o: 0.5 + 0.5 * Math.sin(f * 0.5) ** 2 }} /> : (
+              <g>
+                <CuerdaP arnes={[hip[0] - 14, hip[1] - 4]} flojo={0.55 * (1 - caida) + 0.05} />
+                <Perfil hip={hip} torso={0} s={S0} manoA={[0, 0]} manoB={[0, 0]} pieA={[0, 0]} pieB={[0, 0]} libre="cayendo" libreB="colgado" t={cuelga} cara={f < fCae + 24 ? "miedo" : "serio"} rot={-8 * (1 - cuelga)} halo={1} />
+              </g>
+            )}
+          </g></Zoom>
         </g>
         <Vig />
-        <Chip x={540} y={1500} t="✗ FLOJO" col="#FF8E7E" o={ei(f, fF - 2, fF + 6, 0, 1)} />
+        <Chip x={540} y={620} t="✗ FLOJO" col="#FF8E7E" o={ei(f, fF - 2, fF + 6, 0, 1)} />
       </Svg>
     </AbsoluteFill>
   );
@@ -60,9 +69,10 @@ export const Reencuadre: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame(), k = ei(f, 0, 12, 0, 1), c = ANTEBRAZO, cx = (c.a[0] + c.b[0]) / 2, cy = (c.a[1] + c.b[1]) / 2;
   return (
     <AbsoluteFill style={{ background: "#0E1A27" }}>
-      {k < 1 && <Svg><g opacity={1 - k} transform={`translate(540 1000) scale(${1.5 + 3 * k}) translate(${-cx} ${-cy})`}>
-        <Escena f={f} />
-        <RxBrazo a={c.a} b={c.b} pump={1} f={f} />
+      {k < 1 && <Svg><g opacity={1 - k} transform={`translate(540 960) scale(${1 + 2 * k}) translate(-540 -960)`}>
+        <Zoom z={1.25} ox={560} oy={900}><g transform="translate(230 60)"><MuroPerfil presas={[600, 668]} otras={[380, 470, 790, 1180, 1280]} />
+          <CuerdaP arnes={[posColg(0).hip[0] - 54, posColg(0).hip[1] + 436]} flojo={0.05} />
+          <Perfil hip={[posColg(0).hip[0] - 40, posColg(0).hip[1] + 440]} torso={0} s={S0} manoA={[0, 0]} manoB={[0, 0]} pieA={[0, 0]} pieB={[0, 0]} libre="cayendo" libreB="colgado" t={1} cara="serio" halo={1} /></g></Zoom>
       </g></Svg>}
       <div style={{ position: "absolute", inset: 0, opacity: k, transform: `scale(${0.85 + 0.15 * k})` }}>
         <Macro bomba={1.5} aprieta={0.9} flujo={0.2} residuos={ei(f, 10, d, 0, 0.6)} z={1.1} tiembla={0.6}>
