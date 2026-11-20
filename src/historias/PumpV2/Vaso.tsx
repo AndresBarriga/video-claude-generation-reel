@@ -49,7 +49,7 @@ export const Vaso: React.FC<{ pinch?: number; flujo?: number; residuos?: number;
   );
 };
 
-/** Analogía visual (sin voz): una pajita pisada; el líquido no sube. k = aparición, p = cuánto se pisa. */
+/** Analogía visual (sin voz): una pajita pellizcada; el líquido no sube. k = aparición, p = cuánto se pisa. */
 export const Pajita: React.FC<{ k: number; p: number; x?: number; y?: number; tam?: number }> = ({ k, p, x = 40, y = 1250, tam = 420 }) => k <= 0 ? null : (
   <svg viewBox="0 0 400 400" width={tam} height={tam} style={{ position: "absolute", left: x, top: y, opacity: Math.min(1, k), transform: `scale(${0.7 + 0.3 * Math.min(1, k)})` }}>
     <circle cx={200} cy={200} r={190} fill="#0B1220" stroke="#fff" strokeWidth={8} />
@@ -57,6 +57,6 @@ export const Pajita: React.FC<{ k: number; p: number; x?: number; y?: number; ta
     <path d="M136 220 L146 324 L254 324 L264 220 Z" fill="#F5A524" opacity={0.8} />
     <path d={`M215 300 L215 ${140 + 40 * p} M215 ${140 + 40 * p} L235 70`} stroke="#E5484D" strokeWidth={16 - 10 * p} strokeLinecap="round" fill="none" />
     <path d={`M${215 - 40} 200 L${215 - 8 - 6 * (1 - p)} 200 M${215 + 40} 200 L${215 + 8 + 6 * (1 - p)} 200`} stroke="#FF9A3C" strokeWidth={12} strokeLinecap="round" />
-    <text x={200} y={130} textAnchor="middle" fontFamily="Figtree" fontWeight={800} fontSize={30} fill="#fff">PAJITA PISADA</text>
+    <text x={200} y={130} textAnchor="middle" fontFamily="Figtree" fontWeight={800} fontSize={30} fill="#fff">PAJITA PELLIZCADA</text>
   </svg>
 );
