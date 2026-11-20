@@ -141,5 +141,9 @@
  "E69": {
   "corto": "Pump: no estás flojo",
   "desc": "Por qué se abre la mano a mitad de vía (el músculo se corta el riego) y tres cosas: brazos estirados (bolsas), brazo abajo y sacude en el reposo, escala suave. Rehace E43 con el formato de las referencias."
+ },
+ "E69B": {
+  "corto": "Pump (prueba: inicio nuevo)",
+  "desc": "Reel de prueba de E69 con inicio claro: «¿SE TE ABRE LA MANO?» grande desde el fotograma 0, rocódromo iluminado y plano cerrado con los antebrazos rojos antes de caer. Mismo audio y mismo cuerpo."
  }
 }

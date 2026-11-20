@@ -1,0 +1,12 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {"nombre": "musica", "inicio": {"escena": 0}, "fin": {"escena": "cta", "final": true}, "volumen": 0.16, "bucle": true, "fundido": [0.05, 0.8]},
+  {"nombre": "zas", "inicio": {"escena": "reencuadreB", "palabra": "ahogando"}, "duracion": 0.5, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "cronos", "palabra": "ocho"}, "duracion": 0.3, "volumen": 0.55},
+  {"nombre": "clic", "inicio": {"escena": "cronos", "palabra": "siete"}, "duracion": 0.3, "volumen": 0.55},
+  {"nombre": "clic", "inicio": {"escena": "bolsas", "palabra": "uno"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "sacude", "palabra": "dos"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "suave", "palabra": "tres"}, "duracion": 0.3, "volumen": 0.5}
+ ]
+}

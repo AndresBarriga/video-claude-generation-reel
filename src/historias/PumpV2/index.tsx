@@ -7,7 +7,7 @@ import { Grano } from "../../piezas/Grano";
 import { Sonidos } from "../../Sonidos";
 import { Pasos } from "../../piezas/kit";
 import type { P } from "./comun";
-import { Gancho, Reencuadre, Lista } from "./Inicio";
+import { Gancho, Reencuadre, Lista, GanchoB, ReencuadreB } from "./Inicio";
 import { Dentro } from "./Dentro";
 import { Cronos } from "./Cronos";
 import { Bolsas } from "./Bolsas";
@@ -15,7 +15,7 @@ import { Sacude } from "./Sacude";
 import { Suave } from "./Suave";
 import { Cta } from "./Cta";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, reencuadre: Reencuadre, dentro: Dentro, cronos: Cronos, lista: Lista, bolsas: Bolsas, sacude: Sacude, suave: Suave, cta: Cta };
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, reencuadre: Reencuadre, ganchoB: GanchoB, reencuadreB: ReencuadreB, dentro: Dentro, cronos: Cronos, lista: Lista, bolsas: Bolsas, sacude: Sacude, suave: Suave, cta: Cta };
 const CANDADO: Record<string, number> = { bolsas: 1, sacude: 2, suave: 3 };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
