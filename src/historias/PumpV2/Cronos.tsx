@@ -18,7 +18,7 @@ export const Cronos: React.FC<P> = ({ d, pal }) => {
   const a = interpolate(f, [fE + 6, fO + 6], [0, 8], cl), b = interpolate(f, [fE + 6, fS7 + 6], [0, 47], cl);
   return (
     <AbsoluteFill>
-      {fondo < 1 && <Macro bomba={1.2} abre={0.4} calor={0.3} rayos={1} aprieta={0.5} flujo={0.6} residuos={0.3} />}
+      {fondo < 1 && <Macro bomba={1.3} aprieta={0.7} flujo={0.3} residuos={0.4} />}
       <div style={{ position: "absolute", inset: 0, opacity: fondo }}><FondoInfo /></div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 560, textAlign: "center", opacity: fondo, fontFamily: "Figtree", fontWeight: 800, fontSize: 40, letterSpacing: 3, color: "#fff" }}>RECUPERAR LA MITAD DEL OXÍGENO</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 760, display: "flex", justifyContent: "center", gap: 50 }}>

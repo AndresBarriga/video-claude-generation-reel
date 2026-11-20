@@ -2,7 +2,7 @@
 import React from "react";
 import { useCurrentFrame } from "remotion";
 import { Cifra, INFO } from "../../piezas/kit";
-import { Lupa } from "../Pump/Gancho";
+import { Rx } from "./Rx";
 import { CuerdaP, MuroPerfil, Nube, Perfil, S0, agarre, geomPerfil, posColg, type V } from "../Pump/Perfil";
 import { lerpV } from "../Pump/Gym";
 import { Camara, Chip, Svg, Vig, Zoom, ei, type P } from "./comun";
@@ -31,11 +31,13 @@ export const Sacude: React.FC<P> = ({ d, pal }) => {
           </g>
         </Zoom>
         <Vig />
-        <Lupa x={760} y={760} r={220} k={lupa} f={f} aprieta={0.15} flujo={1} />
         <Chip x={300} y={640} t="✗ MANO EN LA PRESA" col="#FF8E7E" o={o(fRe - 6, fAb - 2)} />
         <Chip x={300} y={640} t="✓ BRAZO ABAJO" col="#8FE0AE" o={o(fAb - 2, fV - 8)} />
         <Chip x={300} y={1500} t="ENTRA SANGRE NUEVA" col="#FF8A8A" o={o(fSa - 4, fV - 8)} />
       </Svg>
+      {lupa > 0 && <div style={{ position: "absolute", left: 760 - 230, top: 760 - 230, width: 460, height: 460, borderRadius: 230, overflow: "hidden", border: "12px solid #3FB56B", background: "#0B1220", transform: `scale(${lupa})` }}>
+        <div style={{ position: "absolute", left: -310, top: -730, width: 1080, height: 1920, transform: "scale(0.55)", transformOrigin: "540px 960px" }}><Rx pump={0.2} aprieta={0.1} flujo={1} verde={0.3} /></div>
+      </div>}
       <div style={{ position: "absolute", inset: 0, background: "#050B14", opacity: 0.6 * Math.max(ei(f, fV - 6, fV + 2, 0, 1), 0) }} />
       {f < fP - 4 && <Cifra texto="+22 %" etiqueta="DE TIEMPO · QUE CON LA MANO EN LA PRESA" y={760} k={(f - fV + 4) / 8} color={INFO.verde} tam={180} />}
       <Cifra texto="≈ 47 s" etiqueta="SIN PRISA · RECUPERAR LA MITAD" y={760} k={(f - fP + 2) / 8} color={INFO.naranja} tam={170} />

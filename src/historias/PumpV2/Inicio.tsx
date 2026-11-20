@@ -9,7 +9,7 @@ export const Gancho: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame(), fF = pal("flojo") ?? 60;
   return (
     <AbsoluteFill>
-      <Macro bomba={0.9 + 0.6 * ei(f, 0, d, 0, 1)} abre={0.15 + 0.85 * ei(f, 0, fF, 0, 1)} calor={0.1 + 0.4 * ei(f, 0, d, 0, 1)} z={1.05 + 0.08 * ei(f, 0, d, 0, 1)}>
+      <Macro bomba={1.5 * ei(f, 0, 30, 0, 1)} aprieta={0.8 * ei(f, 0, 30, 0, 1)} flujo={1 - 0.7 * ei(f, 0, 30, 0, 1)} tiembla={ei(f, fF - 10, fF, 0, 1)} z={1.0 + 0.1 * ei(f, 0, d, 0, 1)}>
         <Chip x={540} y={1500} t="✗ FLOJO" col="#FF8E7E" o={ei(f, fF - 2, fF + 6, 0, 1)} />
       </Macro>
     </AbsoluteFill>
@@ -20,7 +20,7 @@ export const Reencuadre: React.FC<P> = ({ d }) => {
   const f = useCurrentFrame(), r = ei(f, 0, 14, 0, 1);
   return (
     <AbsoluteFill>
-      <Macro bomba={1.5} abre={1} calor={0.5} rayos={r} aprieta={1} flujo={0.15} residuos={ei(f, 10, d, 0, 0.6)} z={1.13}>
+      <Macro bomba={1.5} aprieta={0.8 + 0.2 * r} flujo={0.2} residuos={ei(f, 10, d, 0, 0.6)} z={1.1 + 0.05 * r} tiembla={0.6}>
         <Chip x={540} y={1500} t="✓ SIN RIEGO" col="#8FE0AE" o={ei(f, 4, 12, 0, 1)} />
       </Macro>
     </AbsoluteFill>
@@ -31,7 +31,7 @@ export const Lista: React.FC<P> = ({ pal }) => {
   const f = useCurrentFrame(), fT = pal("tres") ?? 40;
   return (
     <AbsoluteFill>
-      <Macro bomba={1.2} abre={0.3} calor={0.3} rayos={1} aprieta={0.6} flujo={0.5} residuos={0.3} z={1.0} />
+      <Macro bomba={1.0} aprieta={0.5} flujo={0.5} residuos={0.3} z={1.0} />
       <Pasos actual={0} y={430} k={(f - fT + 4) / 8} />
     </AbsoluteFill>
   );

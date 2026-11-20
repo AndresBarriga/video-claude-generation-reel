@@ -15,7 +15,7 @@ export const Cta: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame(), fM = pal("mándaselo") ?? 30, fC = pal("cuál") ?? 160;
   return (
     <AbsoluteFill>
-      <Macro bomba={0.4} abre={0} calor={0} z={1.05} />
+      <Macro bomba={0.3} aprieta={0.05} flujo={1} verde={0.4} z={1.0} />
       <div style={{ opacity: 1 - ei(f, fM - 4, fM + 2, 0, 1) }}><Guardar k={f / 8} y={560} /></div>
       <div style={{ opacity: 1 - ei(f, fC - 8, fC, 0, 1) }}><HojaEnviar k={(f - fM) / 40} para="Al que llega reventado a la cadena" /></div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 640, display: "flex", flexDirection: "column", alignItems: "center", gap: 30 }}>
