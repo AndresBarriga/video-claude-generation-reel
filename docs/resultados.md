@@ -56,3 +56,8 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 
 ## E59 La segunda chapa · 16-nov 21:10 (~24 h)
 - 177K vistas, **875 seg. (4,9/1k)**, ≈2.800 envíos (2,3 %), 1,1K guard., visita→seguir 87 %, visto 27/44 s, skip 25,9 %. Sigue en pico. Mejor vídeo de la cuenta en seguidores (E15: 62 a 36 h con 189K). Pendiente: 48 h y 7 d, con curva.
+
+## E64 Cómo chapar: 3 errores · 20-nov 11:08 (~14 h) — primero con el formato de las referencias (H16)
+- 42,8K vistas, **185 seg. (4,3/1k)**, ≈500 envíos (1,4 %), **631 guard. (14,7/1k, récord: E43 8/1k, E59 6/1k)**, 1,4K likes (4,2 %), 8 comentarios (0,0 %), visto 23/51 s, skip 29,4 %. Reels 80 %, Explorar 11 %. ≈4× el reel típico a 14 h; por debajo de E59 a la misma edad (≈63K a 10 h).
+- **Curva:** ≈75 % a 3 s (como E59) → **≈48 % a 9 s**: se pierde un cuarto en la promesa (plano general) y la tarjeta de reencuadre sobre fondo oscuro (5–8,5 s). Después, **meseta casi plana** 46 → 34 % durante los tres errores (9–42 s). Caída final en el repaso/CTA (44–51 s) a ≈12 %.
+- Lectura: el formato sube mucho el guardado y retiene en el cuerpo; lo que falla es el tramo 3–9 s (el paso a «clase» sobre fondo oscuro) y el comentario (sin pregunta en la voz).

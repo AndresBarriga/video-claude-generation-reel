@@ -13,6 +13,11 @@
   #escalada #escaladadeportiva #backclip #seguridad #climbing
 - **Comentario fijado:** «¿Cuál de los tres te han tenido que corregir alguna vez? 👇»
 
+## Resultado (20-nov 11:08, ~14 h)
+42,8K vistas · 185 seg. (4,3/1k) · ≈500 envíos (1,4 %) · 631 guardados (récord, 14,7/1k) · skip 29,4 % · visto 23/51 s · 8 comentarios.
+**Curva de retención:** gancho ≈75 % a 3 s (igual que E59). Caída 3–9 s hasta ≈48 %: promesa (plano general de la caída) + tarjeta ✗/✓ sobre fondo oscuro; ahí se va un cuarto. Meseta casi plana 46 → 34 % en los tres errores (9–42 s): el cuerpo del vídeo retiene. Caída final en el repaso + CTA (44–51 s) hasta ≈12 %.
+**Aprendizajes:** 1) el formato dispara el guardado (lista útil); 2) no cortar a una tarjeta oscura en 5–8 s: el reencuadre mejor dentro de la escena (rótulo ✗/✓ sobre el mismo plano) o en 1,5 s; 3) el repaso + CTA pierden la mitad de los que quedan: más corto o con un último dato; 4) 0 % comentarios: falta una pregunta en la voz.
+
 ---
 ## Versión anterior (v1c, del amigo; archivada: guion-v1c.json, voz-v1c.mp3, sonido-v1c.json)
 
