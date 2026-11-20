@@ -1,0 +1,162 @@
+{
+ "id": "E69",
+ "titulo": "Pump: no estás flojo (3 cosas)",
+ "nicho": "escalada",
+ "plantilla": "PumpV2",
+ "formato": "fijo",
+ "verificado": true,
+ "fuentes": [
+  "Fryer y otros, J Strength Cond Res 2015 (44 hombres): semi-recuperación del O2 en el flexor profundo de los dedos tras contracciones intermitentes al 40 %: élite 8 s, intermedios 47 s, no escaladores 95 s.",
+  "Baláš y otros, Eur J Sport Sci 2016 (22 escaladores; 8 s al 60 % con 2 s de descanso): sacudir la mano al lado del cuerpo frente a dejarla relajada sobre la presa: +22 % de tiempo, +28 % de impulso, reoxigenación +32 % más rápida.",
+  "Pijpers y otros 2003, Q J Exp Psychol (exp. 2, 17 novatos): misma travesía alta frente a baja: más tiempo, más movimientos exploratorios, agarres más largos y movimientos más lentos.",
+  "Mecanismo de oclusión: fisiología general (ver E43). Sin cifra de umbral en voz. Brazos estirados: consejo de entrenadores."
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "bloque": "gancho",
+   "texto": "¿Se te abre la mano a mitad de vía? No estás flojo.",
+   "claves": [
+    "mano",
+    "flojo"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "reencuadre",
+   "bloque": "reencuadre",
+   "texto": "Tu antebrazo se está ahogando.",
+   "claves": [
+    "ahogando"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "dentro",
+   "bloque": "dentro",
+   "texto": "Al apretar, el músculo se hincha y aprieta sus propios vasos. Entra menos sangre, no sale lo que quema… y la mano se abre.",
+   "claves": [
+    "vasos",
+    "quema"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "cronos",
+   "bloque": "cifras",
+   "texto": "¿Y por qué otros aguantan más? En un estudio, la élite recuperaba la mitad del oxígeno perdido en ocho segundos. Nivel intermedio: cuarenta y siete.",
+   "claves": [
+    "ocho",
+    "cuarenta y siete"
+   ],
+   "cifras": [
+    "8 s",
+    "47 s"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "lista",
+   "bloque": "pasos",
+   "texto": "Eso va con los años. Pero hoy puedes hacer tres cosas.",
+   "claves": [
+    "tres"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "bolsas",
+   "bloque": "pasos",
+   "texto": "Uno: brazos estirados. Como con las bolsas de la compra: dobladas, no llegas al coche; estiradas, las llevas sin pensar.",
+   "claves": [
+    "estirados",
+    "bolsas"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "sacude",
+   "bloque": "giro",
+   "texto": "Dos: en el reposo, brazo abajo y sacude. Así entra sangre nueva y se lleva lo que quema: aguantaron un veintidós por ciento más que dejando la mano en la presa. Y sin prisa: recuperar la mitad lleva casi un minuto.",
+   "claves": [
+    "abajo",
+    "veintidós",
+    "prisa"
+   ],
+   "cifras": [
+    "+22 %"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "suave",
+   "bloque": "pasos",
+   "texto": "Tres: escala suave. Con miedo, agarras cada presa más tiempo y te mueves más lento: lo midieron con la misma travesía, más alta. Respira, agarra lo justo y sigue.",
+   "claves": [
+    "suave",
+    "miedo",
+    "justo"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cta",
+   "bloque": "cta",
+   "texto": "Guárdalo y mándaselo a ese que siempre llega reventado a la cadena. ¿Cuál de las tres no haces?",
+   "claves": [
+    "Guárdalo",
+    "cadena"
+   ],
+   "cifras": []
+  }
+ ],
+ "frases": [
+  9,
+  3,
+  5,
+  2,
+  9,
+  3,
+  5,
+  5,
+  6,
+  3,
+  11,
+  2,
+  3,
+  5,
+  6,
+  3,
+  4,
+  3,
+  5,
+  5,
+  6,
+  2,
+  4,
+  3,
+  3,
+  3,
+  10,
+  10,
+  1,
+  7,
+  2,
+  5,
+  8,
+  6,
+  1,
+  2,
+  4,
+  1,
+  4,
+  6
+ ]
+}
