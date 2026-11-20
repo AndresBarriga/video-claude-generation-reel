@@ -84,11 +84,10 @@
    "tipo": "texto",
    "visual": "sacude",
    "bloque": "giro",
-   "texto": "Dos: en el reposo, brazo abajo y sacude. Así entra sangre nueva y se lleva lo que quema: aguantaron un veintidós por ciento más que dejando la mano en la presa. Y sin prisa: recuperar la mitad lleva casi un minuto.",
+   "texto": "Dos: en el reposo, brazo abajo y sacude. Así entra sangre nueva y se lleva lo que quema: aguantaron un veintidós por ciento más que dejando la mano en la presa.",
    "claves": [
     "abajo",
-    "veintidós",
-    "prisa"
+    "veintidós"
    ],
    "cifras": [
     "+22 %"

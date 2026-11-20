@@ -39,8 +39,7 @@ export const Sacude: React.FC<P> = ({ d, pal }) => {
         <div style={{ position: "absolute", left: -310, top: -810, width: 1080, height: 1920, transform: "scale(0.55)", transformOrigin: "540px 1040px" }}><Vaso pinch={0} flujo={1} verde={1} /></div>
       </div>}
       <div style={{ position: "absolute", inset: 0, background: "#050B14", opacity: 0.6 * Math.max(ei(f, fV - 6, fV + 2, 0, 1), 0) }} />
-      {f < fP - 4 && <Cifra texto="+22 %" etiqueta="DE TIEMPO · QUE CON LA MANO EN LA PRESA" y={760} k={(f - fV + 4) / 8} color={INFO.verde} tam={180} />}
-      <Cifra texto="≈ 47 s" etiqueta="SIN PRISA · RECUPERAR LA MITAD" y={760} k={(f - fP + 2) / 8} color={INFO.naranja} tam={170} />
+      {<Cifra texto="+22 %" etiqueta="DE TIEMPO · QUE CON LA MANO EN LA PRESA" y={760} k={(f - fV + 4) / 8} color={INFO.verde} tam={180} />}
     </Camara>
   );
 };

@@ -14,7 +14,7 @@ const extra = process.env.BROWSER_EXE ? ["--browser-executable", process.env.BRO
 const r = spawnSync("npx", ["remotion", "render", "src/index.ts", "Reel", `out/${id}.mp4`, `--props=${JSON.stringify({ id })}`, ...extra], { cwd: raiz, stdio: "inherit" });
 if (r.status === 0) {
   // volumen estándar de redes (-14 LUFS); el vídeo se copia sin recodificar
-  const n = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", `out/${id}.mp4`, "-c:v", "copy", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", path.join(carpetaVideo(id), "final.mp4")], { cwd: raiz, encoding: "utf8" });
+  const n = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", `out/${id}.mp4`, "-c:v", "copy", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.84:level=false", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", path.join(carpetaVideo(id), "final.mp4")], { cwd: raiz, encoding: "utf8" });
   if (n.status !== 0) { console.error("loudnorm falló, copio sin normalizar:", n.stderr); fs.copyFileSync(path.join(raiz, `out/${id}.mp4`), path.join(carpetaVideo(id), "final.mp4")); }
 }
 process.exit(r.status ?? 1);
