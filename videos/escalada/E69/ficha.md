@@ -9,7 +9,7 @@
 **Descripción**
 Se te abre la mano a mitad de vía… y no es que estés flojo 🫠
 
-Al apretar, el músculo se hincha y aprieta sus propios vasos, como pellizcar una pajita: entra menos sangre y no sale lo que quema. Tres cosas que puedes hacer hoy:
+Al apretar, el músculo se hincha y pellizca sus propios vasos, como una pajita: entra menos sangre y no sale lo que quema. Tres cosas que puedes hacer hoy:
 1️⃣ Brazos estirados (como con las bolsas de la compra)
 2️⃣ En el reposo, brazo abajo y sacude: en una prueba de laboratorio aguantaron un 22 % más que dejando la mano relajada en la presa.
 3️⃣ Escala suave: con miedo agarras cada presa más tiempo y te mueves más lento.
