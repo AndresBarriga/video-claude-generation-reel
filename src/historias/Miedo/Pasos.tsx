@@ -31,7 +31,7 @@ export const Uno: React.FC<P> = ({ pal }) => {
         <Persona p={persona.p} ang={persona.ang} aspecto={LOLA} cara={k < 0 ? "miedo" : "alivio"} rot={persona.rot} />
       </Gym>
       {f < fAv && <Grande t={"PRACTICA\nCAÍDAS"} top={1450} k={f - (pal("practica") ?? 20) + 2} tam={104} fondo={COL.amarillo} />}
-      {f >= fAv && f < fPr && <><Bocadillo x={560} y={640} texto="¡VOY A CAER!" s={pop(f - fAv)} /><Bocadillo x={330} y={1240} texto="¡VALE!" s={pop(f - fAv - 14)} cola="arriba" /><Grande t="✓ ASEGURADOR QUE SEPA" top={1560} k={f - fAv - 22} tam={60} fondo={COL.verde} color="#fff" /></>}
+      {f >= fAv && f < fPr && <><Bocadillo x={560} y={640} texto="¡VOY A CAER!" s={pop(f - fAv)} /><Bocadillo x={330} y={1240} texto="¡VALE!" s={pop(f - fAv - 14)} cola="arriba" /><Grande t="✓ ASEGURADOR QUE SEPA" top={1560} k={f - fAv - 22} tam={44} fondo={COL.verde} color="#fff" /></>}
       {f >= fPr - 2 && ["cuerdaArriba", "cintura", "encima"].map((ic, i) => <Ficha key={ic} icono={ic} texto={["TOP ROPE", "A LA CINTURA", "POR ENCIMA"][i]} x={170 + i * 270} y={1590} k={f - fPr + 2 - i * 3} s={0.74} ok={f >= fs[i] + 6 ? true : undefined} activa={f >= fs[i] - 8} />)}
     </>
   );
@@ -70,7 +70,7 @@ export const Tres: React.FC<P> = ({ pal, d }) => {
           {[1, 2, 3, 4].map((i) => { const kk = pop(f - fCh - (i - 1) * 5); return kk > 0 && <g key={i} transform={`translate(${VIA.mos(i).x + 120} ${VIA.mos(i).y - 30}) scale(${kk})`}><rect x={-40} y={-40} width={80} height={80} rx={20} fill={COL.verde} stroke={COL.tinta} strokeWidth={8} /><text y={22} textAnchor="middle" fontFamily={F} fontWeight={900} fontSize={60} fill="#fff">✓</text></g>; })}
         </g>
       </Svg>
-      <Grande t={lead ? "DE PRIMERO ✓" : "1.º EN TOP ROPE"} top={1500} k={lead ? f - fPr + 2 : f - 4} tam={84} fondo={lead ? COL.verde : COL.amarillo} color={lead ? "#fff" : COL.tinta} />
+      <Grande t={lead ? "DE PRIMERO ✓" : "1.º EN TOP ROPE"} top={1500} k={lead ? f - fPr + 2 : f - 4} tam={72} fondo={lead ? COL.verde : COL.amarillo} color={lead ? "#fff" : COL.tinta} />
       {void AbsoluteFill}
     </>
   );

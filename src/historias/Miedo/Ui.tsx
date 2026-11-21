@@ -78,3 +78,12 @@ export const MedidorMiedo: React.FC<{ v: number; o?: number }> = ({ v, o = 1 }) 
     </svg>
   );
 };
+/** Progreso 1-2-3 en columna, pequeño y translúcido, bajo el medidor (no tapa la acción). */
+export const PasosV: React.FC<{ actual: number }> = ({ actual }) => (
+  <div style={{ position: "absolute", left: 958 - 46, top: 1420, width: 92, padding: "12px 0", borderRadius: 46, background: "rgba(20,33,58,.55)", display: "flex", flexDirection: "column", alignItems: "center", gap: 10 }}>
+    {[1, 2, 3].map((i) => {
+      const hecho = i < actual, vivo = i === actual;
+      return <div key={i} style={{ width: 64, height: 64, borderRadius: 32, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: F, fontWeight: 900, fontSize: 36, color: "#fff", background: hecho ? COL.verde : vivo ? COL.naranja : "rgba(255,255,255,.18)", border: `4px solid ${vivo ? "#fff" : "transparent"}`, transform: `scale(${vivo ? 1.12 : 1})` }}>{hecho ? "✓" : vivo ? i : "🔒"}</div>;
+    })}
+  </div>
+);
