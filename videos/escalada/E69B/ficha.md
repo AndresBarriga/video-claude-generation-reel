@@ -7,3 +7,6 @@
 
 ## Publicación
 Misma descripción y comentario fijado que E69 (ver su ficha).
+
+## Nota (21-nov ~10:00, Andrés)
+Menos de 150 vistas en ~10 h (E47B, también reel de prueba, tuvo 1,9K a 11 h). Sin datos suficientes para medir el inicio. Posible causa: Instagram limita un reel casi idéntico (mismo audio y cuerpo) a uno publicado el día antes. Pendiente: capturas de Insights.

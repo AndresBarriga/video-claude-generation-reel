@@ -52,3 +52,6 @@ Guárdalo y mándaselo al que siempre dice «ya darán de sí» 👀
 #escalada #piesdegato #rocódromo #escaladadeportiva #boulder
 
 **Comentario fijado:** ¿Cuánto pagaste por los tuyos… y cuántos números menos? 👇
+
+## Nota (21-nov ~10:00, Andrés)
+~150K vistas (cifra de Andrés, sin capturas aún). Pendiente: Insights completos y curva.
