@@ -80,3 +80,10 @@ Texto ElevenLabs: ¿Miedo a caer? Se quita cayendo. Con miedo te agarrotas, te p
 | 35–42 | Roca gris, rótulo grado del roco vs grado en roca (6c → 6a), al final sube | Por eso en roca, donde no conoces nada, escalas grados por debajo. Quítate el miedo y muchos de esos grados vuelven. |
 | 42–46 | «¿CUÁL NO HACES?» + hoja de enviar | ¿Cuál no haces? Guárdalo y mándaselo a ese que dice «yo no me caigo». |
 Respaldo: cinta = mosquetones 20–23 kN eje mayor cerrado (EN 12275 mínimo 20 kN; Petzl, Decathlon 22 kN); con el gatillo abierto ~7 kN → «una cinta bien puesta». Grados roco/roca = experiencia, en voz como «muchos». Formato: 12/14 (cifras 1: una sola; mecanismo 1: bucle dibujado). Duración ~46 s.
+
+## v5 (21-nov, Andrés, aprobada): «Uno» = practicar caídas en el rocódromo. Visual nuevo, no reutilizar tal cual (los últimos vídeos se parecen demasiado).
+- **Hilo visual: medidor de miedo** grande todo el vídeo: rojo al inicio, baja con cada paso, verde cuando vuelven los grados.
+- Escenario nuevo (rocódromo claro y colorido) y personaje distinto del escalador de siempre.
+- Capa info encima de la animación, algo nuevo cada ~1 s: ✓, candados, flechas, «+2 TONELADAS». Sin rayos X.
+Texto ElevenLabs final:
+¿Miedo a caer? Se quita cayendo. Y no es el material: una cinta bien puesta aguanta unas dos toneladas. Es tu cabeza. Con miedo te agarrotas, te paras y te cansas. Y así te caes más. Uno: si te da miedo, empieza practicando caídas en el rocódromo. Primero en top rope, luego con la chapa a la cintura y luego por encima. Dos: aprende a caer. Pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna y las manos lejos de la cinta. Tres: si te da mucho miedo, conoce la vía antes. Súbela en top rope: sabes los pasos y dónde chapas. Luego, de primero. Por eso en roca, donde no conoces nada, escalas grados por debajo. Quítate el miedo y muchos de esos grados vuelven. ¿Cuál no haces? Guárdalo y mándaselo a ese que dice «yo no me caigo».
