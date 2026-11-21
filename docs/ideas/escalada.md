@@ -12,6 +12,8 @@ Cada idea tiene **estado** (Hecha con vistas · Producida · Propuesta · Idea �
 - **E52 cuerda detrás de la pierna** → dentro de «Cómo chapar 2» con chapar a la cintura y cuerda en la boca (E61).
 - **E58 dinamizar** → prueba del tema asegurar con arranque al nivel de E59.
 - Nuevo: nudo al final de la cuerda / descuelgue que se queda corto.
+- **Miedo a caer: «3 cosas para que la cabeza no te robe grado»** (idea de Andrés 21-nov; une E47 + aprender a volar). Dato verificado: Pijpers, Oudejans y Bakker 2005/2006, misma travesía alta y baja (novatos): en la alta más lentos, más movimientos de tanteo, agarran más tiempo cada presa y ven menos (atención estrecha). Entrenamiento psicológico de regulación emocional mejoró ansiedad y nivel en mujeres con miedo a caer (PubMed 37965818; mirar n). «Roco mejor que roca» = experiencia, sin estudio. Evitar «solo con la cabeza».
+- **Largos (vías de varios largos): serie** (idea de Andrés 21-nov): reunión, comunicación con palabras acordadas, rapel (E46). Público más pequeño que deportiva; aspiracional.
 
 **Formato fijo (19-nov):** E64, E58, E61, E66 y E67 son de información → su propuesta se rehace en los 9 bloques de `docs/formato.md` antes de producir (las propuestas v1/v2 ya no valen tal cual).
 **Pendiente (Andrés, 19-nov, «en unos días»): versiones nuestras de los vídeos de referencia** (`docs/referencias.md`). Mismo tema y estructura general, sin calcar los dibujos ni el texto; formato de `docs/formato.md`; investigar el tema antes del guion.
