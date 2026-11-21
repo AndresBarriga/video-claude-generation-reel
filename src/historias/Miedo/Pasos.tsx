@@ -30,7 +30,7 @@ export const Uno: React.FC<P> = ({ pal }) => {
         <Soga pts={soga} />
         <Persona p={persona.p} ang={persona.ang} aspecto={LOLA} cara={k < 0 ? "miedo" : "alivio"} rot={persona.rot} />
       </Gym>
-      {f >= fAv && f < fPr && <><Bocadillo x={560} y={640} texto="¡VOY A CAER!" s={pop(f - fAv)} /><Bocadillo x={330} y={1240} texto="¡VALE!" s={pop(f - fAv - 14)} cola="arriba" /></>}
+      {f >= fAv && f < fPr && <><Bocadillo x={560} y={640} texto="¡VOY A CAER!" s={pop(f - fAv)} /><Bocadillo x={330} y={1240} texto="¡VALE!" s={pop(f - fAv - 14)} cola="arriba" /><Grande t="✓ ASEGURADOR QUE SEPA" top={1560} k={f - fAv - 22} tam={60} fondo={COL.verde} color="#fff" /></>}
       {f >= fPr - 2 && ["cuerdaArriba", "cintura", "encima"].map((ic, i) => <Ficha key={ic} icono={ic} texto={["TOP ROPE", "A LA CINTURA", "POR ENCIMA"][i]} x={170 + i * 270} y={1590} k={f - fPr + 2 - i * 3} s={0.74} ok={f >= fs[i] + 6 ? true : undefined} activa={f >= fs[i] - 8} />)}
     </>
   );
