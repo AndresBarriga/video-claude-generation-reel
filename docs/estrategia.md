@@ -6,6 +6,7 @@
 
 ## Objetivo y métricas
 - Objetivo: **seguidores**. Un viral vale aunque convierta poco.
+- **(21-nov)** E64 cuerda (~60K) trajo más del triple de seguidores que E63 pies de gato (~150K): para crecer, prioridad a cuerda/seguridad útil; material solo como alcance puntual.
 - Métricas (definiciones en `docs/resultados.md`, datos en `datos/publicados.csv`): alcance (vistas), **seguidores por vídeo** (principal), conversión (seg./1.000, visitas al perfil, visita→seguir), retención (visto medio, skip), envíos/guardados por 1.000.
 
 ## Test en curso: humor vs historias límite
