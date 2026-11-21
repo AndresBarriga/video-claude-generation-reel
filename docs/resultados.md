@@ -67,3 +67,12 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 - 75,9K vistas en ~8,5 h (**mejor arranque de la cuenta**, ≈7× el típico; E59 63,5K a 10 h), **skip 16,9 % (récord)**, visto 29/55 s, like 4,0 %, ≈720 envíos (1,2 %), 312 guard. (0,5 %), 9 comentarios, **68 seg. (1,1/1k: E59 5,3, E64 4,3)**.
 - **Curva:** ≈90 % a 2 s, ≈75 % a 7 s, ≈70 % a 10 s, bajada suave a ≈50 % a 29 s, meseta lenta ≈47→38 % de 36 a 52 s, caída final a ≈12 %. Sin agujeros: gancho de precio + dolor engancha y la explicación retiene.
 - Lectura: **alcance sin cuenta.** La identidad («te gastas 150 € en algo que te duele») frena el dedo y retiene, pero no convierte: guardado y seguidores muy por debajo de E59/E64 pese al CTA «guárdalo». Contra H8 (identidad → seguir). Hipótesis: el material es un tema de curiosidad general, no de seguridad; no promete «más como esto». Medir a 24 h.
+
+## 21-nov 10:20 — E63, E64, E69 (capturas de Andrés)
+| Vídeo | h | Vistas | Seg. | Seg./1k | Skip | Visto | Guard. | Envíos |
+|---|---|---|---|---|---|---|---|---|
+| E64 cómo chapar (cuerda) | 37 | 62,2K | 317 | 5,1 | 29,4 % | 23/51 s | 952 (1,9 %) | 1,5 % |
+| E63 pies de gato (material) | 21 | 179K | 114 | 0,64 | **17,2 %** | 30/55 s | 549 (0,4 %) | 0,8 % |
+| E69 pump | 13,5 | 4,5K | 14 | 3,1 | **40,7 %** | 18/60 s | 24 (0,7 %) | 0,9 % |
+- **E64 trae 2,8× los seguidores de E63 con un tercio de las vistas (≈8× por vista).** El material da alcance; la cuerda da seguidores.
+- **El arranque decide la distribución:** E63 (skip 17 %, ≈95 % a 2 s) abre con «150 €» enorme sobre una tienda iluminada y el pie en el gato: cifra concreta + situación que todos reconocen + fondo claro. E69 (skip 41 %, ≈64 % a 3 s) abre con un escalador pequeño sobre fondo casi negro y una pregunta en subtítulo: la distribución se corta a las ~2 h.

@@ -50,3 +50,6 @@
 - En el fotograma 0 el escalador es diminuto y la lupa no entra hasta ~1,3 s: abrir ya con la lupa sobre la cinta.
 - Errata: un rótulo dice «ESCALABAS» y el siguiente «ESCALAS».
 - Hechos: los mecanismos (la puerta contra la chapa, la cuerda que sale por la puerta, el mosquetón con rebabas, la palanca en un canto) son correctos en lo esencial.
+
+## Resultado (21-nov 10:20, ~37 h)
+62,2K vistas · **317 seg. (5,1/1k)** · guard. 952 (1,9 %) · envíos 1,5 % · skip 29,4 %. 2,8× los seguidores de E63 con un tercio de las vistas.

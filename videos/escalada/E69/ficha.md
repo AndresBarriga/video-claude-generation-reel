@@ -30,3 +30,6 @@ Fuentes (pruebas de laboratorio): Fryer et al. 2015 · Baláš et al. 2016 · Pi
 | «Con miedo agarras cada presa más tiempo y te mueves más lento: la misma travesía, más alta» | Pijpers, Oudejans y Bakker, *Q J Exp Psychol A* 58(3), 2005 | Misma travesía baja y alta: arriba, más tiempo total, más movimientos de tanteo, agarres más largos y movimientos más lentos | Novatos; no midieron el pump directamente |
 | «Recuperar la mitad lleva casi un minuto» | Extrapolado de los 47 s de Fryer | — | **Dato más débil:** es el grupo intermedio en ese test; «casi un minuto» redondea al alza |
 | Mecanismo (el músculo aprieta sus vasos, entra menos sangre, se acumula lo que quema) | Fisiología general del ejercicio isométrico | — | Simplificado; «lo que quema» = metabolitos, no «toxinas» |
+
+## Resultado (21-nov 10:20, ~13,5 h)
+4,5K vistas (planas desde ~2 h) · 14 seg. (3,1/1k) · skip 40,7 % · visto 18/60 s · com. 0,1 %. **Curva:** ≈75 % a 1,5 s, ≈64 % a 3 s, ≈45 % a 7 s, ≈35 % a 10 s (gancho + rayos X + inicio de la arteria), luego meseta lenta ≈26 → 20 %, final ≈8 %. El cuerpo retiene; el arranque (fondo oscuro, escalador pequeño, pregunta solo en subtítulo) mata la distribución.
