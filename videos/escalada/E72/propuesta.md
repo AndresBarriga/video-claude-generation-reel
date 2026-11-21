@@ -54,3 +54,13 @@ Escalador de perfil del kit (como E59/E64) en un rocódromo luminoso. Idea que r
 
 ## Crítico
 7/10 · envío 6,5. Aplicado: condiciones de seguridad (nada debajo, asegurador suave, cuerda no detrás de la pierna, «pies por delante» vale en desplome), puente estudio→entreno, «colgado, te gastas», 3+4 fundidas y giro a 16 s, «puede valerte», guardar + «ese que dice yo no me caigo», pregunta en pantalla. No aplicado: quitar lo de roca (Andrés lo quiere; suavizado).
+
+## v2 (21-nov, Andrés: el gancho «abajo vs arriba» no se entiende; enfocar en cómo quitarte el miedo)
+| s | Se ve | Se dice |
+|---|---|---|
+| 0–3 | Fotograma 0: escalador de perfil cayendo en un desplome luminoso + «SE QUITA CAYENDO» enorme | ¿Miedo a caer? No se quita escalando. Se quita cayendo. |
+| 3–10 | Dos escaladores en la misma travesía, uno pegado al suelo y otro a cuatro metros; barra «PARADO» 15 → 28 s | Y merece la pena: el miedo te para. En un estudio, novatos en la misma travesía a cuatro metros del suelo pasaron casi el doble de tiempo parados que pegados al suelo. Y parado, te cansas. |
+| 10–20 | Lista con candados; escalera de niveles | Uno: cae a propósito, en una vía limpia sin nada debajo. Primero en top rope, luego con la chapa a la cintura, luego por encima. |
+| 20–28 | Caída de perfil ✗/✓ | Dos: aprende a caer. Pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna y las manos lejos de la cinta. |
+| 28–36 | Desplome del roco (caída al vacío) → roca gris con «¿BUENA?» | Tres: elige dónde. Empieza en un desplome, donde caes al aire. Y en roca, baja de grado: tienes que leerla y cuesta más fiarse. |
+| 36–44 | La caída del inicio, ahora relajada; «¿CUÁL NO HACES?» + hoja de enviar | Quitártelo puede valerte un grado o dos. ¿Cuál no haces? Guárdalo y mándaselo a ese que dice «yo no me caigo». |
