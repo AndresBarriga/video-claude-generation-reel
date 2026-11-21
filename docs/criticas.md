@@ -28,3 +28,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-19 | E64 v3 «La cuerda se sale» (formato referencias) | propuesta | 6,5 (7,5 con cambios) | escena de la cinta que gira abría un tercer fallo y contradecía el reencuadre; «puertas» en plural; «hacia ti» ambiguo; reencuadre pasaba de 6 s — aplicado |
 | 2026-11-19 | E64 v4 «Cómo chapar: 3 cosas» | propuesta | 7 | punto 1 sin nombre ni tramo; repaso en otro orden; sin rehook en el punto 3; causa del gancho no visible — aplicado |
 | 2026-11-20 | E69 pump (formato referencias) | propuesta v1 | 7 | pasos 2 y 3 decían más que sus estudios; «escalador medio»; densidad en 4, 7 y 9 — aplicado |
+| 2026-11-21 | E72 «Aprende a volar» (miedo a caer, 3 cosas) | propuesta v1 | 7 (envío 6,5) | puente estudio→«se entrena» sin respaldo; seguridad de caídas incompleta; escena 4 débil; CTA sin guardar — aplicado |
