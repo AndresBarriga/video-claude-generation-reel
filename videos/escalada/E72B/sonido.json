@@ -1,0 +1,75 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "musica",
+   "inicio": {
+    "escena": 0
+   },
+   "fin": {
+    "escena": "cta",
+    "final": true
+   },
+   "volumen": 0.16,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "caida",
+   "inicio": {
+    "escena": "gancho",
+    "mas": 0.2
+   },
+   "duracion": 1.2,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "uno",
+    "palabra": "uno"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "dos",
+    "palabra": "dos"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "tres",
+    "palabra": "tres"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "roca",
+    "palabra": "expuesto"
+   },
+   "duracion": 0.5,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "caida",
+   "inicio": {
+    "escena": "entrena",
+    "palabra": "cayendo"
+   },
+   "duracion": 1.2,
+   "volumen": 0.4
+  }
+ ]
+}

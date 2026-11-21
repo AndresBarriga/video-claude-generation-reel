@@ -29,7 +29,7 @@ export const Ficha: React.FC<{ icono: string; texto: string; x: number; y: numbe
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${e * s})`, opacity: activa ? 1 : 0.45 }}>
       <div style={{ width: 300, padding: "18px 0 20px", borderRadius: 40, background: COL.crema, border: `8px solid ${T}`, boxShadow: "0 14px 0 rgba(20,33,58,.25)", textAlign: "center", position: "relative" }}>
         <svg width={180} height={180} viewBox="0 0 200 200">{ICONOS[icono]}</svg>
-        <div style={{ fontFamily: F, fontWeight: 900, fontSize: texto.length > 9 ? 40 : 52, color: T, lineHeight: 1.05, padding: "0 12px" }}>{texto}</div>
+        <div style={{ fontFamily: F, fontWeight: 900, fontSize: texto.length > 8 ? 40 : 52, color: T, lineHeight: 1.05, padding: "0 12px" }}>{texto}</div>
         {ok !== undefined && <div style={{ position: "absolute", right: -26, top: -26, width: 96, height: 96, borderRadius: 48, background: ok ? COL.verde : COL.rojo, border: `7px solid ${T}`, color: "#fff", fontFamily: F, fontWeight: 900, fontSize: 60, lineHeight: "84px" }}>{ok ? "✓" : "✕"}</div>}
         {tachar > 0 && <div style={{ position: "absolute", left: 20, top: "48%", width: `${tachar * 86}%`, height: 16, borderRadius: 8, background: COL.rojo, transform: "rotate(-14deg)" }} />}
       </div>

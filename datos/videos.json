@@ -149,5 +149,9 @@
  "E72": {
   "corto": "¿Miedo a caer? Se quita cayendo",
   "desc": "Información, 3 cosas, estilo nuevo (rocódromo claro, Lola, medidor de miedo que baja con cada paso): material vs cabeza (2 t), caídas por niveles, cómo caer, conocer la vía en top rope; roca y grados; CTA «¡pilla!»."
+ },
+ "E72B": {
+  "corto": "Miedo a caer (B, sin «material»)",
+  "desc": "Variante de E72 sin la escena «no es el material» (donde se iba la mitad a 3–7 s); gancho → «con miedo te agarrotas». Para reel de prueba."
  }
 }

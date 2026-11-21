@@ -63,15 +63,15 @@ export const Bucle: React.FC<P> = ({ pal, d }) => {
   const p = VIA.cadera(VIA.mos(2).y - 40);
   return (
     <>
-      <Gym cx={p.x + 160} cy={p.y + 80} z={1.7}>
+      <Gym cx={p.x + 160} cy={p.y + 280} z={1.2}>
         <Asegurador via={VIA} x={XA} aspecto={LEO} />
         <Soga pts={[{ x: XA + 40, y: VIA.pie - 40 }, VIA.mos(0), VIA.mos(1), VIA.mos(2), { x: p.x + 20, y: p.y + 10 }]} />
         <Persona p={p} ang={POSE.agarreMira} aspecto={LOLA} cara="esfuerzo" tiembla={Math.sin(f * 2.1) * (f > fA ? 5 : 1)} />
       </Gym>
-      <AbsoluteFill style={{ background: "rgba(255,248,238,0.45)" }} />
-      <Ficha icono="puno" texto="AGARROTAS" x={210} y={820} k={f - fA} s={0.8} />
-      <Ficha icono="bateria" texto="TE CANSAS" x={480} y={820} k={f - fCa} s={0.8} />
-      <Ficha icono="mano" texto="NO LLEGAS" x={750} y={820} k={f - fL} s={0.8} />
+      <AbsoluteFill style={{ background: "rgba(255,248,238,0.12)" }} />
+      <Ficha icono="puno" texto="AGARROTAS" x={210} y={960} k={f - fA} s={0.8} />
+      <Ficha icono="bateria" texto="TE CANSAS" x={480} y={960} k={f - fCa} s={0.8} />
+      <Ficha icono="mano" texto="NO LLEGAS" x={750} y={960} k={f - fL} s={0.8} />
       {f >= fP - 4 && <div style={{ opacity: pop(f - fP + 4) }}><BarraH t="CUERPO" v={cuerpo} top={1180} col={COL.verde} /><BarraH t="CABEZA" v={cab} top={1340} col={COL.rojo} tope={cab > 0.5} /></div>}
       {void d}
     </>

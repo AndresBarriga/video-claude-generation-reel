@@ -1,0 +1,108 @@
+{
+ "id": "E72B",
+ "titulo": "Aprende a volar: el miedo a caer (3 cosas) (B: sin «no es el material»)",
+ "nicho": "escalada",
+ "plantilla": "Miedo",
+ "formato": "fijo",
+ "verificado": true,
+ "fuentes": [
+  "Cinta: mosquetones EN 12275 ≥ 20 kN eje mayor cerrado (habitual 22 kN, ≈ 2,2 t); con el gatillo abierto ~7 kN → «bien puesta».",
+  "Resto: consejo de escalada (sin estudio, a propósito)."
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "bloque": "gancho",
+   "texto": "¿Miedo a caer? Se quita cayendo.",
+   "claves": [
+    "miedo",
+    "cayendo"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "bucle",
+   "bloque": "mecanismo",
+   "texto": "Con miedo te agarrotas, te cansas y no llegas a tu límite: te para la cabeza antes que el cuerpo.",
+   "claves": [
+    "agarrotas",
+    "cansas",
+    "límite"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "uno",
+   "bloque": "pasos",
+   "texto": "Uno: practica caídas en el rocódromo, avisando a tu asegurador y con la vía libre debajo. Primero en top rope, luego con la chapa a la cintura y luego por encima.",
+   "claves": [
+    "caídas",
+    "avisando",
+    "libre"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "dos",
+   "bloque": "pasos",
+   "texto": "Dos: aprende a caer. Pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna y las manos lejos de la cinta.",
+   "claves": [
+    "pies",
+    "rodillas",
+    "cuerda",
+    "manos"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "tres",
+   "bloque": "pasos",
+   "texto": "Tres: conoce la vía antes. Súbela en top rope y sabrás los pasos y dónde chapas. Luego, de primero.",
+   "claves": [
+    "conoce",
+    "pasos",
+    "primero"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "roca",
+   "bloque": "giro",
+   "texto": "En roca todo parece más expuesto: la cabeza te juega malas pasadas y escalas por debajo de tu nivel.",
+   "claves": [
+    "expuesto",
+    "nivel"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "entrena",
+   "bloque": "cierre",
+   "texto": "Entrenas los dedos cada semana. La cabeza también se entrena. Y se entrena cayendo.",
+   "claves": [
+    "dedos",
+    "cabeza",
+    "cayendo"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "cta",
+   "bloque": "cta",
+   "texto": "¿Y a ti, te para la cabeza? Guárdalo y mándaselo al que siempre grita «¡pilla!» justo después de chapar. Y este finde, a caer juntos.",
+   "claves": [
+    "pilla",
+    "juntos"
+   ],
+   "cifras": []
+  }
+ ]
+}
