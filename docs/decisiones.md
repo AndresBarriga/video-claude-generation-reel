@@ -64,3 +64,4 @@ Lo vigente está resumido en `docs/estrategia.md`.
 - 2026-11-20 · E69B: reel de prueba de E69 con inicio nuevo (fondo claro, gancho grande en recuadro naranja, plano cerrado con antebrazos rojos); mismo audio y cuerpo. Mide si el arranque explica el skip de 36,6 %.
 - 2026-11-21 · Dato de Andrés: E64 (cuerda, ~60K) > 3× seguidores que E63 (pies de gato, ~150K). Se refuerza H14: prioridad a cuerda/seguridad útil; material = alcance puntual. Cifras exactas pendientes de capturas.
 - 2026-11-21 · Mediciones E63/E64/E69 (capturas). E64 2,8× seguidores de E63 con 1/3 de vistas → cuerda primero (H14). Arranque: cifra/frase grande + escena clara (E63 skip 17 %) frente a fondo oscuro y personaje pequeño (E69 skip 41 %): regla añadida a `formato.md` §7.
+- 2026-11-21 · Encuesta: 80 % de seguidores por cuerda, 20 % por búlder → foco en cuerda (seguridad, chapar, rapel); rehacer con formato E64 temas de cuerda que fallaron por gancho/ejecución (E46 secuela, E49, E47, E52, E58).
