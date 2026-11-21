@@ -72,7 +72,7 @@ Texto ElevenLabs: ¿Miedo a caer? Se quita cayendo. Con miedo te agarrotas, te p
 | s | Se ve | Se dice |
 |---|---|---|
 | 0–3 | Caída de perfil, roco luminoso, «SE QUITA CAYENDO» enorme | ¿Miedo a caer? Se quita cayendo. |
-| 3–8 | Mismo plano: zoom a la cinta, cifra «+2 TONELADAS»; chips ✗ MATERIAL / ✓ CABEZA | Y no es el material: una cinta aguanta unas dos toneladas. Es tu cabeza. |
+| 3–8 | Mismo plano: zoom a la cinta, cifra «+2 TONELADAS»; chips ✗ MATERIAL / ✓ CABEZA | Y no es el material: una cinta bien puesta aguanta unas dos toneladas. Es tu cabeza. |
 | 8–12 | Bucle dibujado: miedo → aprietas → te cansas → te caes | Con miedo te agarrotas, te paras y te cansas. Y así te caes más. |
 | 12–20 | Lista con candados; escalera top rope → chapa a la cintura → por encima | Uno: cae a propósito, en una vía limpia, sin nada debajo. Primero en top rope, luego con la chapa a la cintura, luego por encima. |
 | 20–27 | Caída ✗/✓ | Dos: aprende a caer. Pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna y las manos lejos de la cinta. |
