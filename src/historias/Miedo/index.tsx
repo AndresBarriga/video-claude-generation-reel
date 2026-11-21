@@ -37,7 +37,7 @@ export const Miedo: React.FC<{ datos: Datos }> = ({ datos }) => {
         const d = i === n - 1 ? Math.max(1, durationInFrames - ini) : Math.max(1, Math.round(finS * fps) - ini);
         const pal = (w: string) => { const p = datos.palabras.find((x) => x.start >= iniS - 0.01 && x.start < finS && norm(x.w) === norm(w)); return p ? Math.round((p.start - iniS) * fps) : undefined; };
         const Comp = ESCENAS[e.visual ?? ""] ?? Gancho, c = CANDADO[e.visual ?? ""];
-        return <Sequence key={i} from={ini} durationInFrames={d}><Comp e={e} d={d} pal={pal} />{c && <Pasos actual={c} y={430} k={1} />}</Sequence>;
+        return <Sequence key={i} from={ini} durationInFrames={d}><Comp e={e} d={d} pal={pal} />{c && <><div style={{ position: "absolute", left: 290, top: 408, width: 500, height: 120, borderRadius: 60, background: "#14213A", border: "6px solid #FFF8EE", boxShadow: "0 10px 0 rgba(20,33,58,.3)" }} /><Pasos actual={c} y={430} k={1} /></>}</Sequence>;
       })}
       <Medidor datos={datos} />
       <Subtitulos palabras={datos.palabras} acento="#fff" estilo="arriba" claves={datos.escenas.flatMap((e) => e.claves ?? [])} />

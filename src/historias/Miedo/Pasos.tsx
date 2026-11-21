@@ -1,30 +1,42 @@
 // E72 · los tres pasos: 1) caídas por niveles (top rope → chapa a la cintura → por encima), 2) cómo caer (lista ✓/✗), 3) conoce la vía en top rope.
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
-import { Persona, Asegurador, Soga, POSE, porChapas, aparato, accEscalar, Bocadillo } from "../../piezas/kit";
+import { Persona, Asegurador, Soga, POSE, porChapas, aparato, accEscalar, Bocadillo, mix } from "../../piezas/kit";
 import { Gym, VIA, LOLA, LEO, XA, caer, cl, pop, COL, F, Svg, type P } from "./comun";
 import { Ficha, Linea, Grande } from "./Ui";
 
-const NIV = [VIA.cadera(VIA.mos(3).y + 210), VIA.cadera(VIA.mos(3).y + 60), VIA.cadera(VIA.mos(3).y - 110)];
+const NIV = [VIA.cadera(VIA.mos(3).y + 210), VIA.cadera(VIA.mos(3).y + 60), VIA.cadera(VIA.mos(3).y - 200)];
+/** Top rope de verdad: la cuerda viene de arriba y casi no cae (se sienta en la cuerda con un rebote suave). */
+const topRope = (k: number) => {
+  const dy = k < 0 ? 0 : 28 * (1 - Math.exp(-k / 3)) + 7 * Math.sin(k / 2.6) * Math.exp(-k / 7);
+  const p = { x: NIV[0].x - (k < 0 ? 0 : 10 * Math.min(1, k / 8)), y: NIV[0].y + dy };
+  return { p, ang: k < 0 ? POSE.agarreMira : mix(POSE.agarre, POSE.colgado, Math.min(1, k / 9)), pts: [{ x: XA + 40, y: VIA.pie - 40 }, VIA.mos(3), { x: p.x + 20, y: p.y + 10 }] };
+};
 export const Uno: React.FC<P> = ({ pal }) => {
-  const f = useCurrentFrame(), fAv = pal("avisando") ?? 20, fLi = pal("libre") ?? 60, fPr = pal("primero") ?? 110;
-  const fs = [pal("top") ?? fPr + 15, pal("cintura") ?? fPr + 60, pal("encima") ?? fPr + 110];
-  const n = f >= fs[2] ? 2 : f >= fs[1] ? 1 : 0, k = f - fs[n], s = caer(k, NIV[n], 3, 0.3);
+  const f = useCurrentFrame(), fAv = pal("avisando") ?? 20, fLi = pal("libre") ?? 60, fPr = pal("primero") ?? 110, fCi = pal("cintura") ?? fPr + 70;
+  const fs = [(pal("top") ?? fPr + 15) - 6, (pal("luego") ?? fPr + 40) + 2, fCi + 20], fSube = fCi + 8;
+  const n = f >= fSube ? 2 : f >= fs[1] ? 1 : 0, k = f - fs[n];
   const libre = interpolate(f, [fLi, fLi + 8], [0, 1], cl) * interpolate(f, [fPr + 10, fPr + 20], [1, 0], cl);
+  const sube = n === 2 && k < 0 ? interpolate(f, [fSube, fs[2]], [0, 1], cl) : 1;
+  const p0 = n === 2 ? { x: NIV[1].x + (NIV[2].x - NIV[1].x) * sube, y: NIV[1].y + (NIV[2].y - NIV[1].y) * sube } : NIV[n];
+  const s = caer(k, NIV[n], 3, 0.3), tr = topRope(k);
+  const cy = interpolate(f, [fSube - 6, fSube + 6], [2020, 1790], cl), z = interpolate(f, [fSube - 6, fSube + 6], [0.92, 0.85], cl);
+  const persona = n === 0 ? { p: tr.p, ang: tr.ang, rot: 0 } : k < 0 ? { p: p0, ang: POSE.agarreMira, rot: 0 } : { p: s.p, ang: s.ang, rot: s.rot };
+  const soga = n === 0 ? tr.pts : k < 0 ? porChapas(VIA, aparato(VIA, XA, 0), 4, p0) : s.pts;
   return (
     <>
-      <Gym cx={560} cy={2020} z={0.92} sh={s.sh * 0.4} libre={libre}>
-        <Asegurador via={VIA} aspecto={LEO} {...s.aseg} alza={1} cara={f > fAv + 14 ? "normal" : s.aseg.cara} />
-        <Soga pts={k < 0 ? porChapas(VIA, aparato(VIA, XA, 0), 4, NIV[n]) : s.pts} />
-        <Persona p={k < 0 ? NIV[n] : s.p} ang={k < 0 ? POSE.agarreMira : s.ang} aspecto={LOLA} cara={k < 0 ? "miedo" : "alivio"} rot={k < 0 ? 0 : s.rot} />
+      <Gym cx={560} cy={cy} z={z} sh={n > 0 ? s.sh * 0.4 : 0} libre={libre}>
+        <Asegurador via={VIA} aspecto={LEO} {...(n > 0 ? s.aseg : { x: XA })} alza={1} cara={f > fAv + 14 ? "normal" : "miedo"} />
+        <Soga pts={soga} />
+        <Persona p={persona.p} ang={persona.ang} aspecto={LOLA} cara={k < 0 ? "miedo" : "alivio"} rot={persona.rot} />
       </Gym>
       {f >= fAv && f < fPr && <><Bocadillo x={560} y={640} texto="¡VOY A CAER!" s={pop(f - fAv)} /><Bocadillo x={330} y={1240} texto="¡VALE!" s={pop(f - fAv - 14)} cola="arriba" /></>}
-      {f >= fPr - 2 && ["cuerdaArriba", "cintura", "encima"].map((ic, i) => <Ficha key={ic} icono={ic} texto={["TOP ROPE", "A LA CINTURA", "POR ENCIMA"][i]} x={170 + i * 270} y={1590} k={f - fPr + 2 - i * 3} s={0.74} ok={f >= fs[i] + 6 ? true : undefined} activa={f >= fs[i] - 2} />)}
+      {f >= fPr - 2 && ["cuerdaArriba", "cintura", "encima"].map((ic, i) => <Ficha key={ic} icono={ic} texto={["TOP ROPE", "A LA CINTURA", "POR ENCIMA"][i]} x={170 + i * 270} y={1590} k={f - fPr + 2 - i * 3} s={0.74} ok={f >= fs[i] + 6 ? true : undefined} activa={f >= fs[i] - 8} />)}
     </>
   );
 };
 export const Dos: React.FC<P> = ({ pal }) => {
-  const f = useCurrentFrame(), k = (f * 0.5) % 44 - 4, s = caer(k, NIV[2], 3, 0.3);
+  const f = useCurrentFrame(), k = (21 + f * 0.5) % 48 - 4, s = caer(k, NIV[2], 3, 0.3);
   const L: [string, boolean, string, string][] = [["PIES DELANTE", true, "pies", "pies"], ["RODILLAS FLOJAS", true, "rodilla", "rodillas"], ["CUERDA DETRÁS", false, "pierna", "cuerda"], ["MANO A LA CINTA", false, "cinta", "manos"]];
   return (
     <>
