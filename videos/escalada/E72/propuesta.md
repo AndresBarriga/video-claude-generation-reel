@@ -67,3 +67,16 @@ Escalador de perfil del kit (como E59/E64) en un rocódromo luminoso. Idea que r
 
 ## v3 (21-nov, Andrés): sin estudio (no se entiende la travesía a dos alturas; los de primero vs top rope son pequeños y dispares, y en avanzados no hay diferencia). Tres = «conoce la vía antes» (idea de Andrés).
 Texto ElevenLabs: ¿Miedo a caer? Se quita cayendo. Con miedo te agarrotas, te paras y te cansas antes. Y así te caes más. Uno: cae a propósito, en un desplome, donde caes al aire, sin nada debajo. Primero en top rope, luego con la chapa a la cintura, luego por encima. Dos: aprende a caer. Pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna y las manos lejos de la cinta. Tres: si te da mucho miedo, conoce la vía antes. Súbela en top rope: sabes los pasos y dónde chapas. Luego, de primero. Y en roca, baja de grado. Quitártelo puede valerte un grado o dos. ¿Cuál no haces? Guárdalo y mándaselo a ese que dice «yo no me caigo».
+
+## v4 (21-nov, Andrés): sin desplome (va a otro vídeo); final sobre roca y grados; confianza en el material como reencuadre.
+| s | Se ve | Se dice |
+|---|---|---|
+| 0–3 | Caída de perfil, roco luminoso, «SE QUITA CAYENDO» enorme | ¿Miedo a caer? Se quita cayendo. |
+| 3–8 | Mismo plano: zoom a la cinta, cifra «+2 TONELADAS»; chips ✗ MATERIAL / ✓ CABEZA | Y no es el material: una cinta aguanta unas dos toneladas. Es tu cabeza. |
+| 8–12 | Bucle dibujado: miedo → aprietas → te cansas → te caes | Con miedo te agarrotas, te paras y te cansas. Y así te caes más. |
+| 12–20 | Lista con candados; escalera top rope → chapa a la cintura → por encima | Uno: cae a propósito, en una vía limpia, sin nada debajo. Primero en top rope, luego con la chapa a la cintura, luego por encima. |
+| 20–27 | Caída ✗/✓ | Dos: aprende a caer. Pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna y las manos lejos de la cinta. |
+| 27–35 | Mismo escalador en top rope marcando chapas → de primero | Tres: si te da mucho miedo, conoce la vía antes. Súbela en top rope: sabes los pasos y dónde chapas. Luego, de primero. |
+| 35–42 | Roca gris, rótulo grado del roco vs grado en roca (6c → 6a), al final sube | Por eso en roca, donde no conoces nada, escalas grados por debajo. Quítate el miedo y muchos de esos grados vuelven. |
+| 42–46 | «¿CUÁL NO HACES?» + hoja de enviar | ¿Cuál no haces? Guárdalo y mándaselo a ese que dice «yo no me caigo». |
+Respaldo: cinta = mosquetones 20–23 kN eje mayor cerrado (EN 12275 mínimo 20 kN; Petzl, Decathlon 22 kN); con el gatillo abierto ~7 kN → «una cinta bien puesta». Grados roco/roca = experiencia, en voz como «muchos». Formato: 12/14 (cifras 1: una sola; mecanismo 1: bucle dibujado). Duración ~46 s.
