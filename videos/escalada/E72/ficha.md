@@ -22,3 +22,6 @@ Guárdalo para tu próxima sesión y mándaselo al que grita «¡pilla!» justo 
 #escalada #escaladadeportiva #miedoacaer #aprenderavolar #rocodromo #climbing
 
 **Comentario fijado:** ¿Cuál de las tres te cuesta más: caer a propósito, saber caer o conocer la vía? 👇
+
+## Resultado (21-nov 21:11, ~1,3 h)
+2,5K vistas (al ritmo del reel típico) · 0 seg. · skip 23,8 % (mejor que lo normal) · visto 18/56 s · guard. 0,5 % · envíos 1,0 % (mayor que lo normal). **Curva:** ≈75 % a 2 s, **≈50 % a 6–7 s** = la escena «no es el material» (fondo apagado, dos fichas quietas, y no es el miedo que tiene la gente) → ahí se va la mitad. Después meseta lenta (≈45 % a 10 s, ≈40 % a 17 s, ≈25 % a 48 s): los 3 pasos retienen. Caída final en el CTA. Pendiente: medir a 24 h.
