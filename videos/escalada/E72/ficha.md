@@ -10,10 +10,15 @@
 | Roco 6c / roca 6a | Ejemplo ilustrativo, no dato | Voz: «escalas por debajo de tu nivel» |
 
 ## Descripción para publicar
-¿Miedo a caer? No se quita escalando más: se quita cayendo (con cabeza).
-1️⃣ Practica caídas en el rocódromo: avisa a tu asegurador, vía libre debajo; top rope → chapa a la cintura → por encima.
-2️⃣ Aprende a caer: pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna, manos lejos de la cinta.
+¿Miedo a caer? No se quita escalando más. Se quita cayendo 🪂
+
+1️⃣ Practica caídas en el rocódromo, con un asegurador que sepa y la vía libre debajo: top rope → chapa a la cintura → por encima.
+2️⃣ Aprende a caer: pies por delante, rodillas flojas, la cuerda nunca detrás de la pierna y las manos lejos de la cinta.
 3️⃣ Conoce la vía antes: súbela en top rope y luego de primero.
-Guárdalo y mándaselo al que grita «¡pilla!» justo después de chapar 😅
-#escalada #miedoacaer #aprenderavolar #escaladadeportiva #rocodromo
-**Comentario fijado:** ¿Cuál de las tres no haces: caer a propósito, saber caer o conocer la vía?
+
+Entrenas los dedos cada semana. La cabeza también se entrena.
+Guárdalo para tu próxima sesión y mándaselo al que grita «¡pilla!» justo después de chapar 😅
+
+#escalada #escaladadeportiva #miedoacaer #aprenderavolar #rocodromo #climbing
+
+**Comentario fijado:** ¿Cuál de las tres te cuesta más: caer a propósito, saber caer o conocer la vía? 👇
