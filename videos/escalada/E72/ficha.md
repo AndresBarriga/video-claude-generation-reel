@@ -1,5 +1,5 @@
 # E72 «¿Miedo a caer? Se quita cayendo» (3 cosas) — ficha
-**Estado:** v1 renderizada 21-nov (57,4 s, voz ElevenLabs de Andrés). Plantilla `Miedo` (estilo nuevo: rocódromo claro, Lola y Leo, medidor de miedo, fichas con iconos).
+**Estado:** v1.3 21-nov: paso 1 recortado (fuera «si te da miedo», −1 s, audio cortado en silencio; original en voz-v1.mp3) + rótulo «PRACTICA CAÍDAS» y «✓ ASEGURADOR QUE SEPA». v1 renderizada 21-nov (57,4 s, voz ElevenLabs de Andrés). Plantilla `Miedo` (estilo nuevo: rocódromo claro, Lola y Leo, medidor de miedo, fichas con iconos).
 **Formato:** información/consejo, 3 cosas. Sin estudio a propósito (ver propuesta v3).
 **Crítico:** propuesta 7 (envío 6,5) y v8 7 (envío 7); cambios aplicados.
 
