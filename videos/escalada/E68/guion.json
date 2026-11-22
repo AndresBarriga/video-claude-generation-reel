@@ -1,0 +1,112 @@
+{
+ "id": "E68",
+ "titulo": "Poleas: lo que te sostiene es un anillo",
+ "nicho": "escalada",
+ "plantilla": "PoleasV2",
+ "formato": "fijo",
+ "verificado": true,
+ "fuentes": [
+  "×3: Schweizer 2001, J Biomech 34:217 (16 dedos in vivo)",
+  "36 veces menos en abierto: Vigouroux y otros 2006, J Biomech 39:2583 (modelo), citado en Schweizer 2008",
+  "Lesión más frecuente: Popp, Küpper, Schöffl y Schöffl 2015 (911 lesiones)",
+  "Recuperación: Schöffl y Schöffl 2006 (grado I ~6 semanas; rotura A2 ~3 meses)"
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "bloque": "gancho",
+   "texto": "Arqueas una regleta y, dentro de tu dedo, todo el tirón acaba en un sitio. Y a veces hace pop.",
+   "claves": [
+    "regleta",
+    "pop"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "anillos",
+   "bloque": "mecanismo",
+   "texto": "El tendón va pegado al hueso con unos anillos: las poleas.",
+   "claves": [
+    "poleas"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "grapas",
+   "bloque": "analogia",
+   "texto": "Como las grapas que sujetan un cable a la pared: si salta una, el cable se separa.",
+   "claves": [
+    "grapas",
+    "separa"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "arco",
+   "bloque": "dentro",
+   "texto": "Al arquear, el tendón tira hacia fuera como un arco, y la polea de la base aguanta unas tres veces lo que aprietas.",
+   "claves": [
+    "arco",
+    "tres"
+   ],
+   "cifras": [
+    "×3"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "abierto",
+   "bloque": "cifras",
+   "texto": "Con la mano abierta, esa misma polea carga treinta y seis veces menos.",
+   "claves": [
+    "abierta",
+    "treinta"
+   ],
+   "cifras": [
+    "36"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "rompe",
+   "bloque": "giro",
+   "texto": "Y cuando no aguanta… pop. Es la lesión más frecuente de la escalada: de seis semanas a tres meses sin apretar.",
+   "claves": [
+    "pop",
+    "frecuente",
+    "meses"
+   ],
+   "cifras": [
+    "6 sem",
+    "3 meses"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "consejos",
+   "bloque": "pasos",
+   "texto": "Para evitarla: calienta los dedos antes de la pared, agarra en abierto siempre que puedas y sube la carga poco a poco: tus dedos se hacen fuertes rápido, tus poleas tardan años.",
+   "claves": [
+    "calienta",
+    "abierto",
+    "años"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "cierre",
+   "bloque": "cta",
+   "texto": "Tus músculos tiran. Pero en la regleta, lo que te sostiene es un anillo. Guárdalo y mándaselo al que arquea a muerte en todas las regletas.",
+   "claves": [
+    "anillo",
+    "mándaselo"
+   ],
+   "cifras": []
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {"nombre": "musica", "inicio": {"escena": 0}, "fin": {"escena": "cierre", "final": true}, "volumen": 0.16, "bucle": true, "fundido": [0.05, 0.8]},
+  {"nombre": "chasquido", "inicio": {"escena": "gancho", "palabra": "pop"}, "duracion": 0.4, "volumen": 0.5},
+  {"nombre": "zas", "inicio": {"escena": "grapas", "palabra": "salta"}, "duracion": 0.5, "volumen": 0.45},
+  {"nombre": "clic", "inicio": {"escena": "arco", "palabra": "tres"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "clic", "inicio": {"escena": "abierto", "palabra": "treinta"}, "duracion": 0.3, "volumen": 0.5},
+  {"nombre": "chasquido", "inicio": {"escena": "rompe", "palabra": "pop"}, "duracion": 0.5, "volumen": 0.7},
+  {"nombre": "clic", "inicio": {"escena": "consejos", "palabra": "calienta"}, "duracion": 0.3, "volumen": 0.45},
+  {"nombre": "clic", "inicio": {"escena": "consejos", "palabra": "abierto"}, "duracion": 0.3, "volumen": 0.45},
+  {"nombre": "clic", "inicio": {"escena": "consejos", "palabra": "sube"}, "duracion": 0.3, "volumen": 0.45}
+ ]
+}
