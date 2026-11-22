@@ -89,3 +89,19 @@ Arqueas una regleta y, dentro de tu dedo, pasa esto. El tendón tira como la cue
 ## v5.1 (22-nov, Andrés por voz): consejo 3 = fuerza + poleas.
 Texto ElevenLabs final:
 Arqueas una regleta y, dentro de tu dedo, pasa esto. El tendón tira como la cuerda de un arco, y unos anillos lo pegan al hueso: las poleas. Cargan unas cuatro veces lo que aprietas con la yema. Y cuando no aguantan… pop. Es la lesión más frecuente de la escalada. Y no es un parón corto: de seis semanas si se distiende, a tres meses si se rompe del todo. Así se evita. Uno: calienta los dedos antes de tocar la pared. Abre y cierra las manos, cuélgate suave con los pies en el suelo y ve subiendo. Luego, vías fáciles. Dos: raciona el arqueo. Semiarqueo por defecto, y arquea solo cuando no haya otra. Tres: sube la carga poco a poco. Tus dedos se hacen más fuertes rápido, pero tus poleas tardan años en ponerse al día. Y si un día oyes ese pop, para. Guárdalo y mándaselo al que arquea a muerte en todas las regletas. ¿Cuál de los tres no hacías?
+
+## v6 (22-nov, tras analizar la referencia completa — ver docs/referencias.md)
+Cambios: bucle abierto del «pop» a los 3 s y la rotura enseñada a mitad (rehook); analogía propia con cambio de escena (grapas de un cable en la pared, no la caña); **la comparación arqueo/abierto como centro (36 veces menos en abierto, Vigouroux 2006, modelo; citado por Schweizer 2008)**; consejos comprimidos; frase final propia. Ojo: el 36× es **abierto** (slope), no semiarqueo → el consejo 2 dice «abierto cuando puedas».
+| s | Se ve | Se dice |
+|---|---|---|
+| 0–4 | Radiografía del dedo arqueando, grande, brillando | Arqueas una regleta y, dentro de tu dedo, todo el tirón acaba en un sitio. Y a veces hace pop. |
+| 4–10 | Zoom dentro: tendón y anillos A2/A4 | El tendón va pegado al hueso con unos anillos: las poleas. |
+| 10–15 | Cambio de escena: cable sujeto con grapas a una pared; salta una grapa y el cable se despega | Como las grapas que sujetan un cable a la pared: si salta una, el cable se separa. |
+| 15–22 | Arqueo: tendón como un arco, flechas, «×3» | Al arquear, el tendón tira hacia fuera como un arco, y la polea de la base aguanta unas tres veces lo que aprietas. |
+| 22–28 | Barras arqueo / abierto, «36×» | Con la mano abierta, esa misma polea carga treinta y seis veces menos. |
+| 28–34 | La A2 se rompe: chispazo «POP», el tendón se despega; calendario 6 sem → 3 meses | Y cuando no aguanta… pop. Es la lesión más frecuente de la escalada: de seis semanas a tres meses sin apretar. |
+| 34–46 | 1-2-3 rápidos con iconos | Para evitarla: calienta los dedos antes de la pared, agarra en abierto siempre que puedas y sube la carga poco a poco: tus dedos se hacen fuertes rápido, tus poleas tardan años. |
+| 46–52 | Radiografía final brillando + guardar + enviar | Tus músculos tiran. Pero en la regleta, lo que te sostiene es un anillo. Guárdalo y mándaselo al que arquea a muerte en todas las regletas. |
+Texto ElevenLabs:
+Arqueas una regleta y, dentro de tu dedo, todo el tirón acaba en un sitio. Y a veces hace pop. El tendón va pegado al hueso con unos anillos: las poleas. Como las grapas que sujetan un cable a la pared: si salta una, el cable se separa. Al arquear, el tendón tira hacia fuera como un arco, y la polea de la base aguanta unas tres veces lo que aprietas. Con la mano abierta, esa misma polea carga treinta y seis veces menos. Y cuando no aguanta… pop. Es la lesión más frecuente de la escalada: de seis semanas a tres meses sin apretar. Para evitarla: calienta los dedos antes de la pared, agarra en abierto siempre que puedas y sube la carga poco a poco: tus dedos se hacen fuertes rápido, tus poleas tardan años. Tus músculos tiran. Pero en la regleta, lo que te sostiene es un anillo. Guárdalo y mándaselo al que arquea a muerte en todas las regletas.
+Respaldo nuevo: ×3 = Schweizer 2001 (in vivo, 16 dedos); 36× = Vigouroux y otros 2006 (modelo biomecánico), citado en Schweizer 2008.
