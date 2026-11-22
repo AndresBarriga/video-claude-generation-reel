@@ -27,13 +27,13 @@ export const Consejos: React.FC<P> = ({ pal }) => {
   );
 };
 export const Cierre: React.FC<P> = ({ pal, d }) => {
-  const f = useCurrentFrame(), fS = pal("sostiene") ?? 40, fG = pal("guardalo") ?? 80, fM = pal("mandaselo") ?? 100;
+  const f = useCurrentFrame(), fS = pal("factura") ?? 40, fG = pal("guardalo") ?? 80, fM = pal("mandaselo") ?? 100;
   const hoja = interpolate(f, [fM, d - 10], [0.02, 1], cl);
   return (
     <>
       <FondoRx claro={1} />
       <Cam s={1.0} px={600} py={1180}><Dedo k={1} calor={0.6} glowA2={1} etiquetas={1} /></Cam>
-      {f < fG && <Grande t={"LO QUE TE SOSTIENE\nES UN ANILLO"} top={1400} k={f - fS} tam={80} fondo={COL.amarillo} />}
+      {f < fG && <Grande t={"TUS POLEAS PAGAN\nLA FACTURA 🧾"} top={1400} k={f - fS} tam={80} fondo={COL.amarillo} />}
       {f >= fG && f < fM && <Guardar k={(f - fG) / 20} y={1150} />}
       <HojaEnviar k={f >= fM ? hoja : 0} para="Al que arquea a muerte 😬" />
     </>

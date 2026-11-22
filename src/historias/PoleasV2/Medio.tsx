@@ -61,3 +61,16 @@ export const Rompe: React.FC<P> = ({ pal }) => {
     </>
   );
 };
+/** En una regleta pequeña el arqueo agarra más… pero lo paga la polea (fondo claro, mano en piel → la A2 se pone roja). */
+export const Pequena: React.FC<P> = ({ pal }) => {
+  const f = useCurrentFrame(), fA = pal("agarra") ?? 30, fP = pal("paga") ?? 70;
+  const x = interpolate(f, [fP - 4, fP + 10], [0, 0.85], cl), s = interpolate(f, [0, 80], [1.35, 1.5], cl);
+  return (
+    <AbsoluteFill style={{ background: "linear-gradient(#EAF2FF, #CFE0FA)" }}>
+      <Cam s={s} px={G.tip.x + 180} py={G.tip.y - 60}><Dedo k={1} xray={x} calor={x} glowA2={x} etiquetas={x > 0.4 ? 1 : 0} /></Cam>
+      <Grande t="REGLETA PEQUEÑA" top={430} k={f} tam={84} fondo={COL.crema} />
+      <Grande t="✓ AGARRA MÁS" top={1500} k={f - fA} tam={84} fondo={COL.verde} color="#fff" />
+      {f >= fP - 2 && <Grande t="…LO PAGA LA POLEA" top={1650} k={f - fP + 2} tam={84} fondo={COL.rojo} color="#fff" />}
+    </AbsoluteFill>
+  );
+};

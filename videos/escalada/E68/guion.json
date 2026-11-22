@@ -9,7 +9,8 @@
   "×3: Schweizer 2001, J Biomech 34:217 (16 dedos in vivo)",
   "36 veces menos en abierto: Vigouroux y otros 2006, J Biomech 39:2583 (modelo), citado en Schweizer 2008",
   "Lesión más frecuente: Popp, Küpper, Schöffl y Schöffl 2015 (911 lesiones)",
-  "Recuperación: Schöffl y Schöffl 2006 (grado I ~6 semanas; rotura A2 ~3 meses)"
+  "Recuperación: Schöffl y Schöffl 2006 (grado I ~6 semanas; rotura A2 ~3 meses)",
+  "Arqueo agarra más en regletas pequeñas: Amca y otros 2012 (10 escaladores; la fuerza máxima depende de profundidad y técnica); semiarqueo preferido en 1–2 cm (Amca y Arıtan)"
  ],
  "escenas": [
   {
@@ -59,6 +60,17 @@
   },
   {
    "tipo": "texto",
+   "visual": "pequena",
+   "bloque": "giro",
+   "texto": "En una regleta pequeña, el arqueo agarra más… pero lo paga la polea.",
+   "claves": [
+    "agarra",
+    "polea"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
    "visual": "abierto",
    "bloque": "cifras",
    "texto": "Con la mano abierta, esa misma polea carga treinta y seis veces menos.",
@@ -101,9 +113,9 @@
    "tipo": "texto",
    "visual": "cierre",
    "bloque": "cta",
-   "texto": "Tus músculos tiran. Pero en la regleta, lo que te sostiene es un anillo. Guárdalo y mándaselo al que arquea a muerte en todas las regletas.",
+   "texto": "Tus antebrazos ponen la fuerza. Tus poleas pagan la factura. Guárdalo y mándaselo al que arquea a muerte en todas las regletas.",
    "claves": [
-    "anillo",
+    "factura",
     "mándaselo"
    ],
    "cifras": []

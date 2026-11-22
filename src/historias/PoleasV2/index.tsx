@@ -6,10 +6,10 @@ import { Subtitulos } from "../../Subtitulos";
 import { Sonidos } from "../../Sonidos";
 import type { P } from "./comun";
 import { Gancho, Anillos, Grapas } from "./Inicio";
-import { Arco, Abierto, Rompe } from "./Medio";
+import { Arco, Abierto, Rompe, Pequena } from "./Medio";
 import { Consejos, Cierre } from "./Final";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, anillos: Anillos, grapas: Grapas, arco: Arco, abierto: Abierto, rompe: Rompe, consejos: Consejos, cierre: Cierre };
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, anillos: Anillos, grapas: Grapas, arco: Arco, abierto: Abierto, pequena: Pequena, rompe: Rompe, consejos: Consejos, cierre: Cierre };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 export const PoleasV2: React.FC<{ datos: Datos }> = ({ datos }) => {
   const { fps, durationInFrames } = useVideoConfig();
