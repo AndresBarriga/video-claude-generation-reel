@@ -1,5 +1,5 @@
 # E68 «Lo que te sostiene es un anillo» (poleas, rayos X) — ficha
-**Estado:** v1 renderizada 22-nov (51,3 s, voz Danny). Plantilla `PoleasV2` (dedo en rayos X dibujado por código: huesos, tendón, poleas A2/A4; abierto↔arqueo; rotura de la A2). Propuesta: `propuesta-v3.md` (v6). Referencia analizada: @diariodeescalada_ poleas (5.283 envíos), en `docs/referencias.md`.
+**Estado:** v2 22-nov (feedback: dedo colgando de una regleta en pared con el peso hacia abajo, sin la mano en piel, analogía rehecha como cable grapado en una viga doblada, arqueo/abierto en pantalla partida, consejos en fondo claro con ficha grande). v1 renderizada 22-nov (51,3 s, voz Danny). Plantilla `PoleasV2` (dedo en rayos X dibujado por código: huesos, tendón, poleas A2/A4; abierto↔arqueo; rotura de la A2). Propuesta: `propuesta-v3.md` (v6). Referencia analizada: @diariodeescalada_ poleas (5.283 envíos), en `docs/referencias.md`.
 **Formato:** información; curiosidad sobre tu cuerpo + comparación arqueo/abierto como centro; consejos comprimidos.
 
 ## Respaldo

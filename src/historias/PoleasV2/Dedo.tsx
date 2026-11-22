@@ -9,15 +9,16 @@ const pt = (p: Pt, a: number, l: number): Pt => ({ x: p.x + Math.cos(rad(a)) * l
 const mixN = (a: number, b: number, t: number) => a + (b - a) * t;
 const L = { meta: 430, prox: 340, med: 235, dist: 175 }, R = 42;
 
-/** Ángulos (grados, y hacia abajo): falange proximal, media y distal. */
+/** Ángulos (grados, y hacia abajo). Vista de perfil con la pared a la IZQUIERDA: la yema sobre el canto, el nudillo (PIP) arriba
+ *  y la mano/antebrazo colgando hacia abajo a la derecha (el peso tira hacia abajo). */
 export const pose = (k: number) => {
-  const a1 = mixN(168, 160, k), a2 = a1 - mixN(30, 100, k), a3 = a2 - mixN(40, -32, k);
+  const a1 = mixN(214, 236, k), a2 = a1 - mixN(38, 116, k), a3 = a2 - mixN(28, -56, k);
   return { a1, a2, a3 };
 };
-export const geom = (k: number, mcp: Pt = { x: 700, y: 740 }) => {
-  const { a1, a2, a3 } = pose(k), a0 = a1 - 18;
-  const meta0 = pt(mcp, a0 + 180, L.meta), pip = pt(mcp, a1, L.prox), dip = pt(pip, a2, L.med), tip = pt(dip, a3, L.dist);
-  return { a0, a1, a2, a3, meta0, mcp, pip, dip, tip };
+export const geom = (k: number, mcp: Pt = { x: 720, y: 1150 }) => {
+  const { a1, a2, a3 } = pose(k), a0 = a1 + 14;
+  const meta0 = pt(mcp, a0 + 180, L.meta), pip = pt(mcp, a1, L.prox), dip = pt(pip, a2, L.med), tip = pt(dip, a3, L.dist), codo = pt(meta0, a0 + 180 - 8, 520);
+  return { a0, a1, a2, a3, meta0, mcp, pip, dip, tip, codo };
 };
 /** Normal hacia la palma (lado de flexión). */
 const palma = (a: number): Pt => ({ x: Math.sin(rad(a)), y: -Math.cos(rad(a)) });
@@ -69,9 +70,10 @@ export const Dedo: React.FC<DedoProps> = ({ k, xray = 1, calor = 0, roto = 0, et
   const contorno = [g.meta0, g.mcp, g.pip, g.dip, g.tip];
   return (
     <g>
-      {regleta && <g><rect x={g.tip.x - 330} y={g.tip.y + 34} width={420} height={80} rx={16} fill="#F2A65A" opacity={0.9} /><rect x={g.tip.x - 330} y={g.tip.y + 34} width={420} height={16} rx={7} fill="#FFD3A1" /><rect x={g.tip.x - 330} y={g.tip.y + 114} width={420} height={600} fill="#2B3E7A" opacity={0.6} /></g>}
+      {regleta && <g><rect x={-400} y={-200} width={g.tip.x - 26 + 400} height={2600} fill="#22356E" /><rect x={g.tip.x - 26} y={-200} width={10} height={2600} fill="#5B7BD0" opacity={0.6} /><path d={`M${g.tip.x - 26} ${g.tip.y + 40} h96 q14 0 14 14 v40 q0 10 -10 12 L${g.tip.x - 26} ${g.tip.y + 150} Z`} fill="#F2A65A" /><path d={`M${g.tip.x - 26} ${g.tip.y + 40} h96`} stroke="#FFD3A1" strokeWidth={10} /></g>}
       {/* piel: trazo grueso redondeado */}
-      <path d={`M${contorno.map((p) => `${p.x} ${p.y}`).join(" L")}`} stroke={`rgba(255,214,184,${0.95 * piel + 0.16 * xray})`} strokeWidth={205} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <path d={`M${g.codo.x} ${g.codo.y} L${g.meta0.x} ${g.meta0.y} L${g.mcp.x} ${g.mcp.y}`} stroke={`rgba(255,214,184,${0.95 * piel + 0.13 * xray})`} strokeWidth={250} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <path d={`M${contorno.map((p) => `${p.x} ${p.y}`).join(" L")}`} stroke={`rgba(255,214,184,${0.95 * piel + 0.16 * xray})`} strokeWidth={190} strokeLinecap="round" strokeLinejoin="round" fill="none" />
       <path d={`M${contorno.map((p) => `${p.x} ${p.y}`).join(" L")}`} stroke={`rgba(150,220,255,${0.5 * xray})`} strokeWidth={210} strokeLinecap="round" strokeLinejoin="round" fill="none" style={{ mixBlendMode: "screen" }} opacity={0.25} />
       <g opacity={0.15 + 0.85 * xray}>
         <Hueso a={g.meta0} b={g.mcp} r={R + 4} glow={xray} />
