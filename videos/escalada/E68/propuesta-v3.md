@@ -63,3 +63,19 @@ Texto ElevenLabs:
 ¿Qué le pasa a tu dedo cuando arqueas en una regleta? El tendón tira como la cuerda de un arco, y tus poleas cargan unas cuatro veces lo que aprietas con la yema. ¿Y el esparadrapo? En un estudio con dieciséis dedos, se llevó solo un once por ciento. Por algo es la lesión más frecuente de la escalada. Lo que sí ayuda: Uno: raciona el arqueo. Semiarqueo por defecto, y arquea solo cuando no haya otra. Dos: calienta subiendo poco a poco, de presas grandes a pequeñas. Los dedos no se encienden de golpe. Tres: sube la carga poco a poco. Escalando, tus poleas se hacen más gruesas, pero en años, no en semanas. Y si notas un pop, para. Guárdalo y mándaselo al que arquea a muerte en todas las regletas. ¿Cuál de los tres no hacías?
 
 Corrección: «músculo en semanas, tendón en meses» es discutido (Smeets, n=6, recambio de proteína similar). Lo respaldado: el engrosamiento de poleas y tendones en escaladores se ha visto en escala de años (Gilmore y otros 2024 citando la literatura; Fröhlich y otros 2021, seguimiento de 10 años en escaladores de élite).
+
+## v4 (22-nov, Andrés: más rollo, radiografía, polea rompiéndose en el «pop», calentar los dedos también fuera de la pared)
+Radiografía como hilo (dedo grande de perfil, brillo sobre tendón y anillos; fondo claro alrededor, no negro entero). «Pop» = la polea se rompe en rayos X a ~9 s (rehook), y vuelve al final como aviso.
+Calentar fuera de la pared: abrir/cerrar manos y deslizamientos de tendón; cuelgues suaves con los pies en el suelo subiendo carga; después vías fáciles (consejo práctico de fisios y guías; sin cifra).
+| s | Se ve | Se dice |
+|---|---|---|
+| 0–3 | Radiografía del dedo arqueando en la regleta, «TU DEDO EN UNA REGLETA» | Arqueas una regleta y, dentro de tu dedo, pasa esto. |
+| 3–9 | El tendón se tensa como un arco; los anillos A2/A4 brillan rojo; «yema 1 → polea 4» | El tendón tira como la cuerda de un arco, y unos anillos lo pegan al hueso: las poleas. Cargan unas cuatro veces lo que aprietas con la yema. |
+| 9–12 | La A2 se rompe: chispazo, «POP», el tendón se despega del hueso | Y cuando no aguantan… pop. |
+| 12–18 | «LESIÓN N.º 1»; esparadrapo con barra 11 % | Es la lesión más frecuente de la escalada. ¿Y el esparadrapo? En un estudio, se llevó solo un once por ciento. |
+| 18–28 | 1: manos que abren y cierran → cuelgue con pies en el suelo, barra de carga que sube → vía fácil | Así se evita. Uno: calienta los dedos antes de tocar la pared. Abre y cierra las manos, cuélgate suave con los pies en el suelo y ve subiendo. Luego, vías fáciles. |
+| 28–34 | 2: arqueo ✗ (anillos rojos) / semiarqueo ✓ (verdes) | Dos: raciona el arqueo. Semiarqueo por defecto, y arquea solo cuando no haya otra. |
+| 34–40 | 3: la polea engorda en rayos X, contador de años | Tres: sube la carga poco a poco. Escalando, tus poleas se hacen más gruesas, pero en años, no en semanas. |
+| 40–47 | El «POP» otra vez, ✋; hoja de enviar | Y si un día oyes ese pop, para. Guárdalo y mándaselo al que arquea a muerte en todas las regletas. ¿Cuál de los tres no hacías? |
+Texto ElevenLabs:
+Arqueas una regleta y, dentro de tu dedo, pasa esto. El tendón tira como la cuerda de un arco, y unos anillos lo pegan al hueso: las poleas. Cargan unas cuatro veces lo que aprietas con la yema. Y cuando no aguantan… pop. Es la lesión más frecuente de la escalada. ¿Y el esparadrapo? En un estudio, se llevó solo un once por ciento. Así se evita. Uno: calienta los dedos antes de tocar la pared. Abre y cierra las manos, cuélgate suave con los pies en el suelo y ve subiendo. Luego, vías fáciles. Dos: raciona el arqueo. Semiarqueo por defecto, y arquea solo cuando no haya otra. Tres: sube la carga poco a poco. Escalando, tus poleas se hacen más gruesas, pero en años, no en semanas. Y si un día oyes ese pop, para. Guárdalo y mándaselo al que arquea a muerte en todas las regletas. ¿Cuál de los tres no hacías?
