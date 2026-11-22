@@ -33,3 +33,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-21 | E72 ¿Miedo a caer? (vídeo terminado, pedido por Andrés) | terminado | 7,5 (envío 7,5) | matiz de asegurador (aplicado: rótulo «✓ ASEGURADOR QUE SEPA»); fichas pequeñas y gancho que «encoge» = falsas alarmas de la hoja reducida; CTA largo (se mantiene, es de Andrés) |
 | 2026-11-22 | E73 «¿Bien o mal?» chapar (quiz) | propuesta v1 | 7 (envío 7,5) | manos al pecho contradice E60; sacar cuerda choca con el bien; certezas; z-clip incompleto; bien predecible — aplicado |
 | 2026-11-22 | E74 Llevas diez pegues (proyecto) | propuesta v1 | 6,5 (envío 6) | voz en femenino, «cinco minutos» sin respaldo, consejos obvios, «pegue diez» ambiguo — aplicado |
+| 2026-11-22 | E68 v3 poleas (esparadrapo) | propuesta | 7 (envío 7) | gancho sin «preventivo»; mecanismo 3–10 s abstracto; CTA invita a corregir — aplicado; «más frecuente» se mantiene (Popp 2015 lo dice) |
