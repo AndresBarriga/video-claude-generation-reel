@@ -11,7 +11,7 @@ const Peso: React.FC<{ o: number }> = ({ o }) => (
 );
 export const Gancho: React.FC<P> = ({ pal }) => {
   const f = useCurrentFrame(), fS = pal("sitio") ?? 70, fP = pal("pop") ?? 150;
-  const xray = interpolate(f, [4, 24], [0.45, 1], cl), glow = interpolate(f, [fS - 6, fS + 10], [0, 1], cl), z = interpolate(f, [fS - 10, fS + 16], [0, 1], cl);
+  const xray = interpolate(f, [22, 40], [0, 1], cl), glow = interpolate(f, [fS - 6, fS + 10], [0, 1], cl), z = interpolate(f, [fS - 10, fS + 16], [0, 1], cl);
   const s = 0.78 + 0.6 * z, px = 600 + (A2.x - 600) * z, py = 1320 + (A2.y + 40 - 1320) * z;
   const tease = f >= fP && f < fP + 14 ? 0.25 : 0;
   return (
@@ -35,26 +35,36 @@ export const Anillos: React.FC<P> = ({ pal }) => {
     </>
   );
 };
-/** Analogía: cable grapado por dentro de una viga doblada (como el tendón en el dedo). Al tirar, salta la grapa del codo y el cable corta la esquina. */
+/** Analogía reconocible: el cable de la tele sujeto con abrazaderas blancas de clavo, rodeando el marco de una puerta.
+ *  Alguien tropieza (tira del cable), salta la abrazadera de la esquina y el cable se despega y corta la esquina. */
+const Abrazadera: React.FC<{ x: number; y: number; rot?: number; o?: number }> = ({ x, y, rot = 0, o = 1 }) => (
+  <g transform={`translate(${x} ${y}) rotate(${rot})`} opacity={o}>
+    <path d="M-44 18 Q-44 -40 0 -40 Q44 -40 44 18 L30 18 Q30 -24 0 -24 Q-30 -24 -30 18 Z" fill="#F8FAFC" stroke="#94A3B8" strokeWidth={4} />
+    <rect x={-52} y={14} width={104} height={14} rx={6} fill="#F1F5F9" stroke="#94A3B8" strokeWidth={4} />
+    <circle cx={0} cy={-32} r={7} fill="#475569" />
+  </g>
+);
 export const Grapas: React.FC<P> = ({ pal }) => {
-  const f = useCurrentFrame(), fS = pal("salta") ?? 60, tira = interpolate(f, [8, 30], [0, 1], cl), k = interpolate(f, [fS, fS + 10], [0, 1], cl);
-  const A = { x: 150, y: 760 }, C = { x: 560, y: 1160 }, B = { x: 930, y: 760 }; // viga en V invertida: A→C→B (esquina abajo)
-  const off = 46, Ai = { x: A.x + 10, y: A.y - off }, Ci = { x: C.x, y: C.y - off * 1.4 }, Bi = { x: B.x - 10, y: B.y - off };
-  const mid = { x: (Ai.x + Bi.x) / 2, y: (Ai.y + Bi.y) / 2 }, cuerda = { x: Ci.x + (mid.x - Ci.x) * 0.92 * k, y: Ci.y + (mid.y - Ci.y) * 0.92 * k };
-  const grapas = [0.25, 0.6, 1, 1.4, 1.75];
-  const enV = (t: number) => (t <= 1 ? { x: Ai.x + (Ci.x - Ai.x) * t, y: Ai.y + (Ci.y - Ai.y) * t } : { x: Ci.x + (Bi.x - Ci.x) * (t - 1), y: Ci.y + (Bi.y - Ci.y) * (t - 1) });
+  const f = useCurrentFrame(), fS = pal("salta") ?? 60, tira = interpolate(f, [10, 34], [0, 1], cl), k = interpolate(f, [fS, fS + 9], [0, 1], cl);
+  // marco de puerta: esquina en (620, 980); el cable baja por el marco y sigue por el rodapié (esquina interior)
+  const E = { x: 640, y: 1000 }, top = { x: 640, y: 560 }, der = { x: 1000, y: 1000 };
+  const ctrl = { x: E.x + (top.x + der.x - 2 * E.x) * 0.48 * k, y: E.y + (top.y + der.y - 2 * E.y) * 0.48 * k };
+  const pie = { x: 1100 + 40 * tira, y: 1000 - 60 * tira };
+  const cable = `M${top.x} 300 L${top.x} ${top.y} Q${ctrl.x} ${ctrl.y} ${der.x} ${der.y} L${pie.x} ${pie.y}`;
   return (
-    <AbsoluteFill style={{ background: "linear-gradient(#FFF6E8, #F1E3CC)" }}>
+    <AbsoluteFill style={{ background: "linear-gradient(#FBF4EA, #EFE3D0)" }}>
       <Svg>
-        <path d={`M${A.x} ${A.y} L${C.x} ${C.y} L${B.x} ${B.y}`} stroke="#B9875A" strokeWidth={70} strokeLinejoin="round" strokeLinecap="round" fill="none" />
-        <path d={`M${A.x} ${A.y} L${C.x} ${C.y} L${B.x} ${B.y}`} stroke="#D9A877" strokeWidth={40} strokeLinejoin="round" strokeLinecap="round" fill="none" />
-        <path d={`M${Ai.x - 120} ${Ai.y - 10} L${Ai.x} ${Ai.y} L${cuerda.x} ${cuerda.y} L${Bi.x} ${Bi.y} L${Bi.x + 60 + 60 * tira} ${Bi.y - 200 * tira}`} stroke="#FF8A2E" strokeWidth={26} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        {grapas.map((t, i) => { const p = enV(t), suelta = i === 2, dy = suelta ? -380 * k : 0, rot = suelta ? 200 * k : 0;
-          return <g key={i} transform={`translate(${p.x + (suelta ? 160 * k : 0)} ${p.y + dy}) rotate(${rot})`} opacity={suelta ? 1 - 0.5 * k : 1}><path d="M-30 30 V-26 H30 V30" stroke="#475569" strokeWidth={15} fill="none" strokeLinejoin="round" /></g>; })}
-        <g opacity={tira}><path d={`M${Bi.x + 80} ${Bi.y - 220} l80 -110`} stroke={COL.rojo} strokeWidth={24} strokeLinecap="round" /><path d={`M${Bi.x + 140} ${Bi.y - 300} l40 -50 l-62 4 Z`} fill={COL.rojo} /><text x={Bi.x + 20} y={Bi.y - 340} textAnchor="end" fontFamily={F} fontWeight={900} fontSize={54} fill="#14213A">TIRAS</text></g>
-        {k > 0.2 && <text x={540} y={1330} textAnchor="middle" fontFamily={F} fontWeight={900} fontSize={70} fill={COL.rojo} opacity={k}>¡SE SEPARA!</text>}
+        <rect x={0} y={1040} width={1080} height={880} fill="#C9A27C" /><rect x={0} y={1040} width={1080} height={30} fill="#FFFFFF" />
+        <rect x={520} y={200} width={60} height={840} fill="#FFFFFF" stroke="#D6C7B3" strokeWidth={4} /><rect x={300} y={200} width={220} height={840} fill="#8B6B4E" opacity={0.35} />
+        <path d={cable} stroke="#1F2937" strokeWidth={22} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <Abrazadera x={top.x} y={420} rot={90} /><Abrazadera x={top.x} y={760} rot={90} />
+        <Abrazadera x={730 + 200 * k} y={890 - 420 * k} rot={45 + 320 * k} o={1 - 0.4 * k} />
+        <Abrazadera x={830} y={der.y} /><Abrazadera x={960} y={der.y} />
+        {k > 0 && k < 1 && <g stroke="#F59E0B" strokeWidth={8}>{[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M730 890 l${Math.cos(i * 1.3) * 90 * k} ${Math.sin(i * 1.3) * 90 * k}`} />)}</g>}
+        <g opacity={tira}><text x={1040} y={700} textAnchor="end" fontFamily={F} fontWeight={900} fontSize={58} fill="#14213A">¡TROPIEZAS!</text><path d="M960 1080 l110 -90" stroke={COL.rojo} strokeWidth={22} strokeLinecap="round" /></g>
+        {k > 0.3 && <text x={540} y={1300} textAnchor="middle" fontFamily={F} fontWeight={900} fontSize={66} fill={COL.rojo} opacity={k}>EL CABLE SE DESPEGA</text>}
       </Svg>
-      <Grande t="GRAPA = POLEA" top={430} k={f - 4} tam={90} fondo={COL.amarillo} />
+      <Grande t="GRAPA = POLEA" top={1520} k={f - 4} tam={76} fondo={COL.amarillo} />
     </AbsoluteFill>
   );
 };

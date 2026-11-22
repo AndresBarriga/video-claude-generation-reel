@@ -15,9 +15,9 @@ export const pose = (k: number) => {
   const a1 = mixN(214, 236, k), a2 = a1 - mixN(38, 116, k), a3 = a2 - mixN(28, -56, k);
   return { a1, a2, a3 };
 };
-export const geom = (k: number, mcp: Pt = { x: 720, y: 1150 }) => {
+export const geom = (k: number, mcp: Pt = { x: 720, y: 1150 }, sc = 1) => {
   const { a1, a2, a3 } = pose(k), a0 = a1 + 14;
-  const meta0 = pt(mcp, a0 + 180, L.meta), pip = pt(mcp, a1, L.prox), dip = pt(pip, a2, L.med), tip = pt(dip, a3, L.dist), codo = pt(meta0, a0 + 180 - 8, 520);
+  const meta0 = pt(mcp, a0 + 180, L.meta), pip = pt(mcp, a1, L.prox * sc), dip = pt(pip, a2, L.med * sc), tip = pt(dip, a3, L.dist * sc), codo = pt(meta0, a0 + 180 - 8, 520);
   return { a0, a1, a2, a3, meta0, mcp, pip, dip, tip, codo };
 };
 /** Normal hacia la palma (lado de flexión). */
@@ -55,9 +55,9 @@ const Anillo: React.FC<{ a: Pt; b: Pt; t0: number; t1: number; calor: number; ro
   );
 };
 
-export type DedoProps = { k: number; xray?: number; calor?: number; roto?: number; etiquetas?: number; glowA2?: number; flechas?: number; regleta?: boolean };
+export type DedoProps = { k: number; xray?: number; calor?: number; roto?: number; etiquetas?: number; glowA2?: number; flechas?: number; regleta?: boolean; mano?: boolean };
 /** Dibujo completo en coordenadas de pantalla (1080×1920). */
-export const Dedo: React.FC<DedoProps> = ({ k, xray = 1, calor = 0, roto = 0, etiquetas = 0, glowA2 = 0, flechas = 0, regleta = true }) => {
+export const Dedo: React.FC<DedoProps> = ({ k, xray = 1, calor = 0, roto = 0, etiquetas = 0, glowA2 = 0, flechas = 0, regleta = true, mano = true }) => {
   const g = geom(k), piel = 1 - xray;
   // tendón: por el lado palmar; en arqueo hace cuerda entre el final de la A2 y el inicio de la A4
   const d0 = R + 12;
@@ -70,12 +70,14 @@ export const Dedo: React.FC<DedoProps> = ({ k, xray = 1, calor = 0, roto = 0, et
   const contorno = [g.meta0, g.mcp, g.pip, g.dip, g.tip];
   return (
     <g>
-      {regleta && <g><rect x={-400} y={-200} width={g.tip.x - 26 + 400} height={2600} fill="#22356E" /><rect x={g.tip.x - 26} y={-200} width={10} height={2600} fill="#5B7BD0" opacity={0.6} /><path d={`M${g.tip.x - 26} ${g.tip.y + 40} h96 q14 0 14 14 v40 q0 10 -10 12 L${g.tip.x - 26} ${g.tip.y + 150} Z`} fill="#F2A65A" /><path d={`M${g.tip.x - 26} ${g.tip.y + 40} h96`} stroke="#FFD3A1" strokeWidth={10} /></g>}
-      {/* piel: trazo grueso redondeado */}
-      <path d={`M${g.codo.x} ${g.codo.y} L${g.meta0.x} ${g.meta0.y} L${g.mcp.x} ${g.mcp.y}`} stroke={`rgba(255,214,184,${0.95 * piel + 0.13 * xray})`} strokeWidth={250} strokeLinecap="round" strokeLinejoin="round" fill="none" />
-      <path d={`M${contorno.map((p) => `${p.x} ${p.y}`).join(" L")}`} stroke={`rgba(255,214,184,${0.95 * piel + 0.16 * xray})`} strokeWidth={190} strokeLinecap="round" strokeLinejoin="round" fill="none" />
-      <path d={`M${contorno.map((p) => `${p.x} ${p.y}`).join(" L")}`} stroke={`rgba(150,220,255,${0.5 * xray})`} strokeWidth={210} strokeLinecap="round" strokeLinejoin="round" fill="none" style={{ mixBlendMode: "screen" }} opacity={0.25} />
-      <g opacity={0.15 + 0.85 * xray}>
+      {regleta && <g><defs><linearGradient id="pared" x1="0" x2="1"><stop offset="0" stopColor="#3F67C9" /><stop offset="1" stopColor="#2F51A8" /></linearGradient></defs>
+        <rect x={-600} y={-400} width={g.tip.x - 40 + 600} height={3000} fill="url(#pared)" />
+        {[0, 1, 2, 3, 4, 5].map((i) => <circle key={i} cx={g.tip.x - 140 - (i % 2) * 120} cy={500 + i * 260} r={16} fill="#22356E" opacity={0.6} />)}
+        <path d={`M${g.tip.x - 40} ${g.tip.y + 44} h140 q16 0 16 16 v40 q0 14 -16 14 h-140 Z`} fill="#F59E0B" stroke="#B45309" strokeWidth={6} />
+        <path d={`M${g.tip.x - 40} ${g.tip.y + 46} h128`} stroke="#FCD34D" strokeWidth={10} strokeLinecap="round" /></g>}
+      {mano ? <Mano k={k} xray={xray} /> : <path d={`M${contorno.map((p) => `${p.x} ${p.y}`).join(" L")}`} stroke="rgba(255,214,184,.18)" strokeWidth={190} strokeLinecap="round" strokeLinejoin="round" fill="none" />}
+      {xray > 0 && <path d={`M${contorno.map((p) => `${p.x} ${p.y}`).join(" L")}`} stroke={`rgba(140,210,255,${0.22 * xray})`} strokeWidth={200} strokeLinecap="round" strokeLinejoin="round" fill="none" />}
+      <g opacity={xray}>
         <Hueso a={g.meta0} b={g.mcp} r={R + 4} glow={xray} />
         <Hueso a={g.mcp} b={g.pip} r={R} glow={xray} />
         <Hueso a={g.pip} b={g.dip} r={R - 4} glow={xray} />
@@ -89,6 +91,48 @@ export const Dedo: React.FC<DedoProps> = ({ k, xray = 1, calor = 0, roto = 0, et
         {glowA2 > 0 && <circle cx={fA2.x + n2.x * 40} cy={fA2.y + n2.y * 40} r={90 + 30 * glowA2} fill="#FFB347" opacity={0.35 * glowA2} style={{ filter: "blur(18px)" }} />}
         {flechas > 0 && [0, 1, 2].map((i) => { const b = lerp(g.mcp, g.pip, 0.36 + i * 0.13), s = off(b, g.a1, R + 40), e2 = off(b, g.a1, R + 40 + 120 * flechas); return <g key={i} opacity={flechas}><path d={`M${s.x} ${s.y} L${e2.x} ${e2.y}`} stroke="#FF4D3D" strokeWidth={22} strokeLinecap="round" /><circle cx={e2.x} cy={e2.y} r={18} fill="#FF4D3D" /></g>; })}
       </g>
+    </g>
+  );
+};
+
+/** Capa de piel con brillo: un dedo como tres «salchichas» con luz en el dorso y sombra en la palma, y uña. */
+const PIEL = { base: "#F2B48C", luz: "#FFD9BF", sombra: "#C97F5B", una: "#FFE4E1" };
+const Seg: React.FC<{ a: Pt; b: Pt; w: number; ang: number; tono?: number }> = ({ a, b, w, ang, tono = 0 }) => {
+  const n = palma(ang), d = `M${a.x} ${a.y} L${b.x} ${b.y}`, oscuro = (c: string) => { if (!tono) return c; const h = (i: number) => parseInt(c.slice(i, i + 2), 16), t = [0x3a, 0x20, 0x30]; return `rgb(${[1, 3, 5].map((i, j) => Math.round(h(i) * (1 - tono) + t[j] * tono)).join(',')})`; };
+  return <g>
+    <path d={d} stroke={oscuro(PIEL.sombra)} strokeWidth={w} strokeLinecap="round" />
+    <path d={d} stroke={oscuro(PIEL.base)} strokeWidth={w * 0.84} strokeLinecap="round" transform={`translate(${-n.x * w * 0.06} ${-n.y * w * 0.06})`} />
+    <path d={d} stroke={oscuro(PIEL.luz)} strokeWidth={w * 0.22} strokeLinecap="round" opacity={0.85} transform={`translate(${-n.x * w * 0.26} ${-n.y * w * 0.26})`} />
+  </g>;
+};
+export const DedoPiel: React.FC<{ g: ReturnType<typeof geom>; w?: number; tono?: number; una?: boolean }> = ({ g, w = 120, tono = 0, una = true }) => {
+  const c = (hex: string) => { if (!tono) return hex; const h = (i: number) => parseInt(hex.slice(i, i + 2), 16), t = [0x3a, 0x20, 0x30]; return `rgb(${[1, 3, 5].map((i, j) => Math.round(h(i) * (1 - tono) + t[j] * tono)).join(",")})`; };
+  const pts = [g.mcp, g.pip, g.dip, g.tip], d = `M${pts.map((p) => `${p.x} ${p.y}`).join(" L")}`;
+  const nd = [g.a1, (g.a1 + g.a2) / 2, (g.a2 + g.a3) / 2, g.a3].map((a, i) => { const n = palma(a); return { x: pts[i].x - n.x * w * 0.24, y: pts[i].y - n.y * w * 0.24 }; });
+  const dl = `M${nd.map((p) => `${p.x} ${p.y}`).join(" L")}`, n = palma(g.a3), u = lerp(g.dip, g.tip, 0.7);
+  return (
+    <g>
+      <path d={d} stroke={c(PIEL.sombra)} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <path d={d} stroke={c(PIEL.base)} strokeWidth={w * 0.86} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <path d={dl} stroke={c(PIEL.luz)} strokeWidth={w * 0.2} strokeLinecap="round" strokeLinejoin="round" fill="none" opacity={0.8} />
+      {[g.pip, g.dip].map((p, i) => <path key={i} d={`M${p.x - 14} ${p.y - 4} q14 -10 28 0`} stroke={c(PIEL.sombra)} strokeWidth={5} fill="none" opacity={0.6} />)}
+      {una && <g transform={`translate(${u.x - n.x * w * 0.4} ${u.y - n.y * w * 0.4}) rotate(${g.a3})`}><rect x={-38} y={-15} width={76} height={28} rx={13} fill={PIEL.una} stroke="#E0A090" strokeWidth={4} opacity={tono ? 0.6 : 1} /></g>}
+    </g>
+  );
+};
+/** Mano de perfil (lado del pulgar) colgando de la regleta: palma + antebrazo, 3 dedos detrás, pulgar encima del índice (arqueo cerrado). */
+export const Mano: React.FC<{ k: number; xray: number; pulgar?: number }> = ({ k, xray }) => {
+  const g = geom(k), atras = [0.92, 0.84, 0.7].map((sc, i) => geom(k, { x: g.mcp.x + 30 * (i + 1), y: g.mcp.y - 6 * (i + 1) }, sc)).reverse();
+  const op = 1 - 0.55 * xray, palmaD = (x: number) => `M${g.codo.x} ${g.codo.y} L${g.meta0.x + x} ${g.meta0.y} L${g.mcp.x + 60 + x} ${g.mcp.y - 10}`;
+  return (
+    <g>
+      <g opacity={op}>{atras.map((gg, i) => <DedoPiel key={i} g={gg} w={112 - i * 6} tono={0.3 + i * 0.08} una={false} />)}</g>
+      <g opacity={op}>
+        <path d={palmaD(0)} stroke={PIEL.sombra} strokeWidth={290} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={palmaD(0)} stroke={PIEL.base} strokeWidth={258} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={`M${g.codo.x - 80} ${g.codo.y} L${g.meta0.x - 80} ${g.meta0.y - 10} L${g.mcp.x - 10} ${g.mcp.y - 50}`} stroke={PIEL.luz} strokeWidth={40} strokeLinecap="round" strokeLinejoin="round" fill="none" opacity={0.55} />
+      </g>
+      <g opacity={1 - 0.8 * xray}><DedoPiel g={g} w={124} /></g>
     </g>
   );
 };
