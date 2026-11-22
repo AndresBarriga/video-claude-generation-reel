@@ -42,3 +42,8 @@ Partner check: aplazado (lo hizo @sistemacima hace poco; lo haremos más adelant
 
 ## Visual
 Estilo E72 (rocódromo claro, Lola) pero con hilo propio: **las cruces rojas en el paso** (se acumulan y se borran al final) y un contador de pegues. Panel derecho: batería en vez de medidor de miedo.
+
+## v2 (crítico 6,5, envío 6 → cambios aplicados)
+Voz en «tú» masculino/neutro (audiencia 94 % hombres), «quinto pegue del día» (creíble y explica el cansancio), reencuadre antes de 6 s, matiz no obvio en el 1, estudio con n y sin insinuar encadenes (crono rotulado A VISTA / CONOCIDA), descanso sin minutos, mapa más corto, CTA nuevo. 4–8 s: reintenta el paso con la batería bajando (nada quieto >1 s).
+Texto ElevenLabs:
+Quinto pegue del día a tu proyecto. Y te caes en el mismo paso. No es el paso: es que ya llegas gastado. Uno: no repitas el paso desde abajo. Cuélgate de la cuerda, hazlo dos veces seguidas y luego enlázalo con el anterior. Dos: apréndete la vía. Dónde chapas, dónde descansas y cómo coges cada presa. En un estudio con dieciocho escaladores avanzados, conociendo la vía tardaron medio minuto menos y se pararon menos. Tres: descansa hasta tener los antebrazos sueltos. Si subes hinchado, empiezas el pegue ya gastado. El pegue bueno no es el que más aprietas. Es el que llegas fresco al paso. Mándaselo a ese que lleva veinte pegues y dice «hoy sí». ¿En qué pegue encadenaste tú el tuyo?
