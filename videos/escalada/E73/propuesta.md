@@ -39,3 +39,14 @@ Gancho 2 · Reencuadre 2 (el «mal» llega a los ~2 s sobre el mismo plano) · M
 
 ## Visual
 Estilo de E72 (rocódromo claro, Lola y Leo), que solo se ha usado una vez. Hilo: tarjeta de quiz grande con contador y ✓/✗ que estalla. Las 3 consecuencias animadas son lo protagonista.
+
+## v2 (crítico 7, envío 7,5 → cambios aplicados)
+Orden nuevo (el «bien» en la 3, menos predecible); sin certezas; manos como en E60; z-clip con corrección completa y dibujo de dos ramas de color + «Z» + flecha «no sube»; fórmulas variadas.
+| # | Se ve | Se dice |
+|---|---|---|
+| 1 | Cuerda detrás de la pierna → cae y la voltea | ¿Bien o mal? … Mal. Si caes así, la cuerda te puede voltear y golpearte la cabeza. |
+| 2 | Chapa 2, pie que resbala mientras estira cuerda; metros que suben, suelo cerca | ¿Y esta? … Mal. Sacas cuerda sin estar estable: si caes, caes también toda la que has sacado. En la segunda chapa, puede ser el suelo. |
+| 3 | Chapa entre cintura y cara, buena presa; ✓ | ¿Y así? … Bien. Entre la cintura y la cara, desde buena presa y sin sacar cuerda de más. |
+| 4 | Z-clip (ramas de dos colores, «Z», «no sube») | ¿Y esto? … Mal. Has cogido la cuerda por debajo de la chapa anterior: hace una zeta y no te deja subir. Deschapa y chapa la que sube hacia ti. |
+| 5 | Caída con la mano a la cinta → ✗ → manos delante, brazos blandos | ¿Y al caer? … Mal. Si agarras la cinta, puedes lesionarte un dedo. Y caes igual. Manos delante, brazos blandos. |
+| 6 | «¿Cuál hacías tú?» + hoja de enviar | ¿Cuál de estas hacías tú? Dímelo abajo y mándaselo a quien te asegura. |

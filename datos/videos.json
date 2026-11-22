@@ -153,5 +153,9 @@
  "E72B": {
   "corto": "Miedo a caer (B, sin «material»)",
   "desc": "Variante de E72 sin la escena «no es el material» (donde se iba la mitad a 3–7 s); gancho → «con miedo te agarrotas». Para reel de prueba."
+ },
+ "E73": {
+  "corto": "¿Bien o mal? Chapar",
+  "desc": "Quiz de seguridad al chapar: 5 situaciones (cuerda detrás de la pierna, sacar cuerda inestable, chapar bien, z-clip, agarrar la cinta) con la consecuencia animada. Propuesta v2."
  }
 }

@@ -31,3 +31,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-21 | E72 «Aprende a volar» (miedo a caer, 3 cosas) | propuesta v1 | 7 (envío 6,5) | puente estudio→«se entrena» sin respaldo; seguridad de caídas incompleta; escena 4 débil; CTA sin guardar — aplicado |
 | 2026-11-21 | E72 miedo a caer | propuesta v8 (2.ª pasada, pedida) | 7 (envío 7) | faltaban condiciones de seguridad en «Uno»; duración al límite — aplicado |
 | 2026-11-21 | E72 ¿Miedo a caer? (vídeo terminado, pedido por Andrés) | terminado | 7,5 (envío 7,5) | matiz de asegurador (aplicado: rótulo «✓ ASEGURADOR QUE SEPA»); fichas pequeñas y gancho que «encoge» = falsas alarmas de la hoja reducida; CTA largo (se mantiene, es de Andrés) |
+| 2026-11-22 | E73 «¿Bien o mal?» chapar (quiz) | propuesta v1 | 7 (envío 7,5) | manos al pecho contradice E60; sacar cuerda choca con el bien; certezas; z-clip incompleto; bien predecible — aplicado |
