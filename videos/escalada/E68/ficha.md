@@ -27,3 +27,5 @@ Fuentes: Schweizer 2001; Vigouroux y otros 2006; Schöffl y otros 2015.
 #escalada #poleas #lesionesescalada #regletas #escaladadeportiva #fuerzadededos
 
 **Comentario fijado:** ¿Has oído alguna vez el pop (tú o alguien de tu grupo)? 👇
+
+**Publicado:** 22-nov ~18:20.
