@@ -87,3 +87,6 @@ En unos días, ese cinco más ya no te hace sudar. Guárdalo para tu próxima sa
 
 ## v6 (23-nov): punto 3 simplificado; fuera el estudio (no se entendía); entra «escuelas clásicas / equipadas hace mucho = grado más duro» (tendencia, con «suelen» y «puede»).
 Y tres: el grado no se mide, se opina. Lo pone quien equipa la vía, comparando con lo que hay en su zona. Y en las escuelas clásicas, equipadas hace décadas, los grados suelen ser más duros: un seis a de entonces puede ser un seis be de hoy.
+
+## Audio (23-nov)
+voz-v1.mp3 = ElevenLabs original, 88 s (251 palabras; 18,6 s de pausas). voz.mp3 = pausas recortadas a ≤0,22 s, fuera «Lo pone quien equipa la vía, comparando con lo que hay en su zona», «Los primeros días son para aprender la roca» y «y tu cuerpo aprende la roca», atempo 1,12 → 63 s. Transcripción comprobada con Whisper: cortes limpios.
