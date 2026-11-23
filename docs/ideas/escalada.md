@@ -364,6 +364,15 @@ _Origen: Resumen de estado (30-oct) — mantener al día; el detalle de cada ide
   - **Lectura provisional (verificar):** voltea por pivote: suelta primero las manos con los pies apoyados y el cuerpo ya hacia fuera → gira hacia atrás como una silla que se vuelca (la cuerda no tiene que ver). Golpe de espalda: por girar hacia atrás y por el terreno menos desplomado de debajo. No juzgar a la aseguradora. Al límite chapando en tramo desplomado, mano en la cinta, no llega a chapar; cae 4–5 m hasta la penúltima, voltea sin cuerda tras la pierna, golpe en espalda y codo (sin cabeza). Encaja con E59 (2.ª chapa, 177K) y la caja «miedo a caer». Falta: su permiso (nombre o anónima), casco, grado, cómo fue el aseguramiento. Clave de seguridad (verificar): por qué se voltea sin cuerda tras la pierna (pies que se sueltan en desplome + cuerpo hacia atrás al estirarse a chapar) y el riesgo evitado de caer con cuerda recogida en la mano.
 - **Propuesta de colab de @sistemacima (personaje Dominguer):** «Las 5 fases de todo escalador. Y la 3 es la peligrosa» (rocódromo → «¡bloquea!» → ya te sientes pro, nudo sin mirar; Dominguer: «¿seguro que está acabado?» → no lo estaba → chequeo cruzado). Formato fases (H7) + seguridad (H14). Tienen 2.511 seguidores (tamaño parecido). Ellos propusieron animar a Dominguer y repartir; Andrés se inclina por que produzcan ellos (collab post en las dos cuentas, él revisa guion y borrador) y aprender de su proceso.
 
+**Ranking 23-nov (criterio: utilidad real primero + gancho tipo E63: paradoja de lo que haces, pregunta abierta >10 s, fotograma 0 claro):**
+1. **Cuerda detrás de la pierna: cómo saberlo** — «Miras tu nudo, tu arnés y tus chapas… y nunca miras dónde va tu cuerda.» Regla + cuándo pasa + truco + aviso «¡pierna!».
+2. **Dónde chapar** (chapa a la cintura) — «Chapas en cuanto ves la chapa… y justo ahí es cuando más arriesgas.»
+3. **El mosquetón mal cargado** — «Tu mosquetón aguanta un coche… si tira bien. Cruzado, un tercio.» (EN 12275: 20–22 kN eje mayor, ~7 kN eje menor/abierto). Visual de cifras.
+4. **Asegurar dinámico (E58)** — «Te frenó perfecto… y por eso te estampaste contra la pared.»
+5. **Pies (E71)** — «Llevas meses colgándote de la multipresa… y te caes por los pies.» (verificar Fuss y Niegl).
+6. Grigri no es automático · descansar en vía (E44) · rapel 3 errores.
+- Núr (E65): anónima (23-nov). Andrés: buena historia pero poco útil de fondo → no es prioridad.
+
 **Ranking 22-nov (validadas fuera + datos propios):**
 1. **E68 Poleas** «¿Qué le pasa a tu dedo en una regleta?» — @diariodeescalada_ 7,8K likes, 799 com., 3,8K envíos; nuestro E39 (1,9K) falló por ejecución. Cuerpo por dentro, solo escaladores. Verificar cifras (×3, 1 de 5). Ojo: dibujo de dedo en presa (Andrés no quiere mano tipo E43).
 2. **E73 «¿Bien o mal?» chapar** — @sima.k202 1.227 envíos (cuerda detrás de la pierna); propuesta v2 lista.
