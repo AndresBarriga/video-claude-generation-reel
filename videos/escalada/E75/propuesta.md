@@ -68,3 +68,8 @@ Sin personaje casi: objetos en primer plano (estilo E63) + barra de kN vertical 
 | 28–40 | Costa: chapa que parece buena; corte transversal claro con grieta por dentro; barra a «TU PESO» | Tres: junto al mar, la sal rompe las chapas por dentro, aunque por fuera parezcan buenas. Pueden romperse con el peso de una persona. Si hay óxido o es vieja, no te fíes. |
 | 40–46 | Las tres ✓; CTA guardar + enviar | Sano y bien puesto, una caída normal le sobra. Mira estas tres cosas. Guárdalo y mándaselo a ese que dice «eso no se rompe». |
 Comentario fijado: «¿Qué vía de tu zona pide reequipar ya?»
+
+## Verificación de matices (23-nov, tras comentario de Andrés)
+- Corrosión bajo tensión (UIAA 2015/2020): NO se ve desde fuera; no depende de la edad (puede pasar en <1 año) sino del microclima: humedad moderada, zonas NO lavadas por la lluvia (desplomes, cuevas; lavada por el mar puede ir bien), ≥20 °C peor. Peor caso: rotura con 10–20 kg. Solo el titanio está probado para zonas de alto riesgo (UIAA). Galvanizadas antiguas: descartadas.
+- Prueba FEDME en España (calizas, 0,5–3,5 km del mar): media 18,6 kN, mínima 13,5 → la mayoría bien.
+- ⇒ «Si hay óxido o es vieja, no te fíes» era un consejo con hueco (falsa seguridad con chapas nuevas y sin óxido). El tema del mar no cabe bien en 12 s: o vídeo propio o fuera.
