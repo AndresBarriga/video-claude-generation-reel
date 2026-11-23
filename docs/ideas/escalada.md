@@ -371,6 +371,7 @@ _Origen: Resumen de estado (30-oct) — mantener al día; el detalle de cada ide
 4. **Asegurar dinámico (E58)** — «Te frenó perfecto… y por eso te estampaste contra la pared.»
 5. **Pies (E71)** — «Llevas meses colgándote de la multipresa… y te caes por los pies.» (verificar Fuss y Niegl).
 6. Grigri no es automático · descansar en vía (E44) · rapel 3 errores.
+**Revisión completa 23-nov (todo `escalada.md`, `historias.md`, `bien-o-mal.md`):** suben **«La puerta»** (técnica: sueltas una mano y el cuerpo se abre; cómo frenarla — visual, alivio «no es fuerza», guardable; E43 demuestra que técnica útil convierte) al **n.º 2** y **placa vs desplome** (cómo caer según el terreno) al n.º 6. Útiles pero de nicho: errores en la reunión (multilargo), cuándo jubilar la cuerda, vía ferrata. Trauma de suspensión: sorprendente pero exige mucha verificación. Historias (decisión límite, míticas, España): no pasan el criterio de utilidad.
 - Núr (E65): anónima (23-nov). Andrés: buena historia pero poco útil de fondo → no es prioridad.
 
 **Ranking 22-nov (validadas fuera + datos propios):**
