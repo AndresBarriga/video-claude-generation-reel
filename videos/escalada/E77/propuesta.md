@@ -52,3 +52,16 @@ Lola (E72) en los dos mundos, pantalla partida como hilo. Rocódromo de colores 
 | 24–40 | Candados 1-2-3 (plan del primer día): calentar por debajo / mirar la vía desde abajo / pies elegidos por ti | Para tu primer día: uno, empieza dos o tres escalones por debajo de tu grado del roco; con la chapa lejos no quieres ir al límite. Dos, lee la vía desde abajo antes de subir. Tres, en el rocódromo, entrena eligiendo tú los pies. |
 | 40–46 | Barra «día 1 → último día» que sube; CTA | En unos días te adaptas. Guárdalo para tu primer día de viaje y mándaselo a ese que dice «yo en el roco soy de séptimo». ¿Cuántos escalones bajas tú? |
 Puntuación v2: 2·2·1·2·2·2·2 = 13/14.
+
+## v3 (23-nov, tras notas de Andrés: lectura/commit, grados explicados, tipo de roca y agarres, plan mejor; foco en skip y retención) ~48 s
+Estructura de retención: fotograma 0 en movimiento (6b cae a 5+); bucle «la última casi nadie la sabe» a los 4 s que se cierra a los 22–30 s; algo nuevo cada ~1–1,5 s; 3 puntos de progreso arriba y después la lista del plan; final que vuelve al primer plano (bucle).
+| s | Se ve | Se dice |
+|---|---|---|
+| 0–3 | Pantalla partida clara: Lola en el roco «6b» grande → corte a roca, el «6b» cae y se rompe en «5+»; gota de sudor | Eres de seis be en el rocódromo. En roca, un cinco más te hace sudar. |
+| 3–6 | Lola se encoge de hombros; 3 puntos de progreso arriba, el 3.º con «?» | No has empeorado. Son tres razones, y la última casi nadie la sabe. |
+| 6–14 | 1: roco: una línea de puntos une las presas del mismo color, Lola salta (commit ✓) · roca: tres caminos con «?», Lola quieta; barra de fuerza bajando mientras duda | Uno: en el rocódromo la vía te la dan hecha. Ves el color, sabes que es por ahí y te lanzas. En roca no sabes ni si se sube por ahí. Dudas… y mientras dudas, te cansas. |
+| 14–22 | 2: carrusel rápido de 3 rocas, cada una 2 s con su presa: caliza (regleta, agujero) «SIURANA» · granito (adherencia, fisura) «LA PEDRIZA» · conglomerado (bolo) «MONTSERRAT»; al final, mano de resina «¿?» | Dos: cada roca se escala distinto. Caliza: regletas y agujeros. Granito: adherencia y fisuras. Conglomerado: bolos. Y tus dedos y tus pies vienen de la resina. |
+| 22–30 | 3 (se cierra el bucle): rótulo «EL GRADO ES UNA OPINIÓN»; equipador con taladro apunta «6a» en un croquis; dos croquis con el mismo 6a, uno con Lola sufriendo | Y tres: el grado es una opinión. Lo pone quien abre la vía, comparando con su zona. Por eso un seis a de una escuela clásica puede parecerte un seis be en otra. |
+| 30–42 | Plan «TU PRIMER DÍA» con 3 casillas que se marcan: escalera de grados (–2/–3) · manchas de magnesio que se iluminan en la pared · pie plano en adherencia con flecha de peso | Para tu primer día: uno, empieza dos o tres escalones por debajo; el primer día es para aprender la roca. Dos, lee la vía desde abajo: el magnesio te marca las presas. Tres, en placa, pie plano y el peso encima del pie. |
+| 42–48 | Barra «día 1 → último día»; vuelve el plano del inicio: el 5+ en roca, ahora sin sudor y sonriendo; CTA | Al final del viaje, ese cinco más ya no te hace sudar. Guárdalo para tu primer día y mándaselo a ese que en el roco es de séptimo. ¿Cuántos escalones bajas tú? |
+Puntuación v3: 2·2·2·2·2·2·2 = 14/14 (bucle explícito antes de 5 s que se cierra en el rehook).
