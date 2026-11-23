@@ -381,3 +381,10 @@ _Origen: Resumen de estado (30-oct) — mantener al día; el detalle de cada ide
 4. **E70 Escalar contra la depresión** — @diariodeescalada_ 4,9K envíos (el que más), pero público general (menos seguidores) y sensible; mucha verificación.
 5. **E74 Quinto pegue a tu proyecto** — sin referencia externa; propuesta v2 lista.
 6. **Rapel 3 cosas** (secuela E46). · Partner check: más adelante (@sistemacima).
+
+## Pilares (23-nov, Andrés) — rotar; cada pieza útil de verdad + gancho tipo E63
+- **Seguridad (lo que más seguidores trae):** cuerda detrás de la pierna · dónde chapar · cómo asegurar (dinámico, grigri) · dónde caer (placa/desplome) · trauma de suspensión (verificar mucho).
+- **Técnica:** la puerta · escalar eficiente (brazos estirados, cadera a la pared) · pies (pies primero) · no perder pies en desplome · talón / drop knee.
+- **Cabeza:** trabajar el miedo (E72 hecho; rehacer con arranque nuevo en semanas) · ego/presión al encadenar.
+- **Material:** mosquetón mal cargado · cuándo jubilar la cuerda · cintas larga/corta (E67) · cinta arriba/abajo (E66).
+Orden propuesto: Seguridad → Técnica → Seguridad → Material → Técnica → Cabeza (2 de cada 3 de cuerda/seguridad o técnica útil).
