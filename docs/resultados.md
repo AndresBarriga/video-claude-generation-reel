@@ -76,3 +76,13 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 | E69 pump | 13,5 | 4,5K | 14 | 3,1 | **40,7 %** | 18/60 s | 24 (0,7 %) | 0,9 % |
 - **E64 trae 2,8× los seguidores de E63 con un tercio de las vistas (≈8× por vista).** El material da alcance; la cuerda da seguidores.
 - **El arranque decide la distribución:** E63 (skip 17 %, ≈95 % a 2 s) abre con «150 €» enorme sobre una tienda iluminada y el pie en el gato: cifra concreta + situación que todos reconocen + fondo claro. E69 (skip 41 %, ≈64 % a 3 s) abre con un escalador pequeño sobre fondo casi negro y una pregunta en subtítulo: la distribución se corta a las ~2 h.
+
+## 23-nov 08:23 — E68, E72, E63 + cuenta (grabación de Andrés)
+| Vídeo | h | Vistas | Seg. | Seg./1k | Skip | Visto | Guard. | Envíos |
+|---|---|---|---|---|---|---|---|---|
+| E72 miedo a caer | 36 | 19,4K | 59 | 3,0 | 38,5 % | 19/56 s | 165 (1,0 %) | 326 (2,0 %) |
+| E68 poleas (rayos X) | 14 | 3,2K | 3 | 0,9 | **41,8 %** | 13/56 s | 10 (0,4 %) | 0,6 % |
+| E63 pies de gato | 67 | 254K | 157 | 0,62 | 17,0 % | 30/55 s | 709 | 1.437 |
+Cuenta: 3.906 seguidores, +3.765 netos en 30 días, 1,49 M vistas. Por seguidores (30 días): E59 1.587 · E64 359 · E46 304 · E41? 297 (fase 5) · E43 227 · E49? 225 · E63 157.
+- **E68 falló en el arranque:** skip 41,8 % y mitad fuera a los 3–4 s; plano desde ~1 h. Fondo oscuro + mano dibujada que no se lee como «alguien escalando» en el fotograma 0. Igual que E69 (pump, 40,7 %). **Dos de dos con fondo oscuro de rayos X/sala en el arranque por encima del 40 % de skip.**
+- **E72 se recuperó:** 19K, 59 seguidores, envíos 2,0 % y guardados 1,0 % (buenos); el skip subió de 24 % (1 h) a 38,5 % al salir a no seguidores. Medio-bueno, no un fracaso.

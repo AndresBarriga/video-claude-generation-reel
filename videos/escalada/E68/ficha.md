@@ -29,3 +29,6 @@ Fuentes: Schweizer 2001; Vigouroux y otros 2006; Schöffl y otros 2015.
 **Comentario fijado:** ¿Has oído alguna vez el pop (tú o alguien de tu grupo)? 👇
 
 **Publicado:** 22-nov ~18:20.
+
+## Resultado (23-nov 08:23, ~14 h)
+3,2K vistas (plano desde ~1 h) · 3 seg. · skip 41,8 % · visto 13/56 s · guard. 0,4 % · envíos 0,6 %. **Curva:** ≈50 % a 3–4 s (el gancho oscuro con la mano), ≈30 % a 10 s, meseta lenta. Falla el arranque, no el cuerpo.
