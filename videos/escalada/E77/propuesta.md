@@ -84,3 +84,6 @@ Dos: cada roca se escala distinto. La caliza, sobre todo regletas y agujeros. El
 Y tres: el grado es una opinión. Lo pone quien abre la vía, comparando con su zona. En un estudio, setenta escaladores graduaron las mismas cinco vías: coincidían en cuál era más dura, pero en el número, uno solo podía fallar por una letra, a veces dos. Por eso un seis a de una zona puede parecerte un seis be en otra.
 Para tus primeros días en roca, o en una zona nueva: uno, empieza dos o tres escalones por debajo; los primeros días son para aprender la roca. Dos, lee la vía desde abajo: el magnesio suele marcarte las presas. Tres, repite vías: la segunda vez ya sabes por dónde va, y tu cuerpo aprende la roca.
 En unos días, ese cinco más ya no te hace sudar. Guárdalo para tu próxima salida a roca y mándaselo a ese que en el roco es de séptimo. ¿Cuántos escalones bajas tú?
+
+## v6 (23-nov): punto 3 simplificado; fuera el estudio (no se entendía); entra «escuelas clásicas / equipadas hace mucho = grado más duro» (tendencia, con «suelen» y «puede»).
+Y tres: el grado no se mide, se opina. Lo pone quien equipa la vía, comparando con lo que hay en su zona. Y en las escuelas clásicas, equipadas hace décadas, los grados suelen ser más duros: un seis a de entonces puede ser un seis be de hoy.
