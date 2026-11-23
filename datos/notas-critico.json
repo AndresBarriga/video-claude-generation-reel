@@ -229,5 +229,12 @@
   "version": "propuesta v1",
   "fecha": "2026-11-23",
   "nota_breve": "buen dato; corregir consejos (antipánico, peso)"
+ },
+ "E77": {
+  "nota": 6.5,
+  "envio": 7,
+  "version": "propuesta v1",
+  "fecha": "2026-11-23",
+  "nota_breve": "identidad sólida; plan guardable 1-2-3"
  }
 }
