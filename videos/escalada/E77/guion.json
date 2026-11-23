@@ -1,0 +1,105 @@
+{
+ "id": "E77",
+ "titulo": "Rocódromo vs roca: por qué bajas grados",
+ "nicho": "escalada",
+ "plantilla": "Grados",
+ "formato": "identidad-aprendizaje",
+ "verificado": true,
+ "fuentes": [
+  "Experiencia común de escalada (sin estudio, a propósito). Tipos de roca: tendencias (caliza: regletas/agujeros; granito: adherencia/fisuras; conglomerado: bolos).",
+  "Grados de escuelas clásicas más duros: tendencia reconocida, dicho con «suelen/puede»."
+ ],
+ "escenas": [
+  {
+   "tipo": "texto",
+   "visual": "gancho",
+   "bloque": "gancho",
+   "texto": "Eres de seis be en el rocódromo. En roca, un cinco más te hace sudar.",
+   "claves": [
+    "rocódromo",
+    "roca",
+    "sudar"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "razones",
+   "bloque": "reencuadre",
+   "texto": "No has empeorado. Son tres razones, y la última casi nadie la sabe.",
+   "claves": [
+    "empeorado",
+    "tres",
+    "nadie"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "uno",
+   "bloque": "pasos",
+   "texto": "Uno: en el rocódromo la vía te la dan hecha. Ves el color, sabes que es por ahí y que esa presa es buena, y te lanzas. En roca no sabes ni si se sube por ahí, ni si ese agarre es bueno o es el que toca. Dudas… y mientras dudas, te cansas.",
+   "claves": [
+    "hecha",
+    "color",
+    "lanzas",
+    "dudas",
+    "cansas"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "dos",
+   "bloque": "pasos",
+   "texto": "Dos: cada roca se escala distinto. La caliza, sobre todo regletas y agujeros. El granito, adherencia y fisuras. El conglomerado, bolos. Y tus dedos y tus pies vienen de la resina.",
+   "claves": [
+    "distinto",
+    "caliza",
+    "granito",
+    "conglomerado",
+    "resina"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "tres",
+   "bloque": "pasos",
+   "texto": "Y tres: el grado no se mide, se opina. Lo pone quien equipa la vía, comparando con lo que hay en su zona. Y en las escuelas clásicas, equipadas hace décadas, los grados suelen ser más duros: un seis a de entonces puede ser un seis be de hoy.",
+   "claves": [
+    "opina",
+    "equipa",
+    "clásicas",
+    "duros"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "plan",
+   "bloque": "consejo",
+   "texto": "Para tus primeros días en roca, o en una zona nueva: uno, empieza dos o tres escalones por debajo. Dos, lee la vía desde abajo: el magnesio suele marcarte las presas. Tres, repite vías: la segunda vez ya sabes por dónde va.",
+   "claves": [
+    "primeros",
+    "debajo",
+    "magnesio",
+    "repite"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "cta",
+   "bloque": "cta",
+   "texto": "En unos días, ese cinco más ya no te hace sudar. Guárdalo para tu próxima salida a roca y mándaselo a ese que en el roco es de séptimo. ¿Cuántos escalones bajas tú?",
+   "claves": [
+    "sudar",
+    "guárdalo",
+    "séptimo",
+    "escalones"
+   ],
+   "cifras": []
+  }
+ ]
+}

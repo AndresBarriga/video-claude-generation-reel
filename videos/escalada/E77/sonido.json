@@ -1,0 +1,111 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "musica",
+   "inicio": {
+    "escena": 0
+   },
+   "fin": {
+    "escena": "cta",
+    "final": true
+   },
+   "volumen": 0.16,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "gancho",
+    "palabra": "roca"
+   },
+   "duracion": 0.5,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "uno",
+    "palabra": "uno"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "dos",
+    "palabra": "dos"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "dos",
+    "palabra": "granito"
+   },
+   "duracion": 0.4,
+   "volumen": 0.35
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "dos",
+    "palabra": "conglomerado"
+   },
+   "duracion": 0.4,
+   "volumen": 0.35
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "tres",
+    "palabra": "tres"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "tres",
+    "palabra": "hoy"
+   },
+   "duracion": 0.5,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "plan",
+    "palabra": "debajo"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "plan",
+    "palabra": "magnesio"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "plan",
+    "palabra": "repite"
+   },
+   "duracion": 0.3,
+   "volumen": 0.5
+  }
+ ]
+}
