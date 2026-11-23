@@ -1,6 +1,6 @@
 # Cuerda detrás de la pierna: imágenes IA (prueba 23-nov)
 Herramienta: Gemini (Nano Banana 2, gratis). Clave: generar la ✕ y luego EDITAR esa misma imagen cambiando solo la cuerda → ✓ idéntica salvo la cuerda.
-Referencia de composición: foto propia en el rocódromo (pierna + cuerda bien y mal), no las imágenes de @sima.k202 (no copiar sus dibujos).
+Referencia de composición: subir la imagen de @sima.k202 del caso y pedir «misma situación de cuerda y pierna, pero con este personaje, este estilo y otro ángulo/roca». Que quede distinto (personaje, colores, encuadre).
 Pedir siempre 9:16 y sin texto. Si sale marca de agua, se recorta/tapa en el montaje.
 
 Estilo (pegar al principio de cada prompt):

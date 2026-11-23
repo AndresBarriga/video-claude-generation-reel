@@ -69,3 +69,4 @@ Lo vigente está resumido en `docs/estrategia.md`.
 - 2026-11-22 · Partner check aplazado (lo acaba de hacer @sistemacima); se hará más adelante con consecuencias animadas.
 - 2026-11-23 · Regla: el fotograma 0 nunca en fondo oscuro/rayos X (E69 y E68, skip >40 %). E68 queda como aprendizaje; poleas se puede rehacer más adelante empezando con una persona colgada de una regleta en un rocódromo claro.
 - 2026-11-23: prueba de imágenes generadas con IA (Gemini, gratis) para «cuerda detrás de la pierna»: imágenes fijas + movimiento encima en Remotion. El dibujo por código no llega a la claridad de las referencias ✓/✕. Se mide frente a E52.
+- 2026-11-23: se permite usar imágenes de referencias (p. ej. @sima.k202) como referencia para generar las nuestras con IA, si el resultado queda distinto (personaje, colores, ángulo, roca). Textos, no.
