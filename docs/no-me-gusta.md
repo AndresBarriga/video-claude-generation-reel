@@ -97,3 +97,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-11-21 (E72): el 1-2-3 arriba en el centro tapa la acción → columna pequeña y translúcida bajo el medidor (HUD a la derecha).
 - 2026-11-22 (E68 v1): el dedo parecía que presionaba la regleta en vez de colgarse (falta pared, peso hacia abajo); la mano en piel se ve rara; ilustraciones repetitivas que no enganchan (todo el mismo plano); la analogía de la grapa salió muy mal.
 - 2026-11-23 (cuerda detrás de la pierna): rechazados 3 bocetos por código (espalda, lateral cerrado, calco de la referencia): «no se va a entender». En primeros planos de pierna, nuestro dibujo plano no transmite delante/detrás. No insistir con ese tema dibujado a mano.
+- 2026-11-23: E76 «Cuando te bajan» (accidentes al descolgar, datos DAV): «lo veo tonto». Tampoco E75 material ni rapel 3 errores para hoy. Los consejos de seguridad tipo lista empiezan a cansarle.
