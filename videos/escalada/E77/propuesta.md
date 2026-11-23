@@ -74,3 +74,13 @@ Dos: cada roca se escala distinto. Caliza: regletas y agujeros. Granito: adheren
 Y tres: el grado es una opinión. Lo pone quien abre la vía, comparando con su zona. Por eso un seis a de una escuela clásica puede parecerte un seis be en otra.
 Para tu primer día: uno, empieza dos o tres escalones por debajo; el primer día es para aprender la roca. Dos, lee la vía desde abajo: el magnesio te marca las presas. Tres, repite vías: la segunda vez ya sabes por dónde va, y tu cuerpo aprende la roca.
 Al final del viaje, ese cinco más ya no te hace sudar. Guárdalo para tu primer día y mándaselo a ese que en el roco es de séptimo. ¿Cuántos escalones bajas tú?
+
+## v5 (23-nov): no solo viaje → «primeros días en roca o en una zona nueva»; estudio en el punto 3; matices («sobre todo», «suele»).
+Estudio: Kinesiologia Slovenica 27(1) 2021, 5–20, «Reliability of sport climb difficulty grading»: 70 escaladores (41 intermedios, 29 avanzados), 5 vías nuevas de rocódromo (Liubliana), un intento cada una. Coinciden en el orden (W .86–.89), pero la nota de uno solo tiene error típico ≈1 letra y hacen falta ≈2 letras de diferencia para que sea real.
+Texto v5:
+Eres de seis be en el rocódromo. En roca, un cinco más te hace sudar. No has empeorado. Son tres razones, y la última casi nadie la sabe.
+Uno: en el rocódromo la vía te la dan hecha. Ves el color, sabes que es por ahí y que esa presa es buena, y te lanzas. En roca no sabes ni si se sube por ahí, ni si ese agarre es bueno o es el que toca. Dudas… y mientras dudas, te cansas.
+Dos: cada roca se escala distinto. La caliza, sobre todo regletas y agujeros. El granito, adherencia y fisuras. El conglomerado, bolos. Y tus dedos y tus pies vienen de la resina.
+Y tres: el grado es una opinión. Lo pone quien abre la vía, comparando con su zona. En un estudio, setenta escaladores graduaron las mismas cinco vías: coincidían en cuál era más dura, pero en el número, uno solo podía fallar por una letra, a veces dos. Por eso un seis a de una zona puede parecerte un seis be en otra.
+Para tus primeros días en roca, o en una zona nueva: uno, empieza dos o tres escalones por debajo; los primeros días son para aprender la roca. Dos, lee la vía desde abajo: el magnesio suele marcarte las presas. Tres, repite vías: la segunda vez ya sabes por dónde va, y tu cuerpo aprende la roca.
+En unos días, ese cinco más ya no te hace sudar. Guárdalo para tu próxima salida a roca y mándaselo a ese que en el roco es de séptimo. ¿Cuántos escalones bajas tú?
