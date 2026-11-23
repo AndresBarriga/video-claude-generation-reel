@@ -9,3 +9,4 @@ Regla (verificada: foros de Mountain Project, avisos de asegurador): la cuerda t
 Situaciones ✓/✗: travesía con la chapa al otro lado del pie · cuerda entre las piernas · paso alto por encima de la cuerda · diedro/fisura con la cuerda en la grieta · (✓) cuerda a un lado, entre pierna y pared.
 Truco: antes de subir el pie por encima de la cuerda, mira abajo; si cruza, pasa el pie por debajo o aparta la cuerda con la punta. Aviso del asegurador: «¡pierna!».
 Formato: quiz «¿bien o mal?» 1 s + volteo animado en los ✗ (nuestra ventaja). Estilo E72 (rocódromo claro / roca clara, Lola). Ojo: E52 ya trató el tema (14K, 3,2 seg./1k); este es el ángulo «cómo saberlo» con quiz.
+- Boceto v1 (23-nov) `videos/escalada/bien-o-mal/boceto-pierna-v1.png`, vista de espaldas: el ✕ se lee (cuerda encima de la pantorrilla); el ✓ no (la cuerda queda tapada). Falta enseñar la cuerda en el ✓ y la consecuencia (volteo) del ✕. Ojo: el tema ya se hizo como E52 (14K, 3,2 seg./1k, skip 29,6 %).
