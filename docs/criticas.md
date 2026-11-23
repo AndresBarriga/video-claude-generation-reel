@@ -35,3 +35,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-22 | E74 Llevas diez pegues (proyecto) | propuesta v1 | 6,5 (envío 6) | voz en femenino, «cinco minutos» sin respaldo, consejos obvios, «pegue diez» ambiguo — aplicado |
 | 2026-11-22 | E68 v3 poleas (esparadrapo) | propuesta | 7 (envío 7) | gancho sin «preventivo»; mecanismo 3–10 s abstracto; CTA invita a corregir — aplicado; «más frecuente» se mantiene (Popp 2015 lo dice) |
 | 2026-11-23 | E75 ¿Cuánto aguanta tu material? (A/B) | propuesta v1 | 6,5 (envío 6,5) | "tu peso" y "caída pequeña" sobreprometían; cierre "todo verde" contradecía la punta; caso sin respaldo; A = ficha de kN tipo E57 → elige B; aplicado en B v2 |
+| 2026-11-23 | E76 Cuando te bajan | propuesta v1 | 6 (envío 6) | rehook de peso sin base, «ya no frenas» falso con antipánico, consejos 1 y 3 contradictorios → aplicado en v2 |
