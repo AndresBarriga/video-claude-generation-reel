@@ -65,3 +65,12 @@ Estructura de retención: fotograma 0 en movimiento (6b cae a 5+); bucle «la ú
 | 30–42 | Plan «TU PRIMER DÍA» con 3 casillas que se marcan: escalera de grados (–2/–3) · manchas de magnesio que se iluminan en la pared · pie plano en adherencia con flecha de peso | Para tu primer día: uno, empieza dos o tres escalones por debajo; el primer día es para aprender la roca. Dos, lee la vía desde abajo: el magnesio te marca las presas. Tres, en placa, pie plano y el peso encima del pie. |
 | 42–48 | Barra «día 1 → último día»; vuelve el plano del inicio: el 5+ en roca, ahora sin sudor y sonriendo; CTA | Al final del viaje, ese cinco más ya no te hace sudar. Guárdalo para tu primer día y mándaselo a ese que en el roco es de séptimo. ¿Cuántos escalones bajas tú? |
 Puntuación v3: 2·2·2·2·2·2·2 = 14/14 (bucle explícito antes de 5 s que se cierra en el rehook).
+
+## v4 (23-nov): Uno reescrito (agarre bueno/correcto); consejo 3 del plan cambiado (pie plano solo valía en placa) → «repite la vía». Visual 3: icono de repetir y segunda subida más fluida.
+Texto final:
+Eres de seis be en el rocódromo. En roca, un cinco más te hace sudar. No has empeorado. Son tres razones, y la última casi nadie la sabe.
+Uno: en el rocódromo la vía te la dan hecha. Ves el color, sabes que es por ahí y que esa presa es buena, y te lanzas. En roca no sabes ni si se sube por ahí, ni si ese agarre es bueno o es el que toca. Dudas… y mientras dudas, te cansas.
+Dos: cada roca se escala distinto. Caliza: regletas y agujeros. Granito: adherencia y fisuras. Conglomerado: bolos. Y tus dedos y tus pies vienen de la resina.
+Y tres: el grado es una opinión. Lo pone quien abre la vía, comparando con su zona. Por eso un seis a de una escuela clásica puede parecerte un seis be en otra.
+Para tu primer día: uno, empieza dos o tres escalones por debajo; el primer día es para aprender la roca. Dos, lee la vía desde abajo: el magnesio te marca las presas. Tres, repite vías: la segunda vez ya sabes por dónde va, y tu cuerpo aprende la roca.
+Al final del viaje, ese cinco más ya no te hace sudar. Guárdalo para tu primer día y mándaselo a ese que en el roco es de séptimo. ¿Cuántos escalones bajas tú?
