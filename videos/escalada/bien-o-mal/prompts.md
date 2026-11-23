@@ -1,10 +1,11 @@
 # Cuerda detrás de la pierna: imágenes IA (prueba 23-nov)
+Subir en cada chat: la imagen de @sima.k202 del caso (composición) + estilo-cuenta.png (estilo).
 Herramienta: Gemini (Nano Banana 2, gratis). Clave: generar la ✕ y luego EDITAR esa misma imagen cambiando solo la cuerda → ✓ idéntica salvo la cuerda.
 Referencia de composición: subir la imagen de @sima.k202 del caso y pedir «misma situación de cuerda y pierna, pero con este personaje, este estilo y otro ángulo/roca». Que quede distinto (personaje, colores, encuadre).
 Pedir siempre 9:16 y sin texto. Si sale marca de agua, se recorta/tapa en el montaje.
 
 Estilo (pegar al principio de cada prompt):
-Semi-realistic digital painting with clean comic ink outlines, cel shading, warm natural afternoon light, highly detailed grey granite with lichen and cracks, vertical 9:16, no text, no logos, no watermark.
+Flat 2D vector cartoon in the exact style of the attached frame (estilo-cuenta.png): thick dark outlines, flat colors with simple soft shading, bold saturated palette, light rock background, clean and readable at phone size, vertical 9:16, no text, no logos.
 
 Personaje (mismo en todas):
 A female sport climber: dark curly hair in a bun, striped mustard-and-teal t-shirt, grey climbing pants rolled at the ankle, blue climbing shoes, red harness, bright red dynamic rope.
