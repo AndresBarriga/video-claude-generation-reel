@@ -23,3 +23,8 @@ Ojo: es una asociación. El agarre es un indicador de tu fuerza general; no es q
 📚 Leong et al., The Lancet (2015) · Dodds et al., PLoS ONE (2014)
 
 **Comentario fijado:** «¿Cuántos kg crees que aprietas? Si sale interés, os enseño cómo medirlo.»
+
+## Resultado (captura 24-nov 22:00, ~30 min)
+346 vistas (por debajo de la curva típica a esa hora), 9 s de media, skip 28,9 % (mejor que la media de la cuenta), 0 envíos, comentarios 0,4 % (por encima de la media), 0 seguidores. Feed 95 %.
+**Curva:** −45 % en el primer segundo (el skip). Meseta corta hasta ~2,5 s con el titular y los estadios. **Caída fuerte de 3 a 6 s:** al pasar del titular a la pantalla partida tensiómetro / «?» (3,4 s). Casi nadie llega a la tarjeta de referencia (18 s).
+**Lectura:** el titular frena el dedo, pero la escena de la tensión repite lo que ya dice el titular sin enseñar nada nuevo: el bucle «¿qué fue entonces?» se alarga sin avance visible. Para otro vídeo de estudio: revelar la respuesta (la mano apretando) antes de los 4 s y dejar el dato para guardar como rehook.
