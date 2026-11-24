@@ -18,6 +18,7 @@
     "sonido": "node tools/sonido.mjs",
     "dashboard": "node tools/dashboard.mjs",
     "medir": "node tools/medir.mjs",
+    "ig": "node tools/ig-metricas.mjs",
     "qa-final": "node tools/qa-final.mjs",
     "verificar-voz": "node tools/verificar-voz.mjs"
   },

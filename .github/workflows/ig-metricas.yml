@@ -1,0 +1,44 @@
+# Métricas diarias de Instagram → datos/publicados.csv + dashboard, con commit.
+# Secrets: IG_TOKEN (obligatorio), GH_PAT (opcional: renueva IG_TOKEN solo). Guía: docs/metricas-api.md
+name: Métricas Instagram
+on:
+  schedule:
+    - cron: '17 6 * * *' # 07:17 en Berlín (08:17 en verano)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: ig-metricas
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Medir y commit
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: |
+          git config user.name "metricas-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3; do
+            git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
+            node tools/ig-metricas.mjs
+            git add datos docs/dashboard.html
+            git diff --cached --quiet && { echo "Sin cambios"; exit 0; }
+            git commit -qm "Métricas IG $(TZ=Europe/Berlin date '+%Y-%m-%d %H:%M') (API)"
+            git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            echo "Push rechazado (otro commit entró antes); reintento $i"
+          done
+          exit 1
+      - name: Token (renovar o avisar)
+        if: always()
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          node tools/ig-token.mjs
+          git add datos/ig-token.json 2>/dev/null || true
+          git diff --cached --quiet || { git commit -qm "Token IG renovado (fecha)"; git pull -q --rebase origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME"; }

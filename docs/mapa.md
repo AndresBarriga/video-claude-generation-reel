@@ -42,7 +42,7 @@ Para no perder el rastro. Si algo no está aquí, búscalo en el sitio que indic
 5. **Escenas:** plantilla nueva en `src/historias/<Nombre>/` usando el kit; `npm run sonido -- <id>`; `npm run qa -- <id>`.
 6. **Revisión:** `npm run hoja -- <id>` (una hoja de contacto) → como mucho 2 rondas de corrección.
 7. **Render:** `npm run render -- <id>` → `npm run qa-final -- <id>` → `previews/<id>.mp4` → ficha con descripción y comentario fijado → commit + push → a Andrés.
-8. **Publicado:** `npm run medir -- <id> …` con las capturas, lectura de la curva en la ficha y `npm run dashboard`.
+8. **Publicado:** las cifras de Instagram entran solas cada mañana (Action, `docs/metricas-api.md`); por captura solo la curva de retención y los seguidores reales de los que destaquen (`npm run medir`).
 
 ## 4. Pendiente de construir
 - Mini web para Andrés (ver todo más fácil): el dashboard es la base; ampliar con cola, propuestas y vídeos navegables.
