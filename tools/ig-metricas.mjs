@@ -13,7 +13,7 @@ const VER = process.env.IG_API_VERSION || 'v25.0';
 // Token de Instagram (IG…) → graph.instagram.com; token de Facebook (EAA…, apps nuevas con «Unified login») → graph.facebook.com
 let FB = /^EAA/.test(TOKEN || '');
 let API = `https://graph.${FB ? 'facebook' : 'instagram'}.com/${VER}`;
-const IG_ID = process.env.IG_USER_ID || '17841432984190346'; // @ultimo.pegue (no es secreto)
+const IG_ID = process.env.IG_USER_ID || '17841432994190346'; // @ultimo.pegue (no es secreto)
 const args = process.argv.slice(2);
 const DRY = args.includes('--dry');
 const ULT = args.includes('--ultimos') ? Number(args[args.indexOf('--ultimos') + 1]) : 0;
