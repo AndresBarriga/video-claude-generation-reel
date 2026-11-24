@@ -107,7 +107,7 @@ async function insights(id) {
   try { return leer(await get(`/${id}/insights`, { metric: METRICAS.join(',') })); }
   catch { // una métrica no disponible tumba la llamada entera → una a una
     const o = {};
-    for (const k of METRICAS) { try { Object.assign(o, leer(await get(`/${id}/insights`, { metric: k }))); } catch (e) { o[k] = null; o._faltan = [...(o._faltan || []), k]; } }
+    for (const k of METRICAS) { try { Object.assign(o, leer(await get(`/${id}/insights`, { metric: k }))); } catch (e) { o[k] = null; o._faltan = [...(o._faltan || []), k]; o._error ||= e.message; } }
     return o;
   }
 }
@@ -165,6 +165,12 @@ for (const m of medir) {
 }
 
 // --- 6. salida ---
+const sinDatos = nuevas.filter((r) => !r.vistas && !r.espectadores && !r.likes);
+if (nuevas.length && sinDatos.length === nuevas.length) {
+  const err = Object.values(ins).find((x) => x._error)?._error;
+  console.error(`\nNinguna métrica disponible; no escribo nada.\nError de la API: ${err}\n→ Suele ser que el token no tiene el permiso de estadísticas (instagram_manage_insights). Ver docs/metricas-api.md.`);
+  process.exit(1);
+}
 for (const r of nuevas) console.log(`+ ${r.video} · ${r.horas} h · vistas ${r.vistas} · alc ${r.espectadores} · env ${r.envios} · guard ${r.guardados} · skip ${r.skip_pct || '–'} · visto ${r.visto_medio_s || '–'} s · seg≈${r.seguidores || '–'}`);
 if (sinAsociar.length) console.log(`\n${sinAsociar.length} reel(s) sin asociar → rellena "video" en ${MAP} (o "-" para ignorar):\n` + sinAsociar.map((m) => `  ${m.id} · ${berlin(new Date(m.timestamp))} · ${(m.caption || '').split('\n')[0].slice(0, 60)}`).join('\n'));
 if (DRY) { console.log('\n(--dry: no se ha escrito nada)'); process.exit(0); }
