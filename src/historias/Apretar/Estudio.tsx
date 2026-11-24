@@ -37,7 +37,7 @@ const CONT = [
 // Canadá, Suecia, Polonia, Turquía, EAU, Irán, Pakistán, India, Bangladés, China, Malasia, Sudáfrica, Zimbabue, Colombia, Brasil, Chile, Argentina
 const PAISES = [[-79, 46], [15, 60], [19, 52], [35, 39], [54, 24], [53, 33], [69, 30], [78, 22], [90, 24], [110, 33], [102, 4], [25, -29], [30, -19], [-74, 5], [-47, -15], [-71, -33], [-62, -34]];
 const Mapa: React.FC<{ k: number }> = ({ k }) => (
-  <g transform="translate(40 690) scale(0.9)">
+  <g transform="translate(40 960) scale(0.9)">
     <rect x={-20} y={-20} width={1040} height={440} rx={40} fill="#DCEBFA" stroke={T} strokeWidth={10} />
     {CONT.map((c, i) => <path key={i} d={`M${c.map(([lo, la]) => px(lo, la)).join(" L")} Z`} fill="#CFC6B6" stroke={T} strokeWidth={5} strokeLinejoin="round" />)}
     {PAISES.map(([lo, la], i) => { const e = pop(k - i * 2); const [x, y] = px(lo, la).split(" ").map(Number);
@@ -56,15 +56,19 @@ export const Estudio: React.FC<P> = ({ d, pal }) => {
       <Svg>
         <defs><Patron id="ap-gente" t={22} /></defs>
         <Papel />
-        <g opacity={1 - mapa} transform={`translate(540 1060) scale(${z}) translate(-540 -1060) translate(0 ${-30 * mapa})`}>
-          <Estadio x={540} y={830} lleno={1} />
-          <Estadio x={540} y={1290} lleno={interpolate(f, [16, 40], [0.35, 0.9], cl)} />
+        <g opacity={1 - mapa} transform={`translate(540 1230) scale(${z * 0.82}) translate(-540 -1230) translate(0 ${-30 * mapa})`}>
+          <Estadio x={300} y={1230} lleno={1} />
+          <Estadio x={780} y={1230} lleno={interpolate(f, [16, 40], [0.35, 0.9], cl)} />
         </g>
         {f < 22 && <g opacity={interpolate(f, [8, 20], [1, 0], cl)}><rect x={-200} y={-200} width={1480} height={2320} fill="#D8D0C2" /><g transform={`scale(${z / 1.6})`} transform-origin="540 960"><rect x={-2000} y={-2000} width={5000} height={6000} fill="url(#ap-gente)" /></g></g>}
         {mapa > 0 && <g opacity={mapa} transform={`translate(0 ${40 * (1 - mapa)})`}><Mapa k={f - t17 - 4} /></g>}
       </Svg>
-      <Grande t={f < t17 ? "140.000" : "17 PAÍSES"} x={540} y={f < t17 ? 560 : 1250} k={f < t17 ? f + 12 : f - t17 - 6} color={f < t17 ? COL.naranja : COL.azul} tam={f < t17 ? 210 : 150} />
-      {f < t17 && <Dato t="PERSONAS" x={540} y={1540} k={f - 14} tam={56} />}
+      <Grande t={f < t17 ? "140.000" : "17 PAÍSES"} x={540} y={f < t17 ? 1180 : 1420} k={f < t17 ? f + 12 : f - t17 - 6} color={f < t17 ? COL.naranja : COL.azul} tam={f < t17 ? 210 : 150} />
+      {/* GANCHO en el fotograma 0 (24-nov, Andrés: reforzar): la paradoja de la portada, grande y legible en miniatura */}
+      <div style={{ position: "absolute", left: 50, right: 50, top: 450, padding: "26px 20px 30px", background: "rgba(255,253,248,.94)", border: `8px solid ${T}`, borderRadius: 40, textAlign: "center", fontFamily: F, fontWeight: 800, lineHeight: 1.02, transform: `scale(${f < 2 ? 1 : 1 - 0.04 * sale((f - 2) / 10)})`, boxShadow: `0 14px 0 ${T}33` }}>
+        <div style={{ fontSize: 62, color: T, whiteSpace: "nowrap" }}>LO QUE PREDIJO SU MUERTE</div>
+        <div style={{ fontSize: 88, color: COL.rojo, marginTop: 6, whiteSpace: "nowrap" }}>NO FUE LA TENSIÓN</div>
+      </div>
     </>
   );
 };

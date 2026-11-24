@@ -1,5 +1,5 @@
 # E78 — Agarre: lo que predijo su muerte no fue la tensión
-- **Estado:** producido 24-nov (40,4 s, qa-final OK). Andrés: «no sé si va a ser buen gancho… probamos». Portada: `portada.jpg` (texto dentro del recorte 4:5 del perfil). Voz de Andrés (ElevenLabs, v3), 39,8 s tras apretar silencios. Plantilla `Apretar` (src/historias/Apretar).
+- **Estado:** producido 24-nov (40,4 s, qa-final OK). Andrés: «no sé si va a ser buen gancho… probamos». Portada: `portada.jpg` (texto dentro del recorte 4:5 del perfil). v2: titular de la portada en pantalla desde el fotograma 0 («LO QUE PREDIJO SU MUERTE / NO FUE LA TENSIÓN»), para abrir el bucle antes de los 4 s sin regrabar voz. Voz de Andrés (ElevenLabs, v3), 39,8 s tras apretar silencios. Plantilla `Apretar` (src/historias/Apretar).
 - **Formato:** información con estudio (cifra-puñetazo) + tarjeta de referencia para guardar. Hilo visual: el dinamómetro (su aguja marca cada dato) sobre «hoja de estudio» clara. Reparto nuevo: Nora (protagonista) y Dani.
 - **Crítico (storyboard):** 6 / envío 6 → aplicado (ver docs/criticas.md).
 - Guion completo, precisión y respuestas preparadas: `propuesta.md`.
