@@ -1,0 +1,157 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "musica",
+   "inicio": {
+    "escena": 0
+   },
+   "fin": {
+    "escena": "cuanto",
+    "final": true
+   },
+   "volumen": 0.16,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "estudio",
+    "fraccion": 0.0
+   },
+   "duracion": 0.6,
+   "volumen": 0.35
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "estudio",
+    "palabra": "17"
+   },
+   "duracion": 0.4,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "tension",
+    "palabra": "mejor"
+   },
+   "duracion": 0.6,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "apretar",
+    "palabra": "aprietas",
+    "mas": 0.12
+   },
+   "duracion": 0.4,
+   "volumen": 0.6
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "apretar",
+    "palabra": "aprietas",
+    "mas": 0.15
+   },
+   "duracion": 0.6,
+   "volumen": 0.35
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "riesgo",
+    "palabra": "16%"
+   },
+   "duracion": 0.4,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "golpe",
+   "inicio": {
+    "escena": "no",
+    "palabra": "No."
+   },
+   "duracion": 0.7,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "chivato",
+    "palabra": "fuerza"
+   },
+   "duracion": 0.6,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "referencia",
+    "palabra": "51"
+   },
+   "duracion": 0.4,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "referencia",
+    "palabra": "31."
+   },
+   "duracion": 0.4,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "pared",
+    "palabra": "justo"
+   },
+   "duracion": 0.6,
+   "volumen": 0.55
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "presas",
+    "palabra": "Presa"
+   },
+   "duracion": 0.5,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "capa",
+    "fraccion": 0.45
+   },
+   "duracion": 0.6,
+   "volumen": 0.45
+  },
+  {
+   "silencio": true,
+   "inicio": {
+    "escena": "cuanto",
+    "mas": -0.35
+   },
+   "duracion": 0.45
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "cuanto",
+    "palabra": "¿Cuánto"
+   },
+   "duracion": 0.4,
+   "volumen": 0.6
+  }
+ ]
+}

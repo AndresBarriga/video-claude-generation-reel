@@ -13,7 +13,7 @@ const Tarjeta: React.FC<{ k: number; ka: number; kb: number; t30: number; f: num
     <g transform={`translate(${x} 0)`}>
       <clipPath id={`ap-bu${lado}`}><rect x={-190} y={150} width={380} height={330} rx={30} /></clipPath>
       <rect x={-190} y={150} width={380} height={330} rx={30} fill={color} opacity={0.25} />
-      <g clipPath={`url(#ap-bu${lado})`}><Escalador x={0} y={760} quien="joe" s={2.6} angulos={BUSTO} aspecto={asp} cara={kk > 0.9 ? "esfuerzo" : "normal"} mira={1} /></g>
+      <g clipPath={`url(#ap-bu${lado})`}><Escalador x={0} y={760} quien="joe" s={2.6} angulos={BUSTO} aspecto={asp} cara={kk > 0 && kk < 1.3 ? "esfuerzo" : "normal"} mira={1} /></g>
       <Dinamometro x={0} y={680} s={0.62} kg={kg * sale(kk)} mango={false} texto={kk > 0 ? undefined : "¿?"} />
       <text x={0} y={950} textAnchor="middle" fontFamily={F} fontWeight={800} fontSize={120} fill={T} opacity={kk > 0 ? 1 : 0.25}>{kk > 0 ? <>~{Math.round(kg * sale(kk))}<tspan fontSize={60}> kg</tspan></> : "¿?"}</text>
       <text x={0} y={1010} textAnchor="middle" fontFamily={F} fontWeight={800} fontSize={46} fill={color}>{lado === "h" ? "HOMBRES" : "MUJERES"}</text>

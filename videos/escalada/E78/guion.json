@@ -11,7 +11,7 @@
  ],
  "escenas": [
   {
-   "tipo": "texto",
+   "tipo": "gancho",
    "visual": "estudio",
    "bloque": "gancho",
    "texto": "Siguieron a 140.000 personas de 17 países.",
@@ -27,7 +27,7 @@
   {
    "tipo": "texto",
    "visual": "tension",
-   "bloque": "gancho",
+   "bloque": "reencuadre",
    "texto": "Y algo predijo su riesgo de morir mejor que la tensión arterial.",
    "claves": [
     "morir",
@@ -38,7 +38,7 @@
   {
    "tipo": "texto",
    "visual": "apretar",
-   "bloque": "reencuadre",
+   "bloque": "dentro",
    "texto": "La fuerza con la que aprietas la mano.",
    "claves": [
     "aprietas"
@@ -147,7 +147,7 @@
    "cifras": []
   },
   {
-   "tipo": "texto",
+   "tipo": "cierre",
    "visual": "cuanto",
    "bloque": "cta",
    "texto": "¿Cuánto crees que aprietas tú?",
