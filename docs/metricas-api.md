@@ -3,6 +3,8 @@
 Cada mañana (07:17, hora de Berlín) una GitHub Action lee las métricas de @ultimo.pegue, añade filas a `datos/publicados.csv`, regenera el dashboard y hace commit. A mano: `IG_TOKEN=… npm run ig -- --ultimos 5 --dry` (enseña sin escribir) o sin `--dry` (escribe).
 
 ## Montarlo (una vez, ~20 min)
+**Estado (24-nov):** funciona. Vía que sirvió: página de Facebook «Último pegue» vinculada a @ultimo.pegue (Business Suite → Instagram accounts → Connect assets) + token de usuario de larga duración (Graph API Explorer con `instagram_basic`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`, `business_management` → Access Token Debugger → *Extend Access Token*). Caduca el **23-ene-2027**; la Action avisa a ≤10 días. Repetir esos dos pasos y pegar en `IG_TOKEN`. Verificado contra capturas (E63, E72): cifras coherentes; `visto_medio_s` en ms→s y `skip_pct` en % correctos. El token del «Unified login» (abajo) NO da estadísticas.
+
 **A. App en Meta** (hecho el 24-nov; app «ultimo.pegue», id 29075926305421407)
 Las apps nuevas ya no tienen «API con inicio de sesión de Instagram»: usan **Unified login** y dan un token de Facebook (`EAA…`) que va contra `graph.facebook.com`. El script lo detecta solo.
 1. developers.facebook.com → **My Apps** → la app → **Use cases** → «Manage messaging & content on Instagram» → **Customize**.
