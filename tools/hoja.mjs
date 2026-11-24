@@ -21,7 +21,7 @@ const tiempos = datos.escenas.map((e, i) => {
   const ini = e.inicio ?? 0, fin = i === datos.escenas.length - 1 ? datos.duracion : datos.escenas[i + 1].inicio;
   return ini + (fin - ini) * parseFloat(momento);
 });
-const lista = [...tiempos, ...extras];
+const lista = process.env.SOLO ? extras : [...tiempos, ...extras]; // SOLO=1: solo los MOMENTOS
 const archivos = [];
 for (const [i, t] of lista.entries()) {
   const f = path.join(salida, `escena-${String(i + 1).padStart(2, "0")}.png`);

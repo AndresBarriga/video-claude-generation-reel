@@ -1,0 +1,160 @@
+{
+ "id": "E78",
+ "titulo": "Agarre: lo que predijo su muerte no fue la tensión",
+ "nicho": "escalada",
+ "plantilla": "Apretar",
+ "formato": "fijo",
+ "verificado": true,
+ "fuentes": [
+  "Leong et al., The Lancet 2015 (estudio PURE): 139.691 adultos de 35–70 años, 17 países, ~4 años; HR 1,16 por cada 5 kg menos de agarre (mortalidad total), ajustado; mejor predictor de mortalidad que la tensión sistólica en ese estudio.",
+  "Dodds et al., PLoS ONE 2014: 12 estudios británicos, ~50.000 personas; mediana máxima hombres 51 kg (29–39 años), mujeres 31 kg (26–42 años); meseta y descenso desde la mediana edad."
+ ],
+ "escenas": [
+  {
+   "tipo": "texto",
+   "visual": "estudio",
+   "bloque": "gancho",
+   "texto": "Siguieron a 140.000 personas de 17 países.",
+   "claves": [
+    "140.000",
+    "17"
+   ],
+   "cifras": [
+    "140.000 personas",
+    "17 países"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "tension",
+   "bloque": "gancho",
+   "texto": "Y algo predijo su riesgo de morir mejor que la tensión arterial.",
+   "claves": [
+    "morir",
+    "tensión"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "apretar",
+   "bloque": "reencuadre",
+   "texto": "La fuerza con la que aprietas la mano.",
+   "claves": [
+    "aprietas"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "riesgo",
+   "bloque": "cifras",
+   "texto": "Cada 5 kilos menos de agarre, un 16% más de riesgo.",
+   "claves": [
+    "5",
+    "16%"
+   ],
+   "cifras": [
+    "−5 kg",
+    "+16 % riesgo"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "no",
+   "bloque": "giro",
+   "texto": "¿Apretar más te alarga la vida? No.",
+   "claves": [
+    "No."
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "chivato",
+   "bloque": "dentro",
+   "texto": "Tu agarre es un chivato de tu fuerza en general.",
+   "claves": [
+    "chivato",
+    "general."
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "referencia",
+   "bloque": "cifras",
+   "texto": "Para que te hagas una idea: en su mejor momento, sobre los 30, un hombre aprieta unos 51 kilos y una mujer unos 31.",
+   "claves": [
+    "30,",
+    "51",
+    "31."
+   ],
+   "cifras": [
+    "~51 kg hombre",
+    "~31 kg mujer"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "curva",
+   "bloque": "cifras",
+   "texto": "Y a partir de la mediana edad, empieza a bajar.",
+   "claves": [
+    "bajar."
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "pared",
+   "bloque": "porEso",
+   "texto": "Y escalar es justo eso: apretar.",
+   "claves": [
+    "apretar."
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "presas",
+   "bloque": "porEso",
+   "texto": "Presa tras presa, vía tras vía.",
+   "claves": [
+    "Presa",
+    "vía"
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "capa",
+   "bloque": "giro",
+   "texto": "No te va a hacer inmortal.",
+   "claves": [
+    "inmortal."
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "salud",
+   "bloque": "porEso",
+   "texto": "Pero estás entrenando algo que dice mucho de tu salud.",
+   "claves": [
+    "salud."
+   ],
+   "cifras": []
+  },
+  {
+   "tipo": "texto",
+   "visual": "cuanto",
+   "bloque": "cta",
+   "texto": "¿Cuánto crees que aprietas tú?",
+   "claves": [
+    "¿Cuánto"
+   ],
+   "cifras": []
+  }
+ ]
+}

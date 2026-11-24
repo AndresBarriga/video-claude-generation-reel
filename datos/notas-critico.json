@@ -1,240 +1,247 @@
 {
- "E6": {
-  "nota": 8,
-  "orig": 7,
-  "fase": "vídeo final (7; 8 con los cambios)",
-  "hist": "27-oct v2 7 · 28-oct v3 7 (8 con cambios)"
- },
- "E11": {
-  "nota": 6,
-  "orig": 4.5,
-  "fase": "stock (4,5; 6 con cambios)",
-  "hist": "29-oct 4,5 (6)"
- },
- "E30": {
-  "nota": 6.5,
-  "orig": 5,
-  "fase": "stock (5; 6,5 con cambios)",
-  "hist": "29-oct 5 (6,5)"
- },
- "E36": {
-  "nota": 8,
-  "orig": 8,
-  "fase": "vídeo final",
-  "hist": "30-oct 8"
- },
- "E35": {
-  "nota": 6.5,
-  "orig": 8,
-  "fase": "v17 («tú»): sin puntuar; v14 6,5; v6 era 8",
-  "hist": "29-oct v1 7 · 30-oct 7 → 7,5 → 8,5 (B) → 8 → 8 · 31-oct R (gancho nuevo + cierre legal) 7 · 31-oct v8 6,5 (más fiel a los hechos, más documental) · v10 7 · v12 6,5 · v14 6,5"
- },
- "E3": {
-  "nota": 6.5,
-  "orig": 6,
-  "fase": "v3 (stock 3; 4,5 con cambios)",
-  "hist": "28-oct 6 · 6 · 7 · 6,5 · 29-oct stock 3 (4,5)"
- },
- "E31": {
-  "nota": 5.5,
-  "orig": 4,
-  "fase": "stock (4; 5,5 con cambios)",
-  "hist": "28-oct 6 → 7 · 29-oct stock 4 (5,5)"
- },
- "E32": {
-  "nota": 2,
-  "orig": 2,
-  "fase": "relleno, descartada",
-  "hist": "28-oct 2 · 29-oct 2"
- },
- "E34": {
-  "nota": 6,
-  "orig": 5,
-  "fase": "propuesta v2",
-  "hist": "29-oct v1 5 · v2 6"
- },
- "E15": {
-  "nota": 6.5,
-  "orig": 6.5,
-  "fase": "A CIEGAS, retrospectiva (guion v3, 31-oct): 10/14, predijo 3–10K vistas",
-  "hist": "Sin nota original. Revisión ciega sin resultados: 6,5; predijo «bajo» y fue viral (203K)",
-  "ciego": true
- },
- "E14": {
-  "nota": 5,
-  "orig": 5,
-  "fase": "A CIEGAS, retrospectiva (31-oct): 8/14, predijo 3–10K vistas",
-  "hist": "Sin nota original. Revisión ciega sin resultados: 5; predijo «bajo» y acertó (5K)",
-  "ciego": true
- },
- "E38": {
-  "nota": 6,
-  "orig": 5.5,
-  "fase": "propuesta v3 (nota de v2)",
-  "hist": "31-oct 5,5 → 6"
- },
- "E40": {
-  "nota": 5,
-  "orig": 5.5,
-  "fase": "propuesta v4",
-  "hist": "31-oct 5,5 → 7-nov 5,5 → 5"
- },
- "E41": {
-  "nota": 5.5,
-  "orig": 5.5,
-  "fase": "propuesta v1 (v2 sin re-puntuar)",
-  "hist": "1-nov 5,5"
- },
- "E39": {
-  "nota": 6,
-  "orig": 6,
-  "fase": "propuesta v7 (v8 sin re-puntuar)",
-  "hist": "v5 6 · v7 6"
- },
- "E42": {
-  "nota": 5,
-  "orig": 5,
-  "fase": "propuesta v1 (v2 sin re-puntuar)",
-  "hist": "1-nov 5"
- },
- "E43": {
-  "nota": 6.5,
-  "orig": 5.5,
-  "fase": "propuesta v11 (v10 producida y rechazada por Andrés)",
-  "hist": "1-nov 5,5 → 2-nov 6 → 6 → 5,5 (v7) → 6,5 (v11)"
- },
- "E44": {
-  "nota": 5.5,
-  "orig": 5.5,
-  "fase": "propuesta v5 (v6 sin re-puntuar)",
-  "hist": "1-nov 5,5 · 3-nov v3 5,5 · v5 5,5"
- },
- "E46": {
-  "nota": 5.5,
-  "orig": 5,
-  "fase": "v6: revisión de errores aplicada (sin nota; el crítico ya no es corte)",
-  "hist": "5-nov v2 5; v4 5,5 (consejo adivinable, atribución, silueta)"
- },
- "E51": {
-  "nota": 5,
-  "orig": 5,
-  "fase": "propuesta v1",
-  "hist": "8-nov 5"
- },
- "E52": {
-  "nota": 5,
-  "orig": 6,
-  "fase": "vídeo v11 con voz",
-  "hist": "8-nov 6 → 5 → 5 → 5,5 (v10 aplicada); vídeo 5 (aplicado); v11 5"
- },
- "E53": {
-  "nota": 7,
-  "orig": 5.5,
-  "fase": "vídeo terminado (aplicado)",
-  "hist": "8-nov 5,5 → 6,5; v5 5,5"
- },
- "E54": {
-  "nota": 6.5,
-  "fase": "vídeo terminado (aplicado)",
-  "hist": "9-nov 6,5 → 7,5 con cambios"
- },
- "E56": {
-  "nota": 6.5,
-  "orig": 4.5,
-  "fase": "v4 propuesta+bocetos (v1 4,5)",
-  "hist": "9-nov v1 4,5 · 10-nov v3 6,5 · 10-nov v4 6,5"
- },
- "E55": {
-  "nota": 6,
-  "orig": 6,
-  "fase": "propuesta v4",
-  "hist": "10-nov v4 6"
- },
- "E58": {
-  "propuesta": 7
- },
- "E59": {
-  "propuesta": 7.5
- },
- "E60": {
-  "nota": 7.5,
-  "orig": 7,
-  "fase": "propuesta v3 (7,5)",
-  "hist": "15-nov 7 · 16-nov v3 7,5"
- },
- "E62": {
-  "nota": 7.5,
-  "orig": 6.5,
-  "fase": "propuesta v2 (cambios del crítico aplicados)",
-  "hist": "17-nov 6,5 → 7,5"
- },
- "E65": {
-  "nota": 7.5,
-  "orig": 6.5,
-  "fase": "propuesta (6,5; 7,5 con cambios)",
-  "hist": "19-nov 6,5 (7,5)"
- },
- "E64": {
-  "nota": 7,
-  "orig": 7,
-  "fase": "propuesta v4 «cómo chapar 1-2-3» (cambios aplicados)",
-  "hist": "19-nov v2 6 → 7 · v3 6,5 → 7,5 · v4 7"
- },
- "E63": {
-  "nota": 7.5,
-  "orig": 7,
-  "fase": "propuesta v5 formato fijo",
-  "hist": "19-nov v2 6,5→7,5 · v5 7→7,5"
- },
- "E69": {
-  "nota": 7,
-  "orig": 7,
-  "fase": "propuesta v1.1 (cambios aplicados)",
-  "hist": "20-nov v1 7"
- },
- "E72": {
-  "nota": 7.5,
-  "orig": 7,
-  "fase": "vídeo terminado v1.2",
-  "hist": "21-nov v1 7 · v8 7 · vídeo 7,5"
- },
- "E73": {
-  "nota": 7,
-  "orig": 7,
-  "fase": "propuesta v2 (cambios aplicados)",
-  "hist": "22-nov v1 7"
- },
- "E74": {
-  "nota": 6.5,
-  "orig": 6.5,
-  "fase": "propuesta v2 (cambios aplicados)",
-  "hist": "22-nov v1 6,5"
- },
- "E68": {
-  "nota": 7,
-  "orig": 7,
-  "fase": "propuesta v3.1 esparadrapo (cambios aplicados)",
-  "hist": "22-nov v3 7"
- },
- "E75": {
-  "nota": 6.5,
-  "envio": 6.5,
-  "version": "propuesta v1 (B)",
-  "fecha": "2026-11-23",
-  "nota_breve": "elige B (3 formas); quitar sobrepromesas"
- },
- "E76": {
-  "nota": 6,
-  "envio": 6,
-  "version": "propuesta v1",
-  "fecha": "2026-11-23",
-  "nota_breve": "buen dato; corregir consejos (antipánico, peso)"
- },
- "E77": {
-  "nota": 6.5,
-  "envio": 7,
-  "version": "propuesta v1",
-  "fecha": "2026-11-23",
-  "nota_breve": "identidad sólida; plan guardable 1-2-3"
- }
+  "E6": {
+    "nota": 8,
+    "orig": 7,
+    "fase": "vídeo final (7; 8 con los cambios)",
+    "hist": "27-oct v2 7 · 28-oct v3 7 (8 con cambios)"
+  },
+  "E11": {
+    "nota": 6,
+    "orig": 4.5,
+    "fase": "stock (4,5; 6 con cambios)",
+    "hist": "29-oct 4,5 (6)"
+  },
+  "E30": {
+    "nota": 6.5,
+    "orig": 5,
+    "fase": "stock (5; 6,5 con cambios)",
+    "hist": "29-oct 5 (6,5)"
+  },
+  "E36": {
+    "nota": 8,
+    "orig": 8,
+    "fase": "vídeo final",
+    "hist": "30-oct 8"
+  },
+  "E35": {
+    "nota": 6.5,
+    "orig": 8,
+    "fase": "v17 («tú»): sin puntuar; v14 6,5; v6 era 8",
+    "hist": "29-oct v1 7 · 30-oct 7 → 7,5 → 8,5 (B) → 8 → 8 · 31-oct R (gancho nuevo + cierre legal) 7 · 31-oct v8 6,5 (más fiel a los hechos, más documental) · v10 7 · v12 6,5 · v14 6,5"
+  },
+  "E3": {
+    "nota": 6.5,
+    "orig": 6,
+    "fase": "v3 (stock 3; 4,5 con cambios)",
+    "hist": "28-oct 6 · 6 · 7 · 6,5 · 29-oct stock 3 (4,5)"
+  },
+  "E31": {
+    "nota": 5.5,
+    "orig": 4,
+    "fase": "stock (4; 5,5 con cambios)",
+    "hist": "28-oct 6 → 7 · 29-oct stock 4 (5,5)"
+  },
+  "E32": {
+    "nota": 2,
+    "orig": 2,
+    "fase": "relleno, descartada",
+    "hist": "28-oct 2 · 29-oct 2"
+  },
+  "E34": {
+    "nota": 6,
+    "orig": 5,
+    "fase": "propuesta v2",
+    "hist": "29-oct v1 5 · v2 6"
+  },
+  "E15": {
+    "nota": 6.5,
+    "orig": 6.5,
+    "fase": "A CIEGAS, retrospectiva (guion v3, 31-oct): 10/14, predijo 3–10K vistas",
+    "hist": "Sin nota original. Revisión ciega sin resultados: 6,5; predijo «bajo» y fue viral (203K)",
+    "ciego": true
+  },
+  "E14": {
+    "nota": 5,
+    "orig": 5,
+    "fase": "A CIEGAS, retrospectiva (31-oct): 8/14, predijo 3–10K vistas",
+    "hist": "Sin nota original. Revisión ciega sin resultados: 5; predijo «bajo» y acertó (5K)",
+    "ciego": true
+  },
+  "E38": {
+    "nota": 6,
+    "orig": 5.5,
+    "fase": "propuesta v3 (nota de v2)",
+    "hist": "31-oct 5,5 → 6"
+  },
+  "E40": {
+    "nota": 5,
+    "orig": 5.5,
+    "fase": "propuesta v4",
+    "hist": "31-oct 5,5 → 7-nov 5,5 → 5"
+  },
+  "E41": {
+    "nota": 5.5,
+    "orig": 5.5,
+    "fase": "propuesta v1 (v2 sin re-puntuar)",
+    "hist": "1-nov 5,5"
+  },
+  "E39": {
+    "nota": 6,
+    "orig": 6,
+    "fase": "propuesta v7 (v8 sin re-puntuar)",
+    "hist": "v5 6 · v7 6"
+  },
+  "E42": {
+    "nota": 5,
+    "orig": 5,
+    "fase": "propuesta v1 (v2 sin re-puntuar)",
+    "hist": "1-nov 5"
+  },
+  "E43": {
+    "nota": 6.5,
+    "orig": 5.5,
+    "fase": "propuesta v11 (v10 producida y rechazada por Andrés)",
+    "hist": "1-nov 5,5 → 2-nov 6 → 6 → 5,5 (v7) → 6,5 (v11)"
+  },
+  "E44": {
+    "nota": 5.5,
+    "orig": 5.5,
+    "fase": "propuesta v5 (v6 sin re-puntuar)",
+    "hist": "1-nov 5,5 · 3-nov v3 5,5 · v5 5,5"
+  },
+  "E46": {
+    "nota": 5.5,
+    "orig": 5,
+    "fase": "v6: revisión de errores aplicada (sin nota; el crítico ya no es corte)",
+    "hist": "5-nov v2 5; v4 5,5 (consejo adivinable, atribución, silueta)"
+  },
+  "E51": {
+    "nota": 5,
+    "orig": 5,
+    "fase": "propuesta v1",
+    "hist": "8-nov 5"
+  },
+  "E52": {
+    "nota": 5,
+    "orig": 6,
+    "fase": "vídeo v11 con voz",
+    "hist": "8-nov 6 → 5 → 5 → 5,5 (v10 aplicada); vídeo 5 (aplicado); v11 5"
+  },
+  "E53": {
+    "nota": 7,
+    "orig": 5.5,
+    "fase": "vídeo terminado (aplicado)",
+    "hist": "8-nov 5,5 → 6,5; v5 5,5"
+  },
+  "E54": {
+    "nota": 6.5,
+    "fase": "vídeo terminado (aplicado)",
+    "hist": "9-nov 6,5 → 7,5 con cambios"
+  },
+  "E56": {
+    "nota": 6.5,
+    "orig": 4.5,
+    "fase": "v4 propuesta+bocetos (v1 4,5)",
+    "hist": "9-nov v1 4,5 · 10-nov v3 6,5 · 10-nov v4 6,5"
+  },
+  "E55": {
+    "nota": 6,
+    "orig": 6,
+    "fase": "propuesta v4",
+    "hist": "10-nov v4 6"
+  },
+  "E58": {
+    "propuesta": 7
+  },
+  "E59": {
+    "propuesta": 7.5
+  },
+  "E60": {
+    "nota": 7.5,
+    "orig": 7,
+    "fase": "propuesta v3 (7,5)",
+    "hist": "15-nov 7 · 16-nov v3 7,5"
+  },
+  "E62": {
+    "nota": 7.5,
+    "orig": 6.5,
+    "fase": "propuesta v2 (cambios del crítico aplicados)",
+    "hist": "17-nov 6,5 → 7,5"
+  },
+  "E65": {
+    "nota": 7.5,
+    "orig": 6.5,
+    "fase": "propuesta (6,5; 7,5 con cambios)",
+    "hist": "19-nov 6,5 (7,5)"
+  },
+  "E64": {
+    "nota": 7,
+    "orig": 7,
+    "fase": "propuesta v4 «cómo chapar 1-2-3» (cambios aplicados)",
+    "hist": "19-nov v2 6 → 7 · v3 6,5 → 7,5 · v4 7"
+  },
+  "E63": {
+    "nota": 7.5,
+    "orig": 7,
+    "fase": "propuesta v5 formato fijo",
+    "hist": "19-nov v2 6,5→7,5 · v5 7→7,5"
+  },
+  "E69": {
+    "nota": 7,
+    "orig": 7,
+    "fase": "propuesta v1.1 (cambios aplicados)",
+    "hist": "20-nov v1 7"
+  },
+  "E72": {
+    "nota": 7.5,
+    "orig": 7,
+    "fase": "vídeo terminado v1.2",
+    "hist": "21-nov v1 7 · v8 7 · vídeo 7,5"
+  },
+  "E73": {
+    "nota": 7,
+    "orig": 7,
+    "fase": "propuesta v2 (cambios aplicados)",
+    "hist": "22-nov v1 7"
+  },
+  "E74": {
+    "nota": 6.5,
+    "orig": 6.5,
+    "fase": "propuesta v2 (cambios aplicados)",
+    "hist": "22-nov v1 6,5"
+  },
+  "E68": {
+    "nota": 7,
+    "orig": 7,
+    "fase": "propuesta v3.1 esparadrapo (cambios aplicados)",
+    "hist": "22-nov v3 7"
+  },
+  "E75": {
+    "nota": 6.5,
+    "envio": 6.5,
+    "version": "propuesta v1 (B)",
+    "fecha": "2026-11-23",
+    "nota_breve": "elige B (3 formas); quitar sobrepromesas"
+  },
+  "E76": {
+    "nota": 6,
+    "envio": 6,
+    "version": "propuesta v1",
+    "fecha": "2026-11-23",
+    "nota_breve": "buen dato; corregir consejos (antipánico, peso)"
+  },
+  "E77": {
+    "nota": 6.5,
+    "envio": 7,
+    "version": "propuesta v1",
+    "fecha": "2026-11-23",
+    "nota_breve": "identidad sólida; plan guardable 1-2-3"
+  },
+  "E78": {
+    "nota": 6,
+    "envio": 6,
+    "version": "storyboard",
+    "fecha": "2026-11-24",
+    "nota_breve": "tarjeta guardable; tramo de escalada más flojo"
+  }
 }
