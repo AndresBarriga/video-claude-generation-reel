@@ -11,8 +11,8 @@ import { parseCsv, quote } from './csv.mjs';
 const TOKEN = process.env.IG_TOKEN;
 const VER = process.env.IG_API_VERSION || 'v25.0';
 // Token de Instagram (IG…) → graph.instagram.com; token de Facebook (EAA…, apps nuevas con «Unified login») → graph.facebook.com
-const FB = /^EAA/.test(TOKEN || '');
-const API = `https://graph.${FB ? 'facebook' : 'instagram'}.com/${VER}`;
+let FB = /^EAA/.test(TOKEN || '');
+let API = `https://graph.${FB ? 'facebook' : 'instagram'}.com/${VER}`;
 const IG_ID = process.env.IG_USER_ID || '17841432984190346'; // @ultimo.pegue (no es secreto)
 const args = process.argv.slice(2);
 const DRY = args.includes('--dry');
@@ -45,7 +45,15 @@ async function get(ruta, params = {}) {
 }
 
 // --- 1. reels de la cuenta ---
-const me = FB ? { user_id: IG_ID, ...(await get(`/${IG_ID}`, { fields: 'username,followers_count' })) } : await get('/me', { fields: 'user_id,username,followers_count' });
+console.log(`Token: empieza por «${TOKEN.slice(0, 4)}», ${TOKEN.length} caracteres${/\s/.test(TOKEN) ? ', ¡CONTIENE ESPACIOS!' : ''}`);
+const viaFb = async () => ({ user_id: IG_ID, ...(await get(`/${IG_ID}`, { fields: 'username,followers_count' })) });
+let me;
+if (FB) me = await viaFb();
+else try { me = await get('/me', { fields: 'user_id,username,followers_count' }); }
+catch (e) { // algunos tokens del «Unified login» solo funcionan en graph.facebook.com
+  console.warn(`graph.instagram.com: ${e.message} → pruebo graph.facebook.com`);
+  FB = true; API = `https://graph.facebook.com/${VER}`; me = await viaFb();
+}
 console.log(`@${me.username} · ${me.followers_count} seguidores · ${FB ? 'token de Facebook' : 'token de Instagram'}`);
 const reels = [];
 for (let url = `/${me.user_id}/media`, p = { fields: 'id,caption,media_product_type,timestamp,permalink', limit: '50' }; url && reels.length < 200;) {
