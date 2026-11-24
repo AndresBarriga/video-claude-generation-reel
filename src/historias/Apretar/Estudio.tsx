@@ -49,21 +49,22 @@ export const Estudio: React.FC<P> = ({ d, pal }) => {
   const f = useCurrentFrame();
   const t17 = (pal("17") ?? Math.round(d * 0.65)) - 3;
   // 0 → 1,1 s: muy cerca de la grada (personitas grandes) · luego zoom out hasta ver los dos estadios
-  const z = interpolate(f, [0, 8, 34], [5.2, 4.6, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 3) });
+  const z = interpolate(f, [0, 10, 44], [5.2, 4.6, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 3) });
   const mapa = sale((f - t17) / 8);
   return (
     <>
       <Svg>
         <defs><Patron id="ap-gente" t={22} /></defs>
         <Papel />
-        <g opacity={1 - mapa} transform={`translate(540 1230) scale(${z * 0.82}) translate(-540 -1230) translate(0 ${-30 * mapa})`}>
-          <Estadio x={300} y={1230} lleno={1} />
-          <Estadio x={780} y={1230} lleno={interpolate(f, [16, 40], [0.35, 0.9], cl)} />
+        <g opacity={1 - mapa} transform={`translate(540 1230) scale(${z * 0.7}) translate(-540 -1230) translate(0 ${-30 * mapa})`}>
+          <Estadio x={230} y={1230} lleno={1} />
+          <Estadio x={850} y={1230} lleno={1} />
         </g>
-        {f < 22 && <g opacity={interpolate(f, [8, 20], [1, 0], cl)}><rect x={-200} y={-200} width={1480} height={2320} fill="#D8D0C2" /><g transform={`scale(${z / 1.6})`} transform-origin="540 960"><rect x={-2000} y={-2000} width={5000} height={6000} fill="url(#ap-gente)" /></g></g>}
+        {f < 42 && <g opacity={interpolate(f, [16, 40], [1, 0], cl)}><rect x={-200} y={-200} width={1480} height={2320} fill="#D8D0C2" /><g transform={`scale(${z / 1.6})`} transform-origin="540 960"><rect x={-2000} y={-2000} width={5000} height={6000} fill="url(#ap-gente)" /></g></g>}
         {mapa > 0 && <g opacity={mapa} transform={`translate(0 ${40 * (1 - mapa)})`}><Mapa k={f - t17 - 4} /></g>}
       </Svg>
-      <Grande t={f < t17 ? "140.000" : "17 PAÍSES"} x={540} y={f < t17 ? 1180 : 1420} k={f < t17 ? f + 12 : f - t17 - 6} color={f < t17 ? COL.naranja : COL.azul} tam={f < t17 ? 210 : 150} />
+      <Grande t={f < t17 ? "140.000" : "17 PAÍSES"} x={540} y={f < t17 ? 870 : 1420} k={f < t17 ? f + 12 : f - t17 - 6} color={f < t17 ? COL.naranja : COL.azul} tam={f < t17 ? 210 : 150} />
+      {f < t17 && <Dato t="≈ 2 ESTADIOS LLENOS" x={540} y={1470} k={f - 34} tam={54} />}
       {/* GANCHO en el fotograma 0 (24-nov, Andrés: reforzar): la paradoja de la portada, grande y legible en miniatura */}
       <div style={{ position: "absolute", left: 50, right: 50, top: 450, padding: "26px 20px 30px", background: "rgba(255,253,248,.94)", border: `8px solid ${T}`, borderRadius: 40, textAlign: "center", fontFamily: F, fontWeight: 800, lineHeight: 1.02, transform: `scale(${f < 2 ? 1 : 1 - 0.04 * sale((f - 2) / 10)})`, boxShadow: `0 14px 0 ${T}33` }}>
         <div style={{ fontSize: 62, color: T, whiteSpace: "nowrap" }}>LO QUE PREDIJO SU MUERTE</div>
