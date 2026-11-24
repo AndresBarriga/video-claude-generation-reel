@@ -10,7 +10,10 @@ import { parseCsv, quote } from './csv.mjs';
 
 const TOKEN = process.env.IG_TOKEN;
 const VER = process.env.IG_API_VERSION || 'v25.0';
-const API = `https://graph.instagram.com/${VER}`;
+// Token de Instagram (IG…) → graph.instagram.com; token de Facebook (EAA…, apps nuevas con «Unified login») → graph.facebook.com
+const FB = /^EAA/.test(TOKEN || '');
+const API = `https://graph.${FB ? 'facebook' : 'instagram'}.com/${VER}`;
+const IG_ID = process.env.IG_USER_ID || '17841432984190346'; // @ultimo.pegue (no es secreto)
 const args = process.argv.slice(2);
 const DRY = args.includes('--dry');
 const ULT = args.includes('--ultimos') ? Number(args[args.indexOf('--ultimos') + 1]) : 0;
@@ -42,7 +45,8 @@ async function get(ruta, params = {}) {
 }
 
 // --- 1. reels de la cuenta ---
-const me = await get('/me', { fields: 'user_id,username,followers_count' });
+const me = FB ? { user_id: IG_ID, ...(await get(`/${IG_ID}`, { fields: 'username,followers_count' })) } : await get('/me', { fields: 'user_id,username,followers_count' });
+console.log(`@${me.username} · ${me.followers_count} seguidores · ${FB ? 'token de Facebook' : 'token de Instagram'}`);
 const reels = [];
 for (let url = `/${me.user_id}/media`, p = { fields: 'id,caption,media_product_type,timestamp,permalink', limit: '50' }; url && reels.length < 200;) {
   const j = await get(url, p);

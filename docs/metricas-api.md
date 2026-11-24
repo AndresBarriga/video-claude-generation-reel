@@ -3,20 +3,17 @@
 Cada mañana (07:17, hora de Berlín) una GitHub Action lee las métricas de @ultimo.pegue, añade filas a `datos/publicados.csv`, regenera el dashboard y hace commit. A mano: `IG_TOKEN=… npm run ig -- --ultimos 5 --dry` (enseña sin escribir) o sin `--dry` (escribe).
 
 ## Montarlo (una vez, ~20 min)
-**A. App en Meta**
-1. Entra en developers.facebook.com con tu Facebook → **Mis apps** → **Crear app**.
-2. «Conectar un negocio» (business portfolio): **omitir por ahora**.
-3. Caso de uso: **Otro** → tipo de app: **Negocio** (Business). Nombre: p. ej. «metricas ultimo pegue». Crear.
-   (Si te ofrece casos de uso con nombre, elige el de Instagram, p. ej. «Gestionar mensajes y contenido de Instagram».)
-4. En la app, producto **Instagram** → **Configurar**. Se abre «Configuración de la API con inicio de sesión de Instagram».
-5. Permisos: deja marcados solo **instagram_business_basic** e **instagram_business_manage_insights**. No envíes nada a revisión: para tu propia cuenta no hace falta (acceso estándar, la app puede quedarse en modo desarrollo).
-6. En «Generar identificadores de acceso» → **Añadir cuenta** → entra con @ultimo.pegue (tiene que ser profesional y pública) → acepta.
-7. Pulsa **Generar token** junto a la cuenta, entra otra vez si lo pide y **copia el token** (empieza por `IG…`, dura 60 días). No lo pegues en ningún chat ni archivo.
+**A. App en Meta** (hecho el 24-nov; app «ultimo.pegue», id 29075926305421407)
+Las apps nuevas ya no tienen «API con inicio de sesión de Instagram»: usan **Unified login** y dan un token de Facebook (`EAA…`) que va contra `graph.facebook.com`. El script lo detecta solo.
+1. developers.facebook.com → **My Apps** → la app → **Use cases** → «Manage messaging & content on Instagram» → **Customize**.
+2. **Permissions and features**: `instagram_basic`, `instagram_business_basic`, `instagram_business_manage_insights` e `instagram_manage_insights` en «Ready for testing». Sin App Review: la app sigue en modo desarrollo y solo lee tu cuenta.
+3. **App roles → Roles → Add People → Instagram Tester** → `ultimo.pegue`. En Instagram (web): Configuración → Apps y sitios web → **Invitaciones de tester** → Accept.
+4. Vuelve al caso de uso → pestaña **API setup with Unified login** → «2. Generate access tokens» → junto a ultimo.pegue, **Generate token** → cópialo. No lo pegues en ningún chat.
 
 **B. Secrets en GitHub** (repo → Settings → Secrets and variables → Actions → **New repository secret**)
 8. Nombre `IG_TOKEN`, valor: el token. Guardar.
-9. Renovación automática (recomendado): github.com → tu foto → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate. Repositorio: solo `video-claude-generation-reel`. Permisos: **Secrets: Read and write**. Caducidad: 1 año (apúntalo). Cópialo y crea el secret `GH_PAT` con él.
-   Sin `GH_PAT` la Action no puede reescribir el token: solo avisa y falla a ≤10 días de caducar (GitHub te manda un correo). Entonces repite el paso 7 y pega el token nuevo en `IG_TOKEN`.
+9. Solo si el token es de Instagram (`IG…`). Renovación automática: github.com → tu foto → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate. Repositorio: solo `video-claude-generation-reel`. Permisos: **Secrets: Read and write**. Caducidad: 1 año (apúntalo). Cópialo y crea el secret `GH_PAT` con él.
+   Con token de Facebook (`EAA…`) no hace falta: la Action mira cuándo caduca y avisa (falla a ≤10 días). Sin `GH_PAT` la Action no puede reescribir el token: solo avisa y falla a ≤10 días de caducar (GitHub te manda un correo). Entonces repite el paso 7 y pega el token nuevo en `IG_TOKEN`.
 
 **C. Primera prueba**
 10. Repo → **Actions** → «Métricas Instagram» → **Run workflow**. Al acabar debe haber un commit «Métricas IG …».

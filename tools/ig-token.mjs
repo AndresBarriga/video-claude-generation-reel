@@ -10,6 +10,16 @@ const est = fs.existsSync(F) ? JSON.parse(fs.readFileSync(F, 'utf8')) : {};
 const quedan = est.caduca ? (Date.parse(est.caduca) - Date.now()) / 864e5 : null;
 const fin = (msg, code = 0) => { console.log(msg); if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, msg + '\n'); process.exit(code); };
 
+// Token de Facebook (EAA…): no se renueva con ig_refresh_token; se mira su caducidad con debug_token.
+if (/^EAA/.test(process.env.IG_TOKEN || '')) {
+  const u = new URL('https://graph.facebook.com/debug_token');
+  u.searchParams.set('input_token', process.env.IG_TOKEN); u.searchParams.set('access_token', process.env.IG_TOKEN);
+  const d = (await (await fetch(u)).json().catch(() => ({}))).data || {};
+  if (d.is_valid === false) fin('⚠️ Token IG no válido: genera uno nuevo (docs/metricas-api.md).', 1);
+  const exp = d.data_access_expires_at || d.expires_at; // 0 = no caduca
+  const dias = exp ? (exp * 1e3 - Date.now()) / 864e5 : Infinity;
+  fin(dias === Infinity ? 'Token IG (Facebook): no caduca.' : `${dias <= MARGEN ? '⚠️ ' : ''}Token IG (Facebook): caduca en ${Math.floor(dias)} días (${new Date(exp * 1e3).toISOString().slice(0, 10)}). Al caducar: Generate token y pegar en IG_TOKEN.`, dias <= ALARMA ? 1 : 0);
+}
 if (quedan != null && quedan > MARGEN) fin(`Token IG: quedan ${Math.floor(quedan)} días (caduca ${est.caduca.slice(0, 10)}).`);
 if (!process.env.IG_TOKEN) fin('Falta IG_TOKEN.', 1);
 if (!process.env.GH_PAT) {
