@@ -9,8 +9,14 @@ import { Gancho, Suelta, Desplome, Cta } from "./Desplome";
 import { Vertical, RepisaE, Corta } from "./Vertical";
 import { Placa } from "./Placa";
 import { Cuatro, Tarjeta } from "./Cuatro";
+import { GGancho, GArregla } from "./G3Gancho";
+import { GGolpe, GAgarra } from "./G3Golpe";
+import { GUno, GDos, GTres } from "./G3Pasos";
+import { GTarjeta, GCta } from "./G3Cierre";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, suelta: Suelta, cuatro: Cuatro, desplome: Desplome, vertical: Vertical, repisa: RepisaE, corta: Corta, placa: Placa, tarjeta: Tarjeta, cta: Cta };
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, suelta: Suelta, cuatro: Cuatro, desplome: Desplome, vertical: Vertical, repisa: RepisaE, corta: Corta, placa: Placa, tarjeta: Tarjeta, cta: Cta,
+  // E81 (3/3, grigri)
+  gGancho: GGancho, gArregla: GArregla, gGolpe: GGolpe, gAgarra: GAgarra, gUno: GUno, gDos: GDos, gTres: GTres, gTarjeta: GTarjeta, gCta: GCta };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Frenada: React.FC<{ datos: Datos }> = ({ datos }) => {

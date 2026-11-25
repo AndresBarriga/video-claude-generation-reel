@@ -1,0 +1,24 @@
+{
+ "id": "E81",
+ "titulo": "Dar cuerda rápido con el grigri (Caer y asegurar 3/3)",
+ "nicho": "escalada",
+ "plantilla": "Frenada",
+ "formato": "fijo",
+ "verificado": true,
+ "apertura": "A",
+ "fuentes": [
+  "Petzl, «Belaying with the GRIGRI» (texto): única técnica recomendada; incorrecto agarrar el GRIGRI con toda la mano, dar cuerda sin sujetar la cuerda de freno o dejar el pulgar siempre en la leva; bloquear el aparato o la leva anula el frenado; si la cuerda sale de golpe puede bloquearse.",
+  "Petzl, vídeo oficial del GRIGRI (dar cuerda rápido): índice bajo el borde, pulgar en la leva solo mientras se da, la mano de freno no suelta la cuerda (contrastado en E62)."
+ ],
+ "escenas": [
+  { "tipo": "gancho", "visual": "gGancho", "bloque": "gancho", "texto": "¿Tu grigri se bloquea cuando van a chapar?", "claves": ["grigri", "bloquea"] },
+  { "tipo": "texto", "visual": "gArregla", "bloque": "reencuadre", "texto": "Lo que haces para arreglarlo puede quitarle el freno.", "claves": ["arreglarlo", "freno."] },
+  { "tipo": "texto", "visual": "gGolpe", "bloque": "dentro", "texto": "Si la cuerda sale de golpe, puede bloquearse.", "claves": ["golpe,"] },
+  { "tipo": "texto", "visual": "gAgarra", "bloque": "giro", "texto": "Y agarrarlo entero no lo arregla: si agarras el aparato o aprietas la leva, anulas el frenado.", "claves": ["entero", "leva,", "anulas"] },
+  { "tipo": "texto", "visual": "gUno", "bloque": "pasos", "texto": "Uno: la mano de freno no suelta nunca la cuerda.", "claves": ["nunca"] },
+  { "tipo": "texto", "visual": "gDos", "bloque": "pasos", "texto": "Dos: para dar rápido, el pulgar en la leva solo un instante, mientras das.", "claves": ["pulgar", "instante,"] },
+  { "tipo": "texto", "visual": "gTres", "bloque": "pasos", "texto": "Tres: en cuanto chapa, pulgar fuera. La mano de freno, siempre en la cuerda.", "claves": ["fuera.", "siempre"] },
+  { "tipo": "texto", "visual": "gTarjeta", "bloque": "guardar", "texto": "Es la técnica de Petzl para el grigri: si tu aparato es otro, mira su manual.", "claves": ["Petzl", "manual."] },
+  { "tipo": "cta", "visual": "gCta", "bloque": "cta", "texto": "Mándaselo a quien te asegura.", "claves": ["Mándaselo"] }
+ ]
+}
