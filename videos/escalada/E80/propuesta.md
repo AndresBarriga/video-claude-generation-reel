@@ -1,4 +1,4 @@
-# E80 — «Lo que NO es una frenada blanda» · propuesta v4 (25-nov; v3 debajo) · serie «Caer y asegurar» 2/3
+# E80 — «Lo que NO es una frenada blanda» · propuesta v5 PRODUCIDA (25-nov; v4 y v3 debajo) · serie «Caer y asegurar» 2/3
 Rehace la v2 (rechazada como tutorial, ver `propuesta-v2-rechazada.md` y `encargo.md`). Cumple la promesa de E79 («¿CÓMO FRENA BLANDO SIN DAR COMBA DE MÁS?») por la negativa: tres cosas que parecen frenada blanda y no lo son. Nada de instrucciones de la maniobra.
 
 ## Opinión
@@ -23,6 +23,11 @@ Buena y más segura que la v2: los errores se ven caer y no hay que enseñar el 
 - C · Esto eres tú: «Si tu asegurador te da comba para que caigas suave, mira esto.»
 - D · Lo que está en juego: «Tres frenadas “blandas” que te pueden llevar contra la pared.»
 - E · Serie: «Parte 2: lo que NO es una frenada blanda.»
+
+## v5 (producida): qué es, sin el cómo exacto
+Andrés: «no se dice “esto se hace así”, que es lo que se queda, más en novatos». Cada creencia ✗ va seguida de lo que sí ✓ (qué es la frenada blanda), sin momento exacto, cantidad ni peso. Escenario nuevo: acantilado sobre el mar (Andrés: no quemar «roca» ni rocódromo); práctica en el rocódromo.
+**Voz v5:** Darte más cuerda no te frena más blando. Solo te hace caer más. Lo blando no sale de la cuerda: sale de quien asegura, que acompaña el tirón con el cuerpo, con cuerda justa. Segunda idea: si salto, amortiguo. Si salta antes de tiempo, puede frenarte más duro que no saltar: el tirón se acompaña, no se adelanta. Tercera: blanda siempre. Con una repisa debajo, o en las primeras chapas: frenada corta. Cuerda justa, acompañar el tirón y nada debajo. El movimiento se practica en caídas pequeñas con alguien con experiencia. ¿Cuál de las tres te han hecho? Mándaselo a quien te asegura.
+**Crítico v5 (en chat, sin subagente):** «acompaña el tirón» es concepto, no instrucción de momento → dentro de la regla de seguridad · riesgo: «se acompaña, no se adelanta» puede leerse como regla de cuándo saltar → la imagen solo compara a destiempo / acompañada, sin marcar el instante, y el cierre manda a practicar con alguien · nota 7,5 (envío 7).
 
 ## v4 (feedback de Andrés, 25-nov): que se vea cuál es la creencia
 Andrés: el enfoque (corregir la creencia popular) está bien, pero mucha gente ni sabe cuál es la creencia de cómo se hace una frenada blanda. **Arreglo:** Dani ES la creencia. Cada error empieza con Dani diciéndola en un bocadillo (lo que la gente cree, desde el fotograma 0) y la voz lo desmiente; al final, Dani pillado. Y un rótulo define frenada blanda para quien no vio E79. El gancho de voz no cambia.

@@ -15,7 +15,7 @@ const enRepisa = (k: number, dina: number, comba: number, xa: number) => {
   const s = caerA(k, dina, comba, xa, P1, I1), tope = REP - CADERA + 22, toca = s.p.y > tope;
   return { s, p: toca ? { x: s.p.x, y: tope } : s.p, toca };
 };
-const C = { cx: XA + 260, cy: REP - 160, z: 0.95 };
+const C = { cx: XA + 330, cy: REP - 140, z: 1.05 };
 
 export const BIdea3: React.FC<P> = () => {
   const f = useCurrentFrame(), t = interpolate(f, [0, 16], [0, 1], { ...cl, easing: (x) => x * x * (3 - 2 * x) });
@@ -27,7 +27,7 @@ export const BIdea3: React.FC<P> = () => {
         <Soga pts={porChapas(VA, aparato(VA, XA), I1 + 1, P1, { comba: 40 })} />
         <Persona p={P1} ang={POSE.agarreMira} aspecto={IRENE} cara="esfuerzo" />
       </Mar>
-      <Creencia t="¡BLANDA SIEMPRE, ¿NO?!" x={Math.min(760, cab.x + 230)} y={Math.min(1250, cab.y - 30)} s={(f + 2) / 8} />
+      <Creencia t="¡BLANDA SIEMPRE, ¿NO?!" x={Math.min(700, cab.x + 260)} y={Math.min(1250, cab.y - 40)} s={(f + 2) / 8} />
       <ContadorX n={3} k={f - 8} />
     </>
   );

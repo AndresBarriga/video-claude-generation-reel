@@ -8,8 +8,10 @@ export { IRENE, DANI, COL, F, pop, cl, c01, Grande, golpe, type P } from "./comu
 
 export const VA = crearVia({ perfil: PERFILES.vertical, metros: [2.4, 3.9, 5.4, 7, 8.6] });
 export const XA = 330;
-/** Irene se suelta 110 px por encima de la chapa I (4.ª). */
-export const I = 3, P0 = VA.cadera(VA.mos(I).y - 110);
+/** Irene se suelta 110 px por encima de la chapa I (3.ª). */
+export const I = 2, P0 = VA.cadera(VA.mos(I).y - 110);
+/** Plano general: Irene arriba y Dani abajo, ambos grandes y dentro del 3:4. */
+export const CAMW = { cx: XA + 330, cy: (P0.y - 210 + VA.pie + 140) / 2 + 20, z: 0.98 };
 /** Caída: dina 1 = acompañada (blanda), 0 = seca. comba = cuerda fuera (m). */
 export const caerA = (k: number, dina: number, comba: number, xa = XA, p0 = P0, i = I) =>
   sistemaCaida(VA, k, p0, POSE.agarre, { i, xAseg: xa, dina, comba, aire: POSE.caeBien });
@@ -24,9 +26,9 @@ export const aPantalla = (x: number, y: number, c: { cx: number; cy: number; z: 
 export const cabezaAseg = (x: number, dy = 0) => ({ x: x + 10, y: VA.pie + dy - CADERA - 150 });
 
 /** Bocadillo de Dani con la CREENCIA (texto entre comillas, dos líneas). s 0–1 = aparición; cola hacia (cx, cy) de pantalla. */
-export const Creencia: React.FC<{ t: string; x: number; y: number; s: number; tam?: number }> = ({ t, x, y, s, tam = 58 }) => s <= 0 ? null : (
+export const Creencia: React.FC<{ t: string; x: number; y: number; s: number; tam?: number }> = ({ t, x, y, s, tam = 60 }) => s <= 0 ? null : (
   <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -100%) scale(${pop(s * 12)})`, transformOrigin: "50% 100%", opacity: Math.min(1, s * 2) }}>
-    <div style={{ position: "relative", background: "#FFFDF6", border: `8px solid ${COL.tinta}`, borderRadius: 44, padding: "18px 34px 22px", maxWidth: 760, fontFamily: F, fontWeight: 800, fontSize: tam, lineHeight: 1.05, color: COL.tinta, textAlign: "center", whiteSpace: "pre-line", boxShadow: "0 14px 0 rgba(20,33,58,.22)" }}>
+    <div style={{ position: "relative", background: "#FFFDF6", border: `8px solid ${COL.tinta}`, borderRadius: 44, padding: "18px 34px 22px", width: "max-content", maxWidth: 820, fontFamily: F, fontWeight: 800, fontSize: tam, lineHeight: 1.05, color: COL.tinta, textAlign: "center", whiteSpace: "pre-line", boxShadow: "0 14px 0 rgba(20,33,58,.22)" }}>
       «{t}»
       <div style={{ position: "absolute", left: 90, bottom: -40, width: 0, height: 0, borderLeft: "22px solid transparent", borderRight: "22px solid transparent", borderTop: `40px solid ${COL.tinta}` }} />
     </div>

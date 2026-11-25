@@ -3,9 +3,9 @@
 import React from "react";
 import { useCurrentFrame, AbsoluteFill } from "remotion";
 import { Persona, Asegurador, Soga, POSE, Cota, Partida, porChapas, aparato } from "../../piezas/kit";
-import { Mar, VA, XA, I, P0, caerA, kTensa, aPantalla, cabezaAseg, Creencia, ContadorX, Tiron, Pildora, IRENE, DANI, type P } from "./G2comun";
+import { Mar, CAMW, VA, XA, I, P0, caerA, kTensa, aPantalla, cabezaAseg, Creencia, ContadorX, Tiron, Pildora, IRENE, DANI, type P } from "./G2comun";
 
-export const CAM0 = { cx: XA + 300, cy: VA.pie - 560, z: 0.8 };
+export const CAM0 = CAMW;
 const COMBA_MAS = 1.6, JUSTA = 0.3, F0 = 26;
 /** Plano del gancho a f fotogramas (también cierra el bucle). Antes de F0: Dani suelta comba; después, la caída larga. */
 export const PlanoComba: React.FC<{ f: number; globo?: boolean }> = ({ f, globo = true }) => {
@@ -17,7 +17,7 @@ export const PlanoComba: React.FC<{ f: number; globo?: boolean }> = ({ f, globo 
         <Soga pts={k > 0 ? s.pts : porChapas(VA, aparato(VA, XA), I + 1, P0, { comba: 200 })} />
         <Persona p={k > 0 ? s.p : P0} ang={k > 0 ? s.ang : POSE.agarreMira} aspecto={IRENE} cara={k > 0 ? "miedo" : "esfuerzo"} rot={k > 0 ? s.rot : 0} tiembla={k > 0 ? 0 : Math.sin(f * 2) * 3} />
       </Mar>
-      {globo && <Creencia t={"¡TE DOY CUERDA PARA\nQUE CAIGAS BLANDO!"} x={cab.x + 230} y={cab.y - 30} s={Math.min((f + 12) / 12, (F0 + 14 - f) / 6)} tam={56} />}
+      {globo && <Creencia t={"¡TE DOY CUERDA PARA\nQUE CAIGAS BLANDO!"} x={Math.min(700, cab.x + 260)} y={cab.y - 40} s={Math.min((f + 12) / 12, (F0 + 14 - f) / 6)} />}
     </>
   );
 };
@@ -50,8 +50,8 @@ export const BCaeMas: React.FC<P> = () => {
 export const BAcompana: React.FC<P> = ({ pal, d }) => {
   // cámara lenta (½): la cuerda se tensa justo en «acompaña»; Dani se deja llevar hacia la pared. Medidor de TIRÓN en verde.
   const f = useCurrentFrame(), fAc = pal("acompaña") ?? Math.round(d * 0.5), fJ = pal("justa.") ?? d - 30, kT = kTensa(1, JUSTA);
-  const k = (f - (fAc - 2 * kT)) * 0.5, s = caerA(k, 1, JUSTA), tir = s.j >= 0 ? 0.32 * Math.min(1, s.j / 4) * Math.exp(-Math.max(0, s.j - 10) / 30) + 0.04 : 0.04;
-  const c = { cx: XA + 280, cy: VA.pie - 520, z: 0.82 };
+  const k = (f - (fAc - 2 * kT)) * 0.5, s = caerA(k, 1, JUSTA), tir = s.j >= 0 ? 0.32 * Math.min(1, s.j / 4) + 0.04 : 0.04;
+  const c = CAMW;
   return (
     <>
       <Mar {...c} sh={s.sh * 0.3} f={f}>
@@ -59,11 +59,11 @@ export const BAcompana: React.FC<P> = ({ pal, d }) => {
         <Soga pts={k > 0 ? s.pts : porChapas(VA, aparato(VA, XA), I + 1, P0, { comba: 40 })} brillo={s.j >= 0 ? 0.5 : 0} />
         <Persona p={k > 0 ? s.p : P0} ang={k > 0 ? s.ang : POSE.agarreMira} aspecto={IRENE} cara={s.j >= 2 ? "alivio" : k > 0 ? "miedo" : "esfuerzo"} rot={k > 0 ? s.rot : 0} />
       </Mar>
-      <div style={{ position: "absolute", left: 40, top: 300, fontFamily: "Figtree", fontWeight: 700, fontSize: 34, color: "#fff", background: "rgba(20,33,58,.75)", borderRadius: 20, padding: "6px 18px" }}>CÁMARA LENTA</div>
+      <div style={{ position: "absolute", left: 40, top: 440, fontFamily: "Figtree", fontWeight: 700, fontSize: 34, color: "#fff", background: "rgba(20,33,58,.75)", borderRadius: 20, padding: "6px 18px" }}>CÁMARA LENTA</div>
       <Tiron v={tir} o={f / 6} />
-      {f < fAc - 6 && <Pildora t="BLANDA = QUE NO TE PARE EN SECO" neutro top={1290} k={f - 2} tam={46} />}
-      {f >= fAc - 6 && <Pildora t="ACOMPAÑA EL TIRÓN" ok top={1290} k={f - fAc + 8} />}
-      <Pildora t="CUERDA JUSTA" ok top={1400} k={f - fJ + 3} tam={50} />
+      {f < fAc - 6 && <Pildora t="BLANDA = QUE NO TE PARE EN SECO" neutro top={1365} k={f - 2} tam={46} />}
+      {f >= fAc - 6 && <Pildora t="ACOMPAÑA EL TIRÓN" ok top={1365} k={f - fAc + 8} />}
+      <Pildora t="CUERDA JUSTA" ok top={1170} k={f - fJ + 3} tam={50} />
       {void AbsoluteFill}
     </>
   );

@@ -6,7 +6,7 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Persona, Asegurador, Soga, POSE, porChapas, aparato, sistemaCaida, REPARTO, bucle } from "../../piezas/kit";
 import { Envio } from "../../piezas/kit/Montaje";
 import { Gym, VIA as VS, XA as XS } from "../Miedo/comun";
-import { Mar, VA, XA, I, P0, Pildora, IRENE, DANI, COL, F, pop, Grande, type P } from "./G2comun";
+import { Mar, CAMW, VA, XA, I, P0, Pildora, IRENE, DANI, COL, F, pop, Grande, type P } from "./G2comun";
 import { PlanoComba } from "./G2Uno";
 
 const SI: string[] = ["Cuerda justa", "Acompañar el tirón (sin adelantarse)", "Nada debajo: si no, corta"];
@@ -25,7 +25,7 @@ export const BTarjeta: React.FC<P> = () => {
           </div>
         ))}
         <div style={{ borderTop: "4px dashed #D8CFC1", paddingTop: 20, display: "flex", justifyContent: "center", gap: 14, flexWrap: "wrap", opacity: pop(f - 12) > 0 ? 1 : 0 }}>
-          {NO.map((t) => <span key={t} style={{ fontFamily: F, fontWeight: 800, fontSize: 38, color: COL.rojo, textDecoration: "line-through", textDecorationThickness: 5, whiteSpace: "nowrap" }}>✗ {t}</span>)}
+          {NO.map((t) => <span key={t} style={{ fontFamily: F, fontWeight: 800, fontSize: 46, color: COL.rojo, textDecoration: "line-through", textDecorationThickness: 5, whiteSpace: "nowrap" }}>✗ {t}</span>)}
         </div>
       </div>
     </>
@@ -38,7 +38,7 @@ export const BPractica: React.FC<P> = ({ pal, d }) => {
   const s = sistemaCaida(VS, f - 18, p0, POSE.agarre, { i, xAseg: XS, dina: 1, comba: 0.2, aire: POSE.caeBien }), k = f - 18;
   return (
     <>
-      <Gym cx={XS + 300} cy={VS.pie - 470} z={0.85}>
+      <Gym cx={XS + 320} cy={VS.pie - 430} z={1.0}>
         <Asegurador via={VS} aspecto={DANI} {...s.aseg} x={XS} alza={1} cara={s.j >= 0 ? "esfuerzo" : "serio"} />
         <Persona p={{ x: XS + 190, y: VS.pie }} ang={POSE.pie} aspecto={MARTA} cara={s.j >= 4 ? "alivio" : "normal"} />
         <Soga pts={k > 0 ? s.pts : porChapas(VS, aparato(VS, XS), i + 1, p0, { comba: 30 })} />
@@ -50,7 +50,7 @@ export const BPractica: React.FC<P> = ({ pal, d }) => {
   );
 };
 export const BCta: React.FC<P> = ({ pal, d }) => {
-  const f = useCurrentFrame(), fM = pal("mándaselo") ?? d - 50, b = bucle(f, d, 12), c = { cx: XA + 300, cy: VA.pie - 560, z: 0.8 };
+  const f = useCurrentFrame(), fM = pal("mándaselo") ?? d - 50, b = bucle(f, d, 12), c = CAMW;
   return (
     <>
       <Mar {...c} f={f}>
