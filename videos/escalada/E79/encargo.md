@@ -1,4 +1,4 @@
-# E79 — «Te da miedo el sitio equivocado» (dónde es peor caerse) · encargo de estrategia, 25-nov
+# E79 — «Frenada según la pared» (cómo asegurar según la situación) · encargo de estrategia, 25-nov
 Publicar esta noche. Tema del día en historias: miedo a caer (barra «¿cuánto miedo te da caer pasada la segunda chapa?»). Producción: propuesta → crítico → OK de Andrés → producir con el kit de cuerda.
 
 ## Por qué este tema (datos)
@@ -57,6 +57,32 @@ La v1 explicaba dónde duele caer pero no daba nada que hacer. **Nuevo mensaje: 
 - Regla que se queda: **«la frenada blanda alarga la caída»** → buena al aire, mala si hay algo debajo o vas por las primeras chapas. Es el dato «¿cómo que…?» del segundo gancho.
 - Cierre: «Antes de empezar, dile a tu asegurador dónde está la repisa.» + pregunta «¿Tu asegurador sabe esto?» + «Mándaselo».
 - Fuentes para la ficha: REI «How to Belay a Lead Climber» (frenada blanda si caes al aire desde un desplome o vas a pendular contra la pared) · Climbing.com «The art of the soft catch» (si puede golpear una repisa, un saliente o el suelo, nada de frenada blanda: acortar la caída; dile a tu asegurador lo que quieres) · Climbing Tech Tips «Soft catches» (la frenada blanda alarga la caída; mirar repisas y salientes).
+
+
+## v3 (25-nov 11:40) · ELEGIDO por Andrés: «frenada según la pared / cómo asegurar según la situación»
+**Gancho (idea de Andrés, formulación precisa):** «En roca, el desplome da más miedo… y suele ser donde mejor se cae. Si te aseguran bien.» El «si te aseguran bien» abre el vídeo hacia el asegurador. No decir «es más seguro» a secas: con frenada seca te estampa, y con poca cuerda bajo un techo pendulas contra el borde.
+
+### Asegurar según la situación (investigado; elegir 4–5 para el vídeo, el resto a la ficha)
+| Situación | Quien asegura | Fuente |
+|---|---|---|
+| Antes de la 1.ª chapa | parar con las manos (guiar la caída para que caiga de pie y no de espaldas) | Petzl, buenas prácticas |
+| Primeras chapas (hasta la 3.ª) | cerca de la pared y un paso al lado de la línea, poca comba, recoger al chapar: **frenada corta** | Mountain Project (curso de rocódromo) |
+| Repisa o bloque debajo | **frenada corta**; el escalador avisa antes | Climbing.com |
+| Vertical, ya alto | **frenada blanda** | Climbing.com, REI |
+| Desplome / techo | **frenada blanda**; con poca cuerda pendula contra el borde del techo | REI; Mountain Project |
+| Placa | cuerda justa; puede dar pasos atrás para acortar | Mountain Project |
+| Pesas bastante menos | ya sale blanda: no saltes y no te alejes de la pared (el tirón te estampa) | Public Lands; Mountain Project |
+| Pesas más | acompaña el tirón con un paso o saltito hacia la pared, rodillas flexionadas | Climbing Tech Tips; Mountain Project |
+| Siempre | atento en los momentos tensos (chapajes); comunicación con palabras acordadas | Petzl |
+
+### Factor psicológico (para gancho y cierre, sin exagerar)
+- 100 escaladores de rocódromo: más ansiedad escalando de primero que en polea; el 46 % con ansiedad alta de primero (BMC Sports Sci Med Rehabil, 2025).
+- El cansancio se asocia con más miedo de primero (citado por Vertige Media).
+- Caer en tensión refuerza el miedo (Climbing/Yahoo); confiar en quien te asegura es de lo primero que recomienda una psicóloga deportiva (UKClimbing, Eppensteiner).
+- Uso en el vídeo: parte del miedo es no saber cómo te van a frenar → **hablarlo antes**: «aquí corta, aquí blanda». Cierre: «¿Tu asegurador sabe esto? Mándaselo.»
+
+### Selección propuesta para 40–45 s
+Gancho (desplome) → 1 Primeras chapas: corta → 2 Repisa debajo: corta → 3 Desplome: blanda (cómo se da, 1 escena) → 2.º gancho «la frenada blanda alarga la caída» → tarjeta para guardar (situación × frenada) → «dile cómo quieres que te frene» + envío.
 
 ## Portada
 Tres paredes en miniatura (placa · vertical · desplome) con un escalador cayendo en cada una; titular «¿DÓNDE ES PEOR CAERSE?» ≥60 px dentro del 3:4 central.
