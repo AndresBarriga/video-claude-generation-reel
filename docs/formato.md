@@ -209,3 +209,13 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 3. **¿Fue suerte?:** tamaño de la cuenta, momento puntual, ver solo los éxitos, un solo ejemplo. Si es eso, decirlo y no sacar regla.
 4. **Comparar con el mismo tema que falló** (contraejemplo natural): aísla la variable mejor que cualquier lista.
 5. Salida: «lo que lo hizo funcionar es X; aplicado a nuestro tema: …». Patrón = aparece en varios vídeos, no en uno.
+
+## 11. Filtro de cada propuesta (25-nov, Andrés: «como máxima»)
+Toda idea o propuesta (de quien sea, aunque parezca buena) se pasa por estas 7 preguntas **antes** de seguir. Cada una: ✓ / ≈ / ✗, con cómo se compromete y cómo se arregla. Si 2 o más son ✗ y no tienen arreglo, se dice **no** directamente.
+1. **Gancho:** ¿algo que **todos** hacen o sienten, en «tú», que frena el dedo en 3 s y **no se responde** enseguida?
+2. **Promesa:** ¿queda claro en 3–5 s qué se lleva quien lo ve?
+3. **Segundo gancho:** ¿hay un dato «¿cómo que…?» a mitad del vídeo?
+4. **Aprendizaje:** ¿cambia lo que hace en su próxima sesión? ¿Es nuevo para la mayoría o ya lo hemos contado?
+5. **Guardar:** ¿hay algo para consultar después (lista, tarjeta, regla)?
+6. **Enviar:** ¿a qué persona concreta y por qué se lo mandaría?
+7. **Seguir:** ¿por qué querría ver otros diez vídeos de la cuenta (tema del perfil, serie)?
