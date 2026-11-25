@@ -243,5 +243,12 @@
     "version": "storyboard",
     "fecha": "2026-11-24",
     "nota_breve": "tarjeta guardable; tramo de escalada más flojo"
+  },
+  "E79": {
+    "nota": 7,
+    "envio": 6.5,
+    "version": "propuesta",
+    "fecha": "2026-11-25",
+    "nota_breve": "corta vs seca confuso; promesa y 2.º gancho corregidos en v2"
   }
 }
