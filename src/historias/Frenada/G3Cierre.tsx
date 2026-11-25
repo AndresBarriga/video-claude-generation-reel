@@ -7,6 +7,13 @@ import { Envio } from "../../piezas/kit/Montaje";
 import { Gym, VS, XA, I, P0, IRENE, DANI, COL, F, pop, Grande, ROJO, type P } from "./G3comun";
 import { PlanoChapa } from "./G3Gancho";
 
+/** Sello genérico de «verificado» (roseta con ✓). No es el logotipo de Petzl: solo indica que la técnica es la del fabricante. */
+const Sello: React.FC = () => (
+  <svg width={110} height={110} viewBox="-55 -55 110 110">
+    <path d={Array.from({ length: 24 }, (_, i) => { const a = (i * Math.PI) / 12, r = i % 2 ? 44 : 53; return `${i ? "L" : "M"}${(Math.cos(a) * r).toFixed(1)} ${(Math.sin(a) * r).toFixed(1)}`; }).join(" ") + " Z"} fill="#2F8FE0" stroke={COL.tinta} strokeWidth={5} strokeLinejoin="round" />
+    <path d="M-17 1 L-5 14 L19 -13" stroke="#fff" strokeWidth={11} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
 const FILAS: [string, boolean][] = [
   ["Mano de freno siempre en la cuerda", true],
   ["Pulgar en la leva solo mientras das", true],
@@ -19,7 +26,15 @@ export const GTarjeta: React.FC<P> = () => {
     <>
       <div style={{ position: "absolute", inset: 0, background: "#E8F2FC" }} />
       <div style={{ position: "absolute", left: 60, right: 60, top: 420, bottom: 420, background: COL.crema, border: `9px solid ${COL.tinta}`, borderRadius: 48, boxShadow: "0 18px 0 rgba(20,33,58,.25)", transform: `scale(${pop(f)})`, padding: "40px 46px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-        <div style={{ fontFamily: F, fontWeight: 900, fontSize: 80, color: COL.tinta, textAlign: "center", lineHeight: 1 }}>DAR CUERDA RÁPIDO<div style={{ fontFamily: "Figtree", fontWeight: 700, fontSize: 38, color: "#5A6478", marginTop: 14 }}>Técnica de Petzl para el grigri · otro aparato: su manual</div></div>
+        <div style={{ fontFamily: F, fontWeight: 900, fontSize: 80, color: COL.tinta, textAlign: "center", lineHeight: 1 }}>DAR CUERDA RÁPIDO
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 18, marginTop: 22, transform: `scale(${pop(f - 2)})` }}>
+            <Sello />
+            <div style={{ textAlign: "left" }}>
+              <div style={{ fontFamily: F, fontWeight: 900, fontSize: 64, color: COL.tinta, lineHeight: 1 }}>TÉCNICA DE PETZL</div>
+              <div style={{ fontFamily: "Figtree", fontWeight: 700, fontSize: 36, color: "#5A6478", marginTop: 6 }}>para el grigri · otro aparato: su manual</div>
+            </div>
+          </div>
+        </div>
         {FILAS.map(([t, ok], i) => (
           <div key={t} style={{ display: "flex", alignItems: "center", gap: 26, borderTop: "4px dashed #D8CFC1", paddingTop: 26, opacity: pop(f - 3 - i * 3) > 0 ? 1 : 0 }}>
             <div style={{ flex: "0 0 auto", width: 92, height: 92, borderRadius: 46, background: ok ? COL.verde : ROJO, border: `6px solid ${COL.tinta}`, color: "#fff", fontFamily: F, fontWeight: 900, fontSize: 60, display: "flex", alignItems: "center", justifyContent: "center" }}>{ok ? "✓" : "✗"}</div>

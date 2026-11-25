@@ -35,9 +35,9 @@
    "tipo": "texto",
    "visual": "gGolpe",
    "bloque": "dentro",
-   "texto": "Si la cuerda sale de golpe, puede frenar como si cayera.",
+   "texto": "Si tira de golpe para chapar, el grigri frena como si cayera.",
    "claves": [
-    "golpe,",
+    "golpe",
     "cayera."
    ]
   },

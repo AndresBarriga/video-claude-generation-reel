@@ -13,8 +13,8 @@ const Flecha: React.FC<{ x: number; y: number; o: number; dy: number }> = ({ x, 
   </g>
 );
 export const GGolpe: React.FC<P> = ({ pal, d }) => {
-  // tirón: la cuerda del lado de Irene sube de golpe (rayas de velocidad) y al decir «frenar» se para en seco (el rótulo queda >0,8 s)
-  const f = useCurrentFrame(), fG = (pal("golpe,") ?? 22) - 4, fB = pal("frenar") ?? d - 30;
+  // tirón: la cuerda del lado de Irene sube de golpe (rayas de velocidad) y al decir «frena» se para en seco (el rótulo queda >0,8 s)
+  const f = useCurrentFrame(), fG = (pal("golpe") ?? 22) - 4, fB = pal("frena") ?? d - 30;
   const corre = f < fG ? f * 6 : f < fB ? fG * 6 + (f - fG) * 70 : fG * 6 + (fB - fG) * 70;
   const clava = f >= fB;
   return (
@@ -26,7 +26,7 @@ export const GGolpe: React.FC<P> = ({ pal, d }) => {
         {clava && <Foco x={TAB.x + 10} y={TAB.y - 20} r={90} color={ROJO} k={(f - fB) / 4} />}
       </PP>
       <Contexto k={f / 6} x={210} y={1270} feed={f >= fG && f < fB ? 1 : 0} />
-      {!clava && <Marca t="TIRÓN DE GOLPE" ok={false} top={1430} k={f - fG} tam={58} />}
+      {!clava && <Marca t="TIRÓN AL CHAPAR" ok={false} top={1430} k={f - fG} tam={58} />}
       {clava && <Marca t="FRENA COMO SI CAYERA" ok={false} top={1430} k={f - fB + 1} tam={64} />}
     </>
   );
