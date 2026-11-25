@@ -187,3 +187,18 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
   - Una sola llamada a la acción: envío («Mándaselo a quien te asegura») o guardado («Guárdalo para tu próxima vía»).
   - 3–5 hashtags (Instagram permite 5): 1 amplio (#escalada) + 2–3 medianos del tema (10K–500K publicaciones, comprobar en su página) + #ultimopegue. Rotar grupos por tema; no pegar siempre el mismo bloque. Los hashtags clasifican, no dan alcance.
 - **Palabra clave tres veces** (dicha, en pantalla y en el pie): es lo que Instagram y TikTok indexan para búsqueda.
+
+## 9. Checklist fijo de cada reel (25-nov, de reels-script e instagram-reels-publishing; cifras orientativas)
+1. **Una idea, un objetivo** (envíos, guardados o seguidores) que decide el cierre.
+2. **Gancho en ≤3 s por tres canales** (imagen + primeras palabras + titular legible sin sonido). Sin intro, logo ni plano lento.
+3. **Versión sin sonido primero:** solo con el texto de pantalla se entiende la historia entera.
+4. **Palabra clave** en las primeras palabras habladas, en pantalla y en la 1.ª línea del pie.
+5. **Ritmo:** algo nuevo cada 1–2 s; bucle abierto pronto; segundo gancho si pasa de ~35 s; un pago guardado para el final.
+6. **Bucle o revisionado:** el final enlaza con el inicio, o la lista es densa y pide verlo otra vez.
+7. **Test de envío:** ¿quién lo manda, a quién y por qué? Si no hay respuesta concreta, el vídeo no viaja.
+8. **La idea decide la duración;** nunca rellenar (15–35 s = alcance; más largo solo si es tutorial o historia que lo pague).
+9. **Zona segura:** nada clave en los 250 px de arriba ni en los 350 de abajo; lo esencial dentro del recorte 3:4 central (cuadrícula).
+10. **Portada propia** (no un fotograma cualquiera): sujeto + titular ≥60 px, alto contraste, dentro del 3:4 central. No se puede cambiar después de publicar.
+11. **Requisitos para que Instagram lo recomiende:** original (nunca resubir), sin marca de agua de otra app, con audio.
+12. **Gancho o formato sin probar → reel de prueba** (solo no seguidores) antes que rehacer.
+13. **Imágenes generadas con IA:** revisar la norma de etiquetado de Meta («Información de IA») antes de publicar.

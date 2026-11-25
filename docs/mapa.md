@@ -45,5 +45,7 @@ Para no perder el rastro. Si algo no está aquí, búscalo en el sitio que indic
 8. **Publicado:** las cifras de Instagram entran solas cada mañana (Action, `docs/metricas-api.md`); por captura solo la curva de retención y los seguidores reales de los que destaquen (`npm run medir`).
 
 ## 4. Pendiente de construir
+- **TODO de estrategia vigente: `docs/todo.md`** (aprendizajes en `docs/referencias-skills.md`).
+
 - Mini web para Andrés (ver todo más fácil): el dashboard es la base; ampliar con cola, propuestas y vídeos navegables.
 - Monetización: checklist gratis + DM automático («Comenta CUERDA») cuando el formato dé 3 vídeos ≥ 20K.

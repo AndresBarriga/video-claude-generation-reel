@@ -41,7 +41,7 @@ Esto es lo que hace reconocible la cuenta en el feed. Todo vídeo nuevo lo cumpl
 - Tres planos: fondo (cielo/montaña, poco contraste), medio (escena), primer plano (nieve, roca, cuerda) que enmarca.
 - Luz: un degradado de cielo + sombra proyectada simple bajo personajes y objetos.
 - Textura sutil (grano o ruido al 3–5 %) para evitar el "vector plano de plantilla".
-- Zona segura 1080×1920: nada importante en 200 px superiores ni 290 px inferiores. Subtítulos entre y≈1450 y 1600; la acción principal entre y≈350 y 1350.
+- Zona segura 1080×1920 (actualizada 25-nov, ver `docs/formato.md` §9): nada importante en los **250 px superiores** ni en los **350 px inferiores** (botones y pie de foto). Texto, caras y acción en el centro; lo clave, dentro del recorte 3:4 central (y≈240–1680), que es lo que se ve en la cuadrícula del perfil.
 
 ## Color
 - Paleta por vídeo de 5–6 colores + el color-hilo (cuerda, correa…). Prohibido: degradados violeta/azul con brillo, neón sobre negro, glassmorphism, etiquetas "// 01", interfaces de dashboard.
