@@ -8,7 +8,7 @@ import { BarraGiro, Cam, H, Objetivo, Pared, PRESAS_VIA, Svg, Titular, cl, sale,
 /** Fotograma en que suelta (lo usa también la escena 2 para rebobinar). */
 export const SUELTA = 56;
 /** Estado colgado al final de la caída (cadera y apertura). */
-export const COLGADO = { y: H.y + 230, abre: 0.35 };
+export const COLGADO = { y: H.y + 230, abre: 0.18 };
 
 export const Abre: React.FC<P> = ({ pal }) => {
   const f = useCurrentFrame();
@@ -17,7 +17,7 @@ export const Abre: React.FC<P> = ({ pal }) => {
   // apertura: vaivén que crece y luego se abre del todo; tras caer, gira colgado y se amortigua
   const abre = f < 34 ? 0.06 + 0.1 * (f / 34) + 0.04 * Math.sin(f / 3)
     : f < SUELTA ? interpolate(f, [34, SUELTA], [0.2, 0.95], cl)
-    : COLGADO.abre + 0.5 * Math.cos((f - SUELTA) / 5) * Math.exp(-(f - SUELTA) / 18);
+    : COLGADO.abre + 0.6 * Math.cos((f - SUELTA) / 5) * Math.exp(-(f - SUELTA) / 12);
   const base = { ...POSES_FERMIN.puerta, manoI: { x: POSES_FERMIN.puerta.manoI.x + 30, y: POSES_FERMIN.puerta.manoI.y + 30 + tiembla } };
   const pose = f < SUELTA ? base : mezclaPose(base, POSES_FERMIN.colgado, cae);
   const y = H.y + (COLGADO.y - H.y) * cae;

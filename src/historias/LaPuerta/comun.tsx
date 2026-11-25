@@ -30,7 +30,7 @@ export const L2: Pt = { x: PD.x - (MD.x - PD.x) * 0.12, y: PD.y - (MD.y - PD.y) 
 export const xLinea = (y: number) => MD.x + (PD.x - MD.x) * ((y - MD.y) / (PD.y - MD.y));
 
 export const PRESAS_VIA = [
-  { p: MD, r: 34, c: COL.verde }, { p: PD, r: 26, c: COL.verde }, { p: { x: 470, y: 860 }, r: 28, c: COL.verde },
+  { p: MD, r: 34, c: COL.verde }, { p: { x: PD.x + 4, y: PD.y + 30 }, r: 30, c: COL.verde }, { p: { x: 470, y: 860 }, r: 28, c: COL.verde },
   { p: { x: 930, y: 1130 }, r: 24, c: COL.gris }, { p: { x: 160, y: 1330 }, r: 26, c: COL.gris }, { p: { x: 860, y: 1650 }, r: 22, c: COL.gris },
   { p: { x: 220, y: 560 }, r: 22, c: COL.gris }, { p: { x: 820, y: 520 }, r: 26, c: COL.verde }, { p: { x: 420, y: 1640 }, r: 24, c: COL.gris },
 ];

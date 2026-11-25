@@ -27,12 +27,12 @@ export const Contragiro: React.FC<P> = ({ d, pal }) => {
           <Linea k={1} verde={1} />
           <Fermin x={H2.x} y={H2.y} s={S} pose={banderaCasi(1)} cara="esfuerzo" />
           {cota && <Cota x0={x0} y={yC} k={1} col={colCota} />}
-          <FlechaGiro x={pie.x - 30} y={pie.y + 140} k={(f - tE) / 16} col={COL.verde} s={0.7} espejo />
+          <FlechaGiro x={pie.x - 30} y={pie.y + 140} k={(f - tE) / 16} col={COL.verde} s={0.95} espejo />
         </Cam>
         <BarraGiro v={interpolate(f, [tM, tM + 16], [0.7, 0.28], cl)} />
       </Svg>
       {cota && <Etiqueta x={x0 + 60} y={yC + 70} t="PALANCA CORTA" k={f - tC} c={colCota} tam={32} />}
-      <Etiqueta x={Math.min(860, pie.x - 120)} y={pie.y + 260} t="CONTRAGIRO" k={f - tCg} c={COL.verde} tam={34} />
+      <Etiqueta x={Math.min(860, pie.x - 120)} y={pie.y + 260} t="CONTRAGIRO" k={f - tCg} c={COL.verde} tam={42} />
       <Etiqueta x={540} y={480} t="RODILLA DE APOYO HACIA DONDE APUNTA EL PIE" k={f >= 6 && f < tE + 30 ? f - 6 : 0} tam={29} />
     </>
   );
