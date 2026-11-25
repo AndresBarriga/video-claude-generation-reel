@@ -39,13 +39,28 @@ Elegida A: paradoja sobre lo que el espectador siente (como 180 €), en «tú»
 | 33–40 | Vuelta a la pantalla partida, ahora con ✓/✗ correctos | Antes de tirarte, mira qué hay debajo. ¿Dónde te da más miedo caer a ti? Mándaselo a quien te asegura. |
 Reglas: nada de fondo oscuro; reencuadres sobre el mismo plano (no cortar a «clase» entre 3–9 s); repaso ≤3 s; palabra clave «caer» dicha en los primeros segundos, en pantalla y en el pie; final que vuelve al plano inicial (bucle).
 
+
+## v2 (25-nov 10:15, tras la pregunta de Andrés: ¿por qué se envía, qué se guarda, qué aprendo?)
+La v1 explicaba dónde duele caer pero no daba nada que hacer. **Nuevo mensaje: tu asegurador tiene que frenar distinto según la pared, y tienes que decírselo antes.**
+- **Se envía** a quien te asegura: el vídeo le dice qué hacer a él («mándaselo a quien te asegura» tiene motivo).
+- **Se guarda**: tarjeta final 3 paredes × 2 columnas (tú / quien asegura), visible ≥2 s para captura.
+- **Aprendizaje por pared (verificado con REI, Climbing.com y Climbing Tech Tips):**
+  | Pared | Tú | Quien asegura |
+  |---|---|---|
+  | Desplome | suelta, piernas relajadas, sin agarrar nada | **frenada blanda** (te evita el péndulo contra la pared) |
+  | Vertical con repisa o bloque debajo | mira qué hay debajo antes de chapar; piernas flexionadas | **nada de frenada blanda**: cuerda justa, caída corta |
+  | Placa | evita caer; si caes, de cara a la pared | **cuerda justa** (puede dar pasos atrás para acortar) |
+- Regla que se queda: **«la frenada blanda alarga la caída»** → buena al aire, mala si hay algo debajo. Es el dato «¿cómo que…?» del segundo gancho.
+- Cierre: «Antes de empezar, dile a tu asegurador dónde está la repisa.» + pregunta «¿Tu asegurador sabe esto?» + «Mándaselo».
+- Fuentes para la ficha: REI «How to Belay a Lead Climber» (frenada blanda si caes al aire desde un desplome o vas a pendular contra la pared) · Climbing.com «The art of the soft catch» (si puede golpear una repisa, un saliente o el suelo, nada de frenada blanda: acortar la caída; dile a tu asegurador lo que quieres) · Climbing Tech Tips «Soft catches» (la frenada blanda alarga la caída; mirar repisas y salientes).
+
 ## Portada
 Tres paredes en miniatura (placa · vertical · desplome) con un escalador cayendo en cada una; titular «¿DÓNDE ES PEOR CAERSE?» ≥60 px dentro del 3:4 central.
 
 ## Pie (plantilla §8)
 > Caer en placa, en vertical o en desplome: el miedo te engaña sobre cuál es peor 👀
 > En desplome sueles caer al aire; en placa rozas y el tobillo paga. Lo que de verdad importa es qué hay debajo… y cómo te aseguran.
-> Mándaselo a quien te asegura 🧗‍♂️
+> Mándaselo a quien te asegura: no es la misma frenada en desplome que con una repisa debajo 🧗‍♂️
 > #escalada #escaladadeportiva #seguridadenescalada #ultimopegue (+1 mediano tras comprobar)
 **Comentario fijado:** «¿Dónde te da más miedo caer: placa, vertical o desplome?»
 
