@@ -202,3 +202,10 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 11. **Requisitos para que Instagram lo recomiende:** original (nunca resubir), sin marca de agua de otra app, con audio.
 12. **Gancho o formato sin probar → reel de prueba** (solo no seguidores) antes que rehacer.
 13. **Imágenes generadas con IA:** revisar la norma de etiquetado de Meta («Información de IA») antes de publicar.
+
+## 10. Analizar un vídeo que funcionó (o falló) (25-nov, de viral-reverse-engineering)
+1. **Siete capas, una línea cada una:** gancho · emoción · retención · formato · tema · motivo para enviarlo (utilidad para alguien concreto, «esto eres tú», miedo/asombro, quedar bien, identidad, historia) · factores externos (tamaño de la cuenta, hora, momento, palabra clave en comentarios).
+2. **Quitar piezas:** con cada elemento, «si lo quito, ¿seguiría funcionando?». Lo que no se puede quitar es lo que lo hizo funcionar (normalmente 1–2 cosas); lo demás es ruido.
+3. **¿Fue suerte?:** tamaño de la cuenta, momento puntual, ver solo los éxitos, un solo ejemplo. Si es eso, decirlo y no sacar regla.
+4. **Comparar con el mismo tema que falló** (contraejemplo natural): aísla la variable mejor que cualquier lista.
+5. Salida: «lo que lo hizo funcionar es X; aplicado a nuestro tema: …». Patrón = aparece en varios vídeos, no en uno.

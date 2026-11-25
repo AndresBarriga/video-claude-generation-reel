@@ -50,3 +50,21 @@ Seguidores/1k vistas: Pump 5,1 · Beta 3,5 · Poleas 3,2 · Descansos 2,9 · Mie
 - **H14 reforzada:** 63,6K vistas, 334 seguidores (5,3 seg./1k, el mejor de la cuenta), envíos 2,8 %, guardados 1,0 %. Seguridad con cuerda + paradoja física visible + rehook (dientes) + cierre «mándaselo». Falta confirmar a 7 d; E47 y E41 siguen siendo el contraste (E47 1,6K).
 - **Pregunta-rótulo desde el fotograma 0: a favor, n=3 con matices.** E47B bajó skip 32,7→24,2 % sin más vistas; E59 skip 25,9 % (higher) pero alcance 5× el típico. Ayuda a retener, no explica por sí sola el alcance.
 - **Curva E59:** ≈80 % a 3 s, meseta ≈55-50 % de 15 a 40 s, caída final a ≈25 % (el cierre/bucle no retiene los últimos 4 s). Likes concentrados al final (pico ≈19 %).
+
+## Método de pruebas (25-nov, de la skill experimentation-and-ab-testing)
+Cada hipótesis nueva o prueba se diseña así **antes de publicar** (si no, no cuenta como prueba):
+```
+HIPÓTESIS: cambiar [variable] sube [métrica] en [público]
+VARIABLE (una sola): …            CONTROL: mismo tema, formato, duración y franja horaria
+MÉTRICA PRINCIPAL: …              REGLA (fijada antes): B gana si … (≥20 % de diferencia)
+NO PUEDE EMPEORAR: …              DURACIÓN: ≥48 h por vídeo   REPETICIONES: 3–5 pares
+LECTURA: datos/publicados.csv + capturas     DECISIÓN: adoptar / retirar / repetir
+```
+- Un vídeo suelto es una anécdota; una regla necesita 3–5 repeticiones. Un empate es un resultado válido.
+- Orden de lo que más mueve: gancho y primer fotograma → hora → formato → pie de foto → portada.
+- **Reels de prueba** (solo no seguidores): dan ~2–4K vistas fiables (E35B 3,9K, E36B 2,6K, E31/E31B ~2,4K, E47B 1,9K) y casi 0 seguidores. Sirven para comparar **skip y % visto** de dos arranques, no para medir seguidores ni alcance.
+
+### Registro de pruebas
+| Fecha | Variable | A vs B | Métrica | Resultado | Decisión | Aprendizaje |
+|---|---|---|---|---|---|---|
+| 2026-11-25 | Perfil (nombre, bio, fijados) | antes vs después | visitas al perfil → seguidores (7 d) | pendiente (2-dic) | se queda si ≥ +20 % | |
