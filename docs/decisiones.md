@@ -74,3 +74,4 @@ Lo vigente está resumido en `docs/estrategia.md`.
 - 2026-11-25 · E79 «Frenada según la pared» = parte 1 de la miniserie «Caer y asegurar» (2: cómo se da la frenada blanda · 3: dar cuerda rápido). Une dónde caes y cómo te frenan (la parte «cómo caes» sola no pasaba el filtro §11). Prueba: la parte 2 debe conservar ≥60 % de las vistas de la 1.
 - 2026-11-25 · Subtítulos «arriba» bajados de y=205 a y=255 para cumplir la zona segura de 250 px (formato §9). Afecta a todos los vídeos nuevos (E79 en adelante).
 - 25-nov · Radar de virales automático (Business Discovery + fotogramas/transcripción en Action + análisis semanal de Claude). Copia: estructura, gancho, ritmo y composición sí; texto literal, personajes y secuencia reconocible no. `docs/radar-metodo.md`.
+- 2026-11-25 · Técnica reabierta (Andrés): aunque E42/E39 fallaron, a la competencia le funciona; se replica tal cual su formato (radar). Cuerda sigue siendo lo que más seguidores trae, pero no excluye técnica.
