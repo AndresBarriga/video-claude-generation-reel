@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '41 5 * * 1' # lunes 06:41 en Berlín
   workflow_dispatch:
+    inputs:
+      ids:
+        description: 'Reels concretos a bajar (códigos de URL, p. ej. DfNQfA0NE1o,DfW9qUitXVN). Vacío = los 8 mejores'
+        required: false
+        default: ''
 permissions:
   contents: write
 concurrency: ig-metricas
@@ -24,6 +29,7 @@ jobs:
       - name: Radar y commit
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          RADAR_IDS: ${{ github.event.inputs.ids }}
         run: |
           git config user.name "metricas-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

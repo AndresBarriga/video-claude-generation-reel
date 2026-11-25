@@ -8,15 +8,21 @@ Si el dueño desactivó descargas, la API no da el vídeo: queda meta.json con "
 import json, os, subprocess, sys, urllib.request
 
 MAX, RATIO = 8, 3
+# RADAR_IDS="id1,id2" (o códigos de reel como DfNQfA0NE1o): procesa esos reels aunque no entren en los 8 mejores
+PEDIDOS = [x.strip() for x in os.environ.get("RADAR_IDS", "").split(",") if x.strip()]
 radar = json.load(open("datos/radar.json"))
-pendientes = []
+pendientes, pedidos = [], []
 for c in radar["cuentas"]:
     for t in c["top"]:
         d = f"radar/{c['user']}-{t['id']}"
-        if t.get("ratio") and t["ratio"] >= RATIO and not os.path.exists(f"{d}/meta.json"):
+        if os.path.exists(f"{d}/meta.json"):
+            continue
+        if any(p == t["id"] or p in t.get("url", "") for p in PEDIDOS):
+            pedidos.append((d, c, t))
+        elif t.get("ratio") and t["ratio"] >= RATIO:
             pendientes.append((d, c, t))
 pendientes.sort(key=lambda x: -x[2]["ratio"])
-pendientes = pendientes[:MAX]
+pendientes = pedidos + pendientes[:MAX]
 if not pendientes:
     print("Radar media: nada nuevo"); sys.exit(0)
 
