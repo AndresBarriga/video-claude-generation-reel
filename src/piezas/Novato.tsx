@@ -1,4 +1,4 @@
-// Novato: el principiante fijo de la serie de técnica (E83+). Visto DE ESPALDAS, cara a la pared,
+// Novato: rig del principiante de la serie de técnica (E83+; el personaje fijo es Fermín, `Fermin.tsx`). Visto DE ESPALDAS, cara a la pared,
 // para que se lean las dos mitades del cuerpo (bisagra, bandera, rock over). Mismo lenguaje que Escalador:
 // extremidades gruesas de punta redonda, cabeza redonda con cara de 2 ojos + boca, sombra plana.
 // Manos y pies se colocan por objetivo (IK de 2 huesos): pasas dónde está cada presa y el cuerpo se adapta.
@@ -12,7 +12,7 @@ export type AspectoNovato = {
 };
 
 /** Medidas en unidades locales (escala 1): ≈ 3 u = 1 cm para un novato de 1,75 m. */
-export const MED = { hombroX: 62, hombroY: -178, caderaX: 30, brazo1: 108, brazo2: 104, pierna1: 128, pierna2: 122, cabezaY: -250, R: 52 };
+export const MED = { hombroX: 62, hombroY: -178, caderaX: 30, brazo1: 124, brazo2: 120, pierna1: 140, pierna2: 134, cabezaY: -250, R: 52 };
 const TINTA = "#141B26", ARNES = "#F2C230", PIE = "#2A3140", CUERDA = "#FF6A1F";
 
 /** Codo/rodilla por IK. `fuera` = hacia qué lado se dobla (±1). Si no llega, se estira hacia el objetivo. */
@@ -36,18 +36,19 @@ export type PropsNovato = {
   /** la pierna izquierda pasa por DELANTE (más cerca de cámara): bandera por detrás */ banderaI?: boolean;
   /** cuerda naranja al arnés desde arriba */ cuerda?: boolean;
   /** colores en rojo/verde sobre un brazo o pierna (barra de esfuerzo) */ tinteBrazoI?: string;
+  /** x (escena) donde termina la cuerda por arriba; por defecto, vertical */ cuerdaX?: number;
 };
 
-export const Novato: React.FC<PropsNovato> = ({ x, y, s = 1, aspecto: a, manoI, manoD, pieI, pieD, inclina = 0, mira = 0, cara = "normal", banderaI, cuerda = true, tinteBrazoI }) => {
+export const Novato: React.FC<PropsNovato> = ({ x, y, s = 1, aspecto: a, manoI, manoD, pieI, pieD, inclina = 0, mira = 0, cara = "normal", banderaI, cuerda = true, tinteBrazoI, cuerdaX }) => {
   const id = "nv" + useId().replace(/[^a-zA-Z0-9]/g, "");
   const loc = (p: Pt): Pt => ({ x: (p.x - x) / s, y: (p.y - y) / s });
   const r = (inclina * Math.PI) / 180;
   const rot = (p: Pt): Pt => ({ x: p.x * Math.cos(r) - p.y * Math.sin(r), y: p.x * Math.sin(r) + p.y * Math.cos(r) });
   const hI = rot({ x: -MED.hombroX, y: MED.hombroY }), hD = rot({ x: MED.hombroX, y: MED.hombroY });
-  const cab = rot({ x: 0, y: MED.cabezaY }), cue = rot({ x: 0, y: -196 });
+  const cab = rot({ x: 0, y: MED.cabezaY });
   const cI = { x: -MED.caderaX, y: 4 }, cD = { x: MED.caderaX, y: 4 };
   const bI = ik(hI, loc(manoI), MED.brazo1, MED.brazo2, -1), bD = ik(hD, loc(manoD), MED.brazo1, MED.brazo2, 1);
-  const pI = ik(cI, loc(pieI), MED.pierna1, MED.pierna2, banderaI ? 1 : -1), pD = ik(cD, loc(pieD), MED.pierna1, MED.pierna2, 1);
+  const pI = ik(cI, loc(pieI), MED.pierna1, MED.pierna2, banderaI ? -1 : 1), pD = ik(cD, loc(pieD), MED.pierna1, MED.pierna2, -1);
   const st = (w: number, col: string) => ({ stroke: col, strokeWidth: w, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, fill: "none" });
   const L = (...p: Pt[]) => "M" + p.map((q) => `${q.x} ${q.y}`).join(" L");
   const mid = (p: Pt, q: Pt, t: number) => ({ x: p.x + (q.x - p.x) * t, y: p.y + (q.y - p.y) * t });
@@ -55,7 +56,6 @@ export const Novato: React.FC<PropsNovato> = ({ x, y, s = 1, aspecto: a, manoI, 
   const pierna = (c: Pt, k: { j: Pt; fin: Pt }, lado: number) => (
     <g>
       <path d={L(c, k.j, k.fin)} {...st(50, a.pantalon)} />
-      <path d={L(mid(k.j, k.fin, 0.55), k.fin)} {...st(50, a.pantalon)} opacity={0.0} />
       {/* talón del pie de gato visto desde atrás + calcetín */}
       <circle cx={k.fin.x} cy={k.fin.y - 6} r={20} fill={a.calcetin ?? "#E9E4D8"} />
       <ellipse cx={k.fin.x + lado * 4} cy={k.fin.y + 14} rx={26} ry={20} fill={PIE} />
@@ -102,7 +102,7 @@ export const Novato: React.FC<PropsNovato> = ({ x, y, s = 1, aspecto: a, manoI, 
 
   return (
     <g transform={`translate(${x} ${y}) scale(${s})`}>
-      {cuerda && <path d={L({ x: cue.x * 0 + 4, y: -2200 }, { x: 4, y: -10 })} {...st(14, CUERDA)} />}
+      {cuerda && <path d={L({ x: cuerdaX === undefined ? 4 : (cuerdaX - x) / s, y: -2400 }, { x: 4, y: -10 })} {...st(14, CUERDA)} />}
       {brazo(hI, bI, tinteBrazoI)}
       {brazo(hD, bD)}
       {!banderaI && pierna(cI, pI, -1)}

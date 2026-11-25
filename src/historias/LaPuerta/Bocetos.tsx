@@ -2,6 +2,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Novato, NOVATOS, type Pt } from "../../piezas/Novato";
+import { Fermin, POSES_FERMIN, enEscena, type NombrePoseFermin } from "../../piezas/Fermin";
 import { fuenteTitulo, fuenteTexto } from "../../tema";
 import type { Datos } from "../../tipos";
 
@@ -115,7 +116,23 @@ const Bandera: React.FC = () => {
   );
 };
 
+/** Hoja de poses de Fermín (3 s en adelante): las 6 poses con sus presas. */
+const HojaPoses: React.FC = () => {
+  const ps = Object.keys(POSES_FERMIN) as NombrePoseFermin[];
+  const pos = ps.map((_, i) => ({ x: 190 + (i % 3) * 350, y: 720 + Math.floor(i / 3) * 860 }));
+  const presas = ps.flatMap((p, i) => { const w = enEscena(POSES_FERMIN[p], pos[i].x, pos[i].y, 0.55); return p === "colgado" ? [] : [w.manoI, w.manoD, w.pieD, ...(p === "agarre" || p === "rockOverArriba" ? [w.pieI] : [])].map((q) => ({ p: q, r: 16, c: VERDE })); });
+  return (
+    <AbsoluteFill>
+      <Pared presas={presas} />
+      <svg width={1080} height={1920} style={{ position: "absolute" }}>
+        {ps.map((p, i) => <Fermin key={p} x={pos[i].x} y={pos[i].y} s={0.55} pose={p} cara={p === "puerta" ? "miedo" : "normal"} mira={p === "colgado" || p === "puerta" ? -1 : undefined} cuerda={p === "colgado"} />)}
+      </svg>
+      {ps.map((p, i) => <Etiqueta key={p} x={pos[i].x} y={pos[i].y + 230} t={p.toUpperCase()} tam={26} />)}
+    </AbsoluteFill>
+  );
+};
+
 export const LaPuertaBocetos: React.FC<{ datos: Datos }> = () => {
   const f = useCurrentFrame();
-  return f < 30 ? <Reparto /> : f < 60 ? <Puerta /> : <Bandera />;
+  return f < 30 ? <Reparto /> : f < 60 ? <Puerta /> : f < 90 ? <Bandera /> : <HojaPoses />;
 };

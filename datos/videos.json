@@ -181,5 +181,9 @@
   "E79": {
     "corto": "Frenada según la pared",
     "desc": "Frenada según la pared (Caer y asegurar 1/3): la misma caída en desplome, vertical, repisa y placa; blanda, corta (poca cuerda, sin tirón) o justa, y tarjeta para guardar."
+  },
+  "E83": {
+    "corto": "La puerta",
+    "desc": "La puerta (Fermín 1/2, réplica de @boldr.climbing): Fermín no es débil, es una puerta; mano y pie del mismo lado hacen de bisagra y la bandera la cierra. Parte 2: rock over."
   }
 }

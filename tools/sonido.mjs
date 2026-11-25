@@ -187,6 +187,21 @@ const RECETAS = {
     mezclar(out, env(biquad(ruido(Math.round(0.4 * SR), 102), "hp", 3000), (s) => Math.exp(-s * 12)), 0.3, 0.3);
     return normalizar(out, 0.7);
   },
+  /** Bisagra de puerta vieja: chirrido por fricción (pulsos que se aceleran y frenan, resonancia aguda). Firma de E83. */
+  bisagra() {
+    const seg = 1.3, out = buf(seg + 0.2), r = prng(131);
+    let t = 0.02;
+    while (t < seg) {
+      const ritmo = 38 + 26 * Math.sin((t / seg) * Math.PI * 1.3) + 6 * r(); // pulsos por segundo (stick-slip)
+      const g = Math.sin(Math.PI * (t / seg)) ** 0.6;
+      for (const [f, a] of [[880 + 160 * Math.sin(t * 3), 1], [1760 + 200 * Math.sin(t * 2.2), 0.45], [2930, 0.2]]) {
+        mezclar(out, env(seno(0.03, f), (q) => Math.exp(-q * 160)), t, a * g * (0.7 + 0.3 * Math.abs(r())));
+      }
+      t += 1 / ritmo;
+    }
+    mezclar(out, env(biquad(ruido(Math.round(seg * SR), 132), "bp", 1200, 3), (q) => 0.15 * Math.sin(Math.PI * Math.min(1, q / seg))), 0, 1);
+    return normalizar(out, 0.75);
+  },
   /** Zas: movimiento rápido (lanzamiento, toalla). */
   zas() {
     const d = 0.45, out = buf(0.7);

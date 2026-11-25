@@ -1,0 +1,103 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  {
+   "nombre": "musica",
+   "inicio": {
+    "escena": 0
+   },
+   "fin": {
+    "escena": "parte2",
+    "final": true
+   },
+   "volumen": 0.16,
+   "bucle": true,
+   "fundido": [
+    0.05,
+    0.8
+   ]
+  },
+  {
+   "nombre": "bisagra",
+   "inicio": {
+    "escena": "abre",
+    "mas": 1.05
+   },
+   "duracion": 1.4,
+   "volumen": 0.75,
+   "ignoraSilencio": true
+  },
+  {
+   "nombre": "caida",
+   "inicio": {
+    "escena": "abre",
+    "mas": 1.85
+   },
+   "duracion": 1.2,
+   "volumen": 0.6
+  },
+  {
+   "silencio": true,
+   "inicio": {
+    "escena": "abre",
+    "mas": 2.4
+   },
+   "duracion": 0.6
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "bisagra"
+   },
+   "duracion": 0.6,
+   "volumen": 0.35
+  },
+  {
+   "nombre": "bisagra",
+   "inicio": {
+    "escena": "bisagra",
+    "palabra": "puerta.",
+    "mas": -0.1
+   },
+   "duracion": 1.0,
+   "volumen": 0.45
+  },
+  {
+   "nombre": "bisagra",
+   "inicio": {
+    "escena": "gira",
+    "mas": 0.1
+   },
+   "duracion": 1.4,
+   "volumen": 0.4
+  },
+  {
+   "nombre": "zas",
+   "inicio": {
+    "escena": "bandera",
+    "palabra": "bandera.",
+    "mas": -0.1
+   },
+   "duracion": 0.6,
+   "volumen": 0.35
+  },
+  {
+   "nombre": "roce",
+   "inicio": {
+    "escena": "llega"
+   },
+   "duracion": 0.8,
+   "volumen": 0.5
+  },
+  {
+   "nombre": "clic",
+   "inicio": {
+    "escena": "parte2",
+    "palabra": "Sígueme",
+    "mas": 0.35
+   },
+   "duracion": 0.5,
+   "volumen": 0.5
+  }
+ ]
+}

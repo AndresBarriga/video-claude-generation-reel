@@ -1,0 +1,23 @@
+{
+ "id": "E83",
+ "titulo": "La puerta",
+ "nicho": "escalada",
+ "plantilla": "LaPuerta",
+ "formato": "fijo",
+ "serie": "Fermín 1/2 (parte 2: rock over = E84)",
+ "replica": "@boldr.climbing «Carl is a door» (radar/boldr.climbing-17966751636208046)",
+ "verificado": true,
+ "fuentes": [
+  "Efecto puerta (barn door) y bandera: Philarockgym, Movement Gyms, Nicros, Climbing House (las de E42).",
+  "Pierna ≈16–17 % de la masa corporal (tablas de Dempster/Winter): al pasarla al otro lado de la línea, el centro de masas se acerca a la bisagra. Sin cifra en voz ni en pantalla."
+ ],
+ "escenas": [
+  { "tipo": "gancho", "visual": "abre", "bloque": "gancho", "texto": "Fermín no es débil. Fermín es una puerta.", "claves": ["puerta."] },
+  { "tipo": "texto", "visual": "bisagra", "bloque": "reencuadre", "texto": "Es lo que llamamos el efecto puerta. Mano y pie del mismo lado hacen de bisagra.", "claves": ["bisagra."] },
+  { "tipo": "texto", "visual": "gira", "bloque": "dentro", "texto": "La gravedad hace girar a Fermín sobre esa bisagra. Palanca larga, giro enorme. Fermín no hizo las cuentas,", "claves": ["Palanca", "giro"] },
+  { "tipo": "texto", "visual": "bandera", "bloque": "pasos", "texto": "así que le enseñamos un truco nuevo: la bandera. La pierna libre, al otro lado de la bisagra.", "claves": ["bandera."] },
+  { "tipo": "texto", "visual": "contragiro", "bloque": "giro", "texto": "Palanca más corta, mucho menos giro. Y además, su pie empuja la pared: un contragiro.", "claves": ["contragiro."] },
+  { "tipo": "texto", "visual": "llega", "bloque": "porEso", "texto": "Ahora llega fácil. Y Fermín está insoportable.", "claves": ["fácil."] },
+  { "tipo": "cierre", "visual": "parte2", "bloque": "cta", "texto": "Parte dos: el rock over. Sígueme para ver si Fermín lo consigue.", "claves": ["rock", "over."] }
+ ]
+}
