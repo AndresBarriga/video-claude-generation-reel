@@ -81,8 +81,8 @@ La v1 explicaba dónde duele caer pero no daba nada que hacer. **Nuevo mensaje: 
 - Caer en tensión refuerza el miedo (Climbing/Yahoo); confiar en quien te asegura es de lo primero que recomienda una psicóloga deportiva (UKClimbing, Eppensteiner).
 - Uso en el vídeo: parte del miedo es no saber cómo te van a frenar → **hablarlo antes**: «aquí corta, aquí blanda». Cierre: «¿Tu asegurador sabe esto? Mándaselo.»
 
-### Selección propuesta para 40–45 s
-Gancho (desplome) → 1 Primeras chapas: corta → 2 Repisa debajo: corta → 3 Desplome: blanda (cómo se da, 1 escena) → 2.º gancho «la frenada blanda alarga la caída» → tarjeta para guardar (situación × frenada) → «dile cómo quieres que te frene» + envío.
+### Selección para 40–45 s (v3.1: columna vertebral = tipos de pared)
+Gancho (desplome da miedo… si te aseguran bien) → **1 Desplome:** blanda (escena de cómo se da) → **2 Vertical:** blanda… **salvo repisa o bloque debajo:** corta → **3 Placa:** cuerda justa (pasos atrás) → **2.º gancho: «en las primeras chapas, en cualquier pared, corta»** (la frenada blanda alarga la caída) → tarjeta para guardar (pared/situación × frenada × qué haces tú) → «dile cómo quieres que te frene» + envío.
 
 ## Portada
 Tres paredes en miniatura (placa · vertical · desplome) con un escalador cayendo en cada una; titular «¿DÓNDE ES PEOR CAERSE?» ≥60 px dentro del 3:4 central.
