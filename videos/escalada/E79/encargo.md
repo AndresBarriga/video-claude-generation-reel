@@ -47,10 +47,14 @@ La v1 explicaba dónde duele caer pero no daba nada que hacer. **Nuevo mensaje: 
 - **Aprendizaje por pared (verificado con REI, Climbing.com y Climbing Tech Tips):**
   | Pared | Tú | Quien asegura |
   |---|---|---|
-  | Desplome | suelta, piernas relajadas, sin agarrar nada | **frenada blanda** (te evita el péndulo contra la pared) |
-  | Vertical con repisa o bloque debajo | mira qué hay debajo antes de chapar; piernas flexionadas | **nada de frenada blanda**: cuerda justa, caída corta |
-  | Placa | evita caer; si caes, de cara a la pared | **cuerda justa** (puede dar pasos atrás para acortar) |
-- Regla que se queda: **«la frenada blanda alarga la caída»** → buena al aire, mala si hay algo debajo. Es el dato «¿cómo que…?» del segundo gancho.
+  | Desplome | suéltate limpio, sin agarrar nada; rodillas y codos relajados por si llegas a la pared | **frenada blanda** (evita el péndulo contra la pared) |
+  | Vertical | piernas flexionadas, pies por delante, sin agarrar cuerda ni cintas | frenada blanda normal |
+  | Placa | de cara a la pared, pies en la roca y «baja dando palmadas» con manos y pies; rodillas flexionadas, sin saltar hacia atrás | cuerda **justa** (puede dar pasos atrás para acortar) |
+  | Repisa o bloque debajo, o primeras chapas | mira qué hay debajo antes de chapar | **frenada corta**: nada de frenada blanda, la caída tiene que ser corta |
+- **Cómo se da una frenada blanda (entra, 1 escena):** cuerda en «J» suave, sin comba de más; rodillas flexionadas; cuando la cuerda tira, dejarse llevar o dar un pequeño paso/salto hacia la pared. Si el asegurador pesa bastante menos que el escalador, ya sale blanda: basta con dejarse levantar. Fuentes: Climbing Tech Tips (piernas flexionadas y postura relajada), GearJunkie (forma de «J» suave), Public Lands (asegurador más ligero: no hace falta saltar), Mountain Project (dejarse llevar hacia delante).
+- Técnica de caída del escalador: outdoors.codidact.com/posts/46081 (placa: bajar «dando palmadas» con manos y pies, rodillas flexionadas, sin saltar; desplome: sin posturas que frenen la caída, rodillas y codos relajados al llegar a la pared; en general: no agarrar cuerda ni cintas, mirar obstáculos).
+- Une y sustituye la propuesta E58 «¿Por qué salta tu asegurador?».
+- Regla que se queda: **«la frenada blanda alarga la caída»** → buena al aire, mala si hay algo debajo o vas por las primeras chapas. Es el dato «¿cómo que…?» del segundo gancho.
 - Cierre: «Antes de empezar, dile a tu asegurador dónde está la repisa.» + pregunta «¿Tu asegurador sabe esto?» + «Mándaselo».
 - Fuentes para la ficha: REI «How to Belay a Lead Climber» (frenada blanda si caes al aire desde un desplome o vas a pendular contra la pared) · Climbing.com «The art of the soft catch» (si puede golpear una repisa, un saliente o el suelo, nada de frenada blanda: acortar la caída; dile a tu asegurador lo que quieres) · Climbing Tech Tips «Soft catches» (la frenada blanda alarga la caída; mirar repisas y salientes).
 
