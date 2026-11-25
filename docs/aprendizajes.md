@@ -68,3 +68,4 @@ LECTURA: datos/publicados.csv + capturas     DECISIÓN: adoptar / retirar / repe
 | Fecha | Variable | A vs B | Métrica | Resultado | Decisión | Aprendizaje |
 |---|---|---|---|---|---|---|
 | 2026-11-25 | Perfil (nombre, bio, fijados) | antes vs después | visitas al perfil → seguidores (7 d) | pendiente (2-dic) | se queda si ≥ +20 % | |
+| 2026-11-25 | Apertura E79 (plan B) | A normal vs C de prueba (solo si A skip >30 % a 24 h) | skip y % a 3 s | pendiente | C se queda como referencia de gancho si baja skip ≥20 % | |
