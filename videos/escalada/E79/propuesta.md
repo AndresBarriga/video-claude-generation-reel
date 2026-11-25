@@ -1,4 +1,4 @@
-# E79 — «Frenada según la pared» · propuesta v2 (25-nov, tras el crítico)
+# E79 — «Frenada según la pared» · propuesta v3 (25-nov, cambios de Andrés)
 Serie «Caer y asegurar» 1/3 (2: cómo se da la frenada blanda · 3: dar cuerda rápido). Encargo y fuentes: `encargo.md` (vale v3.1 + filtro §11). Publicar esta noche, tema del día: miedo a caer.
 
 ## Opinión (3 líneas)
@@ -28,19 +28,22 @@ Elegida A: es el miedo de las historias de hoy, lo entiende quien no escala y no
 ## Guion v2 (≈44 s; voz para ElevenLabs al final)
 | s | Qué se ve (kit: `PERFILES` desplome/vertical/placa, `sistemaCaida` dina 0/1, `Asegurador` paso/alza) | Voz | Rótulo |
 |---|---|---|---|
-| 0–2,5 | Roca clara, cielo. Lola en un desplome, brazos estirados: **le tiembla el brazo, cae tiza, se le resbala un pie** desde el fotograma 0; plano lateral cerrado | En roca, el desplome te da más miedo. | **EL DESPLOME DA MÁS MIEDO** (titular desde el fotograma 0) |
-| 2,5–5 | Se suelta: cae al aire, la cuerda la para suave, lejos de la roca | Y suele ser donde mejor se cae. Si te aseguran bien. | …Y ES DONDE MEJOR SE CAE |
+| 0–2,5 | Roca clara, cielo. Lola en un desplome, brazos estirados: **le tiembla el brazo, cae tiza, se le resbala un pie** desde el fotograma 0; plano lateral cerrado | El desplome parece el peor sitio para caerte. | **EL PEOR SITIO PARA CAERTE** (titular desde el fotograma 0) |
+| 2,5–5 | Se suelta: cae al aire, la cuerda la para suave, lejos de la roca | Pero muchas veces es donde mejor caes… si te aseguran bien. | …O EL MEJOR |
 | 5–8 | Cuatro viñetas en miniatura (desplome · vertical · repisa · placa) con su escalador; contador **1/4** | Porque en cada situación te tienen que frenar distinto. | 1/4 |
 | 8–13 | Desplome: Dani da un pasito hacia la pared al tirar la cuerda (solo imagen) → caída suave ✓. Fantasma rápido: frenada seca → Lola choca contra la roca ✗ | Desplome: blanda. Si te frenan en seco, te puedes estampar. | BLANDA ✓ · SECA ✗ |
-| 13–17 | Vertical alto: caída blanda limpia ✓; contador **2/4** | En vertical, también blanda. | 2/4 · BLANDA ✓ |
-| 17–23 | **Segundo gancho:** silencio 0,3 s → la misma caída blanda con una repisa debajo: los pies golpean la repisa (crujido), ✗ grande; contador **3/4** | Salvo aquí. La frenada blanda alarga la caída. | LA BLANDA ALARGA LA CAÍDA |
+| 13–17 | Vertical alto: caída blanda limpia ✓; contador **2/4** | En vertical, normalmente también blanda. Pero ojo con esto. | 2/4 · BLANDA ✓ |
+| 17–23 | **Segundo gancho:** silencio 0,3 s → la misma caída blanda con una repisa debajo: los pies golpean la repisa (crujido), ✗ grande; contador **3/4** | La frenada blanda alarga la caída. | LA BLANDA ALARGA LA CAÍDA |
 | 23–29 | Con repisa y en la segunda chapa (cerca del suelo): Dani cerca de la pared recoge cuerda **sin tirón**; caída corta, para antes de la repisa/suelo ✓ | Con una repisa debajo, o en las primeras chapas: corta. Corta no es brusca: es poca cuerda fuera. | CORTA ≠ BRUSCA · POCA CUERDA FUERA ✓ |
 | 29–34 | Placa tumbada: Lola resbala de cara a la pared; Dani da dos pasos atrás y la caída se acorta ✓; contador **4/4** | En placa, cuerda justa: cuanto menos caes, menos rozas. | 4/4 · JUSTA ✓ |
 | 34–37 | **Tarjeta para guardar** (2,5 s fija, dentro del 3:4): Desplome → blanda · Vertical alto → blanda · Repisa o primeras chapas → corta (poca cuerda, sin tirón) · Placa → justa | Antes de empezar, dile cómo quieres que te frene. | ¿CÓMO TE FRENAN? |
-| 37–42 | Vuelve el plano del inicio (Lola en el desplome); Dani mira arriba y asiente | ¿Tu asegurador sabe cuándo frenarte blando y cuándo corto? Mándaselo antes de la próxima vía. | PARTE 2: CÓMO SE DA LA FRENADA BLANDA |
+| 37–42 | Vuelve el plano del inicio (Lola en el desplome); Dani mira arriba y asiente | ¿Tu compañero sabe cuándo frenarte suave y cuándo llevarte corto? Mándaselo antes de escalar. | PARTE 2: CÓMO SE DA LA FRENADA BLANDA |
 
-**Texto de voz v2 (ElevenLabs, ~112 palabras):**
-En roca, el desplome te da más miedo. Y suele ser donde mejor se cae. Si te aseguran bien. Porque en cada situación te tienen que frenar distinto. Desplome: blanda. Si te frenan en seco, te puedes estampar. En vertical, también blanda. Salvo aquí. La frenada blanda alarga la caída. Con una repisa debajo, o en las primeras chapas: corta. Corta no es brusca: es poca cuerda fuera. En placa, cuerda justa: cuanto menos caes, menos rozas. Antes de empezar, dile cómo quieres que te frene. ¿Tu asegurador sabe cuándo frenarte blando y cuándo corto? Mándaselo antes de la próxima vía.
+**Texto de voz v3 (ElevenLabs, ~115 palabras):**
+El desplome parece el peor sitio para caerte. Pero muchas veces es donde mejor caes… si te aseguran bien. Porque en cada situación te tienen que frenar distinto. Desplome: blanda. Si te frenan en seco, te puedes estampar. En vertical, normalmente también blanda. Pero ojo con esto. La frenada blanda alarga la caída. Con una repisa debajo, o en las primeras chapas: corta. Corta no es brusca: es poca cuerda fuera. En placa, cuerda justa: cuanto menos caes, menos rozas. Antes de empezar, dile cómo quieres que te frene. ¿Tu compañero sabe cuándo frenarte suave y cuándo llevarte corto? Mándaselo antes de escalar.
+
+**Cambios v2 → v3 (Andrés):** gancho más objetivo y con contradicción («parece el peor sitio… pero muchas veces es donde mejor caes»), manteniendo «caerte» (tú) y «si te aseguran bien» (promesa) · «normalmente también blanda. Pero ojo con esto» (menos categórico y prepara la excepción) · cierre con «compañero» y «llevarte corto». **No** «darte cuerda»: se entendería como dar comba de más, que no es una frenada blanda (justo la corrección que esperamos en comentarios).
+**Reel de prueba del gancho (si da tiempo):** mismo vídeo con la apertura C, «La misma frenada que te salva en un desplome te rompe el tobillo aquí». Regla: gana la que tenga ≥20 % menos skip sin peor % visto.
 
 **Cambios v1 → v2 (crítico, 7/10, envío 6,5):** «corta» ≠ «seca» explicado en voz y rótulo · «sin comba» → poca cuerda fuera, recoger sin tirón · «pendulas» → «te puedes estampar» · promesa «en cada situación» con contador 1/4–4/4 · el 2.º gancho ya no se adelanta (vertical limpio y luego «salvo aquí») · escena del desplome recortada (el pasito solo en imagen) · gancho con movimiento desde el fotograma 0 · tarjeta 2,5 s · cierre más concreto. Peso: «un pasito» no es universal (asegurador mucho más ligero ya sale blanda) → en el pie y en la parte 2.
 
