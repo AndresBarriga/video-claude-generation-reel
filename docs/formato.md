@@ -178,3 +178,12 @@ Mantenemos nuestra animación, los personajes, el humor y el kit. Cambia el **fo
 - **Alcance ≠ seguidores.** Identidad/dilema (E63, E15, E35): skip ≤20 %, 250K vistas, <0,7 seg./1k. Error de seguridad/cuerpo que comete TÚ (E59, E64, E43, E46, E11): skip 25–30 %, 3–6 seg./1k, envíos ≥1,5 % o guardados ≥1 %.
 - **Seguidores 30 d (absoluto):** E59 1.587 · E64 359 · E46 304 · E41 297 · E43 227 · E49 225 · E63 157. **Relativo:** E64 5,7/1k · E43 5,1 · E59 4,9 · E46 3,1 · E72 3,0.
 - **Objetivo = E59:** tema de seguridad útil (seguidores) con el arranque de E63 (fondo claro, objeto/acción cotidiana, paradoja sobre lo que haces tú, skip ≤20 %).
+
+## 8. Gancho sin sonido y pie de foto (25-nov, de las skills hook-writer, caption-writer y hashtag-strategy)
+- **Gancho por tres canales a la vez:** imagen, primeras palabras habladas y texto en pantalla. **Debe funcionar sin sonido:** titular legible desde el fotograma 0 (además del subtítulo karaoke, que en el segundo 1 solo enseña 1–2 palabras). Aperturas con mecanismos distintos (curiosidad, contradicción, lo que está en juego, cifra, «esto eres tú»); filtros eliminatorios: el vídeo cumple lo prometido y un desconocido necesita ver lo siguiente. En seguridad, sin meter miedo de más.
+- **Pie de foto:**
+  - L1 (≤125 caracteres, lo que se ve antes de «…más»): gancho + palabra clave de búsqueda en los primeros ~80 («segunda chapa», «chapar», «asegurar», «caída»).
+  - L2–3: lo que el vídeo NO dice (porqué extra, dato, matiz). No resumir el vídeo.
+  - Una sola llamada a la acción: envío («Mándaselo a quien te asegura») o guardado («Guárdalo para tu próxima vía»).
+  - 3–5 hashtags (Instagram permite 5): 1 amplio (#escalada) + 2–3 medianos del tema (10K–500K publicaciones, comprobar en su página) + #ultimopegue. Rotar grupos por tema; no pegar siempre el mismo bloque. Los hashtags clasifican, no dan alcance.
+- **Palabra clave tres veces** (dicha, en pantalla y en el pie): es lo que Instagram y TikTok indexan para búsqueda.
