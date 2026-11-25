@@ -15,7 +15,7 @@ const p = VIA.cadera(VIA.mos(1).y + 150);                    // cadera de quien 
 
 | Archivo | Qué da |
 |---|---|
-| `via.ts` | `crearVia({ perfil, metros \| chapas, suelo, presas })` → `xF`, `mos(i)`, `cadera(y)`, `pie`, `aM(m)`. `PERFILES`: desplome, vertical, placa, panel. `nudo(p)`, `aparato(via, x, dy)` |
+| `via.ts` | `crearVia({ perfil, metros \| chapas, suelo, presas })` → `xF`, `mos(i)`, `cadera(y)`, `pie`, `aM(m)`. `PERFILES`: desplome, desplomeFuerte (~27°, E79), vertical, placa, panel. `nudo(p)`, `aparato(via, x, dy)` |
 | `rig.ts` | `POSE.*` (agarre, agarreMira, reposo, cae, caeRecogida, caeBien, recibe, colgado, sentado, pie) · `pNudo`, `pChapa(p, m, t, j)`, `pAgarra(p, m)`, `resbala` · `conMano`/`conManoB` (IK), `mix`, `mano`, `cabeza`, `boca` |
 | `fisica.ts` | `caida(via, k, p0, pose, { i, comba, sacada, aire })` decide sola cuerda o suelo · `caeCuerda`, `caeSuelo`, `distCaida`, `tocaSuelo`, `saltoAseg(est, j, dina)` |
 | `Personas.tsx` | `REPARTO` (ella, el, tu, ase, nueva, fantasma) · `Persona` · `Asegurador` (comba, feed, paso, alza, dy, vuelo; mano de freno siempre en la cuerda) |

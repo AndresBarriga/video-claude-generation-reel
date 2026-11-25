@@ -11,6 +11,8 @@ export type Perfil = (y: number) => number;
 export const PERFILES = {
   /** Cueva desplomada (E47, E59): arriba queda más a la izquierda. */
   desplome: ((y) => 300 + (y - 150) * 0.24 + 10 * Math.sin(y / 97) + 6 * Math.sin(y / 31)) as Perfil,
+  /** Desplome fuerte (~27°, techo de roca): se lee como desplome en miniatura y en plano medio (E79). */
+  desplomeFuerte: ((y) => 300 + (y - 150) * 0.5 + 8 * Math.sin(y / 97) + 5 * Math.sin(y / 31)) as Perfil,
   /** Pared vertical (rocódromo, placa de iniciación). */
   vertical: ((y) => 640 + 5 * Math.sin(y / 97) + 3 * Math.sin(y / 31)) as Perfil,
   /** Placa tumbada: arriba queda más a la derecha. */

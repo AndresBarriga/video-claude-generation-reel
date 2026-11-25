@@ -8,7 +8,7 @@ import { PR, REP } from "./Vertical";
 
 type V = { via: Via; xa: number; i: number; dy: number; rep?: boolean; t: string; cx: number; cy: number };
 export const VIÑ: V[] = [
-  { via: VD, xa: 520, i: 3, dy: -110, t: "DESPLOME", cx: 600, cy: VD.mos(3).y + 280 },
+  { via: VD, xa: 1180, i: 3, dy: -110, t: "DESPLOME", cx: 600, cy: VD.mos(3).y + 280 },
   { via: VV, xa: 330, i: 3, dy: -110, t: "VERTICAL", cx: 560, cy: VV.mos(3).y + 280 },
   { via: VV, xa: 330, i: 2, dy: -110, rep: true, t: "REPISA", cx: 520, cy: 1950 },
   { via: VP, xa: 360, i: 3, dy: -90, t: "PLACA", cx: 620, cy: VP.mos(3).y + 300 },

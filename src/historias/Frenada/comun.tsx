@@ -14,7 +14,7 @@ export const IRENE: Aspecto = { chaqueta: "#3D7BE0", chaquetaSombra: "#2A5BAE", 
 export const DANI: Aspecto = { chaqueta: "#3CC9B0", chaquetaSombra: "#279483", pantalon: "#33302C", casco: null, gorro: "#E8A33C", pelo: "#2A1E16", peinado: "corto", barba: "#2A1E16", piel: "#B97F57", pielSombra: "#94613E", manos: "piel" } as Aspecto;
 
 const M = [2.4, 3.9, 5.4, 7, 8.6];
-export const VD: Via = crearVia({ perfil: PERFILES.desplome, metros: M });
+export const VD: Via = crearVia({ perfil: PERFILES.desplomeFuerte, metros: M });
 export const VV: Via = crearVia({ perfil: PERFILES.vertical, metros: M });
 export const VP: Via = crearVia({ perfil: PERFILES.placa, metros: M });
 

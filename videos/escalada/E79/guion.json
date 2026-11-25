@@ -22,6 +22,6 @@
   { "tipo": "texto", "visual": "corta", "bloque": "lista", "texto": "Con una repisa debajo, o en las primeras chapas: corta. Corta no es brusca: es poca cuerda fuera.", "claves": ["repisa", "corta.", "brusca:", "poca"] },
   { "tipo": "texto", "visual": "placa", "bloque": "lista", "texto": "En placa, cuerda justa: cuanto menos caes, menos rozas.", "claves": ["placa,", "justa:", "rozas."] },
   { "tipo": "texto", "visual": "tarjeta", "bloque": "guardar", "texto": "Antes de empezar, dile cómo quieres que te frene.", "claves": ["dile"], "pausa": 0.3 },
-  { "tipo": "cta", "visual": "cta", "bloque": "cta", "texto": "¿Tu compañero sabe cuándo frenarte suave y cuándo llevarte corto? Mándaselo antes de escalar.", "claves": ["compañero", "Mándaselo"] }
+  { "tipo": "cta", "visual": "cta", "bloque": "cta", "texto": "¿Tu compañero sabe cuándo frenarte blando y cuándo llevarte corto? Mándaselo antes de escalar.", "claves": ["compañero", "Mándaselo"] }
  ]
 }
