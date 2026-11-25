@@ -1,0 +1,22 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  { "nombre": "viento", "inicio": { "escena": 0 }, "fin": { "escena": "bTarjeta" }, "volumen": 0.25, "bucle": true, "fundido": [0.05, 0.4] },
+  { "nombre": "musica", "inicio": { "escena": 0 }, "fin": { "escena": "bCta", "final": true }, "volumen": 0.12, "bucle": true, "fundido": [0.05, 0.8] },
+  { "nombre": "roce", "inicio": { "escena": "bComba" }, "duracion": 0.6, "volumen": 0.4 },
+  { "nombre": "caida", "inicio": { "escena": "bComba", "mas": 0.85 }, "duracion": 1.2, "volumen": 0.55 },
+  { "nombre": "zas", "inicio": { "escena": "bCaeMas" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "caida", "inicio": { "escena": "bAcompana", "palabra": "acompaña", "mas": -0.9 }, "duracion": 1.2, "volumen": 0.45 },
+  { "nombre": "zas", "inicio": { "escena": "bIdea2" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "caida", "inicio": { "escena": "bAntes", "mas": 0.2 }, "duracion": 1.2, "volumen": 0.5 },
+  { "nombre": "golpe", "inicio": { "escena": "bAntes", "palabra": "puede", "mas": 0.1 }, "duracion": 0.7, "volumen": 0.5, "ignoraSilencio": true },
+  { "silencio": true, "inicio": { "escena": "bAntes", "palabra": "puede", "mas": 0.7 }, "duracion": 0.45 },
+  { "nombre": "zas", "inicio": { "escena": "bAntes", "palabra": "tirón", "mas": -0.4 }, "duracion": 0.4, "volumen": 0.3 },
+  { "nombre": "zas", "inicio": { "escena": "bIdea3" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "caida", "inicio": { "escena": "bRepisa" }, "duracion": 0.6, "volumen": 0.5 },
+  { "nombre": "golpe", "inicio": { "escena": "bRepisa", "mas": 0.45 }, "duracion": 0.7, "volumen": 0.5, "ignoraSilencio": true },
+  { "nombre": "clic", "inicio": { "escena": "bTarjeta" }, "duracion": 0.4, "volumen": 0.4 },
+  { "nombre": "caida", "inicio": { "escena": "bPractica", "mas": 0.6 }, "duracion": 0.6, "volumen": 0.35 },
+  { "nombre": "zas", "inicio": { "escena": "bCta", "final": true, "mas": -0.6 }, "duracion": 0.5, "volumen": 0.3 }
+ ]
+}

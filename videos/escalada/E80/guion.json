@@ -1,0 +1,26 @@
+{
+ "id": "E80",
+ "titulo": "Lo que NO es una frenada blanda (Caer y asegurar 2/3)",
+ "nicho": "escalada",
+ "plantilla": "Frenada",
+ "formato": "fijo",
+ "verificado": true,
+ "apertura": "A",
+ "fuentes": [
+  "Climbing.com, «The art of the soft catch»: la frenada blanda la da quien asegura moviéndose con el tirón, con poca cuerda fuera; saltar demasiado pronto carga la cuerda antes de tiempo; nada de blanda con repisas, salientes o suelo debajo.",
+  "Univ. Bath, física de caídas (multipitchclimbing): una caída solo es segura si no hay nada con lo que chocar; más caída, más energía.",
+  "E79 (ficha): primeras chapas y repisa → frenada corta (Climbing.com, Mountain Project)."
+ ],
+ "escenas": [
+  { "tipo": "gancho", "visual": "bComba", "bloque": "gancho", "texto": "Darte más cuerda no te frena más blando.", "claves": ["cuerda", "blando."] },
+  { "tipo": "texto", "visual": "bCaeMas", "bloque": "reencuadre", "texto": "Solo te hace caer más.", "claves": ["caer"] },
+  { "tipo": "texto", "visual": "bAcompana", "bloque": "dentro", "texto": "Lo blando no sale de la cuerda: sale de quien asegura, que acompaña el tirón con el cuerpo, con cuerda justa.", "claves": ["asegura,", "acompaña", "justa."] },
+  { "tipo": "texto", "visual": "bIdea2", "bloque": "giro", "texto": "Segunda idea: si salto, amortiguo.", "claves": ["salto,"] },
+  { "tipo": "texto", "visual": "bAntes", "bloque": "giro", "texto": "Si salta antes de tiempo, puede frenarte más duro que no saltar: el tirón se acompaña, no se adelanta.", "claves": ["antes", "duro", "acompaña,"] },
+  { "tipo": "texto", "visual": "bIdea3", "bloque": "pasos", "texto": "Tercera: blanda siempre.", "claves": ["siempre."] },
+  { "tipo": "texto", "visual": "bRepisa", "bloque": "pasos", "texto": "Con una repisa debajo, o en las primeras chapas: frenada corta.", "claves": ["repisa", "corta."] },
+  { "tipo": "texto", "visual": "bTarjeta", "bloque": "guardar", "texto": "Cuerda justa, acompañar el tirón y nada debajo.", "claves": ["justa,", "debajo."] },
+  { "tipo": "texto", "visual": "bPractica", "bloque": "pasos", "texto": "El movimiento se practica en caídas pequeñas con alguien con experiencia.", "claves": ["pequeñas", "experiencia."] },
+  { "tipo": "cta", "visual": "bCta", "bloque": "cta", "texto": "¿Cuál de las tres te han hecho? Mándaselo a quien te asegura.", "claves": ["tres", "Mándaselo"] }
+ ]
+}
