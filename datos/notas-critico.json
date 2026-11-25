@@ -250,5 +250,19 @@
     "version": "propuesta",
     "fecha": "2026-11-25",
     "nota_breve": "corta vs seca confuso; promesa y 2.º gancho corregidos en v2"
+  },
+  "E81": {
+    "nota": 7,
+    "envio": 7,
+    "version": "propuesta",
+    "fecha": "2026-11-25",
+    "nota_breve": "mano de freno ambigua en paso 3; «no puede bloquear» absoluto; falta por qué se bloquea"
+  },
+  "E80": {
+    "nota": 7,
+    "envio": 6.5,
+    "version": "propuesta",
+    "fecha": "2026-11-25",
+    "nota_breve": "gancho «tirón igual» inexacto; faltaban mano de freno, grigri y cómo saber cuándo saltar"
   }
 }
