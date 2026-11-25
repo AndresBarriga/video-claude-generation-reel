@@ -32,7 +32,7 @@ export const GGolpe: React.FC<P> = ({ pal, d }) => {
   );
 };
 export const GAgarra: React.FC<P> = ({ pal, d }) => {
-  const f = useCurrentFrame(), fE = (pal("entero") ?? 12) - 2, fL = (pal("leva,") ?? Math.round(d * 0.5)) - 2, fN = (pal("anulas") ?? Math.round(d * 0.7)) - 3;
+  const f = useCurrentFrame(), fE = (pal("entero") ?? 12) - 2, fL = (pal("aprietas") ?? Math.round(d * 0.5)) - 2, fN = (pal("anulas") ?? Math.round(d * 0.7)) - 3;
   // medio segundo (15 fotogramas) de cuerda corriendo por el aparato; después queda quieta, en rojo: no hay desenlace
   const corre = f < fN ? Math.max(0, f - fE) * 8 : (fN - fE) * 8 + Math.min(15, f - fN) * 90, corriendo = f >= fN && f < fN + 15;
   const leva = f >= fL;
