@@ -1,4 +1,4 @@
-# E80 — «Lo que NO es una frenada blanda» · propuesta v3 (25-nov) · serie «Caer y asegurar» 2/3
+# E80 — «Lo que NO es una frenada blanda» · propuesta v4 (25-nov; v3 debajo) · serie «Caer y asegurar» 2/3
 Rehace la v2 (rechazada como tutorial, ver `propuesta-v2-rechazada.md` y `encargo.md`). Cumple la promesa de E79 («¿CÓMO FRENA BLANDO SIN DAR COMBA DE MÁS?») por la negativa: tres cosas que parecen frenada blanda y no lo son. Nada de instrucciones de la maniobra.
 
 ## Opinión
@@ -23,6 +23,19 @@ Buena y más segura que la v2: los errores se ven caer y no hay que enseñar el 
 - C · Esto eres tú: «Si tu asegurador te da comba para que caigas suave, mira esto.»
 - D · Lo que está en juego: «Tres frenadas “blandas” que te pueden llevar contra la pared.»
 - E · Serie: «Parte 2: lo que NO es una frenada blanda.»
+
+## v4 (feedback de Andrés, 25-nov): que se vea cuál es la creencia
+Andrés: el enfoque (corregir la creencia popular) está bien, pero mucha gente ni sabe cuál es la creencia de cómo se hace una frenada blanda. **Arreglo:** Dani ES la creencia. Cada error empieza con Dani diciéndola en un bocadillo (lo que la gente cree, desde el fotograma 0) y la voz lo desmiente; al final, Dani pillado. Y un rótulo define frenada blanda para quien no vio E79. El gancho de voz no cambia.
+| s | Qué se ve | Voz | Rótulo |
+|---|---|---|---|
+| 0–3 | Dani suelta un bucle enorme de comba, bocadillo «¡TE DOY CUERDA PARA QUE CAIGAS BLANDO!»; Irene cae y cae (cota larga junto al fantasma) | Darte más cuerda no te frena más blando. | bocadillo desde el fotograma 0 |
+| 3–8 | ◀◀; las dos caídas medidas; contador | Mucha gente lo cree, pero solo te hace caer más… y con más caída, hay más con lo que chocar. Y no es la única. | FRENADA BLANDA = QUE NO TE PARE EN SECO · ✗ 1/3 |
+| 8–15 | Bocadillo «¡SI SALTO, AMORTIGUO!»; cámara lenta: Dani salta pronto, «YA VA BAJANDO» cuando se tensa → sacudida | Segunda idea: si salto, amortiguo. Si salta antes de tiempo, puede frenarte más duro que no saltar. | ✗ 2/3 · SALTO A DESTIEMPO |
+| 15–21 | Bocadillo «¡BLANDA SIEMPRE, ¿NO?!»; repisa: la blanda la lleva contra ella; ◀◀ corta ✓ | Tercera: blanda siempre es mejor. Con una repisa debajo, o en las primeras chapas: frenada corta. | ✗ 3/3 · CON ALGO DEBAJO |
+| 21–27 | Tarjeta fija: ✗ «más cuerda» · ✗ «saltar siempre» · ✗ «blanda siempre» · ✓ caídas de prueba | La buena se aprende con caídas de prueba pequeñas, sin nada debajo y con alguien con experiencia. | LO QUE NO ES FRENADA BLANDA |
+| 27–33 | Dani se rasca la cabeza, pillado; bucle al plano 0 | ¿Cuál de las tres te han hecho? Mándaselo a quien te asegura. | PARTE 3: DAR CUERDA RÁPIDO CON EL GRIGRI |
+
+**Voz v4 (para ElevenLabs):** Darte más cuerda no te frena más blando. Mucha gente lo cree, pero solo te hace caer más… y con más caída, hay más con lo que chocar. Y no es la única. Segunda idea: si salto, amortiguo. Si salta antes de tiempo, puede frenarte más duro que no saltar. Tercera: blanda siempre es mejor. Con una repisa debajo, o en las primeras chapas: frenada corta. La buena se aprende con caídas de prueba pequeñas, sin nada debajo y con alguien con experiencia. ¿Cuál de las tres te han hecho? Mándaselo a quien te asegura.
 
 ## Guion v3 (~32 s)
 Reparto y roca de E79 (Irene escala, Dani asegura; pared vertical y repisa). **Idea visual:** la MISMA caída de Irene tres veces, cada una estropeada de una forma; a la derecha, un **medidor de TIRÓN** (sin cifras) y un **fantasma** de dónde habría acabado con una frenada buena. Mano de freno de Dani siempre en la cuerda.
