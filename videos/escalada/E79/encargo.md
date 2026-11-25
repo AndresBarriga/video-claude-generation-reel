@@ -84,6 +84,13 @@ La v1 explicaba dónde duele caer pero no daba nada que hacer. **Nuevo mensaje: 
 ### Selección para 40–45 s (v3.1: columna vertebral = tipos de pared)
 Gancho (desplome da miedo… si te aseguran bien) → **1 Desplome:** blanda (escena de cómo se da) → **2 Vertical:** blanda… **salvo repisa o bloque debajo:** corta → **3 Placa:** cuerda justa (pasos atrás) → **2.º gancho: «en las primeras chapas, en cualquier pared, corta»** (la frenada blanda alarga la caída) → tarjeta para guardar (pared/situación × frenada × qué haces tú) → «dile cómo quieres que te frene» + envío.
 
+## v4 (25-nov 12:50) · MINISERIE «Caer y asegurar» (idea de Andrés). VIGENTE; lo de arriba es material.
+- **E79 = parte 1 (hoy): «Cómo caes según la pared»** — punto de vista del escalador («tú», como La segunda chapa). Gancho: «En roca, el desplome da más miedo… y suele ser donde mejor se cae.» Desplome (al aire; relajado, sin agarrar) → vertical (piernas flexionadas, pies delante; ojo repisas) → placa (de cara, pies en la roca, «palmadas», sin saltar atrás) → 2.º gancho: «lo que cambia todo es cómo te frenan» → cierre: «Parte 2: cómo tiene que frenarte tu asegurador en cada una. Síguenos para no perdértela.» + tarjeta para guardar (pared × qué haces tú). Debe dar valor completo por sí sola.
+- **Parte 2: «Cómo asegurar según la pared/situación»** (material v3: primeras chapas corta, repisa corta, desplome/vertical blanda, placa justa, diferencia de peso). Envío: «mándaselo a quien te asegura».
+- **Parte 3: «La frenada blanda: cómo se da»** (rodillas, acompañar, peso). Opcional parte 4: «Dar cuerda rápido para chapar» (rehace el tema de Tu grigri, que falló por el arranque).
+- Portada de serie igual en las 3: mismo fondo y personaje, «CAER Y ASEGURAR · 1/3» + titular.
+- Prueba: ¿la parte 1 trae más seguidores/1.000 que la media de seguridad (≈4) y la parte 2 conserva ≥60 % de sus vistas? Si no, la serie no se repite (antes se descartaron las series fijas por falta de datos).
+
 ## Portada
 Tres paredes en miniatura (placa · vertical · desplome) con un escalador cayendo en cada una; titular «¿DÓNDE ES PEOR CAERSE?» ≥60 px dentro del 3:4 central.
 
