@@ -51,7 +51,7 @@ export const GTres: React.FC<P> = ({ d, pal }) => {
   return (
     <>
       <PP><PuestoG modo={normal ? "normal" : "rapido"} pisa={pisa} hiPulgar={!normal} brillo={f >= fS - 2 ? 0.6 + 0.4 * Math.sin(f / 4) : 0} /></PP>
-      {f < fS - 2 && <Senal t="PULGAR FUERA" x={250} y={1060} tx={TAB.x} ty={TAB.y} o={(g + 6) / 6} col={VERDE} w={420} />}
+      {f < fS + 6 && <Senal t="PULGAR FUERA" x={250} y={1060} tx={TAB.x} ty={TAB.y} o={(g + 6) / 6} col={VERDE} w={420} />}
       {normal && <Senal t="FRENO EN LA CUERDA" x={420} y={1250} tx={FRENO.x - 40} ty={FRENO.y} o={(f - fS + 2) / 6} col={VERDE} w={640} />}
       <Contador3 n={3} k={12} />
     </>

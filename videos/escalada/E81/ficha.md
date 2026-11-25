@@ -1,5 +1,5 @@
 # E81 — Dar cuerda rápido con el grigri (serie «Caer y asegurar» 3/3)
-- **Estado:** borrador producido 25-nov con **voz simulada** (37,2 s). Falta la voz de Andrés → `npm run voz -- E81 --audio …`, `python3 tools/alinear-fw.py E81`, render y `qa-final`. Se publica DESPUÉS de E80.
+- **Estado:** listo para publicar 25-nov (33,5 s, qa-final OK: −14,8 LUFS, pico −1,4 dBTP). Voz de Andrés (ElevenLabs, «Danny», v4), 32,9 s tras apretar 15 silencios; sincronía con `alinear-fw.py` (101/104 palabras). Se publica DESPUÉS de E80.
 - **Formato:** información, pasos 1/3 → 3/3 + tarjeta para guardar (fija ≥2,5 s). Guion y voz aprobados (`encargo.md`); no pasa por el crítico (decisión 16-nov).
 - **Cambio de voz (25-nov):** se mantiene «se bloquea» en el gancho (lo que dice todo el mundo y lo que se busca); «puede bloquearse» → «puede frenar como si cayera», porque Petzl llama «bloqueo» a la función de seguridad: así se distingue frenar cuando no toca (molesto) de anular el frenado (peligroso).
 - **Idea visual:** el mismo puesto de Dani (grigri de lado sobre la foto de Andrés, de E62) en lámina clara, con la **mano de freno siempre dibujada en la cuerda**, también cuando agarra el aparato entero. Rocódromo claro (fondo y muro de E72), no la sala oscura del kit: nada de arranque oscuro.
@@ -7,7 +7,7 @@
 - **Plantilla:** `Frenada` (de E79), escenas nuevas en `G3comun`, `G3Gancho`, `G3Golpe`, `G3Pasos`, `G3Cierre`. `Portada.tsx` ahora elige por id (E79 sin cambios).
 - **Mecánica en pantalla:** bloqueo al dar = la cuerda sale de golpe y el grigri frena como en una caída (rótulo «FRENA COMO SI CAYERA») · agarre incorrecto = mano rodeando el aparato + leva apretada + medio segundo de cuerda corriendo, **sin caída ni desenlace** · paso 2 = ÍNDICE bajo el borde y PULGAR en la leva rotulados ≥1,5 s, el pulgar aprieta solo mientras da · paso 3 = chapa hecha → pulgar fuera.
 - **Checklist §9:** «¡CUERDA!» desde el fotograma 0 · subtítulos arriba (y=255) · rótulos y contador en y 430–1530 · lo clave en el 3:4 · tarjeta fija · bucle al plano del fotograma 0 · portada propia `portada.jpg`.
-- **QA (voz simulada):** `npm run qa` solo avisos (sin bloque «cifras» a propósito, 37 s < 45, sin audio). `qa-final`: 1080×1920, pico −1,3 dBTP; −17,2 LUFS porque no hay voz (repetir con la voz real).
+- **QA:** `npm run qa` solo avisos (sin bloque «cifras» a propósito; 33 s < 45 del formato fijo, aceptado como en E79). `qa-final` OK. Rótulos de pasos ≥1,5 s (ÍNDICE, PULGAR, PULGAR FUERA); «FRENA COMO SI CAYERA» entra en «frenar» para durar >0,8 s.
 
 ## Respaldo
 | Afirmación | Fuente |
