@@ -1,5 +1,5 @@
 {
- "_uso": "Cuentas de referencia para tools/radar.mjs. Solo Business/Creator. El radar propone nuevas en docs/radar.md (candidatas); si valen, se añaden aquí.",
+ "_uso": "Cuentas de referencia para tools/radar.mjs. Solo Business/Creator. El radar propone nuevas en docs/radar.md (candidatas); si valen, se añaden aquí. Campo opcional \"tipo\": \"formato\" para cuentas de animación fuera de escalada (se miran por gancho/ritmo/visual, no por tema).",
  "cuentas": [
   {
    "user": "diariodeescalada_",
@@ -52,6 +52,22 @@
   {
    "user": "bomberclimbingmemes",
    "nota": "EN · humor"
+  },
+  {
+   "user": "verticalnetwork_coach",
+   "nota": "de Andrés"
+  },
+  {
+   "user": "belayers.app",
+   "nota": "de Andrés"
+  },
+  {
+   "user": "levitationtraining",
+   "nota": "de Andrés"
+  },
+  {
+   "user": "b4experience_",
+   "nota": "de Andrés"
   }
  ]
 }
