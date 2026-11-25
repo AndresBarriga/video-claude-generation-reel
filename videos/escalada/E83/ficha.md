@@ -1,5 +1,5 @@
 # E83 — La puerta (serie Fermín 1/2; parte 2 = E84 rock over)
-- **Estado:** listo para revisar 25-nov (34,1 s, qa-final OK: -15,2 LUFS, pico -1,1 dBTP). Voz de Andrés (ElevenLabs, «Danny», v4), 33,5 s tras apretar 19 silencios; sincronía con `alinear-fw.py` (90/94 palabras). 2.ª ronda aplicada: giro colgado más ancho, contragiro más grande, presa del pie de apoyo visible.
+- **Estado:** listo para revisar 25-nov (34,1 s, qa-final OK: -15,2 LUFS, pico -1,1 dBTP). Voz de Andrés (ElevenLabs, «Danny», v4), 33,5 s tras apretar 19 silencios; sincronía con `alinear-fw.py` (90/94 palabras). 2.ª ronda aplicada (+ rótulo final «PARTE 2 · SUBIRSE A UN PIE ALTO (ROCK OVER)», para quien no conoce el término): giro colgado más ancho, contragiro más grande, presa del pie de apoyo visible.
 - **Origen:** réplica del reel en inglés de @boldr.climbing «Carl is a door» (90K, 7,9× su mediana; `radar/boldr.climbing-17966751636208046/`). Guion casi tal cual (decisión 25-nov); quitado: «175 → 88 Nm» y «palanca a la mitad» (sin respaldo).
 - **Formato:** información con una sola técnica (bandera) y su porqué; cierre con parte 2 anunciada (objetivo: seguidores). Hilo visual: la línea de la bisagra (roja abre, verde cierra) + barra GIRO (HUD sin cifra). Sonido de firma: chirrido de bisagra (`bisagra`, receta nueva en `tools/sonido.mjs`).
 - **Reparto:** **Fermín**, personaje fijo nuevo de la serie de técnica (`src/piezas/Fermin.tsx` sobre el rig `src/piezas/Novato.tsx`): de espaldas, gira la cara por encima del hombro; poses `colgado`, `agarre`, `puerta`, `bandera`, `rockOver`, `rockOverArriba`; `abre` 0–1 = la puerta; `apoyos()` da dónde quedan de verdad manos y pies. Hoja de poses: `npm run fotograma -- _E83bocetos 3.5`.
@@ -19,7 +19,7 @@
 ## Descripción para publicar
 Fermín no es débil. Fermín es una puerta 🚪
 Mano y pie del mismo lado = bisagra: la gravedad te gira y te saca de la pared (el efecto puerta). La bandera: pierna libre al otro lado de la línea. Rodilla de apoyo siempre hacia donde apunta el pie.
-Parte 2: el rock over. Sígueme para ver si Fermín lo consigue ↓
+Parte 2: el rock over (subir el pie alto y ponerte encima). Sígueme para ver si Fermín lo consigue ↓
 #escalada #rocodromo #tecnicadeescalada #boulder #ultimopegue
 
 **Comentario fijado:** ¿En qué paso te abres tú como una puerta?

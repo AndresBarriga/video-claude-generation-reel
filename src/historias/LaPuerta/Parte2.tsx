@@ -1,5 +1,5 @@
 // 7 · «Parte dos: el rock over. Sígueme para ver si Fermín lo consigue.» Otro tramo: Fermín con el pie derecho
-// en una presa a la altura de la cadera, la mira con miedo. Chip PARTE 2 · ROCK OVER, botón «Seguir» y «Mándaselo a tu Fermín».
+// en una presa a la altura de la cadera, la mira con miedo. Chip PARTE 2 · SUBIRSE A UN PIE ALTO (ROCK OVER), botón «Seguir» y «Mándaselo a tu Fermín».
 import React from "react";
 import { useCurrentFrame } from "remotion";
 import { Fermin, POSES_FERMIN, enEscena } from "../../piezas/Fermin";
@@ -28,7 +28,8 @@ export const Parte2: React.FC<P> = ({ d, pal }) => {
           <Fermin x={C.x} y={C.y + Math.sin(f / 6) * 4} s={S7} pose="rockOver" cara="miedo" mira={1} cuerdaX={C.x + 4} />
         </Cam>
       </Svg>
-      <Etiqueta x={540} y={480} t="PARTE 2 · ROCK OVER" k={f + 1} c={T} tam={44} />
+      <Etiqueta x={540} y={470} t="PARTE 2 · SUBIRSE A UN PIE ALTO" k={f + 1} c={T} tam={40} />
+      <Etiqueta x={850} y={1300} t="ROCK OVER" k={f - 4} c="rgba(5,11,20,.7)" tam={30} />
       {f >= tS - 2 && <div style={{ position: "absolute", left: 540, top: 590, transform: `translate(-50%,-50%) scale(${pop(f - tS + 2) * pulsa})`, fontFamily: fuenteTexto, fontWeight: 700, fontSize: 40, color: seguido ? T : "#fff", background: seguido ? "#EFEFEF" : "#3B82F6", border: seguido ? `3px solid ${T}` : "none", padding: "12px 56px", borderRadius: 18 }}>{seguido ? "Siguiendo ✓" : "Seguir"}</div>}
       <Etiqueta x={540} y={1560} t="Mándaselo a tu Fermín" k={f - tS - 18} c="rgba(5,11,20,.82)" tam={36} />
     </>
