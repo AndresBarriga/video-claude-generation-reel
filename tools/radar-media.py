@@ -31,8 +31,8 @@ def transcribir(mp4):
 
 for d, c, t in pendientes:
     os.makedirs(d, exist_ok=True)
-    meta = {k: t[k] for k in ("url", "fecha", "vistas", "likes", "comentarios", "ratio")}
-    meta.update(cuenta=c["user"], seguidores=c["seguidores"], mediana_cuenta=c["mediana"])
+    meta = {k: t.get(k) for k in ("url", "fecha", "vistas", "likes", "comentarios", "ratio", "cta", "com_por_mil")}
+    meta.update(tipo=c.get("tipo", "nicho"), cuenta=c["user"], seguidores=c["seguidores"], mediana_cuenta=c["mediana"])
     open(f"{d}/pie.txt", "w").write(t.get("pie_completo") or t.get("pie") or "")
     if not t.get("video"):
         meta["sin_video"] = True

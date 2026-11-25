@@ -388,3 +388,9 @@ _Origen: Resumen de estado (30-oct) — mantener al día; el detalle de cada ide
 - **Cabeza:** trabajar el miedo (E72 hecho; rehacer con arranque nuevo en semanas) · ego/presión al encadenar.
 - **Material:** mosquetón mal cargado · cuándo jubilar la cuerda · cintas larga/corta (E67) · cinta arriba/abajo (E66).
 Orden propuesto: Seguridad → Técnica → Seguridad → Material → Técnica → Cabeza (2 de cada 3 de cuerda/seguridad o técnica útil).
+
+## Del radar (25-nov) · serie «No eres débil»
+Motor (orgánico, 2 cuentas animadas pequeñas: @climb_at_life 187×, @boldr.climbing 5 outliers): culpa del espectador → «no eres débil, es tu X» → causa visible en el muñeco → arreglo en 3 → rehook con escalador conocido. Ojo: es técnica, que teníamos «matada» (E42 La puerta, 1,8k), pero boldr hizo la puerta («Carl is a door») con 87k sobre 3k seguidores: lo que falló fue el envoltorio, no el tema.
+- **«No te falta fuerza en el desplome: te cuelgan las caderas»** — reparto de carga pies/manos según inclinación (verificar el estudio de Grenoble que citan antes de usar cifras).
+- **«No eres débil: aprietas demasiado»** — sobreagarre; une con «5 fases del agarre de miedo» (sección B). Rehook con caso conocido distinto del suyo.
+- **«No es tu envergadura: es tu cadera»** — girar la cadera para llegar; rehook con escaladora bajita de élite (verificar altura). Enlaza con «¿los altos lo tienen más fácil?» de betaclimblab.

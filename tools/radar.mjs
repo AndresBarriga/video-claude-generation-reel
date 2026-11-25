@@ -14,6 +14,11 @@ if (!TOKEN) { console.error('Falta IG_TOKEN (ver docs/metricas-api.md).'); proce
 
 const leer = (p, d) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : d);
 const mediana = (a) => { if (!a.length) return 0; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+// Gancho de regalo: el reel promete algo a cambio de comentar/seguir/enlace → sus cifras no son solo del contenido.
+const CTA = [[/\b(comenta|comment|escribe|type|drop)\b[^.\n]{0,30}?\b[A-ZÁÉÍÓÚÑ]{3,}\b/, 'palabra clave'], [/te (lo )?(mando|envío|envio|paso)|i'?ll send/i, 'te lo mando'],
+  [/link in bio|enlace en (la )?bio|waitlist|lista de espera|descuento|discount|code |c[oó]digo|dm me/i, 'promo'], [/sorteo|giveaway/i, 'sorteo']];
+const ctaDe = (pie) => (CTA.find(([re]) => re.test(pie || '')) || [])[1] || null;
+const REGALO = new Set(['palabra clave', 'te lo mando', 'sorteo']); // 🎁; «promo» (vende su app/curso) no infla comentarios
 const corto = (s, n = 160) => (s || '').replace(/\s+/g, ' ').trim().slice(0, n);
 
 async function get(params) {
@@ -40,7 +45,7 @@ async function cuenta(user) {
   const vistas = reels.map((r) => r.view_count).filter((v) => v > 0);
   const med = mediana(vistas);
   const top = reels.filter((r) => r.view_count > 0)
-    .map((r) => ({ id: r.id, url: r.permalink, video: r.media_url || null, fecha: r.timestamp.slice(0, 10), vistas: r.view_count, likes: r.like_count, comentarios: r.comments_count, ratio: med ? +(r.view_count / med).toFixed(1) : null, pie: corto(r.caption), pie_completo: r.caption || '' }))
+    .map((r) => ({ id: r.id, url: r.permalink, video: r.media_url || null, fecha: r.timestamp.slice(0, 10), vistas: r.view_count, likes: r.like_count, comentarios: r.comments_count, ratio: med ? +(r.view_count / med).toFixed(1) : null, cta: ctaDe(r.caption), com_por_mil: r.view_count ? +(1000 * r.comments_count / r.view_count).toFixed(1) : null, pie: corto(r.caption), pie_completo: r.caption || '' }))
     .sort((a, b) => b.ratio - a.ratio).slice(0, 5);
   const menciones = reels.flatMap((r) => (r.caption || '').match(/@[\w.]{3,30}/g) || []).map((m) => m.slice(1).replace(/\.$/, '').toLowerCase());
   return { menciones, user: base.username, nombre: base.name, seguidores: base.followers_count, reels: reels.length, mediana: Math.round(med),
@@ -51,7 +56,7 @@ const lista = leer('datos/radar-cuentas.json', { cuentas: [] }).cuentas;
 const ok = [], fallos = [];
 for (const c of lista) {
   const user = (c.user || c).replace(/^@/, '');
-  try { const r = await cuenta(user); ok.push({ ...r, nota: c.nota || '' }); console.log(`@${user}: ${r.seguidores} seg · ${r.reels} reels · mediana ${r.mediana} · ${r.outliers} outliers`); }
+  try { const r = await cuenta(user); ok.push({ ...r, nota: c.nota || '', tipo: c.tipo || 'nicho' }); console.log(`@${user}: ${r.seguidores} seg · ${r.reels} reels · mediana ${r.mediana} · ${r.outliers} outliers`); }
   catch (e) { fallos.push({ user, error: e.message }); console.warn(`@${user}: ${e.message}`); }
 }
 // Cuentas nuevas: las que mencionan las referencias (colaboraciones, citas). Se prueban y se proponen, no se añaden solas.
@@ -71,10 +76,10 @@ const fecha = new Date().toISOString().slice(0, 10);
 fs.writeFileSync('datos/radar.json', JSON.stringify({ fecha, dias: DIAS, cuentas: ok, candidatas, fallos }, null, 1) + '\n');
 
 const md = [`# Radar de virales · ${fecha} (reels de los últimos ${DIAS} días)`, '', 'Generado por `tools/radar.mjs`; no editar a mano. Método y uso: `docs/radar-metodo.md`.', '',
-  '| Cuenta | Seg. | Reels | Mediana vistas | Vistas/seg. | Outliers (≥3×) |', '|---|---|---|---|---|---|',
-  ...ok.map((c) => `| @${c.user} | ${c.seguidores} | ${c.reels} | ${c.mediana} | ${c.vistas_por_seguidor} | ${c.outliers} |`), '',
-  '## Reels que más superan a su cuenta', '',
-  ...ok.flatMap((c) => c.top.filter((t) => t.ratio >= MIN_RATIO).map((t) => `- **${t.ratio}×** @${c.user} · ${t.vistas} vistas · ${t.comentarios} com. · ${t.fecha} · [ver](${t.url}) — ${t.pie}`)),
+  '| Cuenta | Tipo | Seg. | Reels | Mediana vistas | Vistas/seg. | Outliers (≥3×) |', '|---|---|---|---|---|---|---|',
+  ...ok.map((c) => `| @${c.user} | ${c.tipo} | ${c.seguidores} | ${c.reels} | ${c.mediana} | ${c.vistas_por_seguidor} | ${c.outliers} |`), '',
+  '## Reels que más superan a su cuenta', '', '🎁 = promete algo a cambio (palabra clave, enlace, sorteo): parte de las cifras las pone el CTA, no el contenido. «com/1k» = comentarios por 1.000 vistas (si es muy alto, lo empuja el CTA).', '',
+  ...ok.flatMap((c) => c.top.filter((t) => t.ratio >= MIN_RATIO).map((t) => `- **${t.ratio}×** ${REGALO.has(t.cta) ? `🎁 ${t.cta} · ` : `orgánico${t.cta ? ' (promo)' : ''} · `}@${c.user} · ${t.vistas} vistas · ${t.comentarios} com. (${t.com_por_mil}/1k) · ${t.fecha} · [ver](${t.url}) — ${t.pie}`)),
   ...(candidatas.length ? ['', '## Cuentas candidatas (mencionadas por las referencias; añadir a `datos/radar-cuentas.json` si son de divulgación)', '', ...candidatas.map((c) => `- @${c.user} · ${c.seguidores} seg. · citada por ${c.veces} · ${c.bio}`)] : []),
   ...(fallos.length ? ['', '## No se pudieron leer (cuenta personal, nombre mal escrito o privada)', '', ...fallos.map((f) => `- @${f.user}: ${f.error}`)] : [])];
 fs.writeFileSync('docs/radar.md', md.join('\n') + '\n');

@@ -9,6 +9,7 @@ Andrés solo: leer las ideas del lunes y, si quiere, mirar en el móvil los reel
 - **Sugeridas de Instagram:** en el perfil de cada referencia, flecha ▾ junto a «Seguir» → apuntar las de divulgación de escalada. Es la mejor fuente: el algoritmo ya agrupa el nicho.
 - **Explorar y Reels con @ultimo.pegue**: las cuentas que salgan 2+ veces.
 - **Inglés:** el nicho en español es pequeño; las ideas que ya funcionaron en inglés y aún no existen en español son la mejor fuente de temas.
+- **Cuentas de animación fuera de escalada** (`"tipo": "formato"` en `datos/radar-cuentas.json`): se miran solo por gancho, ritmo, recursos visuales y CTA, nunca por tema.
 - Se queda una cuenta si: divulgación (no atleta ni marca), publica reels con regularidad y en el radar sale con **outliers ≥3×** o **vistas/seguidor alto**. Las cuentas enormes inflan las vistas por tamaño: pesan menos.
 
 ## 2. Reverse engineering de un outlier (método de `viral-reverse-engineering`, social-media-skills, MIT; no instalada)
@@ -16,7 +17,8 @@ Claude no ve el vídeo desde el enlace. Entrada: grabación de pantalla de Andr�
 1. **Desmontar** en una línea por capa: gancho (0–3 s), detonante emocional, estructura de retención, formato, tema/ángulo, motivo de envío, distribución (CTA con palabra clave, colaboración, tamaño).
 2. **Contrafactual:** «si quito esto, ¿sigue funcionando?». Lo que no se puede quitar es el motor (normalmente 1–2: gancho + motivo de envío); lo demás es ruido.
 3. **Motivo de envío:** por qué se lo mandan a alguien (identidad, emoción fuerte, utilidad, «es como tú»). Los comentarios son la prueba.
-4. **¿Se puede repetir?** Descartar si lo explica el tamaño de la cuenta, un momento puntual, la suerte o un CTA de sorteo. Un viral suelto es anécdota: buscar el mismo motor en ≥2 cuentas.
-5. **Principio en una línea → aplicado a nuestro tema** con el ciclo normal (`docs/proceso.md`, `docs/viralidad.md`).
+4. **¿Contenido o regalo?** Separar los reels 🎁 (palabra clave, «te lo mando», enlace, sorteo) de los orgánicos. En los 🎁 los comentarios y parte del alcance los pone la promesa: se copia el mecanismo del CTA aparte, y el del contenido solo si también hay orgánicos con el mismo motor. Señal: muchos comentarios por 1.000 vistas.
+5. **¿Se puede repetir?** Descartar si lo explica el tamaño de la cuenta, un momento puntual, la suerte o un CTA de sorteo. Un viral suelto es anécdota: buscar el mismo motor en ≥2 cuentas.
+6. **Principio en una línea → aplicado a nuestro tema** con el ciclo normal (`docs/proceso.md`, `docs/viralidad.md`).
 **Qué se copia (25-nov, Andrés: «copia igual no, subliminal sí»):** sí el tema, el patrón de gancho, el orden de bloques, el ritmo, la composición de planos y la metáfora visual; no el texto literal, sus personajes ni una secuencia plano a plano reconocible. Riesgo: Instagram reparte menos alcance al contenido que detecta como no original.
 Guardar cada desmontaje en `docs/referencias.md` y los motores que se repiten como hipótesis en `docs/aprendizajes.md`.
