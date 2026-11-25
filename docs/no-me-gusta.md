@@ -101,4 +101,4 @@ Registro acumulativo. **Léelo antes de escribir un guion o enseñar un vídeo.*
 - 2026-11-24 · E78: el gancho de estudio («Siguieron a 140.000 personas») le parece flojo; «no podemos estar siempre revisando vídeos». Arreglo barato aplicado: el titular de la portada en pantalla desde el fotograma 0.
 - 2026-11-24 · E78 v2: «muy bien»; el estadio iba muy rápido y no se entendía (zoom en 1 s, estadios encima del número) → zoom en 1,5 s, dos estadios separados con «≈ 2 ESTADIOS LLENOS». La tarjeta de referencia (hombre/mujer a los 30), algo aburrida pero pasa.
 - 2026-11-25 · E79: «No produzcas a Lola, elige otro personaje» → protagonista nueva (Irene: chaqueta azul, casco amarillo, melena oscura); Dani asegura.
-- 2026-11-25 · E81: «se bloquea» para el grigri que no deja dar cuerda no se entiende: bloquear es lo que tiene que hacer al frenar. Decir «se traba / no deja dar».
+- 2026-11-25 · E81: con el grigri, «bloquear» es también su función de seguridad (Petzl). «Se bloquea al dar» vale en el gancho, pero la explicación debe distinguir frenar cuando no toca (molesto) de anular el frenado (peligroso).
