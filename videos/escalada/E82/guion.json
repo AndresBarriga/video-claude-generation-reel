@@ -1,0 +1,301 @@
+{
+ "id": "E82",
+ "titulo": "No eres débil: aprietas demasiado",
+ "nicho": "escalada",
+ "plantilla": "Aprietas",
+ "formato": "fijo",
+ "verificado": true,
+ "replica": "radar/climb_at_life-18116499814827403",
+ "fuentes": [
+  "Honnold, Freerider (El Capitán), 3-jun-2017: 884 m en 3 h 56 min, sin cuerda (National Geographic, Climbing, Guinness).",
+  "Placas de Freerider subidas con la fricción de los pies (Alpinist).",
+  "Fuss y Niegl 2008: presa instrumentada en la Copa del Mundo de 2002 (Singapur); los más experimentados aplican menos fuerza y menos tiempo de contacto (resumido en Frontiers in Psychology 2020). Sin cifra en pantalla.",
+  "«Brazos estirados cuando no te mueves = carga el esqueleto»: consejo técnico estándar, sin estudio."
+ ],
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "visual": "gancho",
+   "bloque": "gancho",
+   "texto": "No eres débil para aguantar. Aprietas demasiado.",
+   "claves": [
+    "débil",
+    "Aprietas"
+   ],
+   "etiqueta": "AGARRE A MUERTE",
+   "titulares": [
+    {
+     "l": [
+      "NO ERES DÉBIL.",
+      "APRIETAS DEMASIADO."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "dominada",
+   "bloque": "reencuadre",
+   "texto": "Aprietas cada presa, doblas los brazos y tiras. Eso no es escalar: es una dominada.",
+   "claves": [
+    "doblas",
+    "tiras.",
+    "dominada."
+   ],
+   "etiqueta": "AGARRE A MUERTE",
+   "titulares": [
+    {
+     "l": [
+      "APRIETAS, DOBLAS",
+      "Y TIRAS."
+     ]
+    },
+    {
+     "desde": "eso",
+     "l": [
+      "ESO NO ES",
+      "ESCALAR."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "caida",
+   "bloque": "consecuencia",
+   "texto": "Y a mitad de vía, se te abren los dedos.",
+   "claves": [
+    "dedos."
+   ],
+   "etiqueta": "AGARRE A MUERTE",
+   "titulares": [
+    {
+     "l": [
+      "A MITAD DE VÍA,",
+      "SE ABREN LOS DEDOS."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "honnold",
+   "bloque": "cifras",
+   "texto": "En 2017, Alex Honnold subió los ochocientos ochenta y cuatro metros de El Capitán sin cuerda. Casi cuatro horas colgado de la roca.",
+   "claves": [
+    "Honnold",
+    "cuerda.",
+    "cuatro",
+    "horas"
+   ],
+   "etiqueta": "2017 · EL CAPITÁN",
+   "titulares": [
+    {
+     "l": [
+      "884 METROS.",
+      "SIN CUERDA."
+     ]
+    },
+    {
+     "desde": "casi",
+     "l": [
+      "CASI 4 HORAS",
+      "EN LA PARED."
+     ]
+    }
+   ],
+   "cifras": [
+    "884 m",
+    "3 h 56 min"
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "placa",
+   "bloque": "giro",
+   "texto": "Y en las placas no se colgaba de las manos: iba de pie en la pared.",
+   "claves": [
+    "manos:",
+    "pie"
+   ],
+   "etiqueta": "HONNOLD · LAS PLACAS",
+   "titulares": [
+    {
+     "l": [
+      "NO IBA COLGADO:",
+      "IBA DE PIE."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "pregunta",
+   "bloque": "pregunta",
+   "texto": "¿Y cómo se aguanta sin apretar?",
+   "claves": [
+    "apretar?"
+   ],
+   "etiqueta": "LA PREGUNTA",
+   "titulares": [
+    {
+     "l": [
+      "¿CÓMO SE AGUANTA",
+      "SIN APRETAR?"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "estudio",
+   "bloque": "estudio",
+   "texto": "Un ingeniero llenó de sensores una presa de la Copa del Mundo. Cuanto mejor era el escalador, menos la apretaba, y antes pasaba a la siguiente.",
+   "claves": [
+    "sensores",
+    "menos",
+    "siguiente."
+   ],
+   "etiqueta": "COPA DEL MUNDO · SENSORES",
+   "titulares": [
+    {
+     "l": [
+      "UNA PRESA",
+      "CON SENSORES."
+     ]
+    },
+    {
+     "desde": "cuanto",
+     "l": [
+      "MEJOR ESCALADOR,",
+      "MENOS APRIETA."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "lista",
+   "bloque": "analogia",
+   "texto": "Uno: tus dedos son ganchos. Aprieta hasta que dejas de resbalar, ni un poco más. Dos: tus brazos son cadenas. Cuando no te mueves, estirados, que cuelgue el hueso. Tres: tus piernas son muelles. Cadera a la pared, y empuja.",
+   "claves": [
+    "ganchos.",
+    "resbalar,",
+    "cadenas.",
+    "hueso.",
+    "muelles.",
+    "empuja."
+   ],
+   "etiqueta": "3 REGLAS",
+   "titulares": [
+    {
+     "l": [
+      "1. TUS DEDOS",
+      "SON GANCHOS."
+     ]
+    },
+    {
+     "desde": "aprieta",
+     "l": [
+      "APRIETA LO JUSTO",
+      "PARA NO RESBALAR."
+     ]
+    },
+    {
+     "desde": "dos",
+     "l": [
+      "2. TUS BRAZOS",
+      "SON CADENAS."
+     ]
+    },
+    {
+     "desde": "cuando",
+     "l": [
+      "CUANDO NO TE MUEVES:",
+      "BRAZOS ESTIRADOS."
+     ]
+    },
+    {
+     "desde": "tres",
+     "l": [
+      "3. TUS PIERNAS",
+      "SON MUELLES."
+     ]
+    },
+    {
+     "desde": "cadera",
+     "l": [
+      "CADERA A LA PARED",
+      "Y EMPUJA."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "resumen",
+   "bloque": "resumen",
+   "texto": "Gancho, cadena, muelle.",
+   "claves": [
+    "Gancho,",
+    "cadena,",
+    "muelle."
+   ],
+   "etiqueta": "3 REGLAS",
+   "titulares": [
+    {
+     "l": [
+      "GANCHO, CADENA,",
+      "MUELLE."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "visual": "vuelta",
+   "bloque": "remate",
+   "texto": "No te cuelgues de la pared. Ponte de pie en ella.",
+   "claves": [
+    "cuelgues",
+    "pie"
+   ],
+   "etiqueta": "HONNOLD · LA PLACA",
+   "titulares": [
+    {
+     "l": [
+      "NO TE CUELGUES.",
+      "PONTE DE PIE."
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "visual": "cta",
+   "bloque": "cta",
+   "texto": "Guárdalo para tu próxima vía, y mándaselo a ese que dice «me fallan los antebrazos».",
+   "claves": [
+    "Guárdalo",
+    "mándaselo",
+    "antebrazos»."
+   ],
+   "etiqueta": "PARA TU PRÓXIMA VÍA",
+   "titulares": [
+    {
+     "l": [
+      "GUÁRDALO PARA",
+      "TU PRÓXIMA VÍA."
+     ]
+    },
+    {
+     "desde": "mándaselo",
+     "l": [
+      "MÁNDASELO A QUIEN",
+      "SE QUEDA SIN ANTEBRAZOS."
+     ]
+    }
+   ]
+  }
+ ]
+}
