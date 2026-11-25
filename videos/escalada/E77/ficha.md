@@ -1,5 +1,5 @@
 # E77 — Rocódromo vs roca: por qué bajas grados
-- **Estado:** producido 23-nov (pendiente de subir). 66 s. Plantilla `Grados` (src/historias/Grados), sobre el rocódromo claro y Lola de E72 + decorado «roca» del kit.
+- **Estado:** publicado 23-nov. 66 s. Plantilla `Grados` (src/historias/Grados), sobre el rocódromo claro y Lola de E72 + decorado «roca» del kit.
 - **Formato:** identidad + aprendizaje (3 razones + plan de 3 consejos). Se espera más alcance y envíos que seguidores (patrón E63).
 - **Gancho:** «Eres de seis be en el rocódromo. En roca, un cinco más te hace sudar.» Fotograma 0: Lola trepando en el rocódromo con «6b» enorme; a los ~2 s la pantalla se parte y aparece la roca con «5+». **Bucle:** «tres razones, y la última casi nadie la sabe» (se cierra en el s32). **Hilo visual:** barra de 3 razones (la 3.ª con «?»).
 - **Crítico:** 6,5 / envío 7 (propuesta v1); v3–v6 con cambios de Andrés (lectura/commit, tipos de roca, grados de escuelas clásicas, plan general, no solo viaje).
