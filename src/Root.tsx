@@ -40,13 +40,14 @@ import { FrenadaPortada } from "./historias/Frenada/Portada";
 import { Grados } from "./historias/Grados";
 import { Apretar } from "./historias/Apretar";
 import { Aprietas } from "./historias/Aprietas";
+import { AprietasPortada } from "./historias/Aprietas/Portada";
 import { PoleasV2 } from "./historias/PoleasV2";
 import { Poleas } from "./historias/Poleas";
 
 import { Gatos } from "./historias/Gatos";
 import { Cinta } from "./historias/Cinta";
 
-const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { ChatRechazo, Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Puerta, Pump, Rapel, Asegurador, Poleas, Everest, Cuerda, Nanga, Ferrata, FreeBase, Suelta, Factor, Chapa, Descanso, Grossglockner, Honnold, Poses: Poses as any, Catalogo: Catalogo as any, Agarra, Freno, Gatos, Cinta, InfoDemo: InfoDemo as any, GatosV2, CintaV2, PumpV2, Miedo, PoleasV2, Grados, Apretar, Aprietas, Frenada, FrenadaPortada: FrenadaPortada as any };
+const PLANTILLAS: Record<string, React.FC<{ datos: Datos }>> = { ChatRechazo, Vacio, Pegue, Bloque, Pierna, Traductor, Beta, Presa, Asmr, Hippies, Puerta, Pump, Rapel, Asegurador, Poleas, Everest, Cuerda, Nanga, Ferrata, FreeBase, Suelta, Factor, Chapa, Descanso, Grossglockner, Honnold, Poses: Poses as any, Catalogo: Catalogo as any, Agarra, Freno, Gatos, Cinta, InfoDemo: InfoDemo as any, GatosV2, CintaV2, PumpV2, Miedo, PoleasV2, Grados, Apretar, Aprietas, AprietasPortada: AprietasPortada as any, Frenada, FrenadaPortada: FrenadaPortada as any };
 const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   const C = (datos.plantilla && PLANTILLAS[datos.plantilla]) || Reel;
   return <C datos={datos} />;
