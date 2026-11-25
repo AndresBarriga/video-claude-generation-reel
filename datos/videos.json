@@ -181,5 +181,9 @@
   "E79": {
     "corto": "Frenada según la pared",
     "desc": "Frenada según la pared (Caer y asegurar 1/3): la misma caída en desplome, vertical, repisa y placa; blanda, corta (poca cuerda, sin tirón) o justa, y tarjeta para guardar."
+  },
+  "E82": {
+    "corto": "No eres débil: aprietas demasiado",
+    "desc": "Réplica de un viral de @climb_at_life: te cargas por apretar de más con los brazos doblados (es una dominada); Honnold en El Capitán (884 m, 3 h 56 min) y de pie en las placas; estudio de la presa con sensores (barras novato/experto sin cifras) y 3 reglas: gancho, cadena, muelle."
   }
 }

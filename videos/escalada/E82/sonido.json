@@ -1,0 +1,21 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  { "nombre": "musica", "inicio": { "escena": 0 }, "fin": { "escena": "cta", "final": true }, "volumen": 0.12, "bucle": true, "fundido": [0.05, 0.8] },
+  { "nombre": "roce", "inicio": { "escena": "gancho", "mas": 0.3 }, "duracion": 0.6, "volumen": 0.35 },
+  { "nombre": "roce", "inicio": { "escena": "dominada", "palabra": "tiras", "mas": -0.1 }, "duracion": 0.5, "volumen": 0.35 },
+  { "nombre": "zas", "inicio": { "escena": "dominada", "palabra": "dominada" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "caida", "inicio": { "escena": "caida", "palabra": "dedos", "mas": -0.1 }, "duracion": 1.1, "volumen": 0.6 },
+  { "nombre": "crujido", "inicio": { "escena": "caida", "palabra": "dedos", "mas": 0.6 }, "duracion": 0.6, "volumen": 0.4, "ignoraSilencio": true },
+  { "silencio": true, "inicio": { "escena": "caida", "final": true, "mas": -0.05 }, "duracion": 0.3 },
+  { "nombre": "viento", "inicio": { "escena": "honnold" }, "fin": { "escena": "placa", "final": true }, "volumen": 0.3, "bucle": true, "fundido": [0.3, 0.5] },
+  { "nombre": "zas", "inicio": { "escena": "honnold", "palabra": "ochocientos" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "zas", "inicio": { "escena": "pregunta" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "vibra", "inicio": { "escena": "estudio", "palabra": "sensores" }, "duracion": 0.6, "volumen": 0.3 },
+  { "nombre": "clic", "inicio": { "escena": "lista", "palabra": "uno" }, "duracion": 0.4, "volumen": 0.4 },
+  { "nombre": "clic", "inicio": { "escena": "lista", "palabra": "dos" }, "duracion": 0.4, "volumen": 0.4 },
+  { "nombre": "clic", "inicio": { "escena": "lista", "palabra": "tres" }, "duracion": 0.4, "volumen": 0.4 },
+  { "nombre": "clic", "inicio": { "escena": "resumen" }, "duracion": 0.4, "volumen": 0.4 },
+  { "nombre": "zas", "inicio": { "escena": "cta", "final": true, "mas": -0.6 }, "duracion": 0.5, "volumen": 0.3 }
+ ]
+}
