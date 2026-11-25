@@ -15,10 +15,10 @@
    "tipo": "gancho",
    "visual": "gGancho",
    "bloque": "gancho",
-   "texto": "¿Tu grigri se traba cuando van a chapar?",
+   "texto": "¿Tu grigri se bloquea cuando van a chapar?",
    "claves": [
     "grigri",
-    "traba"
+    "bloquea"
    ]
   },
   {
@@ -35,10 +35,10 @@
    "tipo": "texto",
    "visual": "gGolpe",
    "bloque": "dentro",
-   "texto": "Si la cuerda sale de golpe, puede trabarse y no dejar dar.",
+   "texto": "Si la cuerda sale de golpe, puede frenar como si cayera.",
    "claves": [
     "golpe,",
-    "trabarse"
+    "cayera."
    ]
   },
   {
