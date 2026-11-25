@@ -1,0 +1,19 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  { "nombre": "musica", "inicio": { "escena": 0 }, "fin": { "escena": "gCta", "final": true }, "volumen": 0.12, "bucle": true, "fundido": [0.05, 0.8] },
+  { "nombre": "roce", "inicio": { "escena": "gGancho" }, "duracion": 0.5, "volumen": 0.4 },
+  { "nombre": "clic", "inicio": { "escena": "gGancho", "mas": 0.5 }, "duracion": 0.3, "volumen": 0.6, "ignoraSilencio": true },
+  { "nombre": "zas", "inicio": { "escena": "gArregla" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "roce", "inicio": { "escena": "gArregla", "palabra": "arreglarlo", "mas": 0.3 }, "duracion": 1.2, "volumen": 0.35 },
+  { "nombre": "roce", "inicio": { "escena": "gGolpe", "palabra": "golpe", "mas": -0.15 }, "duracion": 0.6, "volumen": 0.5 },
+  { "nombre": "clic", "inicio": { "escena": "gGolpe", "palabra": "frena" }, "duracion": 0.3, "volumen": 0.7, "ignoraSilencio": true },
+  { "nombre": "roce", "inicio": { "escena": "gAgarra", "palabra": "anulas", "mas": -0.1 }, "duracion": 0.5, "volumen": 0.6, "ignoraSilencio": true },
+  { "silencio": true, "inicio": { "escena": "gAgarra", "palabra": "anulas", "mas": 0.4 }, "duracion": 0.5 },
+  { "nombre": "zas", "inicio": { "escena": "gUno" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "roce", "inicio": { "escena": "gDos", "palabra": "instante,", "mas": 0.1 }, "duracion": 0.8, "volumen": 0.35 },
+  { "nombre": "clic", "inicio": { "escena": "gTres", "palabra": "chapa,", "mas": 0.05 }, "duracion": 0.3, "volumen": 0.6 },
+  { "nombre": "clic", "inicio": { "escena": "gTarjeta" }, "duracion": 0.4, "volumen": 0.4 },
+  { "nombre": "zas", "inicio": { "escena": "gCta", "final": true, "mas": -0.6 }, "duracion": 0.5, "volumen": 0.3 }
+ ]
+}

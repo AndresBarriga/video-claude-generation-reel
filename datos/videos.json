@@ -182,6 +182,10 @@
   "corto": "Frenada según la pared",
   "desc": "Frenada según la pared (Caer y asegurar 1/3): la misma caída en desplome, vertical, repisa y placa; blanda, corta (poca cuerda, sin tirón) o justa, y tarjeta para guardar."
  },
+ "E81": {
+  "corto": "Dar cuerda rápido con el grigri",
+  "desc": "Dar cuerda rápido con el grigri (Caer y asegurar 3/3): se bloquea al chapar, agarrarlo entero anula el frenado; técnica de Petzl en 3 pasos (freno en la cuerda, pulgar solo al dar, pulgar fuera) y tarjeta para guardar."
+ },
  "E80": {
   "corto": "Lo que NO es una frenada blanda",
   "desc": "Lo que NO es una frenada blanda (Caer y asegurar 2/3): Dani dice tres creencias (más cuerda, saltar, blanda siempre); cada una cae mal y se ve lo que sí es: acompañar el tirón con cuerda justa y nada debajo. Acantilado sobre el mar."
