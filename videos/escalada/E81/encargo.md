@@ -3,6 +3,7 @@
 Base: `propuesta.md` (guion v2, escenas y respaldo). Esta voz manda sobre la de la propuesta (revisión técnica 25-nov: «puede bloquearse», técnica atribuida a Petzl, sin tono de «truco»).
 
 ## Voz (texto para ElevenLabs; la genera Andrés)
+**Cambio 25-nov (Andrés):** «se bloquea» → «se traba»; «puede bloquearse» → «puede trabarse y no dejar dar» (ver `ficha.md`). La voz vigente es la de `guion.json`.
 ¿Tu grigri se bloquea cuando van a chapar? Lo que haces para arreglarlo puede quitarle el freno. Si la cuerda sale de golpe, puede bloquearse. Y agarrarlo entero no lo arregla: si agarras el aparato o aprietas la leva, anulas el frenado. Uno: la mano de freno no suelta nunca la cuerda. Dos: para dar rápido, el pulgar en la leva solo un instante, mientras das. Tres: en cuanto chapa, pulgar fuera. La mano de freno, siempre en la cuerda. Es la técnica de Petzl para el grigri: si tu aparato es otro, mira su manual. Mándaselo a quien te asegura.
 
 ## Requisitos

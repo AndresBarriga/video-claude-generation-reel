@@ -1,11 +1,11 @@
-// E81 · escenas 1-2. Gancho: Irene en la chapa tira de la cuerda, el grigri de Dani se bloquea (lupa) y «¡CUERDA!» desde el fotograma 0.
+// E81 · escenas 1-2. Gancho: Irene en la chapa tira de la cuerda, el grigri de Dani se traba (lupa) y «¡CUERDA!» desde el fotograma 0.
 // Arregla: la cámara baja a Dani; en la lupa su mano agarra el aparato entero (la de freno sigue abajo, en la cuerda).
 import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { Persona, Asegurador, Soga, accChapar, sogaChapar, aparato, Lupa, Sello, suave } from "../../piezas/kit";
 import { Gym, PuestoG, VS, XA, I, P0, IRENE, DANI, ROJO, TAB, Grande, COL, golpe, cl, type P } from "./G3comun";
 
-/** Fotograma en que se bloquea el grigri en el gancho. */
+/** Fotograma en que se traba el grigri en el gancho. */
 export const FB = 15;
 /** Tirón de Irene: sube la cuerda hasta FB y ahí se queda clavada (rebote corto). */
 export const tiron = (f: number) => (f < FB ? 0.1 + 0.26 * suave(f / FB) : 0.36 - 0.05 * Math.exp(-(f - FB) / 5) * Math.cos((f - FB) * 1.4));
