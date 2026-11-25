@@ -1,0 +1,27 @@
+{
+ "id": "E79",
+ "titulo": "Frenada según la pared (Caer y asegurar 1/3)",
+ "nicho": "escalada",
+ "plantilla": "Frenada",
+ "formato": "fijo",
+ "verificado": true,
+ "apertura": "A",
+ "fuentes": [
+  "REI, «How to Belay a Lead Climber»: frenada blanda si caes al aire desde un desplome o vas a pendular contra la pared.",
+  "Climbing.com, «The art of the soft catch»: si puede golpear una repisa, un saliente o el suelo, nada de frenada blanda; acortar; decirle al asegurador lo que quieres.",
+  "Climbing Tech Tips, «Soft catches»: la frenada blanda alarga la caída; mirar repisas y salientes.",
+  "Mountain Project (curso de rocódromo): primeras chapas cerca de la pared y mínima comba; en placa, pasos atrás para acortar; con poca cuerda bajo un techo, péndulo contra el borde."
+ ],
+ "escenas": [
+  { "tipo": "gancho", "visual": "gancho", "bloque": "gancho", "texto": "El desplome parece el peor sitio para caerte.", "claves": ["desplome", "caerte."] },
+  { "tipo": "texto", "visual": "suelta", "bloque": "reencuadre", "texto": "Pero muchas veces es donde mejor caes… si te aseguran bien.", "claves": ["mejor", "aseguran"] },
+  { "tipo": "texto", "visual": "cuatro", "bloque": "promesa", "texto": "Porque en cada situación te tienen que frenar distinto.", "claves": ["frenar", "distinto."] },
+  { "tipo": "texto", "visual": "desplome", "bloque": "lista", "texto": "Desplome: blanda. Si te frenan en seco, te puedes estampar.", "claves": ["blanda.", "seco,", "estampar."] },
+  { "tipo": "texto", "visual": "vertical", "bloque": "lista", "texto": "En vertical, normalmente también blanda. Pero ojo con esto.", "claves": ["vertical,", "ojo"], "pausa": 0.3 },
+  { "tipo": "texto", "visual": "repisa", "bloque": "giro", "texto": "La frenada blanda alarga la caída.", "claves": ["alarga"] },
+  { "tipo": "texto", "visual": "corta", "bloque": "lista", "texto": "Con una repisa debajo, o en las primeras chapas: corta. Corta no es brusca: es poca cuerda fuera.", "claves": ["repisa", "corta.", "brusca:", "poca"] },
+  { "tipo": "texto", "visual": "placa", "bloque": "lista", "texto": "En placa, cuerda justa: cuanto menos caes, menos rozas.", "claves": ["placa,", "justa:", "rozas."] },
+  { "tipo": "texto", "visual": "tarjeta", "bloque": "guardar", "texto": "Antes de empezar, dile cómo quieres que te frene.", "claves": ["dile"], "pausa": 0.3 },
+  { "tipo": "cta", "visual": "cta", "bloque": "cta", "texto": "¿Tu compañero sabe cuándo frenarte suave y cuándo llevarte corto? Mándaselo antes de escalar.", "claves": ["compañero", "Mándaselo"] }
+ ]
+}

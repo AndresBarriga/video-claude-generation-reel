@@ -48,7 +48,7 @@ El desplome parece el peor sitio para caerte. Pero muchas veces es donde mejor c
 **Cambios v1 → v2 (crítico, 7/10, envío 6,5):** «corta» ≠ «seca» explicado en voz y rótulo · «sin comba» → poca cuerda fuera, recoger sin tirón · «pendulas» → «te puedes estampar» · promesa «en cada situación» con contador 1/4–4/4 · el 2.º gancho ya no se adelanta (vertical limpio y luego «salvo aquí») · escena del desplome recortada (el pasito solo en imagen) · gancho con movimiento desde el fotograma 0 · tarjeta 2,5 s · cierre más concreto. Peso: «un pasito» no es universal (asegurador mucho más ligero ya sale blanda) → en el pie y en la parte 2.
 
 ## Reparto e idea visual
-Lola (escala) y Dani (asegura), los de E72/E78. Hilo visual: **la misma caída de Lola** en cuatro paredes; lo único que cambia es cómo se mueve Dani y dónde acaba ella. Fondo claro siempre (roca clara, cielo); nada oscuro en 0–9 s. Sonido: viento desde el fotograma 0, «zip» de cuerda en cada caída, golpe seco en el péndulo y crujido en la repisa; silencio de 0,3 s antes del segundo gancho.
+Irene (escala; nueva, 25-nov: Andrés pidió no usar a Lola) y Dani (asegura). Hilo visual: **la misma caída de Irene** en cuatro paredes; lo único que cambia es cómo se mueve Dani y dónde acaba ella. Fondo claro siempre (roca clara, cielo); nada oscuro en 0–9 s. Sonido: viento desde el fotograma 0, «zip» de cuerda en cada caída, golpe seco en el péndulo y crujido en la repisa; silencio de 0,3 s antes del segundo gancho.
 
 ## Filtro §11
 | | | Nota |

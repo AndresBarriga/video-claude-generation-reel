@@ -177,5 +177,9 @@
   },
   "E78": {
     "desc": "Agarre: en un estudio de 140.000 personas, la fuerza de agarre predijo el riesgo de morir mejor que la tensión; tarjeta de referencia 51/31 kg y por qué escalar es apretar."
+  },
+  "E79": {
+    "corto": "Frenada según la pared",
+    "desc": "Frenada según la pared (Caer y asegurar 1/3): la misma caída en desplome, vertical, repisa y placa; blanda, corta (poca cuerda, sin tirón) o justa, y tarjeta para guardar."
   }
 }

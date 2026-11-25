@@ -22,7 +22,7 @@ const Arriba: React.FC<{ palabras: Palabra[]; claves: string[]; t: number }> = (
   const dichas = g.filter((p) => t >= p.start - 0.03);
   const ultima = dichas[dichas.length - 1];
   return (
-    <div style={{ position: "absolute", left: 90, right: 90, top: 205, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "2px 22px" }}>
+    <div style={{ position: "absolute", left: 90, right: 90, top: 255, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "2px 22px" }}>
       {dichas.map((p, i) => {
         const clave = cl.has(norm(p.w)), viva = p === ultima, e = Math.min(1, (t - p.start + 0.03) / 0.12);
         return (

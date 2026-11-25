@@ -1,0 +1,22 @@
+{
+ "bajoVoz": 0.4,
+ "efectos": [
+  { "nombre": "viento", "inicio": { "escena": 0 }, "fin": { "escena": "cta", "final": true }, "volumen": 0.3, "bucle": true, "fundido": [0.05, 0.8] },
+  { "nombre": "musica", "inicio": { "escena": 0 }, "fin": { "escena": "cta", "final": true }, "volumen": 0.12, "bucle": true, "fundido": [0.05, 0.8] },
+  { "nombre": "roce", "inicio": { "escena": "gancho", "mas": 0.9 }, "duracion": 0.5, "volumen": 0.35 },
+  { "nombre": "caida", "inicio": { "escena": "suelta", "mas": 0.1 }, "duracion": 1.2, "volumen": 0.6 },
+  { "nombre": "zas", "inicio": { "escena": "cuatro" }, "duracion": 0.5, "volumen": 0.3 },
+  { "nombre": "caida", "inicio": { "escena": "desplome", "mas": 0.4 }, "duracion": 1, "volumen": 0.5 },
+  { "nombre": "caida", "inicio": { "escena": "desplome", "palabra": "seco", "mas": -0.1 }, "duracion": 0.8, "volumen": 0.5 },
+  { "nombre": "golpe", "inicio": { "escena": "desplome", "palabra": "seco", "mas": 0.55 }, "duracion": 0.8, "volumen": 0.5, "ignoraSilencio": true },
+  { "nombre": "caida", "inicio": { "escena": "vertical", "mas": 0.3 }, "duracion": 1, "volumen": 0.5 },
+  { "silencio": true, "inicio": { "escena": "vertical", "final": true, "mas": -0.05 }, "duracion": 0.45 },
+  { "nombre": "caida", "inicio": { "escena": "repisa", "mas": 0.05 }, "duracion": 0.6, "volumen": 0.55, "ignoraSilencio": true },
+  { "nombre": "crujido", "inicio": { "escena": "repisa", "mas": 0.4 }, "duracion": 0.6, "volumen": 0.45, "ignoraSilencio": true },
+  { "nombre": "golpe", "inicio": { "escena": "repisa", "mas": 0.4 }, "duracion": 0.7, "volumen": 0.5, "ignoraSilencio": true },
+  { "nombre": "caida", "inicio": { "escena": "corta", "palabra": "corta", "mas": -0.45 }, "duracion": 0.8, "volumen": 0.45 },
+  { "nombre": "roce", "inicio": { "escena": "placa", "mas": 0.45 }, "duracion": 0.9, "volumen": 0.5 },
+  { "nombre": "clic", "inicio": { "escena": "tarjeta" }, "duracion": 0.4, "volumen": 0.4 },
+  { "nombre": "zas", "inicio": { "escena": "cta", "final": true, "mas": -0.6 }, "duracion": 0.5, "volumen": 0.3 }
+ ]
+}
