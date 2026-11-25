@@ -9,8 +9,14 @@ import { Gancho, Suelta, Desplome, Cta } from "./Desplome";
 import { Vertical, RepisaE, Corta } from "./Vertical";
 import { Placa } from "./Placa";
 import { Cuatro, Tarjeta } from "./Cuatro";
+import { BComba, BCaeMas, BAcompana } from "./G2Uno";
+import { BIdea2, BAntes } from "./G2Dos";
+import { BIdea3, BRepisa } from "./G2Tres";
+import { BTarjeta, BPractica, BCta } from "./G2Cierre";
 
-const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, suelta: Suelta, cuatro: Cuatro, desplome: Desplome, vertical: Vertical, repisa: RepisaE, corta: Corta, placa: Placa, tarjeta: Tarjeta, cta: Cta };
+const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, suelta: Suelta, cuatro: Cuatro, desplome: Desplome, vertical: Vertical, repisa: RepisaE, corta: Corta, placa: Placa, tarjeta: Tarjeta, cta: Cta,
+  // E80 (2/3, lo que no es frenada blanda)
+  bComba: BComba, bCaeMas: BCaeMas, bAcompana: BAcompana, bIdea2: BIdea2, bAntes: BAntes, bIdea3: BIdea3, bRepisa: BRepisa, bTarjeta: BTarjeta, bPractica: BPractica, bCta: BCta };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
 
 export const Frenada: React.FC<{ datos: Datos }> = ({ datos }) => {
