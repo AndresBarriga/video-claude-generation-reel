@@ -264,5 +264,11 @@
     "version": "propuesta",
     "fecha": "2026-11-25",
     "nota_breve": "gancho «tirón igual» inexacto; faltaban mano de freno, grigri y cómo saber cuándo saltar"
+  },
+  "E82": {
+    "nota": 6,
+    "orig": 6,
+    "fase": "propuesta v1 (6; envío 5)",
+    "hist": "25-nov v1 6"
   }
 }
