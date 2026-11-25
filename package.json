@@ -20,7 +20,8 @@
     "medir": "node tools/medir.mjs",
     "ig": "node tools/ig-metricas.mjs",
     "qa-final": "node tools/qa-final.mjs",
-    "verificar-voz": "node tools/verificar-voz.mjs"
+    "verificar-voz": "node tools/verificar-voz.mjs",
+    "radar": "node tools/radar.mjs"
   },
   "engines": {
     "node": ">=20"

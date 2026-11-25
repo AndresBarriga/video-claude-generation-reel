@@ -1,0 +1,57 @@
+{
+ "_uso": "Cuentas de referencia para tools/radar.mjs. Solo Business/Creator. El radar propone nuevas en docs/radar.md (candidatas); si valen, se añaden aquí.",
+ "cuentas": [
+  {
+   "user": "diariodeescalada_",
+   "nota": "ES · ya analizada (docs/referencias.md)"
+  },
+  {
+   "user": "climb_at_life",
+   "nota": "ES · de Andrés"
+  },
+  {
+   "user": "boldr.climbing",
+   "nota": "de Andrés"
+  },
+  {
+   "user": "betanopedida",
+   "nota": "ES · de Andrés"
+  },
+  {
+   "user": "betaclimblab",
+   "nota": "ES · dato en el gancho"
+  },
+  {
+   "user": "latticetraining",
+   "nota": "EN · entrenamiento (Andrés escribió «laticcetraining»)"
+  },
+  {
+   "user": "paradigm_climbing_coaching",
+   "nota": "EN · de Andrés"
+  },
+  {
+   "user": "pin_v1ew",
+   "nota": "ES · pies de gato"
+  },
+  {
+   "user": "crimpd",
+   "nota": "EN · app de entrenamiento"
+  },
+  {
+   "user": "trainingbeta",
+   "nota": "EN · entrenamiento"
+  },
+  {
+   "user": "c4hp",
+   "nota": "EN · lesiones"
+  },
+  {
+   "user": "climbers.crag",
+   "nota": "EN · creció a 300k en <1 año"
+  },
+  {
+   "user": "bomberclimbingmemes",
+   "nota": "EN · humor"
+  }
+ ]
+}

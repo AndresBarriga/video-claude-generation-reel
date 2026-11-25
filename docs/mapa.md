@@ -43,6 +43,7 @@ Para no perder el rastro. Si algo no está aquí, búscalo en el sitio que indic
 6. **Revisión:** `npm run hoja -- <id>` (una hoja de contacto) → como mucho 2 rondas de corrección.
 7. **Render:** `npm run render -- <id>` → `npm run qa-final -- <id>` → `previews/<id>.mp4` → ficha con descripción y comentario fijado → commit + push → a Andrés.
 8. **Publicado:** las cifras de Instagram entran solas cada mañana (Action, `docs/metricas-api.md`); por captura solo la curva de retención y los seguidores reales de los que destaquen (`npm run medir`).
+9. **Radar de virales (automático):** lunes, Action → `docs/radar.md` + `radar/` (fotogramas y transcripción de outliers) → tarea de Claude que los desmonta y propone ideas. `docs/radar-metodo.md`.
 
 ## 4. Pendiente de construir
 - **TODO de estrategia vigente: `docs/todo.md`** (aprendizajes en `docs/referencias-skills.md`).
