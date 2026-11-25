@@ -13,8 +13,14 @@ import { GGancho, GArregla } from "./G3Gancho";
 import { GGolpe, GAgarra } from "./G3Golpe";
 import { GUno, GDos, GTres } from "./G3Pasos";
 import { GTarjeta, GCta } from "./G3Cierre";
+import { BComba, BCaeMas, BAcompana } from "./G2Uno";
+import { BIdea2, BAntes } from "./G2Dos";
+import { BIdea3, BRepisa } from "./G2Tres";
+import { BTarjeta, BPractica, BCta } from "./G2Cierre";
 
 const ESCENAS: Record<string, React.FC<P>> = { gancho: Gancho, suelta: Suelta, cuatro: Cuatro, desplome: Desplome, vertical: Vertical, repisa: RepisaE, corta: Corta, placa: Placa, tarjeta: Tarjeta, cta: Cta,
+  // E80 (2/3, lo que no es frenada blanda)
+  bComba: BComba, bCaeMas: BCaeMas, bAcompana: BAcompana, bIdea2: BIdea2, bAntes: BAntes, bIdea3: BIdea3, bRepisa: BRepisa, bTarjeta: BTarjeta, bPractica: BPractica, bCta: BCta,
   // E81 (3/3, grigri)
   gGancho: GGancho, gArregla: GArregla, gGolpe: GGolpe, gAgarra: GAgarra, gUno: GUno, gDos: GDos, gTres: GTres, gTarjeta: GTarjeta, gCta: GCta };
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9]/g, "");
