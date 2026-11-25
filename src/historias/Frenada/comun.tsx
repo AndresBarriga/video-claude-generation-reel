@@ -46,7 +46,7 @@ export const Contador: React.FC<{ n: number; k: number }> = ({ n, k }) => {
     <div style={{ position: "absolute", top: 1470, left: 0, right: 0, display: "flex", justifyContent: "center", transform: `scale(${e})` }}>
       <div style={{ display: "flex", alignItems: "center", gap: 14, background: COL.crema, border: `7px solid ${COL.tinta}`, borderRadius: 40, padding: "8px 26px" }}>
         {[1, 2, 3, 4].map((i) => <div key={i} style={{ width: 34, height: 34, borderRadius: 17, border: `5px solid ${COL.tinta}`, background: i < n ? COL.verde : i === n ? COL.amarillo : "#fff" }} />)}
-        <div style={{ fontFamily: F, fontWeight: 900, fontSize: 56, color: COL.tinta, marginLeft: 8 }}>{n}/4</div>
+        <div style={{ fontFamily: F, fontWeight: 900, fontSize: 52, color: COL.tinta, marginLeft: 8, whiteSpace: "nowrap" }}>{n}/4 · {["DESPLOME", "VERTICAL", "REPISA", "PLACA"][n - 1]}</div>
       </div>
     </div>
   );
