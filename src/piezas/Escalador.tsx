@@ -60,7 +60,7 @@ const ext = (x: number, y: number, ang: number, L: number): [number, number] => 
 
 const L = { torso: 104, brazo1: 52, brazo2: 50, pierna1: 66, pierna2: 64, cabeza: 30 };
 
-const Ojos: React.FC<{ cara: Cara }> = ({ cara }) => {
+export const Ojos: React.FC<{ cara: Cara }> = ({ cara }) => {
   const st = { stroke: TINTA, strokeWidth: 4, strokeLinecap: "round" as const, fill: "none" };
   switch (cara) {
     case "miedo":

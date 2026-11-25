@@ -270,5 +270,12 @@
     "orig": 6,
     "fase": "propuesta v1 (6; envío 5)",
     "hist": "25-nov v1 6"
+  },
+  "E83": {
+    "nota": 6,
+    "envio": 6,
+    "version": "propuesta",
+    "fecha": "2026-11-25",
+    "nota_breve": "barra de brazo contradecía «no es débil»; aviso de rodilla en la pierna equivocada; bisagra vertical no gira → aplicado en v2"
   }
 }

@@ -42,3 +42,4 @@ Sirve para calibrar: comparar la nota con el resultado real (`docs/resultados.md
 | 2026-11-25 | E81 Dar cuerda rápido con el grigri | propuesta v1 | 7 | Frase final de la escena 3 sugiere mover la mano de freno; «no puede bloquear» demasiado absoluto; el vídeo no explica por qué se bloquea |
 | 2026-11-25 | E80 Frenada blanda: cómo se da (2/3) | propuesta v1 | 7 (envío 6,5) | gancho dice «tirón igual» y la voz «caes más» (inexacto); falta mano de freno y grigri; no explica cómo saber cuándo se tensa |
 | 2026-11-25 | E82 No eres débil: aprietas demasiado | propuesta v1 | 6 (envío 5) | réplica casi 1:1 del original; «sin apretar así» y «soltaban antes» sin respaldo ni matiz de seguridad → aplicado en v2 |
+| 2026-11-25 | E83 La puerta | propuesta v1 | 6 (7 con cambios) | barra de brazo vaciándose contradice «no es débil»; rodilla: aviso en la pierna equivocada; física de la línea de bisagra; CTA y cifras sobrevaloradas → aplicado en v2 |
