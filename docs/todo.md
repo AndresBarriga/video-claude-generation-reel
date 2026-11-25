@@ -27,3 +27,4 @@ Fuente: conversación de estrategia 24–25-nov + `docs/referencias-skills.md`. 
 - [ ] E · Banco de frases de la audiencia (comentarios y cajas) para ganchos.
 - [ ] E · Cita semanal fija y reconocer a los que comentan siempre.
 - [ ] E · Sorteo solo con marca/rocódromo y premio de escalada con cuerda (más adelante).
+- [ ] E · Radar de virales (investigado 25-nov): Business Discovery con el `IG_TOKEN` actual da `view_count`/likes/comentarios de reels de cuentas Business/Creator (no vídeo si desactivan descargas). Paso en la Action semanal → `datos/radar.json` (outlier = vistas ÷ mediana de su cuenta) → chat de estrategia analiza pie + comentarios + fotogramas y propone guiones. Hashtags por API: 30/7 días y App Review, no compensa; Apify: contra ToS de Meta. El «por qué» fiable sale de nuestro skip/visto medio, no de reels ajenos. Falta: lista de 10–15 cuentas.
