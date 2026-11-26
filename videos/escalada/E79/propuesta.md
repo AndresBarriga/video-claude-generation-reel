@@ -85,3 +85,9 @@ Las tres paredes en miniatura con Lola cayendo en cada una; titular «¿CÓMO TE
 | Placa: pasos atrás para acortar | Mountain Project |
 | Con poca cuerda bajo un techo, péndulo contra el borde | Mountain Project |
 Respuestas preparadas: «una frenada blanda no es dar comba de más» → «exacto: es acompañar el tirón, no soltar cuerda; lo vemos en la parte 2» · «en rocódromo no hay repisas» → «pero hay volúmenes y primeras chapas».
+
+## Resultado a ~11 h (captura 26-nov 07:33)
+27.839 vistas · 20.648 espectadores · **141 seguidores (5,1/1.000 vistas)** · 1,2K likes · 406 guardados (14,6/1.000) · 46 reposts · visto medio 23 s de 39 · skip 30,3 % («más bajo» que lo típico de la cuenta) · envíos 3,7 % del alcance (umbral ≥3 % superado) · fuentes: Reels 74,6 %, Explorar 10,3 %, Feed 9,9 %, Historias 2,8 %. Instagram: «This reel is on fire».
+**Curva:** −24 % en los primeros ~3 s, −35 % a los ~6 s, ~58 % a los 10 s; tramo casi plano hasta ~30 s (≈47 %); caída fuerte ~31–34 s (placa → tarjeta: de ~45 % a ~30 %) y final al ~18 %.
+**Lectura:** gancho correcto pero no excelente (skip 30 %, objetivo ≤25 %); el cuerpo retiene muy bien; se pierde gente en la placa/tarjeta: el vídeo «se siente terminado» antes de la tarjeta. Plan B (apertura C de prueba) **no se hace**: el reel está en pleno empuje y el envío del 3,7 % abre distribución; no arriesgar contenido repetido.
+**Siguiente:** parte 2 de la serie (cómo se da la frenada blanda) en 1–3 días, mientras el tema está caliente. En la parte 2: tarjeta antes del último consejo, no al final.
