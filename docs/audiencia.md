@@ -14,7 +14,7 @@ Base: historias del hito 1.000 (n≈70: 79 % cuerda, 75 % hasta 6b+), caja de pr
 - (11-nov, caja) «gestionar miedos y ver por dónde va la vía»
 
 ## Historias del 25-nov (vistas: 559 → 486 → 440 → ~394; 70 % llega a la última)
-- Barra «¿cuánto miedo te da caer pasada la 2.ª chapa?»: 73 respuestas.
+- Barra «¿cuánto miedo te da caer pasada la 2.ª chapa?»: 73 respuestas, media ~63 % (emoji 💩), **muy dividida**: muchos en 0 y muchos en 90–100 %. Dos públicos: los que ya no tienen miedo y los que tienen mucho.
 - ¿Dónde escaláis? (114 votos): rocódromo 43 % · roca 33 % · mitad 24 % → **los ejemplos tienen que servir en rocódromo**, pero un 57 % pisa roca.
 - ¿Con qué aseguráis? (131 votos): **grigri 88 %** · tubo 8 % · otro 5 % → en los vídeos, el asegurador lleva grigri.
 - Caja «¿tu peor susto?» (~16 respuestas). Frases tal cual:
@@ -22,4 +22,5 @@ Base: historias del hito 1.000 (n≈70: 79 % cuerda, 75 % hasta 6b+), caja de pr
   - «Por saltarme la segunda chapa sin querer me quemé la rodilla por atrás» · «Me salté una chapa y al llegar a la segunda caí y le rompí el talus»
   - «Cuando mi aseguradora no había recuperado cuerda y volé» · «Iba en yoyo y mi asegurador se resbaló y chocamos como un péndulo» · «Un péndulo que casi me deja la cadera» · «Caer en una repisa y romperme un pie» · «Me desmayé asegurando»
   - «Un amigo usó una cuerda de longitud desconocida… sin nudo» · «Desprendimiento de roca de 1 metro cayendo a 1 centímetro de mí» · «Me picó una avispa en el labio y me olvidé la 9.ª y 10.ª chapa»
+- Ya cubiertos por vídeos publicados o listos: comba al chapar y caer a punto de chapar → La segunda chapa, Cómo chapar, E81 (dar cuerda rápido) · saltarse la 2.ª chapa → La segunda chapa · asegurador que no recoge → La segunda chapa, Frenada según la pared · péndulo y repisa → Frenada según la pared · cuerda sin nudo → ¿Llega tu cuerda? (rapel). Sin vídeo: desprendimientos/casco, desmayo asegurando, olvidarse chapas.
 - Lectura: los sustos son justo los temas de seguridad (comba al chapar, segunda chapa, asegurador que no recoge, péndulo, repisa, nudo al final). Confirma el tema de la cuenta y da la cola de las próximas semanas. Usarlos en vídeo **solo con permiso** de quien lo contó.
