@@ -65,7 +65,7 @@ const med = (a) => { const s = a.filter((x) => x != null).sort((x, y) => x - y);
 const pesoDe = (id) => { const sp = D.pruebas[id] || {}, o = S.pesos[id] || {}; return { impacto: o.impacto ?? sp.impacto, calidad: o.calidad ?? sp.calidad, coste: o.coste ?? sp.coste }; };
 const score = (id) => { const w = pesoDe(id); return w.impacto && w.calidad && w.coste ? (w.impacto * w.calidad) / w.coste : 0; };
 const rankMap = () => Object.fromEntries(D.hipotesis.map((h) => h.id).sort((a, b) => score(b) - score(a)).map((id, i) => [id, i + 1]));
-const dots = (n, max = 5) => '●'.repeat(n || 0) + '○'.repeat(max - (n || 0));
+const dots = (n, max = 5) => { const k = Math.max(0, Math.min(max, Math.round(n || 0))); return '●'.repeat(k) + '○'.repeat(max - k); };
 
 // ---------- Pruebas ----------
 function evalVideo(sp, id) {
@@ -134,8 +134,36 @@ function renderTop() {
   const h = (Date.now() - last) / 36e5;
   $('#fresh').innerHTML = `Último dato: ${dia(last)} · <span class="${h < 24 ? 'fresh-ok' : h < 72 ? 'fresh-warn' : 'fresh-bad'}">hace ${h < 48 ? Math.round(h) + ' h' : Math.round(h / 24) + ' d'}</span>${S.extra.length ? ' · <b>vista previa con ' + S.extra.length + ' medición(es) sin guardar</b>' : ''}`;
   const c = D.cuenta, tot = Object.values(V);
-  const k = [['Seguidores', fmt(c.seguidores)], ['Visualiz. 30 d', fmt(c.visualizaciones)], ['Vídeos', tot.length], ['Vistas (suma)', fmt(tot.reduce((a, v) => a + (v.last.vistas || 0), 0))], ['De no seguidores', c.no_seguidores_pct + ' %'], ['Visitas perfil', fmt(c.visitas_perfil)]];
+  const sd = D.diario?.seguidores || {}, fs = Object.keys(sd).sort(), segHoy = fs.length ? sd[fs[fs.length - 1]] : c.seguidores, al = D.diario?.altas || {}, a7 = Object.keys(al).sort().slice(-7).reduce((a, k) => a + (al[k] || 0), 0);
+  const k = [['Seguidores' + (fs.length ? ' · ' + fs[fs.length - 1].slice(5).split('-').reverse().join('/') : ''), fmt(segHoy)], ['Altas últimos 7 días', '+' + fmt(a7)], ['Visualiz. 30 d', fmt(c.visualizaciones)], ['Vídeos', tot.length], ['Vistas (suma)', fmt(tot.reduce((a, v) => a + (v.last.vistas || 0), 0))], ['De no seguidores', c.no_seguidores_pct + ' %'], ['Visitas perfil', fmt(c.visitas_perfil)]];
   $('#kpis').innerHTML = k.map(([a, b]) => `<div class="kp"><b>${b}</b><span>${a}</span></div>`).join('');
+}
+function renderClaves() {
+  const C = D.claves || {};
+  if (!C.lineas) { $('#claves').innerHTML = '<p class="mut">Sin datos/claves.json</p>'; return; }
+  const med = (a) => { const b = a.filter((x) => x != null).sort((x, y) => x - y); if (!b.length) return null; const m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
+  // Seguidores: el último dato de captura (real); si solo hay el estimado de la API, se marca con ≈ (reparte las altas del día y exagera en días flojos)
+  const segReal = (id) => { const r = D.rows.filter((x) => x.video === id && x.seguidores != null).sort((a, b) => T(a.medido) - T(b.medido)); const c = r.filter((x) => !/estimad/i.test(x.notas || '')); const x = (c.length ? c : r).pop(); return x ? { n: x.seguidores, est: !c.length } : { n: null, est: false }; };
+  const L = C.lineas.map((l) => {
+    const dv = D.diario?.vistas || {}, dk = Object.keys(dv).sort(), hoy = dk.length ? dv[dk[dk.length - 1]] : {};
+    const vs = l.ids.map((id) => V[id]).filter(Boolean).map((v) => ({ ...v, sg: segReal(v.id), last: { ...v.last, vistas: Math.max(v.last.vistas || 0, hoy[v.id] || 0) } }));
+    const vis = vs.map((v) => v.last.vistas), seg = vs.map((v) => v.sg.n);
+    const sv = vs.reduce((a, v) => a + (v.sg.n != null ? v.last.vistas || 0 : 0), 0), ss = vs.reduce((a, v) => a + (v.sg.n || 0), 0);
+    const top = vs.slice().sort((a, b) => (b.sg.n || 0) - (a.sg.n || 0)).slice(0, 3);
+    return { ...l, n: vs.length, mv: med(vis), ms: med(seg), mil: sv ? (ss / sv) * 1000 : null, top, malos: vs.filter((v) => (v.last.vistas || 0) < 5000).length };
+  }).sort((a, b) => (b.ms ?? -1) - (a.ms ?? -1));
+  const maxS = Math.max(...L.map((l) => l.ms || 0), 1), maxV = Math.max(...L.map((l) => l.mv || 0), 1);
+  const bar = (v, max, c) => `<span class="cb"><i style="width:${Math.max(2, (100 * (v || 0)) / max)}%;background:${c}"></i></span>`;
+  const lin = L.map((l, i) => `<tr${i === 0 ? ' class="win"' : ''}><td class="ln"><span class="dot" style="background:${l.color}"></span><b>${esc(l.nombre)}</b><small> · ${l.n} vídeos${l.malos ? ` · ${l.malos} por debajo de 5K` : ''}</small><div class="chips">${l.top.map((v) => `<span class="chip" data-v="${esc(v.id)}" title="${v.sg.est ? 'seguidores estimados por la API' : 'seguidores de captura'}"><b>${esc(v.id)}</b>${v.sg.est ? '≈' : ''}${fmt(v.sg.n)} seg.</span>`).join('')}</div></td>
+    <td><b class="big">${fmt(l.ms)}</b>${bar(l.ms, maxS, l.color)}</td><td><b class="big">${fmt(l.mv)}</b>${bar(l.mv, maxV, l.color)}</td><td><b class="big">${l.mil == null ? '–' : l.mil.toFixed(1).replace('.', ',')}</b></td></tr>`).join('');
+  const ap = (C.aprendido || []).map((a, i) => `<li${i < 2 ? ' class="nuevo"' : ''}><span class="fe">${esc(a.fecha.slice(5).split('-').reverse().join('/'))}</span><div>${md(a.t)}${a.ids?.length ? `<div class="chips">${a.ids.map((id) => `<span class="chip" data-v="${esc(id)}"><b>${esc(id)}</b>${V[id] ? fmt(V[id].last.vistas) : ''}</span>`).join('')}</div>` : ''}</div></li>`).join('');
+  $('#claves').innerHTML = `<div class="kgrid">
+    <div class="card foco"><h3>🎯 Qué toca ahora</h3><ul>${(C.foco || []).map((f) => `<li>${md(f)}</li>`).join('')}</ul><small>Actualizado ${esc(C.actualizado || '')}</small></div>
+    <div class="card"><h3>📈 Qué trae seguidores <small>mediana por vídeo · seguidores de captura; ≈ = estimado por la API (poco fiable en vídeos flojos)</small></h3>
+      <table class="lt"><thead><tr><th>Línea</th><th>Seguidores</th><th>Vistas</th><th>Seg./1.000</th></tr></thead><tbody>${lin}</tbody></table></div>
+  </div>
+  <div class="kgrid k2"><div class="card"><h3>💡 Aprendido últimamente <small>lo más reciente arriba</small></h3><ol class="apr">${ap}</ol></div>
+    <div class="card reglas"><h3>✅ Reglas al producir</h3><ul>${(C.reglas || []).map((r) => `<li>${md(r)}</li>`).join('')}</ul></div></div>`;
 }
 function hypsFor(id) {
   return D.hipotesis.filter((h) => { const sp = D.pruebas[h.id]; return h.favIds.includes(id) || h.conIds.includes(id) || (sp && sp.videos && sp.videos.includes(id)); }).map((h) => h.id);
@@ -253,11 +281,11 @@ function renderPlan() {
   const Pn = D.plan, rk = rankMap();
   Pn.candidatos.forEach((c) => { S.slot[c.id] ??= c.slot; });
   const prior = (f) => { const l = Object.values(V).filter((v) => v.formato === f); return l.length ? l.map((v) => `${v.id}: ${fmt(v.last.vistas)} vistas · ${fmt(M(v, 'segk', 'last').val, 2)} seg./1k`).join('<br>') : '<span class="dim">formato nuevo, sin datos</span>'; };
-  const info = (c) => Math.max(0, ...c.h.map((x) => score(x)));
+  const info = (c) => Math.max(0, ...(c.h || []).map((x) => score(x)));
   const rows = Pn.candidatos.map((c) => `<tr><td><b>${esc(c.nombre)}</b><div class="desc">${esc(desc(c.id))}</div>${D.archivos[c.id] ? `<div class="vid">${(D.archivos[c.id] || []).map((x) => `<a href="${esc(x.href)}" target="_blank">▶ ${esc(x.label)}</a><a href="${esc(x.href)}" download>⬇</a>`).join('')}</div>` : ''}</td>
-<td>${esc(c.estado)}${c.bloqueos.length ? `<div class="desc">${c.bloqueos.map(esc).join(' · ')}</div>` : ''}</td><td>${ntBadge(c.id)}</td><td><small>${prior(c.formato)}</small></td>
+<td>${esc(c.estado)}${(c.bloqueos || []).length ? `<div class="desc">${c.bloqueos.map(esc).join(' · ')}</div>` : ''}</td><td>${ntBadge(c.id)}</td><td><small>${prior(c.formato)}</small></td>
 <td><b>${dots(S.pot[c.id] ?? c.potencial)}</b><div class="desc">${esc(c.por_que)}</div><select data-pot="${c.id}">${[1, 2, 3, 4, 5].map((o) => `<option ${o === (S.pot[c.id] ?? c.potencial) ? 'selected' : ''}>${o}</option>`).join('')}</select></td>
-<td>${c.h.length ? c.h.map((x) => `<span class="pill" title="${esc(D.hipotesis.find((h) => h.id === x)?.h || '')}">${x} #${rk[x]}</span>`).join(' ') + `<div class="desc">valor informativo ${fmt(info(c), 0)}</div>` : '<span class="dim">no aporta</span>'}</td>
+<td>${(c.h || []).length ? (c.h || []).map((x) => `<span class="pill" title="${esc(D.hipotesis.find((h) => h.id === x)?.h || '')}">${x} #${rk[x]}</span>`).join(' ') + `<div class="desc">valor informativo ${fmt(info(c), 0)}</div>` : '<span class="dim">no aporta</span>'}</td>
 <td><b>${dots(c.riesgo)}</b><div class="desc">${esc(c.riesgo_txt)}</div></td><td>${esc(c.esfuerzo)}</td>
 <td><select data-slot="${c.id}">${Pn.slots.map((sl) => `<option value="${sl.id}" ${S.slot[c.id] === sl.id ? 'selected' : ''}>${esc(sl.nombre)}</option>`).join('')}</select></td></tr>`).join('');
   const board = Pn.slots.filter((sl) => !['no'].includes(sl.id)).map((sl) => { const l = Pn.candidatos.filter((c) => S.slot[c.id] === sl.id); return `<div class="card"><b>${esc(sl.nombre)}</b><small>${esc(sl.hora)}</small>${l.map((c) => `<div>· ${esc(c.nombre)}</div>`).join('') || '<span class="dim">—</span>'}</div>`; }).join('');
@@ -332,6 +360,6 @@ document.addEventListener('change', (e) => {
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { S.drawer = null; renderDrawer(); } });
 
-function refresh() { V = build(); renderTop(); acciones(); renderHip(); renderVid(); renderForm(); renderCambios(); renderCrit(); renderPlan(); renderDrawer(); }
+function refresh() { V = build(); renderTop(); renderClaves(); acciones(); renderHip(); renderVid(); renderForm(); renderCambios(); renderCrit(); renderPlan(); renderDrawer(); }
 refresh(); renderAud(); renderIdeas();
 })();

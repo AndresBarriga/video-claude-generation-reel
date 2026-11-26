@@ -58,6 +58,8 @@ const data = {
   criterios: JSON.parse(read('datos/criterios.json') || '{}'),
   notas: JSON.parse(read('datos/notas-critico.json') || '{}'),
   plan: JSON.parse(read('datos/plan.json') || '{}'),
+  claves: JSON.parse(read('datos/claves.json') || '{}'),
+  diario: JSON.parse(read('datos/ig-diario.json') || '{}'),
   archivos,
 };
 
@@ -70,6 +72,7 @@ const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta n
 <header class="top"><div><h1>@ultimo.pegue</h1><div class="sub" id="fresh"></div></div><nav class="nav"><button data-tab="panel" class="on">Panel</button><button data-tab="plan">Plan de publicación</button><button data-tab="crit">Criterios de viralidad</button></nav><div class="kpis" id="kpis"></div></header>
 <main>
 <div id="pg-panel">
+<section class="claves"><h2>Lo más importante <small>qué funciona, qué hemos aprendido y qué toca · se edita en <code>datos/claves.json</code></small></h2><div id="claves"></div></section>
 <section><h2>Qué hacer ahora <small>sale de las hipótesis, los vídeos y la cola</small></h2><div id="acciones"></div></section>
 <section><h2>Hipótesis <small>lo que estamos validando, por qué importa y con qué calidad podemos validarlo</small></h2>
 <div id="hmap"></div><div class="bar2" id="hfiltros"></div><div class="hgrid" id="hip"></div></section>
@@ -81,7 +84,7 @@ const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta n
 </div>
 <div id="pg-plan" hidden></div>
 <div id="pg-crit" hidden></div>
-<footer class="sub">Fuentes: datos/publicados.csv · datos/cuenta.json · datos/pruebas.json · datos/videos.json · datos/criterios.json · datos/notas-critico.json · datos/plan.json · docs/aprendizajes.md · docs/viralidad.md · docs/ideas/escalada.md · fichas · Regenerar: <code>npm run dashboard</code> · Medir: <code>npm run medir -- E15 vistas=… seg=…</code></footer>
+<footer class="sub">Fuentes: datos/claves.json · datos/ig-diario.json · datos/publicados.csv · datos/cuenta.json · datos/pruebas.json · datos/videos.json · datos/criterios.json · datos/notas-critico.json · datos/plan.json · docs/aprendizajes.md · docs/viralidad.md · docs/ideas/escalada.md · fichas · Regenerar: <code>npm run dashboard</code> · Medir: <code>npm run medir -- E15 vistas=… seg=…</code></footer>
 </main>
 <aside id="drawer" class="drawer" hidden></aside>
 <script type="application/json" id="data">${json}</script>

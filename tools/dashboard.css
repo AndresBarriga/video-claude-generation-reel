@@ -41,3 +41,10 @@ svg text{fill:#8b92a3;font-size:10px}.x{float:right}ul{margin:6px 0;padding-left
 .slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:10px 0}.slots .card b{display:block;margin-bottom:4px}.slots .card small{display:block}
 .vid video{width:100%;max-height:420px;border-radius:8px;background:#000;margin:8px 0}.vid a{display:inline-block;margin-right:8px;color:var(--bl)}
 .nt{display:inline-block;min-width:26px;text-align:center;border-radius:6px;padding:0 6px;font-weight:700;background:#2a2f3b}.nt.hi{background:#12372a;color:var(--ok)}.nt.mid{background:#3a2c15;color:var(--am)}.nt.lo{background:#3a1c1c;color:var(--no)}
+
+.claves h2{color:var(--ac);font-size:15px}.kgrid{display:grid;grid-template-columns:minmax(280px,1fr) 2fr;gap:12px;margin-bottom:12px}.kgrid.k2{grid-template-columns:2fr minmax(260px,1fr)}@media(max-width:900px){.kgrid,.kgrid.k2{grid-template-columns:1fr}}
+.kgrid h3{margin:0 0 8px;font-size:15px}.kgrid h3 small{font-weight:400;margin-left:6px}.foco{border:2px solid var(--ac);background:linear-gradient(180deg,#2a1d12,var(--c))}.foco li{margin:7px 0;font-size:14px}
+.lt{background:none;border:0}.lt td,.lt th{text-align:left;vertical-align:top;white-space:normal}.lt td.ln{min-width:230px}.lt tr.win td{background:#12372a33}.lt .big{font-size:18px;display:block}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.cb{display:block;width:110px;height:6px;background:#222733;border-radius:4px;margin-top:4px}.cb i{display:block;height:100%;border-radius:4px}
+.apr{list-style:none;padding:0;margin:0}.apr li{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--b)}.apr li:last-child{border:0}.apr .fe{min-width:46px;font-size:12px;color:var(--m);padding-top:2px}.apr li.nuevo .fe{color:#111;background:var(--ac);border-radius:6px;padding:1px 6px;height:fit-content;font-weight:700}.apr .chips{margin-top:5px}
+.reglas li{margin:7px 0}

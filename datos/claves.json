@@ -1,0 +1,153 @@
+{
+  "_ayuda": "Bloque «Lo más importante» del dashboard. foco = qué toca ahora; lineas = qué vídeos son de cada línea (las medianas se calculan solas con el último dato de cada vídeo); aprendido = lo nuevo, el más reciente primero (ids = evidencia, abre la ficha); reglas = lo que no se discute al producir. Editar a mano y `npm run dashboard`.",
+  "actualizado": "2026-11-26",
+  "foco": [
+    "**Cuerda y seguridad primero**: es lo que trae seguidores (E59 875, E64 373, E46 229, E79 141 en 11 h).",
+    "**Serie «Caer y asegurar»**: parte 1 E79 en pleno empuje → publicar parte 2 (E80 frenada blanda) y parte 3 (E81 grigri) en 1–3 días.",
+    "**Técnica, reabierta** (E77 rocódromo vs roca: 34,6K vistas, 536 envíos): serie con personaje fijo nuevo (E83 La puerta, E84 rock over).",
+    "**Cuerpo / fisiología explicada con gráficos: fuera de la cuadrícula** (5 de 6 por debajo de 5K). Si se prueba, como reel de prueba."
+  ],
+  "lineas": [
+    {
+      "id": "cuerda",
+      "nombre": "Cuerda: seguridad y miedo a caer",
+      "color": "#3ecf8e",
+      "ids": [
+        "E11",
+        "E41",
+        "E46",
+        "E47",
+        "E49",
+        "E52",
+        "E59",
+        "E62",
+        "E64",
+        "E72",
+        "E79"
+      ]
+    },
+    {
+      "id": "tecnica",
+      "nombre": "Técnica de vía",
+      "color": "#5b9cff",
+      "ids": [
+        "E31",
+        "E42",
+        "E77"
+      ]
+    },
+    {
+      "id": "dilema",
+      "nombre": "Historias y dilemas",
+      "color": "#f2b84b",
+      "ids": [
+        "E14",
+        "E15",
+        "E35",
+        "E36",
+        "E54",
+        "E55"
+      ]
+    },
+    {
+      "id": "identidad",
+      "nombre": "Identidad y humor",
+      "color": "#9b8cff",
+      "ids": [
+        "E6",
+        "E30",
+        "E63"
+      ]
+    },
+    {
+      "id": "cuerpo",
+      "nombre": "Cuerpo y fisiología",
+      "color": "#ef5350",
+      "ids": [
+        "E39",
+        "E43",
+        "E44",
+        "E68",
+        "E69",
+        "E78"
+      ]
+    }
+  ],
+  "aprendido": [
+    {
+      "fecha": "2026-11-26",
+      "t": "**Series funcionan**: E79 (parte 1 de «Caer y asegurar») 27,8K y 141 seguidores a 11 h, envíos 3,7 %. Se pierde gente en la tarjeta final: en la parte 2, tarjeta **antes** del último consejo.",
+      "ids": [
+        "E79"
+      ]
+    },
+    {
+      "fecha": "2026-11-25",
+      "t": "**Técnica sí funciona** cuando es la situación del espectador (E77 rocódromo vs roca: 34,6K vistas, 536 envíos). El filtro «solo errores de cuerda» era demasiado estricto.",
+      "ids": [
+        "E77",
+        "E42"
+      ]
+    },
+    {
+      "fecha": "2026-11-24",
+      "t": "**El crítico y la tabla de viralidad no predicen**: E46 con 5,5 → 96K; E6 y E36 con 8 → 9K. Lo único que predice es la curva en la 1.ª hora: los >60K conservan ≥70 % a los 5–10 s.",
+      "ids": [
+        "E46",
+        "E6",
+        "E36"
+      ]
+    },
+    {
+      "fecha": "2026-11-24",
+      "t": "**Responder antes de 4 s**: si el bucle («algo predijo…») se alarga sin avance visible, la gente se va (E78 cae a 0 entre 3 y 6 s, aunque el titular frenó el dedo: skip 28,9 %).",
+      "ids": [
+        "E78"
+      ]
+    },
+    {
+      "fecha": "2026-11-24",
+      "t": "**Cuerpo / fisiología con gráficos y sin persona haciendo algo = fracaso**: E39, E44, E68, E69, E78 por debajo de 5K. Solo E43 (pump, el primero) funcionó.",
+      "ids": [
+        "E39",
+        "E44",
+        "E68",
+        "E69",
+        "E78",
+        "E43"
+      ]
+    },
+    {
+      "fecha": "2026-11-23",
+      "t": "**Fotograma 0 claro**: cifra o frase grande + escena reconocible en fondo claro (E63 skip 17 %). Fondo oscuro, rayos X o personaje pequeño → skip >40 % (E68, E69).",
+      "ids": [
+        "E63",
+        "E68",
+        "E69"
+      ]
+    },
+    {
+      "fecha": "2026-11-21",
+      "t": "**Alcance ≠ seguidores**: E63 (pies de gato, 272K) trajo 77; E64 (chapar, 71K) trajo 373. Los dilemas e identidad dan vistas; la cuerda útil, seguidores.",
+      "ids": [
+        "E63",
+        "E64",
+        "E54"
+      ]
+    },
+    {
+      "fecha": "2026-11-21",
+      "t": "**No borrar y resubir**: Instagram limita lo que detecta como ya publicado (E69B: 140 vistas). Un tema que falla se rehace como versión nueva de verdad o va como reel de prueba.",
+      "ids": [
+        "E69B"
+      ]
+    }
+  ],
+  "reglas": [
+    "Fotograma 0: fondo claro, cifra/frase grande, persona haciendo la acción. Nunca fondo oscuro ni rayos X.",
+    "La respuesta o el primer avance visible antes de 4 s; el dato para guardar, a mitad (no al final).",
+    "Subtítulos en zona segura (y ≥ 255) y nada importante en los 290 px de abajo.",
+    "Formato o tema nuevo → reel de prueba (solo no seguidores) antes que la cuadrícula.",
+    "Nunca borrar y resubir el mismo vídeo."
+  ]
+}
