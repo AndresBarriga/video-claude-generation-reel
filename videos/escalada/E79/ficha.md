@@ -35,4 +35,4 @@ Mándaselo a quien te asegura 🧗‍♂️
 **Comentario fijado:** «¿Le dices a tu asegurador cómo quieres que te frene, o lo dejas a su criterio? En la parte 2: cómo se frena blando sin dar comba de más.»
 
 ## Resultado
-(pendiente)
+27-nov 15:28 (≈43 h): 57,6K · 2,3K likes · 3 comentarios · 83 reposts · 758 guardados (1,3 %). Curva no capturada (Insights sin cargar).

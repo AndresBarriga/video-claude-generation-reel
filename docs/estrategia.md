@@ -1,7 +1,7 @@
 # Estrategia vigente (se reescribe cuando cambia; el historial está en `docs/decisiones.md`)
 
 ## Qué es la cuenta
-- **@ultimo.pegue**: cuenta anónima, sin cara, reels animados en español de España sobre escalada. Instagram + TikTok (mismo archivo); Shorts después.
+- **@ultimo.pegue**: cuenta anónima, sin cara, reels animados en español de España sobre escalada. Instagram (principal) + TikTok + YouTube Shorts (mismo archivo, resubido 1–9 días después; Shorts activo desde 24-nov). Datos de TikTok/YT: `datos/otras-redes.csv` (a mano). 27-nov: IG 1,7 M vistas/30 d; TikTok y YT ≈1–5 % del alcance de IG (`docs/resultados.md`).
 - Mascotas en pausa (`docs/ideas/mascotas.md`). Segunda cuenta fuera de nicho: pendiente (`archivo/segunda-cuenta.md`).
 
 ## Objetivo y métricas

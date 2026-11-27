@@ -86,3 +86,25 @@ Con muestra pequeña: **medianas**, nunca medias (un viral las rompe).
 Cuenta: 3.906 seguidores, +3.765 netos en 30 días, 1,49 M vistas. Por seguidores (30 días): E59 1.587 · E64 359 · E46 304 · E41? 297 (fase 5) · E43 227 · E49? 225 · E63 157.
 - **E68 falló en el arranque:** skip 41,8 % y mitad fuera a los 3–4 s; plano desde ~1 h. Fondo oscuro + mano dibujada que no se lee como «alguien escalando» en el fotograma 0. Igual que E69 (pump, 40,7 %). **Dos de dos con fondo oscuro de rayos X/sala en el arranque por encima del 40 % de skip.**
 - **E72 se recuperó:** 19K, 59 seguidores, envíos 2,0 % y guardados 1,0 % (buenos); el skip subió de 24 % (1 h) a 38,5 % al salir a no seguidores. Medio-bueno, no un fracaso.
+
+## 27-nov 15:30 · Instagram + TikTok + YouTube Shorts (grabación y capturas de Andrés)
+**Datos de TikTok/YouTube en `datos/otras-redes.csv`** (a mano; no en `publicados.csv`, porque el Action y el dashboard mezclarían plataformas por id). YouTube: solo los 5 Shorts visibles de 21; TikTok: 8 publicaciones; hay otro programado el 27-nov 20:10 (0:52, sin ID).
+
+**Instagram** · 1,7 M visualizaciones en 30 días (dashboard). Cuadrícula: E63 300K (9.936 likes, 14 comentarios, 114 reposts, 1.693 envíos = 0,56 %) · E59 288K · E46 ≈98K · E64 72,8K · E79 57,6K (2,3K likes, 3 comentarios, 83 reposts, 758 guardados = 1,3 %). Comentarios ≈0 en todos (E63: tasa 0,0 %). E63, curva sin cambios frente al 21-nov (≈95 % a 2 s, ≈50 % a 30 s, ≈44 % a 47 s, caída final a ≈15 %); fuentes: Reels 79,1 %, Explorar 16,8 %, Feed 2,3 %.
+- Un reel de pump (0:58, 21,7K) con curva: cae de 100 % a ≈52 % en ~6 s y luego casi plana (≈45→38 %), final ≈15 %; fuentes Reels 77,5 %, Explorar 10,3 %, Feed 9,2 %. **ID sin confirmar** (E69/E69B/E43): no se asocia a ninguna ficha.
+
+| Vídeo | IG | TikTok | YouTube |
+|---|---|---|---|
+| E59 La segunda chapa | ≈288K (12 d; 177K a 24 h) | 4.048 (3 d) · 4,6 % like | 1.211 (2 d) |
+| E64 Cómo chapar | 72,8K (8 d; 42,8K a 14 h) | 1.893 (2 d) · 3,9 % | 36 (3 d) |
+| E46 ¿Llega tu cuerda? | ≈98K (22 d) | 1.137 (1 d) · 2,6 % | 267 (1 d) |
+| E52 Cuerda tras la pierna | ≈14K (a 3,6 d) | — | 1.348 (1 d) |
+| E41 Factor de caída | — | — | 103 (2 d) |
+| E15 ¿Cortas? | 189K a 36 h | 4.736 (30 d) · 2,8 % | — |
+| E14 / E11 / E6 / E30 | 4,0K / 17,5K / 7,5K / — (a 16–36 h) | 582 / 343 / 300 / 872 | — |
+
+## Lectura (hechos con n pequeño; no conclusiones)
+- **Todo lo de TikTok/YouTube son resubidas de IG**, 1–9 días después (los de oct. son los primeros). Comparación a edad similar: TikTok ≈1–5 % de las vistas de IG (E59 4K frente a 177K a 24 h; E64 1,9K frente a 42,8K a 14 h; E15 4,7K frente a 189K).
+- **La tasa de likes de TikTok (2,6–7,2 %) es igual o mayor que la de IG (3,3–4 %)**: el público no es peor, llega menos. TikTok sigue sin generar comentarios (0–4).
+- **YouTube: varianza enorme.** E52 («Nunca dejes la cuerda detrás de la pierna») hace 1.348 en 1 día, ≈10 % de su IG; E64 hace 36 (≈0,05 %). Título directo de consejo/seguridad frente a «3 errores»; con 5 Shorts, hipótesis a mirar, no regla.
+- Seguidores por red: sin datos. Mientras tanto el crecimiento sale de IG (1,7 M vistas / 30 d).

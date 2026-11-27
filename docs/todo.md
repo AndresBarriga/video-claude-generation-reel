@@ -19,6 +19,8 @@ Fuente: conversación de estrategia 24–25-nov + `docs/referencias-skills.md`. 
 - [ ] M · Guardar métricas de historias (el API solo las da 24 h): pasada nocturna.
 - [ ] E · Regla de alarma a 24 h: envíos/alcance ≥2 % → segunda parte; <1 % → no repetir el tema así.
 
+- [ ] M · Medir TikTok y YouTube a 7 d (capturas → `datos/otras-redes.csv`); comparar por vídeo y vistas por seguidor frente a IG antes de decidir si merece esfuerzo. Pendiente: seguidores por red y los 21 Shorts completos.
+
 ## Después (cuando haya datos)
 - [ ] A · Mejores amigos con 20–50 fieles que ven bocetos y votan el gancho.
 - [ ] A · Canal de difusión.

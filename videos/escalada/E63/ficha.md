@@ -58,3 +58,6 @@ Guárdalo y mándaselo al que siempre dice «ya darán de sí» 👀
 
 ## Resultado (21-nov 10:20, ~21 h)
 179K vistas · 114 seg. (0,64/1k) · skip 17,2 % (récord) · visto 30/55 s · guard. 0,4 % · envíos 0,8 %. **Curva:** ≈95 % a 2 s, ≈78 % a 8 s, bajada lenta hasta ≈45 % a 50 s, caída final. El arranque («150 €» grande, tienda clara, pie en el gato) es el mejor de la cuenta; el tema no convierte en seguidores.
+
+## 27-nov 15:28 (≈7 d)
+300K · 9.936 likes · 14 comentarios · 114 reposts · 1.693 envíos (0,56 %). Curva sin cambios (≈95 % a 2 s, ≈50 % a 30 s, ≈15 % al final); Reels 79,1 %, Explorar 16,8 %, Feed 2,3 %.

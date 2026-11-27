@@ -47,3 +47,6 @@ Las apps nuevas ya no tienen «API con inicio de sesión de Instagram»: usan **
 ## Pendiente de comprobar con la 1.ª ejecución real
 - Unidad de `visto_medio_s` y escala de `skip_pct` frente a 2 capturas (±5 %).
 - Que `follower_count` cuenta altas (no neto de bajas).
+
+## Otras redes
+TikTok y YouTube no tienen API montada: capturas de Andrés → `datos/otras-redes.csv` (columnas: video, plataforma, título en la red, subido, medido, vistas, likes, comentarios, duración, notas). No mezclar con `publicados.csv`.
