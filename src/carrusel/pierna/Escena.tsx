@@ -18,7 +18,8 @@ export type Config = {
   cuerda: Pt[];              // del nudo al mosquetón (último punto = dentro del mosquetón)
   delante?: [number, number]; // índices [desde, hasta] del tramo que pasa por encima del cuerpo
   presas: Pt[];              // centro de cada repisa/presa
-  desplome?: boolean;        // sombra de techo arriba (talonamiento)
+  desplome?: boolean;        // techo con fisura horizontal arriba (talonamiento, como la referencia)
+  manos?: [Pt, Pt];          // si está: cuerpo completo (espalda, brazos y cabeza) con las manos en estas presas
 };
 
 const rad = (a: number) => (a * Math.PI) / 180;
@@ -36,7 +37,13 @@ const Roca: React.FC<{ c: Config }> = ({ c }) => (
     <Linea p={[[1060, 160], [1010, 420], [1040, 660], [1000, 900], [1050, 1160], [1030, 1500]]} c="#8C7E68" w={14} />
     <Linea p={[[600, 980], [700, 1010], [760, 1090]]} c="#B3A58C" w={7} />
     <Linea p={[[20, 760], [130, 800], [190, 780]]} c="#B3A58C" w={7} />
-    {c.desplome && <path d="M-200 -300 L1500 -300 L1500 230 Q900 300 560 250 Q200 210 -200 260 Z" fill="#CDBFA6" stroke={COL.tinta} strokeWidth={8} />}
+    {c.desplome && (
+      <g>
+        <path d="M-500 -700 L1700 -700 L1700 -250 Q1100 -200 600 -230 Q100 -260 -500 -220 Z" fill="#C9B79A" />
+        <path d="M-500 -220 Q100 -260 600 -230 Q1100 -200 1700 -250" stroke={COL.tinta} strokeWidth={22} fill="none" strokeLinecap="round" />
+        <path d="M-500 -205 Q100 -245 600 -215 Q1100 -185 1700 -235" stroke="#6E5E48" strokeWidth={10} fill="none" />
+      </g>
+    )}
     {c.presas.map(([x, y], i) => (
       <g key={i}>
         <Forma p={[[x - 92, y - 6], [x + 30, y - 14], [x + 96, y - 2], [x + 78, y + 26], [x - 78, y + 30]]} c="#D2C4AA" w={7} />
@@ -112,9 +119,46 @@ const Tronco: React.FC = () => (
   </g>
 );
 
+/** Codo de un brazo de dos tramos (hombro → mano), doblado hacia fuera. */
+const codo = (S: Pt, M: Pt, L1: number, L2: number, lado: 1 | -1): Pt => {
+  const dx = M[0] - S[0], dy = M[1] - S[1], d = Math.min(Math.hypot(dx, dy), L1 + L2 - 1);
+  const a = Math.acos((L1 * L1 + d * d - L2 * L2) / (2 * L1 * d)), base = Math.atan2(dy, dx) + lado * a;
+  return [S[0] + Math.cos(base) * L1, S[1] + Math.sin(base) * L1];
+};
+const HOMBRO_I: Pt = [458, 14], HOMBRO_D: Pt = [662, 14];
+/** Espalda, brazos y cabeza (de espaldas). Proporción: cintura→hombro ≈ muslo; brazo ≈ 0,6 + 0,55 muslo; cabeza ≈ 0,5 muslo. */
+const Arriba: React.FC<{ manos: [Pt, Pt] }> = ({ manos }) => {
+  const eI = codo(HOMBRO_I, manos[0], 186, 170, 1), eD = codo(HOMBRO_D, manos[1], 186, 170, -1);
+  const brazo = (S: Pt, E: Pt, M: Pt) => (
+    <g>
+      <Forma p={tubo([S, E], [70, 56])} c={JERSEY} />
+      <Forma p={tubo([E, en(E, M, 0.85)], [52, 44])} c={JERSEY} />
+      <Forma p={tubo([en(E, M, 0.8), M], [40, 36])} c={PIEL} w={7} />
+      <circle cx={M[0]} cy={M[1]} r={26} fill={PIEL} stroke={COL.tinta} strokeWidth={7} />
+    </g>
+  );
+  return (
+    <g>
+      {brazo(HOMBRO_I, eI, manos[0])}
+      {brazo(HOMBRO_D, eD, manos[1])}
+      <Forma p={[[530, -80], [590, -80], [594, 0], [526, 0]]} c={PIEL} w={7} />
+      <Forma p={[[456, 304], [664, 304], [662, 240], [676, 150], [704, 64], [690, 8], [626, -14], [560, -20], [494, -14], [430, 8], [416, 64], [444, 150], [458, 240]]} c={JERSEY} />
+      <Linea p={[[470, 120], [500, 70]]} c={JERSEY_S} w={7} o={0.5} />
+      <Linea p={[[650, 120], [620, 70]]} c={JERSEY_S} w={7} o={0.5} />
+      <Linea p={[[560, 10], [560, 290]]} c={JERSEY_S} w={8} o={0.6} />
+      <ellipse cx={498} cy={-118} rx={14} ry={20} fill={PIEL} stroke={COL.tinta} strokeWidth={6} />
+      <ellipse cx={622} cy={-118} rx={14} ry={20} fill={PIEL} stroke={COL.tinta} strokeWidth={6} />
+      <ellipse cx={560} cy={-130} rx={66} ry={76} fill="#E2B04A" stroke={COL.tinta} strokeWidth={8} />
+      <Linea p={[[560, -200], [556, -140], [560, -80]]} c="#C38F2E" w={7} />
+      <Forma p={[[546, -96], [590, -100], [602, -40], [584, 20], [560, 26], [548, -20]]} c="#E2B04A" w={7} />
+      <rect x={546} y={-104} width={40} height={16} rx={8} fill={COL.menta} stroke={COL.tinta} strokeWidth={5} />
+    </g>
+  );
+};
+
 export const Escena: React.FC<{ c: Config }> = ({ c }) => {
   const m = mosqueton(c);
-  const abajo: Pt[] = [m, [m[0] + 2, m[1] + 60], [m[0] + 6, m[1] + 600]];
+  const abajo: Pt[] = [m, [m[0] + 2, m[1] + 60], [m[0] + 8, m[1] + 1800]];
   const cuerda: Pt[] = [...c.cuerda.slice(0, -1), m];
   const [d0, d1] = c.delante ?? [-1, -1];
   return (
@@ -125,11 +169,12 @@ export const Escena: React.FC<{ c: Config }> = ({ c }) => {
         <path d={cr(tubo([HI, c.izq.K, c.izq.A], [100, 66, 44]))} fill="#000" />
         <path d={cr(tubo([HD, c.der.K, c.der.A], [100, 66, 44]))} fill="#000" />
         <path d="M420 -40 L700 -40 L690 470 L640 528 L480 528 L430 470 Z" fill="#000" />
+        {c.manos && <ellipse cx={560} cy={-130} rx={66} ry={76} fill="#000" />}
       </g>
       <Cinta c={c} />
       <Cuerda p={abajo} sombra={6} />
       <Cuerda p={cuerda} sombra={10} />
-      <Tronco />
+      {c.manos ? <><Arriba manos={c.manos} /><Tronco /></> : <Tronco />}
       <PiernaD H={HI} p={c.izq} />
       <PiernaD H={HD} p={c.der} />
       {d0 >= 0 && <Cuerda p={cuerda.slice(d0, d1 + 1)} sombra={14} />}
@@ -139,12 +184,14 @@ export const Escena: React.FC<{ c: Config }> = ({ c }) => {
 };
 
 // ——— Las 4 situaciones ———
-/** 1 · travesía ✗: la cinta quedó abajo a la izquierda; la cuerda cruza por fuera del gemelo izquierdo. */
+/** 1 · como la referencia: de espaldas en placa, pierna izquierda estirada abajo, rodilla derecha alta;
+ *  la cinta queda abajo a la izquierda y la cuerda rodea POR FUERA el gemelo izquierdo ✗. */
 export const TRAVESIA: Config = {
-  izq: { K: [384, 800], A: [312, 1030] }, der: { K: [806, 640], A: [828, 870] },
-  chapa: [150, 1120], cintaDir: 6,
-  cuerda: [NUDO, [540, 680], [470, 812], [394, 900], [352, 944], [318, 980], [270, 1060], [222, 1150], [180, 1220], [154, 1252]],
-  delante: [3, 6], presas: [[312, 1096], [850, 936]],
+  izq: { K: [372, 812], A: [262, 1046] }, der: { K: [790, 600], A: [812, 822] },
+  manos: [[430, -300], [716, -340]],
+  chapa: [122, 1150],
+  cuerda: [NUDO, [548, 680], [480, 820], [398, 922], [334, 966], [288, 1004], [236, 1070], [170, 1180], [126, 1282]],
+  delante: [3, 5], presas: [[262, 1112], [826, 888]],
 };
 /** 2 · recto por encima de la chapa ✓: la cuerda baja entre las piernas a la cinta de abajo. */
 export const ENTRE: Config = {
@@ -160,10 +207,12 @@ export const PASOALTO: Config = {
   cuerda: [NUDO, [600, 640], [680, 720], [760, 780], [840, 846], [930, 960], [1022, 1120]],
   presas: [[372, 1100], [786, 912]],
 };
-/** 4 · talón en desplome ✗: talón enganchado a la derecha, la cuerda pasa por fuera del talón hacia la cinta. */
+/** 4 · como la referencia: bajo un techo con fisura horizontal, talón derecho enganchado en la fisura junto a la cinta.
+ *  La cuerda sube del nudo a la cinta y pasa POR FUERA del tobillo ✗ (la pierna queda entre la cuerda y la roca). */
 export const TALON: Config = {
-  izq: { K: [430, 790], A: [392, 1024] }, der: { K: [830, 470], A: [1010, 404], pie: "talon" },
-  chapa: [1180, 300], cintaDir: 10,
-  cuerda: [NUDO, [660, 560], [800, 510], [920, 450], [1000, 414], [1060, 410], [1150, 428]],
-  delante: [3, 5], presas: [[392, 1090], [1060, 400]], desplome: true,
+  izq: { K: [440, 800], A: [404, 1030] }, der: { K: [860, 300], A: [930, 112], pie: "talon" },
+  manos: [[430, -232], [660, -226]],
+  chapa: [1040, -120], cintaDir: 14,
+  cuerda: [NUDO, [700, 400], [820, 272], [900, 184], [940, 140], [990, 88], [1060, 10]],
+  delante: [2, 4], presas: [[404, 1096], [968, 128]], desplome: true,
 };

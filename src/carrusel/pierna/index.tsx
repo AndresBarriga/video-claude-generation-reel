@@ -37,9 +37,9 @@ const Badge: React.FC<{ ok: boolean; size?: number }> = ({ ok, size = 120 }) => 
 const Circ: React.FC<{ p: Pt; r: number; ok: boolean }> = ({ p, r, ok }) => <circle cx={p[0]} cy={p[1]} r={r} fill="none" stroke={ok ? COL.verde : COL.rojo} strokeWidth={14} strokeDasharray="30 18" />;
 
 // ——— Preguntas (1, 3, 5, 7): el detalle a la vista, sin marcar ———
-const Pregunta: React.FC<{ n: number; c: Config; titulo: string; tag: string; foco?: Pt }> = ({ n, c, titulo, tag, foco = [590, 830] }) => (
+const Pregunta: React.FC<{ n: number; c: Config; titulo: string; tag: string; foco?: Pt; s?: number }> = ({ n, c, titulo, tag, foco = [590, 830], s = 0.72 }) => (
   <Marco n={n}>
-    <Svg><Ver c={c} x={50} y={372} w={980} h={880} s={0.72} foco={foco} id={`p${n}`} /></Svg>
+    <Svg><Ver c={c} x={50} y={372} w={980} h={880} s={s} foco={foco} id={`p${n}`} /></Svg>
     <div style={{ position: "absolute", top: 104, left: 0, right: 0, textAlign: "center", fontFamily: F, fontWeight: 800, fontSize: 112, lineHeight: 1, color: T, letterSpacing: -2 }}>{titulo}</div>
     <div style={{ position: "absolute", top: 248, left: 0, right: 0, textAlign: "center" }}>
       <span style={{ fontFamily: F, fontWeight: 800, fontSize: 74, color: "#fff", background: T, borderRadius: 40, padding: "4px 36px 12px" }}>¿BIEN O MAL?</span>
@@ -49,9 +49,9 @@ const Pregunta: React.FC<{ n: number; c: Config; titulo: string; tag: string; fo
 );
 
 // ——— Respuestas (4, 6, 8) ———
-const Respuesta: React.FC<{ n: number; ok: boolean; titulo: string; sub: string; c: Config; foco?: Pt; children?: React.ReactNode }> = ({ n, ok, titulo, sub, c, foco = [590, 760], children }) => (
+const Respuesta: React.FC<{ n: number; ok: boolean; titulo: string; sub: string; c: Config; foco?: Pt; s?: number; children?: React.ReactNode }> = ({ n, ok, titulo, sub, c, foco = [590, 760], s = 0.6, children }) => (
   <Marco n={n}>
-    <Svg><Ver c={c} x={50} y={540} w={980} h={712} s={0.6} foco={foco} id={`r${n}`}>{children}</Ver></Svg>
+    <Svg><Ver c={c} x={50} y={540} w={980} h={712} s={s} foco={foco} id={`r${n}`}>{children}</Ver></Svg>
     <div style={{ position: "absolute", top: 96, left: 60, display: "flex", alignItems: "center", gap: 24 }}>
       <Badge ok={ok} />
       <div style={{ fontFamily: F, fontWeight: 800, fontSize: 112, color: T, lineHeight: 1 }}>{ok ? "BIEN" : "MAL"}</div>
@@ -93,7 +93,7 @@ const S2: React.FC = () => (
   <Marco n={2}>
     <Svg>
       <Tarjeta x={50} y={470} w={980} h={790} id="t2"><g transform="translate(50 470)"><Volteo /></g></Tarjeta>
-      <Ver c={TRAVESIA} x={734} y={934} w={292} h={292} s={0.62} foco={[340, 960]} id="lupa" borde={9}><Circ p={[340, 960]} r={95} ok={false} /></Ver>
+      <Ver c={TRAVESIA} x={734} y={934} w={292} h={292} s={0.62} foco={[300, 1000]} id="lupa" borde={9}><Circ p={[300, 990]} r={95} ok={false} /></Ver>
     </Svg>
     <div style={{ position: "absolute", top: 96, left: 60, display: "flex", alignItems: "center", gap: 24 }}>
       <Badge ok={false} />
@@ -116,7 +116,7 @@ const S9: React.FC = () => (
     <div style={{ position: "absolute", top: 186, left: 60, ...txt, fontSize: 36 }}>La regla: tu pierna nunca entre la cuerda y la roca.</div>
     <Svg>
       <Ver c={ENTRE} x={60} y={250} w={470} h={420} s={0.42} foco={[566, 860]} id="g1" />
-      <Ver c={TRAVESIA} x={550} y={250} w={470} h={420} s={0.42} foco={[420, 860]} id="g2" />
+      <Ver c={TRAVESIA} x={550} y={250} w={470} h={420} s={0.42} foco={[380, 900]} id="g2" />
     </Svg>
     <div style={{ position: "absolute", top: 270, left: 80 }}><Badge ok size={84} /></div>
     <div style={{ position: "absolute", top: 270, left: 570 }}><Badge ok={false} size={84} /></div>
@@ -149,10 +149,10 @@ const S9: React.FC = () => (
 
 // ——— 10 · resumen + CTA ———
 const RES: { c: Config; ok: boolean; t: string; foco: Pt; s: number }[] = [
-  { c: TRAVESIA, ok: false, t: "travesía", foco: [420, 880], s: 0.4 },
+  { c: TRAVESIA, ok: false, t: "travesía", foco: [460, 700], s: 0.3 },
   { c: ENTRE, ok: true, t: "entre las piernas", foco: [566, 880], s: 0.4 },
   { c: PASOALTO, ok: true, t: "paso alto", foco: [700, 820], s: 0.4 },
-  { c: TALON, ok: false, t: "talón", foco: [800, 600], s: 0.36 },
+  { c: TALON, ok: false, t: "talón", foco: [700, 360], s: 0.3 },
 ];
 const S10: React.FC = () => (
   <Marco n={10} desliza={false}>
@@ -179,13 +179,13 @@ export const CarruselPierna: React.FC<{ n?: number }> = ({ n = 1 }) => {
     case 4: return <Respuesta n={4} ok c={ENTRE} titulo="Entre las piernas está bien." sub="Al caer, la cuerda va recta a la chapa sin pasar por detrás de ninguna pierna." foco={[580, 780]}><Circ p={[566, 900]} r={130} ok /></Respuesta>;
     case 5: return <Pregunta n={5} c={PASOALTO} titulo="¿Y ESTE PASO?" tag="3 de 4 · paso alto" foco={[640, 800]} />;
     case 6: return <Respuesta n={6} ok c={PASOALTO} titulo="La cuerda va entre tu pierna y la roca." sub="Al caer te separas de la pared y la pierna sale por delante de la cuerda." foco={[660, 760]}><Circ p={[790, 800]} r={100} ok /></Respuesta>;
-    case 7: return <Pregunta n={7} c={TALON} titulo="¿Y CON EL TALÓN?" tag="4 de 4 · desplome" foco={[700, 640]} />;
-    case 8: return <Respuesta n={8} ok={false} c={TALON} titulo="El talón también engancha." sub="Si la cuerda pasa por fuera del talón, al caer tira de él y te puede girar." foco={[720, 620]}>
-      <Circ p={[1010, 415]} r={90} ok={false} />
-      <path d="M1000 520 L990 690" stroke={COL.rojo} strokeWidth={22} strokeLinecap="round" /><path d="M952 670 L988 740 L1030 676 Z" fill={COL.rojo} />
+    case 7: return <Pregunta n={7} c={TALON} titulo="¿Y CON EL TALÓN?" tag="4 de 4 · desplome" foco={[640, 400]} s={0.6} />;
+    case 8: return <Respuesta n={8} ok={false} c={TALON} titulo="El talón también engancha." sub="Si la cuerda pasa por fuera del talón, al caer tira de él y te puede girar." foco={[660, 380]} s={0.52}>
+      <Circ p={[920, 150]} r={100} ok={false} />
+      <path d="M880 260 L800 400" stroke={COL.rojo} strokeWidth={24} strokeLinecap="round" /><path d="M760 372 L780 450 L840 400 Z" fill={COL.rojo} />
     </Respuesta>;
     case 9: return <S9 />;
     case 10: return <S10 />;
-    default: return <Pregunta n={1} c={TRAVESIA} titulo="MIRA LA CUERDA." tag="1 de 4 · travesía" />;
+    default: return <Pregunta n={1} c={TRAVESIA} titulo="MIRA LA CUERDA." tag="1 de 4 · travesía" foco={[540, 540]} s={0.54} />;
   }
 };

@@ -1,5 +1,5 @@
 # C1 · Carrusel «¿Bien o mal? #1 · La cuerda y tu pierna» — ficha
-**Estado:** v1 producida 27-nov (10 diapositivas, 1080×1350). Código: `src/carrusel/pierna/` · render: `npx remotion still src/index.ts CarruselPierna out/carrusel/pierna-N.png --props='{"n":N}'`.
+**Estado:** v2 27-nov: situaciones 1 y 4 rehechas siguiendo las referencias de @sima.k202 (cuerpo completo de espaldas; talón bajo un techo con fisura, junto a la cinta). v1 producida 27-nov (10 diapositivas, 1080×1350). Código: `src/carrusel/pierna/` · render: `npx remotion still src/index.ts CarruselPierna out/carrusel/pierna-N.png --props='{"n":N}'`.
 **Formato:** carrusel · mecanismo ¿bien o mal? (la respuesta está detrás del deslizamiento) · ángulo «parece normal y no lo está».
 **Objetivo:** envíos y guardados de escaladores de cuerda que luego sigan. Objetivo editorial: «después de verlo, miras dónde va tu cuerda».
 **Pendiente de decidir (Andrés):** si sustituye al episodio 1 de E73 (reel ¿Bien o mal? pierna).
