@@ -52,10 +52,14 @@ const Video: React.FC<{ datos: Datos }> = ({ datos }) => {
   return <C datos={datos} />;
 };
 import type { Datos } from "./tipos";
+import { Still } from "remotion";
+import { CarruselPierna } from "./carrusel/pierna";
 
 const vacio: Datos = { id: "_ejemplo", titulo: "", nicho: "otro", fps: 30, duracion: 5, palabras: [], escenas: [] };
 
 export const Root: React.FC = () => (
+  <>
+  <Still id="CarruselPierna" component={CarruselPierna as any} width={1080} height={1350} defaultProps={{ n: 1 }} />
   <Composition
     id="Reel"
     component={Video}
@@ -70,4 +74,5 @@ export const Root: React.FC = () => (
       return { durationInFrames: Math.ceil(datos.duracion * datos.fps) + ((datos as any).mudo ? 0 : 15), fps: datos.fps, props: { ...props, datos } };
     }}
   />
+  </>
 );

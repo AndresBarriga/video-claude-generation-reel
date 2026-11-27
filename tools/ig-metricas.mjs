@@ -19,6 +19,8 @@ const DRY = args.includes('--dry');
 const ULT = args.includes('--ultimos') ? Number(args[args.indexOf('--ultimos') + 1]) : 0;
 const MAP = 'datos/ig-map.json', DIARIO = 'datos/ig-diario.json', CSV = 'datos/publicados.csv';
 const METRICAS = ['views', 'reach', 'likes', 'comments', 'shares', 'saved', 'reposts', 'ig_reels_avg_watch_time', 'reels_skip_rate'];
+// Carruseles (27-nov): sin métricas de reproducción; seguidores y visitas al perfil por publicación si la API los da.
+const METRICAS_CARRUSEL = ['views', 'reach', 'likes', 'comments', 'shares', 'saved', 'follows', 'profile_visits'];
 if (!TOKEN) { console.error('Falta IG_TOKEN (ver docs/metricas-api.md).'); process.exit(1); }
 
 // --- utilidades ---
@@ -56,9 +58,9 @@ catch (e) { // algunos tokens del «Unified login» solo funcionan en graph.face
 }
 console.log(`@${me.username} · ${me.followers_count} seguidores · ${FB ? 'token de Facebook' : 'token de Instagram'}`);
 const reels = [];
-for (let url = `/${me.user_id}/media`, p = { fields: 'id,caption,media_product_type,timestamp,permalink', limit: '50' }; url && reels.length < 200;) {
+for (let url = `/${me.user_id}/media`, p = { fields: 'id,caption,media_product_type,media_type,timestamp,permalink', limit: '50' }; url && reels.length < 200;) {
   const j = await get(url, p);
-  reels.push(...j.data.filter((m) => m.media_product_type === 'REELS'));
+  reels.push(...j.data.filter((m) => m.media_product_type === 'REELS' || m.media_type === 'CAROUSEL_ALBUM'));
   url = j.paging?.next; p = {};
   if (j.data.length && new Date(j.data.at(-1).timestamp) < Date.now() - 60 * 864e5) break; // basta con 60 días
 }
@@ -103,11 +105,12 @@ for (const m of reels) {
 
 // --- 3. insights por reel ---
 async function insights(id) {
+  const met = reels.find((r) => r.id === id)?.media_type === 'CAROUSEL_ALBUM' ? METRICAS_CARRUSEL : METRICAS;
   const leer = (j) => Object.fromEntries(j.data.map((d) => [d.name, d.values?.[0]?.value ?? d.total_value?.value ?? null]));
-  try { return leer(await get(`/${id}/insights`, { metric: METRICAS.join(',') })); }
+  try { return leer(await get(`/${id}/insights`, { metric: met.join(',') })); }
   catch { // una métrica no disponible tumba la llamada entera → una a una
     const o = {};
-    for (const k of METRICAS) { try { Object.assign(o, leer(await get(`/${id}/insights`, { metric: k }))); } catch (e) { o[k] = null; o._faltan = [...(o._faltan || []), k]; o._error ||= e.message; } }
+    for (const k of met) { try { Object.assign(o, leer(await get(`/${id}/insights`, { metric: k }))); } catch (e) { o[k] = null; o._faltan = [...(o._faltan || []), k]; o._error ||= e.message; } }
     return o;
   }
 }
