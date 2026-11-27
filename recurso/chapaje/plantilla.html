@@ -50,6 +50,10 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
 .res.mal{border-left-color:var(--ko)}
 .res h2{margin-bottom:4px}
 .oculto{display:none!important}
+.vid{font-size:.9rem;margin:.2em 0 0}.vid a{color:var(--suave);text-underline-offset:3px}
+.lamina.flip svg{animation:flip .35s ease}@keyframes flip{50%{transform:scaleX(0)}}
+.diente{animation:vuela 1s cubic-bezier(.2,.7,.3,1) both;transform-box:fill-box}@keyframes vuela{from{transform:translate(-90px,90px) scale(.3);opacity:0}}
+.fila{display:flex;gap:10px;margin-top:12px}.fila button{margin:0}
 .intro{padding-top:6vh}
 .intro .sub{font-size:1.15rem;color:var(--suave);margin:14px 0 26px}
 .intro .linea{height:8px;border-radius:4px;background:var(--cuerda);width:64px;margin:0 0 22px}
@@ -81,7 +85,7 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
     <p class="pista" id="pista"></p>
     <div id="ops"></div>
     <div id="res" class="res oculto" aria-live="polite"><h2 id="veredicto"></h2><p id="ko"></p><p id="exp"></p>
-      <button class="sec oculto" id="verBien">Ver cómo es bien</button>
+      <p id="vid" class="vid oculto"></p><button class="sec oculto" id="verBien">Ver cómo es bien</button>
       <button class="prim" id="sig" style="margin-top:12px">Siguiente</button></div>
   </section>
 
@@ -102,26 +106,27 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
 </main>
 <script>
 /*DATOS*/
-const REELS = { E59: { t: "La segunda chapa", url: "" }, E64: { t: "Cómo chapar: 3 errores", url: "" } }; // pegar los enlaces de los reels
+const REELS = { E59: { t: "La segunda chapa", url: "https://www.instagram.com/reel/DfxoDdFI852/" }, E64: { t: "Cómo chapar: 3 errores", url: "https://www.instagram.com/reel/Df7yKAaotCB/" }, E72: { t: "¿Miedo a caer? Se quita cayendo", url: "https://www.instagram.com/reel/DgA6kmgoiyZ/" } };
 const PERFIL = "https://www.instagram.com/ultimo.pegue/";
 const $ = (id) => document.getElementById(id);
 let i = 0, fallos = [], pump = 100, giro = 0, hecho = false;
 
 function mostrar(id) { for (const s of ["inicio", "juego", "final"]) $(s).classList.toggle("oculto", s !== id); window.scrollTo(0, 0); }
-function lamina(svg) { const l = $("lamina"); l.classList.add("fuera"); setTimeout(() => { l.innerHTML = svg; l.classList.remove("fuera"); enlazar(); }, svg === l.dataset.svg ? 0 : 180); l.dataset.svg = svg; }
+function lamina(svg, gira) { const l = $("lamina"); if (gira) { l.innerHTML = svg; l.dataset.svg = svg; l.classList.remove("flip"); void l.offsetWidth; l.classList.add("flip"); return; } l.classList.add("fuera"); setTimeout(() => { l.innerHTML = svg; l.classList.remove("fuera"); enlazar(); }, svg === l.dataset.svg ? 0 : 180); l.dataset.svg = svg; }
 function enlazar() {
   const e = ESCENAS[i];
   if (e.tipo === "toca") $("lamina").querySelectorAll("[data-op]").forEach((h) => h.addEventListener("click", () => responder(+h.dataset.op)));
 }
-$("lamina").addEventListener("click", () => { const e = ESCENAS[i]; if (e.tipo !== "gira" || hecho) return; giro = 1 - giro; lamina(giro ? e.svg.base2 : e.svg.base); });
+function girar() { const e = ESCENAS[i]; if (e.tipo !== "gira" || hecho) return; giro = 1 - giro; lamina(giro ? e.svg.base2 : e.svg.base, true); }
+$("lamina").addEventListener("click", girar);
 function escena() {
   const e = ESCENAS[i]; hecho = false; giro = 0; $("lamina").classList.toggle("gira-on", e.tipo === "gira");
   $("paso").textContent = `${i + 1}/${ESCENAS.length}`; $("titulo").textContent = e.titulo; $("preg").textContent = e.pregunta;
-  $("pista").textContent = e.tipo === "toca" ? "Toca en el dibujo." : e.tipo === "gira" ? "Toca el mosquetón para girarlo." : "";
-  $("res").classList.add("oculto"); $("verBien").classList.add("oculto");
+  $("pista").textContent = e.tipo === "toca" ? "Toca en el dibujo." : "";
+  $("res").classList.add("oculto"); $("verBien").classList.add("oculto"); $("vid").classList.add("oculto");
   const ops = $("ops"); ops.innerHTML = "";
   if (e.tipo === "elige") e.opciones.forEach((t, k) => { const b = document.createElement("button"); b.className = "op"; b.textContent = t; b.onclick = () => responder(k, b); ops.appendChild(b); });
-  if (e.tipo === "gira") { const b = document.createElement("button"); b.className = "prim"; b.textContent = "Comprobar"; b.style.marginTop = "12px"; b.onclick = () => responder(giro); ops.appendChild(b); }
+  if (e.tipo === "gira") { const f = document.createElement("div"); f.className = "fila"; const g = document.createElement("button"); g.className = "sec"; g.textContent = "↺ Girar mosquetón"; g.onclick = girar; const b = document.createElement("button"); b.className = "prim"; b.textContent = "Comprobar"; b.onclick = () => responder(giro); f.append(g, b); ops.appendChild(f); }
   $("lamina").dataset.svg = ""; lamina(e.svg.base);
 }
 function responder(k, boton) {
@@ -132,11 +137,13 @@ function responder(k, boton) {
   if (e.tipo === "elige") { [...$("ops").children].forEach((b, n) => { b.disabled = true; if (n === e.ok) b.classList.add("ok"); else if (n === k) b.classList.add("ko"); }); }
   if (e.tipo === "toca") $("lamina").querySelectorAll("[data-op]").forEach((h) => { if (+h.dataset.op === e.ok) h.classList.add("ok"); else if (+h.dataset.op === k) h.classList.add("ko"); });
   if (e.tipo === "gira") $("ops").innerHTML = "";
-  const tras = bien ? e.svg.bien : e.svg.mal; if (tras) lamina(tras);
-  if (!bien && e.svg.bien && e.svg.bien !== e.svg.mal) { const v = $("verBien"); v.classList.remove("oculto"); v.onclick = () => { lamina(e.svg.bien); v.classList.add("oculto"); }; }
-  if (!bien && e.tipo === "gira") { const v = $("verBien"); v.classList.remove("oculto"); v.onclick = () => { lamina(e.svg.base2); v.classList.add("oculto"); }; }
+  const malK = e.svg["mal" + k] || e.svg.mal, buena = e.tipo === "gira" ? e.svg.base2 : e.svg.bien, mala = e.tipo === "gira" ? e.svg.base : (bien ? e.svg.mal : malK);
+  const tras = bien ? e.svg.bien : malK; if (tras) lamina(tras);
+  if (buena && mala && buena !== mala) { const v = $("verBien"); let enBuena = bien; const txt = () => v.textContent = enBuena ? (e.tipo === "gira" ? "Ver la puerta al revés" : e.ver || "Ver qué pasa si lo haces mal") : "Ver cómo es bien";
+    txt(); v.classList.remove("oculto"); v.onclick = () => { enBuena = !enBuena; lamina(enBuena ? buena : mala); txt(); }; }
+  const r = e.video && REELS[e.video]; if (r) { $("vid").innerHTML = `<a href="${r.url}" target="_blank" rel="noopener">Lo explicamos en «${r.t}» →</a>`; $("vid").classList.remove("oculto"); }
   $("veredicto").textContent = bien ? "¡Bien chapada!" : "Ojo aquí";
-  $("ko").textContent = bien ? "" : e.ko; $("ko").classList.toggle("oculto", bien);
+  $("ko").textContent = bien ? "" : (e.kos && e.kos[k]) || e.ko; $("ko").classList.toggle("oculto", bien);
   $("exp").textContent = e.exp;
   $("res").classList.toggle("mal", !bien); $("res").classList.remove("oculto");
   $("sig").textContent = i === ESCENAS.length - 1 ? "Ver mi resultado" : "Siguiente";

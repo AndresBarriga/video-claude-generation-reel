@@ -5,17 +5,24 @@
 - **Captación:** comentario fijado en E59 y E64 (y pie del próximo vídeo de chapar): «Comenta TEST…» → Meta Business Suite, Comment to message (variantes TEST/test/Test) → DM con el enlace. Probar antes desde otra cuenta con frases («quiero el test»).
 - **Alojamiento:** Netlify Drop (arrastrar la carpeta con `index.html`), URL anónima tipo `ultimopegue.netlify.app`. No GitHub Pages de esta cuenta (nombre real y expondría el dashboard).
 
+## Cambios V1.1 (27-nov, revisión de Andrés)
+- Siempre se puede ver la otra versión (buena o mala) tras responder; sin «volver atrás». Enlace discreto al reel en las escenas 1, 7 (E59), 4, 5, 6 (E64) y 9 (E72).
+- 1: tres opciones (chapar estirado / subir con cuerda sacada / buscar la buena posición). 2–3: chapas juntas (la última cinta a la altura de la cadera) y el Z-clip como consecuencia. 5: botón «Girar mosquetón» con animación. 6: la misma goma visible en las dos. 7: «la aguanto con los dientes» + diente volando (E59). 8: rehecha (ver abajo). 9: opciones nuevas.
+- **8 cambia de mensaje:** «nunca metas los dedos» no se sostiene: REI enseña la técnica de pinza empujando la cuerda y el índice a través de la puerta, y Petzl dice que en mosquetones grandes se puede meter un dedo para estabilizarlo y en los pequeños es mejor por fuera. La escena enseña eso.
+
 ## Pendiente antes de publicar
-- [ ] Revisión de los dibujos 3, 4, 5 y 8 por alguien que enseñe escalada deportiva.
-- [ ] Verificar fuentes de las escenas nuevas (2, 3, 8, 9): Cornell, USA Climbing, Petzl (dedos según modelo), BMC y Schöffl y Küpper 2008. Vienen del borrador del 27-nov sin comprobar aquí.
-- [ ] Enlaces de los reels E59 y E64 en `REELS` (plantilla.html).
-- [ ] Opcional: código de GoatCounter (sin cookies) para contar visitas y notas.
+- [ ] Revisión con escaladores (Andrés), sobre todo los dibujos 3, 4, 5 y 8.
+- [ ] Sin verificar aquí: escena 9 (no agarrar la cinta al caer: BMC; Schöffl y Küpper 2008).
+- [ ] Opcional: código de GoatCounter (sin cookies).
 
 ## Respaldo
 | Escena | Afirmación | Fuente |
 |---|---|---|
-| 1, 7 | Chapar estirado = misma caída empezando más abajo; cuerda en la boca = dientes | E59 (ficha) · AAC (cintura o pecho) |
-| 4, 5, 6 | Back-clip, puerta al lado contrario, goma abajo y no dar la vuelta | E64 (ficha) |
-| 2, 3 | Coger desde el nudo; Z-clip: detectar y corregir (sin dar una maniobra única) | Cornell; USA Climbing — **sin verificar** |
-| 8 | Dedos fuera de la puerta; técnica según modelo | Petzl — **sin verificar** |
-| 9 | No agarrar la cinta al caer (lesiones en la mano) | BMC; Schöffl y Küpper 2008 — **sin verificar** |
+| 1 | Busca una posición estable; chapar muy por encima o con un alcance muy largo = más cuerda fuera y caída más larga | REI, «How to clip quickdraws» · E59 |
+| 2, 3 | Coger desde el nudo deslizando la mano; el Z-clip pasa con chapas juntas al coger la cuerda por debajo de la cinta anterior | REI |
+| 4 | La cuerda pasa del lado de la pared hacia fuera; si no, al caer puede abrir la puerta y salirse | Petzl, «Positioning the quickdraw and clipping the rope» · REI · E64 |
+| 5 | La puerta del mosquetón de la cuerda, hacia el lado contrario de la dirección de avance (las dos puertas de la cinta, al mismo lado) | Petzl (misma página) · REI · E64 |
+| 6 | Mosquetón de la chapa libre (sin goma); el de la cuerda, fijo (con goma); nunca dos gomas | Petzl (misma página) · E64 |
+| 7 | Cuerda en la boca = dientes | E59 |
+| 8 | Dedo dentro según tamaño del mosquetón | Petzl (misma página) · REI (técnica de pinza) |
+| 9 | No agarrar la cinta al caer | BMC; Schöffl y Küpper 2008 — **sin verificar** |
