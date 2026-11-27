@@ -64,7 +64,7 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
 .nota{color:var(--suave);font-size:.8rem;margin-top:28px}
 .campo{display:block;font-weight:700;margin:10px 0}.campo input{display:block;width:100%;margin-top:6px;font:500 1rem F;padding:14px;border-radius:12px;border:2px solid var(--linea);background:var(--fondo);color:var(--tinta)}
 .check{display:flex;gap:10px;font-size:.9rem;margin:8px 0 14px;align-items:flex-start}.check input{width:22px;height:22px;flex:none;margin-top:2px}
-.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tinta);color:var(--fondo);padding:10px 16px;border-radius:12px;font-weight:700}
+.toast{max-width:90vw;text-align:center;position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tinta);color:var(--fondo);padding:10px 16px;border-radius:12px;font-weight:700}
 </style>
 </head>
 <body>
@@ -208,6 +208,10 @@ async function compartir() {
 }
 $("empezar").onclick = () => { mostrar("juego"); escena(); };
 $("sig").onclick = () => { i < ESCENAS.length - 1 ? (i++, escena(), window.scrollTo(0, 0)) : final(); };
+// Vuelta desde Brevo: ?pendiente=1 (tras enviar el formulario) · ?suscrito=1 (tras confirmar en el email)
+const q = new URLSearchParams(location.search);
+if (q.has("pendiente")) setTimeout(() => aviso("Revisa tu email y confirma la suscripción"), 400);
+if (q.has("suscrito")) setTimeout(() => aviso("¡Suscripción confirmada!"), 400);
 $("compartir").onclick = compartir; $("bajar").onclick = bajar; $("story").onclick = story;
 if (SUSCRIPCION.url) { const f = $("suscribir"); f.action = SUSCRIPCION.url; $("email").name = SUSCRIPCION.campo; f.classList.remove("oculto"); }
 $("seguir").onclick = () => window.open(PERFIL, "_blank", "noopener");
