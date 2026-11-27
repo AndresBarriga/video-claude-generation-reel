@@ -76,7 +76,8 @@ const Z = (zeta: boolean) => (
 );
 
 // Escena 4 · back-clip (geometría de E64). Dos paneles; el de la derecha es el back-clip.
-const c4 = { x: 470, y: -150, puerta: "der" as const, giro: -6 }, t4 = tramos(c4);
+// La cuerda sale hacia arriba a la derecha → puerta a la izquierda (misma regla que la escena 5).
+const c4 = { x: 470, y: -150, puerta: "izq" as const, giro: -6 }, t4 = tramos(c4);
 const panel4 = (back: boolean, op: number, dx: number) => (
   <g transform={`translate(${dx} 0)`}><g>{cintaBien(c4, back)}</g>
     <rect data-op={op} className="hot box" x={t4.ab.x - 330} y={t4.ab.y - 680} width={760} height={1160} rx={40} fill="transparent" stroke="transparent" strokeWidth={24} /></g>

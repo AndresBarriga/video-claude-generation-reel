@@ -31,7 +31,6 @@ button{font:700 1rem/1.2 F,system-ui,sans-serif;color:inherit;cursor:pointer;bor
 .cab{display:flex;align-items:center;gap:12px;margin-bottom:10px}
 .cab .n{font:700 .95rem F;color:var(--suave);white-space:nowrap}
 .barra{flex:1}
-.barra small{display:block;font:700 .72rem F;letter-spacing:.06em;color:var(--suave)}
 .barra i{display:block;height:10px;border-radius:6px;background:var(--linea);overflow:hidden}
 .barra b{display:block;height:100%;background:var(--cuerda);transition:width .6s}
 .lamina{position:relative;border-radius:18px;overflow:hidden;background:#EAF1F6;border:2px solid var(--linea)}
@@ -63,6 +62,8 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
 .fallos a{color:var(--cuerdaS);font-weight:700}
 .chuleta img{width:100%;border-radius:14px;display:block;margin-top:12px;border:2px solid var(--linea)}
 .nota{color:var(--suave);font-size:.8rem;margin-top:28px}
+.campo{display:block;font-weight:700;margin:10px 0}.campo input{display:block;width:100%;margin-top:6px;font:500 1rem F;padding:14px;border-radius:12px;border:2px solid var(--linea);background:var(--fondo);color:var(--tinta)}
+.check{display:flex;gap:10px;font-size:.9rem;margin:8px 0 14px;align-items:flex-start}.check input{width:22px;height:22px;flex:none;margin-top:2px}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tinta);color:var(--fondo);padding:10px 16px;border-radius:12px;font-weight:700}
 </style>
 </head>
@@ -78,7 +79,7 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
 
   <section id="juego" class="oculto">
     <div class="cab"><span class="n" id="paso">1/9</span>
-      <div class="barra"><small>ANTEBRAZOS</small><i><b id="pump" style="width:100%"></b></i></div></div>
+      <div class="barra"><i><b id="prog" style="width:0%"></b></i></div><span class="n" id="pumpTxt">antebrazos 100 %</span></div>
     <h2 id="titulo"></h2>
     <div class="lamina" id="lamina"></div>
     <p class="preg" id="preg"></p>
@@ -96,9 +97,18 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
     <p id="resumen"></p>
     <ul class="fallos" id="fallos"></ul>
     <button class="prim" id="compartir">Pásaselo a quien te asegura y comparad nota</button>
+    <button class="sec" id="story">Compartir mi nota en stories</button>
     <div class="chuleta"><h2 style="margin-top:26px">Tu chuleta</h2><p class="pista">«Chapar sin errores: 6 cosas que comprobar». Guárdala en el móvil.</p>
       <img id="chImg" alt="Chuleta: chapar sin errores, 6 cosas que comprobar">
-      <button class="sec" id="bajar">Descargar la chuleta</button></div>
+      <button class="sec" id="bajar">Guardar o compartir la chuleta</button></div>
+    <form id="suscribir" class="res oculto" method="post" target="_blank" style="border-left-color:var(--cuerda)">
+      <h2>¿Quieres recibir más recursos como este?</h2>
+      <p>Estamos preparando nuevos tests, guías y recursos prácticos para escaladores. Te avisamos por email cuando publiquemos algo nuevo.</p>
+      <label class="campo">Email<input type="email" required autocomplete="email" id="email"></label>
+      <label class="check"><input type="checkbox" required> Sí, quiero recibir novedades y recursos gratuitos sobre escalada por email. Puedo darme de baja cuando quiera.</label>
+      <button class="prim" type="submit">Suscribirme</button>
+      <p class="nota" style="margin-top:8px">Consulta nuestra <a href="privacidad.html">política de privacidad</a>.</p>
+    </form>
     <button class="sec" id="seguir">Seguir a @ultimo.pegue</button>
     <button class="sec" id="otra">Volver a empezar</button>
     <p class="nota">Fuentes: Petzl; American Alpine Club; Cornell Outdoor Education; USA Climbing; British Mountaineering Council; Schöffl y Küpper, <i>Wilderness &amp; Environmental Medicine</i> (2008). Material de repaso: no sustituye aprender con alguien con experiencia.</p>
@@ -108,6 +118,8 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
 /*DATOS*/
 const REELS = { E59: { t: "La segunda chapa", url: "https://www.instagram.com/reel/DfxoDdFI852/" }, E64: { t: "Cómo chapar: 3 errores", url: "https://www.instagram.com/reel/Df7yKAaotCB/" }, E72: { t: "¿Miedo a caer? Se quita cayendo", url: "https://www.instagram.com/reel/DgA6kmgoiyZ/" } };
 const PERFIL = "https://www.instagram.com/ultimo.pegue/";
+// Email opcional: pega aquí la URL del formulario del proveedor (MailerLite, Brevo…) y el nombre de su campo de email. Vacío = no se muestra.
+const SUSCRIPCION = { url: "", campo: "email" };
 const $ = (id) => document.getElementById(id);
 let i = 0, fallos = [], pump = 100, giro = 0, hecho = false;
 
@@ -121,7 +133,7 @@ function girar() { const e = ESCENAS[i]; if (e.tipo !== "gira" || hecho) return;
 $("lamina").addEventListener("click", girar);
 function escena() {
   const e = ESCENAS[i]; hecho = false; giro = 0; $("lamina").classList.toggle("gira-on", e.tipo === "gira");
-  $("paso").textContent = `${i + 1}/${ESCENAS.length}`; $("titulo").textContent = e.titulo; $("preg").textContent = e.pregunta;
+  $("paso").textContent = `${i + 1}/${ESCENAS.length}`; $("prog").style.width = (i / ESCENAS.length) * 100 + "%"; $("titulo").textContent = e.titulo; $("preg").textContent = e.pregunta;
   $("pista").textContent = e.tipo === "toca" ? "Toca en el dibujo." : "";
   $("res").classList.add("oculto"); $("verBien").classList.add("oculto"); $("vid").classList.add("oculto");
   const ops = $("ops"); ops.innerHTML = "";
@@ -133,7 +145,7 @@ function responder(k, boton) {
   if (hecho) return; hecho = true;
   const e = ESCENAS[i], bien = k === e.ok;
   if (!bien) fallos.push(e);
-  pump = Math.max(12, pump - (bien ? 5 : 13)); $("pump").style.width = pump + "%";
+  pump = Math.max(12, pump - (bien ? 5 : 13)); $("pumpTxt").textContent = `antebrazos ${pump} %`; $("prog").style.width = ((i + 1) / ESCENAS.length) * 100 + "%";
   if (e.tipo === "elige") { [...$("ops").children].forEach((b, n) => { b.disabled = true; if (n === e.ok) b.classList.add("ok"); else if (n === k) b.classList.add("ko"); }); }
   if (e.tipo === "toca") $("lamina").querySelectorAll("[data-op]").forEach((h) => { if (+h.dataset.op === e.ok) h.classList.add("ok"); else if (+h.dataset.op === k) h.classList.add("ko"); });
   if (e.tipo === "gira") $("ops").innerHTML = "";
@@ -166,11 +178,27 @@ function chuletaSVG() {
   <path d="M80 1250 Q300 1210 540 1250 T1000 1250" stroke="#FF6A1F" stroke-width="12" fill="none" stroke-linecap="round"/><text x="80" y="1310" font-family="F" font-weight="700" font-size="34" fill="#5A6472">@ultimo.pegue</text></svg>`;
 }
 function chuleta() { $("chImg").src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(chuletaSVG()); }
-function bajar() {
-  const img = new Image(); img.onload = () => { const c = document.createElement("canvas"); c.width = 1080; c.height = 1350; c.getContext("2d").drawImage(img, 0, 0);
-    c.toBlob((b) => { const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = "chuleta-chapar-ultimo-pegue.png"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); }); };
-  img.src = $("chImg").src;
+function png(svg, w, h) { return new Promise((ok) => { const img = new Image(); img.onload = () => { const c = document.createElement("canvas"); c.width = w; c.height = h; c.getContext("2d").drawImage(img, 0, 0); c.toBlob(ok, "image/png"); }; img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg); }); }
+// En el móvil abre el menú de compartir (Instagram → Historia); si no se puede, la descarga.
+async function compartirImagen(svg, w, h, nombre) {
+  const b = await png(svg, w, h), f = new File([b], nombre, { type: "image/png" });
+  try { if (navigator.canShare && navigator.canShare({ files: [f] })) { await navigator.share({ files: [f] }); return; } } catch (e) { if (e.name === "AbortError") return; }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = nombre; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); aviso("Imagen guardada");
 }
+function storySVG() {
+  const n = ESCENAS.length - fallos.length, et = $("etiqueta").textContent;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><style>${FF}</style><rect width="1080" height="1920" fill="#F4EFE6"/>
+  <path d="M-40 1500 Q300 1380 540 1480 T1120 1440" stroke="#FF6A1F" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <text x="90" y="330" font-family="F" font-weight="700" font-size="50" fill="#5A6472">Test de chapaje</text>
+  <text x="90" y="460" font-family="B" font-weight="800" font-size="96" fill="#0B1624">¿Chapas bien?</text>
+  <text x="90" y="830" font-family="B" font-weight="800" font-size="340" fill="#FF6A1F">${n}/9</text>
+  <text x="90" y="960" font-family="B" font-weight="800" font-size="58" fill="#0B1624">${et.length > 30 ? et.slice(0, et.lastIndexOf(" ", 30)) : et}</text>
+  <text x="90" y="1035" font-family="B" font-weight="800" font-size="58" fill="#0B1624">${et.length > 30 ? et.slice(et.lastIndexOf(" ", 30) + 1) : ""}</text>
+  <text x="90" y="1660" font-family="F" font-weight="700" font-size="52" fill="#0B1624">¿Y tú? Haz el test:</text>
+  <text x="90" y="1740" font-family="F" font-weight="700" font-size="52" fill="#B8460E">enlace en la bio de @ultimo.pegue</text></svg>`;
+}
+const bajar = () => compartirImagen(chuletaSVG(), 1080, 1350, "chuleta-chapar-ultimo-pegue.png");
+const story = () => compartirImagen(storySVG(), 1080, 1920, "mi-nota-chapaje-ultimo-pegue.png");
 function aviso(t) { const d = document.createElement("div"); d.className = "toast"; d.textContent = t; document.body.appendChild(d); setTimeout(() => d.remove(), 2200); }
 async function compartir() {
   const n = ESCENAS.length - fallos.length, datos = { title: "¿Chapas bien?", text: `He sacado ${n}/9 en el test de chapaje de @ultimo.pegue. ¿Y tú?`, url: location.href.split("#")[0] };
@@ -178,9 +206,10 @@ async function compartir() {
 }
 $("empezar").onclick = () => { mostrar("juego"); escena(); };
 $("sig").onclick = () => { i < ESCENAS.length - 1 ? (i++, escena(), window.scrollTo(0, 0)) : final(); };
-$("compartir").onclick = compartir; $("bajar").onclick = bajar;
+$("compartir").onclick = compartir; $("bajar").onclick = bajar; $("story").onclick = story;
+if (SUSCRIPCION.url) { const f = $("suscribir"); f.action = SUSCRIPCION.url; $("email").name = SUSCRIPCION.campo; f.classList.remove("oculto"); }
 $("seguir").onclick = () => window.open(PERFIL, "_blank", "noopener");
-$("otra").onclick = () => { i = 0; fallos = []; pump = 100; $("pump").style.width = "100%"; mostrar("juego"); escena(); };
+$("otra").onclick = () => { i = 0; fallos = []; pump = 100; $("pumpTxt").textContent = "antebrazos 100 %"; mostrar("juego"); escena(); };
 </script>
 </body>
 </html>

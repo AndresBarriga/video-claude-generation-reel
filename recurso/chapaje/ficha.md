@@ -10,6 +10,12 @@
 - 1: tres opciones (chapar estirado / subir con cuerda sacada / buscar la buena posición). 2–3: chapas juntas (la última cinta a la altura de la cadera) y el Z-clip como consecuencia. 5: botón «Girar mosquetón» con animación. 6: la misma goma visible en las dos. 7: «la aguanto con los dientes» + diente volando (E59). 8: rehecha (ver abajo). 9: opciones nuevas.
 - **8 cambia de mensaje:** «nunca metas los dedos» no se sostiene: REI enseña la técnica de pinza empujando la cuerda y el índice a través de la puerta, y Petzl dice que en mosquetones grandes se puede meter un dedo para estabilizarlo y en los pequeños es mejor por fuera. La escena enseña eso.
 
+## Cambios V1.2
+- Escena 4: la puerta pasa a la izquierda en las dos cintas (la cuerda sale hacia arriba a la derecha), coherente con la escena 5. **Ojo: en E64 (BackClip) la puerta mira hacia donde sale la cuerda**; revisar si se reutiliza esa escena.
+- Barra de progreso de verdad (avanza hasta 9/9); los antebrazos quedan como dato pequeño.
+- Final: «Compartir mi nota en stories» (imagen 1080 × 1920) y la chuleta también se comparte. En el móvil abre el menú de compartir (Instagram → Historia); si no, se descarga.
+- Email opcional al final: formulario oculto hasta rellenar `SUSCRIPCION.url` (proveedor con doble confirmación). Necesita `privacidad.html` antes de activarlo.
+
 ## Pendiente antes de publicar
 - [ ] Revisión con escaladores (Andrés), sobre todo los dibujos 3, 4, 5 y 8.
 - [ ] Sin verificar aquí: escena 9 (no agarrar la cinta al caer: BMC; Schöffl y Küpper 2008).
