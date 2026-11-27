@@ -105,6 +105,7 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
       <h2>¿Quieres recibir más recursos como este?</h2>
       <p>Estamos preparando nuevos tests, guías y recursos prácticos para escaladores. Te avisamos por email cuando publiquemos algo nuevo.</p>
       <label class="campo">Email<input type="email" required autocomplete="email" id="email"></label>
+      <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><input type="hidden" name="locale" value="es">
       <label class="check"><input type="checkbox" required> Sí, quiero recibir novedades y recursos gratuitos sobre escalada por email. Puedo darme de baja cuando quiera.</label>
       <button class="prim" type="submit">Suscribirme</button>
       <p class="nota" style="margin-top:8px">Consulta nuestra <a href="privacidad.html">política de privacidad</a>.</p>
@@ -118,8 +119,9 @@ path.hot.ok,path.hot.ko{stroke-opacity:.55}
 /*DATOS*/
 const REELS = { E59: { t: "La segunda chapa", url: "https://www.instagram.com/reel/DfxoDdFI852/" }, E64: { t: "Cómo chapar: 3 errores", url: "https://www.instagram.com/reel/Df7yKAaotCB/" }, E72: { t: "¿Miedo a caer? Se quita cayendo", url: "https://www.instagram.com/reel/DgA6kmgoiyZ/" } };
 const PERFIL = "https://www.instagram.com/ultimo.pegue/";
-// Email opcional: pega aquí la URL del formulario del proveedor (MailerLite, Brevo…) y el nombre de su campo de email. Vacío = no se muestra.
-const SUSCRIPCION = { url: "", campo: "email" };
+// Email opcional (Brevo): en Brevo → Formularios → tu formulario → «Insertar» → HTML, copia la URL del atributo action="…" del <form> y pégala aquí.
+// Vacío = el bloque no se muestra. La doble confirmación se activa en el propio formulario de Brevo.
+const SUSCRIPCION = { url: "", campo: "EMAIL" };
 const $ = (id) => document.getElementById(id);
 let i = 0, fallos = [], pump = 100, giro = 0, hecho = false;
 

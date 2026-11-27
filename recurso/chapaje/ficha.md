@@ -14,7 +14,7 @@
 - Escena 4: la puerta pasa a la izquierda en las dos cintas (la cuerda sale hacia arriba a la derecha), coherente con la escena 5. **Ojo: en E64 (BackClip) la puerta mira hacia donde sale la cuerda**; revisar si se reutiliza esa escena.
 - Barra de progreso de verdad (avanza hasta 9/9); los antebrazos quedan como dato pequeño.
 - Final: «Compartir mi nota en stories» (imagen 1080 × 1920) y la chuleta también se comparte. En el móvil abre el menú de compartir (Instagram → Historia); si no, se descarga.
-- Email opcional al final: formulario oculto hasta rellenar `SUSCRIPCION.url` (proveedor con doble confirmación). Necesita `privacidad.html` antes de activarlo.
+- Email opcional al final con Brevo (gratis, UE, doble confirmación): formulario oculto hasta rellenar `SUSCRIPCION.url`. `privacidad.html` hecha, con huecos [NOMBRE…] por rellenar; no es asesoramiento legal (revisar también si hace falta Impressum).
 
 ## Pendiente antes de publicar
 - [ ] Revisión con escaladores (Andrés), sobre todo los dibujos 3, 4, 5 y 8.
