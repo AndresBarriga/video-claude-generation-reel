@@ -21,7 +21,7 @@ export const ESCENAS: Escena[] = [
     exp: "Es un Z-clip: la cuerda sube a la cinta de arriba, baja a la de abajo y vuelve a subir. Hay más de una forma de corregirlo según cómo haya quedado; si dudas, que te lo enseñe alguien con experiencia. Al final, la cuerda pasa por las dos cintas en orden y sin back-clip." },
   { n: 4, titulo: "¿Está bien chapada?", tipo: "toca", ok: 1, video: "E64",
     pregunta: "Una de estas dos cintas está en back-clip. Tócala.",
-    ko: "Esa está bien: la cuerda de quien asegura entra por detrás, por el lado de la pared, y la de tu arnés sale por delante.",
+    ko: "No: esa está bien chapada. El back-clip es la B: ahí la cuerda de tu arnés queda por detrás.",
     exp: "En el back-clip es al revés: el tramo de tu arnés queda por detrás. Al caer, la cuerda puede pasar por encima de la puerta, abrirla y salirse." },
   { n: 5, titulo: "La puerta del mosquetón", tipo: "gira", ok: 1, video: "E64",
     pregunta: "La vía sigue hacia la derecha. ¿Hacia dónde tiene que mirar la puerta? Gira el mosquetón con el botón y comprueba.",
