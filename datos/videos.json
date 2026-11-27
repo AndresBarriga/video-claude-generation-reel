@@ -189,5 +189,9 @@
  "E80": {
   "corto": "Lo que NO es una frenada blanda",
   "desc": "Lo que NO es una frenada blanda (Caer y asegurar 2/3): Dani dice tres creencias (más cuerda, saltar, blanda siempre); cada una cae mal y se ve lo que sí es: acompañar el tirón con cuerda justa y nada debajo. Acantilado sobre el mar."
+ },
+ "E82": {
+  "corto": "No eres débil: aprietas demasiado",
+  "desc": "Réplica de estructura de @climb_at_life: no te cargas por falta de fuerza sino por apretar de más con los brazos doblados; 3 reglas para colgarte gastando menos (según propuesta v3; ficha pendiente en el chat de producción)."
  }
 }

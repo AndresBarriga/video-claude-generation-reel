@@ -90,8 +90,8 @@ Cuenta: 3.906 seguidores, +3.765 netos en 30 días, 1,49 M vistas. Por seguidore
 ## 27-nov 15:30 · Instagram + TikTok + YouTube Shorts (grabación y capturas de Andrés)
 **Datos de TikTok/YouTube en `datos/otras-redes.csv`** (a mano; no en `publicados.csv`, porque el Action y el dashboard mezclarían plataformas por id). YouTube: solo los 5 Shorts visibles de 21; TikTok: 8 publicaciones; hay otro programado el 27-nov 20:10 (0:52, sin ID).
 
-**Instagram** · 1,7 M visualizaciones en 30 días (dashboard). Cuadrícula: E63 300K (9.936 likes, 14 comentarios, 114 reposts, 1.693 envíos = 0,56 %) · E59 288K · E46 ≈98K · E64 72,8K · E79 57,6K (2,3K likes, 3 comentarios, 83 reposts, 758 guardados = 1,3 %). Comentarios ≈0 en todos (E63: tasa 0,0 %). E63, curva sin cambios frente al 21-nov (≈95 % a 2 s, ≈50 % a 30 s, ≈44 % a 47 s, caída final a ≈15 %); fuentes: Reels 79,1 %, Explorar 16,8 %, Feed 2,3 %.
-- Un reel de pump (0:58, 21,7K) con curva: cae de 100 % a ≈52 % en ~6 s y luego casi plana (≈45→38 %), final ≈15 %; fuentes Reels 77,5 %, Explorar 10,3 %, Feed 9,2 %. **ID sin confirmar** (E69/E69B/E43): no se asocia a ninguna ficha.
+**Instagram** · 4.761 seguidores (dato de Andrés, 15:45; 3.906 el 23-nov) · 1,7 M visualizaciones en 30 días (dashboard). Cuadrícula: E63 300K (9.936 likes, 14 comentarios, 114 reposts, 1.693 envíos = 0,56 %) · E59 288K · E46 ≈98K · E64 72,8K · E79 57,6K (2,3K likes, 3 comentarios, 83 reposts, 758 guardados = 1,3 %). Comentarios ≈0 en todos (E63: tasa 0,0 %). E63, curva sin cambios frente al 21-nov (≈95 % a 2 s, ≈50 % a 30 s, ≈44 % a 47 s, caída final a ≈15 %); fuentes: Reels 79,1 %, Explorar 16,8 %, Feed 2,3 %.
+- **E82 No eres débil: aprietas demasiado** (subido 26-nov, 0:58): 21,7K a ~19 h (edad aprox.; E64 tenía 42,8K a 14 h). **Curva:** ≈78 % a 2 s, ≈55 % a 8 s (se pierde casi la mitad en el arranque, como E64 ≈48 % a 9 s) y luego casi plana 48→36 % hasta 49 s; caída final a ≈14 %. Cuerpo retiene, arranque cuesta. Fuentes: Reels 77,5 %, Explorar 10,3 %, Feed 9,2 %. Skip, guardados y envíos: vendrán por API.
 
 | Vídeo | IG | TikTok | YouTube |
 |---|---|---|---|
