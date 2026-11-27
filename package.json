@@ -21,7 +21,8 @@
     "ig": "node tools/ig-metricas.mjs",
     "qa-final": "node tools/qa-final.mjs",
     "verificar-voz": "node tools/verificar-voz.mjs",
-    "radar": "node tools/radar.mjs"
+    "radar": "node tools/radar.mjs",
+    "test-chapaje": "esbuild recurso/chapaje/build.tsx --bundle --platform=node --format=esm --jsx=automatic --packages=external --log-level=warning --outfile=recurso/chapaje/.build.mjs && node recurso/chapaje/.build.mjs && rm recurso/chapaje/.build.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -22,7 +22,7 @@ Fuente: conversación de estrategia 24–25-nov + `docs/referencias-skills.md`. 
 ## Después (cuando haya datos)
 - [ ] A · Mejores amigos con 20–50 fieles que ven bocetos y votan el gancho.
 - [ ] A · Canal de difusión.
-- [ ] E · Decidir el recurso gratis con datos de historias y carrusel (preferencia: interactivo con resultado inmediato; no PDF largo).
+- [x] E · Decidir el recurso gratis (27-nov: test de chapaje, `recurso/chapaje/`) con datos de historias y carrusel (preferencia: interactivo con resultado inmediato; no PDF largo).
 - [ ] E · Prueba de duración: versión de 25–30 s de un tema que ya funcionó (reel de prueba).
 - [ ] E · Banco de frases de la audiencia (comentarios y cajas) para ganchos.
 - [ ] E · Cita semanal fija y reconocer a los que comentan siempre.

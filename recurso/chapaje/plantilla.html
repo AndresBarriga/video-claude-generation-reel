@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vas de primero, vas petado. ¿Chapas bien?</title>
+<meta name="description" content="9 decisiones en una vía. Test de chapaje de @ultimo.pegue.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧗</text></svg>">
+<!-- Analítica sin cookies (opcional): crea una cuenta en goatcounter.com y descomenta con tu código.
+<script data-goatcounter="https://TUCODIGO.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+<style>
+/*FUENTES*/
+:root{--fondo:#F4EFE6;--papel:#FFFDF8;--tinta:#0B1624;--suave:#5A6472;--cuerda:#FF6A1F;--cuerdaS:#B8460E;--ok:#1F8A50;--ko:#D8432F;--linea:#E2D9C8;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--fondo:#0F1722;--papel:#182231;--tinta:#F1ECE2;--suave:#A9B3C0;--linea:#2A3545;--ok:#3DBA75;--ko:#FF6B57;color-scheme:dark}}
+:root[data-theme="dark"]{--fondo:#0F1722;--papel:#182231;--tinta:#F1ECE2;--suave:#A9B3C0;--linea:#2A3545;--ok:#3DBA75;--ko:#FF6B57;color-scheme:dark}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html,body{margin:0;background:var(--fondo);color:var(--tinta);font:500 17px/1.45 F,system-ui,sans-serif}
+main{max-width:480px;margin:0 auto;padding:16px 16px 40px}
+h1,h2,.num{font-family:B,F,system-ui,sans-serif;font-weight:800;letter-spacing:-.01em;line-height:1.05;margin:0}
+h1{font-size:2.3rem}h2{font-size:1.35rem}
+p{margin:.5em 0}
+button{font:700 1rem/1.2 F,system-ui,sans-serif;color:inherit;cursor:pointer;border:0;border-radius:14px;min-height:52px;padding:14px 16px;width:100%;touch-action:manipulation}
+.prim{background:var(--cuerda);color:#1A0A02}
+.prim:active{background:var(--cuerdaS);color:#fff}
+.op{background:var(--papel);border:2px solid var(--linea);text-align:left;margin-top:10px}
+.op:active{border-color:var(--cuerda)}
+.op.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,var(--papel))}
+.op.ko{border-color:var(--ko);background:color-mix(in srgb,var(--ko) 14%,var(--papel))}
+.sec{background:transparent;border:2px solid var(--linea);margin-top:10px}
+.cab{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.cab .n{font:700 .95rem F;color:var(--suave);white-space:nowrap}
+.barra{flex:1}
+.barra small{display:block;font:700 .72rem F;letter-spacing:.06em;color:var(--suave)}
+.barra i{display:block;height:10px;border-radius:6px;background:var(--linea);overflow:hidden}
+.barra b{display:block;height:100%;background:var(--cuerda);transition:width .6s}
+.lamina{position:relative;border-radius:18px;overflow:hidden;background:#EAF1F6;border:2px solid var(--linea)}
+.lamina svg{display:block;width:100%;height:auto;max-height:52vh;transition:opacity .35s}
+.lamina.fuera svg{opacity:0}
+.rot{font-family:B,F,sans-serif;font-weight:800}
+.lamina svg *{pointer-events:none}
+.lamina svg .hot{cursor:pointer;pointer-events:stroke}
+.lamina svg .hot.box{pointer-events:all}
+.hot.ok{stroke:var(--ok)!important}.hot.ko{stroke:var(--ko)!important}
+path.hot.ok,path.hot.ko{stroke-opacity:.55}
+.lamina.gira-on{cursor:pointer}
+.preg{font-weight:700;font-size:1.08rem;margin:14px 0 4px}
+.pista{color:var(--suave);font-size:.92rem;margin:0}
+.res{margin-top:14px;padding:14px 16px;border-radius:14px;background:var(--papel);border-left:6px solid var(--ok)}
+.res.mal{border-left-color:var(--ko)}
+.res h2{margin-bottom:4px}
+.oculto{display:none!important}
+.intro{padding-top:6vh}
+.intro .sub{font-size:1.15rem;color:var(--suave);margin:14px 0 26px}
+.intro .linea{height:8px;border-radius:4px;background:var(--cuerda);width:64px;margin:0 0 22px}
+.num{font-size:5rem;color:var(--cuerda)}
+.fallos{list-style:none;padding:0;margin:12px 0}
+.fallos li{padding:10px 0;border-top:1px solid var(--linea)}
+.fallos a{color:var(--cuerdaS);font-weight:700}
+.chuleta img{width:100%;border-radius:14px;display:block;margin-top:12px;border:2px solid var(--linea)}
+.nota{color:var(--suave);font-size:.8rem;margin-top:28px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tinta);color:var(--fondo);padding:10px 16px;border-radius:12px;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+  <section id="inicio" class="intro">
+    <div class="linea"></div>
+    <h1>Vas de primero, vas petado. ¿Chapas bien?</h1>
+    <p class="sub">9 decisiones en una vía. Unos 2 minutos. Al final, tu nota y una chuleta para guardar.</p>
+    <button class="prim" id="empezar">Empezar a escalar</button>
+    <p class="nota">Material de repaso: no sustituye aprender con alguien con experiencia.</p>
+  </section>
+
+  <section id="juego" class="oculto">
+    <div class="cab"><span class="n" id="paso">1/9</span>
+      <div class="barra"><small>ANTEBRAZOS</small><i><b id="pump" style="width:100%"></b></i></div></div>
+    <h2 id="titulo"></h2>
+    <div class="lamina" id="lamina"></div>
+    <p class="preg" id="preg"></p>
+    <p class="pista" id="pista"></p>
+    <div id="ops"></div>
+    <div id="res" class="res oculto" aria-live="polite"><h2 id="veredicto"></h2><p id="ko"></p><p id="exp"></p>
+      <button class="sec oculto" id="verBien">Ver cómo es bien</button>
+      <button class="prim" id="sig" style="margin-top:12px">Siguiente</button></div>
+  </section>
+
+  <section id="final" class="oculto">
+    <p class="pista">Tu resultado</p>
+    <div class="num" id="nota"></div>
+    <h2 id="etiqueta"></h2>
+    <p id="resumen"></p>
+    <ul class="fallos" id="fallos"></ul>
+    <button class="prim" id="compartir">Pásaselo a quien te asegura y comparad nota</button>
+    <div class="chuleta"><h2 style="margin-top:26px">Tu chuleta</h2><p class="pista">«Chapar sin errores: 6 cosas que comprobar». Guárdala en el móvil.</p>
+      <img id="chImg" alt="Chuleta: chapar sin errores, 6 cosas que comprobar">
+      <button class="sec" id="bajar">Descargar la chuleta</button></div>
+    <button class="sec" id="seguir">Seguir a @ultimo.pegue</button>
+    <button class="sec" id="otra">Volver a empezar</button>
+    <p class="nota">Fuentes: Petzl; American Alpine Club; Cornell Outdoor Education; USA Climbing; British Mountaineering Council; Schöffl y Küpper, <i>Wilderness &amp; Environmental Medicine</i> (2008). Material de repaso: no sustituye aprender con alguien con experiencia.</p>
+  </section>
+</main>
+<script>
+/*DATOS*/
+const REELS = { E59: { t: "La segunda chapa", url: "" }, E64: { t: "Cómo chapar: 3 errores", url: "" } }; // pegar los enlaces de los reels
+const PERFIL = "https://www.instagram.com/ultimo.pegue/";
+const $ = (id) => document.getElementById(id);
+let i = 0, fallos = [], pump = 100, giro = 0, hecho = false;
+
+function mostrar(id) { for (const s of ["inicio", "juego", "final"]) $(s).classList.toggle("oculto", s !== id); window.scrollTo(0, 0); }
+function lamina(svg) { const l = $("lamina"); l.classList.add("fuera"); setTimeout(() => { l.innerHTML = svg; l.classList.remove("fuera"); enlazar(); }, svg === l.dataset.svg ? 0 : 180); l.dataset.svg = svg; }
+function enlazar() {
+  const e = ESCENAS[i];
+  if (e.tipo === "toca") $("lamina").querySelectorAll("[data-op]").forEach((h) => h.addEventListener("click", () => responder(+h.dataset.op)));
+}
+$("lamina").addEventListener("click", () => { const e = ESCENAS[i]; if (e.tipo !== "gira" || hecho) return; giro = 1 - giro; lamina(giro ? e.svg.base2 : e.svg.base); });
+function escena() {
+  const e = ESCENAS[i]; hecho = false; giro = 0; $("lamina").classList.toggle("gira-on", e.tipo === "gira");
+  $("paso").textContent = `${i + 1}/${ESCENAS.length}`; $("titulo").textContent = e.titulo; $("preg").textContent = e.pregunta;
+  $("pista").textContent = e.tipo === "toca" ? "Toca en el dibujo." : e.tipo === "gira" ? "Toca el mosquetón para girarlo." : "";
+  $("res").classList.add("oculto"); $("verBien").classList.add("oculto");
+  const ops = $("ops"); ops.innerHTML = "";
+  if (e.tipo === "elige") e.opciones.forEach((t, k) => { const b = document.createElement("button"); b.className = "op"; b.textContent = t; b.onclick = () => responder(k, b); ops.appendChild(b); });
+  if (e.tipo === "gira") { const b = document.createElement("button"); b.className = "prim"; b.textContent = "Comprobar"; b.style.marginTop = "12px"; b.onclick = () => responder(giro); ops.appendChild(b); }
+  $("lamina").dataset.svg = ""; lamina(e.svg.base);
+}
+function responder(k, boton) {
+  if (hecho) return; hecho = true;
+  const e = ESCENAS[i], bien = k === e.ok;
+  if (!bien) fallos.push(e);
+  pump = Math.max(12, pump - (bien ? 5 : 13)); $("pump").style.width = pump + "%";
+  if (e.tipo === "elige") { [...$("ops").children].forEach((b, n) => { b.disabled = true; if (n === e.ok) b.classList.add("ok"); else if (n === k) b.classList.add("ko"); }); }
+  if (e.tipo === "toca") $("lamina").querySelectorAll("[data-op]").forEach((h) => { if (+h.dataset.op === e.ok) h.classList.add("ok"); else if (+h.dataset.op === k) h.classList.add("ko"); });
+  if (e.tipo === "gira") $("ops").innerHTML = "";
+  const tras = bien ? e.svg.bien : e.svg.mal; if (tras) lamina(tras);
+  if (!bien && e.svg.bien && e.svg.bien !== e.svg.mal) { const v = $("verBien"); v.classList.remove("oculto"); v.onclick = () => { lamina(e.svg.bien); v.classList.add("oculto"); }; }
+  if (!bien && e.tipo === "gira") { const v = $("verBien"); v.classList.remove("oculto"); v.onclick = () => { lamina(e.svg.base2); v.classList.add("oculto"); }; }
+  $("veredicto").textContent = bien ? "¡Bien chapada!" : "Ojo aquí";
+  $("ko").textContent = bien ? "" : e.ko; $("ko").classList.toggle("oculto", bien);
+  $("exp").textContent = e.exp;
+  $("res").classList.toggle("mal", !bien); $("res").classList.remove("oculto");
+  $("sig").textContent = i === ESCENAS.length - 1 ? "Ver mi resultado" : "Siguiente";
+  setTimeout(() => $("res").scrollIntoView({ behavior: "smooth", block: "nearest" }), 250);
+}
+function final() {
+  const n = ESCENAS.length - fallos.length;
+  $("nota").textContent = `${n}/${ESCENAS.length}`;
+  $("etiqueta").textContent = n === 9 ? "Chapas fino" : n >= 7 ? "Buen ojo para el chapaje" : n >= 4 ? "Repasa estas antes de tu próxima vía" : "Repásalo con alguien con experiencia antes de ir de primero";
+  $("resumen").textContent = fallos.length ? "Lo que te conviene repasar:" : "Ningún fallo. Ahora, que lo haga quien te asegura.";
+  $("fallos").innerHTML = fallos.map((e) => { const r = e.video && REELS[e.video]; const enlace = r ? (r.url ? ` <a href="${r.url}" target="_blank" rel="noopener">Lo explicamos en «${r.t}»</a>` : ` Lo explicamos en «${r.t}».`) : ""; return `<li><b>${e.titulo}${/[?.!]$/.test(e.titulo) ? "" : "."}</b> ${e.exp}${enlace}</li>`; }).join("");
+  chuleta(); mostrar("final");
+  if (window.goatcounter && goatcounter.count) goatcounter.count({ path: "fin-" + n, event: true });
+}
+function chuletaSVG() {
+  const filas = CHULETA.map((t, k) => { const y = 400 + k * 150; const pal = t.split(" "); let l1 = "", l2 = ""; for (const p of pal) { if ((l1 + " " + p).length < 34 && !l2) l1 = (l1 + " " + p).trim(); else l2 = (l2 + " " + p).trim(); }
+    return `<circle cx="120" cy="${y}" r="34" fill="#FF6A1F"/><text x="120" y="${y + 13}" text-anchor="middle" font-family="B" font-weight="800" font-size="38" fill="#1A0A02">${k + 1}</text><text x="185" y="${y - 6}" font-family="F" font-weight="700" font-size="38" fill="#0B1624">${l1}</text><text x="185" y="${y + 42}" font-family="F" font-weight="700" font-size="38" fill="#0B1624">${l2}</text>`; }).join("");
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350"><style>${FF}</style><rect width="1080" height="1350" fill="#FFFDF8"/><rect x="0" y="0" width="1080" height="16" fill="#FF6A1F"/>
+  <text x="80" y="170" font-family="B" font-weight="800" font-size="78" fill="#0B1624">Chapar sin errores</text><text x="80" y="245" font-family="F" font-weight="700" font-size="40" fill="#5A6472">6 cosas que comprobar</text>${filas}
+  <path d="M80 1250 Q300 1210 540 1250 T1000 1250" stroke="#FF6A1F" stroke-width="12" fill="none" stroke-linecap="round"/><text x="80" y="1310" font-family="F" font-weight="700" font-size="34" fill="#5A6472">@ultimo.pegue</text></svg>`;
+}
+function chuleta() { $("chImg").src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(chuletaSVG()); }
+function bajar() {
+  const img = new Image(); img.onload = () => { const c = document.createElement("canvas"); c.width = 1080; c.height = 1350; c.getContext("2d").drawImage(img, 0, 0);
+    c.toBlob((b) => { const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = "chuleta-chapar-ultimo-pegue.png"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); }); };
+  img.src = $("chImg").src;
+}
+function aviso(t) { const d = document.createElement("div"); d.className = "toast"; d.textContent = t; document.body.appendChild(d); setTimeout(() => d.remove(), 2200); }
+async function compartir() {
+  const n = ESCENAS.length - fallos.length, datos = { title: "¿Chapas bien?", text: `He sacado ${n}/9 en el test de chapaje de @ultimo.pegue. ¿Y tú?`, url: location.href.split("#")[0] };
+  try { if (navigator.share) await navigator.share(datos); else { await navigator.clipboard.writeText(`${datos.text} ${datos.url}`); aviso("Enlace copiado"); } } catch (e) {}
+}
+$("empezar").onclick = () => { mostrar("juego"); escena(); };
+$("sig").onclick = () => { i < ESCENAS.length - 1 ? (i++, escena(), window.scrollTo(0, 0)) : final(); };
+$("compartir").onclick = compartir; $("bajar").onclick = bajar;
+$("seguir").onclick = () => window.open(PERFIL, "_blank", "noopener");
+$("otra").onclick = () => { i = 0; fallos = []; pump = 100; $("pump").style.width = "100%"; mostrar("juego"); escena(); };
+</script>
+</body>
+</html>
