@@ -5,7 +5,8 @@ import { Persona, POSE } from "../../piezas/kit";
 import { LOLA } from "../../historias/Miedo/comun";
 import { fuenteTexto } from "../../tema";
 import { COL, Cuerda, en, F, Forma, Linea, Marco, Svg, type Pt } from "../comun";
-import { ENTRE, Escena, PASOALTO, TALON, TRAVESIA, type Config } from "./Escena";
+import { ENTRE, Escena, PASOALTO, type Config } from "./Escena";
+import { Desplome, Placa } from "./Calcos";
 
 const rad = (a: number) => (a * Math.PI) / 180;
 const ext = (x: number, y: number, a: number, L: number): Pt => [x + Math.sin(rad(a)) * L, y + Math.cos(rad(a)) * L];
@@ -28,6 +29,12 @@ const Ver: React.FC<{ c: Config; x: number; y: number; w: number; h: number; s: 
     </g>
   </Tarjeta>
 );
+/** Igual que Ver, pero para cualquier dibujo (los calcos). */
+const VerD: React.FC<{ d: React.ReactNode; x: number; y: number; w: number; h: number; s: number; foco: Pt; id: string; borde?: number; children?: React.ReactNode }> = ({ d, x, y, w, h, s, foco, id, borde, children }) => (
+  <Tarjeta x={x} y={y} w={w} h={h} id={id} borde={borde}>
+    <g transform={`translate(${x + w / 2} ${y + h / 2}) scale(${s}) translate(${-foco[0]} ${-foco[1]})`}>{d}{children}</g>
+  </Tarjeta>
+);
 const Etiqueta: React.FC<{ t: string; top: number; right?: number; left?: number; fs?: number }> = ({ t, top, right, left, fs = 34 }) => (
   <div style={{ position: "absolute", top, right, left, fontFamily: F, fontWeight: 800, fontSize: fs, color: T, background: COL.crema, border: `6px solid ${T}`, borderRadius: 22, padding: "2px 18px 6px", whiteSpace: "nowrap" }}>{t}</div>
 );
@@ -37,10 +44,10 @@ const Badge: React.FC<{ ok: boolean; size?: number }> = ({ ok, size = 120 }) => 
 const Circ: React.FC<{ p: Pt; r: number; ok: boolean }> = ({ p, r, ok }) => <circle cx={p[0]} cy={p[1]} r={r} fill="none" stroke={ok ? COL.verde : COL.rojo} strokeWidth={14} strokeDasharray="30 18" />;
 
 // ——— Preguntas (1, 3, 5, 7): el detalle a la vista, sin marcar ———
-const Pregunta: React.FC<{ n: number; c: Config; titulo: string; tag: string; foco?: Pt; s?: number }> = ({ n, c, titulo, tag, foco = [590, 830], s = 0.72 }) => (
+const Pregunta: React.FC<{ n: number; c?: Config; d?: React.ReactNode; titulo: string; tag: string; foco?: Pt; s?: number; fs?: number }> = ({ n, c, d, titulo, tag, foco = [590, 830], s = 0.72, fs = 112 }) => (
   <Marco n={n}>
-    <Svg><Ver c={c} x={50} y={372} w={980} h={880} s={s} foco={foco} id={`p${n}`} /></Svg>
-    <div style={{ position: "absolute", top: 104, left: 0, right: 0, textAlign: "center", fontFamily: F, fontWeight: 800, fontSize: 112, lineHeight: 1, color: T, letterSpacing: -2 }}>{titulo}</div>
+    <Svg>{d ? <VerD d={d} x={50} y={372} w={980} h={880} s={s} foco={foco} id={`p${n}`} /> : <Ver c={c!} x={50} y={372} w={980} h={880} s={s} foco={foco} id={`p${n}`} />}</Svg>
+    <div style={{ position: "absolute", top: 104, left: 0, right: 0, textAlign: "center", fontFamily: F, fontWeight: 800, fontSize: fs, lineHeight: 1, color: T, letterSpacing: -2, whiteSpace: "nowrap" }}>{titulo}</div>
     <div style={{ position: "absolute", top: 248, left: 0, right: 0, textAlign: "center" }}>
       <span style={{ fontFamily: F, fontWeight: 800, fontSize: 74, color: "#fff", background: T, borderRadius: 40, padding: "4px 36px 12px" }}>¿BIEN O MAL?</span>
     </div>
@@ -93,7 +100,7 @@ const S2: React.FC = () => (
   <Marco n={2}>
     <Svg>
       <Tarjeta x={50} y={470} w={980} h={790} id="t2"><g transform="translate(50 470)"><Volteo /></g></Tarjeta>
-      <Ver c={TRAVESIA} x={734} y={934} w={292} h={292} s={0.62} foco={[300, 1000]} id="lupa" borde={9}><Circ p={[300, 990]} r={95} ok={false} /></Ver>
+      <VerD d={<Placa />} x={640} y={880} w={386} h={380} s={1.45} foco={[300, 880]} id="lupa" borde={9}><Circ p={[300, 870]} r={80} ok={false} /></VerD>
     </Svg>
     <div style={{ position: "absolute", top: 96, left: 60, display: "flex", alignItems: "center", gap: 24 }}>
       <Badge ok={false} />
@@ -101,6 +108,26 @@ const S2: React.FC = () => (
     </div>
     <div style={{ position: "absolute", top: 250, left: 60, right: 60, fontFamily: F, fontWeight: 800, fontSize: 60, lineHeight: 1.05, color: T }}>Al caer, la cuerda te engancha la pierna y te da la vuelta.</div>
     <div style={{ position: "absolute", top: 400, left: 60, right: 60, fontFamily: fuenteTexto, fontWeight: 700, fontSize: 36, color: T, opacity: 0.85 }}>Tu pierna quedó entre la cuerda y la roca.</div>
+  </Marco>
+);
+
+/** 8 · respuesta del desplome: el detalle del pie de cerca, mal y bien, con la misma postura. */
+const S8: React.FC = () => (
+  <Marco n={8}>
+    <Svg>
+      <VerD d={<Desplome />} x={50} y={560} w={480} h={620} s={1.35} foco={[370, 600]} id="d8a"><Circ p={[352, 575]} r={60} ok={false} /></VerD>
+      <VerD d={<Desplome mal={false} />} x={550} y={560} w={480} h={620} s={1.35} foco={[370, 600]} id="d8b"><Circ p={[340, 600]} r={60} ok /></VerD>
+    </Svg>
+    <div style={{ position: "absolute", top: 96, left: 60, display: "flex", alignItems: "center", gap: 24 }}>
+      <Badge ok={false} />
+      <div style={{ fontFamily: F, fontWeight: 800, fontSize: 112, color: T, lineHeight: 1 }}>MAL</div>
+    </div>
+    <div style={{ position: "absolute", top: 250, left: 60, right: 60, fontFamily: F, fontWeight: 800, fontSize: 60, lineHeight: 1.05, color: T }}>En el desplome también engancha.</div>
+    <div style={{ position: "absolute", top: 400, left: 60, right: 60, fontFamily: fuenteTexto, fontWeight: 700, fontSize: 36, lineHeight: 1.2, color: T, opacity: 0.85 }}>Si la cuerda pasa por fuera de la espinilla, al caer tira de la pierna y te gira. Pásala por dentro, contra la roca.</div>
+    <div style={{ position: "absolute", top: 580, left: 70 }}><Badge ok={false} size={80} /></div>
+    <div style={{ position: "absolute", top: 580, left: 570 }}><Badge ok size={80} /></div>
+    <Etiqueta t="por fuera de la pierna" top={1100} left={70} fs={30} />
+    <Etiqueta t="entre pierna y roca" top={1100} left={570} fs={30} />
   </Marco>
 );
 
@@ -116,7 +143,7 @@ const S9: React.FC = () => (
     <div style={{ position: "absolute", top: 186, left: 60, ...txt, fontSize: 36 }}>La regla: tu pierna nunca entre la cuerda y la roca.</div>
     <Svg>
       <Ver c={ENTRE} x={60} y={250} w={470} h={420} s={0.42} foco={[566, 860]} id="g1" />
-      <Ver c={TRAVESIA} x={550} y={250} w={470} h={420} s={0.42} foco={[380, 900]} id="g2" />
+      <VerD d={<Placa />} x={550} y={250} w={470} h={420} s={0.62} foco={[330, 820]} id="g2" />
     </Svg>
     <div style={{ position: "absolute", top: 270, left: 80 }}><Badge ok size={84} /></div>
     <div style={{ position: "absolute", top: 270, left: 570 }}><Badge ok={false} size={84} /></div>
@@ -125,7 +152,7 @@ const S9: React.FC = () => (
     <Caja top={700} left={60} w={960} h={300} bg={COL.crema}>
       <div style={h3}>MIRA DÓNDE VA TU CUERDA:</div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px 24px", marginTop: 16 }}>
-        {["al chapar", "al ir de lado o cruzar los pies", "al talonar", "al pasar un desplome"].map((s, i) => (
+        {["al chapar", "al ir de lado o cruzar los pies", "al talonar o poner el pie en gancho", "al pasar un desplome"].map((s, i) => (
           <div key={s} style={{ display: "flex", alignItems: "center", gap: 14 }}>
             <div style={{ minWidth: 54, height: 54, borderRadius: 27, background: T, color: "#fff", fontFamily: F, fontWeight: 800, fontSize: 34, display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: 4, boxSizing: "border-box" }}>{i + 1}</div>
             <div style={txt}>{s}</div>
@@ -148,16 +175,16 @@ const S9: React.FC = () => (
 );
 
 // ——— 10 · resumen + CTA ———
-const RES: { c: Config; ok: boolean; t: string; foco: Pt; s: number }[] = [
-  { c: TRAVESIA, ok: false, t: "travesía", foco: [460, 700], s: 0.3 },
+const RES: { c?: Config; d?: React.ReactNode; ok: boolean; t: string; foco: Pt; s: number }[] = [
+  { d: <Placa />, ok: false, t: "placa", foco: [360, 760], s: 0.5 },
   { c: ENTRE, ok: true, t: "entre las piernas", foco: [566, 880], s: 0.4 },
   { c: PASOALTO, ok: true, t: "paso alto", foco: [700, 820], s: 0.4 },
-  { c: TALON, ok: false, t: "talón", foco: [700, 360], s: 0.3 },
+  { d: <Desplome />, ok: false, t: "desplome", foco: [380, 620], s: 0.62 },
 ];
 const S10: React.FC = () => (
   <Marco n={10} desliza={false}>
     <div style={{ position: "absolute", top: 86, left: 0, right: 0, textAlign: "center", ...h3, fontSize: 82 }}>¿CUÁNTAS ACERTASTE?</div>
-    <Svg>{RES.map((r, i) => <Ver key={i} c={r.c} x={60 + (i % 2) * 490} y={200 + Math.floor(i / 2) * 400} w={470} h={380} s={r.s} foco={r.foco} id={`m${i}`} />)}</Svg>
+    <Svg>{RES.map((r, i) => r.d ? <VerD key={i} d={r.d} x={60 + (i % 2) * 490} y={200 + Math.floor(i / 2) * 400} w={470} h={380} s={r.s} foco={r.foco} id={`m${i}`} /> : <Ver key={i} c={r.c!} x={60 + (i % 2) * 490} y={200 + Math.floor(i / 2) * 400} w={470} h={380} s={r.s} foco={r.foco} id={`m${i}`} />)}</Svg>
     {RES.map((r, i) => (
       <React.Fragment key={i}>
         <div style={{ position: "absolute", left: 76 + (i % 2) * 490, top: 216 + Math.floor(i / 2) * 400 }}><Badge ok={r.ok} size={76} /></div>
@@ -179,13 +206,10 @@ export const CarruselPierna: React.FC<{ n?: number }> = ({ n = 1 }) => {
     case 4: return <Respuesta n={4} ok c={ENTRE} titulo="Entre las piernas está bien." sub="Al caer, la cuerda va recta a la chapa sin pasar por detrás de ninguna pierna." foco={[580, 780]}><Circ p={[566, 900]} r={130} ok /></Respuesta>;
     case 5: return <Pregunta n={5} c={PASOALTO} titulo="¿Y ESTE PASO?" tag="3 de 4 · paso alto" foco={[640, 800]} />;
     case 6: return <Respuesta n={6} ok c={PASOALTO} titulo="La cuerda va entre tu pierna y la roca." sub="Al caer te separas de la pared y la pierna sale por delante de la cuerda." foco={[660, 760]}><Circ p={[790, 800]} r={100} ok /></Respuesta>;
-    case 7: return <Pregunta n={7} c={TALON} titulo="¿Y CON EL TALÓN?" tag="4 de 4 · desplome" foco={[640, 400]} s={0.6} />;
-    case 8: return <Respuesta n={8} ok={false} c={TALON} titulo="El talón también engancha." sub="Si la cuerda pasa por fuera del talón, al caer tira de él y te puede girar." foco={[660, 380]} s={0.52}>
-      <Circ p={[920, 150]} r={100} ok={false} />
-      <path d="M880 260 L800 400" stroke={COL.rojo} strokeWidth={24} strokeLinecap="round" /><path d="M760 372 L780 450 L840 400 Z" fill={COL.rojo} />
-    </Respuesta>;
+    case 7: return <Pregunta n={7} d={<Desplome />} titulo="¿Y EN EL DESPLOME?" tag="4 de 4 · pie en gancho" foco={[372, 640]} s={1.2} fs={96} />;
+    case 8: return <S8 />;
     case 9: return <S9 />;
     case 10: return <S10 />;
-    default: return <Pregunta n={1} c={TRAVESIA} titulo="MIRA LA CUERDA." tag="1 de 4 · travesía" foco={[540, 540]} s={0.54} />;
+    default: return <Pregunta n={1} d={<Placa />} titulo="MIRA LA CUERDA." tag="1 de 4 · placa" foco={[380, 760]} s={1.07} />;
   }
 };

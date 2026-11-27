@@ -1,11 +1,11 @@
 # C1 · Carrusel «¿Bien o mal? #1 · La cuerda y tu pierna» — ficha
-**Estado:** v2 27-nov: situaciones 1 y 4 rehechas siguiendo las referencias de @sima.k202 (cuerpo completo de espaldas; talón bajo un techo con fisura, junto a la cinta). v1 producida 27-nov (10 diapositivas, 1080×1350). Código: `src/carrusel/pierna/` · render: `npx remotion still src/index.ts CarruselPierna out/carrusel/pierna-N.png --props='{"n":N}'`.
+**Estado:** v3 27-nov: situaciones 1 y 4 son calcos de las dos referencias de @sima.k202 (`src/carrusel/pierna/Calcos.tsx`; postura, encuadre y perspectiva; personajes y estilo nuestros; comprobación con `CalcoDebug`). La 4 pasa a «pie en gancho en desplome»; la 8 enseña el pie de cerca, mal y bien. Las 2 y 3 vuelven a la v1. v2 27-nov: situaciones 1 y 4 rehechas siguiendo las referencias de @sima.k202 (cuerpo completo de espaldas; talón bajo un techo con fisura, junto a la cinta). v1 producida 27-nov (10 diapositivas, 1080×1350). Código: `src/carrusel/pierna/` · render: `npx remotion still src/index.ts CarruselPierna out/carrusel/pierna-N.png --props='{"n":N}'`.
 **Formato:** carrusel · mecanismo ¿bien o mal? (la respuesta está detrás del deslizamiento) · ángulo «parece normal y no lo está».
 **Objetivo:** envíos y guardados de escaladores de cuerda que luego sigan. Objetivo editorial: «después de verlo, miras dónde va tu cuerda».
 **Pendiente de decidir (Andrés):** si sustituye al episodio 1 de E73 (reel ¿Bien o mal? pierna).
 
 ## Estructura
-1 travesía ¿? · 2 ✗ volteo (única caída dibujada) + lupa · 3 entre las piernas ¿? · 4 ✓ · 5 paso alto ¿? · 6 ✓ · 7 talón en desplome ¿? · 8 ✗ (tirón del talón) · 9 cómo evitarlo (regla, 4 momentos, arreglo, «¡pierna!») · 10 marcador + «Mándaselo a tu compañero de cordada» + próximo #2 cintas.
+1 placa (calco ref. 1) ¿? · 2 ✗ volteo (única caída dibujada) + detalle del tobillo · 3 entre las piernas ¿? · 4 ✓ · 5 paso alto ¿? · 6 ✓ · 7 pie en gancho en desplome (calco ref. 2) ¿? · 8 ✗ con el pie de cerca, mal y bien · 9 cómo evitarlo (regla, 4 momentos, arreglo, «¡pierna!») · 10 marcador + «Mándaselo a tu compañero de cordada» + próximo #2 cintas.
 
 ## Respaldo
 | Afirmación | Fuente |
