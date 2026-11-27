@@ -115,8 +115,8 @@ const S2: React.FC = () => (
 const S8: React.FC = () => (
   <Marco n={8}>
     <Svg>
-      <VerD d={<Desplome />} x={50} y={560} w={480} h={620} s={1.35} foco={[370, 600]} id="d8a"><Circ p={[352, 575]} r={60} ok={false} /></VerD>
-      <VerD d={<Desplome mal={false} />} x={550} y={560} w={480} h={620} s={1.35} foco={[370, 600]} id="d8b"><Circ p={[340, 600]} r={60} ok /></VerD>
+      <VerD d={<Desplome />} x={50} y={560} w={480} h={620} s={1.3} foco={[330, 560]} id="d8a"><Circ p={[346, 572]} r={58} ok={false} /></VerD>
+      <VerD d={<Desplome mal={false} />} x={550} y={560} w={480} h={620} s={1.3} foco={[330, 560]} id="d8b"><Circ p={[346, 576]} r={58} ok /></VerD>
     </Svg>
     <div style={{ position: "absolute", top: 96, left: 60, display: "flex", alignItems: "center", gap: 24 }}>
       <Badge ok={false} />
